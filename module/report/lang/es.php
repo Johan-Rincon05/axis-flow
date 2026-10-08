@@ -36,7 +36,7 @@ $lang->report->assign['assign']   = 'Asignado';
 
 $lang->report->singleColor[] = 'F6BD0F';
 
-$lang->report->projectDeviation = "{$lang->execution->common} Deviation";
+$lang->report->projectDeviation = "Desviación de {$lang->execution->common}";
 $lang->report->productSummary   = $lang->productCommon . ' Resumen';
 $lang->report->bugCreate        = 'Resumen de Bugs reportados';
 $lang->report->bugAssign        = 'Resumen de Bugs asignados';
@@ -47,7 +47,7 @@ $lang->report->beginAndEnd      = ' Desde';
 $lang->report->begin            = ' Inicio';
 $lang->report->end              = ' Fin';
 $lang->report->dept             = 'Departamento';
-$lang->report->deviationChart   = "{$lang->projectCommon} Deviation Chart";
+$lang->report->deviationChart   = "Gráfico de desviación de {$lang->projectCommon}";
 
 $lang->report->id            = 'ID';
 $lang->report->execution     = $lang->execution->common;
@@ -107,8 +107,8 @@ $lang->report->annualData->baseInfo         = "Datos básicos";
 $lang->report->annualData->actionData       = "Datos de operación";
 $lang->report->annualData->contributionData = "Datos de contribución";
 $lang->report->annualData->radar            = "Gráfico de radar de capacidades";
-$lang->report->annualData->executions       = "{$lang->executionCommon} Data";
-$lang->report->annualData->products         = "{$lang->productCommon} Data";
+$lang->report->annualData->executions       = "Datos de {$lang->executionCommon}";
+$lang->report->annualData->products         = "Datos de {$lang->productCommon}";
 $lang->report->annualData->stories          = "Datos de la historia";
 $lang->report->annualData->tasks            = "Datos de la tarea";
 $lang->report->annualData->bugs             = "Datos de Bugs";
@@ -145,14 +145,14 @@ $lang->report->annualData->executionFields['bug']   = "Bugs reparados";
 
 $lang->report->annualData->productFields['name'] = "{$lang->productCommon} name";
 $lang->report->annualData->productFields['plan'] = "Planes";
-$lang->report->annualData->productFields['epic'] = "Created {$lang->ERCommon}";
+$lang->report->annualData->productFields['epic'] = "{$lang->ERCommon} creado";
 global $config;
 if(!empty($config->URAndSR))
 {
-    $lang->report->annualData->productFields['requirement'] = "Created {$lang->URCommon}";
+    $lang->report->annualData->productFields['requirement'] = "{$lang->URCommon} creado";
 }
-$lang->report->annualData->productFields['story']  = "Created {$lang->SRCommon}";
-$lang->report->annualData->productFields['closed'] = "Closed {$lang->SRCommon}";
+$lang->report->annualData->productFields['story']  = "{$lang->SRCommon} creado";
+$lang->report->annualData->productFields['closed'] = "{$lang->SRCommon} cerrado";
 
 $lang->report->annualData->objectTypeList['product']     = $lang->productCommon;
 $lang->report->annualData->objectTypeList['story']       = $lang->SRCommon;

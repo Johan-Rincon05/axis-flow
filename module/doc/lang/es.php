@@ -30,7 +30,7 @@ $lang->doclib->defaultOrder = 'Orden predeterminado de documentos';
 $lang->doclib->migratedWiki = 'Wiki migrada';
 
 $lang->doclib->tip = new stdclass();
-$lang->doclib->tip->selectExecution = "If Execution is empty, the created library will be a {$lang->projectCommon} library.";
+$lang->doclib->tip->selectExecution = "Si Ejecución está vacío, la biblioteca creada será una biblioteca de {$lang->projectCommon}.";
 
 $lang->doclib->type['wiki'] = 'Biblioteca de documentos';
 $lang->doclib->type['api']  = 'Biblioteca de API';
@@ -59,7 +59,7 @@ $lang->doclib->create['execution'] = 'Crear ' . $lang->executionCommon . ' Bibli
 $lang->doclib->create['custom']    = 'Crear biblioteca personalizada';
 
 $lang->doclib->main['product']   = $lang->productCommon . ' Biblioteca principal';
-$lang->doclib->main['project']   = "{$lang->projectCommon} Primary Library";
+$lang->doclib->main['project']   = "Biblioteca principal de {$lang->projectCommon}";
 $lang->doclib->main['execution'] = $lang->executionCommon . ' Biblioteca principal';
 
 $lang->doclib->tabList['product']   = $lang->productCommon;
@@ -417,7 +417,7 @@ $lang->doc->allExecutions = 'Todos' . $lang->execution->common . 's';
 $lang->doc->allProjects   = 'Todos' . $lang->projectCommon . 's';
 
 $lang->doc->libTypeList['product']   = $lang->productCommon . ' Biblioteca de documentos';
-$lang->doc->libTypeList['project']   = "{$lang->projectCommon} Docs Library";
+$lang->doc->libTypeList['project']   = "Biblioteca de documentos de {$lang->projectCommon}";
 $lang->doc->libTypeList['execution'] = $lang->execution->common . ' Biblioteca de documentos';
 $lang->doc->libTypeList['api']       = 'Biblioteca de API';
 $lang->doc->libTypeList['custom']    = 'Biblioteca personalizada';
@@ -514,8 +514,8 @@ $lang->doc->confirmDeleteModule         = "¿Seguro que desea eliminar este dire
 $lang->doc->confirmDeleteModuleWithSub  = "Eliminar este directorio también eliminará todos sus subdirectorios, capítulos y documentos. ¿Está seguro de continuar?";
 $lang->doc->confirmOtherEditing         = "Este documento se está editando actualmente. Si continúa editando, se sobrescribirán los cambios realizados por otros. ¿Desea continuar?";
 $lang->doc->errorEditSystemDoc          = "Las bibliotecas de documentos del sistema no se pueden modificar. ";
-$lang->doc->errorEmptyProduct           = "No {$lang->productCommon} found. The document cannot be created.";
-$lang->doc->errorEmptyProject           = "No {$lang->executionCommon} found. The document cannot be created.";
+$lang->doc->errorEmptyProduct           = "No se encontró {$lang->productCommon}. No se puede crear el documento.";
+$lang->doc->errorEmptyProject           = "No se encontró {$lang->executionCommon}. No se puede crear el documento.";
 $lang->doc->errorEmptySpaceLib          = "No existe ninguna biblioteca de documentos en este espacio. No se puede crear el documento. Cree primero una biblioteca de documentos.";
 $lang->doc->errorMainSysLib             = "Las bibliotecas de documentos del sistema no se pueden eliminar.";
 $lang->doc->accessDenied                = "No tiene permiso para acceder a esto.";
@@ -550,16 +550,16 @@ $lang->doc->previewNotAvailable         = 'La vista previa no está disponible p
 $lang->doc->hocuspocusConnect           = 'Servicio de edición colaborativa conectado.';
 $lang->doc->hocuspocusDisconnect        = 'Servicio de edición colaborativa desconectado. El contenido se sincronizará al reconectar.';
 $lang->doc->docTemplateConvertComment   = 'La plantilla de documento ha sido convertida al nuevo formato de editor. Cambie a la versión %s para ver la plantilla original.';
-$lang->doc->noSupportList               = "This {$lang->projectCommon} does not support %s.";
+$lang->doc->noSupportList               = "{$lang->projectCommon} no admite %s.";
 
 $lang->doc->noticeAcl['lib']['product']['default']   = "Accesible para los usuarios con permiso de acceso al {Slang-productCommon} seleccionado.";
 $lang->doc->noticeAcl['lib']['product']['custom']    = "Accesible para los usuarios con permiso de acceso al {Slang-productCommon} seleccionado y para los usuarios de la lista blanca.";
-$lang->doc->noticeAcl['lib']['project']['default']   = "Accessible for users who with permission to  access to the selected {$lang->projectCommon}.";
-$lang->doc->noticeAcl['lib']['project']['open']      = "Accessible for users who with permission to  access to the selected {$lang->projectCommon}.";
-$lang->doc->noticeAcl['lib']['project']['private']   = "Accessible for users who with permission to  access to the selected {$lang->projectCommon} and users on the whitelist.";
+$lang->doc->noticeAcl['lib']['project']['default']   = "Accesible para usuarios con permiso de acceso a {$lang->projectCommon} seleccionado.";
+$lang->doc->noticeAcl['lib']['project']['open']      = "Accesible para usuarios con permiso de acceso a {$lang->projectCommon} seleccionado.";
+$lang->doc->noticeAcl['lib']['project']['private']   = "Accesible para usuarios con permiso de acceso a {$lang->projectCommon} seleccionado y usuarios de la lista blanca.";
 $lang->doc->noticeAcl['lib']['project']['custom']    = "Accesible para los usuarios de la lista blanca.";
-$lang->doc->noticeAcl['lib']['execution']['default'] = "Accessible for users who with permission to  access to the selected {$lang->execution->common}.";
-$lang->doc->noticeAcl['lib']['execution']['custom']  = "Accessible for users who with permission to  access to the selected {$lang->execution->common} and users on the whitelist..";
+$lang->doc->noticeAcl['lib']['execution']['default'] = "Accesible para usuarios con permiso de acceso a {$lang->execution->common} seleccionada.";
+$lang->doc->noticeAcl['lib']['execution']['custom']  = "Accesible para usuarios con permiso de acceso a {$lang->execution->common} seleccionada y usuarios de la lista blanca.";
 $lang->doc->noticeAcl['lib']['api']['open']          = 'Accesible para todos los usuarios.';
 $lang->doc->noticeAcl['lib']['api']['custom']        = 'Accesible para los usuarios de la lista blanca.';
 $lang->doc->noticeAcl['lib']['api']['private']       = 'Accesible solo para el creador.';

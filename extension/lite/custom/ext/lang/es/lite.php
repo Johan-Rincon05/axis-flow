@@ -1,7 +1,7 @@
 <?php
 $lang->custom->executionCommon = 'Kanban';
 $lang->custom->closedExecution = 'Cerrado ' . $lang->custom->executionCommon;
-$lang->custom->notice->readOnlyOfExecution = "If Change Forbidden, any change on tasks, builds, efforts and stories of the closed {$lang->executionCommon} is also forbidden.";
+$lang->custom->notice->readOnlyOfExecution = "Si se activa Cambios prohibidos, también se prohíbe cualquier cambio en tareas, Builds, esfuerzos e historias de {$lang->executionCommon} cerrada.";
 
 $lang->custom->moduleName['execution'] = $lang->custom->executionCommon;
 

@@ -130,7 +130,7 @@ $lang->pivot->assign['assign']   = 'Asignado';
 
 $lang->pivot->singleColor[] = 'F6BD0F';
 
-$lang->pivot->projectDeviation = "{$lang->execution->common} Deviation";
+$lang->pivot->projectDeviation = "Desviación de {$lang->execution->common}";
 $lang->pivot->productSummary   = $lang->productCommon . ' Resumen';
 $lang->pivot->bugCreate        = 'Resumen de Bugs reportados';
 $lang->pivot->bugAssign        = 'Resumen de Bugs asignados';
@@ -141,7 +141,7 @@ $lang->pivot->beginAndEnd      = ' Desde';
 $lang->pivot->begin            = ' Inicio';
 $lang->pivot->end              = ' Fin';
 $lang->pivot->dept             = 'Departamento';
-$lang->pivot->deviationChart   = "{$lang->projectCommon} Deviation Chart";
+$lang->pivot->deviationChart   = "Gráfico de desviación de {$lang->projectCommon}";
 
 $lang->pivotList = new stdclass();
 $lang->pivotList->product = new stdclass();

@@ -42,7 +42,7 @@ $lang->action->dynamicAction->task['opened']              = 'Crear tarea';
 $lang->action->dynamicAction->task['edited']              = 'Editar tarea';
 $lang->action->dynamicAction->task['commented']           = 'Tarea comentada';
 $lang->action->dynamicAction->task['assigned']            = 'Tarea asignada';
-$lang->action->dynamicAction->task['confirmed']           = "Confirmed {$lang->SRCommon} change";
+$lang->action->dynamicAction->task['confirmed']           = "Cambio confirmado de {$lang->SRCommon}";
 $lang->action->dynamicAction->task['started']             = 'Tarea iniciada';
 $lang->action->dynamicAction->task['finished']            = 'Finalizar tarea';
 $lang->action->dynamicAction->task['recordestimate']      = 'recorded';
@@ -109,4 +109,4 @@ $lang->action->desc->linkparentstory     = '$date, <strong>$actor</strong> vincu
 $lang->action->desc->unlinkparentstory   = '$date, <strong>$actor</strong> canceló el vínculo con la historia padre <strong>$extra</strong>.' . "\n";
 $lang->action->desc->deletechildrenstory = '$date, <strong>$actor</strong> eliminó la historia hija <strong>$extra</strong>.' . "\n";
 
-$lang->action->executionNoProject = "The execution does not belong to a {$lang->projectCommon},please restore the {$lang->projectCommon} first";
+$lang->action->executionNoProject = "La ejecución no pertenece a ningún {$lang->projectCommon}; restaure primero {$lang->projectCommon}";

@@ -29,7 +29,7 @@ $lang->convert->convertBugFree = 'Migrar desde BugFree';
 $lang->convert->selectSource     = 'Seleccione el sistema de origen y su versión.';
 $lang->convert->mustSelectSource = "Se requiere un sistema de origen.";
 
-$lang->convert->direction             = "Migrate {$lang->executionCommon} Issue";
+$lang->convert->direction             = "Migrar incidencia de {$lang->executionCommon}";
 $lang->convert->questionTypeOfRedmine = 'Tipo de incidencia en Redmine';
 $lang->convert->aimTypeOfZentao       = 'Tipo de incidencia en AXIS FLOW';
 

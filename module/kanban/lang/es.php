@@ -84,8 +84,8 @@ $lang->kanban->importExecution     = $lang->execution->common;
 $lang->kanban->importBuild         = 'Build';
 $lang->kanban->importTicket        = 'Ticket';
 $lang->kanban->allKanban           = 'Todos los tableros';
-$lang->kanban->allProjects         = "All {$lang->projectCommon}s";
-$lang->kanban->allProducts         = "All {$lang->productCommon}s";
+$lang->kanban->allProjects         = "Todos: {$lang->projectCommon}";
+$lang->kanban->allProducts         = "Todos: {$lang->productCommon}";
 $lang->kanban->mine                = 'Administrado por mí';
 $lang->kanban->alignment           = 'Alineación';
 $lang->kanban->allUsers            = 'Cargar todos los usuarios';
@@ -128,7 +128,7 @@ $lang->kanban->confirmDeleteKanban = '¿Seguro que desea eliminar el Kanban?';
 $lang->kanban->cardCountTip        = 'Ingrese el número de tarjetas.';
 
 $lang->kanban->selectedKanban  = 'Seleccione el Kanban.';
-$lang->kanban->selectedProduct = "Please select {$lang->productCommon}";
+$lang->kanban->selectedProduct = "Seleccione {$lang->productCommon}";
 $lang->kanban->selectedProject = 'Seleccione ' . $lang->projectCommon;
 $lang->kanban->selectedLane    = 'Carril de destino';
 
@@ -150,10 +150,10 @@ $lang->kanban->alignmentList['left']   = 'Izquierda';
 
 $lang->kanban->type = array();
 $lang->kanban->type['all']         = "Todos los tableros Kanban";
-$lang->kanban->type['epic']        = "{$lang->ERCommon} KanBan Board";
-$lang->kanban->type['requirement'] = "{$lang->URCommon} KanBan Board";
-$lang->kanban->type['parentStory'] = "Parent {$lang->SRCommon} KanBan";
-$lang->kanban->type['story']       = "{$lang->SRCommon} KanBan";
+$lang->kanban->type['epic']        = "Tablero Kanban de {$lang->ERCommon}";
+$lang->kanban->type['requirement'] = "Tablero Kanban de {$lang->URCommon}";
+$lang->kanban->type['parentStory'] = "Kanban de {$lang->SRCommon} padre";
+$lang->kanban->type['story']       = "Kanban de {$lang->SRCommon}";
 $lang->kanban->type['task']        = "Kanban de tareas";
 $lang->kanban->type['bug']         = "Kanban de Bugs";
 

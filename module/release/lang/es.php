@@ -120,11 +120,11 @@ $lang->release->action->notified     = array('main' => '$date, notificación env
 $lang->release->action->published    = array('main' => '$date, publicado por <strong>$actor</strong> y el resultado es <strong>$extra</strong>.', 'extra' => 'resultList');
 
 $lang->release->notifyList['FB'] = "Proveedor de retroalimentación";
-$lang->release->notifyList['PO'] = "{$lang->productCommon} Owner";
+$lang->release->notifyList['PO'] = "Responsable de {$lang->productCommon}";
 $lang->release->notifyList['QD'] = 'Gerente de pruebas';
 $lang->release->notifyList['SC'] = 'Creador de la historia';
-$lang->release->notifyList['ET'] = "{$lang->execution->common} Team Members";
-$lang->release->notifyList['PT'] = "{$lang->projectCommon} Team Members";
+$lang->release->notifyList['ET'] = "Miembros del equipo de {$lang->execution->common}";
+$lang->release->notifyList['PT'] = "Miembros del equipo de {$lang->projectCommon}";
 $lang->release->notifyList['CT'] = "Enviar a";
 
 $lang->release->featureBar['browse']['all']       = $lang->release->all;

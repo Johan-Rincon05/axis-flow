@@ -1,7 +1,7 @@
 <?php
 $lang->projectplan = new stdclass();
-$lang->projectplan->common  = "{$lang->projectCommon} Plan";
-$lang->projectplan->browse  = "{$lang->projectCommon} Plan List";
-$lang->projectplan->create  = "Create {$lang->projectCommon} Plan";
-$lang->projectplan->edit    = "Edit {$lang->projectCommon} Plan";
-$lang->projectplan->view    = "View {$lang->projectCommon} Plan";
+$lang->projectplan->common  = "Plan de {$lang->projectCommon}";
+$lang->projectplan->browse  = "Lista de planes de {$lang->projectCommon}";
+$lang->projectplan->create  = "Crear plan de {$lang->projectCommon}";
+$lang->projectplan->edit    = "Editar plan de {$lang->projectCommon}";
+$lang->projectplan->view    = "Ver plan de {$lang->projectCommon}";

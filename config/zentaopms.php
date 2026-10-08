@@ -32,7 +32,7 @@ $config->productCommonList['ru'][0]    = 'продукт';
 $config->productCommonList['ru'][1]    = 'Проект';
 $config->productCommonList['ja'][0]    = '製品';
 $config->productCommonList['ja'][1]    = 'プロジェクト';
-$config->productCommonList['es'][0]    = 'Productos';
+$config->productCommonList['es'][0]    = 'Producto';
 $config->productCommonList['es'][1]    = 'Proyecto';
 $config->productCommonList['pt'][0]    = 'produto';
 $config->productCommonList['pt'][1]    = 'projecto';
@@ -71,7 +71,7 @@ $config->projectCommonList['ja'][1] = '反復';
 $config->projectCommonList['ja'][2] = 'スパート';
 
 $config->projectCommonList['es'][0] = 'Proyecto';
-$config->projectCommonList['es'][1] = 'Iteración';
+$config->projectCommonList['es'][1] = 'Ejecución';
 $config->projectCommonList['es'][2] = 'Sprint';
 
 $config->projectCommonList['pt'][0] = 'Projecto';
@@ -110,7 +110,7 @@ $config->executionCommonList['ja'][0] = '反復';
 $config->executionCommonList['ja'][1] = 'スパート';
 $config->executionCommonList['ja'][2] = 'ステージ';
 
-$config->executionCommonList['es'][0] = 'Iteración';
+$config->executionCommonList['es'][0] = 'Ejecución';
 $config->executionCommonList['es'][1] = 'Sprint';
 $config->executionCommonList['es'][2] = 'Fase';
 
@@ -130,6 +130,9 @@ $config->storyCommonList['zh-tw']['story']       = '軟件需求';
 $config->storyCommonList['en']['epic']        = 'Epic';
 $config->storyCommonList['en']['requirement'] = 'Requirement';
 $config->storyCommonList['en']['story']       = 'Story';
+$config->storyCommonList['es']['epic']        = 'Épica';
+$config->storyCommonList['es']['requirement'] = 'Requerimiento';
+$config->storyCommonList['es']['story']       = 'Historia';
 
 $config->storyCommonList['de']['epic']        = 'Epic';
 $config->storyCommonList['de']['requirement'] = 'Requirement';
@@ -171,7 +174,7 @@ $config->hourPointCommonList['ja'][0] = '工数';
 $config->hourPointCommonList['ja'][1] = 'ストーリーポイント';
 $config->hourPointCommonList['ja'][2] = 'きのうてん';
 
-$config->hourPointCommonList['es'][0] = 'Horas de trabajo';
+$config->hourPointCommonList['es'][0] = 'Horas';
 $config->hourPointCommonList['es'][1] = 'Punto de historia';
 $config->hourPointCommonList['es'][2] = 'Punto de función';
 

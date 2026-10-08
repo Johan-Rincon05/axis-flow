@@ -45,6 +45,35 @@ function scan(string $code): array
         if(!isTranslatable($text)) continue;
         $cand[$i] = [$text, $q];
     }
+    /* Cadenas con comillas dobles e interpolacion: '"' ... '"' */
+    $n = count($tokens);
+    for($i = 0; $i < $n; $i++)
+    {
+        if($tokens[$i] !== '"') continue;
+        $j = $i + 1; $raw = ''; $hasVar = false; $ok = true;
+        while($j < $n && $tokens[$j] !== '"')
+        {
+            $t = $tokens[$j];
+            $str = is_array($t) ? $t[1] : $t;
+            if(is_array($t) && in_array($t[0], [T_VARIABLE, T_CURLY_OPEN, T_DOLLAR_OPEN_CURLY_BRACES])) $hasVar = true;
+            $raw .= $str; $j++;
+        }
+        if($j >= $n) break;
+        $prev = $i > 0 ? $tokens[$i-1] : null;
+        $p = $i - 1; while($p >= 0 && is_array($tokens[$p]) && in_array($tokens[$p][0], [T_WHITESPACE, T_COMMENT, T_DOC_COMMENT])) $p--;
+        $prevS = $p >= 0 ? (is_array($tokens[$p]) ? $tokens[$p][1] : $tokens[$p]) : '';
+        $q = $j + 1; while($q < $n && is_array($tokens[$q]) && in_array($tokens[$q][0], [T_WHITESPACE, T_COMMENT, T_DOC_COMMENT])) $q++;
+        $nextS = $q < $n ? (is_array($tokens[$q]) ? $tokens[$q][1] : $tokens[$q]) : '';
+        $skip = ($nextS === '=>') || ($prevS === '[');
+        $inner = preg_replace('/\\\\"/', '', $raw);
+        if($hasVar && !$skip && strpos(str_replace('\\"', '', $raw), '\\') === false)
+        {
+            $letters = preg_replace('/\{\$[^}]*\}|\$[A-Za-z_][A-Za-z0-9_]*(->[A-Za-z_][A-Za-z0-9_]*)*/', '', $raw);
+            if(isTranslatable($letters) && preg_match_all('/[A-Za-z]{3,}/', strip_tags($letters)) >= 1)
+                $cand[$i] = [$raw, '"i', $j];     // 'i' = interpolada, span hasta $j
+        }
+        $i = $j;
+    }
     return [$tokens, $cand];
 }
 
@@ -76,7 +105,7 @@ if($mode === 'extract')
     foreach(langFiles($repo) as $f)
     {
         [, $cand] = scan(file_get_contents($f));
-        foreach($cand as [$text]) { $unique[$text] = ($unique[$text] ?? 0) + 1; }
+        foreach($cand as $c) { if(($argv[4] ?? '') === 'interp' && $c[1] !== '"i') continue; $unique[$c[0]] = ($unique[$c[0]] ?? 0) + 1; }
         $perFile[str_replace("$repo/", '', $f)] = count($cand);
     }
     ksort($unique);
@@ -94,11 +123,27 @@ if($mode === 'inject')
     {
         $code = file_get_contents($f);
         [$tokens, $cand] = scan($code);
-        $out = '';
+        $out = ''; $skipUntil = -1;
         foreach($tokens as $i => $t)
         {
+            if($i <= $skipUntil) continue;
             $str = is_array($t) ? $t[1] : $t;
-            if(isset($cand[$i]))
+            if(isset($cand[$i]) && $cand[$i][1] === '"i')
+            {
+                [$text, , $end] = $cand[$i];
+                $es = $tr[$text] ?? null;
+                $okEs = $es !== null && $es !== '' && $es !== $text && placeholders($text) === placeholders($es);
+                if($okEs && preg_match('/(?<!\\\\)"/', $es) === 0)
+                {
+                    $str = '"' . $es . '"'; $skipUntil = $end; $report['translated']++;
+                }
+                else
+                {
+                    if($es !== null && $es !== $text) $report['placeholder_mismatch'][$text] = $es;
+                    $report['kept']++;
+                }
+            }
+            elseif(isset($cand[$i]))
             {
                 [$text, $q] = $cand[$i];
                 $es = $tr[$text] ?? null;

@@ -128,7 +128,7 @@ $lang->upgrade->project         = 'Iteración';
 $lang->upgrade->repo            = 'Repositorio';
 $lang->upgrade->mergeRepo       = 'Combinar repositorio';
 $lang->upgrade->setProgram      = 'Asignar proyecto a programa';
-$lang->upgrade->setProject      = "Assign {$lang->executionCommon} to Project";
+$lang->upgrade->setProject      = "Asignar {$lang->executionCommon} al proyecto";
 $lang->upgrade->dataMethod      = 'Método de migración de datos';
 $lang->upgrade->selectMergeMode = 'Seleccione un método de combinación de datos';
 $lang->upgrade->mergeMode       = 'Método de fusión de datos:';
@@ -155,9 +155,9 @@ $lang->upgrade->upgradeDocTemplatesTip = 'Actualizando datos históricos de plan
 
 $lang->upgrade->weeklyReportTitle        = 'Semana % s (% s ~% s)';
 $lang->upgrade->milestoneTitle           = 'Informe de hitos';
-$lang->upgrade->upgradeProjectReports    = "Upgrade {$lang->projectCommon} Report Data";
-$lang->upgrade->upgradingProjectReports  = "Upgrading {$lang->projectCommon} report data, please wait...";
-$lang->upgrade->upgradeProjectReportsTip = "Found %s {$lang->projectCommon} report-related items to upgrade";
+$lang->upgrade->upgradeProjectReports    = "Actualizar datos de informes de {$lang->projectCommon}";
+$lang->upgrade->upgradingProjectReports  = "Actualizando datos de informes de {$lang->projectCommon}, espere...";
+$lang->upgrade->upgradeProjectReportsTip = "Se encontraron %s elementos relacionados con informes de {$lang->projectCommon} por actualizar";
 
 $lang->upgrade->newProgram        = 'Crear';
 $lang->upgrade->editedName        = 'Renombrado a';
@@ -165,7 +165,7 @@ $lang->upgrade->projectEmpty      = 'El proyecto no puede estar vacío.';
 $lang->upgrade->mergeSummary      = "Estimado usuario, hay %s elementos en su sistema pendientes de migrar.";
 $lang->upgrade->productCount      = "%s {$lang->productCommon}";
 $lang->upgrade->projectCount      = "%s {$lang->projectCommon}";
-$lang->upgrade->mergeByProject    = "There are 2 data migration methods available. If your historical {$lang->projectCommon} are long-term, we recommend upgrading them as Projects.</br>If they are short-term, we recommend upgrading them as {$lang->executionCommon}.";
+$lang->upgrade->mergeByProject    = "Hay 2 métodos de migración de datos disponibles. Si sus {$lang->projectCommon} históricos son de largo plazo, se recomienda actualizarlos como Proyectos.</br>Si son de corto plazo, se recomienda actualizarlos como {$lang->executionCommon}.";
 $lang->upgrade->mergeRepoTips     = "Combine los repositorios seleccionados en el producto seleccionado.";
 $lang->upgrade->needBuild4Add     = 'Esta actualización requiere nuevos índices. Vaya a [Administración -> Sistema -> Reconstruir índice] para volver a crearlos.';
 $lang->upgrade->needChangeEngine  = 'Algunas tablas aún no se han convertido al motor InnoDB. Continúe en [Admin -> Sistema -> Procesamiento de datos -> Motor de tablas].';
@@ -175,15 +175,15 @@ $lang->upgrade->duplicateProject  = "Los nombres de proyecto deben ser únicos d
 $lang->upgrade->upgradeTips       = "Los datos históricos eliminados no se migrarán y no podrán restaurarse después de la actualización.";
 $lang->upgrade->moveEXTFileFail   = 'La migración de archivos falló. Ejecute el comando anterior y actualice.';
 $lang->upgrade->deleteDirTip      = 'Las siguientes carpetas interferirán con las funciones del sistema después de la actualización. Elimínelas.';
-$lang->upgrade->errorNoProduct    = "Please select the {$lang->productCommon} to be merged.";
-$lang->upgrade->errorNoExecution  = "Please select the {$lang->projectCommon} to be merged.";
+$lang->upgrade->errorNoProduct    = "Seleccione {$lang->productCommon} que se fusionará.";
+$lang->upgrade->errorNoExecution  = "Seleccione {$lang->projectCommon} que se fusionará.";
 $lang->upgrade->moveExtFileTip    = <<<EOT
 <p>The new version will apply extension compatibility to historical customizations and plugins. To ensure these functions remain active, the related files must be migrated to extension/custom; otherwise, they will no longer work.</p>
 <p>Please confirm if your system has any customizations or plugins. If not, you can uncheck the files below. If you are unsure, we recommend keeping them checked to avoid any issues.</p>
 EOT;
 
-$lang->upgrade->projectType['project']   = "Upgrade historical {$lang->projectCommon} as Projects";
-$lang->upgrade->projectType['execution'] = "Upgrade historical {$lang->projectCommon} as {$lang->executionCommon}";
+$lang->upgrade->projectType['project']   = "Actualizar {$lang->projectCommon} históricos como Proyectos";
+$lang->upgrade->projectType['execution'] = "Actualizar {$lang->projectCommon} históricos como {$lang->executionCommon}";
 
 $lang->upgrade->createProjectTip = <<<EOT
 <p>After the upgrade, each historical {$lang->projectCommon} will map directly to a new Project.</p>
@@ -196,13 +196,13 @@ $lang->upgrade->createExecutionTip = <<<EOT
 EOT;
 
 $lang->upgrade->mergeModes = array();
-$lang->upgrade->mergeModes['project']   = "Auto-merge data: Upgrade historical {$lang->projectCommon} as Projects";
-$lang->upgrade->mergeModes['execution'] = "Auto-merge data: Upgrade historical {$lang->projectCommon} as {$lang->executionCommon}";
+$lang->upgrade->mergeModes['project']   = "Fusión automática de datos: actualizar {$lang->projectCommon} históricos como Proyectos";
+$lang->upgrade->mergeModes['execution'] = "Fusión automática de datos: actualizar {$lang->projectCommon} históricos como {$lang->executionCommon}";
 $lang->upgrade->mergeModes['manually']  = 'Combinar datos manualmente';
 
-$lang->upgrade->mergeProjectTip   = "Historical {$lang->projectCommon} will be synchronized directly to the new Projects. Meanwhile, the system will create an {$lang->executionCommon} with the same name for each, and migrate all tasks, stories, bugs, and other data into the corresponding {$lang->executionCommon}.";
-$lang->upgrade->mergeExecutionTip = "The system will automatically create Projects by year and merge historical {$lang->projectCommon} data into the corresponding Projects.";
-$lang->upgrade->createProgramTip  = "Meanwhile, a default Program will be created to contain all {$lang->projectCommon}.";
+$lang->upgrade->mergeProjectTip   = "Los {$lang->projectCommon} históricos se sincronizarán directamente con los nuevos Proyectos. Además, el sistema creará una {$lang->executionCommon} con el mismo nombre para cada uno y migrará todas las tareas, historias, Bugs y otros datos a la {$lang->executionCommon} correspondiente.";
+$lang->upgrade->mergeExecutionTip = "El sistema creará automáticamente Proyectos por año y fusionará los datos históricos de {$lang->projectCommon} en los Proyectos correspondientes.";
+$lang->upgrade->createProgramTip  = "Mientras tanto, se creará un programa predeterminado que contendrá todos los elementos de {$lang->projectCommon}.";
 $lang->upgrade->mergeManuallyTip  = 'Puede seleccionar manualmente el método de fusión de datos.';
 
 $lang->upgrade->defaultGroup = 'Grupo predeterminado';

@@ -128,7 +128,7 @@ $lang->pipeline->frameList['sonarqube'] = 'SonarQube';
 $lang->pipeline->paramValueList['']                 = '';
 $lang->pipeline->paramValueList['$zentao_version']  = 'Versión actual';
 $lang->pipeline->paramValueList['$zentao_account']  = 'Usuario actual';
-$lang->pipeline->paramValueList['$zentao_product']  = "Current {$lang->productCommon} ID";
+$lang->pipeline->paramValueList['$zentao_product']  = "ID de {$lang->productCommon} actual";
 $lang->pipeline->paramValueList['$zentao_repopath'] = 'Ruta de la biblioteca de la versión actual';
 
 $lang->pipeline->engineList = array();

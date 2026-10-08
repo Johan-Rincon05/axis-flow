@@ -61,7 +61,7 @@ $lang->task->confirmRecord         = '"Horas restantes" es 0. ¿Desea establecer
 $lang->task->confirmTransfer       = '"Horas restantes" es 0. ¿Desea transferir la tarea?';
 $lang->task->noTask                = 'Aún no hay tareas. ';
 $lang->task->kanbanDenied          = 'Cree primero un Kanban';
-$lang->task->createDenied          = "Create Task is denied in this {$lang->projectCommon}";
+$lang->task->createDenied          = "Crear tarea está denegado en {$lang->projectCommon}";
 $lang->task->cannotDeleteParent    = 'No se puede eliminar la tarea padre';
 $lang->task->addChildTask          = 'Como la tarea tiene horas consumidas, ZenTao creará una tarea hija con el mismo nombre para registrar las horas consumidas y garantizar la consistencia de los datos.';
 

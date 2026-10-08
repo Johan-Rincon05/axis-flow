@@ -164,7 +164,7 @@ $lang->install->errorNotSaveConfig = 'El archivo de configuración no está guar
 $lang->install->errorNotInitConfig = 'El archivo de configuración no ha sido creado.';
 
 global $app;
-$lang->install->CSRFNotice = "CSRF defense has been enabled in the system. If you don't need it, contact the administrator to disable it manually in the {$app->basePath}config/config.php file.";
+$lang->install->CSRFNotice = "La defensa CSRF está habilitada en el sistema. Si no la necesita, comuníquese con el administrador para deshabilitarla manualmente en el archivo {$app->basePath}config/config.php.";
 
 $lang->install->getPriv  = 'Establecer administrador';
 $lang->install->company  = 'Nombre de la empresa';
@@ -174,9 +174,9 @@ $lang->install->password = 'Contraseña de administrador';
 $lang->install->placeholder = new stdclass();
 $lang->install->placeholder->password = 'La contraseña debe tener ≥ 6 caracteres, con una combinación de letras mayúsculas, minúsculas y números.';
 
-$lang->install->errorEmpty['company']  = "{$lang->install->company} should not be blank.";
-$lang->install->errorEmpty['account']  = "{$lang->install->account} should not be blank.";
-$lang->install->errorEmpty['password'] = "{$lang->install->password} should not be blank.";
+$lang->install->errorEmpty['company']  = "{$lang->install->company} no debe estar vacío.";
+$lang->install->errorEmpty['account']  = "{$lang->install->account} no debe estar vacío.";
+$lang->install->errorEmpty['password'] = "{$lang->install->password} no debe estar vacío.";
 
 $lang->install->langList['1'] = array('module' => 'process', 'key' => 'support', 'value' => 'Proceso de soporte');
 $lang->install->langList['2'] = array('module' => 'process', 'key' => 'engineering', 'value' =>  'Proceso de ingeniería');

@@ -1,10 +1,10 @@
 <?php
 $lang->project->leftStories     = 'Objetivo restante';
 $lang->project->doingExecutions = 'Kanban en curso';
-$lang->project->select          = "Select {$lang->project->common}";
-$lang->project->noProject       = "No {$lang->project->common} yet. ";
+$lang->project->select          = "Seleccionar {$lang->project->common}";
+$lang->project->noProject       = "Aún no hay {$lang->project->common}. ";
 
-$lang->project->aclList['private'] = "Private (Accessible to {$lang->projectCommon} leaders and team members)";
+$lang->project->aclList['private'] = "Privado (accesible para los líderes de {$lang->projectCommon} y los miembros del equipo)";
 
 $lang->project->storyPoints    = 'Tamaño objetivo';
 $lang->project->storyCount     = 'Cantidad objetivo';

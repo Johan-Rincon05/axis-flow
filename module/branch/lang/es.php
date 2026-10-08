@@ -51,7 +51,7 @@ $lang->branch->targetBranchTips  = 'Puede fusionarlo en un @branch@ existente, e
 $lang->branch->confirmMerge      = 'Los datos de mergedBranch se fusionarán en targetBranch. ¿Está seguro de continuar? Esta acción no se puede deshacer.';
 
 $lang->branch->noData     = 'Aún no hay ramas.';
-$lang->branch->mainBranch = "{$lang->productCommon} default trunk: %s.";
+$lang->branch->mainBranch = "Troncal predeterminado de {$lang->productCommon}: %s.";
 
 $lang->branch->statusList = array();
 $lang->branch->statusList['active'] = 'Activar';

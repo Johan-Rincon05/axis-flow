@@ -65,7 +65,7 @@ $lang->program->kanbanAction            = 'Kanban';
 $lang->program->view                    = 'Detalle del programa';
 $lang->program->copy                    = 'Copiar programa';
 $lang->program->product                 = "{$lang->productCommon}s";
-$lang->program->project                 = "Program {$lang->projectCommon} List";
+$lang->program->project                 = "Lista de {$lang->projectCommon} del programa";
 $lang->program->all                     = 'Todos los programas';
 $lang->program->start                   = 'Iniciar';
 $lang->program->finish                  = 'Finalizar';
@@ -83,12 +83,12 @@ $lang->program->updateOrder             = 'Posición';
 $lang->program->unbindWhitelist         = 'Desvincular lista blanca';
 $lang->program->importStakeholder       = 'Importar desde programa';
 $lang->program->manageMembers           = 'Equipo del programa';
-$lang->program->confirmChangePRJUint    = "Synchronize the budget unit of the subprograms and the {$lang->projectCommon}s of the program? If yes, please the current exchange rate.";
+$lang->program->confirmChangePRJUint    = "¿Sincronizar la unidad de presupuesto de los subprogramas y de {$lang->projectCommon} del programa? Si es así, indique el tipo de cambio actual.";
 $lang->program->exRateNotNegative       = 'La 『tasa de cambio』 no debe ser negativa.';
 $lang->program->changePRJUnit           = 'Actualizar la unidad de presupuesto del ' . $lang->projectCommon;
-$lang->program->showNotCurrentProjects  = "Display {$lang->projectCommon} information of non current program";
+$lang->program->showNotCurrentProjects  = "Mostrar información de {$lang->projectCommon} de programas distintos del actual";
 
-$lang->program->progress         = "{$lang->projectCommon}Progress";
+$lang->program->progress         = "Progreso de {$lang->projectCommon}";
 $lang->program->progressAB       = 'Progreso';
 $lang->program->children         = 'Agregar un programa';
 $lang->program->allInvest        = 'Entrada';
@@ -105,19 +105,19 @@ $lang->program->stakeholderTypeList['outside'] = 'Exterior';
 
 $lang->program->noProgram          = 'Sin programa.';
 $lang->program->showClosed         = 'Cerrado';
-$lang->program->tips               = "If a parent program is selected, the {$lang->productCommon}s under the parent program can be associated. If no program is selected for the {$lang->projectCommon}, a {$lang->productCommon} with the same name as the {$lang->projectCommon} is created and associated with the {$lang->projectCommon} by default.";
+$lang->program->tips               = "Si se selecciona un programa padre, se pueden asociar los elementos de {$lang->productCommon} de ese programa. Si no se selecciona programa para {$lang->projectCommon}, se crea de forma predeterminada un elemento de {$lang->productCommon} con el mismo nombre que {$lang->projectCommon} y se asocia con {$lang->projectCommon}.";
 $lang->program->confirmBatchUnlink = "¿Desea desvincular de forma masiva a estos interesados?";
 
 $lang->program->beginLessThanParent  = 'La fecha de inicio del programa es anterior a la fecha de inicio del programa padre:';
 $lang->program->endGreatThanParent   = 'La fecha de finalización del programa es posterior a la fecha de finalización del programa padre:';
 $lang->program->dateExceedParent     = 'Las fechas de inicio y fin del programa son posteriores a las fechas de inicio y fin del programa padre:';
-$lang->program->beginGreatEqualChild = "The start date of the program is greater than the minimum start date of the subprogram or {$lang->projectCommon}:";
-$lang->program->endLessThanChild     = "The finish date of the program is less than the maximum finish date of the subprogram or {$lang->projectCommon}:";
+$lang->program->beginGreatEqualChild = "La fecha de inicio del programa es posterior a la fecha de inicio mínima del subprograma o de {$lang->projectCommon}:";
+$lang->program->endLessThanChild     = "La fecha de finalización del programa es anterior a la fecha de finalización máxima del subprograma o de {$lang->projectCommon}:";
 
-$lang->program->dateExceedChild    = "The start and finish date of the program no longer include the date scope of the subprogram or {$lang->projectCommon}:";
-$lang->program->closeErrorMessage  = "There are subprograms or {$lang->projectCommon}s that are not closed";
-$lang->program->hasChildren        = "The program has a child program or the {$lang->projectCommon} exists and can not be deleted.";
-$lang->program->hasProduct         = "The program has {$lang->productCommon}s exist and can not be deleted.";
+$lang->program->dateExceedChild    = "Las fechas de inicio y fin del programa ya no incluyen el rango de fechas del subprograma o de {$lang->projectCommon}:";
+$lang->program->closeErrorMessage  = "Hay subprogramas o elementos de {$lang->projectCommon} que no están cerrados";
+$lang->program->hasChildren        = "El programa tiene un programa hijo o existe {$lang->projectCommon}, por lo que no se puede eliminar.";
+$lang->program->hasProduct         = "El programa tiene {$lang->productCommon} existente, por lo que no se puede eliminar.";
 $lang->program->confirmDelete      = '¿Desea eliminar el programa \\"%s\\"?';
 $lang->program->confirmUnlink      = '¿Desea quitar al interesado?';
 $lang->program->readjustTime       = 'Cambiar la fecha de inicio y fin del programa.';
@@ -204,10 +204,10 @@ $lang->program->kanban->common             = 'Kanban de programas';
 $lang->program->kanban->typeList['my']     = 'Mis programas';
 $lang->program->kanban->typeList['others'] = 'Otros';
 
-$lang->program->kanban->openProducts    = "Open {$lang->productCommon}s";
+$lang->program->kanban->openProducts    = "Abiertos: {$lang->productCommon}";
 $lang->program->kanban->unexpiredPlans  = 'Planes sin vencer';
-$lang->program->kanban->waitingProjects = "Waiting {$lang->projectCommon}s";
-$lang->program->kanban->doingProjects   = "Ongoing {$lang->projectCommon}s";
+$lang->program->kanban->waitingProjects = "En espera: {$lang->projectCommon}";
+$lang->program->kanban->doingProjects   = "En curso: {$lang->projectCommon}";
 $lang->program->kanban->doingExecutions = 'Ejecuciones en curso';
 $lang->program->kanban->normalReleases  = 'Lanzamientos normales';
 

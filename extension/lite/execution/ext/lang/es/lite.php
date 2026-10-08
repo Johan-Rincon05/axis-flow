@@ -8,7 +8,7 @@ $lang->execution->createKanban    = 'Crear Kanban';
 $lang->execution->noExecution     = "Sin Kanban.";
 $lang->execution->importTask      = 'Importar tarea';
 $lang->execution->batchCreateTask = 'Crear tarea por lote';
-$lang->execution->linkStory       = "Link {$lang->SRCommon}";
+$lang->execution->linkStory       = "Vincular {$lang->SRCommon}";
 $lang->execution->closedExecution = 'Kanban cerrado';
 
 $lang->execution->kanbanGroup['default']    = 'Predeterminado';
@@ -24,9 +24,9 @@ $lang->execution->icons['gantt']     = 'lane';
 $lang->execution->icons['tree']      = 'treemap';
 $lang->execution->icons['grouptask'] = 'sitemap';
 
-$lang->execution->aclList['private'] = "Private (Accessible to team members and {$lang->projectCommon} leaders)";
+$lang->execution->aclList['private'] = "Privado (accesible para los miembros del equipo y los líderes de {$lang->projectCommon})";
 
-$lang->execution->common = "{$lang->projectCommon} Execution";
+$lang->execution->common = "Ejecución de {$lang->projectCommon}";
 
 $lang->execution->gantt->browseType['module'] = 'Agrupar por categoría';
 

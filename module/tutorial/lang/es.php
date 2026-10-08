@@ -60,38 +60,38 @@ $lang->tutorial->tasks->createProgram->desc           = "<p>Crear un nuevo progr
 $lang->tutorial->tasks->createProduct = new stdClass();
 $lang->tutorial->tasks->createProduct->title          = 'Crear producto';
 $lang->tutorial->tasks->createProduct->targetPageName = 'Agregar producto';
-$lang->tutorial->tasks->createProduct->desc           = "<p>Create a new{$lang->productCommon}：</p><ul><li data-target='nav'>Open <span class='task-nav'>{$lang->productCommon} <i class='icon icon-angle-right'></i> {$lang->productCommon}Product list <i class='icon icon-angle-right'></i> Create {$lang->productCommon}</span>;</li><li data-target='form'>在添加{$lang->productCommon}Fill the form with {$lang->productCommon}information；</li><li data-target='submit'>Save</li></ul>";
+$lang->tutorial->tasks->createProduct->desc           = "<p>Crear nuevo: {$lang->productCommon}</p><ul><li data-target='nav'>Abrir <span class='task-nav'>{$lang->productCommon} <i class='icon icon-angle-right'></i> Lista de {$lang->productCommon} <i class='icon icon-angle-right'></i> Crear {$lang->productCommon}</span>;</li><li data-target='form'>Complete el formulario de {$lang->productCommon} con la información de {$lang->productCommon};</li><li data-target='submit'>Guardar</li></ul>";
 
 $lang->tutorial->tasks->createStory = new stdClass();
-$lang->tutorial->tasks->createStory->title          = "Create{$lang->SRCommon}";
-$lang->tutorial->tasks->createStory->targetPageName = "Create{$lang->SRCommon}";
-$lang->tutorial->tasks->createStory->desc           = "<p>Create a new{$lang->SRCommon}：</p><ul><li data-target='nav'>Go to <span class='task-nav'>{$lang->productCommon} <i class='icon icon-angle-right'></i> {$lang->SRCommon} <i class='icon icon-angle-right'></i> Create{$lang->SRCommon}</span>;</li><li data-target='form'>Fill in the {$lang->SRCommon} information in the {$lang->productCommon} form;</li><li data-target='submit'>Save{$lang->SRCommon}information.</li></ul>";
+$lang->tutorial->tasks->createStory->title          = "Crear {$lang->SRCommon}";
+$lang->tutorial->tasks->createStory->targetPageName = "Crear {$lang->SRCommon}";
+$lang->tutorial->tasks->createStory->desc           = "<p>Crear nuevo: {$lang->SRCommon}</p><ul><li data-target='nav'>Ir a <span class='task-nav'>{$lang->productCommon} <i class='icon icon-angle-right'></i> {$lang->SRCommon} <i class='icon icon-angle-right'></i> Crear {$lang->SRCommon}</span>;</li><li data-target='form'>Complete la información de {$lang->SRCommon} en el formulario de {$lang->productCommon};</li><li data-target='submit'>Guarde la información de {$lang->SRCommon}.</li></ul>";
 
 $lang->tutorial->tasks->createProject = new stdClass();
 $lang->tutorial->tasks->createProject->title          = 'Crear proyecto';
 $lang->tutorial->tasks->createProject->targetPageName = 'Agregar proyecto';
-$lang->tutorial->tasks->createProject->desc           = "<p>Create a new{$lang->projectCommon}: </p><ul><li data-target='nav'>Open <span class='task-nav'> {$lang->projectCommon} <i class='icon icon-angle-right'></i> {$lang->projectCommon}List <i class='icon icon-angle-right'></i> Create{$lang->projectCommon}</span>;</li><li data-target='form'>Fill in the required {$lang->projectCommon} information in the {$lang->projectCommon} form;</li><li data-target='submit'>Save{$lang->projectCommon}information.</li></ul>";
+$lang->tutorial->tasks->createProject->desc           = "<p>Crear nuevo: {$lang->projectCommon}</p><ul><li data-target='nav'>Abrir <span class='task-nav'> {$lang->projectCommon} <i class='icon icon-angle-right'></i> Lista de {$lang->projectCommon} <i class='icon icon-angle-right'></i> Crear {$lang->projectCommon}</span>;</li><li data-target='form'>Complete la información requerida de {$lang->projectCommon} en el formulario de {$lang->projectCommon};</li><li data-target='submit'>Guarde la información de {$lang->projectCommon}.</li></ul>";
 
 $lang->tutorial->tasks->manageTeam = new stdClass();
-$lang->tutorial->tasks->manageTeam->title          = "Manage {$lang->projectCommon} Team";
+$lang->tutorial->tasks->manageTeam->title          = "Gestionar equipo de {$lang->projectCommon}";
 $lang->tutorial->tasks->manageTeam->targetPageName = "Gestión del equipo";
-$lang->tutorial->tasks->manageTeam->desc           = "<p>To manage {$lang->projectCommon} team members:</p><ul><li data-target='nav'>Go to the <span class='task-nav'>{$lang->projectCommon} <i class='icon icon-angle-right'></i> Settings <i class='icon icon-angle-right'></i> Team <i class='icon icon-angle-right'></i> Team Management</span> page;</li><li data-target='form'>Select the members you want to add to the {$lang->projectCommon} team;</li><li data-target='submit'>Save the team member information.</li></ul>";
+$lang->tutorial->tasks->manageTeam->desc           = "<p>Para gestionar los miembros del equipo de {$lang->projectCommon}:</p><ul><li data-target='nav'>Ir a la página <span class='task-nav'>{$lang->projectCommon} <i class='icon icon-angle-right'></i> Configuración <i class='icon icon-angle-right'></i> Equipo <i class='icon icon-angle-right'></i> Gestión del equipo</span>;</li><li data-target='form'>Seleccione los miembros que desea agregar al equipo de {$lang->projectCommon};</li><li data-target='submit'>Guarde la información de los miembros del equipo.</li></ul>";
 
 $lang->tutorial->tasks->createProjectExecution = new stdClass();
 $lang->tutorial->tasks->createProjectExecution->title          = "Crear ejecución";
-$lang->tutorial->tasks->createProjectExecution->targetPageName = "Add {$lang->executionCommon}";
-$lang->tutorial->tasks->createProjectExecution->desc           = "<p>To create a new {$lang->executionCommon} in the system:</p><ul><li data-target='nav'>Go to the <span class='task-nav'>{$lang->projectCommon} <i class='icon icon-angle-right'></i> {$lang->executionCommon} <i class='icon icon-angle-right'></i> Create {$lang->executionCommon}</span>;</li><li data-target='form'>Fill in the required information in the {$lang->executionCommon} form;</li><li data-target='submit'>Save the {$lang->executionCommon} information.</li></ul>";
+$lang->tutorial->tasks->createProjectExecution->targetPageName = "Agregar {$lang->executionCommon}";
+$lang->tutorial->tasks->createProjectExecution->desc           = "<p>Para crear una nueva {$lang->executionCommon} en el sistema:</p><ul><li data-target='nav'>Ir a <span class='task-nav'>{$lang->projectCommon} <i class='icon icon-angle-right'></i> {$lang->executionCommon} <i class='icon icon-angle-right'></i> Crear {$lang->executionCommon}</span>;</li><li data-target='form'>Complete la información requerida en el formulario de {$lang->executionCommon};</li><li data-target='submit'>Guarde la información de {$lang->executionCommon}.</li></ul>";
 
 $lang->tutorial->tasks->linkStory = new stdClass();
-$lang->tutorial->tasks->linkStory->title          = "Link {$lang->SRCommon}";
-$lang->tutorial->tasks->linkStory->targetPageName = "Link {$lang->SRCommon}";
-$lang->tutorial->tasks->linkStory->desc           = "<p>To link {$lang->SRCommon} to an execution:</p>
-<ul><li data-target='nav'>Go to the <span class='task-nav'>Execution <i class='icon icon-angle-right'></i> {$lang->SRCommon} <i class='icon icon-angle-right'></i> Link {$lang->SRCommon}</span> page;</li><li data-target='form'>Select the {$lang->SRCommon} you want to link from the list;</li><li data-target='submit'>Save the linked {$lang->SRCommon} information.</li></ul>";
+$lang->tutorial->tasks->linkStory->title          = "Vincular {$lang->SRCommon}";
+$lang->tutorial->tasks->linkStory->targetPageName = "Vincular {$lang->SRCommon}";
+$lang->tutorial->tasks->linkStory->desc           = "<p>Para vincular {$lang->SRCommon} a una ejecución:</p>
+<ul><li data-target='nav'>Ir a la página <span class='task-nav'>Ejecución <i class='icon icon-angle-right'></i> {$lang->SRCommon} <i class='icon icon-angle-right'></i> Vincular {$lang->SRCommon}</span>;</li><li data-target='form'>Seleccione de la lista el elemento de {$lang->SRCommon} que desea vincular;</li><li data-target='submit'>Guarde la información vinculada de {$lang->SRCommon}.</li></ul>";
 
 $lang->tutorial->tasks->createTask = new stdClass();
 $lang->tutorial->tasks->createTask->title          = "Desglose de tareas";
 $lang->tutorial->tasks->createTask->targetPageName = "Crear tarea";
-$lang->tutorial->tasks->createTask->desc           = "<p>To break down execution {$lang->SRCommon} into tasks:</p><ul><li data-target='nav'>Go to the <span class='task-nav'>Execution <i class='icon icon-angle-right'></i> {$lang->SRCommon} <i class='icon icon-angle-right'></i> WBS</span> page;</li><li data-target='form'>Fill in the task information in the form;</li><li data-target='submit'>Save the task information.</li></ul>";
+$lang->tutorial->tasks->createTask->desc           = "<p>Para desglosar {$lang->SRCommon} de la ejecución en tareas:</p><ul><li data-target='nav'>Ir a la página <span class='task-nav'>Ejecución <i class='icon icon-angle-right'></i> {$lang->SRCommon} <i class='icon icon-angle-right'></i> EDT</span>;</li><li data-target='form'>Complete la información de la tarea en el formulario;</li><li data-target='submit'>Guarde la información de la tarea.</li></ul>";
 
 $lang->tutorial->tasks->createBug = new stdClass();
 $lang->tutorial->tasks->createBug->title          = "Reportar bug";
@@ -264,7 +264,7 @@ $lang->tutorial->starter->createProjectExecution->step6->name = 'Guardar el form
 $lang->tutorial->starter->createProjectExecution->step6->desc = 'Después de guardar, podrá gestionar el equipo, vincular historias, crear tareas o volver a las listas de tareas y ejecuciones.';
 
 $lang->tutorial->starter->linkStory = new stdClass();
-$lang->tutorial->starter->linkStory->title = "Link {$lang->SRCommon}";
+$lang->tutorial->starter->linkStory->title = "Vincular {$lang->SRCommon}";
 
 $lang->tutorial->starter->linkStory->step1 = new stdClass();
 $lang->tutorial->starter->linkStory->step1->name = 'Clic en Iteración';

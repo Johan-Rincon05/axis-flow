@@ -142,7 +142,7 @@ $lang->todo->noTodo         = 'No hay pendientes disponibles para este tipo.';
 $lang->todo->noAssignedTo   = 'El responsable no puede estar vacío.';
 $lang->todo->unfinishedTodo = 'El pendiente D%s no está completado y no se puede cerrar.';
 $lang->todo->today          = 'Pendiente de hoy';
-$lang->todo->selectProduct  = "Please select a {$lang->productCommon}.";
+$lang->todo->selectProduct  = "Seleccione {$lang->productCommon}.";
 $lang->todo->privateTip     = 'Solo los pendientes que creé y me asigné a mí mismo pueden marcarse como privados. Una vez privados, solo yo puedo verlos.';
 
 $lang->todo->periods['all']             = 'Asignado a mí';

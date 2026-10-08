@@ -84,11 +84,11 @@ $lang->testreport->legacyBugTip    = "Bugs activos o Bugs que no se resolvieron 
 $lang->testreport->activatedBugTip = "Bugs reactivados durante la tarea de prueba.";
 $lang->testreport->fromCaseBugTip  = "Bugs encontrados al ejecutar casos durante el período de pruebas.";
 $lang->testreport->errorTrunk      = "No se puede crear un informe de pruebas para trunk. ¡Modifique el Build vinculado!";
-$lang->testreport->noTestTask      = "No test requests for this {$lang->productCommon}, so no reports can be generated. Please go to {$lang->productCommon} which has test requests and then generate the report.";
-$lang->testreport->noObjectID      = "No test request or {$lang->executionCommon} is selected, so no report can be generated.";
-$lang->testreport->moreProduct     = "Testing reports can only be generated for the same {$lang->productCommon}.";
+$lang->testreport->noTestTask      = "No hay solicitudes de prueba para {$lang->productCommon}, por lo que no se pueden generar reportes. Vaya a un elemento de {$lang->productCommon} que tenga solicitudes de prueba y genere allí el reporte.";
+$lang->testreport->noObjectID      = "No se seleccionó ninguna solicitud de prueba ni {$lang->executionCommon}, por lo que no se puede generar ningún reporte.";
+$lang->testreport->moreProduct     = "Los reportes de pruebas solo se pueden generar para un mismo {$lang->productCommon}.";
 $lang->testreport->hiddenCase      = "Ocultar %s casos de uso";
-$lang->testreport->goalTip         = "Descriptive information about the {$lang->execution->common} of this build";
+$lang->testreport->goalTip         = "Información descriptiva de {$lang->execution->common} de este Build";
 $lang->testreport->runDateTips     = "Algunos registros de ejecución de casos exceden el rango de tiempo (último momento: %s), no se incluyen en el informe de pruebas";
 $lang->testreport->ignore          = "Ignorar";
 

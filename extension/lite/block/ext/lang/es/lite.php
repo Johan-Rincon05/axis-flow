@@ -24,13 +24,13 @@ $lang->block->projectstatistic->story = 'Objetivo';
 $lang->block->default['full']['my'][] = array('title' => 'Lista de Kanban', 'module' => 'execution', 'code' => 'scrumlist', 'width' => '2', 'height' => '6', 'left' => '0', 'top' => '45', 'params' => array('type' => 'doing', 'orderBy' => 'id_desc', 'count' => '15'));
 
 $lang->block->modules['kanban'] = new stdclass();
-$lang->block->modules['kanban']->availableBlocks['scrumoverview']  = "{$lang->projectCommon} Overview";
+$lang->block->modules['kanban']->availableBlocks['scrumoverview']  = "Resumen de {$lang->projectCommon}";
 $lang->block->modules['kanban']->availableBlocks['scrumlist']      = $lang->executionCommon . ' Lista';
 $lang->block->modules['kanban']->availableBlocks['sprint']         = $lang->executionCommon . ' Resumen general';
 $lang->block->modules['kanban']->availableBlocks['projectdynamic'] = 'Dinámicas';
 
 $lang->block->modules['project'] = new stdclass();
-$lang->block->modules['project']->availableBlocks['project'] = "{$lang->projectCommon} List";
+$lang->block->modules['project']->availableBlocks['project'] = "Lista de {$lang->projectCommon}";
 
 $lang->block->modules['execution'] = new stdclass();
 $lang->block->modules['execution']->availableBlocks['statistic'] = $lang->execution->common . ' Estadísticas';

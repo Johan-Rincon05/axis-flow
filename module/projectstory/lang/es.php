@@ -10,7 +10,7 @@ $lang->projectstory->storyCommon = $lang->projectCommon . ' Historia';
 $lang->projectstory->storyList   = $lang->projectCommon . ' Lista de historias';
 $lang->projectstory->storyView   = $lang->projectCommon . ' Detalles de la historia';
 
-$lang->projectstory->common            = "{$lang->projectCommon} Story";
+$lang->projectstory->common            = "Historia de {$lang->projectCommon}";
 $lang->projectstory->index             = "Inicio de historias";
 $lang->projectstory->view              = "Detalles de la historia";
 $lang->projectstory->story             = "Lista de historias";
@@ -35,8 +35,8 @@ $lang->projectstory->trackAction       = 'Matriz de trazabilidad';
 $lang->projectstory->confirm           = 'Confirmar';
 
 /* Notice. */
-$lang->projectstory->whyNoStories   = "No story can be linked. Please check whether there is any story in {$lang->projectCommon} which is linked to {$lang->productCommon} and make sure it has been reviewed.";
-$lang->projectstory->batchUnlinkTip = "All other stories have been removed. The following ones are linked to executions under this {$lang->projectCommon}. Remove them before proceeding.";
+$lang->projectstory->whyNoStories   = "No hay historias para vincular. Verifique si en {$lang->projectCommon} hay alguna historia vinculada a {$lang->productCommon} y asegúrese de que haya sido revisada.";
+$lang->projectstory->batchUnlinkTip = "Se quitaron todas las demás historias. Las siguientes están vinculadas a ejecuciones de {$lang->projectCommon}. Quítelas antes de continuar.";
 
 $lang->projectstory->featureBar['story']['allstory']  = 'Todos';
 $lang->projectstory->featureBar['story']['unclosed']  = 'Abierto';

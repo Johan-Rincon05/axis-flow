@@ -27,7 +27,7 @@ $lang->custom->region               = 'Rango';
 $lang->custom->tips                 = 'Prompt: ';
 $lang->custom->setTips              = 'Establecer texto del prompt';
 $lang->custom->isRange              = 'Dentro del rango objetivo';
-$lang->custom->concept              = "{$lang->projectCommon} Concept";
+$lang->custom->concept              = "Concepto de {$lang->projectCommon}";
 $lang->custom->URStory              = "Funcionalidad";
 $lang->custom->SRStory              = "Historia";
 $lang->custom->default              = "Predeterminado";
@@ -44,8 +44,8 @@ $lang->custom->URConcept            = "Concepto de funcionalidad";
 $lang->custom->SRConcept            = "Concepto de historia";
 $lang->custom->reviewRule           = 'Reglas de revisión';
 $lang->custom->switch               = "Cambiar";
-$lang->custom->oneUnit              = "One {$lang->hourCommon}";
-$lang->custom->convertRelationTitle = "Please set the conversion factor for converting {$lang->hourCommon} to %s.";
+$lang->custom->oneUnit              = "Una unidad de {$lang->hourCommon}";
+$lang->custom->convertRelationTitle = "Establezca el factor de conversión de {$lang->hourCommon} a %s.";
 $lang->custom->superReviewers       = "Súper revisor";
 $lang->custom->kanban               = "Kanban";
 $lang->custom->allUsers             = 'Todos los usuarios';
@@ -60,7 +60,7 @@ $lang->custom->selectDefaultProgram = 'Seleccione un programa predeterminado.';
 $lang->custom->defaultProgram       = 'Programa predeterminado';
 $lang->custom->modeManagement       = 'Gestión de modos';
 $lang->custom->percent              = $lang->stage->percent;
-$lang->custom->setPercent           = "Enable {$lang->stage->percent}";
+$lang->custom->setPercent           = "Habilitar {$lang->stage->percent}";
 $lang->custom->beginAndEndDate      = 'Duración';
 $lang->custom->beginAndEndDateRange = 'Rango de duración';
 $lang->custom->limitTaskDateAction  = 'Establecer duración obligatoria';
@@ -214,22 +214,22 @@ $lang->custom->notice->noClosedBlock       = 'No hay bloques cerrados permanente
 $lang->custom->notice->required            = 'Los campos seleccionados son obligatorios al enviar el formulario.';
 $lang->custom->notice->conceptResult       = 'Según su selección, configuramos el modo <b>%s-%s</b> usando <b>%s</b> + <b>%s</b>.';
 $lang->custom->notice->conceptPath         = 'Vaya a Admin -> Personalizar -> Concepto para configurarlo.';
-$lang->custom->notice->readOnlyOfProduct   = "Once set Changes Prohibited, {$lang->SRCommon}, Bug, Test Case, Effort, Release, Plan, and Build under a closed product cannot be modified.";
-$lang->custom->notice->readOnlyOfProject   = "Once set Changes Prohibited, any change on closed {$lang->projectCommon}s is not allowed:<br/>
-1. For {$lang->productCommon}-based {$lang->projectCommon}s with {$lang->custom->executionCommon} enabled: The following will not be editable under closed {$lang->projectCommon}s: {$lang->custom->executionCommon}, stories, design, reviews, review issues, baselines, documents, builds, releases, efforts, test requests, test reports, process tailoring, research, estimation, issues, risks, opportunities, meetings, QA plans, non-conformities, etc.<br/>
-2. For {$lang->productCommon}-based {$lang->projectCommon}s with{$lang->custom->executionCommon} disabled: The following will not be editable under closed {$lang->projectCommon}s: tasks, stories, builds, releases, efforts, test request, test reports, documents, etc.<br/>
-3. For non-{$lang->productCommon}-based {$lang->projectCommon}s with {$lang->custom->executionCommon} enabled: The following will not be editable under closed {$lang->projectCommon}s: {$lang->custom->executionCommon}, stories, design, reviews, review issues, baselines, bugs, test cases, test requestd, test reports, documents, builds, releases, efforts, process tailoring, research, estimation, issues, risks, opportunities, meetings, QA plans, non-conformities, etc.<br/>
-4. For non-{$lang->productCommon}-based {$lang->projectCommon}s with {$lang->custom->executionCommon} disabled: The following will not be editable under closed {$lang->projectCommon}s: tasks, stories, bugs, test cases, test requestd, test reports, documents, builds, releases, efforts, etc.";
+$lang->custom->notice->readOnlyOfProduct   = "Al establecer Cambios prohibidos, no se podrán modificar {$lang->SRCommon}, Bugs, casos de prueba, esfuerzos, lanzamientos, planes ni Builds de un producto cerrado.";
+$lang->custom->notice->readOnlyOfProject   = "Al establecer Cambios prohibidos, no se permite ningún cambio en {$lang->projectCommon} cerrados:<br/>
+1. Para {$lang->projectCommon} basados en {$lang->productCommon} con {$lang->custom->executionCommon} habilitado: no se podrá editar lo siguiente en {$lang->projectCommon} cerrados: {$lang->custom->executionCommon}, historias, diseño, revisiones, incidencias de revisión, líneas base, documentos, Builds, lanzamientos, esfuerzos, solicitudes de prueba, reportes de prueba, adaptación de procesos, investigación, estimación, incidencias, riesgos, oportunidades, reuniones, planes de QA, no conformidades, etc.<br/>
+2. Para {$lang->projectCommon} basados en {$lang->productCommon} con {$lang->custom->executionCommon} deshabilitado: no se podrá editar lo siguiente en {$lang->projectCommon} cerrados: tareas, historias, Builds, lanzamientos, esfuerzos, solicitudes de prueba, reportes de prueba, documentos, etc.<br/>
+3. Para {$lang->projectCommon} no basados en {$lang->productCommon} con {$lang->custom->executionCommon} habilitado: no se podrá editar lo siguiente en {$lang->projectCommon} cerrados: {$lang->custom->executionCommon}, historias, diseño, revisiones, incidencias de revisión, líneas base, Bugs, casos de prueba, solicitudes de prueba, reportes de prueba, documentos, Builds, lanzamientos, esfuerzos, adaptación de procesos, investigación, estimación, incidencias, riesgos, oportunidades, reuniones, planes de QA, no conformidades, etc.<br/>
+4. Para {$lang->projectCommon} no basados en {$lang->productCommon} con {$lang->custom->executionCommon} deshabilitado: no se podrá editar lo siguiente en {$lang->projectCommon} cerrados: tareas, historias, Bugs, casos de prueba, solicitudes de prueba, reportes de prueba, documentos, Builds, lanzamientos, esfuerzos, etc.";
 $lang->custom->notice->kanbanReminder      = 'Cuando la fecha límite de la tarjeta es inferior al número de días configurado, se activa el recordatorio de vencimiento.';
 if(in_array($config->edition, array('open', 'biz')))
 {
-    $lang->custom->notice->readOnlyOfExecution = "If Change Forbidden, any change on tasks, builds, efforts, test tasks, test reports, documents and stories of the closed {$lang->executionCommon} is also forbidden.";
+    $lang->custom->notice->readOnlyOfExecution = "Si se activa Cambios prohibidos, también se prohíbe cualquier cambio en tareas, Builds, esfuerzos, tareas de prueba, reportes de prueba, documentos e historias de {$lang->executionCommon} cerrada.";
 }
 else
 {
-    $lang->custom->notice->readOnlyOfExecution = "If Change Forbidden, any change on tasks, builds, efforts, test tasks, test reports, documents, issues, risks, QAs, meettings and stories of the closed {$lang->executionCommon} is also forbidden.";
+    $lang->custom->notice->readOnlyOfExecution = "Si se activa Cambios prohibidos, también se prohíbe cualquier cambio en tareas, Builds, esfuerzos, tareas de prueba, reportes de prueba, documentos, incidencias, riesgos, QA, reuniones e historias de {$lang->executionCommon} cerrada.";
 }
-$lang->custom->notice->readOnlyOfKanban    = "If Change Forbidden, any change on kanban card and related operations of {$lang->custom->kanban} is also forbidden.";
+$lang->custom->notice->readOnlyOfKanban    = "Si se activa Cambios prohibidos, también se prohíbe cualquier cambio en las tarjetas Kanban y las operaciones relacionadas de {$lang->custom->kanban}.";
 $lang->custom->notice->URSREmpty           = 'El nombre personalizado de la historia no puede estar vacío.';
 $lang->custom->notice->valueEmpty          = 'El valor no puede estar vacío.';
 $lang->custom->notice->confirmDelete       = '¿Seguro que desea eliminarlo?';
@@ -238,11 +238,11 @@ $lang->custom->notice->storyReviewTip      = 'Al seleccionar usuarios, roles o d
 $lang->custom->notice->selectAllTip        = 'Al seleccionar todos los usuarios, se borrarán y deshabilitarán los revisores, y se ocultarán los filtros de rol y departamento.';
 $lang->custom->notice->repeatKey           = 'Clave duplicada: %s';
 $lang->custom->notice->readOnlyOfCode      = "Los códigos sirven como alias de gestión por confidencialidad. Una vez activados, se mostrarán los códigos de productos, proyectos y ejecuciones en las vistas de creación, edición, detalle y lista.";
-$lang->custom->notice->readOnlyOfPercent   = "Workload Ratio is used to allocate workloads across multiple phases within a {$lang->projectCommon}. The total percentage among phases of the same level cannot exceed 100%. Once Workload Ratio is enabled, phase workload allocation must be maintained in both Waterfall {$lang->projectCommon} and Waterfall+ {$lang->projectCommon} models.";
+$lang->custom->notice->readOnlyOfPercent   = "La proporción de carga de trabajo se usa para distribuir la carga entre varias fases de {$lang->projectCommon}. El porcentaje total entre fases del mismo nivel no puede superar 100%. Una vez habilitada la proporción de carga de trabajo, se debe mantener la distribución de carga por fase tanto en el modelo Cascada de {$lang->projectCommon} como en el modelo Cascada+ de {$lang->projectCommon}.";
 $lang->custom->notice->gradeRule           = 'Desglose entre niveles: puede crear historias desde cualquier nivel de la jerarquía y establecer vínculos padre-hijo entre capas. Por ejemplo, puede crear una historia de nivel 3 directamente bajo una historia de nivel 1.';
 
 $lang->custom->notice->indexPage['product'] = "A partir de la versión 8.2 se agregó una vista de Inicio de producto. ¿Desea establecerla como página de inicio predeterminada?";
-$lang->custom->notice->indexPage['project'] = "Starting from version 8.2, a {$lang->projectCommon} Home view has been added. Would you like to set it as the default landing page?";
+$lang->custom->notice->indexPage['project'] = "A partir de la versión 8.2 se agregó una vista de inicio de {$lang->projectCommon}. ¿Desea establecerla como página de inicio predeterminada?";
 $lang->custom->notice->indexPage['qa']      = "A partir de la versión 8.2 se agregó una vista de Inicio de pruebas. ¿Desea establecerla como página de inicio predeterminada?";
 
 $lang->custom->notice->invalidStrlen['ten']        = 'La clave debe tener <= 10 caracteres.';
@@ -288,13 +288,13 @@ $lang->custom->useLight          = 'Modo claro';
 $lang->custom->useALM            = 'Modo ALM';
 $lang->custom->currentModeTips   = 'Actualmente está usando el modo %s. Puede cambiar al modo %s.';
 $lang->custom->changeModeTips    = '¿Seguro que desea cambiar al modo %s?';
-$lang->custom->selectProgramTips = "After switching to the Light Mode, you need to select a program as the default one to maintain data consistency. All newly created {$lang->productCommon} and {$lang->projectCommon} entries will be linked with this default program.";
+$lang->custom->selectProgramTips = "Después de cambiar al modo Ligero, debe seleccionar un programa como predeterminado para mantener la coherencia de los datos. Todos los registros de {$lang->productCommon} y {$lang->projectCommon} que se creen en adelante se vincularán a este programa predeterminado.";
 
 $lang->custom->modeList['light'] = 'Modo claro';
 $lang->custom->modeList['ALM']   = 'Modo ALM';
 $lang->custom->modeList['PLM']   = 'Modo IPD';
 
-$lang->custom->modeIntroductionList['light'] = "Provides the core function of {$lang->projectCommon} management. Suitable for small R&D teams.";
+$lang->custom->modeIntroductionList['light'] = "Ofrece la función principal de gestión de {$lang->projectCommon}. Adecuado para equipos pequeños de I+D.";
 $lang->custom->modeIntroductionList['ALM']   = 'El concepto es más completo y riguroso, y las funciones son más abundantes. Es adecuado para equipos de I+D medianos y grandes.';
 
 $lang->custom->features['program']              = 'Programa';
@@ -348,7 +348,7 @@ $lang->custom->moduleName['productplan'] = 'Plan';
 $lang->custom->moduleName['execution']   = $lang->custom->executionCommon;
 
 $lang->custom->conceptQuestions['overview']   = "¿Cuál de los siguientes modelos de gestión se ajusta mejor al flujo de trabajo actual de su empresa?";
-$lang->custom->conceptQuestions['URAndSR']    = "Would you like to enable the {$lang->URCommon} and {$lang->SRCommon} concepts?";
+$lang->custom->conceptQuestions['URAndSR']    = "¿Desea habilitar los conceptos de {$lang->URCommon} y {$lang->SRCommon}?";
 $lang->custom->conceptQuestions['storypoint'] = "¿Qué unidad usa su empresa para la estimación?";
 
 $lang->custom->conceptOptions             = new stdclass;
@@ -366,7 +366,7 @@ $lang->custom->conceptOptions->hourPoint['1'] = 'Puntos de historia';
 $lang->custom->conceptOptions->hourPoint['2'] = 'Puntos de función';
 
 $lang->custom->scrum = new stdclass();
-$lang->custom->scrum->setConcept = "Set {$lang->projectCommon} Concept";
+$lang->custom->scrum->setConcept = "Definir concepto de {$lang->projectCommon}";
 
 $lang->custom->reviewRules['allpass']  = 'Aprobado por todos';
 $lang->custom->reviewRules['halfpass'] = 'Aprobado por mayoría';

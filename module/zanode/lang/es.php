@@ -172,7 +172,7 @@ $lang->zanode->init->initDesc       = "Ejecute el comando en el nodo de ejecuci�
 $lang->zanode->tips           = "Un nodo de ejecución es una máquina virtual o instancia de contenedor creada por el host. Sirve como entorno de pruebas para ejecutar tareas de prueba. Una vez configurado el entorno de pruebas automatizadas en el nodo, los scripts se pueden ejecutar automáticamente y los resultados se pueden ver en los resultados de ejecución de casos de prueba de AXIS FLOW correspondientes.";
 $lang->zanode->scriptTips     = 'Ingrese la ruta del directorio donde se encuentran los scripts de pruebas automatizadas en el nodo de ejecución.';
 $lang->zanode->shellTips      = 'Antes de ejecutar el script de pruebas automatizadas en el nodo de ejecución, puede ejecutar un comando shell personalizado.';
-$lang->zanode->automationTips = "Before executing test tasks on the node, you need to configure the execution node corresponding to the {$lang->productCommon}, the directory of the automated test scripts, and any custom shell commands to execute.
+$lang->zanode->automationTips = "Antes de ejecutar tareas de prueba en el nodo, debe configurar el nodo de ejecución correspondiente a {$lang->productCommon}, el directorio de los scripts de pruebas automatizadas y los comandos de shell personalizados que se ejecutarán.
 ";
 $lang->zanode->nameUnique     = $lang->zanode->name . ' ya existe';
 

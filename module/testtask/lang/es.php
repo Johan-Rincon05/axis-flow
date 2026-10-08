@@ -161,9 +161,9 @@ $lang->testtask->runCaseResult = ', ejecutado %s, el resultado es <span class="t
 
 $lang->testtask->confirmDelete     = '¿Desea eliminar este Build?';
 $lang->testtask->confirmUnlinkCase = '¿Desea desvincular este caso?';
-$lang->testtask->noticeNoOther     = "No test builds for this {$lang->productCommon}.";
+$lang->testtask->noticeNoOther     = "No hay Builds de prueba para {$lang->productCommon}.";
 $lang->testtask->noTesttask        = 'Sin solicitudes. ';
-$lang->testtask->checkLinked       = "Please check whether the {$lang->productCommon} that the test request is linked to has been linked to a {$lang->executionCommon}.";
+$lang->testtask->checkLinked       = "Verifique si {$lang->productCommon} al que está vinculada la solicitud de prueba ya está vinculado a {$lang->executionCommon}.";
 $lang->testtask->noImportData      = 'El XML importado no contiene datos analizables.';
 $lang->testtask->unitXMLFormat     = 'Seleccione un archivo en formato JUnit XML.';
 $lang->testtask->titleOfAuto       = "Pruebas automatizadas de %s";

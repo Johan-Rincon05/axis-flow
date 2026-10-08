@@ -26,7 +26,7 @@ $lang->weekly->term            = 'Período del informe';
 $lang->weekly->project         = $lang->projectCommon . ' Nombre';
 $lang->weekly->master          = 'Gerente del proyecto ';
 $lang->weekly->staff           = 'Participantes esta semana';
-$lang->weekly->projectTemplate = "{$lang->projectCommon} Weekly Report Template";
+$lang->weekly->projectTemplate = "Plantilla de informe semanal de {$lang->projectCommon}";
 
 $lang->weekly->weekDesc       = 'Semana %s (%s – %s)';
 $lang->weekly->progress       = $lang->projectCommon . 'Progreso';
@@ -40,7 +40,7 @@ $lang->weekly->sv = 'Variación del cronograma (SV%)';
 $lang->weekly->cv = 'Variación de costos (CV%)';
 
 $lang->weekly->totalCount  = 'Total de %u tareas.';
-$lang->weekly->builtinDesc = "A built‑in {$lang->projectCommon} weekly report template automatically creates this week’s report every Monday under the corresponding {$lang->projectCommon}。";
+$lang->weekly->builtinDesc = "Una plantilla integrada de informe semanal de {$lang->projectCommon} crea automáticamente el informe de esta semana cada lunes en el {$lang->projectCommon} correspondiente.";
 
 $lang->weekly->exportWeeklyReport = 'Exportar informe semanal';
 

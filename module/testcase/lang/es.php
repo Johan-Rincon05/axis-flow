@@ -76,7 +76,7 @@ $lang->testcase->desc             = 'Pasos';
 $lang->testcase->parent           = 'Padre';
 $lang->testcase->xml              = 'XML';
 $lang->testcase->expect           = 'Resultados esperados';
-$lang->testcase->allProduct       = "All {$lang->productCommon}s";
+$lang->testcase->allProduct       = "Todos: {$lang->productCommon}";
 $lang->testcase->fromBug          = 'Desde Bug';
 $lang->testcase->toBug            = 'A Bug';
 $lang->testcase->changed          = 'Cambiado';
@@ -205,7 +205,7 @@ $lang->testcase->legendOther       = 'Otros relacionados';
 $lang->testcase->confirmDelete           = '¿Desea eliminar este caso?';
 $lang->testcase->confirmBatchDelete      = '¿Desea eliminar los casos de forma masiva?';
 $lang->testcase->ditto                   = 'Ídem';
-$lang->testcase->dittoNotice             = "This Case is not linked to the {$lang->productCommon} as the last one is!";
+$lang->testcase->dittoNotice             = "Este caso no está vinculado a {$lang->productCommon} igual que el último.";
 $lang->testcase->confirmUnlinkTesttask   = 'El caso [%s] ya está asociado en la tarea de prueba de la rama/plataforma anterior; después de ajustar la rama/plataforma, se eliminará de la lista de pruebas de la rama/plataforma anterior. Confirme si desea continuar con la modificación.';
 $lang->testcase->confirmLibcaseChangeTip = 'El contenido de este caso de prueba se sincronizará con el contenido de la versión #%s en la biblioteca de casos de prueba. ¿Desea continuar?';
 
