@@ -31,7 +31,7 @@ $lang->to        = 'To';
 $lang->minus     = ' - ';
 $lang->in        = 'In';
 
-$lang->zentaoPMS      = 'ZenTao';
+$lang->zentaoPMS      = 'AXIS FLOW';
 $lang->pmsName        = 'ALM';
 $lang->proName        = 'Pro';
 $lang->bizName        = 'Biz';

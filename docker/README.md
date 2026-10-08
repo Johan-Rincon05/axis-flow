@@ -1,6 +1,6 @@
-# Despliegue personalizado de ZenTao
+# AXIS FLOW (basado en ZenTao)
 
-Fork de `easysoft/zentaopms` (licencia dual ZPL 1.2 / AGPL 3.0, ver `LICENSE.EN`).
+Fork de `easysoft/zentaopms` (se conserva la atribución a ZenTao exigida por la licencia) (licencia dual ZPL 1.2 / AGPL 3.0, ver `LICENSE.EN`).
 
 - `Dockerfile`: PHP 8.2 + Apache, arbol listo como el `Makefile` upstream.
 - `docker-compose.yml`: app + MariaDB. Variables requeridas: `DB_ROOT_PASSWORD`, `DB_PASSWORD`.

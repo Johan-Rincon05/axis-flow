@@ -31,7 +31,7 @@ $lang->to        = '至';
 $lang->minus     = ' - ';
 $lang->in        = '在';
 
-$lang->zentaoPMS      = '禅道';
+$lang->zentaoPMS      = 'AXIS FLOW';
 $lang->pmsName        = '开源版';
 $lang->proName        = '专业版';
 $lang->bizName        = '企业版';

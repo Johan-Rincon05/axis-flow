@@ -26,7 +26,7 @@ $lang->ellipsis  = '…';
 $lang->percent   = '%';
 $lang->dash      = '-';
 
-$lang->zentaoPMS      = '禪道';
+$lang->zentaoPMS      = 'AXIS FLOW';
 $lang->pmsName        = '開源版';
 $lang->proName        = '專業版';
 $lang->logoImg        = 'zt-logo.png';

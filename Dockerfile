@@ -1,5 +1,5 @@
-# ZenTao PMS (fork) - imagen propia para Dokploy
-# Build:  docker build -t zentao-custom .
+# AXIS FLOW (fork de ZenTao PMS) - imagen propia para Dokploy
+# Build:  docker build -t axis-flow .
 FROM php:8.2-apache
 
 ENV ZENTAO_ROOT=/var/www/zentao \
