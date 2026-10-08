@@ -720,7 +720,7 @@ function refreshMenu()
         const $ele = $(ele);
         return $ele.css('display') !== 'none' && !$ele.hasClass('divider');
     }).first().outerHeight();
-    const maxHeight      = $('#menu').outerHeight() - ($('body').hasClass('has-space') ? (($('#spaceHeading').outerHeight() || 0) + 8) : 0) - 24 - $('#menuToggleNav').outerHeight();
+    const maxHeight      = $('#menu').outerHeight() - ($('body').hasClass('has-space') ? (($('#spaceHeading').outerHeight() || 0) + 8) : 0) - ($('#axisBrand').outerHeight() || 0) - 24 - $('#menuToggleNav').outerHeight();
     const dividerHeight  = 13;
     let showMoreMenu     = false;
     let currentHeight    = 0;

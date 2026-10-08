@@ -20,7 +20,7 @@ $lang->webhook->id          = 'ID';
 $lang->webhook->type        = 'Type';
 $lang->webhook->name        = 'Name';
 $lang->webhook->url         = 'Webhook URL';
-$lang->webhook->domain      = 'ZenTao Domain';
+$lang->webhook->domain      = 'AXIS FLOW Domain';
 $lang->webhook->contentType = 'Content Type';
 $lang->webhook->sendType    = 'Sending Type';
 $lang->webhook->secret      = 'Secret';
@@ -72,7 +72,7 @@ $lang->webhook->feishuAppSecret   = 'Feishu App Secret';
 $lang->webhook->feishuUserid      = 'Feishu User';
 $lang->webhook->feishuBindStatus  = 'Feishu Binding';
 
-$lang->webhook->zentaoUser  = 'Zentao User';
+$lang->webhook->zentaoUser  = 'AXIS FLOW User';
 
 $lang->webhook->dingBindStatusList['0'] = 'No';
 $lang->webhook->dingBindStatusList['1'] = 'Yes';
@@ -102,7 +102,7 @@ $lang->webhook->note->execution = "If left empty, actions from all executions wi
 $lang->webhook->note->dingHelp   = " <a href='http://www.zentao.net/book/zentaopmshelp/358.html' target='_blank'><i class='icon-help'></i></a>";
 $lang->webhook->note->wechatHelp = " <a href='http://www.zentao.net/book/zentaopmshelp/367.html' target='_blank'><i class='icon-help'></i></a>";
 
-$lang->webhook->note->typeList['bearychat'] = 'Please add a ZenTao Bot in BearyChat and enter its Webhook URL here.';
+$lang->webhook->note->typeList['bearychat'] = 'Please add a AXIS FLOW Bot in BearyChat and enter its Webhook URL here.';
 $lang->webhook->note->typeList['dingding']  = 'Please add a Custom Bot in DingTalk and enter its Webhook URL here.';
 $lang->webhook->note->typeList['weixin']    = 'Please add a Custom Bot in WeCom and enter its Webhook URL here.';
 $lang->webhook->note->typeList['default']   = 'Get the Webhook URL from the third-party system and enter it here.';

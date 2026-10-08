@@ -68,7 +68,7 @@ class pageBase extends wg
         $jsConfig->maxUploadSize = ini_get('upload_max_filesize');
 
         $headImports = array();
-        $headImports[] = h::favicon($webRoot . 'favicon.ico');
+        $headImports[] = h::favicon($webRoot . 'favicon.ico?v=axisflow2');
         $headImports[] = h::jsVar('window.config', $jsConfig, setID('configJS'));
         if($zui)
         {

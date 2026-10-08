@@ -56,7 +56,7 @@ $lang->zanode->confirmRestore  = "This execution node will be restored to this s
 $lang->zanode->actionSuccess   = 'Operation successful';
 $lang->zanode->deleted         = "Deleted";
 $lang->zanode->scriptPath      = "Script path";
-$lang->zanode->syncToZentao    = "Sync Script Info to ZenTao";
+$lang->zanode->syncToZentao    = "Sync Script Info to AXIS FLOW";
 $lang->zanode->shell           = "Shell Command";
 $lang->zanode->automation      = "Automation Settings";
 $lang->zanode->install         = "Install";
@@ -169,7 +169,7 @@ $lang->zanode->init->title          = "Initialize Execution Node";
 $lang->zanode->init->descTitle      = "Please follow these steps to initialize the execution node:";
 $lang->zanode->init->initDesc       = "Execute the command on the execution node: %s %s <br>- Click the Check Service Status button.";
 
-$lang->zanode->tips           = "An execution node is a virtual machine or container instance created by the host. It serves as the test environment for executing test tasks. Once the automated testing environment is configured on the node, scripts can be executed automatically, and the results can be viewed in the corresponding ZenTao test case execution results.";
+$lang->zanode->tips           = "An execution node is a virtual machine or container instance created by the host. It serves as the test environment for executing test tasks. Once the automated testing environment is configured on the node, scripts can be executed automatically, and the results can be viewed in the corresponding AXIS FLOW test case execution results.";
 $lang->zanode->scriptTips     = 'Enter the directory path where the automated test scripts are located on the execution node.';
 $lang->zanode->shellTips      = 'Before running the automated test script on the execution node, you can execute a custom shell command.';
 $lang->zanode->automationTips = "Before executing test tasks on the node, you need to configure the execution node corresponding to the {$lang->productCommon}, the directory of the automated test scripts, and any custom shell commands to execute.
@@ -177,7 +177,7 @@ $lang->zanode->automationTips = "Before executing test tasks on the node, you ne
 $lang->zanode->nameUnique     = $lang->zanode->name . ' already exists';
 
 $lang->zanode->instructionPage = new stdClass();
-$lang->zanode->instructionPage->title            = "ZenTao Test Automation Solution";
+$lang->zanode->instructionPage->title            = "AXIS FLOW Test Automation Solution";
 $lang->zanode->instructionPage->desc             = "The ZenTao test automation solution provides centralized management of test cases, test scripts, script execution, test results, and test environments. It reduces test management costs and improves execution efficiency. This solution helps you easily establish an automated testing system tailored to your current project management and development workflows, minimizing manual testing effort.";
 $lang->zanode->instructionPage->imageInstruction = 'Architecture diagram: ';
 $lang->zanode->instructionPage->image            = 'static/svg/zanode_instruction_en.svg';

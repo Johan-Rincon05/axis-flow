@@ -122,7 +122,7 @@ $lang->block->budget          = 'Budget';
 $lang->block->left            = 'left';
 
 $lang->block->summary = new stdclass();
-$lang->block->summary->welcome    = '%s with Zentao! %s  and your tasks and bugs are waiting for your great work today!';
+$lang->block->summary->welcome    = '%s with AXIS FLOW! %s  and your tasks and bugs are waiting for your great work today!';
 $lang->block->summary->yesterday  = '<strong>yesterday</strong>,';
 $lang->block->summary->noWork     = 'A quiet day ';
 $lang->block->summary->finishTask = 'You completed <a href="' .  helper::createLink('my', 'contribute', 'mode=task&browseType=finishedBy') . '" class="text-success">%s</a> task(s)';
@@ -516,7 +516,7 @@ $lang->block->themes['red']        = 'Red';
 $lang->block->themes['purple']     = 'Purple';
 $lang->block->themes['blackberry'] = 'Blackberry';
 
-$lang->block->visionTitle            = 'ZenTao offers two interfaces:';
+$lang->block->visionTitle            = 'AXIS FLOW offers two interfaces:';
 $lang->block->visions['rnd']         = new stdclass();
 $lang->block->visions['rnd']->key    = 'rnd';
 $lang->block->visions['rnd']->title  = 'R&D interface';
@@ -552,7 +552,7 @@ if($config->URAndSR && $config->vision != 'or')  $lang->block->welcome->assignLi
 if($config->enableER && $config->vision != 'or') $lang->block->welcome->assignList['epic']        = "{$lang->ERCommon}";
 
 $lang->block->customModeTip = new stdClass();
-$lang->block->customModeTip->common = 'ZenTao offers two operating modes:';
+$lang->block->customModeTip->common = 'AXIS FLOW offers two operating modes:';
 $lang->block->customModeTip->ALM    = '';
 $lang->block->customModeTip->light  = "";
 

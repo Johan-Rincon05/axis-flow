@@ -18,7 +18,7 @@ else
 {
     $version     = $config->version;
     $versionName = $lang->pmsName . $config->version;
-    $upgradeBtn  = $config->systemMode != 'PLM' ? btn
+    $upgradeBtn  = false ? btn
     (
         setID('bizLink'),
         on::click()->do(<<<'JS'
@@ -140,6 +140,12 @@ div
     setID('menu'),
     div
     (
+        setID('axisBrand'),
+        h::img(setClass('brand-full'), set::src($config->webRoot . 'theme/default/images/main/axisflow-menu-logo.png'), set::alt('AXIS FLOW')),
+        h::img(setClass('brand-icon'), set::src($config->webRoot . 'theme/default/images/main/axisflow-menu-icon.png'), set::alt('AXIS FLOW'))
+    ),
+    div
+    (
         setID('spaceHeading'),
         icon('space'),
         div(setClass('text'))
@@ -201,15 +207,14 @@ div
         setClass('space-x-1'),
         hasPriv('search', 'index') ? globalSearch() : null,
         chatBtn(),
-        item
+        h::a
         (
             setID('version'),
-            setClass('ghost btn-zentao px-1'),
-            set::icon('zentao text-2xl'),
-            set::url($lang->website),
-            set::target('_blank'),
-            set::hint($version),
-            set::text($versionName)
+            setClass('btn ghost px-1 axis-version'),
+            set::href('###'),
+            set::title('AXIS FLOW'),
+            h::img(set::src($config->webRoot . 'theme/default/images/main/axisflow-icon.png'), set::alt('AXIS FLOW')),
+            span(setClass('text'), 'AXIS FLOW')
         ),
         $upgradeBtn,
         panel

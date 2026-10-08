@@ -30,8 +30,8 @@ $lang->editor->deleteConfirm = 'Are you sure you want to delete it?';
 $lang->editor->extendConfirm = 'Are you sure you want to reuse the existing code?';
 $lang->editor->repeatFile    = 'Duplicate file name.';
 $lang->editor->repeatPage    = 'This page already exists. Do you want to overwrite it?';
-$lang->editor->noticeOkFile  = "For security reasons, the system needs to verify your administrator identity. n Please log in to the server where ZenTao is installed and create the file %s. n Notes: \n 1. The file content should be empty.n 2. If the file already exists, delete it and create it again.";
-$lang->editor->editFileError = 'Only ZenTao files can be modified!';
+$lang->editor->noticeOkFile  = "For security reasons, the system needs to verify your administrator identity. n Please log in to the server where AXIS FLOW is installed and create the file %s. n Notes: \n 1. The file content should be empty.n 2. If the file already exists, delete it and create it again.";
+$lang->editor->editFileError = 'Only AXIS FLOW files can be modified!';
 $lang->editor->turnOff       = "If you do not need the editor feature, you can disable it here.";
 
 $lang->editor->notExists      = "The directory does not exist. Please create it first by running『mkdir -p %s』.";

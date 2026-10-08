@@ -59,7 +59,7 @@ $commonLang   = array('zh-cn', 'zh-tw', 'en', 'fr', 'de');
 
   if(isset($pageCSS)) css::internal($pageCSS);
 
-  echo html::favicon($webRoot . 'favicon.ico');
+  echo html::favicon($webRoot . 'favicon.ico?v=axisflow2');
   ?>
 <!--[if lt IE 10]>
 <?php js::import($jsRoot . 'jquery/placeholder/min.js'); ?>

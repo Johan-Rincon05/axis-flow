@@ -68,7 +68,7 @@ $lang->misc->withoutCmd  = 'Repair failed';
 $lang->misc->connectFail = "Database connection failed. Error: %s.<br/>Check the MySQL error log.";
 $lang->misc->tableName   = "Table Name";
 $lang->misc->tableStatus = "Status";
-$lang->misc->novice      = "New to ZenTao? Would you like to start the tutorial?";
+$lang->misc->novice      = "New to AXIS FLOW? Would you like to start the tutorial?";
 $lang->misc->showAnnual  = 'Annual Summary';
 $lang->misc->annualDesc  = 'The Annual Summary feature is now available (Report -> Annual Summary). <a href="%s" class="btn btn-mini btn-primary">View now</a>';
 $lang->misc->remind      = 'New feature alert';

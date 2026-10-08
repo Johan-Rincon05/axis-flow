@@ -9,7 +9,7 @@ $lang->zai->addSetting = 'Add ZAI Setting';
 
 $lang->zai->testConnection           = 'Test Connection';
 $lang->zai->configurationUnavailable = 'ZAI configuration unavailable.';
-$lang->zai->illegalZentaoUser        = 'Illegal Zentao user!';
+$lang->zai->illegalZentaoUser        = 'Illegal AXIS FLOW user!';
 $lang->zai->onlyPostRequest          = 'This operation only supports POST requests.';
 $lang->zai->vectorizedAlreadyEnabled = 'Data vectorization is already enabled.';
 $lang->zai->vectorizedEnabled        = 'Data vectorization enabled.';
@@ -26,9 +26,9 @@ $lang->zai->confirmResetSync         = 'Do you want to reset sync status? This w
 $lang->zai->lastFailReason           = 'Failure Reason';
 $lang->zai->settingTips              = 'Please install <a class="btn btn-link text-primary px-1" style="text-decoration: none;" href="%s" target="_blank">ZAI service</a> to get the key.';
 
-$lang->zai->zentaoVectorization       = 'Zentao Data Vectorization';
+$lang->zai->zentaoVectorization       = 'AXIS FLOW Data Vectorization';
 $lang->zai->vectorized                = 'Data Vectorization';
-$lang->zai->vectorizedIntro           = 'Data vectorization will convert data generated in the Zentao system into vectors for reference in AI conversations, allowing AI to answer questions more accurately.';
+$lang->zai->vectorizedIntro           = 'Data vectorization will convert data generated in the AXIS FLOW system into vectors for reference in AI conversations, allowing AI to answer questions more accurately.';
 $lang->zai->vectorizedUnavailableHint = 'Please configure ZAI application first and ensure ZAI service is available.';
 $lang->zai->callZaiAPIFailed          = 'Failed to call ZAI API (%s): %s';
 

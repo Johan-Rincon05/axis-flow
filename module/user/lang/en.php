@@ -232,7 +232,7 @@ $lang->user->placeholder->verify    = 'Enter your system login password.';
 
 $lang->user->placeholder->loginPassword = 'Enter your password.';
 $lang->user->placeholder->loginAccount  = 'Enter your account.';
-$lang->user->placeholder->loginUrl      = 'Enter your ZenTao site URL.';
+$lang->user->placeholder->loginUrl      = 'Enter your AXIS FLOW site URL.';
 $lang->user->placeholder->email         = 'Enter your email.';
 
 $lang->user->placeholder->passwordStrength[0] = 'Password must be at least 6 characters.';

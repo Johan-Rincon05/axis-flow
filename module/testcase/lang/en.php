@@ -311,7 +311,7 @@ $lang->testcase->close = 'Close';
 
 $lang->testcase->xmindImportSetting = 'Import Characteristic Character Settings';
 $lang->testcase->xmindExportSetting = 'Export Characteristic Character Settings';
-$lang->testcase->xmindSettingTip    = 'After the feature characters are set, the Xmind theme can correspond to the ZenTao test case structure.';
+$lang->testcase->xmindSettingTip    = 'After the feature characters are set, the Xmind theme can correspond to the AXIS FLOW test case structure.';
 
 $lang->testcase->settingModule = 'Module';
 $lang->testcase->settingScene  = 'Scene';

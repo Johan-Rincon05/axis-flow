@@ -37,7 +37,7 @@ $lang->sso->help->code = 'Ensure the code is identical to the one in ZDOO.';
 $lang->sso->help->key  = 'Ensure the Secret Key is identical to the one in ZDOO.';
 
 $lang->sso->deny           = 'Access Restricted';
-$lang->sso->bindNotice     = 'No permissions. Please ask ZenTao Admin for access.';
+$lang->sso->bindNotice     = 'No permissions. Please ask AXIS FLOW Admin for access.';
 $lang->sso->bindNoPassword = 'Password is required';
 $lang->sso->bindNoUser     = 'Invalid username or password';
 $lang->sso->bindHasAccount = 'Username already exists. Please choose another one or link to the existing account.';
@@ -46,4 +46,4 @@ $lang->sso->homeURL             = 'Feishu Homepage URL:';
 $lang->sso->redirectURL         = 'Feishu Redirect URL:';
 $lang->sso->feishuConfigEmpty   = 'Configure (Feishu Messenger Notifications) in [Admin]-[Notifications]-[Webhook].';
 $lang->sso->feishuResponseEmpty = 'Empty response received';
-$lang->sso->unbound             = 'User linking missing for Feishu in ZenTao Webhook settings.';
+$lang->sso->unbound             = 'User linking missing for Feishu in AXIS FLOW Webhook settings.';

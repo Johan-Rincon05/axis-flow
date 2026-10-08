@@ -13,15 +13,15 @@ $lang->gitfox->confirmDelete     = 'Do you want to delete this GitFox server?';
 $lang->gitfox->gitfoxAvatar      = 'Avatar';
 $lang->gitfox->gitfoxAccount     = 'GitFox Account';
 $lang->gitfox->gitfoxEmail       = 'GitFox User\'s Email';
-$lang->gitfox->zentaoEmail       = 'Zentao User\'s Email';
-$lang->gitfox->zentaoAccount     = 'Zentao Account';
+$lang->gitfox->zentaoEmail       = 'AXIS FLOW User\'s Email';
+$lang->gitfox->zentaoAccount     = 'AXIS FLOW Account';
 $lang->gitfox->accountDesc       = '(Automatically match users with the same email)';
 $lang->gitfox->bindingStatus     = 'Binding Status';
 $lang->gitfox->all               = 'All';
 $lang->gitfox->notBind           = 'Not bind';
 $lang->gitfox->binded            = 'Binded';
 $lang->gitfox->bindedError       = 'The bound user has been deleted or modified. Please bind again.';
-$lang->gitfox->bindDynamic       = '%s and Zentao user %s';
+$lang->gitfox->bindDynamic       = '%s and AXIS FLOW user %s';
 $lang->gitfox->serverFail        = 'Connect to GitFox server failed, please check the GitFox server.';
 $lang->gitfox->lastUpdate        = 'Last Update';
 $lang->gitfox->confirmAddWebhook = 'Are you sure about creating Webhook？';
@@ -43,7 +43,7 @@ $lang->gitfox->browseBranch         = "GitFox Branch List";
 $lang->gitfox->browseTag            = "GitFox Tag List";
 $lang->gitfox->browseTagPriv        = "Protected tag";
 $lang->gitfox->gitfoxIssue          = "GitFox Issue";
-$lang->gitfox->zentaoProduct        = 'Zentao Product';
+$lang->gitfox->zentaoProduct        = 'AXIS FLOW Product';
 $lang->gitfox->objectType           = 'Type'; // task, bug, story
 $lang->gitfox->manageProjectMembers = 'Manage project member';
 $lang->gitfox->createProject        = 'Create GitFox project';
@@ -136,7 +136,7 @@ $lang->gitfox->featureBar['binduser']['all']     = $lang->gitfox->all;
 $lang->gitfox->featureBar['binduser']['notBind'] = $lang->gitfox->notBind;
 $lang->gitfox->featureBar['binduser']['binded']  = $lang->gitfox->binded;
 
-$lang->gitfox->devopsIntroduction = 'Zentao DevOps Solution: Comprehensive Refactoring, Leading the Future';
+$lang->gitfox->devopsIntroduction = 'AXIS FLOW DevOps Solution: Comprehensive Refactoring, Leading the Future';
 $lang->gitfox->devopsDescription  = <<<EOD
 <p class="leading-relaxed mb-2">
   The underlying capabilities of DevOps 4.0 are powered by the GitFox engine. GitFox is a fully self-developed Git source code management platform focused on enterprise R&D collaboration. It delivers one-stop capabilities spanning code hosting, pipeline building, quality scanning and artifact management, designed to enable efficient CI/CD for enterprises.
@@ -144,7 +144,7 @@ $lang->gitfox->devopsDescription  = <<<EOD
 EOD;
 
 $lang->gitfox->installGitFox     = 'Install GitFox';
-$lang->gitfox->installGitFoxTip  = 'Before using ZenTao DevOps, GitFox needs to be installed. Please run the following installation script on the host machine to complete the setup. Once the script finishes executing, click "Completed Installation".';
+$lang->gitfox->installGitFoxTip  = 'Before using AXIS FLOW DevOps, GitFox needs to be installed. Please run the following installation script on the host machine to complete the setup. Once the script finishes executing, click "Completed Installation".';
 $lang->gitfox->checkInstall      = 'I have completed the above installation steps';
 $lang->gitfox->execScript        = 'Execute installation script';
 $lang->gitfox->copySuccess       = 'Copy successful';

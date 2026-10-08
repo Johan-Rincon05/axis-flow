@@ -11,7 +11,7 @@
  */
 $lang->tutorial = new stdclass();
 $lang->tutorial->common           = 'Tutorials';
-$lang->tutorial->desc             = 'Learn the basics of ZenTao by completing a series of tasks. You can exit at any time.';
+$lang->tutorial->desc             = 'Learn the basics of AXIS FLOW by completing a series of tasks. You can exit at any time.';
 $lang->tutorial->start            = "Get Started";
 $lang->tutorial->continue         = 'Continue';
 $lang->tutorial->exit             = 'Exit Tutorial';

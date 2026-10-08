@@ -5,11 +5,11 @@
     --zt-menu-width: 120px!important;
     --zt-menu-fold-width: 64px;
     --zt-menu-space: 8px;
-    --zt-menu-active-bg: var(--color-primary-500);
-    --zt-menu-hover-bg: rgba(var(--color-primary-500-rgb), .4);
+    --zt-menu-active-bg: #0B6BF0;
+    --zt-menu-hover-bg: rgba(11,107,240,.45);
     --zt-menu-text-color: rgba(var(--color-canvas-rgb), 1);
     --zt-menu-text-active: var(--color-canvas);
-    --zt-menu-bg: var(--color-primary-600);
+    --zt-menu-bg: #1E2A3A;
 }
 [lang^='en'] {--zt-menu-width: 132px!important;}
 
@@ -126,3 +126,13 @@ body.hide-menu {--zt-menu-width: var(--zt-menu-fold-width)!important;}
 .tutorial-popover .arrow-left::after {height: 2px; left: calc(var(--arrow-size) - 34px); top: 4px}
 .tutorial-popover .arrow-right::after {height: 2px; right: calc(var(--arrow-size) - 34px); top: 4px}
 .tutorial-popover .arrow-bottom::after {width: 2px; bottom: calc(var(--arrow-size) - 34px); left: 4px}
+
+/* AXIS FLOW brand */
+#axisBrand {display: flex; align-items: center; justify-content: center; height: 64px; padding: 0 12px; border-bottom: 1px solid rgba(255,255,255,.12);}
+#axisBrand img {display: block; max-width: 100%;}
+#axisBrand .brand-full {width: 100%; max-height: 38px; object-fit: contain;}
+#axisBrand .brand-icon {display: none; width: 34px; height: 34px; object-fit: contain;}
+.hide-menu #axisBrand .brand-full {display: none;}
+.hide-menu #axisBrand .brand-icon {display: block;}
+#appsToolbar > .axis-version {display: inline-flex; align-items: center; gap: 6px; font-weight: 600; letter-spacing: .3px;}
+#appsToolbar > .axis-version img {width: 20px; height: 20px; object-fit: contain;}

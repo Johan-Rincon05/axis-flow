@@ -22,7 +22,7 @@ $lang->install->officeDomain = 'https://www.zentao.pm';
 $lang->install->start            = 'Install Now';
 $lang->install->keepInstalling   = 'Continue installing Current Version';
 $lang->install->seeLatestRelease = 'Check for Updates';
-$lang->install->welcome          = 'Thanks for choosing ZenTao!';
+$lang->install->welcome          = 'Thanks for choosing AXIS FLOW!';
 $lang->install->license          = 'License Agreement';
 $lang->install->desc             = <<<EOT
 ZenTao Project Management Software (ZenTao PMS) is an open-source software released under <a href='http://zpl.pub/page/zplv12.html' target='_blank'>ZPL</a> or <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>AGPL</a> License. It is an all-in-one platform that integrates Product, Project, and Test Management, along with office automation and organizational management—making it the top choice for small and medium-sized enterprises.
@@ -40,8 +40,8 @@ You are currently installing version: <strong class='text-danger'>%s</strong>.
 EOT;
 
 $lang->install->selectMode          = "Select mode";
-$lang->install->introduction        = "15.0+ Feature Introduction of ZenTao ";
-$lang->install->howToUse            = "How do you plan to use the new version of ZenTao?";
+$lang->install->introduction        = "15.0+ Feature Introduction of AXIS FLOW ";
+$lang->install->howToUse            = "How do you plan to use the new version of AXIS FLOW?";
 $lang->install->guideVideo          = 'https://dl.zentao.net/vedio/program0716.mp4';
 $lang->install->introductionContent = <<<EOT
 <div>
@@ -148,7 +148,7 @@ $lang->install->errorConnectDB      = 'Database connection failed.';
 $lang->install->errorDBName         = ' “.” are not allowed in the database name';
 $lang->install->errorDBSchema       = 'Invalid schema name.';
 $lang->install->errorCreateDB       = 'Database creation failed.';
-$lang->install->errorTableExists    = 'The data table has existed. If ZenTao has been installed before, please return to the previous step and clear data, then continue the installation.';
+$lang->install->errorTableExists    = 'The data table has existed. If AXIS FLOW has been installed before, please return to the previous step and clear data, then continue the installation.';
 $lang->install->errorCreateTable    = 'Table creation failed.';
 $lang->install->errorEngineInnodb   = 'Your MySQL does not support InnoDB data table engine. Please modify it to MyISAM and try again.';
 $lang->install->errorImportDemoData = 'Importing demo data failed.';
@@ -305,19 +305,19 @@ $lang->install->dbExecutingTips = 'Please wait. Do not refresh, power off, or sh
 $lang->install->dbFinish        = "Database tables installed successfully";
 $lang->install->dbFail          = 'Database table installation failed. Please check if the network connection is stable, if the database configuration is correct, and if the database user has permission to create the table. Alternatively, return to the previous page, select "Clear up existing data," and try again.';
 $lang->install->success         = "Installed!";
-$lang->install->login           = 'ZenTao Login';
+$lang->install->login           = 'AXIS FLOW Login';
 $lang->install->register        = 'ZenTao Community Signup';
 
-$lang->install->successLabel       = "<p>You have installed ZenTao successfully %s.</p>";
-$lang->install->successNoticeLabel = "<p>You have installed ZenTao %s.<strong class='text-danger'> Please delete install.php</strong>.</p>";
-$lang->install->congratulations    = "Congratulations! ZenTao has been installed successfully.";
+$lang->install->successLabel       = "<p>You have installed AXIS FLOW successfully %s.</p>";
+$lang->install->successNoticeLabel = "<p>You have installed AXIS FLOW %s.<strong class='text-danger'> Please delete install.php</strong>.</p>";
+$lang->install->congratulations    = "Congratulations! AXIS FLOW has been installed successfully.";
 $lang->install->joinZentao         = <<<EOT
 <p>Note: To stay updated with the latest ZenTao news, please register on the ZenTao Community (<a href='https://www.zentao.net' class='alert-link' target='_blank'>www.zentao.net</a>).</p>
 EOT;
 
 $lang->install->product = array('chanzhi', 'zdoo', 'xuanxuan', 'ydisk', 'meshiot');
 
-$lang->install->promotion = "Recommended products from the ZenTao family:";
+$lang->install->promotion = "Recommended products from the AXIS FLOW family:";
 
 $lang->install->chanzhi       = new stdclass();
 $lang->install->chanzhi->name = 'ZSITE';

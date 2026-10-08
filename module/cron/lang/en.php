@@ -31,7 +31,7 @@ $lang->cron->statusList['normal']  = 'Active';
 $lang->cron->statusList['running'] = 'Running';
 $lang->cron->statusList['stop']    = 'Stopped';
 
-$lang->cron->typeList['zentao'] = 'ZenTao Self Call';
+$lang->cron->typeList['zentao'] = 'AXIS FLOW Self Call';
 global $config;
 if($config->features->cronSystemCall) $lang->cron->typeList['system'] = 'System Command';
 

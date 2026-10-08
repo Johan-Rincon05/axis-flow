@@ -70,7 +70,7 @@ $lang->metric->startRecalculate   = 'Start Recalculate';
 $lang->metric->recalculateAction  = 'Recalculate';
 $lang->metric->recalculateBtnText = 'Recalculate';
 $lang->metric->exit               = 'Exit';
-$lang->metric->zentaoPath         = '【ZenTao Path】';
+$lang->metric->zentaoPath         = '【AXIS FLOW Path】';
 
 $lang->metric->yearFormat      = 'Year %s';
 $lang->metric->weekFormat      = 'Week %s';
