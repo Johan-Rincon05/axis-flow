@@ -12,6 +12,7 @@
     --zt-menu-bg: #1E2A3A;
 }
 [lang^='en'] {--zt-menu-width: 132px!important;}
+[lang^='es'] {--zt-menu-width: 152px!important;}
 
 #menu {position: fixed; left: 0; top: 0; bottom: 0; background: var(--zt-menu-bg); width: var(--zt-menu-width); color: var(--zt-menu-text-color); transition: width .1s; user-select: none; z-index: 1120;}
 #menu.waiting-workspace > * {visibility: hidden;}
