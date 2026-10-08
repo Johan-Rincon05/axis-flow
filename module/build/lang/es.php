@@ -24,7 +24,7 @@ $lang->build->batchUnlinkBug   = 'Desvincular Bugs por lote';
 $lang->build->viewBug          = 'Bugs';
 $lang->build->bugList          = 'Lista de Bugs';
 $lang->build->system           = $lang->product->system;
-$lang->build->addSystem        = 'Add ' . $lang->product->system;
+$lang->build->addSystem        = 'Agregar ' . $lang->product->system;
 $lang->build->consumed         = 'Costo';
 
 $lang->build->confirmDelete      = "¿Seguro que desea eliminar el build?";
@@ -36,7 +36,7 @@ $lang->build->basicInfo = 'Información básica';
 $lang->build->id             = 'ID';
 $lang->build->product        = $lang->productCommon;
 $lang->build->project        = $lang->projectCommon;
-$lang->build->branch         = 'Platform/Branch';
+$lang->build->branch         = 'Plataforma/Rama';
 $lang->build->branchAll      = 'Todos los %s vinculados';
 $lang->build->branchName     = '%s';
 $lang->build->execution      = $lang->executionCommon;

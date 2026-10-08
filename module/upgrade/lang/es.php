@@ -27,30 +27,30 @@ $lang->upgrade->notice          = 'Aviso';
 $lang->upgrade->checkExtension  = 'Verificar extensiones';
 $lang->upgrade->consistency     = 'Verificación de consistencia';
 $lang->upgrade->backupNotice    = <<<EOT
-<p>Elevated database privileges are required. Please use an administrator account.</p>
-<p>Warning: Back up your database before proceeding to prevent potential data loss.</p>
+<p>Se requieren privilegios elevados en la base de datos. Use una cuenta de administrador.</p>
+<p>Advertencia: Haga una copia de seguridad de su base de datos antes de continuar para evitar posibles pérdidas de datos.</p>
 <pre class='leading-6 mt-1 p-3'>
-1. Backups can be performed via GUI management tools.
-2. Use the DIsql tool for backup.
+1. Las copias de seguridad pueden realizarse con herramientas de administración gráficas.
+2. Use la herramienta DIsql para la copia de seguridad.
 $> BACKUP DATABASE BACKUPSET <span class='font-bold text-danger'>'filename'</span>;
-The backup set directory "filename" will be generated in the default backup path upon completion.
-The default path is defined by BAK_PATH in dm.ini. If BAK_PATH is not configured, the bak directory under SYSTEM_PATH is used by default.
-This is the simplest backup command. For advanced options, please refer to the online backup syntax documentation.
+Al finalizar, el directorio del conjunto de respaldo "filename" se generará en la ruta de respaldo predeterminada.
+La ruta predeterminada se define mediante BAK_PATH en dm.ini. Si BAK_PATH no está configurado, se usa por defecto el directorio bak dentro de SYSTEM_PATH.
+Este es el comando de respaldo más sencillo. Para opciones avanzadas, consulte la documentación de sintaxis de respaldo en línea.
 </pre>
 EOT;
 
 if($config->db->driver == 'dm')
 {
     $lang->upgrade->backupNotice = <<<EOT
-<p>The upgrade requires high database privileges, please use the root user.</p>
-<p>Please backup your database before updating ZenTao!</p>
+<p>La actualización requiere privilegios elevados en la base de datos; use el usuario root.</p>
+<p>¡Haga una copia de seguridad de su base de datos antes de actualizar ZenTao!</p>
 <pre class='leading-6 mt-1 p-3'>
-1. It can be backed up by graphical client tools.
-2. Use DIsql tool to back up data.
+1. Se puede respaldar con herramientas de cliente gráficas.
+2. Use la herramienta DIsql para respaldar los datos.
    $> BACKUP DATABASE BACKUPSET <span class='font-bold text-danger'>'filename'</span>;
-   After the statement is executed, a backup set directory named "filename" is generated in the default backup path.
-   The default backup path is the path configured with BAK_PATH in dm.ini. If BAK_PATH is not configured, bak in SYSTEM_PATH is used by default.
-   This is the simplest database backup statement,To set additional backup options, you need to understand the syntax of the online backup database.
+   Después de ejecutar la sentencia, se genera un directorio de conjunto de respaldo llamado "filename" en la ruta de respaldo predeterminada.
+   La ruta de respaldo predeterminada es la configurada con BAK_PATH en dm.ini. Si BAK_PATH no está configurado, se usa por defecto bak dentro de SYSTEM_PATH.
+   Esta es la sentencia de respaldo más sencilla. Para establecer opciones de respaldo adicionales, debe conocer la sintaxis del respaldo de base de datos en línea.
 </pre>
 EOT;
 }
@@ -178,21 +178,21 @@ $lang->upgrade->deleteDirTip      = 'Las siguientes carpetas interferirán con l
 $lang->upgrade->errorNoProduct    = "Seleccione {$lang->productCommon} que se fusionará.";
 $lang->upgrade->errorNoExecution  = "Seleccione {$lang->projectCommon} que se fusionará.";
 $lang->upgrade->moveExtFileTip    = <<<EOT
-<p>The new version will apply extension compatibility to historical customizations and plugins. To ensure these functions remain active, the related files must be migrated to extension/custom; otherwise, they will no longer work.</p>
-<p>Please confirm if your system has any customizations or plugins. If not, you can uncheck the files below. If you are unsure, we recommend keeping them checked to avoid any issues.</p>
+<p>La nueva versión aplicará la compatibilidad de extensiones a las personalizaciones y plugins históricos. Para que estas funciones sigan activas, los archivos relacionados deben migrarse a extension/custom; de lo contrario, dejarán de funcionar.</p>
+<p>Confirme si su sistema tiene personalizaciones o plugins. Si no los tiene, puede desmarcar los archivos de abajo. Si no está seguro, le recomendamos mantenerlos marcados para evitar problemas.</p>
 EOT;
 
 $lang->upgrade->projectType['project']   = "Actualizar {$lang->projectCommon} históricos como Proyectos";
 $lang->upgrade->projectType['execution'] = "Actualizar {$lang->projectCommon} históricos como {$lang->executionCommon}";
 
 $lang->upgrade->createProjectTip = <<<EOT
-<p>After the upgrade, each historical {$lang->projectCommon} will map directly to a new Project.</p>
-<p>The system will create an {$lang->executionCommon} with the same name for each historical {$lang->projectCommon}. Tasks, stories, bugs, and other data will then be migrated into these corresponding {$lang->executionCommon}.</p>
+<p>Después de la actualización, cada {$lang->projectCommon} histórico se asignará directamente a un nuevo Proyecto.</p>
+<p>El sistema creará una {$lang->executionCommon} con el mismo nombre para cada {$lang->projectCommon} histórico. Luego, las tareas, historias, bugs y otros datos se migrarán a las {$lang->executionCommon} correspondientes.</p>
 EOT;
 
 $lang->upgrade->createExecutionTip = <<<EOT
-<p>The system will upgrade historical {$lang->projectCommon} as {$lang->executionCommon}.</p>
-<p>After the upgrade, the data from historical {$lang->projectCommon} will be mapped to {$lang->executionCommon} under the new Projects.</p>
+<p>El sistema actualizará los {$lang->projectCommon} históricos como {$lang->executionCommon}.</p>
+<p>Después de la actualización, los datos de los {$lang->projectCommon} históricos se asignarán a las {$lang->executionCommon} de los nuevos Proyectos.</p>
 EOT;
 
 $lang->upgrade->mergeModes = array();
@@ -287,7 +287,7 @@ $lang->upgrade->baselineReview['baseline'] = 'Revisión de línea base';
 $lang->upgrade->baselineReview['change']   = 'Revisión de cambios del proyecto';
 
 $lang->upgrade->changeModes = [];
-$lang->upgrade->changeModes['create'] = 'Add';
+$lang->upgrade->changeModes['create'] = 'Agregar';
 $lang->upgrade->changeModes['update'] = 'Actualizar';
 $lang->upgrade->changeModes['delete'] = 'Eliminar';
 

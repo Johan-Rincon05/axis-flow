@@ -1,6 +1,6 @@
 <?php
 $lang->action->label->execution = "Kanban|execution|task|executionID=%s";
-$lang->action->label->task      = 'Task|task|view|taskID=%s';
+$lang->action->label->task      = 'Tarea|task|view|taskID=%s';
 $lang->action->label->module    = 'Catalog|tree|browse|productid=%s&type=story&currentModuleID=0&branch=all';
 
 /* Object type. */
@@ -14,7 +14,7 @@ $lang->action->search->objectTypeList['story']       = "$lang->SRCommon/$lang->U
 $lang->action->search->objectTypeList['task']        = 'Tarea';
 $lang->action->search->objectTypeList['user']        = 'Usuario';
 $lang->action->search->objectTypeList['doc']         = 'Documento';
-$lang->action->search->objectTypeList['todo']        = 'To-do';
+$lang->action->search->objectTypeList['todo']        = 'Pendiente';
 
 unset($lang->action->dynamicAction->program);
 unset($lang->action->dynamicAction->product);

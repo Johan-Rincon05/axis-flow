@@ -127,7 +127,7 @@ $lang->programplan->typeList['stage']     = 'Fase';
 $lang->programplan->typeList['agileplus'] = $lang->executionCommon . '/Kanban';
 
 $lang->programplan->noData            = 'Aún no hay datos disponibles.';
-$lang->programplan->children          = 'Sub-plan';
+$lang->programplan->children          = 'Subplan';
 $lang->programplan->childrenAB        = 'Sub';
 $lang->programplan->confirmDelete     = '¿Seguro que desea eliminar el plan?';
 $lang->programplan->confirmChangeAttr = 'El tipo de la subfase se actualizará automáticamente para coincidir con el tipo de la fase padre %s. ¿Desea guardar los cambios?';

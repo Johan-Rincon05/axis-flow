@@ -112,7 +112,7 @@ $lang->user->confirmUnbind = "¿Seguro que desea desvincular a este usuario de Z
 $lang->user->relogin       = "Iniciar sesión de nuevo";
 $lang->user->asGuest       = "Acceso de invitado";
 $lang->user->goback        = "Volver a la página anterior";
-$lang->user->deleted       = '(Deleted)';
+$lang->user->deleted       = '(Eliminado)';
 $lang->user->search        = 'Buscar';
 $lang->user->else          = 'Otros';
 
@@ -138,7 +138,7 @@ $lang->user->testCase  = 'Casos de prueba';
 $lang->user->issue     = 'Incidencia';
 $lang->user->risk      = 'Riesgo';
 $lang->user->schedule  = 'Cronograma';
-$lang->user->todo      = 'To-do';
+$lang->user->todo      = 'Pendiente';
 $lang->user->story     = 'Historias';
 $lang->user->dynamic   = 'Recientes';
 
@@ -319,17 +319,17 @@ $lang->user->process4DB  = "Parece que está usando un entorno de instalación c
 $lang->user->mkdirWin = <<<EOT
 <html><head><meta charset="utf-8"></head>
 <body><table align="center" style="width:700px; margin-top:100px; border:1px solid gray; font-size:14px;"><tr><td style="padding:8px">
-<div style="margin-bottom:8px;"> Failed to create a temporary directory. Please verify that the directory <strong style="color:#ed980f">%s</strong> exists and has the necessary permissions.</div>
-<div>Can"t create tmp directory, make sure the directory <strong style="color:#ed980f">%s</strong> exists and has permission to operate.</div>
+<div style="margin-bottom:8px;"> No se pudo crear el directorio temporal. Verifique que el directorio <strong style="color:#ed980f">%s</strong> exista y tenga los permisos necesarios.</div>
+<div>No se puede crear el directorio tmp; asegúrese de que el directorio <strong style="color:#ed980f">%s</strong> exista y tenga permiso para operar.</div>
 </td></tr></table></body></html>
 EOT;
 $lang->user->mkdirLinux = <<<EOT
 <html><head><meta charset="utf-8"></head>
 <body><table align="center" style="width:700px; margin-top:100px; border:1px solid gray; font-size:14px;"><tr><td style="padding:8px">
-<div style="margin-bottom:8px;"> Failed to create a temporary directory. Please verify that the directory <strong style="color:#ed980f">%s</strong>exists and has the necessary permissions.</div>
-<div style="margin-bottom:8px;">Command: <strong style="color:#ed980f">chmod 777 -R %s</strong>。</div>
-<div>Can"t create tmp directory, make sure the directory <strong style="color:#ed980f">%s</strong> exists and has permission to operate.</div>
-<div style="margin-bottom:8px;">Command: <strong style="color:#ed980f">chmod 777 -R %s</strong>.</div>
+<div style="margin-bottom:8px;"> No se pudo crear el directorio temporal. Verifique que el directorio <strong style="color:#ed980f">%s</strong> exista y tenga los permisos necesarios.</div>
+<div style="margin-bottom:8px;">Comando: <strong style="color:#ed980f">chmod 777 -R %s</strong>。</div>
+<div>No se puede crear el directorio tmp; asegúrese de que el directorio <strong style="color:#ed980f">%s</strong> exista y tenga permiso para operar.</div>
+<div style="margin-bottom:8px;">Comando: <strong style="color:#ed980f">chmod 777 -R %s</strong>.</div>
 </td></tr></table></body></html>
 EOT;
 

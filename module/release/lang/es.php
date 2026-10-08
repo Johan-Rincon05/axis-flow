@@ -23,7 +23,7 @@ $lang->release->batchUnlink      = 'Desvincular por lote';
 $lang->release->batchUnlinkStory = 'Desvincular historias por lote';
 $lang->release->batchUnlinkBug   = 'Desvincular Bugs por lote';
 $lang->release->manageSystem     = 'Administrar ' . $lang->product->system;
-$lang->release->addSystem        = 'Add ' . $lang->product->system;
+$lang->release->addSystem        = 'Agregar ' . $lang->product->system;
 $lang->release->consumed         = 'Costo';
 
 $lang->release->confirmDelete      = '¿Seguro que desea eliminar este lanzamiento?';
@@ -91,7 +91,7 @@ $lang->release->exportRange    = 'Datos a exportar';
 $lang->release->storyTitle = 'Nombre de la historia';
 $lang->release->bugTitle   = 'Nombre del Bug';
 
-$lang->release->filePath = 'Download: ';
+$lang->release->filePath = 'Descargar: ';
 $lang->release->scmPath  = 'Ruta SCM: ';
 
 $lang->release->exportTypeList['all']     = 'Todos';

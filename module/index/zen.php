@@ -20,6 +20,9 @@ class indexZen extends index
      */
     protected function checkShowFeatures(): bool
     {
+        /* AXIS FLOW: no mostrar el tour de novedades de ZenTao (contenido remoto en ingles). */
+        return false;
+
         if($this->config->edition == 'ipd') return false;
 
         foreach($this->config->newFeatures as $feature)

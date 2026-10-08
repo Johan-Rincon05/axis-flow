@@ -5,7 +5,7 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1000,
     'version'     => '1',
-    'name'        => array('zh-cn' => '完成项目工期透视表', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+    'name'        => array('zh-cn' => 'Tabla dinámica de duración de proyectos completados', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
     'code'        => 'finishedProjectDuration',
     'dimension'   => '2',
     'driver'      => 'mysql',
@@ -77,16 +77,16 @@ EOT,
     ),
     'langs'     => array
     (
-        'name'               => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'program1'           => array('zh-cn' => '一级项目集', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'begin'              => array('zh-cn' => '计划开始日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'end'                => array('zh-cn' => '计划完成日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'realBegan'          => array('zh-cn' => '实际开始日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'realEnd'            => array('zh-cn' => '实际完成日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'closedDate'         => array('zh-cn' => '关闭日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'realduration'       => array('zh-cn' => '实际工期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'duration_deviation' => array('zh-cn' => '工期偏差', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'rate'               => array('zh-cn' => '工期偏差率', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'name'               => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'program1'           => array('zh-cn' => 'Programa de primer nivel', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'begin'              => array('zh-cn' => 'Fecha de inicio planificada', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'end'                => array('zh-cn' => 'Fecha de finalización planificada', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'realBegan'          => array('zh-cn' => 'Fecha de inicio real', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'realEnd'            => array('zh-cn' => 'Fecha de finalización real', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'closedDate'         => array('zh-cn' => 'Fecha de cierre', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'realduration'       => array('zh-cn' => 'Duración real', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'duration_deviation' => array('zh-cn' => 'Desviación de duración', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'rate'               => array('zh-cn' => 'Tasa de desviación de duración', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '1'
@@ -96,7 +96,7 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1001,
     'version'     => '1',
-    'name'        => array('zh-cn' => '完成项目工时透视表', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+    'name'        => array('zh-cn' => 'Tabla dinámica de horas de trabajo de proyectos completados', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
     'code'        => 'finishedProjectHour',
     'dimension'   => '2',
     'driver'      => 'mysql',
@@ -188,7 +188,7 @@ EOT,
         (
             'field'   => 'closeddate',
             'type'    => 'date',
-            'name'    => '关闭日期',
+            'name'    => 'Fecha de cierre',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
@@ -207,16 +207,16 @@ EOT,
     ),
     'langs'     => array
     (
-        'projectname'            => array('zh-cn' => '项目名称', 'zh-tw' => '项目名称', 'en' => 'projectname'),
-        'topprogram'             => array('zh-cn' => '一级项目集', 'zh-tw' => '一级项目集', 'en' => 'topprogram'),
-        'estimate'               => array('zh-cn' => '预计工时', 'zh-tw' => '预计工时', 'en' => 'estimate'),
-        'consumed'               => array('zh-cn' => '消耗工时', 'zh-tw' => '消耗工时', 'en' => 'consumed'),
-        'deviation'              => array('zh-cn' => '工时偏差', 'zh-tw' => '工时偏差', 'en' => 'deviation'),
-        'deviationrate'          => array('zh-cn' => '工时偏差率', 'zh-tw' => '工时偏差率', 'en' => 'deviationrate'),
-        'finishedstorys'         => array('zh-cn' => '完成需求数', 'zh-tw' => '完成需求数', 'en' => 'finishedstorys'),
-        'finishedstorysmate'     => array('zh-cn' => '完成需求规模数', 'zh-tw' => '完成需求规模数', 'en' => 'finishedstorysmate'),
-        'demandsizesperunittime' => array('zh-cn' => '单位时间交付需求规模数', 'zh-tw' => '单位时间交付需求规模数', 'en' => 'demandsizesperunittime'),
-        'closeddate'             => array('zh-cn' => '关闭日期', 'zh-tw' => '关闭日期', 'en' => 'closeddate')
+        'projectname'            => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => 'Nombre del proyecto', 'en' => 'projectname'),
+        'topprogram'             => array('zh-cn' => 'Programa de primer nivel', 'zh-tw' => 'Programa de primer nivel', 'en' => 'topprogram'),
+        'estimate'               => array('zh-cn' => 'Horas estimadas', 'zh-tw' => 'Horas estimadas', 'en' => 'estimate'),
+        'consumed'               => array('zh-cn' => 'Horas consumidas', 'zh-tw' => 'Horas consumidas', 'en' => 'consumed'),
+        'deviation'              => array('zh-cn' => 'Desviación de horas', 'zh-tw' => 'Desviación de horas', 'en' => 'deviation'),
+        'deviationrate'          => array('zh-cn' => 'Tasa de desviación de horas', 'zh-tw' => 'Tasa de desviación de horas', 'en' => 'deviationrate'),
+        'finishedstorys'         => array('zh-cn' => 'Historias completadas', 'zh-tw' => 'Historias completadas', 'en' => 'finishedstorys'),
+        'finishedstorysmate'     => array('zh-cn' => 'Tamaño de requerimientos completados', 'zh-tw' => 'Tamaño de requerimientos completados', 'en' => 'finishedstorysmate'),
+        'demandsizesperunittime' => array('zh-cn' => 'Tamaño de historias entregadas por unidad de tiempo', 'zh-tw' => 'Tamaño de historias entregadas por unidad de tiempo', 'en' => 'demandsizesperunittime'),
+        'closeddate'             => array('zh-cn' => 'Fecha de cierre', 'zh-tw' => 'Fecha de cierre', 'en' => 'closeddate')
     ),
     'stage'     => 'published',
     'builtin'   => '1'
@@ -226,7 +226,7 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1002,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品缺陷数据汇总表', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+    'name'        => array('zh-cn' => 'Tabla resumen de datos de defectos por producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
     'code'        => 'productBugSummary',
     'dimension'   => '3',
     'driver'      => 'mysql',
@@ -340,20 +340,20 @@ EOT,
     ),
     'langs'     => array
     (
-        'product'           => array('zh-cn' => '产品', 'zh-tw' => '产品', 'en' => 'product'),
-        'topprogram'        => array('zh-cn' => '一级项目集', 'zh-tw' => '一级项目集', 'en' => 'topprogram'),
-        'productline'       => array('zh-cn' => '产品线', 'zh-tw' => '产品线', 'en' => 'productline'),
-        'exfixedstorys'     => array('zh-cn' => '研发完成需求数', 'zh-tw' => '研发完成需求数', 'en' => 'exfixedstorys'),
-        'exfixedstorysmate' => array('zh-cn' => '研发完成需求规模数', 'zh-tw' => '研发完成需求规模数', 'en' => 'exfixedstorysmate'),
-        'storycases'        => array('zh-cn' => '需求用例数', 'zh-tw' => '需求用例数', 'en' => 'storycases'),
-        'casedensity'       => array('zh-cn' => '用例密度', 'zh-tw' => '用例密度', 'en' => 'casedensity'),
-        'casecoveragerate'  => array('zh-cn' => '用例覆盖率', 'zh-tw' => '用例覆盖率', 'en' => 'casecoveragerate'),
-        'bugs'              => array('zh-cn' => 'Bug数', 'zh-tw' => 'Bug数', 'en' => 'bugs'),
-        'effectivebugs'     => array('zh-cn' => '有效Bug数', 'zh-tw' => '有效Bug数', 'en' => 'effectviebugs'),
-        'pri12bugs'         => array('zh-cn' => '优先级为1，2的Bug数', 'zh-tw' => '优先级为1，2的Bug数', 'en' => 'pri12bugs'),
-        'bugdensity'        => array('zh-cn' => 'Bug密度', 'zh-tw' => 'Bug密度', 'en' => 'bugdensity'),
-        'fixedbugs'         => array('zh-cn' => '修复Bug数', 'zh-tw' => '修复Bug数', 'en' => 'fixedbugs'),
-        'fixedbugsrate'     => array('zh-cn' => 'Bug修复率', 'zh-tw' => 'Bug修复率', 'en' => 'fixedbugsrate')
+        'product'           => array('zh-cn' => 'Producto', 'zh-tw' => 'Producto', 'en' => 'product'),
+        'topprogram'        => array('zh-cn' => 'Programa de primer nivel', 'zh-tw' => 'Programa de primer nivel', 'en' => 'topprogram'),
+        'productline'       => array('zh-cn' => 'Línea de producto', 'zh-tw' => 'Línea de producto', 'en' => 'productline'),
+        'exfixedstorys'     => array('zh-cn' => 'Requerimientos completados por desarrollo', 'zh-tw' => 'Requerimientos completados por desarrollo', 'en' => 'exfixedstorys'),
+        'exfixedstorysmate' => array('zh-cn' => 'Tamaño de requerimientos completados por desarrollo', 'zh-tw' => 'Tamaño de requerimientos completados por desarrollo', 'en' => 'exfixedstorysmate'),
+        'storycases'        => array('zh-cn' => 'Casos de prueba por requerimiento', 'zh-tw' => 'Casos de prueba por requerimiento', 'en' => 'storycases'),
+        'casedensity'       => array('zh-cn' => 'Densidad de casos de prueba', 'zh-tw' => 'Densidad de casos de prueba', 'en' => 'casedensity'),
+        'casecoveragerate'  => array('zh-cn' => 'Cobertura de casos de prueba', 'zh-tw' => 'Cobertura de casos de prueba', 'en' => 'casecoveragerate'),
+        'bugs'              => array('zh-cn' => 'Bugs', 'zh-tw' => 'Bugs', 'en' => 'bugs'),
+        'effectivebugs'     => array('zh-cn' => 'Bugs válidos', 'zh-tw' => 'Bugs válidos', 'en' => 'effectviebugs'),
+        'pri12bugs'         => array('zh-cn' => 'Bug con prioridad 1 y 2', 'zh-tw' => 'Bug con prioridad 1 y 2', 'en' => 'pri12bugs'),
+        'bugdensity'        => array('zh-cn' => 'Densidad de Bugs', 'zh-tw' => 'Densidad de Bugs', 'en' => 'bugdensity'),
+        'fixedbugs'         => array('zh-cn' => 'Bugs corregidos', 'zh-tw' => 'Bugs corregidos', 'en' => 'fixedbugs'),
+        'fixedbugsrate'     => array('zh-cn' => 'Tasa de corrección de Bugs', 'zh-tw' => 'Tasa de corrección de Bugs', 'en' => 'fixedbugsrate')
     ),
     'stage'     => 'published',
     'builtin'   => '1'
@@ -363,9 +363,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1003,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品需求交付统计表', 'zh-tw' => '產品完成度統計表', 'en' => 'Product Progress', 'de' => 'Product Progress', 'fr' => 'Product Progress'),
+    'name'        => array('zh-cn' => 'Tabla de entrega de requerimientos por producto', 'zh-tw' => 'Tabla de avance de finalización por producto', 'en' => 'Product Progress', 'de' => 'Product Progress', 'fr' => 'Product Progress'),
     'code'        => 'productProgress',
-    'desc'        => array('zh-cn' => '按照产品列出需求总数，交付的需求总数(状态是关闭且关闭原因为已完成，或者研发阶段是已发布的需求)。', 'zh-tw' => '按照產品列出需求總數，完成的總數(狀態是關閉，或者研發階段是發布)，完成的百分比。', 'en' => 'Number of total stories,done stories(state is closed, or stage is released), percent of completion.', 'de' => 'Number of total stories,done stories(state is closed, or stage is released), percent of completion.', 'fr' => 'Number of total stories,done stories(state is closed, or stage is released), percent of completion.'),
+    'desc'        => array('zh-cn' => 'Lista por producto el total de requerimientos y el total de requerimientos entregados (con estado Cerrado y motivo de cierre Completado, o con etapa de desarrollo Lanzada).', 'zh-tw' => 'Lista por producto el total de requerimientos, el total de completados (estado Cerrado, o etapa de desarrollo Lanzada) y el porcentaje de finalización.', 'en' => 'Number of total stories,done stories(state is closed, or stage is released), percent of completion.', 'de' => 'Number of total stories,done stories(state is closed, or stage is released), percent of completion.', 'fr' => 'Number of total stories,done stories(state is closed, or stage is released), percent of completion.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59',
@@ -399,9 +399,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -412,10 +412,10 @@ EOT,
     ),
     'langs'     => array
     (
-        'product' => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'product' => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'name'    => array('zh-cn' => 'name', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'done'    => array('zh-cn' => '交付需求数', 'zh-tw' => '交付需求数', 'en' => 'delivery', 'de' => '', 'fr' => ''),
-        'count'   => array('zh-cn' => '需求数', 'zh-tw' => '需求数', 'en' => 'Stories', 'de' => '', 'fr' => '')
+        'done'    => array('zh-cn' => 'Historias entregadas', 'zh-tw' => 'Historias entregadas', 'en' => 'delivery', 'de' => '', 'fr' => ''),
+        'count'   => array('zh-cn' => 'Historias', 'zh-tw' => 'Historias', 'en' => 'Stories', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
     'drills'    => array
@@ -449,9 +449,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1004,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品需求状态分布表', 'zh-tw' => '產品需求狀態分布表', 'en' => 'Story Status', 'de' => 'Story Status', 'fr' => 'Story Status'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de estados de requerimientos por producto', 'zh-tw' => 'Tabla de distribución de estados de requerimientos por producto', 'en' => 'Story Status', 'de' => 'Story Status', 'fr' => 'Story Status'),
     'code'        => 'productStoryStatus',
-    'desc'        => array('zh-cn' => '按照产品列出需求总数，状态的分布情况。', 'zh-tw' => '按照產品列出需求總數，狀態的分布情況。', 'en' => 'Total number and status distribution of stories.', 'de' => 'Total number and status distribution of stories.', 'fr' => 'Total number and status distribution of stories.'),
+    'desc'        => array('zh-cn' => 'Lista por producto el total de requerimientos y la distribución de sus estados.', 'zh-tw' => 'Lista por producto el total de requerimientos y la distribución de sus estados.', 'en' => 'Total number and status distribution of stories.', 'de' => 'Total number and status distribution of stories.', 'fr' => 'Total number and status distribution of stories.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59',
@@ -482,9 +482,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -494,8 +494,8 @@ EOT,
     ),
     'langs'     => array
     (
-        'product'          => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'status'           => array('zh-cn' => '不同状态需求', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'product'          => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'status'           => array('zh-cn' => 'Requerimientos por estado', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'name'             => array('zh-cn' => 'name', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
@@ -521,9 +521,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1005,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品需求阶段分布表', 'zh-tw' => '產品需求階段分布表', 'en' => 'Story Stage', 'de' => 'Story Stage', 'fr' => 'Story Stage'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de etapas de requerimientos por producto', 'zh-tw' => 'Tabla de distribución de etapas de requerimientos por producto', 'en' => 'Story Stage', 'de' => 'Story Stage', 'fr' => 'Story Stage'),
     'code'        => 'productStoryStage',
-    'desc'        => array('zh-cn' => '按照产品列出需求总数，研发阶段的分布情况。', 'zh-tw' => '按照產品列出需求總數，研發階段的分布情況。', 'en' => 'Total number and stage distribution of stories ', 'de' => 'Total number and stage distribution of stories ', 'fr' => 'Total number and stage distribution of stories '),
+    'desc'        => array('zh-cn' => 'Lista por producto el total de requerimientos y la distribución de sus etapas de desarrollo.', 'zh-tw' => 'Lista por producto el total de requerimientos y la distribución de sus etapas de desarrollo.', 'en' => 'Total number and stage distribution of stories ', 'de' => 'Total number and stage distribution of stories ', 'fr' => 'Total number and stage distribution of stories '),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59',
@@ -555,9 +555,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -567,8 +567,8 @@ EOT,
     ),
     'langs'     => array
     (
-        'product'          => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'stage'            => array('zh-cn' => '不同阶段需求', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'product'          => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'stage'            => array('zh-cn' => 'Requerimientos por etapa', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'name'             => array('zh-cn' => 'name', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
@@ -594,9 +594,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1006,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品发布数量统计表', 'zh-tw' => '產品發布數量統計表', 'en' => 'Product Release', 'de' => 'Product Release', 'fr' => 'Product Release'),
+    'name'        => array('zh-cn' => 'Tabla de cantidad de lanzamientos por producto', 'zh-tw' => 'Tabla de cantidad de lanzamientos por producto', 'en' => 'Product Release', 'de' => 'Product Release', 'fr' => 'Product Release'),
     'code'        => 'productRelease',
-    'desc'        => array('zh-cn' => '按照产品列出发布的数量。', 'zh-tw' => '按照產品列出發布的數量。', 'en' => 'Product Release.', 'de' => 'Product Release.', 'fr' => 'Product Release.'),
+    'desc'        => array('zh-cn' => 'Lista por producto la cantidad de lanzamientos.', 'zh-tw' => 'Lista por producto la cantidad de lanzamientos.', 'en' => 'Product Release.', 'de' => 'Product Release.', 'fr' => 'Product Release.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59',
@@ -629,9 +629,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -641,9 +641,9 @@ EOT,
     ),
     'langs'     => array
     (
-        'product'  => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'name'     => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'releases' => array('zh-cn' => '发布', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'product'  => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'name'     => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'releases' => array('zh-cn' => 'Lanzamiento', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
     'drills'    => array
@@ -667,9 +667,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1007,
     'version'     => '1',
-    'name'        => array('zh-cn' => '任务状态统计表', 'zh-tw' => '任務狀態統計表', 'en' => 'Task Status Report', 'de' => 'Task Status Report', 'fr' => 'Task Status Report', 'vi' => 'Task Status Report', 'ja' => 'Task Status Report'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de estado de tareas', 'zh-tw' => 'Tabla de estadísticas de estado de tareas', 'en' => 'Task Status Report', 'de' => 'Task Status Report', 'fr' => 'Task Status Report', 'vi' => 'Task Status Report', 'ja' => 'Task Status Report'),
     'code'        => 'taskStatus',
-    'desc'        => array('zh-cn' => '按照执行统计任务的状态分布情况。', 'zh-tw' => '按照執行統計任務的狀態分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución del estado de las tareas por ejecución.', 'zh-tw' => 'Muestra la distribución del estado de las tareas por ejecución.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -716,12 +716,12 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
-        array('from' => 'query', 'field' => 'beginDate', 'name' => '执行起始日期', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '执行结束日期', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
+        array('from' => 'query', 'field' => 'beginDate', 'name' => 'Fecha de inicio de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Fecha de fin de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
     ),
     'fields'    => array
     (
@@ -736,19 +736,19 @@ EOT,
     ),
     'langs'     => array
     (
-        'project'         => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'status'          => array('zh-cn' => '任务状态', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'       => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'taskID'          => array('zh-cn' => '不同状态任务', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'         => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'status'          => array('zh-cn' => 'Estado de la tarea', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'       => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'taskID'          => array('zh-cn' => 'Tareas por estado', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'executionstatus' => array('zh-cn' => 'executionstatus', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'timeout'         => array('zh-cn' => 'timeout', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution', 'beginDate', 'endDate'),
-        'showName'    => array('项目列表', '执行列表', '项目状态', '执行状态', '执行起始日期', '执行结束日期'),
+        'showName'    => array('Lista de proyectos', 'Lista de ejecuciones', 'Estado del proyecto', 'Estado de la ejecución', 'Fecha de inicio de la ejecución', 'Fecha de fin de la ejecución'),
         'requestType' => array('select', 'select','select', 'select', 'date', 'date'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution', '', ''),
         'default'     => array('doing', 'doing', '', '', '$MONTHBEGIN', '$MONTHEND')
@@ -776,9 +776,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1008,
     'version'     => '1',
-    'name'        => array('zh-cn' => '任务类型统计表', 'zh-tw' => '任務類型統計表', 'en' => 'Task Type Report', 'de' => 'Task Type Report', 'fr' => 'Task Type Report', 'vi' => 'Task Type Report', 'ja' => 'Task Type Report'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de tipo de tarea', 'zh-tw' => 'Tabla de estadísticas de tipo de tarea', 'en' => 'Task Type Report', 'de' => 'Task Type Report', 'fr' => 'Task Type Report', 'vi' => 'Task Type Report', 'ja' => 'Task Type Report'),
     'code'        => 'taskType',
-    'desc'        => array('zh-cn' => '按照项目统计任务的类型分布情况。', 'zh-tw' => '按照項目統計任務的類型分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución del tipo de las tareas por proyecto.', 'zh-tw' => 'Muestra la distribución del tipo de las tareas por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -820,12 +820,12 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
-        array('from' => 'query', 'field' => 'beginDate', 'name' => '执行起始日期', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '执行结束日期', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
+        array('from' => 'query', 'field' => 'beginDate', 'name' => 'Fecha de inicio de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Fecha de fin de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
     ),
     'fields'    => array
     (
@@ -840,19 +840,19 @@ EOT,
     ),
     'langs'     => array
     (
-        'id'              => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'         => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'       => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'type'            => array('zh-cn' => '任务类型', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'taskID'          => array('zh-cn' => '不同类型任务', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'id'              => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'         => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'       => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'type'            => array('zh-cn' => 'Tipo de tarea', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'taskID'          => array('zh-cn' => 'Tareas por tipo', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'executionstatus' => array('zh-cn' => 'executionstatus', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution', 'beginDate', 'endDate'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表', '执行起始日期', '执行结束日期'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones', 'Fecha de inicio de la ejecución', 'Fecha de fin de la ejecución'),
         'requestType' => array('select', 'select', 'select', 'select', 'date', 'date'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution', 'user', 'user'),
         'default'     => array('doing', 'doing', '', '', '$MONTHBEGIN', '$MONTHEND')
@@ -880,9 +880,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1009,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目任务指派统计表', 'zh-tw' => '項目任務指派統計表', 'en' => 'Task Assign Report', 'de' => 'Task Assign Report', 'fr' => 'Task Assign Report', 'vi' => 'Task Assign Report', 'ja' => 'Task Assign Report'),
+    'name'        => array('zh-cn' => 'Tabla de asignación de tareas por proyecto', 'zh-tw' => 'Tabla de asignación de tareas por proyecto', 'en' => 'Task Assign Report', 'de' => 'Task Assign Report', 'fr' => 'Task Assign Report', 'vi' => 'Task Assign Report', 'ja' => 'Task Assign Report'),
     'code'        => 'projectTaskAssign',
-    'desc'        => array('zh-cn' => '按照项目统计任务的指派给分布情况。', 'zh-tw' => '按照項目統計任務的指派給分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de las tareas según a quién están asignadas, por proyecto.', 'zh-tw' => 'Muestra la distribución de las tareas según a quién están asignadas, por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -925,12 +925,12 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
-        array('from' => 'query', 'field' => 'beginDate', 'name' => '执行起始日期', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '执行结束日期', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
+        array('from' => 'query', 'field' => 'beginDate', 'name' => 'Fecha de inicio de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Fecha de fin de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
     ),
     'fields'    => array
     (
@@ -946,18 +946,18 @@ EOT,
     'langs'     => array
     (
         'id'              => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'         => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'       => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'assignedTo'      => array('zh-cn' => '指派给', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'taskID'          => array('zh-cn' => '人员被指派任务', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'         => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'       => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'assignedTo'      => array('zh-cn' => 'Asignado a', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'taskID'          => array('zh-cn' => 'Tareas asignadas a personas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'executionstatus' => array('zh-cn' => 'executionstatus', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution', 'beginDate', 'endDate'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表', '执行起始日期', '执行结束日期'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones', 'Fecha de inicio de la ejecución', 'Fecha de fin de la ejecución'),
         'requestType' => array('select', 'select', 'select', 'select', 'date', 'date'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution', 'user', 'user'),
         'default'     => array('doing', 'doing', '', '', '$MONTHBEGIN', '$MONTHEND')
@@ -985,9 +985,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1010,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目任务完成者统计表', 'zh-tw' => '項目任務完成者統計表', 'en' => 'Task Finish Report', 'de' => 'Task Finish Report', 'fr' => 'Task Finish Report', 'vi' => 'Task Finish Report', 'ja' => 'Task Finish Report'),
+    'name'        => array('zh-cn' => 'Tabla de finalizadores de tareas por proyecto', 'zh-tw' => 'Tabla de finalizadores de tareas por proyecto', 'en' => 'Task Finish Report', 'de' => 'Task Finish Report', 'fr' => 'Task Finish Report', 'vi' => 'Task Finish Report', 'ja' => 'Task Finish Report'),
     'code'        => 'projectTaskFinished',
-    'desc'        => array('zh-cn' => '按照项目统计任务的完成者分布情况。', 'zh-tw' => '按照項目統計任務的完成者分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de las tareas según quién las completó, por proyecto.', 'zh-tw' => 'Muestra la distribución de las tareas según quién las completó, por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -1030,12 +1030,12 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
-        array('from' => 'query', 'field' => 'dept', 'name' => '完成者所在部门', 'type' => 'select', 'typeOption' => 'dept', 'default' => '0'),
-        array('from' => 'query', 'field' => 'user', 'name' => '完成者', 'type' => 'select', 'typeOption' => 'user', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0'),
+        array('from' => 'query', 'field' => 'dept', 'name' => 'Departamento del finalizador', 'type' => 'select', 'typeOption' => 'dept', 'default' => '0'),
+        array('from' => 'query', 'field' => 'user', 'name' => 'Finalizador', 'type' => 'select', 'typeOption' => 'user', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1051,18 +1051,18 @@ EOT,
     'langs'     => array
     (
         'id'              => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'         => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'       => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'finishedBy'      => array('zh-cn' => '由谁完成', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'taskID'          => array('zh-cn' => '不同完成者完成的任务', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'         => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'       => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'finishedBy'      => array('zh-cn' => 'Completado por', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'taskID'          => array('zh-cn' => 'Tareas completadas por cada finalizador', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'executionstatus' => array('zh-cn' => 'executionstatus', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution', 'beginDate', 'endDate'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表', '执行起始日期', '执行结束日期'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones', 'Fecha de inicio de la ejecución', 'Fecha de fin de la ejecución'),
         'requestType' => array('select', 'select', 'select', 'select', 'date', 'date'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution', 'user', 'user'),
         'default'     => array('doing', 'doing', '', '', '$MONTHBEGIN', '$MONTHEND')
@@ -1089,9 +1089,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1011,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目投入统计表', 'zh-tw' => '項目投入統計表', 'en' => 'Project Invest Report', 'de' => 'Project Invest Report', 'fr' => 'Project Invest Report', 'vi' => 'Project Invest Report', 'ja' => 'Project Invest Report'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de inversión por proyecto', 'zh-tw' => 'Tabla de estadísticas de inversión por proyecto', 'en' => 'Project Invest Report', 'de' => 'Project Invest Report', 'fr' => 'Project Invest Report', 'vi' => 'Project Invest Report', 'ja' => 'Project Invest Report'),
     'code'        => 'projectInvested',
-    'desc'        => array('zh-cn' => '按照项目列出：任务数，需求数，人数，总消耗工时。', 'zh-tw' => '按照項目列出：任務數，需求數，人數，總消耗工時。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Lista por proyecto: cantidad de tareas, cantidad de requerimientos, cantidad de personas y total de horas consumidas.', 'zh-tw' => 'Lista por proyecto: cantidad de tareas, cantidad de requerimientos, cantidad de personas y total de horas consumidas.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -1139,11 +1139,11 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'beginDate', 'name' => '执行起始日期', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '执行结束日期', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'beginDate', 'name' => 'Fecha de inicio de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Fecha de fin de la ejecución', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
     ),
     'fields'    => array
     (
@@ -1162,21 +1162,21 @@ EOT,
     'langs'     => array
     (
         'id'              => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'         => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'       => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'timeLimit'       => array('zh-cn' => '工期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'teams'           => array('zh-cn' => '人数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'stories'         => array('zh-cn' => '需求数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'consumed'        => array('zh-cn' => '总消耗', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'number'          => array('zh-cn' => '任务数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'         => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'       => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'timeLimit'       => array('zh-cn' => 'Duración', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'teams'           => array('zh-cn' => 'Personas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'stories'         => array('zh-cn' => 'Historias', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'consumed'        => array('zh-cn' => 'Total consumido', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'number'          => array('zh-cn' => 'Tareas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'executionstatus' => array('zh-cn' => 'executionstatus', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'beginDate', 'endDate'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行起始日期', '执行结束日期'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Fecha de inicio de la ejecución', 'Fecha de fin de la ejecución'),
         'requestType' => array('select', 'select', 'select', 'date', 'date'),
         'selectList'  => array('project.status', 'execution.status', 'project', '', ''),
         'default'     => array('doing', 'doing', '', '$WEEKBEGIN', '$WEEKEND')
@@ -1236,9 +1236,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1012,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目需求状态分布表', 'zh-tw' => '項目需求狀態分布表', 'en' => 'Project Story Status', 'de' => 'Project Story Status', 'fr' => 'Project Story Status', 'vi' => 'Project Story Status', 'ja' => 'Project Story Status'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de estados de requerimientos por proyecto', 'zh-tw' => 'Tabla de distribución de estados de requerimientos por proyecto', 'en' => 'Project Story Status', 'de' => 'Project Story Status', 'fr' => 'Project Story Status', 'vi' => 'Project Story Status', 'ja' => 'Project Story Status'),
     'code'        => 'projectStoryStatus',
-    'desc'        => array('zh-cn' => '按照项目统计需求的状态分布情况。', 'zh-tw' => '按照項目統計需求的狀態分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución del estado de los requerimientos por proyecto.', 'zh-tw' => 'Muestra la distribución del estado de los requerimientos por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -1276,10 +1276,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1293,16 +1293,16 @@ EOT,
     'langs'     => array
     (
         'id'            => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'       => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'status'        => array('zh-cn' => '不同状态需求', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'       => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'status'        => array('zh-cn' => 'Requerimientos por estado', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select', 'select', 'select'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution'),
         'default'     => array('doing', 'doing', '', '')
@@ -1330,9 +1330,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1013,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目需求阶段分布表', 'zh-tw' => '項目需求階段分布表', 'en' => 'Project Stage Report', 'de' => 'Project Stage Report', 'fr' => 'Project Stage Report', 'vi' => 'Project Stage Report', 'ja' => 'Project Stage Report'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de etapas de requerimientos por proyecto', 'zh-tw' => 'Tabla de distribución de etapas de requerimientos por proyecto', 'en' => 'Project Stage Report', 'de' => 'Project Stage Report', 'fr' => 'Project Stage Report', 'vi' => 'Project Stage Report', 'ja' => 'Project Stage Report'),
     'code'        => 'projectStoryStage',
-    'desc'        => array('zh-cn' => '按照项目统计需求阶段分布情况。', 'zh-tw' => '按照項目統計需求階段分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de las etapas de los requerimientos por proyecto.', 'zh-tw' => 'Muestra la distribución de las etapas de los requerimientos por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -1370,10 +1370,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1387,16 +1387,16 @@ EOT,
     'langs'     => array
     (
         'id'            => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'       => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'stage'         => array('zh-cn' => '不同阶段需求', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'       => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'stage'         => array('zh-cn' => 'Requerimientos por etapa', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select', 'select', 'select'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution'),
         'default'     => array('doing', 'doing', '', '')
@@ -1424,9 +1424,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1014,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目Bug解决方案分布表', 'zh-tw' => '項目Bug解決方案分布表', 'en' => 'Project Bug Resolution', 'de' => 'Project Bug Resolution', 'fr' => 'Project Bug Resolution', 'vi' => 'Project Bug Resolution', 'ja' => 'Project Bug Resolution'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de soluciones de Bug por proyecto', 'zh-tw' => 'Tabla de distribución de soluciones de Bug por proyecto', 'en' => 'Project Bug Resolution', 'de' => 'Project Bug Resolution', 'fr' => 'Project Bug Resolution', 'vi' => 'Project Bug Resolution', 'ja' => 'Project Bug Resolution'),
     'code'        => 'projectBugResolution',
-    'desc'        => array('zh-cn' => '按照项目统计Bug的解决方案分布情况。', 'zh-tw' => '按照項目統計Bug的解決方案分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de las soluciones de los Bug por proyecto.', 'zh-tw' => 'Muestra la distribución de las soluciones de los Bug por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60,61',
@@ -1465,10 +1465,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1482,18 +1482,18 @@ EOT,
     ),
     'langs'     => array
     (
-        'id'            => array('zh-cn' => '项目', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'       => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectID'     => array('zh-cn' => '执行', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'id'            => array('zh-cn' => 'Proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'       => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectID'     => array('zh-cn' => 'Ejecutar', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'         => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolution'    => array('zh-cn' => '解决方案', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'resolution'    => array('zh-cn' => 'Solución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select', 'select', 'select'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution'),
         'default'     => array('doing', 'doing', '', '')
@@ -1521,9 +1521,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1015,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目Bug状态分布表', 'zh-tw' => '項目Bug狀態分布表', 'en' => 'Project Bug Status', 'de' => 'Project Bug Status', 'fr' => 'Project Bug Status', 'vi' => 'Project Bug Status', 'ja' => 'Project Bug Status'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de estados de Bug por proyecto', 'zh-tw' => 'Tabla de distribución de estados de Bug por proyecto', 'en' => 'Project Bug Status', 'de' => 'Project Bug Status', 'fr' => 'Project Bug Status', 'vi' => 'Project Bug Status', 'ja' => 'Project Bug Status'),
     'code'        => 'projectBugStatus',
-    'desc'        => array('zh-cn' => '按照项目统计Bug的状态分布情况。', 'zh-tw' => '按照項目統計Bug的狀態分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución del estado de los Bug por proyecto.', 'zh-tw' => 'Muestra la distribución del estado de los Bug por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60,61',
@@ -1561,10 +1561,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1579,17 +1579,17 @@ EOT,
     'langs'     => array
     (
         'id'          => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectID'   => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionID' => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectID'   => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionID' => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'       => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'status'      => array('zh-cn' => 'Bug状态', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'status'      => array('zh-cn' => 'Estado del Bug', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select', 'select', 'select'),
         'selectList'  => array('project.status', 'execution.status', 'project', 'execution'),
         'default'     => array('doing', 'doing', '', '')
@@ -1617,9 +1617,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1016,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目Bug创建者分布表', 'zh-tw' => '項目Bug創建者分布表', 'en' => 'Project Bug Opened', 'de' => 'Project Bug Opened', 'fr' => 'Project Bug Opened', 'vi' => 'Project Bug Opened', 'ja' => 'Project Bug Opened'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de creadores de Bug por proyecto', 'zh-tw' => 'Tabla de distribución de creadores de Bug por proyecto', 'en' => 'Project Bug Opened', 'de' => 'Project Bug Opened', 'fr' => 'Project Bug Opened', 'vi' => 'Project Bug Opened', 'ja' => 'Project Bug Opened'),
     'code'        => 'projectBugOpenedBy',
-    'desc'        => array('zh-cn' => '按照项目统计Bug的创建者分布情况。', 'zh-tw' => '按照項目統計Bug的創建者分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de los creadores de los Bug por proyecto.', 'zh-tw' => 'Muestra la distribución de los creadores de los Bug por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60,61',
@@ -1657,10 +1657,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1675,17 +1675,17 @@ EOT,
     'langs'     => array
     (
         'id'            => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectID'     => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectID'     => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'         => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'openedBy'      => array('zh-cn' => '创建者', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'openedBy'      => array('zh-cn' => 'Creador', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select', 'select', 'select'),
         'selectList'  => array('projectStatus', 'executionStatus', 'project', 'execution'),
         'default'     => array('doing', 'doing', '', '')
@@ -1713,9 +1713,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1017,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目Bug解决者分布表', 'zh-tw' => '項目Bug解決者分布表', 'en' => 'Project Bug Resolve', 'de' => 'Project Bug Resolve', 'fr' => 'Project Bug Resolve', 'vi' => 'Project Bug Resolve', 'ja' => 'Project Bug Resolve'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de resolutores de Bug por proyecto', 'zh-tw' => 'Tabla de distribución de resolutores de Bug por proyecto', 'en' => 'Project Bug Resolve', 'de' => 'Project Bug Resolve', 'fr' => 'Project Bug Resolve', 'vi' => 'Project Bug Resolve', 'ja' => 'Project Bug Resolve'),
     'code'        => 'projectBugResolvedBy',
-    'desc'        => array('zh-cn' => '按照项目统计Bug的解决者分布情况。', 'zh-tw' => '按照項目統計Bug的解決者分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de los resolutores de los Bug por proyecto.', 'zh-tw' => 'Muestra la distribución de los resolutores de los Bug por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60,61',
@@ -1755,10 +1755,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus', 'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus', 'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1773,17 +1773,17 @@ EOT,
     'langs'     => array
     (
         'id'            => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectID'     => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectID'     => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'         => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolvedBy'    => array('zh-cn' => '解决者', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'resolvedBy'    => array('zh-cn' => 'Resuelto por', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('projectStatus', 'executionStatus', 'project', 'execution'),
-        'showName'    => array('项目状态', '执行状态', '项目列表', '执行列表'),
+        'showName'    => array('Estado del proyecto', 'Estado de la ejecución', 'Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select', 'select', 'select'),
         'selectList'  => array('projectStatus', 'executionStatus', 'project', 'execution'),
         'default'     => array('doing', 'doing', '', '')
@@ -1811,9 +1811,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1018,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目Bug指派给分布表', 'zh-tw' => '項目Bug指派給分布表', 'en' => 'Project Bug Assign', 'de' => 'Project Bug Assign', 'fr' => 'Project Bug Assign', 'vi' => 'Project Bug Assign', 'ja' => 'Project Bug Assign'),
+    'name'        => array('zh-cn' => 'Tabla de distribución de asignación de Bug por proyecto', 'zh-tw' => 'Tabla de distribución de asignación de Bug por proyecto', 'en' => 'Project Bug Assign', 'de' => 'Project Bug Assign', 'fr' => 'Project Bug Assign', 'vi' => 'Project Bug Assign', 'ja' => 'Project Bug Assign'),
     'code'        => 'projectBugAssignedBy',
-    'desc'        => array('zh-cn' => '按照项目统计Bug的指派给分布情况。', 'zh-tw' => '按照項目統計Bug的指派給分布情況。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de los Bug según a quién están asignados, por proyecto.', 'zh-tw' => 'Muestra la distribución de los Bug según a quién están asignados, por proyecto.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60,61',
@@ -1850,10 +1850,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus',   'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus',   'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1868,17 +1868,17 @@ EOT,
     'langs'     => array
     (
         'id'          => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'     => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectID'   => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'   => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionID' => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'     => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectID'   => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'   => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionID' => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'       => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'assignedTo'  => array('zh-cn' => '指派给', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'assignedTo'  => array('zh-cn' => 'Asignado a', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('project', 'execution'),
-        'showName'    => array('项目列表', '执行列表'),
+        'showName'    => array('Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select'),
         'selectList'  => array('project', 'execution'),
         'default'     => array('', '')
@@ -1906,9 +1906,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1019,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目质量表', 'zh-tw' => '項目質量表', 'en' => 'Project Quality Report', 'de' => 'Project Quality Report', 'fr' => 'Project Quality Report', 'vi' => 'Project Quality Report', 'ja' => 'Project Quality Report'),
+    'name'        => array('zh-cn' => 'Tabla de calidad del proyecto', 'zh-tw' => 'Tabla de calidad del proyecto', 'en' => 'Project Quality Report', 'de' => 'Project Quality Report', 'fr' => 'Project Quality Report', 'vi' => 'Project Quality Report', 'ja' => 'Project Quality Report'),
     'code'        => 'projectQuality',
-    'desc'        => array('zh-cn' => '列出项目的需求总数，完成需求数，任务总数，完成的任务数，Bug数，解决的Bug数，Bug/需求，Bug/任务，重要Bug数量(严重程度不大于3）。', 'zh-tw' => '列出項目的需求總數，完成需求數，任務總數，完成的任務數，Bug數，解決的Bug數，Bug/需求，Bug/任務，重要Bug數量(嚴重程度不大於3）。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Lista del proyecto: total de requerimientos, requerimientos completados, total de tareas, tareas completadas, cantidad de Bug, Bug resueltos, Bug/requerimientos, Bug/tareas y cantidad de Bug importantes (severidad no mayor que 3).', 'zh-tw' => 'Lista del proyecto: total de requerimientos, requerimientos completados, total de tareas, tareas completadas, cantidad de Bug, Bug resueltos, Bug/requerimientos, Bug/tareas y cantidad de Bug importantes (severidad no mayor que 3).', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -1963,10 +1963,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus',   'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus',   'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -1988,24 +1988,24 @@ EOT,
     'langs'     => array
     (
         'id'            => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'       => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'stories'       => array('zh-cn' => '需求总数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'doneStory'     => array('zh-cn' => '关闭需求数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'number'        => array('zh-cn' => '任务总数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'doneTask'      => array('zh-cn' => '完成任务数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'bugs'          => array('zh-cn' => 'Bug数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolutions'   => array('zh-cn' => '解决Bug数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'bugthanstory'  => array('zh-cn' => 'Bug/完成需求', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'bugthantask'   => array('zh-cn' => 'Bug/完成任务', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'seriousBugs'   => array('zh-cn' => '重要Bug数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'       => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'stories'       => array('zh-cn' => 'Total de requerimientos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'doneStory'     => array('zh-cn' => 'Historias cerradas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'number'        => array('zh-cn' => 'Total de tareas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'doneTask'      => array('zh-cn' => 'Tareas completadas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'bugs'          => array('zh-cn' => 'Bugs', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'resolutions'   => array('zh-cn' => 'Bugs resueltos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'bugthanstory'  => array('zh-cn' => 'Bug/requerimientos completados', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'bugthantask'   => array('zh-cn' => 'Bug/tareas completadas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'seriousBugs'   => array('zh-cn' => 'Bug importantes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('project', 'execution'),
-        'showName'    => array('项目列表', '执行列表'),
+        'showName'    => array('Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select'),
         'selectList'  => array('project', 'execution'),
         'default'     => array('', '')
@@ -2098,9 +2098,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1020,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品Bug类型统计表', 'zh-tw' => '產品Bug類型統計表', 'en' => 'Bug Type of Product', 'de' => 'Bug Type of Product', 'fr' => 'Bug Type of Product'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de tipos de Bug por producto', 'zh-tw' => 'Tabla de estadísticas de tipos de Bug por producto', 'en' => 'Bug Type of Product', 'de' => 'Bug Type of Product', 'fr' => 'Bug Type of Product'),
     'code'        => 'productBugType',
-    'desc'        => array('zh-cn' => '按照产品统计Bug的类型分布情况。', 'zh-tw' => '按照產品統計Bug的類型分布情況。', 'en' => 'Type distribution of Bugs.', 'de' => 'Type distribution of Bugs.', 'fr' => 'Type distribution of Bugs.'),
+    'desc'        => array('zh-cn' => 'Muestra la distribución del tipo de los Bug por producto.', 'zh-tw' => 'Muestra la distribución del tipo de los Bug por producto.', 'en' => 'Type distribution of Bugs.', 'de' => 'Type distribution of Bugs.', 'fr' => 'Type distribution of Bugs.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59,61',
@@ -2134,9 +2134,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -2147,10 +2147,10 @@ EOT,
     ),
     'langs'     => array
     (
-        'product' => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'name'    => array('zh-cn' => '产品', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'product' => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'name'    => array('zh-cn' => 'Producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'   => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'type'    => array('zh-cn' => '不同类型Bug', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'type'    => array('zh-cn' => 'Bug por tipo', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
     'drills'    => array
@@ -2175,9 +2175,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1021,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品质量表', 'zh-tw' => '產品質量表', 'en' => 'Product Quality', 'de' => 'Product Quality', 'fr' => 'Product Quality'),
+    'name'        => array('zh-cn' => 'Tabla de calidad del producto', 'zh-tw' => 'Tabla de calidad del producto', 'en' => 'Product Quality', 'de' => 'Product Quality', 'fr' => 'Product Quality'),
     'code'        => 'productQuality',
-    'desc'        => array('zh-cn' => '列出产品的需求数，完成的需求总数，Bug数，解决的Bug总数，Bug/需求，重要Bug数量(严重程度小于3)。', 'zh-tw' => '列出產品的需求數，完成的需求總數，Bug數，解決的Bug總數，Bug/需求，重要Bug數量(嚴重程度小於3)。', 'en' => 'Serious Bug (severity is less than 3).', 'de' => 'Serious Bug (severity is less than 3).', 'fr' => 'Serious Bug (severity is less than 3).'),
+    'desc'        => array('zh-cn' => 'Lista del producto: cantidad de requerimientos, total de requerimientos completados, cantidad de Bug, total de Bug resueltos, Bug/requerimientos y cantidad de Bug importantes (severidad menor que 3).', 'zh-tw' => 'Lista del producto: cantidad de requerimientos, total de requerimientos completados, cantidad de Bug, total de Bug resueltos, Bug/requerimientos y cantidad de Bug importantes (severidad menor que 3).', 'en' => 'Serious Bug (severity is less than 3).', 'de' => 'Serious Bug (severity is less than 3).', 'fr' => 'Serious Bug (severity is less than 3).'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59',
@@ -2220,9 +2220,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -2237,14 +2237,14 @@ EOT,
     ),
     'langs'     => array
     (
-        'id'           => array('zh-cn' => '产品ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'name'         => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'stories'      => array('zh-cn' => '需求总数', 'zh-tw' => '需求总数', 'en' => 'Stories', 'de' => '', 'fr' => ''),
-        'doneStory'    => array('zh-cn' => '关闭需求数', 'zh-tw' => '关闭需求数', 'en' => 'Closed Stories', 'de' => '', 'fr' => ''),
-        'bugs'         => array('zh-cn' => 'Bug数', 'zh-tw' => 'Bug数', 'en' => 'Bugs', 'de' => '', 'fr' => ''),
-        'resolutions'  => array('zh-cn' => '解决Bug数', 'zh-tw' => '解决Bug数', 'en' => 'Solved Bugs', 'de' => '', 'fr' => ''),
-        'bugthanstory' => array('zh-cn' => 'Bug/完成需求', 'zh-tw' => 'Bug/完成需求', 'en' => 'Bug/Finished Story', 'de' => '', 'fr' => ''),
-        'seriousBugs'  => array('zh-cn' => '重要Bug数', 'zh-tw' => '重要Bug数', 'en' => 'Serious Bugs', 'de' => '', 'fr' => '')
+        'id'           => array('zh-cn' => 'ID del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'name'         => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'stories'      => array('zh-cn' => 'Total de requerimientos', 'zh-tw' => 'Total de requerimientos', 'en' => 'Stories', 'de' => '', 'fr' => ''),
+        'doneStory'    => array('zh-cn' => 'Historias cerradas', 'zh-tw' => 'Historias cerradas', 'en' => 'Closed Stories', 'de' => '', 'fr' => ''),
+        'bugs'         => array('zh-cn' => 'Bugs', 'zh-tw' => 'Bugs', 'en' => 'Bugs', 'de' => '', 'fr' => ''),
+        'resolutions'  => array('zh-cn' => 'Bugs resueltos', 'zh-tw' => 'Bugs resueltos', 'en' => 'Solved Bugs', 'de' => '', 'fr' => ''),
+        'bugthanstory' => array('zh-cn' => 'Bug/requerimientos completados', 'zh-tw' => 'Bug/requerimientos completados', 'en' => 'Bug/Finished Story', 'de' => '', 'fr' => ''),
+        'seriousBugs'  => array('zh-cn' => 'Bug importantes', 'zh-tw' => 'Bug importantes', 'en' => 'Serious Bugs', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
     'drills'    => array
@@ -2308,9 +2308,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1022,
     'version'     => '1',
-    'name'        => array('zh-cn' => '员工登录次数统计表', 'zh-tw' => '員工登錄次數統計表', 'en' => 'Login Times', 'de' => 'Login Times', 'fr' => 'Login Times'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de inicios de sesión de empleados', 'zh-tw' => 'Tabla de estadísticas de inicios de sesión de empleados', 'en' => 'Login Times', 'de' => 'Login Times', 'fr' => 'Login Times'),
     'code'        => 'loginTimes',
-    'desc'        => array('zh-cn' => '实现员工登录次数统计报表，按照天统计每天每个人的登录次数，以及总数。', 'zh-tw' => '實現員工登錄次數統計報表，按照天統計每天每個人的登錄次數，以及總數。', 'en' => 'The summary of user login times.', 'de' => 'The summary of user login times.', 'fr' => 'The summary of user login times.'),
+    'desc'        => array('zh-cn' => 'Implementa el reporte de estadísticas de inicios de sesión de empleados: cuenta por día los inicios de sesión de cada persona, así como el total.', 'zh-tw' => 'Implementa el reporte de estadísticas de inicios de sesión de empleados: cuenta por día los inicios de sesión de cada persona, así como el total.', 'en' => 'The summary of user login times.', 'de' => 'The summary of user login times.', 'fr' => 'The summary of user login times.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '62',
@@ -2337,9 +2337,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'startDate', 'name' => '起始时间', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '结束时间', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY'),
-        array('from' => 'query', 'field' => 'dept', 'name' => '部门', 'type' => 'select', 'typeOption' => 'dept', 'default' => '0')
+        array('from' => 'query', 'field' => 'startDate', 'name' => 'Hora de inicio', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Hora de fin', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY'),
+        array('from' => 'query', 'field' => 'dept', 'name' => 'Departamento', 'type' => 'select', 'typeOption' => 'dept', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -2348,13 +2348,13 @@ EOT,
     ),
     'langs'     => array
     (
-        'actor' => array('name' => '操作者', 'zh-cn' => '操作者', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'day'   => array('name' => 'day', 'zh-cn' => '日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'actor' => array('name' => 'Operador', 'zh-cn' => 'Operador', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'day'   => array('name' => 'day', 'zh-cn' => 'Fecha', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('startDate', 'endDate'),
-        'showName'    => array('起始时间', '结束时间'),
+        'showName'    => array('Hora de inicio', 'Hora de fin'),
         'requestType' => array('date', 'date'),
         'selectList'  => array('user', 'user'),
         'default'     => array('$MONTHBEGIN', '$MONTHEND')
@@ -2381,9 +2381,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1023,
     'version'     => '1',
-    'name'        => array('zh-cn' => '日志汇总表', 'zh-tw' => '日誌匯總表', 'en' => 'Effort Summary', 'de' => 'Effort Summary', 'fr' => 'Effort Summary'),
+    'name'        => array('zh-cn' => 'Tabla resumen de registros de esfuerzo', 'zh-tw' => 'Tabla resumen de registros de esfuerzo', 'en' => 'Effort Summary', 'de' => 'Effort Summary', 'fr' => 'Effort Summary'),
     'code'        => 'effortSummary',
-    'desc'        => array('zh-cn' => '查看某个时间段内的日志情况，可以按照部门选择。', 'zh-tw' => '查看某個時間段內的日誌情況，可以按照部門選擇。', 'en' => 'Effort summary of users within a certain period of time, you can select by department.', 'de' => 'Effort summary of users within a certain period of time, you can select by department.', 'fr' => 'Effort summary of users within a certain period of time, you can select by department.'),
+    'desc'        => array('zh-cn' => 'Consulta los registros de esfuerzo en un periodo determinado; se puede seleccionar por departamento.', 'zh-tw' => 'Consulta los registros de esfuerzo en un periodo determinado; se puede seleccionar por departamento.', 'en' => 'Effort summary of users within a certain period of time, you can select by department.', 'de' => 'Effort summary of users within a certain period of time, you can select by department.', 'fr' => 'Effort summary of users within a certain period of time, you can select by department.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '62',
@@ -2417,9 +2417,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'dept', 'name' => '部门', 'type' => 'select', 'typeOption' => 'dept', 'default' => '0'),
-        array('from' => 'query', 'field' => 'startDate', 'name' => '起始时间', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '结束时间', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
+        array('from' => 'query', 'field' => 'dept', 'name' => 'Departamento', 'type' => 'select', 'typeOption' => 'dept', 'default' => '0'),
+        array('from' => 'query', 'field' => 'startDate', 'name' => 'Hora de inicio', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Hora de fin', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
     ),
     'fields'    => array
     (
@@ -2430,15 +2430,15 @@ EOT,
     ),
     'langs'     => array
     (
-        'account'  => array('name' => 'account', 'zh-cn' => '名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'consumed' => array('name' => 'consumed', 'zh-cn' => '消耗工时', 'zh-tw' => '消耗工时', 'en' => 'Cost', 'de' => '', 'fr' => ''),
-        'date'     => array('name' => 'date', 'zh-cn' => '日期', 'zh-tw' => '日期', 'en' => 'Date', 'de' => '', 'fr' => ''),
-        'dept'     => array('name' => 'dept', 'zh-cn' => '部门', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'account'  => array('name' => 'account', 'zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'consumed' => array('name' => 'consumed', 'zh-cn' => 'Horas consumidas', 'zh-tw' => 'Horas consumidas', 'en' => 'Cost', 'de' => '', 'fr' => ''),
+        'date'     => array('name' => 'date', 'zh-cn' => 'Fecha', 'zh-tw' => 'Fecha', 'en' => 'Date', 'de' => '', 'fr' => ''),
+        'dept'     => array('name' => 'dept', 'zh-cn' => 'Departamento', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('dept', 'startDate', 'endDate'),
-        'showName'    => array('部门', '起始时间', '结束时间'),
+        'showName'    => array('Departamento', 'Hora de inicio', 'Hora de fin'),
         'requestType' => array('select', 'date', 'date'),
         'selectList'  => array('dept', 'user', 'user'),
         'default'     => array('', '$MONTHBEGIN', '$MONTHEND')
@@ -2465,9 +2465,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1024,
     'version'     => '1',
-    'name'        => array('zh-cn' => '公司动态汇总表', 'zh-tw' => '公司動態匯總表', 'en' => 'Company Dynamics', 'de' => 'Company Dynamics', 'fr' => 'Company Dynamics'),
+    'name'        => array('zh-cn' => 'Tabla resumen de actividad de la empresa', 'zh-tw' => 'Tabla resumen de actividad de la empresa', 'en' => 'Company Dynamics', 'de' => 'Company Dynamics', 'fr' => 'Company Dynamics'),
     'code'        => 'companyDynamics',
-    'desc'        => array('zh-cn' => '可以指定一个时期，列出相应的数据：1. 每天的登录次数。2. 每天的日志工时量。3. 每天新增的需求数。4. 每天关闭的需求数。5. 每天新增的任务数。6. 每天完成的任务数。7. 每天新增的Bug数。8. 每天解决的Bug数。9. 每天的动态数。', 'zh-tw' => '可以指定一個時期，列出相應的數據：1. 每天的登錄次數。2. 每天的日誌工時量。3. 每天新增的需求數。4. 每天關閉的需求數。5. 每天新增的任務數。6. 每天完成的任務數。7. 每天新增的Bug數。8. 每天解決的Bug數。9. 每天的動態數。', 'en' => 'The summary of company dynamics', 'de' => 'The summary of company dynamics', 'fr' => 'The summary of company dynamics'),
+    'desc'        => array('zh-cn' => 'Se puede especificar un periodo y listar los datos correspondientes: 1. Inicios de sesión por día. 2. Horas registradas por día. 3. Requerimientos nuevos por día. 4. Requerimientos cerrados por día. 5. Tareas nuevas por día. 6. Tareas completadas por día. 7. Bug nuevos por día. 8. Bug resueltos por día. 9. Actividades por día.', 'zh-tw' => 'Se puede especificar un periodo y listar los datos correspondientes: 1. Inicios de sesión por día. 2. Horas registradas por día. 3. Requerimientos nuevos por día. 4. Requerimientos cerrados por día. 5. Tareas nuevas por día. 6. Tareas completadas por día. 7. Bug nuevos por día. 8. Bug resueltos por día. 9. Actividades por día.', 'en' => 'The summary of company dynamics', 'de' => 'The summary of company dynamics', 'fr' => 'The summary of company dynamics'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '62',
@@ -2506,8 +2506,8 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'startDate', 'name' => '起始时间', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '结束时间', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
+        array('from' => 'query', 'field' => 'startDate', 'name' => 'Hora de inicio', 'type' => 'date', 'typeOption' => '', 'default' => '$MONDAY'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Hora de fin', 'type' => 'date', 'typeOption' => '', 'default' => '$SUNDAY')
     ),
     'fields'    => array
     (
@@ -2524,21 +2524,21 @@ EOT,
     ),
     'langs'     => array
     (
-        'day'        => array('zh-cn' => '日期', 'zh-tw' => '日期', 'en' => 'Date'),
-        'userlogin'  => array('zh-cn' => '登录次数', 'zh-tw' => '登錄次數', 'en' => 'Login'),
-        'consumed'   => array('zh-cn' => '日志工时', 'zh-tw' => '日誌工時', 'en' => 'Cost(h)'),
-        'storyopen'  => array('zh-cn' => '新增需求数', 'zh-tw' => '新增需求數', 'en' => 'Open Story'),
-        'storyclose' => array('zh-cn' => '关闭需求数', 'zh-tw' => '關閉需求數', 'en' => 'Closed Story'),
-        'taskopen'   => array('zh-cn' => '新增任务数', 'zh-tw' => '新增任務數', 'en' => 'Open Task'),
-        'taskfinish' => array('zh-cn' => '完成任务数', 'zh-tw' => '完成任務數', 'en' => 'Finished Task'),
-        'bugopen'    => array('zh-cn' => '新增Bug数', 'zh-tw' => '新增Bug數', 'en' => 'Open Bug'),
-        'bugresolve' => array('zh-cn' => '解决Bug数', 'zh-tw' => '解决Bug數', 'en' => 'Resolved bug'),
-        'actions'    => array('zh-cn' => '动态数', 'zh-tw' => '動態數', 'en' => 'Dynamics')
+        'day'        => array('zh-cn' => 'Fecha', 'zh-tw' => 'Fecha', 'en' => 'Date'),
+        'userlogin'  => array('zh-cn' => 'Inicios de sesión', 'zh-tw' => 'Inicios de sesión', 'en' => 'Login'),
+        'consumed'   => array('zh-cn' => 'Horas del registro', 'zh-tw' => 'Horas del registro', 'en' => 'Cost(h)'),
+        'storyopen'  => array('zh-cn' => 'Historias nuevas', 'zh-tw' => 'Requerimientos nuevos', 'en' => 'Open Story'),
+        'storyclose' => array('zh-cn' => 'Historias cerradas', 'zh-tw' => 'Requerimientos cerrados', 'en' => 'Closed Story'),
+        'taskopen'   => array('zh-cn' => 'Tareas nuevas', 'zh-tw' => 'Tareas nuevas', 'en' => 'Open Task'),
+        'taskfinish' => array('zh-cn' => 'Tareas completadas', 'zh-tw' => 'Tareas completadas', 'en' => 'Finished Task'),
+        'bugopen'    => array('zh-cn' => 'Bugs nuevos', 'zh-tw' => 'Bug nuevos', 'en' => 'Open Bug'),
+        'bugresolve' => array('zh-cn' => 'Bugs resueltos', 'zh-tw' => 'Bug resueltos', 'en' => 'Resolved bug'),
+        'actions'    => array('zh-cn' => 'Actividades', 'zh-tw' => 'Actividades', 'en' => 'Dynamics')
     ),
     'vars'      => array
     (
         'varName'     => array('startDate', 'endDate'),
-        'showName'    => array('起始时间', '结束时间'),
+        'showName'    => array('Hora de inicio', 'Hora de fin'),
         'requestType' => array('date', 'date'),
         'selectList'  => array('user', 'user'),
         'default'     => array('$MONTHBEGIN', '$MONTHEND')
@@ -2644,9 +2644,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1025,
     'version'     => '1',
-    'name'        => array('zh-cn' => 'Bug解决表', 'zh-tw' => 'Bug解決表', 'en' => 'Solved Bugs', 'de' => 'Solved Bugs', 'fr' => 'Solved Bugs'),
+    'name'        => array('zh-cn' => 'Tabla de Bug resueltos', 'zh-tw' => 'Tabla de Bug resueltos', 'en' => 'Solved Bugs', 'de' => 'Solved Bugs', 'fr' => 'Solved Bugs'),
     'code'        => 'slovedBugs',
-    'desc'        => array('zh-cn' => '列出解决的Bug总数，解决方案的分布，占的比例（该用户解决的Bug的数量占所有的解决的Bug的数量)。', 'zh-tw' => '列出解決的Bug總數，解決方案的分布，占的比例（該用戶解決的Bug的數量占所有的解決的Bug的數量)。', 'en' => 'percentage:self resolved / all resolved', 'de' => 'percentage:self resolved / all resolved', 'fr' => 'percentage:self resolved / all resolved'),
+    'desc'        => array('zh-cn' => 'Lista el total de Bug resueltos, la distribución de soluciones y la proporción (la cantidad de Bug resueltos por ese usuario respecto a todos los Bug resueltos).', 'zh-tw' => 'Lista el total de Bug resueltos, la distribución de soluciones y la proporción (la cantidad de Bug resueltos por ese usuario respecto a todos los Bug resueltos).', 'en' => 'percentage:self resolved / all resolved', 'de' => 'percentage:self resolved / all resolved', 'fr' => 'percentage:self resolved / all resolved'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '61',
@@ -2676,9 +2676,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'product', 'name' => '产品', 'type' => 'select', 'typeOption' => 'product', 'default' => '0'),
-        array('from' => 'query', 'field' => 'startDate', 'name' => '解决日期开始', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHBEGIN'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '解决日期结束', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHEND')
+        array('from' => 'query', 'field' => 'product', 'name' => 'Producto', 'type' => 'select', 'typeOption' => 'product', 'default' => '0'),
+        array('from' => 'query', 'field' => 'startDate', 'name' => 'Inicio de la fecha de resolución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHBEGIN'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Fin de la fecha de resolución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHEND')
     ),
     'fields'    => array
     (
@@ -2687,13 +2687,13 @@ EOT,
     ),
     'langs'     => array
     (
-        'resolvedBy'     => array('zh-cn' => '解决者', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolution'     => array('zh-cn' => '不同解决方案的Bug', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'resolvedBy'     => array('zh-cn' => 'Resuelto por', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'resolution'     => array('zh-cn' => 'Bug por solución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('product', 'startDate', 'endDate'),
-        'showName'    => array('产品', '解决日期开始', '解决日期结束'),
+        'showName'    => array('Producto', 'Inicio de la fecha de resolución', 'Fin de la fecha de resolución'),
         'requestType' => array('select', 'date', 'date'),
         'selectList'  => array('product', 'user', 'user'),
         'default'     => array('', '$MONTHBEGIN', '$MONTHEND')
@@ -2720,9 +2720,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1026,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目进展表', 'zh-tw' => '項目進展表', 'en' => 'Project Progress Report', 'de' => 'Project Progress Report', 'fr' => 'Project Progress Report', 'vi' => 'Project Progress Report', 'ja' => 'Project Progress Report'),
+    'name'        => array('zh-cn' => 'Tabla de avance del proyecto', 'zh-tw' => 'Tabla de avance del proyecto', 'en' => 'Project Progress Report', 'de' => 'Project Progress Report', 'fr' => 'Project Progress Report', 'vi' => 'Project Progress Report', 'ja' => 'Project Progress Report'),
     'code'        => 'projectProgress',
-    'desc'        => array('zh-cn' => '项目的：需求数，剩余需求数(过滤状态为已关闭的需求)，任务数，剩余任务数(过滤状态为已完成和已关闭的任务)，剩余工时（剩余任务的剩余工时），已消耗工时。', 'zh-tw' => '項目的需求數，任務數，已消耗工時，剩餘工時，剩餘需求數，剩餘任務數，進度。', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
+    'desc'        => array('zh-cn' => 'Del proyecto: cantidad de requerimientos, requerimientos restantes (excluyendo los de estado Cerrado), cantidad de tareas, tareas restantes (excluyendo las de estado Completada y Cerrada), horas restantes (horas restantes de las tareas restantes) y horas consumidas.', 'zh-tw' => 'Del proyecto: cantidad de requerimientos, cantidad de tareas, horas consumidas, horas restantes, requerimientos restantes, tareas restantes y avance.', 'en' => '', 'de' => '', 'fr' => '', 'vi' => '', 'ja' => ''),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60',
@@ -2770,10 +2770,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus',   'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus',   'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -2794,23 +2794,23 @@ EOT,
     'langs'     => array
     (
         'id'            => array('zh-cn' => 'id', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'       => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'status'        => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'tasks'         => array('zh-cn' => '任务数', 'zh-tw' => '任务数', 'en' => 'Tasks', 'de' => '', 'fr' => ''),
-        'consumed'      => array('zh-cn' => '已消耗工时', 'zh-tw' => '已消耗工时', 'en' => 'Cost(h)', 'de' => '', 'fr' => ''),
-        'left'          => array('zh-cn' => '剩余工时', 'zh-tw' => '剩余工时', 'en' => 'Left(h)', 'de' => '', 'fr' => ''),
-        'stories'       => array('zh-cn' => '需求数', 'zh-tw' => '需求数', 'en' => 'Stories', 'de' => '', 'fr' => ''),
-        'undoneTask'    => array('zh-cn' => '剩余任务数', 'zh-tw' => '剩余任务数', 'en' => 'Undone Task', 'de' => '', 'fr' => ''),
-        'undoneStory'   => array('zh-cn' => '剩余需求数', 'zh-tw' => '剩余需求数', 'en' => 'Undone Story', 'de' => '', 'fr' => ''),
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'       => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'status'        => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'tasks'         => array('zh-cn' => 'Tareas', 'zh-tw' => 'Tareas', 'en' => 'Tasks', 'de' => '', 'fr' => ''),
+        'consumed'      => array('zh-cn' => 'Horas consumidas', 'zh-tw' => 'Horas consumidas', 'en' => 'Cost(h)', 'de' => '', 'fr' => ''),
+        'left'          => array('zh-cn' => 'Horas restantes', 'zh-tw' => 'Horas restantes', 'en' => 'Left(h)', 'de' => '', 'fr' => ''),
+        'stories'       => array('zh-cn' => 'Historias', 'zh-tw' => 'Historias', 'en' => 'Stories', 'de' => '', 'fr' => ''),
+        'undoneTask'    => array('zh-cn' => 'Tareas restantes', 'zh-tw' => 'Tareas restantes', 'en' => 'Undone Task', 'de' => '', 'fr' => ''),
+        'undoneStory'   => array('zh-cn' => 'Historias restantes', 'zh-tw' => 'Historias restantes', 'en' => 'Undone Story', 'de' => '', 'fr' => ''),
         'totalReal'     => array('zh-cn' => 'totalReal', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('project', 'execution', 'status'),
-        'showName'    => array('项目列表', '执行列表', '执行状态'),
+        'showName'    => array('Lista de proyectos', 'Lista de ejecuciones', 'Estado de la ejecución'),
         'requestType' => array('select', 'select', 'select'),
         'selectList'  => array('project', 'execution', 'project.status'),
         'default'     => array('', '', '')
@@ -2892,9 +2892,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1027,
     'version'     => '1',
-    'name'        => array('zh-cn' => '项目执行Bug类型统计表', 'zh-tw' => '項目Bug類型統計表', 'en' => 'Project Bug Type', 'de' => 'Project Bug Type', 'fr' => 'Project Bug Type'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de tipos de Bug por ejecución del proyecto', 'zh-tw' => 'Tabla de estadísticas de tipos de Bug por proyecto', 'en' => 'Project Bug Type', 'de' => 'Project Bug Type', 'fr' => 'Project Bug Type'),
     'code'        => 'projectBugType',
-    'desc'        => array('zh-cn' => '按照项目下不同执行统计Bug的类型分布情况。', 'zh-tw' => '按照項目統計Bug的類型分布情況。'),
+    'desc'        => array('zh-cn' => 'Muestra la distribución del tipo de los Bug por cada ejecución del proyecto.', 'zh-tw' => 'Muestra la distribución del tipo de los Bug por proyecto.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '60,61',
@@ -2930,10 +2930,10 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'projectStatus',   'name' => '项目状态', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'executionStatus', 'name' => '执行状态', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
-        array('from' => 'query', 'field' => 'project', 'name' => '项目列表', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
-        array('from' => 'query', 'field' => 'execution', 'name' => '执行列表', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
+        array('from' => 'query', 'field' => 'projectStatus',   'name' => 'Estado del proyecto', 'type' => 'select', 'typeOption' => 'project.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'executionStatus', 'name' => 'Estado de la ejecución', 'type' => 'select', 'typeOption' => 'execution.status', 'default' => 'doing'),
+        array('from' => 'query', 'field' => 'project', 'name' => 'Lista de proyectos', 'type' => 'select', 'typeOption' => 'project', 'default' => '0'),
+        array('from' => 'query', 'field' => 'execution', 'name' => 'Lista de ejecuciones', 'type' => 'select', 'typeOption' => 'execution', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -2947,18 +2947,18 @@ EOT,
     ),
     'langs'     => array
     (
-        'id'            => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'project'       => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'projectname'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execution'     => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'executionname' => array('zh-cn' => '执行名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'id'            => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'project'       => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'projectname'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execution'     => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'executionname' => array('zh-cn' => 'Nombre de la ejecución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'         => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'type'          => array('zh-cn' => '不同类型的Bug', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'type'          => array('zh-cn' => 'Bug por tipo', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('project', 'execution'),
-        'showName'    => array('项目列表', '执行列表'),
+        'showName'    => array('Lista de proyectos', 'Lista de ejecuciones'),
         'requestType' => array('select', 'select'),
         'selectList'  => array('project', 'execution'),
         'default'     => array('', '')
@@ -2986,9 +2986,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1028,
     'version'     => '1',
-    'name'        => array('zh-cn' => '产品Bug解决方案统计表', 'zh-tw' => '産品Bug解決方案統計表', 'en' => 'Bug Solution of Product'),
+    'name'        => array('zh-cn' => 'Tabla de estadísticas de soluciones de Bug por producto', 'zh-tw' => 'Tabla de estadísticas de soluciones de Bug por producto', 'en' => 'Bug Solution of Product'),
     'code'        => 'productBugSolution',
-    'desc'        => array('zh-cn' => '按照产品统计Bug的解决方案分布情况。', 'zh-tw' => '按照産品統計Bug的解決方案分布情況。', 'en' => 'Solution distribution of bugs.'),
+    'desc'        => array('zh-cn' => 'Muestra la distribución de las soluciones de los Bug por producto.', 'zh-tw' => 'Muestra la distribución de las soluciones de los Bug por producto.', 'en' => 'Solution distribution of bugs.'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '59,61',
@@ -3017,9 +3017,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'productStatus', 'name' => '产品状态', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'productType', 'name' => '产品类型', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
-        array('from' => 'query', 'field' => 'product', 'name' => '产品列表', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
+        array('from' => 'query', 'field' => 'productStatus', 'name' => 'Estado del producto', 'type' => 'select', 'typeOption' => 'product.status', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'productType', 'name' => 'Tipo de producto', 'type' => 'select', 'typeOption' => 'product.type', 'default' => 'normal'),
+        array('from' => 'query', 'field' => 'product', 'name' => 'Lista de productos', 'type' => 'select', 'typeOption' => 'product', 'default' => '0')
     ),
     'fields'    => array
     (
@@ -3030,10 +3030,10 @@ EOT,
     ),
     'langs'     => array
     (
-        'product'    => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'name'       => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'product'    => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'name'       => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
         'bugID'      => array('zh-cn' => 'bugID', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolution' => array('zh-cn' => '解决方案', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'resolution' => array('zh-cn' => 'Solución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array(),
     'drills'    => array
@@ -3058,9 +3058,9 @@ $config->bi->builtin->pivots[] = array
 (
     'id'          => 1025,
     'version'     => '1.1',
-    'name'        => array('zh-cn' => 'Bug解决表', 'zh-tw' => 'Bug解決表', 'en' => 'Solved Bugs', 'de' => 'Solved Bugs', 'fr' => 'Solved Bugs'),
+    'name'        => array('zh-cn' => 'Tabla de Bug resueltos', 'zh-tw' => 'Tabla de Bug resueltos', 'en' => 'Solved Bugs', 'de' => 'Solved Bugs', 'fr' => 'Solved Bugs'),
     'code'        => 'slovedBugs',
-    'desc'        => array('zh-cn' => '列出解决的Bug总数，解决方案的分布，占的比例（该用户解决的Bug的数量占所有的解决的Bug的数量)。', 'zh-tw' => '列出解決的Bug總數，解決方案的分布，占的比例（該用戶解決的Bug的數量占所有的解決的Bug的數量)。', 'en' => 'percentage:self resolved / all resolved', 'de' => 'percentage:self resolved / all resolved', 'fr' => 'percentage:self resolved / all resolved'),
+    'desc'        => array('zh-cn' => 'Lista el total de Bug resueltos, la distribución de soluciones y la proporción (la cantidad de Bug resueltos por ese usuario respecto a todos los Bug resueltos).', 'zh-tw' => 'Lista el total de Bug resueltos, la distribución de soluciones y la proporción (la cantidad de Bug resueltos por ese usuario respecto a todos los Bug resueltos).', 'en' => 'percentage:self resolved / all resolved', 'de' => 'percentage:self resolved / all resolved', 'fr' => 'percentage:self resolved / all resolved'),
     'dimension'   => '1',
     'driver'      => 'mysql',
     'group'       => '61',
@@ -3090,9 +3090,9 @@ EOT,
     ),
     'filters'   => array
     (
-        array('from' => 'query', 'field' => 'product', 'name' => '产品', 'type' => 'select', 'typeOption' => 'product', 'default' => '0'),
-        array('from' => 'query', 'field' => 'startDate', 'name' => '解决日期开始', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHBEGIN'),
-        array('from' => 'query', 'field' => 'endDate', 'name' => '解决日期结束', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHEND')
+        array('from' => 'query', 'field' => 'product', 'name' => 'Producto', 'type' => 'select', 'typeOption' => 'product', 'default' => '0'),
+        array('from' => 'query', 'field' => 'startDate', 'name' => 'Inicio de la fecha de resolución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHBEGIN'),
+        array('from' => 'query', 'field' => 'endDate', 'name' => 'Fin de la fecha de resolución', 'type' => 'date', 'typeOption' => '', 'default' => '$MONTHEND')
     ),
     'fields'    => array
     (
@@ -3101,13 +3101,13 @@ EOT,
     ),
     'langs'     => array
     (
-        'resolvedBy'     => array('zh-cn' => '解决者', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolution'     => array('zh-cn' => '不同解决方案的Bug', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'resolvedBy'     => array('zh-cn' => 'Resuelto por', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'resolution'     => array('zh-cn' => 'Bug por solución', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'vars'      => array
     (
         'varName'     => array('product', 'startDate', 'endDate'),
-        'showName'    => array('产品', '解决日期开始', '解决日期结束'),
+        'showName'    => array('Producto', 'Inicio de la fecha de resolución', 'Fin de la fecha de resolución'),
         'requestType' => array('select', 'date', 'date'),
         'selectList'  => array('product', 'user', 'user'),
         'default'     => array('', '$MONTHBEGIN', '$MONTHEND')

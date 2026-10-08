@@ -93,7 +93,7 @@ $lang->program->progressAB       = 'Progreso';
 $lang->program->children         = 'Agregar un programa';
 $lang->program->allInvest        = 'Entrada';
 $lang->program->teamCount        = 'Equipo';
-$lang->program->longTime         = 'Long-Term';
+$lang->program->longTime         = 'Largo plazo';
 $lang->program->moreProgram      = 'Más programas';
 $lang->program->stakeholderType  = 'Tipo de interesado';
 $lang->program->parentBudget     = 'Presupuesto restante del programa padre：';
@@ -214,7 +214,7 @@ $lang->program->kanban->normalReleases  = 'Lanzamientos normales';
 $lang->program->kanban->laneColorList = array('#32C5FF', '#006AF1', '#9D28B2', '#FF8F26', '#FFC20E', '#00A78E', '#7FBB00', '#424BAC', '#C0E9FF', '#EC2761');
 
 $lang->program->defaultProgram    = 'Programa predeterminado';
-$lang->program->manDay            = 'Man-Days';
+$lang->program->manDay            = 'Personas-día';
 $lang->program->createdDate       = 'Fecha de creación';
 $lang->program->totalStories      = 'Total de historias';
 $lang->program->project           = 'Proyectos';

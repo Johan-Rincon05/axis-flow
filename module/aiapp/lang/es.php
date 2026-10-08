@@ -117,52 +117,52 @@ $lang->aiapp->toolkitItems['mcp']    = array('title' => 'Servicio MCP');
 $lang->aiapp->toolkitItems['cli']['image']    = 'static/images/zentao-cli.png';
 $lang->aiapp->toolkitItems['cli']['subtitle'] = 'Permitir que las herramientas de agentes usen ZenTao mediante línea de comandos';
 $lang->aiapp->toolkitItems['cli']['intro']    = <<<'MARKDOWN'
-ZenTao CLI is more than a command-line tool. It connects AI agents with your R&D management data.
+ZenTao CLI es más que una herramienta de línea de comandos. Conecta a los agentes de IA con los datos de gestión de I+D de su organización.
 
-After installing the ZenTao skill, AI agents such as Cursor and Claude Code can check project status, assess bug risks, and even generate requirements documents. The skill reads and writes ZenTao data through ZenTao CLI, turning your LLM-powered tools into practical R&D management assistants.
+Después de instalar la skill de ZenTao, agentes de IA como Cursor y Claude Code pueden consultar el estado de los proyectos, evaluar riesgos de bugs e incluso generar documentos de requerimientos. La skill lee y escribe datos de ZenTao a través de ZenTao CLI, convirtiendo sus herramientas basadas en LLM en asistentes prácticos de gestión de I+D.
 
-#### Key Features
+#### Características principales
 
-* Built on ZenTao RESTful API 2.0
-* Run instantly with a single command: `npx zentao-cli`
-* Secure authentication with multi-user switching
-* Filter, sort, and process data with automatic HTML-to-Markdown conversion
-* AI Agent-friendly with built-in help documentation and native Markdown output
-* Use as an AI skill — install to any Agent with `zentao add-skill`
-* Built-in MCP service — start with `npx zentao-cli mcp`
+* Construido sobre la API RESTful 2.0 de ZenTao
+* Se ejecuta al instante con un solo comando: `npx zentao-cli`
+* Autenticación segura con cambio entre múltiples usuarios
+* Filtre, ordene y procese datos con conversión automática de HTML a Markdown
+* Amigable para agentes de IA, con documentación de ayuda integrada y salida nativa en Markdown
+* Úselo como skill de IA: instálelo en cualquier agente con `zentao add-skill`
+* Servicio MCP integrado: inícielo con `npx zentao-cli mcp`
 
-#### Supported Agent Tools
+#### Herramientas de agentes compatibles
 
-ZenTao CLI can be used in all agent tools that support skills or MCP. The table below lists common options sorted by ease of use, from easiest to most advanced:
+ZenTao CLI se puede usar en todas las herramientas de agentes que admiten skills o MCP. La siguiente tabla lista opciones comunes ordenadas por facilidad de uso, de la más sencilla a la más avanzada:
 
-| Beginner-Friendly | Developer-Friendly | Advanced/Premium |
+| Para principiantes | Para desarrolladores | Avanzado/Premium |
 |:-----------------:|:------------------:|:----------------:|
 | [Cursor](https://www.cursor.com/) | [Cline](https://cline.bot/) | [Trae](https://www.trae.ai/) |
 | [VS Code Copilot](https://code.visualstudio.com/docs/copilot/overview) | [OpenClaw](https://www.openclaw.ai/) | [Codex](https://openai.com/codex/) |
 | [Cherry Studio](https://www.cherry-ai.com/) | [OpenCode](https://www.opencode.ai/) | [Antigravity](https://antigravity.google/) |
 | | [Claude Code](https://docs.anthropic.com/en/docs/claude-code.md) | [Codex CLI](https://developers.openai.com/codex/cli/reference) |
 
-#### Quick Start
+#### Inicio rápido
 
-##### Step 1: Install the Skill
+##### Paso 1: Instalar la skill
 
-**1. Let your agent install it automatically**: Most modern Agent tools support automatic discovery and installation of skills. Simply send the following message to the Agent:
+**1. Deje que su agente la instale automáticamente**: La mayoría de las herramientas de agentes modernas admiten el descubrimiento e instalación automática de skills. Simplemente envíe el siguiente mensaje al agente:
 
 ```
 Please install the ZenTao CLI skill from https://cn.clawhub-mirror.com/catouse/zentao-cli and set up the required zentao-cli command-line tool.
 ```
 
-**2. Manual installation**: Developers can also install directly via the terminal:
+**2. Instalación manual**: Los desarrolladores también pueden instalarla directamente desde la terminal:
 
 ```
-# Install zentao-cli globally
+# Instalar zentao-cli de forma global
 $ npm install -g zentao-cli
-# Other installation and runtime options
-# bun install -g zentao-cli  # ← Install with bun
-# npx zentao-cli             # ← Run without installation via npx
-# pnpm dlx zentao-cli        # ← Run without installation via pnpm
+# Otras opciones de instalación y ejecución
+# bun install -g zentao-cli  # ← Instalar con bun
+# npx zentao-cli             # ← Ejecutar sin instalación con npx
+# pnpm dlx zentao-cli        # ← Ejecutar sin instalación con pnpm
 
-# After installation, install the skill to the Agent with one command
+# Después de la instalación, instale la skill en el agente con un solo comando
 $ zentao add-skill
 Please select the AI Agent to install:
   1) Claude Code
@@ -177,11 +177,11 @@ Please select the AI Agent to install:
 Enter a number (1-9):9
 ```
 
-##### Step 2: Account Login and Authentication
+##### Paso 2: Inicio de sesión y autenticación de la cuenta
 
-After installation, you need to log in once. For account security, it is strongly recommended not to share your account credentials with AI Agents. Instead, use the following local configuration methods:
+Después de la instalación, debe iniciar sesión una vez. Por seguridad de su cuenta, se recomienda encarecidamente no compartir las credenciales de su cuenta con los agentes de IA. En su lugar, use los siguientes métodos de configuración local:
 
-1. Environment variables (recommended): Set the ZenTao URL, username, and password as environment variables. The tool will automatically log in and refresh tokens.
+1. Variables de entorno (recomendado): Defina la URL de ZenTao, el usuario y la contraseña como variables de entorno. La herramienta iniciará sesión y renovará los tokens automáticamente.
 
 ```sh
 export ZENTAO_URL=https://zentao.example.com
@@ -189,112 +189,112 @@ export ZENTAO_ACCOUNT=admin
 export ZENTAO_PASSWORD=123456
 ```
 
-2. Command-line login: You can also log in manually via the command line:
+2. Inicio de sesión por línea de comandos: También puede iniciar sesión manualmente desde la línea de comandos:
 
 ```sh
 zentao login -s https://zentao.example.com -u admin -p 123456
 ```
 
-##### Step 3: Conversations in Practice
+##### Paso 3: Conversaciones en la práctica
 
-Once configured, you can use ZenTao in the corresponding Agent tool just like chatting with a colleague. Here are some practical examples:
+Una vez configurado, puede usar ZenTao en la herramienta de agente correspondiente como si conversara con un colega. Estos son algunos ejemplos prácticos:
 
-* Requirements & Planning: "I want to create a product to collect user information online. Please help me organize my thoughts and generate the first version of requirements and plans. Feel free to ask me any questions."
-* Progress Tracking: "What new requirements were added last week? Which ones are more challenging? I'd like to develop plans for the difficult ones in advance."
-* Defect Analysis: "What is Bug 329 about? What are the possible causes? Are there any solutions?"
-* Risk Analysis: "How is Sprint 10 progressing? What are the risks?"
+* Requerimientos y planeación: "Quiero crear un producto para recopilar información de usuarios en línea. Ayúdame a organizar mis ideas y a generar la primera versión de requerimientos y planes. Hazme las preguntas que necesites."
+* Seguimiento del avance: "¿Qué requerimientos nuevos se agregaron la semana pasada? ¿Cuáles son más complejos? Quisiera desarrollar con anticipación los planes para los difíciles."
+* Análisis de defectos: "¿De qué trata el Bug 329? ¿Cuáles pueden ser las causas? ¿Hay soluciones?"
+* Análisis de riesgos: "¿Cómo va el Sprint 10? ¿Cuáles son los riesgos?"
 
-#### Upgrades and Maintenance
+#### Actualizaciones y mantenimiento
 
-When new versions of ZenTao CLI or the skill are available, you can upgrade as follows:
+Cuando haya nuevas versiones de ZenTao CLI o de la skill, puede actualizar de la siguiente manera:
 
 ```sh
-# Upgrade the CLI itself
+# Actualizar el CLI en sí
 zentao upgrade
-# Reinstall the skill with the add-skill command
+# Reinstalar la skill con el comando add-skill
 zentao add-skill
 ```
 
-You can also ask the Agent to help you upgrade:
+También puede pedirle al agente que le ayude a actualizar:
 
 ```
 Please help me upgrade zentao-cli and reinstall the latest skill using the zentao add-skill command.
 ```
 
-#### FAQ
+#### Preguntas frecuentes
 
-##### Q: How is the ZenTao CLI skill different from the earlier ZenTao API skill? Which one should I use?
+##### P: ¿En qué se diferencia la skill de ZenTao CLI de la anterior skill de la API de ZenTao? ¿Cuál debo usar?
 
-A: We strongly recommend the ZenTao CLI skill. It wraps the lower-level API details, supports more capabilities such as data filtering and Markdown conversion, and uses tokens more efficiently. With the CLI skill, LLMs can focus on solving real tasks instead of managing API calls directly. The ZenTao API skill gives the model direct access to the APIs, but that approach is more error-prone.
+R: Recomendamos encarecidamente la skill de ZenTao CLI. Encapsula los detalles de bajo nivel de la API, admite más capacidades como el filtrado de datos y la conversión a Markdown, y usa los tokens de forma más eficiente. Con la skill de CLI, los LLM pueden concentrarse en resolver tareas reales en lugar de gestionar directamente las llamadas a la API. La skill de la API de ZenTao da al modelo acceso directo a las APIs, pero ese enfoque es más propenso a errores.
 
-##### Q: I'm not familiar with agents or skills. How should I get started?
+##### P: No estoy familiarizado con los agentes ni las skills. ¿Cómo debo empezar?
 
-A: No worries. You don't need to master everything on day one. Given the current limitations of AI agents, they cannot fully replace the ZenTao GUI yet. We recommend starting with simple queries first, or trying the built-in ZenTao Tour skill, which guides you through common workflows step by step.
+R: No se preocupe. No necesita dominar todo desde el primer día. Dadas las limitaciones actuales de los agentes de IA, aún no pueden reemplazar por completo la interfaz gráfica de ZenTao. Recomendamos empezar con consultas sencillas, o probar la skill integrada ZenTao Tour, que lo guía paso a paso por los flujos de trabajo más comunes.
 
-##### Q: Can I use this in ZenTao AI?
+##### P: ¿Puedo usar esto en ZenTao AI?
 
-A: Direct CLI usage inside ZenTao AI is not supported yet. We are actively developing the ZAI Agents platform, which will support installing skills directly inside ZenTao in the future.
+R: Todavía no se admite el uso directo del CLI dentro de ZenTao AI. Estamos desarrollando activamente la plataforma ZAI Agents, que en el futuro permitirá instalar skills directamente dentro de ZenTao.
 
-##### Q: Why can't I perform certain operations, such as module operations or reading and writing documents?
+##### P: ¿Por qué no puedo realizar ciertas operaciones, como operaciones con módulos o leer y escribir documentos?
 
-A: The CLI currently relies on ZenTao API 2.0, and some API endpoints are still being improved. More capabilities will be added in future updates.
+R: Actualmente el CLI depende de la API 2.0 de ZenTao, y algunos endpoints de la API aún se están mejorando. Se agregarán más capacidades en próximas actualizaciones.
 
-#### Related Resources
+#### Recursos relacionados
 
-* ZenTao Official Skill Library: https://github.com/easysoft/zentao-skills
-* ZenTao CLI Open Source Repository: https://github.com/easysoft/zentao-cli
+* Biblioteca oficial de skills de ZenTao: https://github.com/easysoft/zentao-skills
+* Repositorio de código abierto de ZenTao CLI: https://github.com/easysoft/zentao-cli
 MARKDOWN;
 
 $lang->aiapp->toolkitItems['mcp']['image']    = 'static/images/zentao-mcp.png';
 $lang->aiapp->toolkitItems['mcp']['subtitle'] = 'Permitir que las herramientas de agentes usen ZenTao mediante el protocolo MCP';
 $lang->aiapp->toolkitItems['mcp']['intro']    = <<<'MARKDOWN'
-ZenTao MCP is a bridge proxy service based on the MCP (Model Context Protocol). It automatically converts ZenTao API 2.0 and other OpenAPI-compliant REST interfaces into standard MCP tools, allowing AI assistants such as Claude, Cursor, and CodeBuddy to call them uniformly, enabling bidirectional interaction with ZenTao data (both reading from and writing to ZenTao).
+ZenTao MCP es un servicio proxy puente basado en MCP (Model Context Protocol). Convierte automáticamente la API 2.0 de ZenTao y otras interfaces REST compatibles con OpenAPI en herramientas MCP estándar, permitiendo que asistentes de IA como Claude, Cursor y CodeBuddy las invoquen de manera uniforme, habilitando la interacción bidireccional con los datos de ZenTao (tanto lectura como escritura).
 
-#### Core Features
+#### Características principales
 
-* **Automatic Conversion**: Automatically generates MCP tools from OpenAPI/Swagger documents without manual adapter code. Compatible with all REST APIs following the specification.
-* **Transport Protocol Support**: Supports both Streamable HTTP and SSE (Server-Sent Events), balancing compatibility (HTTP) and real-time performance (SSE) for different AI clients.
-* **Distributed Tracing**: Built-in OpenTelemetry tracing and metrics collection to monitor service call chains and gather runtime metrics, making troubleshooting and optimization easier.
-* **Multi-Service Proxy**: A single ZenTao MCP instance can proxy multiple different API services simultaneously — not just ZenTao API, but any other OpenAPI-compliant system. Highly extensible.
-* **Cross-Platform**: Supports Linux, macOS, and Windows.
+* **Conversión automática**: Genera automáticamente herramientas MCP a partir de documentos OpenAPI/Swagger sin código adaptador manual. Compatible con todas las APIs REST que siguen la especificación.
+* **Soporte de protocolos de transporte**: Admite Streamable HTTP y SSE (Server-Sent Events), equilibrando compatibilidad (HTTP) y rendimiento en tiempo real (SSE) para distintos clientes de IA.
+* **Trazabilidad distribuida**: Incluye trazabilidad y recopilación de métricas con OpenTelemetry para monitorear las cadenas de llamadas del servicio y reunir métricas de ejecución, facilitando el diagnóstico y la optimización.
+* **Proxy multiservicio**: Una sola instancia de ZenTao MCP puede hacer proxy de varios servicios de API distintos de forma simultánea, no solo la API de ZenTao, sino cualquier otro sistema compatible con OpenAPI. Altamente extensible.
+* **Multiplataforma**: Compatible con Linux, macOS y Windows.
 
-#### Quick Start
+#### Inicio rápido
 
-##### (1) Configure MCP Service (choose one of four options)
+##### (1) Configurar el servicio MCP (elija una de las cuatro opciones)
 
-###### 1. Windows Configuration
+###### 1. Configuración en Windows
 
-**Step 1: Download the package**
+**Paso 1: Descargar el paquete**
 
-* [AMD 64-bit package](https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-windows-amd64.zip)
-* [ARM 64-bit package](https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-windows-arm64.zip)
+* [Paquete AMD 64 bits](https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-windows-amd64.zip)
+* [Paquete ARM 64 bits](https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-windows-arm64.zip)
 
-**Step 2: Extract the package**
+**Paso 2: Extraer el paquete**
 
-Using AMD-64 as an example, extract the downloaded package to `D:\zentao-mcp`.
+Tomando AMD-64 como ejemplo, extraiga el paquete descargado en `D:\zentao-mcp`.
 
-**Step 3: Edit MCP configuration**
+**Paso 3: Editar la configuración de MCP**
 
 ```sh
-# Copy the configuration template:
+# Copiar la plantilla de configuración:
 copy D:\zentao-mcp\config.example.yaml D:\zentao-mcp\config.yaml
 
-# Edit the configuration file:
+# Editar el archivo de configuración:
 D:\zentao-mcp\config.yaml
-schema_url: "D:/zentao-mcp/docs/zentao-openapi.json" # Update to actual file path
-base_url: "https://your-zentao-domain/api.php/v2"    # Update your ZenTao domain
+schema_url: "D:/zentao-mcp/docs/zentao-openapi.json" # Actualice con la ruta real del archivo
+base_url: "https://your-zentao-domain/api.php/v2"    # Actualice con su dominio de ZenTao
 ```
 
-**Step 4: Start the MCP service**
+**Paso 4: Iniciar el servicio MCP**
 
 ```sh
-# Run the following command in cmd:
+# Ejecute el siguiente comando en cmd:
 D:\zentao-mcp\bin\zentao-mcp-windows-amd64.exe -config D:\zentao-mcp\config.yaml
 ```
 
-###### 2. Linux Configuration
+###### 2. Configuración en Linux
 
-**Step 1: Download the package**
+**Paso 1: Descargar el paquete**
 
 ```sh
 # AMD-64:
@@ -303,38 +303,38 @@ curl -k -L -O https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-linux-amd64.tar
 curl -k -L -O https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-linux-arm64.tar.gz
 ```
 
-**Step 2: Extract the package**
+**Paso 2: Extraer el paquete**
 
-Using AMD-64 as an example:
+Tomando AMD-64 como ejemplo:
 
 ```sh
-# Create directory:
+# Crear el directorio:
 mkdir -p /opt/zentao-mcp
-# Extract:
+# Extraer:
 tar -zxvf zentao-mcp-linux-amd64.tar.gz -C /opt/zentao-mcp
 ```
 
-**Step 3: Edit MCP configuration**
+**Paso 3: Editar la configuración de MCP**
 
 ```sh
-# Copy the configuration template:
+# Copiar la plantilla de configuración:
 cp /opt/zentao-mcp/config.example.yaml /opt/zentao-mcp/config.yaml
 
-# Edit the configuration file:
+# Editar el archivo de configuración:
 /opt/zentao-mcp/config.yaml
-schema_url: "/opt/zentao-mcp/docs/zentao-openapi.json" # Update to actual file path
-base_url: "https://your-zentao-domain/api.php/v2"       # Update your ZenTao domain
+schema_url: "/opt/zentao-mcp/docs/zentao-openapi.json" # Actualice con la ruta real del archivo
+base_url: "https://your-zentao-domain/api.php/v2"       # Actualice con su dominio de ZenTao
 ```
 
-**Step 4: Start the MCP service**
+**Paso 4: Iniciar el servicio MCP**
 
 ```sh
 /opt/zentao-mcp/bin/zentao-mcp-linux-amd64 -config /opt/zentao-mcp/config.yaml
 ```
 
-###### 3. macOS Configuration
+###### 3. Configuración en macOS
 
-**Step 1: Download the package**
+**Paso 1: Descargar el paquete**
 
 ```sh
 # AMD-64:
@@ -343,57 +343,57 @@ curl -k -L -O https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-darwin-amd64.ta
 curl -k -L -O https://pkg.zentao.net/zentao-mcp/1.0.1/zentao-mcp-darwin-arm64.tar.gz
 ```
 
-**Step 2: Extract the package**
+**Paso 2: Extraer el paquete**
 
-Using AMD-64 as an example:
+Tomando AMD-64 como ejemplo:
 
 ```sh
-# Create directory:
+# Crear el directorio:
 mkdir /opt/zentao-mcp
-# Extract:
+# Extraer:
 tar -zxvf zentao-mcp-darwin-amd64.tar.gz -C /opt/zentao-mcp
 ```
 
-**Step 3: Edit MCP configuration**
+**Paso 3: Editar la configuración de MCP**
 
 ```sh
-# Copy the configuration template:
+# Copiar la plantilla de configuración:
 cp /opt/zentao-mcp/config.example.yaml /opt/zentao-mcp/config.yaml
 
-# Edit the configuration file:
+# Editar el archivo de configuración:
 /opt/zentao-mcp/config.yaml
-schema_url: "/opt/zentao-mcp/docs/zentao-openapi.json" # Update to actual file path
-base_url: "https://your-zentao-domain/api.php/v2"       # Update your ZenTao domain
+schema_url: "/opt/zentao-mcp/docs/zentao-openapi.json" # Actualice con la ruta real del archivo
+base_url: "https://your-zentao-domain/api.php/v2"       # Actualice con su dominio de ZenTao
 ```
 
-**Step 4: Start the MCP service**
+**Paso 4: Iniciar el servicio MCP**
 
 ```sh
 /opt/zentao-mcp/bin/zentao-mcp-darwin-amd64 -config /opt/zentao-mcp/config.yaml
 ```
 
-###### 4. Build from Source (for developers)
+###### 4. Compilar desde el código fuente (para desarrolladores)
 
-**Step 1: Clone the repository**
+**Paso 1: Clonar el repositorio**
 
 ```sh
 git clone https://github.com/easysoft/zentao-mcp.git
 ```
 
-**Step 2: Start the project**
+**Paso 2: Iniciar el proyecto**
 
 ```sh
-# Enter project directory:
+# Entrar al directorio del proyecto:
 cd zentao-mcp
-# Download dependencies:
+# Descargar dependencias:
 go mod tidy
-# Build:
+# Compilar:
 go build -o zentao-mcp ./cmd/app
 ```
 
-##### (2) Configure MCP Client (AI Assistant)
+##### (2) Configurar el cliente MCP (asistente de IA)
 
-**Step 1: Get the Token via ZenTao API V2**
+**Paso 1: Obtener el token mediante la API V2 de ZenTao**
 
 ```sh
 curl -X POST "http://your-zentao-domain/api.php/v2/user/login" \
@@ -401,9 +401,9 @@ curl -X POST "http://your-zentao-domain/api.php/v2/user/login" \
    -d '{"account":"username","password":"password"}'
 ```
 
-The `token` field in the returned JSON is the Token.
+El campo `token` del JSON devuelto es el token.
 
-**Step 2: Configure MCP in your AI assistant**
+**Paso 2: Configurar MCP en su asistente de IA**
 
 ```json
 {
@@ -431,16 +431,16 @@ The `token` field in the returned JSON is the Token.
 }
 ```
 
-#### Example Scenarios
+#### Escenarios de ejemplo
 
-* **Create a product**: Create a product named "Operations Monitoring Platform" in ZenTao.
-* **Create a story**: Create a story in a specific ZenTao product.
-* **Create a repository**: Create a repository named example-repo in GitFox.
-* **Generate and push code**: Generate scaffold code in a GitFox repository and push it.
+* **Crear un producto**: Cree un producto llamado "Operations Monitoring Platform" en ZenTao.
+* **Crear una historia**: Cree una historia en un producto específico de ZenTao.
+* **Crear un repositorio**: Cree un repositorio llamado example-repo en GitFox.
+* **Generar y enviar código**: Genere código base (scaffold) en un repositorio de GitFox y envíelo.
 
-#### Related Links
+#### Enlaces relacionados
 
-* ZenTao API Documentation: https://www.zentao.net/book/api/2309.html
-* GitFox Introduction: https://www.gitfox.net/
-* Project Source Code: https://github.com/easysoft/zentao-mcp
+* Documentación de la API de ZenTao: https://www.zentao.net/book/api/2309.html
+* Introducción a GitFox: https://www.gitfox.net/
+* Código fuente del proyecto: https://github.com/easysoft/zentao-mcp
 MARKDOWN;

@@ -12,7 +12,7 @@ $lang->index->dock->close   = 'Cerrar';
 $lang->index->dock->sort    = 'Ordenar';
 $lang->index->dock->save    = 'Salir del ordenamiento';
 $lang->index->dock->hide    = 'Ocultar';
-$lang->index->dock->add     = 'Add';
+$lang->index->dock->add     = 'Agregar';
 $lang->index->dock->divider = 'Divisor';
 $lang->index->dock->restore = 'Restablecer a valores predeterminados';
 

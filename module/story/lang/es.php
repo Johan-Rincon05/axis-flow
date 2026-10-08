@@ -346,7 +346,7 @@ $lang->story->legendLinkStories    = 'Historias vinculadas';
 $lang->story->legendChildStories   = 'Subhistorias';
 $lang->story->legendSpec           = 'Descripción';
 $lang->story->legendVerify         = 'Criterios de aceptación';
-$lang->story->legendMisc           = 'Misc.';
+$lang->story->legendMisc           = 'Varios';
 $lang->story->legendInformation    = 'Información de la historia';
 
 $lang->story->lblChange   = 'Cambio';
@@ -361,7 +361,7 @@ $lang->story->affectedBugs         = 'Bugs impactados';
 $lang->story->affectedCases        = 'Casos de prueba impactados';
 $lang->story->affectedTwins        = 'Historias gemelas impactadas';
 
-$lang->story->specTemplate           = "As a <role>, I would like to <do something> in order to <goal>.";
+$lang->story->specTemplate           = "Como <rol>, quiero <hacer algo> para <lograr un objetivo>.";
 $lang->story->needNotReview          = 'No requiere revisión';
 $lang->story->childStoryTitle        = 'Contiene %s subhistorias, de las cuales %s están completadas.';
 $lang->story->childTaskTitle         = 'Contiene %s subtareas, de las cuales %s están completadas.';

@@ -109,7 +109,7 @@ $lang->gitlab->apiError[] = "solo puede contener letras, dígitos, '_', '-' y '.
 $lang->gitlab->apiError[] = 'La rama ya existe';
 $lang->gitlab->apiError[] = 'No se pudo guardar el grupo {:path=>["has already been taken"]}';
 $lang->gitlab->apiError[] = 'No se pudo guardar el grupo {:path=>["已经被使用"]}';
-$lang->gitlab->apiError[] = '403 Forbidden';
+$lang->gitlab->apiError[] = '403 Prohibido';
 $lang->gitlab->apiError[] = 'no es válido';
 $lang->gitlab->apiError[] = 'admin es un nombre reservado';
 $lang->gitlab->apiError[] = 'ya está en uso';
@@ -120,7 +120,7 @@ $lang->gitlab->apiError[] = 'el avatar no es válido';
 $lang->gitlab->apiError[] = 'el formato de archivo no es compatible. Pruebe con uno de los formatos compatibles: image/png, image/jpeg, image/gif, image/bmp, image/tiff, image/vnd.microsoft.icon';
 $lang->gitlab->apiError[] = 'no debe contener combinaciones comunes de palabras y letras';
 $lang->gitlab->apiError[] = 'debe ser mayor o igual que 0';
-$lang->gitlab->apiError[] = '500 Internal Server Error';
+$lang->gitlab->apiError[] = '500 Error interno del servidor';
 
 $lang->gitlab->errorLang[] = 'No se puede establecer Interno como nivel de visibilidad si es privado en GitLab.';
 $lang->gitlab->errorLang[] = 'No se puede establecer Público como nivel de visibilidad si es privado en GitLab.';
@@ -140,7 +140,7 @@ $lang->gitlab->errorLang[] = 'El avatar no es válido';
 $lang->gitlab->errorLang[] = 'El formato de archivo no es compatible. Pruebe con uno de los siguientes formatos compatibles: image/png, image/jpeg, image/gif, image/bmp, image/tiff, image/vnd.microsoft.icon';
 $lang->gitlab->errorLang[] = 'no debe contener combinaciones comunes de palabras y letras';
 $lang->gitlab->errorLang[] = 'debe ser mayor o igual que 0';
-$lang->gitlab->errorLang[] = '500 Internal Server Error';
+$lang->gitlab->errorLang[] = '500 Error interno del servidor';
 
 $lang->gitlab->errorResonse['Email has already been taken']    = 'El correo electrónico ya está en uso';
 $lang->gitlab->errorResonse['Username has already been taken'] = 'El nombre de usuario ya está en uso';

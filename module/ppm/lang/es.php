@@ -49,7 +49,7 @@ $lang->ppm->filePath          = 'Ruta del archivo';
 $lang->ppm->conflictFiles     = 'Archivos en conflicto';
 $lang->ppm->changeFiles       = 'Cambiar archivos';
 $lang->ppm->issueList         = 'Lista de incidencias';
-$lang->ppm->add               = 'Add';
+$lang->ppm->add               = 'Agregar';
 $lang->ppm->addReviewer       = 'Agregar revisor';
 $lang->ppm->reviewStatus      = 'Estado de la revisión';
 $lang->ppm->review            = 'Revisión';
@@ -134,7 +134,7 @@ $lang->ppm->approvalStatusList['rejected']   = 'Rechazado';
 
 $lang->ppm->notApproved  = 'Rechazado';
 $lang->ppm->assignedToMe = 'Asignado a mí';
-$lang->ppm->createdByMe  = 'CreatedByMe';
+$lang->ppm->createdByMe  = 'Creado por mí';
 
 $lang->ppm->statusList = array();
 $lang->ppm->statusList['all']    = 'all';
@@ -187,8 +187,8 @@ $lang->ppm->targetBranchNotExist = 'La rama de destino no existe.';
 
 $lang->ppm->apiErrorMap[1]  = "No se puede usar el mismo proyecto/rama como origen y destino";
 $lang->ppm->apiErrorMap[2]  = "/Another open merge request already exists for this source branch: !([0-9]+)/";
-$lang->ppm->apiErrorMap[3]  = "401 Unauthorized";
-$lang->ppm->apiErrorMap[4]  = "403 Forbidden";
+$lang->ppm->apiErrorMap[3]  = "401 No autorizado";
+$lang->ppm->apiErrorMap[4]  = "403 Prohibido";
 $lang->ppm->apiErrorMap[5]  = "/(pull request already exists for these targets).*/";
 $lang->ppm->apiErrorMap[6]  = "PullRequest no válido: no hay cambios entre head y base";
 $lang->ppm->apiErrorMap[7]  = "/(user doesn't have access to repo).*/";
@@ -247,27 +247,27 @@ $lang->ppm->squashHelp  = 'Parámetros de git correspondientes: --squash';
  * %s mr::target_branch
  */
 $lang->ppm->commandDocument = <<< EOD
-<div class='detail-title'>Check out, review and merge locally</div>
+<div class='detail-title'>Obtener, revisar y fusionar localmente</div>
 <div class='detail-content'>
-  <p><blockquote>Note: This merge request status will be changed automatically after you merged locally.</blockquote></p>
+  <p><blockquote>Nota: El estado de esta solicitud de fusión cambiará automáticamente después de fusionar localmente.</blockquote></p>
   <p>
-    step 1. Change directory to target project. Fetch and check out the branch for this merge request
+    paso 1. Cambie al directorio del proyecto de destino. Obtenga (fetch) y cambie a la rama de esta solicitud de fusión
     <pre>
     git fetch "%s" %s
     git checkout -b "%s" FETCH_HEAD</pre>
   </p>
   <p>
-    step 2. Review the changes locally. You can use <code>git log</code> to view the changes
+    paso 2. Revise los cambios localmente. Puede usar <code>git log</code> para ver los cambios
   </p>
   <p>
-    step 3. Merge the branch and fix any conflicts that come up
+    paso 3. Fusione la rama y resuelva los conflictos que aparezcan
     <pre>
     git fetch origin
     git checkout "%s"
     git merge --no-ff "%s"</pre>
   </p>
   <p>
-    step 4. Push the result of the merge to Git
+    paso 4. Envíe el resultado de la fusión a Git
     <pre>
     git push origin "%s" </pre>
   </p>

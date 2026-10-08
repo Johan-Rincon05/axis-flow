@@ -14,8 +14,8 @@ $lang->convert->index   = 'Página principal';
 
 $lang->convert->start   = 'Iniciar';
 $lang->convert->desc    = <<<EOT
-<p>Welcome to the System Migration Wizard. This tool will assist you in migrating data from external systems into the ZenTao.</p>
-<strong>Data migration involves potential risks. Before proceeding, we strongly recommend backing up your database and associated data files. Please also ensure that no other users are performing operations on the system during the migration process</strong>
+<p>Bienvenido al Asistente de migración del sistema. Esta herramienta le ayudará a migrar datos de sistemas externos a ZenTao.</p>
+<strong>La migración de datos implica riesgos potenciales. Antes de continuar, le recomendamos encarecidamente respaldar su base de datos y los archivos de datos asociados. Asegúrese también de que ningún otro usuario esté realizando operaciones en el sistema durante el proceso de migración</strong>
 EOT;
 
 $lang->convert->setConfig      = 'Configuración del sistema de origen';
@@ -50,7 +50,7 @@ $lang->convert->sourceList['Redmine'] = array('Redmine_1.1' => '1.1');
 
 $lang->convert->setting     = 'Configuración';
 $lang->convert->checkConfig = 'Verificar configuraciones';
-$lang->convert->add         = 'Add';
+$lang->convert->add         = 'Agregar';
 $lang->convert->title       = 'Título';
 
 $lang->convert->ok          = '<span class="text-success"><i class="icon-check-sign"></i> Aprobado </span>';

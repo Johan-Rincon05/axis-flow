@@ -11,7 +11,7 @@ $lang->runner->changeState  = 'Habilitar/Suspender runner';
 
 $lang->runner->name        = 'Nombre';
 $lang->runner->status      = 'Estado';
-$lang->runner->platOrArch  = 'Platform/Arch';
+$lang->runner->platOrArch  = 'Plataforma/Arquitectura';
 $lang->runner->plat        = 'Plataforma';
 $lang->runner->arch        = 'Arq.';
 $lang->runner->version     = 'Versión';
@@ -44,25 +44,25 @@ $lang->runner->archList['arm64'] = 'arm64';
 
 $lang->runner->cmdList = array();
 $lang->runner->cmdList['windows'] = <<<EOF
-# 1. Download runner executable file
+# 1. Descargar el archivo ejecutable del runner
 powershell -command "Invoke-WebRequest -Uri '%PACKAGE_URL%' -OutFile 'gitfox-runner.tar.gz'"
 
-# 2. Uncompress executable file
+# 2. Descomprimir el archivo ejecutable
 
-# 3. Install service
+# 3. Instalar el servicio
 .\install.bat %GITFOX_URL% %GITFOX_TOKEN% %RUNNER_RUNTIME% %RUNNER_LABELS%
 EOF;
 $lang->runner->cmdList['linux'] = <<<EOF
-# 1. Download runner executable file to specified path
+# 1. Descargar el archivo ejecutable del runner en la ruta especificada
 sudo curl --output "gitfox-runner.tar.gz" "%PACKAGE_URL%" %RUNNER_RUNTIME%
 
-# 2. Uncompress executable file to /usr/local/bin
+# 2. Descomprimir el archivo ejecutable en /usr/local/bin
 sudo tar -zxvf gitfox-runner.tar.gz -C /usr/local/bin
 
-# 3. Install service
+# 3. Instalar el servicio
 sudo gitfox-runner install --url=%GITFOX_URL% --token=%GITFOX_TOKEN% --runtime=%RUNNER_RUNTIME% %RUNNER_LABELS%
 
-# 4. Start service
+# 4. Iniciar el servicio
 sudo gitfox-runner start
 EOF;
 $lang->runner->cmdList['docker'] = <<<EOF
@@ -72,10 +72,10 @@ docker run -d --name gitfox-runner --restart always \
     gitfox/gitfox-runner:latest
 EOF;
 $lang->runner->cmdList['k8s'] = <<<EOF
-# 1. Add repository source
+# 1. Agregar el origen del repositorio
 helm repo add gitfox https://hub.qucheng.com/chartrepo/stable
 
-# 2. Install
+# 2. Instalar
 helm install --namespace <NAMESPACE> --name gitfox-runner -f <CONFIG_VALUES_FILE> gitfox/gitfox-runner
 EOF;
 

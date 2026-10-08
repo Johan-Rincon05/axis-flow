@@ -20,7 +20,7 @@ $lang->zahost->baseInfo       = 'Información básica';
 $lang->zahost->hostType       = 'Tipo de host';
 
 $lang->zahost->name        = 'Nombre';
-$lang->zahost->IP          = 'IP/Domain';
+$lang->zahost->IP          = 'IP/Dominio';
 $lang->zahost->extranet    = 'IP/Dominio externo';
 $lang->zahost->memory      = 'Memoria';
 $lang->zahost->cpuCores    = 'CPU';
@@ -128,7 +128,7 @@ $lang->zahost->cancelDelete            = '¿Seguro que desea cancelar esta tarea
 $lang->zahost->notice = new stdclass();
 $lang->zahost->notice->ip              = 'Formato no válido para "%s".';
 $lang->zahost->notice->registerCommand = 'Comando de registro del host: ./zagent-host -t host -s http://%s:%s -i %s -p 8086 -secret %s';
-$lang->zahost->notice->loading         = 'loading...';
+$lang->zahost->notice->loading         = 'cargando...';
 $lang->zahost->notice->noImage         = 'No hay archivos de imagen disponibles.';
 
 $lang->zahost->tips = 'Los hosts incluyen hosts físicos, clústeres de Kubernetes (K8s), servidores en la nube e instancias de contenedores en la nube. Se utilizan principalmente para crear máquinas virtuales o instancias de contenedores. El sistema operativo recomendado para el host es Ubuntu o una versión LTS de CentOS.';

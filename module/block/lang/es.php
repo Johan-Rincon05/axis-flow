@@ -221,7 +221,7 @@ $lang->block->count   = 'Conteo';
 $lang->block->type    = 'Tipo';
 $lang->block->orderBy = 'Orden';
 
-$lang->block->availableBlocks['todo']        = 'To-dos';
+$lang->block->availableBlocks['todo']        = 'Pendientes';
 $lang->block->availableBlocks['task']        = 'Tareas';
 $lang->block->availableBlocks['bug']         = 'Bugs';
 $lang->block->availableBlocks['case']        = 'Casos';
@@ -299,7 +299,7 @@ $lang->block->modules['qa']->availableBlocks['case']      = 'Casos';
 $lang->block->modules['qa']->availableBlocks['testtask']  = 'Solicitudes de prueba';
 
 $lang->block->modules['todo'] = new stdclass();
-$lang->block->modules['todo']->availableBlocks['list'] = 'To-dos';
+$lang->block->modules['todo']->availableBlocks['list'] = 'Pendientes';
 
 $lang->block->modules['doc'] = new stdclass();
 $lang->block->modules['doc']->availableBlocks['docstatistic']    = 'Estadísticas';
@@ -367,7 +367,7 @@ $lang->block->orderByList->story['status_desc'] = 'Estado descendente';
 $lang->block->orderByList->story['stage_asc']   = 'Fase ascendente';
 $lang->block->orderByList->story['stage_desc']  = 'Fase descendente';
 
-$lang->block->todoCount     = 'To-dos';
+$lang->block->todoCount     = 'Pendientes';
 $lang->block->taskCount     = 'Tareas';
 $lang->block->bugCount      = 'Bugs';
 $lang->block->riskCount     = 'Riesgos';
@@ -563,7 +563,7 @@ $lang->block->productstatistic->unclosed        = 'Abierto';
 $lang->block->productstatistic->storyStatistics = 'Estadísticas de historias';
 $lang->block->productstatistic->monthDone       = 'Completado este mes <span class="text-success font-bold">%s</span>';
 $lang->block->productstatistic->monthOpened     = 'Agregados este mes <span class="text-primary font-bold">%s</span>';
-$lang->block->productstatistic->opened          = 'Added';
+$lang->block->productstatistic->opened          = 'Agregado';
 $lang->block->productstatistic->done            = 'Completado';
 $lang->block->productstatistic->news            = 'Último avance del producto';
 $lang->block->productstatistic->newPlan         = 'Último plan';
@@ -598,7 +598,7 @@ $lang->block->projectstatistic->unit             = 'unit';
 $lang->block->projectstatistic->total            = 'Total';
 $lang->block->projectstatistic->SP               = $config->hourUnit;
 $lang->block->projectstatistic->personDay        = 'PD';
-$lang->block->projectstatistic->day              = 'day(s)';
+$lang->block->projectstatistic->day              = 'día(s)';
 $lang->block->projectstatistic->hour             = 'Horas';
 $lang->block->projectstatistic->leftDaysPre      = 'Tiempo restante';
 $lang->block->projectstatistic->delayDaysPre     = 'Vencido por';

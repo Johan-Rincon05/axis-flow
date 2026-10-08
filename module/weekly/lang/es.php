@@ -54,56 +54,56 @@ $lang->weekly->builtInCategoryList['day']       = 'Informe diario';
 $lang->weekly->builtInCategoryList['milestone'] = 'Informe de hitos';
 
 $lang->weekly->reportHelpNotice = <<<EOD
-<h2>PV — Planned Value </h2>
-Calculation logic:
-<br />1) Sum the estimated hours of tasks whose planned start and end dates both fall within this week’s start and end dates.
-<br />2) Sum the estimated hours of tasks whose planned start and end dates are both before this week’s start date.
-<br />3) Sum the estimated hours of tasks whose planned start date is earlier than this week’s start date, and the planned end date is between this week’s start and end dates.
-<br />4) For tasks whose planned start date is after this week’s start date but before this week’s end date, and planned end date is after this week’s end date, sum (Estimated Hours ÷ Task Duration in days) × (Days from planned start to this week’s end date).
-<br />5) For tasks whose planned start date equals this week’s start date and planned end date is after this week’s end date, sum (Estimated Hours ÷ Task Duration in days) × (Days from planned start to this week’s end date).
-<br />6) For tasks whose planned start date is earlier than this week’s start date and planned end date equals this week’s end date, sum the estimated hours.
-<br />7) For tasks whose planned start date is earlier than this week’s start date and planned end date is after this week’s end date, sum (Estimated Hours ÷ Task Duration in days) × (Days from this week’s start to this week’s end date).
+<h2>PV — Valor planificado </h2>
+Lógica de cálculo:
+<br />1) Sume las horas estimadas de las tareas cuyas fechas planificadas de inicio y fin están ambas dentro de las fechas de inicio y fin de esta semana.
+<br />2) Sume las horas estimadas de las tareas cuyas fechas planificadas de inicio y fin son ambas anteriores a la fecha de inicio de esta semana.
+<br />3) Sume las horas estimadas de las tareas cuya fecha planificada de inicio es anterior a la fecha de inicio de esta semana y cuya fecha planificada de fin está entre las fechas de inicio y fin de esta semana.
+<br />4) Para las tareas cuya fecha planificada de inicio es posterior a la fecha de inicio de esta semana pero anterior a la fecha de fin de esta semana, y cuya fecha planificada de fin es posterior a la fecha de fin de esta semana, sume (Horas estimadas ÷ Duración de la tarea en días) × (Días desde el inicio planificado hasta la fecha de fin de esta semana).
+<br />5) Para las tareas cuya fecha planificada de inicio es igual a la fecha de inicio de esta semana y cuya fecha planificada de fin es posterior a la fecha de fin de esta semana, sume (Horas estimadas ÷ Duración de la tarea en días) × (Días desde el inicio planificado hasta la fecha de fin de esta semana).
+<br />6) Para las tareas cuya fecha planificada de inicio es anterior a la fecha de inicio de esta semana y cuya fecha planificada de fin es igual a la fecha de fin de esta semana, sume las horas estimadas.
+<br />7) Para las tareas cuya fecha planificada de inicio es anterior a la fecha de inicio de esta semana y cuya fecha planificada de fin es posterior a la fecha de fin de esta semana, sume (Horas estimadas ÷ Duración de la tarea en días) × (Días desde el inicio hasta el fin de esta semana).
 
-<p><strong>Scope of Calculation:</strong></p>
-1) This week’s start date: Monday 00:00:00; the end date is determined based on working days and holidays.
-<br />2) To avoid double counting, only sub‑tasks are included; parent tasks are excluded.
-<br />3) Deleted tasks are excluded.
-<br />4) Canceled tasks are excluded.
-<br />5) Deleted executions are excluded.
-<br />6) If the task has no planned start date, use the planned start date of its parent phase.
-<br />7) If the task has no planned end date, use the planned finish date of its parent phase.
-<br />8) The calculation considers only working days.
+<p><strong>Alcance del cálculo:</strong></p>
+1) Fecha de inicio de esta semana: lunes 00:00:00; la fecha de fin se determina según los días laborables y festivos.
+<br />2) Para evitar el conteo doble, solo se incluyen las subtareas; las tareas padre se excluyen.
+<br />3) Se excluyen las tareas eliminadas.
+<br />4) Se excluyen las tareas canceladas.
+<br />5) Se excluyen las ejecuciones eliminadas.
+<br />6) Si la tarea no tiene fecha planificada de inicio, se usa la fecha planificada de inicio de su fase padre.
+<br />7) Si la tarea no tiene fecha planificada de fin, se usa la fecha planificada de finalización de su fase padre.
+<br />8) El cálculo considera únicamente los días laborables.
 
-<h2>EV — Earned Value</h2>
-Calculation logic:
-<br />1) For tasks marked as “Completed,” sum the estimated hours.
-<br />2) For tasks marked as “Closed” with the close reason “Completed,” sum the estimated hours.
-<br />3) For tasks “Doing” or “On Hold,” sum (Estimated Hours × Completion Percentage).
+<h2>EV — Valor ganado</h2>
+Lógica de cálculo:
+<br />1) Para las tareas marcadas como “Finalizadas”, sume las horas estimadas.
+<br />2) Para las tareas marcadas como “Cerradas” con el motivo de cierre “Finalizada”, sume las horas estimadas.
+<br />3) Para las tareas “En curso” o “En pausa”, sume (Horas estimadas × Porcentaje de avance).
 
-<p><strong>Scope of Calculation:</strong></p>
-1) Tasks that have non‑zero spent hours before this week’s end date.
-<br />2) To avoid double counting, only sub‑tasks are included; parent tasks are excluded.
-<br />3) Deleted tasks are excluded.
-<br />4) Canceled tasks are excluded.
-<br />5) Deleted executions are excluded.
-<br />6) Completion Percentage = Cost Hours ÷ (Cost Hours + Hours Left).
+<p><strong>Alcance del cálculo:</strong></p>
+1) Tareas que tienen horas consumidas distintas de cero antes de la fecha de fin de esta semana.
+<br />2) Para evitar el conteo doble, solo se incluyen las subtareas; las tareas padre se excluyen.
+<br />3) Se excluyen las tareas eliminadas.
+<br />4) Se excluyen las tareas canceladas.
+<br />5) Se excluyen las ejecuciones eliminadas.
+<br />6) Porcentaje de avance = Horas consumidas ÷ (Horas consumidas + Horas restantes).
 
-<h2>AC — Actual Cost</h2>
-Calculation logic:
-<br />1) Sum all spent hours before this week’s end date.
+<h2>AC — Costo real</h2>
+Lógica de cálculo:
+<br />1) Sume todas las horas consumidas antes de la fecha de fin de esta semana.
 
-<p><strong>Scope of Calculation:</strong></p>
-1) Include spent hours from all work items: tasks, stories, bugs, test cases, builds, test requests, issues, risks, documents, and reviews.
-<br />2) To avoid double counting, only sub‑tasks are included; parent tasks are excluded.
-<br />3) Include spent hours from deleted tasks, stories, bugs, test cases, builds, test requests, issues, risks, documents, and reviews.
-<br />4) Include spent hours from deleted executions of tasks, stories, bugs, test cases, builds, and documents.
-<br />5) Include spent hours of canceled tasks, issues, and risks.
+<p><strong>Alcance del cálculo:</strong></p>
+1) Incluya las horas consumidas de todos los elementos de trabajo: tareas, historias, bugs, casos de prueba, builds, solicitudes de prueba, incidencias, riesgos, documentos y revisiones.
+<br />2) Para evitar el conteo doble, solo se incluyen las subtareas; las tareas padre se excluyen.
+<br />3) Incluya las horas consumidas de tareas, historias, bugs, casos de prueba, builds, solicitudes de prueba, incidencias, riesgos, documentos y revisiones eliminados.
+<br />4) Incluya las horas consumidas de tareas, historias, bugs, casos de prueba, builds y documentos de ejecuciones eliminadas.
+<br />5) Incluya las horas consumidas de tareas, incidencias y riesgos cancelados.
 
-<h2>SV(%) — Schedule Variance </h2>
-Formula: SV(%) = −1 × (1 − (EV / PV))%
+<h2>SV(%) — Variación del cronograma </h2>
+Fórmula: SV(%) = −1 × (1 − (EV / PV))%
 
-<h2>CV(%) — Cost Variance </h2>
-Formula: CV(%) = −1 × (1 − (EV / AC))%;
+<h2>CV(%) — Variación del costo </h2>
+Fórmula: CV(%) = −1 × (1 − (EV / AC))%;
 EOD;
 
 $lang->weekly->blockHelpNotice = '<h2>Avance de esta semana</h2>

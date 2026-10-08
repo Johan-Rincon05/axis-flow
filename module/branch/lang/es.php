@@ -3,7 +3,7 @@ $lang->branch->common = 'Rama';
 $lang->branch->manage = 'Administrar rama';
 $lang->branch->sort   = 'Ordenar ramas';
 $lang->branch->delete = 'Eliminar rama';
-$lang->branch->add    = 'Add';
+$lang->branch->add    = 'Agregar';
 
 $lang->branch->manageTitle = 'Gestión de %s';
 $lang->branch->all         = 'Todos ';

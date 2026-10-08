@@ -65,8 +65,8 @@ $lang->pivot->field       = 'Campo relacionado';
 $lang->pivot->operator    = 'Operador';
 $lang->pivot->orderby     = 'Ordenar por';
 $lang->pivot->order       = 'Orden';
-$lang->pivot->add         = 'Add';
-$lang->pivot->valOrAgg    = 'Value/Aggregate';
+$lang->pivot->add         = 'Agregar';
+$lang->pivot->valOrAgg    = 'Valor/Agregado';
 $lang->pivot->value       = 'Valor';
 $lang->pivot->agg         = 'Agregar';
 $lang->pivot->display     = 'Nombre para mostrar';
@@ -84,7 +84,7 @@ $lang->pivot->draft       = 'Guardar como borrador';
 $lang->pivot->draftIcon   = 'draft';
 $lang->pivot->nextStep    = 'Siguiente paso';
 $lang->pivot->saveSetting = 'Guardar configuración';
-$lang->pivot->add         = 'Add';
+$lang->pivot->add         = 'Agregar';
 $lang->pivot->baseSetting = 'Configuración base';
 $lang->pivot->setLang     = 'Establecer idiomas';
 $lang->pivot->toDesign    = 'Por diseñar';
@@ -94,7 +94,7 @@ $lang->pivot->varCode     = 'Código';
 $lang->pivot->varLabel    = 'Etiqueta de variable';
 $lang->pivot->monopolize  = 'Propio';
 $lang->pivot->varNameTip  = 'Ingrese letras';
-$lang->pivot->item        = 'Eintrag';
+$lang->pivot->item        = 'Entrada';
 $lang->pivot->percent     = '%';
 $lang->pivot->undefined   = 'Indefinido';
 $lang->pivot->project     = $lang->projectCommon;
@@ -149,7 +149,7 @@ $lang->pivotList->project = new stdclass();
 $lang->pivotList->test    = new stdclass();
 $lang->pivotList->staff   = new stdclass();
 
-$lang->pivotList->product->lists[10] = $lang->productCommon . ' Summary|pivot|productsummary';
+$lang->pivotList->product->lists[10] = $lang->productCommon . ' Resumen|pivot|productsummary';
 $lang->pivotList->project->lists[10] = "{$lang->execution->common} Deviation|pivot|projectdeviation";
 $lang->pivotList->test->lists[10]    = 'Resumen de Bugs reportados|pivot|bugcreate';
 $lang->pivotList->test->lists[13]    = 'Resumen de Bugs asignados|pivot|bugassign';
@@ -173,7 +173,7 @@ $lang->pivot->manhourTotal  = "Total de horas";
 $lang->pivot->validRate     = "Tasa de validez";
 $lang->pivot->validRateTips = "La resolución es Resuelto/Pospuesto o el estado es Resuelto/Cerrado.";
 $lang->pivot->unplanned     = 'Sin planificar';
-$lang->pivot->workday       = 'Hours/Day';
+$lang->pivot->workday       = 'Horas/día';
 $lang->pivot->diffDays      = 'days';
 
 $lang->pivot->typeList['default'] = 'Predeterminado';
@@ -244,7 +244,7 @@ $lang->pivot->stackedBarY = $lang->pivot->cluBarY;
 $lang->pivot->browseGroup = 'Administrar grupo';
 $lang->pivot->allGroup    = 'Todo el grupo';
 $lang->pivot->noGroup     = 'Sin grupo';
-$lang->pivot->groupName   = 'GroupName';
+$lang->pivot->groupName   = 'Nombre del grupo';
 $lang->pivot->manageGroup = 'Administrar grupo';
 $lang->pivot->dragAndSort = 'Arrastrar para ordenar';
 $lang->pivot->editGroup   = 'Editar grupo';
@@ -317,14 +317,14 @@ $lang->pivot->cannotNextStep  = 'Haga clic en Consultar datos de actualización 
 $lang->pivot->permissionDenied = 'El directorio %s no tiene permisos suficientes. Ejecute chmod 777 %s para cambiar los permisos.';
 
 $lang->pivot->drillModalTip       = <<<EOT
-1. Select the columns to be drilled and the target objects to be drilled. The system automatically generates SQL statements based on your selection.
-2. Adjust the automatically generated SQL statement according to the query statement displayed in the gray panel below (the SQL query statement in the first step [Query data]), and configure the corresponding query conditions.
-3. Click Preview to view the drill-down data for your configuration.
-4. Click Save to complete the drill down configuration.
+1. Seleccione las columnas a explorar y los objetos de destino. El sistema genera automáticamente las sentencias SQL según su selección.
+2. Ajuste la sentencia SQL generada automáticamente según la consulta que se muestra en el panel gris inferior (la consulta SQL del primer paso [Consultar datos]) y configure las condiciones de consulta correspondientes.
+3. Haga clic en Vista previa para ver los datos de profundización de su configuración.
+4. Haga clic en Guardar para completar la configuración de profundización.
 EOT;
 $lang->pivot->drillConditionTip = <<<EOT
-1.Configure search conditions based on the row group field and slice column field configured in Step 2 and the filter field configured in Step 3.
-2.The query result field drop-down list displays the result set field in Query Data in the first step.
+1.Configure las condiciones de búsqueda según el campo de grupo de filas y el campo de columna de segmento configurados en el Paso 2 y el campo de filtro configurado en el Paso 3.
+2.La lista desplegable de campos del resultado de la consulta muestra los campos del conjunto de resultados de Consultar datos en el primer paso.
 EOT;
 
 $lang->pivot->step1QueryTip       = 'Para los datos de configuración posteriores, asegúrese de que el campo id del objeto de consulta esté incluido en el conjunto de resultados.';
@@ -414,7 +414,7 @@ $lang->pivot->stepDesign->groupTip    = 'Seleccionar campo';
 $lang->pivot->stepDesign->groupNum    = array('Uno', 'Dos', 'Tres');
 $lang->pivot->stepDesign->selectField = 'Seleccionar campo';
 $lang->pivot->stepDesign->selectStat  = 'Método estadístico selectivo';
-$lang->pivot->stepDesign->add         = 'Add';
+$lang->pivot->stepDesign->add         = 'Agregar';
 $lang->pivot->stepDesign->delete      = 'Eliminar';
 $lang->pivot->stepDesign->groupField  = 'Campo de agrupación';
 $lang->pivot->stepDesign->columnField = 'Campo';

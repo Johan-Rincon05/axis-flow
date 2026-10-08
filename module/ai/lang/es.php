@@ -105,7 +105,7 @@ $lang->ai->maintenanceGroup = 'Grupo de mantenimiento';
 
 $lang->ai->maintenanceGroupDuplicated = 'El nombre del grupo no puede estar duplicado.';
 
-$lang->ai->requiredList['0'] = 'Non-required';
+$lang->ai->requiredList['0'] = 'No obligatorio';
 $lang->ai->requiredList['1'] = 'Obligatorio';
 
 $lang->ai->validate = new stdclass();
@@ -160,7 +160,7 @@ $lang->ai->prompts->targetFormInfo    = '[Información del formulario de destino
 $lang->ai->prompts->formLabel         = 'Formulario: %s';
 $lang->ai->prompts->fillableFields    = 'Campos completables:';
 $lang->ai->prompts->requiredField     = 'required';
-$lang->ai->prompts->optionsLabel      = 'options: ';
+$lang->ai->prompts->optionsLabel      = 'opciones: ';
 $lang->ai->prompts->returnJSONObject  = 'Devuelva un objeto JSON. Las claves deben coincidir con los nombres de campos anteriores. Los campos obligatorios deben tener valor.';
 $lang->ai->prompts->returnJSONArray   = 'Devuelva un arreglo JSON. Cada elemento debe corresponder a una fila de la tabla y ser un objeto cuyas claves coincidan con los nombres de campos rellenables anteriores. Los campos obligatorios deben tener valor.';
 $lang->ai->prompts->processDataPrefix = "The data to process is as follows:\n%s";
@@ -692,7 +692,7 @@ $lang->ai->miniPrograms->field->default = array(
     'Rol',
     'Escena',
     'Objetivo',
-    'As a <Role>, I hope to <Objective> in <Scene>.'
+    'Como <Rol>, quiero <Objetivo> en <Escenario>.'
 );
 
 $lang->ai->miniPrograms->field->emptyNameWarning      = '「%s」 no puede estar vacío';

@@ -88,7 +88,7 @@ $lang->api->noticeAcl = array(
 /* fields of struct */
 $lang->struct = new stdClass();
 
-$lang->struct->add             = 'Add';
+$lang->struct->add             = 'Agregar';
 $lang->struct->field           = 'Campo';
 $lang->struct->paramsType      = 'Tipo';
 $lang->struct->required        = 'Obligatorio';

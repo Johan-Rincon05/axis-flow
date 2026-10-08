@@ -75,4 +75,4 @@ $lang->message->label->moved        = 'Mover';
 $lang->message->label->nearing      = 'Recordatorio de vencimiento';
 $lang->message->label->published    = 'Lanzamiento';
 $lang->message->label->changestatus = 'Cambiar estado del lanzamiento';
-$lang->message->label->mentioned    = '@Mention';
+$lang->message->label->mentioned    = '@Mención';

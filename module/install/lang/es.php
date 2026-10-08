@@ -25,18 +25,18 @@ $lang->install->seeLatestRelease = 'Buscar actualizaciones';
 $lang->install->welcome          = '¡Gracias por elegir AXIS FLOW!';
 $lang->install->license          = 'Contrato de licencia';
 $lang->install->desc             = <<<EOT
-ZenTao Project Management Software (ZenTao PMS) is an open-source software released under <a href='http://zpl.pub/page/zplv12.html' target='_blank'>ZPL</a> or <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>AGPL</a> License. It is an all-in-one platform that integrates Product, Project, and Test Management, along with office automation and organizational management—making it the top choice for small and medium-sized enterprises.
+ZenTao Project Management Software (ZenTao PMS) es un software de código abierto publicado bajo la licencia <a href='http://zpl.pub/page/zplv12.html' target='_blank'>ZPL</a> o <a href='https://www.gnu.org/licenses/agpl-3.0.en.html' target='_blank'>AGPL</a>. Es una plataforma todo en uno que integra la gestión de productos, proyectos y pruebas, junto con automatización de oficina y gestión organizacional, lo que la convierte en la mejor opción para las pequeñas y medianas empresas.
 
-Built with PHP and MySQL on the proprietary ZenTao PHP framework, it offers high extensibility, allowing third-party developers and organizations to easily develop extensions or customize ZenTao accordingly.
+Construido con PHP y MySQL sobre el framework PHP propio de ZenTao, ofrece alta extensibilidad, lo que permite a desarrolladores y organizaciones externas desarrollar extensiones o personalizar ZenTao fácilmente.
 EOT;
 $lang->install->links = <<<EOT
-ZenTao PMS is developed by <strong><a href='https://easycorp.cn' target='_blank' class='text-danger'>ZenTao Software (Qingdao) Group Co., Ltd </a></strong>.
-Official Website: <a href='https://www.zentao.net' target='_blank'>https://www.zentao.net</a>
-Technical Support: <a href='https://www.zentao.net/ask/' target='_blank'>https://www.zentao.net/ask/</a>
-Follow us on LinkedIn: <a href='https://www.linkedin.com/company/1156596/' target='_blank'>ZenTao Software</a>
+ZenTao PMS es desarrollado por <strong><a href='https://easycorp.cn' target='_blank' class='text-danger'>ZenTao Software (Qingdao) Group Co., Ltd </a></strong>.
+Sitio web oficial: <a href='https://www.zentao.net' target='_blank'>https://www.zentao.net</a>
+Soporte técnico: <a href='https://www.zentao.net/ask/' target='_blank'>https://www.zentao.net/ask/</a>
+Síganos en LinkedIn: <a href='https://www.linkedin.com/company/1156596/' target='_blank'>ZenTao Software</a>
 Facebook: <a href='https://www.facebook.com/natureeasysoft' target='_blank'>ZenTao Software</a>
 Twitter: <a href='https://twitter.com/ZentaoA' target='_blank'>ZenTao ALM</a>
-You are currently installing version: <strong class='text-danger'>%s</strong>.
+Actualmente está instalando la versión: <strong class='text-danger'>%s</strong>.
 EOT;
 
 $lang->install->selectMode          = "Seleccionar modo";
@@ -45,27 +45,27 @@ $lang->install->howToUse            = "¿Cómo planea usar la nueva versión de 
 $lang->install->guideVideo          = 'https://dl.zentao.net/vedio/program0716.mp4';
 $lang->install->introductionContent = <<<EOT
 <div>
-<h4>Dear users, welcome to ZenTao PMS.</h4>
-<p>ZenTao has two managment modes in version 15.0 and up. One is the classic management mode, providing two core features, Product and Project; the other is a new project management mode, with Program and Execution added. The following is an introduction to the new mode:</p>
+<h4>Estimados usuarios, bienvenidos a ZenTao PMS.</h4>
+<p>ZenTao tiene dos modos de gestión desde la versión 15.0. Uno es el modo de gestión clásico, que ofrece dos funciones centrales, Producto y Proyecto; el otro es un nuevo modo de gestión de proyectos, con Programa y Ejecución añadidos. A continuación se presenta el nuevo modo:</p>
 <div class='block-content'>
-<div class='block-details'><p class='block-title'><i class='icon icon-program'></i> <strong>Program</strong></p>
-<p>Program is used to manage a group of products and projects, and the company executives or PMO can use it for strategic planning.</p></div>
+<div class='block-details'><p class='block-title'><i class='icon icon-program'></i> <strong>Programa</strong></p>
+<p>El Programa se usa para gestionar un grupo de productos y proyectos, y los directivos de la empresa o la PMO pueden usarlo para la planeación estratégica.</p></div>
 <div class='block-details block-right'>
-<p class='block-title'><i class='icon icon-product'></i> <strong>Product</strong></p>
-<p>Products break down corporate strategy into actionable requirements, allowing Product Managers to create release plans.<p>
+<p class='block-title'><i class='icon icon-product'></i> <strong>Producto</strong></p>
+<p>Los productos desglosan la estrategia corporativa en requerimientos accionables, permitiendo a los gerentes de producto crear planes de lanzamiento.<p>
 </div>
 <div class='block-details'>
-<p class='block-title'><i class='icon icon-project'></i> <strong>Project</strong></p>
-<p>Projects organize resources for R&D and track the entire management process to ensure efficient, high-quality delivery.</p>
+<p class='block-title'><i class='icon icon-project'></i> <strong>Proyecto</strong></p>
+<p>Los proyectos organizan los recursos para I+D y dan seguimiento a todo el proceso de gestión para garantizar una entrega eficiente y de alta calidad.</p>
 </div>
 <div class='block-details block-right'>
-<p class='block-title'><i class='icon icon-run'></i> <strong>Execution</strong></p>
-<p>Execution is used to break down, assign, and track tasks, ensuring that project goals are implemented at the individual level.<p>
+<p class='block-title'><i class='icon icon-run'></i> <strong>Ejecución</strong></p>
+<p>La Ejecución se usa para desglosar, asignar y dar seguimiento a las tareas, asegurando que los objetivos del proyecto se cumplan a nivel individual.<p>
 </div>
 </div>
 <div class='text-center introduction-link'>
-<a href='https://dl.zentao.net/zentao/zentaoconcept.pdf' target='_blank' class='btn btn-wide btn-info'><i class='icon icon-p-square'></i> Document Introduction</a>
-<a href='j a v a s c r i p t :showVideo()' class='btn btn-wide btn-info'><i class='icon icon-video-play'></i> Video Introduction</a>
+<a href='https://dl.zentao.net/zentao/zentaoconcept.pdf' target='_blank' class='btn btn-wide btn-info'><i class='icon icon-p-square'></i> Introducción en documento</a>
+<a href='j a v a s c r i p t :showVideo()' class='btn btn-wide btn-info'><i class='icon icon-video-play'></i> Introducción en video</a>
 </div>
 </div>
 EOT;
@@ -312,7 +312,7 @@ $lang->install->successLabel       = "<p>Ha instalado AXIS FLOW correctamente %s
 $lang->install->successNoticeLabel = "<p>Ha instalado AXIS FLOW %s.<strong class='text-danger'> Por favor elimine install.php</strong>.</p>";
 $lang->install->congratulations    = "¡Felicitaciones! AXIS FLOW se instaló correctamente.";
 $lang->install->joinZentao         = <<<EOT
-<p>Note: To stay updated with the latest ZenTao news, please register on the ZenTao Community (<a href='https://www.zentao.net' class='alert-link' target='_blank'>www.zentao.net</a>).</p>
+<p>Nota: Para mantenerse al día con las últimas noticias de ZenTao, regístrese en la Comunidad ZenTao (<a href='https://www.zentao.net' class='alert-link' target='_blank'>www.zentao.net</a>).</p>
 EOT;
 
 $lang->install->product = array('chanzhi', 'zdoo', 'xuanxuan', 'ydisk', 'meshiot');
@@ -325,10 +325,10 @@ $lang->install->chanzhi->logo = 'images/main/chanzhi.ico';
 $lang->install->chanzhi->url  = 'https://www.zsite.com';
 $lang->install->chanzhi->desc = <<<EOD
 <ul>
-<li>Professional enterprise marketing portal system</li>
-<li>Feature-rich with an intuitive and user-friendly interface</li>
-<li>Highly optimized for SEO with attention to every detail</li>
-<li>Open source and free for unlimited commercial use!</li>
+<li>Sistema profesional de portal de marketing empresarial</li>
+<li>Rico en funciones, con una interfaz intuitiva y fácil de usar</li>
+<li>Altamente optimizado para SEO, con atención a cada detalle</li>
+<li>¡Código abierto y gratuito para uso comercial ilimitado!</li>
 </ul>
 EOD;
 
@@ -338,10 +338,10 @@ $lang->install->zdoo->logo = 'images/main/zdoo.ico';
 $lang->install->zdoo->url  = 'https://www.zdoo.com';
 $lang->install->zdoo->desc = <<<EOD
 <ul>
-<li>CRM & Order Tracking</li>
-<li>Project Tasks, Announcements & Docs</li>
-<li>Cash Management: Income & Expenses</li>
-<li>Forums, Blogs & Activity Feeds</li>
+<li>CRM y seguimiento de pedidos</li>
+<li>Tareas de proyecto, anuncios y documentos</li>
+<li>Gestión de efectivo: ingresos y gastos</li>
+<li>Foros, blogs y flujos de actividad</li>
 </ul>
 EOD;
 
@@ -351,10 +351,10 @@ $lang->install->ydisk->logo = 'images/main/ydisk.ico';
 $lang->install->ydisk->url  = 'http://www.ydisk.cn';
 $lang->install->ydisk->desc = <<<EOD
 <ul>
-  <li>Self-Hosted: deploy on your own machine</li>
-  <li>Unlimited Storage: depend on your hard drive size</li>
-  <li>Fast Transmission: as fast as your bandwidth allows</li>
-  <li>Secure: 12 permissions for any strict settings</li>
+  <li>Autoalojado: se implementa en su propia máquina</li>
+  <li>Almacenamiento ilimitado: depende del tamaño de su disco duro</li>
+  <li>Transmisión rápida: tan rápida como lo permita su ancho de banda</li>
+  <li>Seguro: 12 permisos para cualquier configuración estricta</li>
 </ul>
 EOD;
 
@@ -364,10 +364,10 @@ $lang->install->meshiot->logo = 'images/main/meshiot.ico';
 $lang->install->meshiot->url  = 'https://www.meshiot.com';
 $lang->install->meshiot->desc = <<<EOD
 <ul>
-  <li>Performance: one gateway can monitor 65,536 equipments</li>
-  <li>Accessibility: unique radio communication protocol covers 2,500m radius</li>
-  <li>Dimming System: 200+ sensors and monitors</li>
-  <li>Battery Available: no changes required to any equipment on your site</li>
+  <li>Rendimiento: una puerta de enlace puede monitorear 65.536 equipos</li>
+  <li>Accesibilidad: protocolo de comunicación por radio único que cubre un radio de 2.500 m</li>
+  <li>Sistema de atenuación: más de 200 sensores y monitores</li>
+  <li>Batería disponible: no requiere cambios en ningún equipo de su sitio</li>
 </ul>
 EOD;
 
@@ -381,7 +381,7 @@ $lang->install->solution->desc        = 'Bienvenido a la plataforma CI&CD. Al in
 $lang->install->solution->overMemory  = 'La memoria insuficiente impide la instalación simultánea. Se recomienda instalar las aplicaciones manualmente después de iniciar la plataforma.';
 
 $lang->install->changeModes = [];
-$lang->install->changeModes['create'] = 'Add';
+$lang->install->changeModes['create'] = 'Agregar';
 $lang->install->changeModes['update'] = 'Actualizar';
 $lang->install->changeModes['delete'] = 'Eliminar';
 

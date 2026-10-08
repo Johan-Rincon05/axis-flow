@@ -3,4857 +3,4857 @@ $config->bi->builtin->metrics = array();
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的所有层级的项目集总数',
-    'alias'      => '所有层级的项目集总数',
+    'name'       => 'Total de programas de todos los niveles por sistema',
+    'alias'      => 'Total de programas de todos los niveles',
     'code'       => 'count_of_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的所有层级的项目集总数表示在整个组织范围内的项目集数量。此度量项反映了整个组织所管理的项目集数量。可以作为评估组织规模和复杂度的指标。',
+    'desc'       => 'El total de programas de todos los niveles por sistema indica la cantidad de programas en toda la organización. Esta métrica refleja el número de programas que gestiona la organización y puede usarse como indicador del tamaño y la complejidad de la organización.',
     'definition' => "所有项目集的个数求和\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的所有层级进行中项目集数',
-    'alias'      => '所有层级进行中项目集数',
+    'name'       => 'Programas en curso de todos los niveles por sistema',
+    'alias'      => 'Programas en curso de todos los niveles',
     'code'       => 'count_of_doing_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的所有层级进行中项目集数表示当前正在进行中的项目集数量。此度量项反映了组织当前正在进行中的项目集数量，可以用于评估组织的项目集管理进展和资源分配情况。',
+    'desc'       => 'Los programas en curso de todos los niveles por sistema indican la cantidad de programas que se encuentran actualmente en curso. Esta métrica refleja cuántos programas está ejecutando la organización y puede usarse para evaluar el avance de la gestión de programas y la asignación de recursos.',
     'definition' => "所有项目集的个数求和\n状态为进行中\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的所有层级已关闭项目集数',
-    'alias'      => '所有层级已关闭项目集数',
+    'name'       => 'Programas cerrados de todos los niveles por sistema',
+    'alias'      => 'Programas cerrados de todos los niveles',
     'code'       => 'count_of_closed_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的所有层级已关闭项目集数反映了系统关闭的项目集数量，用于评估组织项目集层面的管理成果。',
+    'desc'       => 'Los programas cerrados de todos los niveles por sistema reflejan la cantidad de programas cerrados en el sistema y sirven para evaluar los resultados de la gestión a nivel de programas de la organización.',
     'definition' => "所有项目集的个数求和\n状态为已关闭\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的所有层级已挂起项目集数',
-    'alias'      => '所有层级已挂起项目集数',
+    'name'       => 'Programas suspendidos de todos los niveles por sistema',
+    'alias'      => 'Programas suspendidos de todos los niveles',
     'code'       => 'count_of_suspended_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的所有层级已挂起项目集数反映了系统内因为某种原因暂时中止或搁置的项目集数量，用于评估组织项目集层面的风险和不确定性。',
+    'desc'       => 'Los programas suspendidos de todos los niveles por sistema reflejan la cantidad de programas detenidos o aplazados temporalmente por algún motivo y sirven para evaluar los riesgos y la incertidumbre a nivel de programas de la organización.',
     'definition' => "所有项目集的个数求和\n状态为已挂起\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的所有层级未开始项目集数',
-    'alias'      => '所有层级未开始项目集数',
+    'name'       => 'Programas sin iniciar de todos los niveles por sistema',
+    'alias'      => 'Programas sin iniciar de todos los niveles',
     'code'       => 'count_of_wait_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的所有层级未开始项目集数反映了系统尚未启动的项目集数量，用于评估组织项目集层面的计划或储备工作。',
+    'desc'       => 'Los programas sin iniciar de todos los niveles por sistema reflejan la cantidad de programas que aún no han arrancado y sirven para evaluar el trabajo de planeación o reserva a nivel de programas de la organización.',
     'definition' => "所有项目集的个数求和\n状态为未开始\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的一级项目集总数',
-    'alias'      => '一级项目集总数',
+    'name'       => 'Total de programas de primer nivel por sistema',
+    'alias'      => 'Total de programas de primer nivel',
     'code'       => 'count_of_top_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的一级项目集总数反映了组织中不同战略目标的项目集数量及情况，用于评估组织的战略取向、优先事项、资源分配以及管理能力等关键方面，是组织实现长期成功的重要手段和路径。',
+    'desc'       => 'El total de programas de primer nivel por sistema refleja la cantidad y la situación de los programas asociados a los distintos objetivos estratégicos de la organización. Sirve para evaluar aspectos clave como la orientación estratégica, las prioridades, la asignación de recursos y la capacidad de gestión, y es un medio importante para alcanzar el éxito a largo plazo.',
     'definition' => "所有一级项目集的个数求和\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭一级项目集数',
-    'alias'      => '已关闭一级项目集数',
+    'name'       => 'Programas de primer nivel cerrados por sistema',
+    'alias'      => 'Programas de primer nivel cerrados',
     'code'       => 'count_of_closed_top_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭一级项目集数反映了系统中不同战略目标的项目集数量及情况，用于评估组织的项目集战略目标管理绩效和成果。',
+    'desc'       => 'Los programas de primer nivel cerrados por sistema reflejan la cantidad y la situación de los programas asociados a los distintos objetivos estratégicos y sirven para evaluar el desempeño y los resultados de la gestión de los objetivos estratégicos de programas de la organización.',
     'definition' => "所有一级项目集的个数求和\n状态为已关闭\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未关闭一级项目集数',
-    'alias'      => '未关闭的一级项目集数',
+    'name'       => 'Programas de primer nivel sin cerrar por sistema',
+    'alias'      => 'Programas de primer nivel sin cerrar',
     'code'       => 'count_of_unclosed_top_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未关闭一级项目集数反映了系统中不同战略目标的项目集数量及情况，用于评估组织进行中的项目集战略目标的进展和挑战。',
+    'desc'       => 'Los programas de primer nivel sin cerrar por sistema reflejan la cantidad y la situación de los programas asociados a los distintos objetivos estratégicos y sirven para evaluar el avance y los retos de los objetivos estratégicos de programas en curso de la organización.',
     'definition' => "复用：\n按系统统计的一级项目集总数\n按系统统计的已关闭一级项目集数\n公式：按系统统计的未关闭一级项目集数=按系统统计的一级项目集总数-按系统统计的已关闭一级项目集数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增一级项目集数',
-    'alias'      => '新增一级项目集数',
+    'name'       => 'Programas de primer nivel nuevos en el año por sistema',
+    'alias'      => 'Programas de primer nivel nuevos',
     'code'       => 'count_of_annual_created_top_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增一级项目集数反映了系统中每年新增的不同战略目标的项目集数量及情况，用于评估组织的最新的战略取向、优先事项、资源分配以及管理能力等关键方面。',
+    'desc'       => 'Los programas de primer nivel nuevos en el año por sistema reflejan la cantidad y la situación de los programas asociados a los distintos objetivos estratégicos que se agregan cada año y sirven para evaluar aspectos clave recientes como la orientación estratégica, las prioridades, la asignación de recursos y la capacidad de gestión de la organización.',
     'definition' => "所有的一级项目集的个数求和\n创建时间为某年\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭一级项目集数',
-    'alias'      => '关闭一级项目集数',
+    'name'       => 'Programas de primer nivel cerrados en el año por sistema',
+    'alias'      => 'Programas de primer nivel cerrados',
     'code'       => 'count_of_annual_closed_top_program',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'program',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭一级项目集数反映了系统中每年结束的不同战略目标的项目集数量及情况，用于评估组织的战略目标管理的绩效和成果。',
+    'desc'       => 'Los programas de primer nivel cerrados en el año por sistema reflejan la cantidad y la situación de los programas asociados a los distintos objetivos estratégicos que finalizan cada año y sirven para evaluar el desempeño y los resultados de la gestión de los objetivos estratégicos de la organización.',
     'definition' => "所有的一级项目集的个数求和\n关闭时间为某年\n状态为已关闭\n过滤已删除的项目集"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的产品线总数',
-    'alias'      => '产品线总数',
+    'name'       => 'Total de líneas de producto por sistema',
+    'alias'      => 'Total de líneas de producto',
     'code'       => 'count_of_line',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'line',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的产品线总数反映了组织中产品线的数量和广度，用于评估组织的产品组合策略和业务发展方向。',
+    'desc'       => 'El total de líneas de producto por sistema refleja la cantidad y la amplitud de las líneas de producto de la organización y sirve para evaluar su estrategia de portafolio de productos y la dirección del desarrollo del negocio.',
     'definition' => "所有产品线的个数求和\n过滤已删除的产品线"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的产品总数',
-    'alias'      => '产品总数',
+    'name'       => 'Total de productos por sistema',
+    'alias'      => 'Total de productos',
     'code'       => 'count_of_product',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'product',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的产品总数反映了系统中的产品数量，用于评估组织的产品的数量和多样性。',
+    'desc'       => 'El total de productos por sistema refleja la cantidad de productos en el sistema y sirve para evaluar la cantidad y la diversidad de los productos de la organización.',
     'definition' => "所有产品的个数求和\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的正常的产品数',
-    'alias'      => '正常的产品数',
+    'name'       => 'Productos normales por sistema',
+    'alias'      => 'Productos normales',
     'code'       => 'count_of_normal_product',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'product',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的正常的产品数量反映了组织中处于正常研发和运营状态的产品数量，用于评估组织的产品研发能力和持续的运营能力。',
+    'desc'       => 'La cantidad de productos normales por sistema refleja el número de productos de la organización que se encuentran en estado normal de desarrollo y operación, y sirve para evaluar la capacidad de desarrollo de productos y de operación sostenida de la organización.',
     'definition' => "所有产品的个数求和\n状态为正常\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的结束的产品数',
-    'alias'      => '结束的产品数',
+    'name'       => 'Productos finalizados por sistema',
+    'alias'      => 'Productos finalizados',
     'code'       => 'count_of_closed_product',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'product',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的结束的产品数反映了组织中已经停止研发和运营的产品数量，用于评估组织的产品生命周期管理和战略调整。',
+    'desc'       => 'La cantidad de productos finalizados por sistema refleja el número de productos de la organización cuyo desarrollo y operación ya se detuvieron, y sirve para evaluar la gestión del ciclo de vida de los productos y los ajustes estratégicos de la organización.',
     'definition' => "所有产品的个数求和\n状态为结束\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增产品数',
-    'alias'      => '新增产品数',
+    'name'       => 'Productos nuevos en el año por sistema',
+    'alias'      => 'Productos nuevos',
     'code'       => 'count_of_annual_created_product',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'product',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增产品数反映了组织每年新增加的产品数量，用于评估组织的产品创新能力和市场拓展情况。',
+    'desc'       => 'La cantidad de productos nuevos en el año por sistema refleja el número de productos que la organización agrega cada año y sirve para evaluar su capacidad de innovación de productos y su expansión en el mercado.',
     'definition' => "所有的产品个数求和\n创建时间为某年\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度结束产品数',
-    'alias'      => '结束产品数',
+    'name'       => 'Productos finalizados en el año por sistema',
+    'alias'      => 'Productos finalizados en el año',
     'code'       => 'count_of_annual_closed_product',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'product',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度结束产品数反映了组织每年停止研发和运营的产品数量，用于评估组织的产品组合调整和战略转型情况。',
+    'desc'       => 'La cantidad de productos finalizados en el año por sistema refleja el número de productos cuyo desarrollo y operación la organización detiene cada año, y sirve para evaluar los ajustes del portafolio de productos y la transformación estratégica de la organización.',
     'definition' => "所有的产品个数求和\n关闭时间为某年\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的项目总数',
-    'alias'      => '项目总数',
+    'name'       => 'Total de proyectos por sistema',
+    'alias'      => 'Total de proyectos',
     'code'       => 'count_of_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的项目总数是指目前系统内的总项目数量。这个度量项可以帮助团队了解当前的项目规模和工作量，并作为项目管理的基础数据之一。',
+    'desc'       => 'El total de proyectos por sistema es la cantidad total de proyectos que existen actualmente en el sistema. Esta métrica ayuda al equipo a conocer el tamaño actual de los proyectos y la carga de trabajo, y es uno de los datos básicos de la gestión de proyectos.',
     'definition' => "所有的项目个数求和\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未开始项目数',
-    'alias'      => '未开始项目数',
+    'name'       => 'Proyectos sin iniciar por sistema',
+    'alias'      => 'Proyectos sin iniciar',
     'code'       => 'count_of_wait_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未开始项目数是指系统中目前未开始的项目数量。这个度量项可以帮助团队了解当前需要启动的项目数量和未来的项目规划。',
+    'desc'       => 'Los proyectos sin iniciar por sistema son la cantidad de proyectos que actualmente no han comenzado en el sistema. Esta métrica ayuda al equipo a conocer cuántos proyectos deben arrancar y la planeación de proyectos futuros.',
     'definition' => "所有的项目个数求和\n状态为未开始\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的进行中项目数',
-    'alias'      => '进行中项目数',
+    'name'       => 'Proyectos en curso por sistema',
+    'alias'      => 'Proyectos en curso',
     'code'       => 'count_of_doing_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的进行中项目数是指系统中目前正在进行中的项目数量。这个度量项可以帮助团队了解当前正在进行的工作量和资源分配情况，以及项目的执行进度和效率。',
+    'desc'       => 'Los proyectos en curso por sistema son la cantidad de proyectos que actualmente están en curso en el sistema. Esta métrica ayuda al equipo a conocer la carga de trabajo actual y la asignación de recursos, así como el avance y la eficiencia en la ejecución de los proyectos.',
     'definition' => "所有的项目个数求和\n状态为进行中\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已挂起项目数',
-    'alias'      => '已挂起项目数',
+    'name'       => 'Proyectos suspendidos por sistema',
+    'alias'      => 'Proyectos suspendidos',
     'code'       => 'count_of_suspended_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已挂起项目数是指因某种原因而暂停或停滞的项目数量。这个度量项可以帮助团队了解存在的挂起项目的数量和原因，并进行适当的调整和解决。',
+    'desc'       => 'Los proyectos suspendidos por sistema son la cantidad de proyectos pausados o detenidos por algún motivo. Esta métrica ayuda al equipo a conocer cuántos proyectos suspendidos existen y sus causas, para hacer los ajustes y las resoluciones apropiadas.',
     'definition' => "所有的项目个数求和\n状态为已挂起\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭项目数',
-    'alias'      => '已关闭项目数',
+    'name'       => 'Proyectos cerrados por sistema',
+    'alias'      => 'Proyectos cerrados',
     'code'       => 'count_of_closed_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭项目数是指已经完成并关闭的项目数量。这个度量项可以帮助团队了解已经完成的项目数量和整体的项目执行情况。',
+    'desc'       => 'Los proyectos cerrados por sistema son la cantidad de proyectos que ya se completaron y cerraron. Esta métrica ayuda al equipo a conocer cuántos proyectos se han completado y el estado general de la ejecución de proyectos.',
     'definition' => "所有的项目个数求和\n状态为已关闭\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未关闭项目数',
-    'alias'      => '未关闭项目数',
+    'name'       => 'Proyectos sin cerrar por sistema',
+    'alias'      => 'Proyectos sin cerrar',
     'code'       => 'count_of_unclosed_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未关闭项目数是指在系统目前未开始或仍然在进行中的项目数量。这个度量项可以衡量项目管理和执行的效率。',
+    'desc'       => 'Los proyectos sin cerrar por sistema son la cantidad de proyectos que actualmente no han comenzado o siguen en curso en el sistema. Esta métrica permite medir la eficiencia de la gestión y la ejecución de proyectos.',
     'definition' => "复用：\n按系统统计的已关闭项目数\n按系统统计的项目总数\n公式：\n按系统统计的未关闭项目数=按系统统计的项目总数-按系统统计的已关闭项目数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成项目中按期完成项目数',
-    'alias'      => '已完成项目中按期完成项目数',
+    'name'       => 'Proyectos completados a tiempo entre los proyectos completados por sistema',
+    'alias'      => 'Proyectos completados a tiempo entre los proyectos completados',
     'code'       => 'count_of_undelayed_finished_project_which_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成项目中按期完成项目数是指按预定计划时间完成的项目数量。这个度量项可以帮助团队评估项目的时间管理和执行能力。较高的按期完成项目数表示团队能够按时交付项目，有助于保持项目进展和客户满意度。',
+    'desc'       => 'Los proyectos completados a tiempo entre los proyectos completados por sistema son la cantidad de proyectos finalizados dentro del plazo previsto. Esta métrica ayuda al equipo a evaluar su gestión del tiempo y su capacidad de ejecución. Una cantidad alta de proyectos completados a tiempo indica que el equipo puede entregar a tiempo, lo que ayuda a mantener el avance de los proyectos y la satisfacción del cliente.',
     'definition' => "所有的项目个数求和\n状态为已关闭\n完成日期<=项目启动时的计划截止日期\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成项目中延期完成项目数',
-    'alias'      => '已完成项目中延期完成项目数',
+    'name'       => 'Proyectos completados con retraso entre los proyectos completados por sistema',
+    'alias'      => 'Proyectos completados con retraso entre los proyectos completados',
     'code'       => 'count_of_delayed_finished_project_which_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成项目中延期完成项目数是指超过预定计划时间而完成的项目数量。这个度量项可以帮助团队评估项目的时间管理和执行能力，并识别延期原因并采取适当措施。较高的延期完成项目数可能需要团队关注项目计划和资源安排的问题。',
+    'desc'       => 'Los proyectos completados con retraso entre los proyectos completados por sistema son la cantidad de proyectos finalizados después del plazo previsto. Esta métrica ayuda al equipo a evaluar su gestión del tiempo y su capacidad de ejecución, e identificar las causas del retraso para tomar las medidas adecuadas. Una cantidad alta de proyectos completados con retraso puede requerir que el equipo preste atención a la planeación del proyecto y a la asignación de recursos.',
     'definition' => "所有的项目个数求和\n状态为已关闭\n完成日期>项目启动时的计划截止日期\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增项目数',
-    'alias'      => '新增项目数',
+    'name'       => 'Proyectos nuevos en el año por sistema',
+    'alias'      => 'Proyectos nuevos',
     'code'       => 'count_of_annual_created_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增项目数是指某年度新创建的项目数量。这个度量项可以帮助团队了解某年度的项目规模和工作负荷，以及项目管理和资源分配的需求。较高的年度新增项目数可能需要团队根据资源和能力进行优先级和规划管理。',
+    'desc'       => 'Los proyectos nuevos en el año por sistema son la cantidad de proyectos creados en un año determinado. Esta métrica ayuda al equipo a conocer el tamaño de los proyectos y la carga de trabajo de ese año, así como las necesidades de gestión de proyectos y de asignación de recursos. Una cantidad alta de proyectos nuevos en el año puede requerir que el equipo gestione prioridades y planeación según sus recursos y capacidad.',
     'definition' => "所有的项目个数求和\n创建时间为某年\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭项目数',
-    'alias'      => '关闭项目数',
+    'name'       => 'Proyectos cerrados en el año por sistema',
+    'alias'      => 'Proyectos cerrados',
     'code'       => 'count_of_annual_closed_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭项目数是指在某年度关闭的项目数量。这个度量项可以帮助团队了解某年度项目的执行情况和成果，并进行项目交付能力的评估。较高的年度关闭项目数表明团队在项目交付方面具有较高的效率。',
+    'desc'       => 'Los proyectos cerrados en el año por sistema son la cantidad de proyectos cerrados en un año determinado. Esta métrica ayuda al equipo a conocer la situación de ejecución y los resultados de los proyectos de ese año, y a evaluar su capacidad de entrega de proyectos. Una cantidad alta de proyectos cerrados en el año indica que el equipo tiene una alta eficiencia en la entrega de proyectos.',
     'definition' => "所有的项目个数求和\n关闭时间为某年\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度启动项目中按期完成项目数',
-    'alias'      => '启动项目中按期完成项目数',
+    'name'       => 'Proyectos completados a tiempo entre los proyectos iniciados en el año por sistema',
+    'alias'      => 'Proyectos completados a tiempo entre los proyectos iniciados',
     'code'       => 'count_of_undelayed_finished_project_which_annual_started',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度启动项目中按期完成项目数是指在某年度启动的项目中按预定计划时间关闭的项目数量。这个度量项可以帮助团队评估某年度项目的时间管理和执行能力，并衡量项目的进展和交付效果。较高的按时关闭项目数表明团队能够按时交付项目，有助于保持项目的正常进行和客户满意度。',
+    'desc'       => 'Los proyectos completados a tiempo entre los proyectos iniciados en el año por sistema son la cantidad de proyectos, de los iniciados en un año determinado, que se cerraron dentro del plazo previsto. Esta métrica ayuda al equipo a evaluar su gestión del tiempo y su capacidad de ejecución en ese año, y a medir el avance y el efecto de la entrega de los proyectos. Una cantidad alta de proyectos cerrados a tiempo indica que el equipo puede entregar a tiempo, lo que ayuda a mantener el curso normal de los proyectos y la satisfacción del cliente.',
     'definition' => "所有的项目个数求和\n启动时间为某年\n完成日期<=项目启动时的计划截止日期（根据历史记录推算）\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成项目中延期完成项目数',
-    'alias'      => '完成项目中延期完成项目数',
+    'name'       => 'Proyectos completados con retraso entre los proyectos completados en el año por sistema',
+    'alias'      => 'Proyectos completados con retraso entre los proyectos completados',
     'code'       => 'count_of_delayed_finished_project_which_annual_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成项目中延期完成项目数是指在某年度完成的项目中超过预定计划时间关闭的项目数量。这个度量项可以帮助团队评估某年度项目的时间管理和执行能力，并识别延期原因并采取适当措施。较高的延期关闭项目数可能需要团队关注项目计划和资源安排的问题。',
+    'desc'       => 'Los proyectos completados con retraso entre los proyectos completados en el año por sistema son la cantidad de proyectos, de los completados en un año determinado, que se cerraron después del plazo previsto. Esta métrica ayuda al equipo a evaluar su gestión del tiempo y su capacidad de ejecución en ese año, e identificar las causas del retraso para tomar las medidas adecuadas. Una cantidad alta de proyectos cerrados con retraso puede requerir que el equipo preste atención a la planeación del proyecto y a la asignación de recursos.',
     'definition' => "复用：\n按系统统计的年度关闭项目数\n按系统统计的每年完成项目中按期完成项目数\n公式：\n按系统统计的年度延期完成项目数=按系统统计的年度关闭项目数-按系统统计的每年完成项目中按期完成项目数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成项目中按期完成项目数',
-    'alias'      => '完成项目中按期完成项目数',
+    'name'       => 'Proyectos completados a tiempo entre los proyectos completados en el año por sistema',
+    'alias'      => 'Proyectos completados a tiempo entre los proyectos completados',
     'code'       => 'count_of_undelayed_finished_project_which_annual_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成项目中按期完成项目数是指在某年度完成的项目中按预定计划时间关闭的项目数量。这个度量项可以帮助团队评估某年度项目的时间管理和执行能力，并衡量项目的进展和交付效果。较高的按时关闭项目数表明团队能够按时交付项目，有助于保持项目的正常进行和客户满意度。',
+    'desc'       => 'Los proyectos completados a tiempo entre los proyectos completados en el año por sistema son la cantidad de proyectos, de los completados en un año determinado, que se cerraron dentro del plazo previsto. Esta métrica ayuda al equipo a evaluar su gestión del tiempo y su capacidad de ejecución en ese año, y a medir el avance y el efecto de la entrega de los proyectos. Una cantidad alta de proyectos cerrados a tiempo indica que el equipo puede entregar a tiempo, lo que ayuda a mantener el curso normal de los proyectos y la satisfacción del cliente.',
     'definition' => "所有的项目个数求和\n关闭时间为某年\n完成日期<=项目启动时的计划截止日期\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度新增项目数',
-    'alias'      => '新增项目数',
+    'name'       => 'Proyectos nuevos en el mes por sistema',
+    'alias'      => 'Proyectos nuevos',
     'code'       => 'count_of_monthly_created_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度新增项目数是指在某月度新创建的项目数量。这个度量项可以帮助团队了解某年度项目规模和工作负荷，以及项目管理和资源分配的需求。较高的年度新增项目数可能需要团队根据资源和能力进行优先级和规划管理。',
+    'desc'       => 'Los proyectos nuevos en el mes por sistema son la cantidad de proyectos creados en un mes determinado. Esta métrica ayuda al equipo a conocer el tamaño de los proyectos y la carga de trabajo de ese año, así como las necesidades de gestión de proyectos y de asignación de recursos. Una cantidad alta de proyectos nuevos en el año puede requerir que el equipo gestione prioridades y planeación según sus recursos y capacidad.',
     'definition' => "所有的项目个数求和\n创建时间为某年某月\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度关闭项目数',
-    'alias'      => '关闭项目数',
+    'name'       => 'Proyectos cerrados en el mes por sistema',
+    'alias'      => 'Proyectos cerrados',
     'code'       => 'count_of_monthly_closed_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的年度关闭项目数是指在某月度关闭的项目数量。这个度量项可以帮助团队了解某年度项目的执行情况和成果，并进行项目交付能力的评估。较高的年度关闭项目数表明团队在项目交付方面具有较高的效率。',
+    'desc'       => 'Los proyectos cerrados en el año por sistema son la cantidad de proyectos cerrados en un mes determinado. Esta métrica ayuda al equipo a conocer la situación de ejecución y los resultados de los proyectos de ese año, y a evaluar su capacidad de entrega de proyectos. Una cantidad alta de proyectos cerrados en el año indica que el equipo tiene una alta eficiencia en la entrega de proyectos.',
     'definition' => "所有的项目个数求和\n关闭时间为某年某月\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成项目数',
-    'alias'      => '完成项目数',
+    'name'       => 'Proyectos completados en el año por sistema',
+    'alias'      => 'Proyectos completados',
     'code'       => 'count_of_annual_finished_project',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成项目数是指在某年度完成并关闭的项目数量。反映了团队在某年度项目的执行情况和成果，并进行项目交付能力的评估。较高的年度完成项目数表明团队在项目交付方面具有较高的效率。',
+    'desc'       => 'Los proyectos completados en el año por sistema son la cantidad de proyectos completados y cerrados en un año determinado. Reflejan la situación de ejecución y los resultados de los proyectos del equipo en ese año y permiten evaluar su capacidad de entrega de proyectos. Una cantidad alta de proyectos completados en el año indica que el equipo tiene una alta eficiencia en la entrega de proyectos.',
     'definition' => "所有的项目个数求和\n实际完成时间为某年\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭项目的任务预计工时数',
-    'alias'      => '关闭项目的任务预计工时数',
+    'name'       => 'Horas estimadas de las tareas de proyectos cerrados en el año por sistema',
+    'alias'      => 'Horas estimadas de las tareas de proyectos cerrados',
     'code'       => 'estimate_of_annual_closed_project',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭项目的任务预计工时数是指在某年度关闭项目预计需要花费的总工时数。该度量项可以用来评估团队或组织在任务完成方面的工时规划和估算准确性。较准确的年度完成任务预计工时数可以帮助团队更好地安排资源和时间，提高任务的完成效率和进度控制。',
+    'desc'       => 'Las horas estimadas de las tareas de proyectos cerrados en el año por sistema son el total de horas de trabajo que se estimó necesario invertir en los proyectos cerrados en un año determinado. Esta métrica sirve para evaluar la planeación de horas y la precisión de las estimaciones del equipo o la organización en la finalización de tareas. Unas horas estimadas anuales más precisas ayudan al equipo a organizar mejor los recursos y el tiempo, y a mejorar la eficiencia de finalización de tareas y el control del avance.',
     'definition' => "所有项目任务的预计工时数求和\n项目状态为已关闭\n关闭时间为某年\n过滤父任务\n过滤已删除的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭项目的任务消耗工时数',
-    'alias'      => '关闭项目的任务消耗工时数',
+    'name'       => 'Horas consumidas de las tareas de proyectos cerrados en el año por sistema',
+    'alias'      => 'Horas consumidas de las tareas de proyectos cerrados',
     'code'       => 'consume_of_annual_closed_project',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'hour',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭项目的任务消耗工时数是指在某年度关闭的项目中任务消耗的总工时数。该度量项可以用来评估团队或组织在任务执行过程中的工时投入情况和对资源的利用效率。较高的年度关闭项目的任务消耗工时数可能需要审查工作流程和资源分配，以提高工作效率和进度控制。',
+    'desc'       => 'Las horas consumidas de las tareas de proyectos cerrados en el año por sistema son el total de horas de trabajo consumidas por las tareas de los proyectos cerrados en un año determinado. Esta métrica sirve para evaluar la inversión de horas del equipo o la organización durante la ejecución de tareas y la eficiencia en el uso de recursos. Unas horas consumidas anuales altas en proyectos cerrados pueden requerir revisar el flujo de trabajo y la asignación de recursos para mejorar la eficiencia y el control del avance.',
     'definition' => "所有项目任务的消耗工时数求和\n项目状态为已关闭\n关闭时间为某年\n过滤父任务\n过滤已删除的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度关闭项目的任务消耗工时数',
-    'alias'      => '关闭项目的任务消耗工时数',
+    'name'       => 'Horas consumidas de las tareas de proyectos cerrados en el mes por sistema',
+    'alias'      => 'Horas consumidas de las tareas de proyectos cerrados',
     'code'       => 'consume_of_monthly_closed_project',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'hour',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度关闭项目的任务消耗工时数是指在某月任务预计需要花费的总工时数。该度量项可以用来评估团队或组织在任务执行过程中的工时投入情况和对资源的利用效率。较高的月度关闭项目的任务消耗工时数可能需要审查工作流程和资源分配，以提高工作效率和进度控制。',
+    'desc'       => 'Las horas consumidas de las tareas de proyectos cerrados en el mes por sistema son el total de horas de trabajo que se estimó necesario invertir en las tareas de un mes determinado. Esta métrica sirve para evaluar la inversión de horas del equipo o la organización durante la ejecución de tareas y la eficiencia en el uso de recursos. Unas horas consumidas mensuales altas en proyectos cerrados pueden requerir revisar el flujo de trabajo y la asignación de recursos para mejorar la eficiencia y el control del avance.',
     'definition' => "所有项目任务消耗工时数求和\n项目状态为已关闭\n关闭时间为某年某月\n过滤父任务\n过滤已删除的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度已关闭项目投入总人天',
-    'alias'      => '已关闭项目投入总人天',
+    'name'       => 'Total de días-persona invertidos en proyectos cerrados en el año por sistema',
+    'alias'      => 'Total de días-persona invertidos en proyectos cerrados',
     'code'       => 'day_of_annual_closed_project',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'manday',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度已关闭项目投入总人天是指在某年度关闭项目投入的人天总数。该度量项可以用来评估项目的人力资源投入情况。投入总人天的增加可能意味着项目投入的工作时间和资源的增加。',
+    'desc'       => 'El total de días-persona invertidos en proyectos cerrados en el año por sistema es el número total de días-persona invertidos en los proyectos cerrados en un año determinado. Esta métrica sirve para evaluar la inversión de recursos humanos en los proyectos. Un aumento del total de días-persona puede significar un aumento del tiempo de trabajo y de los recursos invertidos en los proyectos.',
     'definition' => "复用：\n按系统统计的年度关闭项目消耗工时数\n公式：\n按系统统计的年度关闭项目投入总人天=按系统统计的年度已关闭项目任务的消耗工时数/后台配置的每天可用工时"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成项目中项目的按期完成率',
-    'alias'      => '完成项目中项目的按期完成率',
+    'name'       => 'Tasa de proyectos completados a tiempo entre los proyectos completados en el año por sistema',
+    'alias'      => 'Tasa de proyectos completados a tiempo entre los proyectos completados',
     'code'       => 'rate_of_undelayed_finished_project_which_annual_finished',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成项目中项目的按期完成率是指按系统统计的年度完成项目中按期完成项目数与关闭项目数之比。这个度量项可以帮助团队评估某年度项目按期关闭的能力和效果，并作为项目管理的绩效指标之一。较高的按期完成率表示团队能够按时完成项目，说明对项目管理和交付能力较高。',
+    'desc'       => 'La tasa de proyectos completados a tiempo entre los proyectos completados en el año por sistema es la razón entre la cantidad de proyectos completados a tiempo y la cantidad de proyectos cerrados, entre los proyectos completados en el año por sistema. Esta métrica ayuda al equipo a evaluar la capacidad y el efecto del cierre a tiempo de los proyectos en un año determinado, y es uno de los indicadores de desempeño de la gestión de proyectos. Una tasa alta de cumplimiento a tiempo indica que el equipo puede completar los proyectos a tiempo, lo que refleja una alta capacidad de gestión y entrega de proyectos.',
     'definition' => "复用：\n按系统统计的年度关闭项目数\n按系统统计的年度完成项目中项目的按期完成率\n公式：\n按系统统计的年度项目按期关闭率=按系统统计的年度按时关闭项目数/按系统统计的年度关闭项目数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成项目中项目的延期完成率',
-    'alias'      => '完成项目中项目的延期完成率',
+    'name'       => 'Tasa de proyectos completados con retraso entre los proyectos completados en el año por sistema',
+    'alias'      => 'Tasa de proyectos completados con retraso entre los proyectos completados',
     'code'       => 'rate_of_delayed_finished_project_which_annual_finished',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'project',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成项目中项目的延期完成率是指按系统统计的年度完成项目中延期完成项目数与关闭项目数之比。这个度量项可以帮助团队评估某年度项目按期关闭的能力和效果，并作为项目管理的绩效指标之一。较高的延期完成率可能需要团队关注项目计划和资源安排的问题。',
+    'desc'       => 'La tasa de proyectos completados con retraso entre los proyectos completados en el año por sistema es la razón entre la cantidad de proyectos completados con retraso y la cantidad de proyectos cerrados, entre los proyectos completados en el año por sistema. Esta métrica ayuda al equipo a evaluar la capacidad y el efecto del cierre a tiempo de los proyectos en un año determinado, y es uno de los indicadores de desempeño de la gestión de proyectos. Una tasa alta de retraso puede requerir que el equipo preste atención a la planeación del proyecto y a la asignación de recursos.',
     'definition' => "复用：\n按系统统计的年度关闭项目数\n按系统统计的年度延期关闭项目数\n公式：\n按系统统计的年度项目延期关闭率=按系统统计的年度延期关闭项目数/按系统统计的年度关闭项目数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的计划总数',
-    'alias'      => '计划总数',
+    'name'       => 'Total de planes por sistema',
+    'alias'      => 'Total de planes',
     'code'       => 'count_of_productplan',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的计划总数反映了组织中进行中和已完成的计划数量，用于评估组织的规划效率、预测资源需求、优化项目组织与协调，并用于绩效评估和目标设定。',
+    'desc'       => 'El total de planes por sistema refleja la cantidad de planes en curso y completados de la organización. Sirve para evaluar la eficiencia de la planeación, prever las necesidades de recursos, optimizar la organización y la coordinación de proyectos, y para la evaluación del desempeño y la definición de objetivos.',
     'definition' => "所有的计划的个数求和\n过滤已删除的计划"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增计划数',
-    'alias'      => '新增计划数',
+    'name'       => 'Planes nuevos en el año por sistema',
+    'alias'      => 'Planes nuevos',
     'code'       => 'count_of_annual_created_productplan',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增计划数反映了组织在某年度内新增计划数量，用于评估组织创新能力、市场竞争力和投资决策，并用于绩效评估和目标设定。',
+    'desc'       => 'La cantidad de planes nuevos en el año por sistema refleja el número de planes que la organización agregó en un año determinado. Sirve para evaluar la capacidad de innovación, la competitividad en el mercado y las decisiones de inversión de la organización, y para la evaluación del desempeño y la definición de objetivos.',
     'definition' => "所有的计划个数求和\n创建时间为某年\n过滤已删除的计划"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成计划数',
-    'alias'      => '完成计划数',
+    'name'       => 'Planes completados en el año por sistema',
+    'alias'      => 'Planes completados',
     'code'       => 'count_of_annual_finished_productplan',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成计划数反映了组织在某年度内实际完成的计划数量，用于评估绩效、生产效率和客户满意度，并用于规划和资源优化。',
+    'desc'       => 'La cantidad de planes completados en el año por sistema refleja el número de planes que la organización efectivamente completó en un año determinado. Sirve para evaluar el desempeño, la eficiencia de producción y la satisfacción del cliente, y para la planeación y la optimización de recursos.',
     'definition' => "所有的计划个数求和\n完成时间为某年\n过滤已删除的计划"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭计划数',
-    'alias'      => '关闭计划数',
+    'name'       => 'Planes cerrados en el año por sistema',
+    'alias'      => 'Planes cerrados',
     'code'       => 'count_of_annual_closed_productplan',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭计划数反映了组织在某年度内关闭的计划数量，用于评估组织的计划管理效能、资源优化和成本控制，并提供学习机会和产品组合优化的参考。',
+    'desc'       => 'La cantidad de planes cerrados en el año por sistema refleja el número de planes que la organización cerró en un año determinado. Sirve para evaluar la eficacia de la gestión de planes, la optimización de recursos y el control de costos de la organización, y aporta oportunidades de aprendizaje y referencia para optimizar el portafolio de productos.',
     'definition' => "所有的计划个数求和\n关闭时间为某年\n过滤已删除的计划"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成计划数',
-    'alias'      => '已完成计划数',
+    'name'       => 'Planes completados por sistema',
+    'alias'      => 'Planes completados',
     'code'       => 'count_of_finished_productplan',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成计划数反映了组织在某年度内已经完成的计划数量，用于评估组织的绩效、生产效率和客户满意度，并用于规划和资源优化。',
+    'desc'       => 'La cantidad de planes completados por sistema refleja el número de planes que la organización ya completó en un año determinado. Sirve para evaluar el desempeño, la eficiencia de producción y la satisfacción del cliente de la organización, y para la planeación y la optimización de recursos.',
     'definition' => "所有计划的个数求和\n状态为已完成\n过滤已删除的计划"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未完成计划数',
-    'alias'      => '未完成计划数',
+    'name'       => 'Planes sin completar por sistema',
+    'alias'      => 'Planes sin completar',
     'code'       => 'count_of_unfinished_productplan',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未完成的产品计划数量反映了组织在特定年度内未能完成的产品计划数量，用于评估组织的评估绩效、资源管理和风险控制，并用于规划和改进。',
+    'desc'       => 'La cantidad de planes de producto sin completar por sistema refleja el número de planes de producto que la organización no logró completar en un año determinado. Sirve para evaluar el desempeño, la gestión de recursos y el control de riesgos de la organización, y para la planeación y la mejora.',
     'definition' => "复用：\n按系统统计的已完成计划数\n按系统统计的计划总数\n公式：\n按系统统计的未完成计划数=按系统统计的计划总数-按系统统计的已完成计划数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的执行总数',
-    'alias'      => '执行总数',
+    'name'       => 'Total de ejecuciones por sistema',
+    'alias'      => 'Total de ejecuciones',
     'code'       => 'count_of_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的执行总数表示在整个系统中所有执行项的数量，可以用来评估项目的规模和任务的总量。',
+    'desc'       => 'El total de ejecuciones por sistema indica la cantidad de elementos de ejecución en todo el sistema y puede usarse para evaluar el tamaño de los proyectos y el volumen total de tareas.',
     'definition' => "所有的执行个数求和\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未开始执行数',
-    'alias'      => '未开始执行数',
+    'name'       => 'Ejecuciones sin iniciar por sistema',
+    'alias'      => 'Ejecuciones sin iniciar',
     'code'       => 'count_of_wait_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未开始执行数表示在整个系统中尚未开始执行的任务数，可以用来了解待办任务的数量。',
+    'desc'       => 'Las ejecuciones sin iniciar por sistema indican la cantidad de tareas que aún no han comenzado su ejecución en todo el sistema y pueden usarse para conocer la cantidad de tareas pendientes.',
     'definition' => "所有的执行个数求和\n状态为未开始\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的进行中执行数',
-    'alias'      => '进行中执行数',
+    'name'       => 'Ejecuciones en curso por sistema',
+    'alias'      => 'Ejecuciones en curso',
     'code'       => 'count_of_doing_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的进行中执行数表示在整个系统中正在进行中的执行项的数量，可以用来了解当前正在进行的任务数量，反映团队的工作进展。',
+    'desc'       => 'Las ejecuciones en curso por sistema indican la cantidad de elementos de ejecución que están en curso en todo el sistema. Pueden usarse para conocer la cantidad de tareas en curso actualmente y reflejan el avance del trabajo del equipo.',
     'definition' => "所有的执行个数求和\n状态为进行中\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已挂起执行数',
-    'alias'      => '已挂起执行数',
+    'name'       => 'Ejecuciones suspendidas por sistema',
+    'alias'      => 'Ejecuciones suspendidas',
     'code'       => 'count_of_suspended_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已挂起执行数表示在整个系统中已被挂起的执行项的数量，可以用来了解暂停的任务数量，可能是由于需求不明确或其他原因导致。',
+    'desc'       => 'Las ejecuciones suspendidas por sistema indican la cantidad de elementos de ejecución que se han suspendido en todo el sistema. Pueden usarse para conocer la cantidad de tareas en pausa, lo cual puede deberse a requerimientos poco claros u otros motivos.',
     'definition' => "所有的执行个数求和\n状态为已挂起\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭执行数',
-    'alias'      => '已关闭执行数',
+    'name'       => 'Ejecuciones cerradas por sistema',
+    'alias'      => 'Ejecuciones cerradas',
     'code'       => 'count_of_closed_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭执行数表示在整个系统中已关闭的执行项的数量，可以用来了解执行的进度情况。',
+    'desc'       => 'Las ejecuciones cerradas por sistema indican la cantidad de elementos de ejecución que se han cerrado en todo el sistema. Pueden usarse para conocer el avance de la ejecución.',
     'definition' => "所有的执行个数求和\n状态为已关闭\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未关闭执行数',
-    'alias'      => '未关闭执行数',
+    'name'       => 'Ejecuciones sin cerrar por sistema',
+    'alias'      => 'Ejecuciones sin cerrar',
     'code'       => 'count_of_unclosed_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未关闭执行数表示在整个系统中未关闭的执行项的数量，可以用来了解执行的进度情况。',
+    'desc'       => 'Las ejecuciones sin cerrar por sistema indican la cantidad de elementos de ejecución que no se han cerrado en todo el sistema. Pueden usarse para conocer el avance de la ejecución.',
     'definition' => "复用：\n按系统统计的执行总数\n按系统统计的已关闭执行数\n公式：\n按系统统计的未关闭执行数=按系统统计的执行总数-按系统统计的已关闭执行数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增执行数',
-    'alias'      => '新增执行数',
+    'name'       => 'Ejecuciones nuevas en el año por sistema',
+    'alias'      => 'Ejecuciones nuevas',
     'code'       => 'count_of_annual_created_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增执行数是指在某年度新添加的执行数。该度量项反映了一个团队或组织在某年的工作量大小。较高的年度新增执行数可能表明团队面临更多的任务和挑战，需要更多的资源和努力来完成执行。同时，对于项目管理方面，该度量项也可以提供管理决策的依据。',
+    'desc'       => 'Las ejecuciones nuevas en el año por sistema son la cantidad de ejecuciones agregadas en un año determinado. Esta métrica refleja el volumen de trabajo de un equipo o una organización en ese año. Una cantidad alta de ejecuciones nuevas en el año puede indicar que el equipo enfrenta más tareas y retos, y que requiere más recursos y esfuerzo para completar las ejecuciones. Además, en la gestión de proyectos, esta métrica también puede servir como base para la toma de decisiones de gestión.',
     'definition' => "所有的执行个数求和\n创建时间为某年\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭执行数',
-    'alias'      => '关闭执行数',
+    'name'       => 'Ejecuciones cerradas en el año por sistema',
+    'alias'      => 'Ejecuciones cerradas',
     'code'       => 'count_of_annual_closed_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭执行数是指在关闭时间在某年的执行数。该度量项可以反映团队或组织在某年的工作效率。较高的年度关闭执行数可能表示团队或组织在完成任务方面表现出较高的效率，反之则可能需要审查工作流程和资源分配情况，以提高执行效率。',
+    'desc'       => 'Las ejecuciones cerradas en el año por sistema son la cantidad de ejecuciones cuya fecha de cierre corresponde a un año determinado. Esta métrica puede reflejar la eficiencia de trabajo de un equipo o una organización en ese año. Una cantidad alta de ejecuciones cerradas en el año puede indicar que el equipo o la organización muestra una alta eficiencia al completar tareas; de lo contrario, puede requerir revisar el flujo de trabajo y la asignación de recursos para mejorar la eficiencia de ejecución.',
     'definition' => "所有的执行个数求和\n关闭时间为某年\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成执行数',
-    'alias'      => '完成执行数',
+    'name'       => 'Ejecuciones completadas en el año por sistema',
+    'alias'      => 'Ejecuciones completadas',
     'code'       => 'count_of_annual_finished_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成执行数是指在某年度已经完成的执行数。该度量项反映了团队或组织在某年的工作效率和完成能力。较高的年度完成执行数表示团队或组织在完成任务方面表现出较高的效率，反之则可能需要审查工作流程和资源分配情况，以提高执行效率。',
+    'desc'       => 'Las ejecuciones completadas en el año por sistema son la cantidad de ejecuciones que ya se completaron en un año determinado. Esta métrica refleja la eficiencia de trabajo y la capacidad de finalización de un equipo o una organización en ese año. Una cantidad alta de ejecuciones completadas en el año indica que el equipo o la organización muestra una alta eficiencia al completar tareas; de lo contrario, puede requerir revisar el flujo de trabajo y la asignación de recursos para mejorar la eficiencia de ejecución.',
     'definition' => "所有的执行个数求和\n实际完成日期为某年\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度新增执行数',
-    'alias'      => '新增执行数',
+    'name'       => 'Ejecuciones nuevas en el mes por sistema',
+    'alias'      => 'Ejecuciones nuevas',
     'code'       => 'count_of_monthly_created_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度新增执行数是指在某月度内新添加的执行数。该度量项反映了团队或组织在某月内所面临的新任务或工作量。较高的月度新增执行数可能表明团队需要快速适应新任务和及时调整资源来满足需求。',
+    'desc'       => 'Las ejecuciones nuevas en el mes por sistema son la cantidad de ejecuciones agregadas en un mes determinado. Esta métrica refleja las nuevas tareas o la carga de trabajo que enfrenta un equipo o una organización en ese mes. Una cantidad alta de ejecuciones nuevas en el mes puede indicar que el equipo necesita adaptarse rápidamente a las nuevas tareas y ajustar los recursos a tiempo para satisfacer la demanda.',
     'definition' => "所有的执行个数求和\n创建时间为某年某月\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度关闭执行数',
-    'alias'      => '关闭执行数',
+    'name'       => 'Ejecuciones cerradas en el mes por sistema',
+    'alias'      => 'Ejecuciones cerradas',
     'code'       => 'count_of_monthly_closed_execution',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度完成执行数是指在某月度已经关闭的执行数。该度量项反映了团队或组织在某月内的工作效率和完成能力。较高的月度完成执行数表示团队或组织在快速完成任务方面表现出较高的效率，反之则可能需要审查工作流程和资源分配情况，以提高执行效率。',
+    'desc'       => 'Las ejecuciones completadas en el mes por sistema son la cantidad de ejecuciones que ya se cerraron en un mes determinado. Esta métrica refleja la eficiencia de trabajo y la capacidad de finalización de un equipo o una organización en ese mes. Una cantidad alta de ejecuciones completadas en el mes indica que el equipo o la organización muestra una alta eficiencia al completar tareas rápidamente; de lo contrario, puede requerir revisar el flujo de trabajo y la asignación de recursos para mejorar la eficiencia de ejecución.',
     'definition' => "所有的执行个数求和\n关闭时间为某年某月\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成执行中按期完成执行数',
-    'alias'      => '已完成执行中按期完成执行数',
+    'name'       => 'Ejecuciones completadas a tiempo entre las ejecuciones completadas por sistema',
+    'alias'      => 'Ejecuciones completadas a tiempo entre las ejecuciones completadas',
     'code'       => 'count_of_undelayed_finished_execution_which_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成执行中按时完成执行数表示在整个系统中按期完成执行的数量，可以用来评估团队的执行能力和效率。',
+    'desc'       => 'Las ejecuciones completadas a tiempo entre las ejecuciones completadas por sistema indican la cantidad de ejecuciones finalizadas dentro del plazo en todo el sistema y pueden usarse para evaluar la capacidad y la eficiencia de ejecución del equipo.',
     'definition' => "所有的执行个数求和\n状态为已关闭\n关闭日期<=执行开始时计划截止日期\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成执行中延期完成执行数',
-    'alias'      => '已完成执行中延期完成执行数',
+    'name'       => 'Ejecuciones completadas con retraso entre las ejecuciones completadas por sistema',
+    'alias'      => 'Ejecuciones completadas con retraso entre las ejecuciones completadas',
     'code'       => 'count_of_delayed_finished_execution_which_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成执行中延期完成执行数表示在整个系统中延期完成的执行项的数量，可以用来评估任务的延期情况和团队的执行能力。',
+    'desc'       => 'Las ejecuciones completadas con retraso entre las ejecuciones completadas por sistema indican la cantidad de elementos de ejecución finalizados con retraso en todo el sistema y pueden usarse para evaluar los retrasos de las tareas y la capacidad de ejecución del equipo.',
     'definition' => "所有的执行个数求和\n状态为已关闭\n关闭日期>执行开始时计划截止日期\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成执行中按期完成执行数',
-    'alias'      => '完成执行中按期完成执行数',
+    'name'       => 'Ejecuciones completadas a tiempo entre las ejecuciones completadas en el año por sistema',
+    'alias'      => 'Ejecuciones completadas a tiempo entre las ejecuciones completadas',
     'code'       => 'count_of_undelayed_finished_execution_which_annual_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成执行中按期完成执行数是指在某年度关闭的执行中，按预定计划时间关闭的执行数量。这个度量项可以用来衡量团队在某年度的按时完成能力，较高的按期完成执行数表明团队能够按期交付执行，有助于保持执行和项目的正常进行。',
+    'desc'       => 'Las ejecuciones completadas a tiempo entre las ejecuciones completadas en el año por sistema son la cantidad de ejecuciones, de las cerradas en un año determinado, que se cerraron dentro del plazo previsto. Esta métrica sirve para medir la capacidad del equipo de cumplir a tiempo en ese año. Una cantidad alta de ejecuciones completadas a tiempo indica que el equipo puede entregar las ejecuciones a tiempo, lo que ayuda a mantener el curso normal de las ejecuciones y los proyectos.',
     'definition' => "所有的执行个数求和\n关闭时间为某年\n关闭日期<=执行开始时计划截止日期\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成执行中延期完成执行数',
-    'alias'      => '完成执行中延期完成执行数',
+    'name'       => 'Ejecuciones completadas con retraso entre las ejecuciones completadas en el año por sistema',
+    'alias'      => 'Ejecuciones completadas con retraso entre las ejecuciones completadas',
     'code'       => 'count_of_delayed_finished_execution_which_annual_finished',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成执行中延期完成执行数是指在某年度关闭的执行中，超过预定计划时间关闭的执行数量。这个度量项可以用来衡量团队在某年度的按时完成能力，并识别延期原因并采取适当措施。较高的延期关闭执行数可能需要团队关注执行计划和资源安排的问题。',
+    'desc'       => 'Las ejecuciones completadas con retraso entre las ejecuciones completadas en el año por sistema son la cantidad de ejecuciones, de las cerradas en un año determinado, que se cerraron después del plazo previsto. Esta métrica sirve para medir la capacidad del equipo de cumplir a tiempo en ese año e identificar las causas del retraso para tomar las medidas adecuadas. Una cantidad alta de ejecuciones cerradas con retraso puede requerir que el equipo preste atención a la planeación de las ejecuciones y a la asignación de recursos.',
     'definition' => "所有的关闭时间为某年的执行个数求和\n关闭日期>执行开始时计划截止日期\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成执行中执行的按期关闭率',
-    'alias'      => '完成执行中执行的按期关闭率',
+    'name'       => 'Tasa de cierre a tiempo de ejecuciones entre las ejecuciones completadas en el año por sistema',
+    'alias'      => 'Tasa de cierre a tiempo de ejecuciones entre las ejecuciones completadas',
     'code'       => 'rate_of_undelayed_closed_execution_which_annual_finished',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成执行中执行的按期关闭率是指某年度按预定计划时间关闭的执行数量与某年度关闭执行执行数量之比。这个度量项可以帮助团队评估某年度执行按期关闭的能力和效果，并作为执行管理的绩效指标之一。较高的执行按期关闭率表示团队能够按时完成执行和项目。',
+    'desc'       => 'La tasa de cierre a tiempo de ejecuciones entre las ejecuciones completadas en el año por sistema es la razón entre la cantidad de ejecuciones cerradas dentro del plazo previsto en un año determinado y la cantidad de ejecuciones cerradas en ese año. Esta métrica ayuda al equipo a evaluar la capacidad y el efecto del cierre a tiempo de las ejecuciones en un año determinado, y es uno de los indicadores de desempeño de la gestión de ejecuciones. Una tasa alta de cierre a tiempo indica que el equipo puede completar las ejecuciones y los proyectos a tiempo.',
     'definition' => "复用：\n按系统统计的年度关闭执行数\n按系统统计的年度完成执行中按期完成执行数\n公式：\n按系统统计的年度完成执行中执行的按期关闭率=按系统统计的年度完成执行中按期完成执行数/按系统统计的年度关闭执行数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成执行中执行的延期关闭率',
-    'alias'      => '完成执行中执行的延期关闭率',
+    'name'       => 'Tasa de cierre con retraso de ejecuciones entre las ejecuciones completadas en el año por sistema',
+    'alias'      => 'Tasa de cierre con retraso de ejecuciones entre las ejecuciones completadas',
     'code'       => 'rate_of_delayed_closed_execution_which_annual_finished',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成执行中执行的延期关闭率是指某年度超过预定计划时间关闭的执行数量与某年度关闭执行数量之比。这个度量项可以帮助团队评估某年度执行按期关闭的能力和效果，并作为执行管理的绩效指标之一。较高的执行延期关闭率可能需要团队关注执行计划和资源安排的问题。',
+    'desc'       => 'La tasa de cierre con retraso de ejecuciones entre las ejecuciones completadas en el año por sistema es la razón entre la cantidad de ejecuciones cerradas después del plazo previsto en un año determinado y la cantidad de ejecuciones cerradas en ese año. Esta métrica ayuda al equipo a evaluar la capacidad y el efecto del cierre a tiempo de las ejecuciones en un año determinado, y es uno de los indicadores de desempeño de la gestión de ejecuciones. Una tasa alta de cierre con retraso puede requerir que el equipo preste atención a la planeación de las ejecuciones y a la asignación de recursos.',
     'definition' => "复用：\n按系统统计的年度关闭执行数\n按系统统计的年度完成执行中延期完成执行数\n公式：\n按系统统计的年度完成执行中执行的延期关闭率=按系统统计的年度完成执行中延期完成执行数/按系统统计的年度关闭执行数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的发布总数',
-    'alias'      => '发布总数',
+    'name'       => 'Total de lanzamientos por sistema',
+    'alias'      => 'Total de lanzamientos',
     'code'       => 'count_of_release',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的产品发布数量反映了组织在特定时间段内发布的产品版本数量，用于评估组织的产品开发效率、市场适应能力和产品组合优化，并提供绩效评估和学习机会。',
+    'desc'       => 'La cantidad de lanzamientos de producto por sistema refleja el número de versiones de producto que la organización lanzó en un período determinado. Sirve para evaluar la eficiencia del desarrollo de productos, la capacidad de adaptación al mercado y la optimización del portafolio de productos, y aporta evaluación del desempeño y oportunidades de aprendizaje.',
     'definition' => "所有的发布个数求和\n过滤已删除的发布"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的里程碑发布总数',
-    'alias'      => '里程碑发布总数',
+    'name'       => 'Total de lanzamientos de hitos por sistema',
+    'alias'      => 'Total de lanzamientos de hitos',
     'code'       => 'count_of_marker_release',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的产品里程碑发布数量反映了组织在特定时间段内达到的产品开发里程碑数量，用于评估组织的产品开发进展情况和重要的产品节点。',
+    'desc'       => 'La cantidad de lanzamientos de hitos de producto por sistema refleja el número de hitos de desarrollo de producto que la organización alcanzó en un período determinado. Sirve para evaluar el avance del desarrollo de productos y los puntos clave del producto.',
     'definition' => "所有的里程碑发布个数求和\n过滤已删除的发布"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增发布数',
-    'alias'      => '新增发布数',
+    'name'       => 'Lanzamientos nuevos en el año por sistema',
+    'alias'      => 'Lanzamientos nuevos',
     'code'       => 'count_of_annual_created_release',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增产品发布数量反映了组织在特定年度内新增发布的产品数量，用于评估组织的出汗品的创新能力、市场竞争力，以及业务增长和收益潜力。',
+    'desc'       => 'La cantidad de lanzamientos de producto nuevos en el año por sistema refleja el número de productos que la organización lanzó en un año determinado. Sirve para evaluar su capacidad de innovación de productos, su competitividad en el mercado, así como el crecimiento del negocio y el potencial de ingresos.',
     'definition' => "所有的发布个数求和\n发布时间为某年\n过滤已删除的发布"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度新增发布数',
-    'alias'      => '新增发布数',
+    'name'       => 'Lanzamientos nuevos en el mes por sistema',
+    'alias'      => 'Lanzamientos nuevos',
     'code'       => 'count_of_monthly_created_release',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度新增产品发布数量反映了组织在特定月份内新增发布的产品数量，用于评估组织的产品开发效率、市场适应能力和产品组合优化。',
+    'desc'       => 'La cantidad de lanzamientos de producto nuevos en el mes por sistema refleja el número de productos que la organización lanzó en un mes determinado. Sirve para evaluar la eficiencia del desarrollo de productos, la capacidad de adaptación al mercado y la optimización del portafolio de productos.',
     'definition' => "所有的发布个数求和\n发布时间为某年某月\n过滤已删除的发布"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每周新增发布数',
-    'alias'      => '新增发布数',
+    'name'       => 'Lanzamientos nuevos por semana por sistema',
+    'alias'      => 'Lanzamientos nuevos',
     'code'       => 'count_of_weekly_created_release',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'week',
-    'desc'       => '按系统统计的每周新增发布数表示每周新增加的发布数量。反映了组织每周增加的发布数量，用于评估组织产品发布的速度和规模。',
+    'desc'       => 'Los lanzamientos nuevos por semana por sistema indican la cantidad de lanzamientos que se agregan cada semana. Reflejan la cantidad de lanzamientos que la organización suma semanalmente y sirven para evaluar la velocidad y el volumen de los lanzamientos de producto de la organización.',
     'definition' => "所有的发布个数求和\n发布时间为某周\n过滤已删除的发布\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的研发需求总数',
-    'alias'      => '研发需求总数',
+    'name'       => 'Total de historias por sistema',
+    'alias'      => 'Total de historias',
     'code'       => 'count_of_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的研发需求的数量反映了组织在特定时间段内的研发需求数量，用于评估组织的研发投入、技术创新能力和市场竞争力，并提供绩效评估。',
+    'desc'       => 'La cantidad de historias por sistema refleja el número de historias de desarrollo de la organización en un período determinado. Sirve para evaluar la inversión en desarrollo, la capacidad de innovación tecnológica y la competitividad en el mercado de la organización, y aporta evaluación del desempeño.',
     'definition' => "所有的研发需求个数求和\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭研发需求数',
-    'alias'      => '已关闭研发需求数',
+    'name'       => 'Historias cerradas por sistema',
+    'alias'      => 'Historias cerradas',
     'code'       => 'count_of_closed_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭的产品研发需求数量反映了组织在特定时间段内已经关闭的产品研发需求数量，用于评估组织的研发决策效果、优化资源管理和提供绩效评估和成果。',
+    'desc'       => 'La cantidad de historias de producto cerradas por sistema refleja el número de historias de desarrollo de producto que la organización ya cerró en un período determinado. Sirve para evaluar la eficacia de las decisiones de desarrollo, optimizar la gestión de recursos y aporta evaluación del desempeño y resultados.',
     'definition' => "所有的研发需求个数求和\n状态为已关闭\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成研发需求数',
-    'alias'      => '已完成研发需求数',
+    'name'       => 'Historias completadas por sistema',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成研发需求数反映了组织在特定时间段内已经完成的产品研发需求数量，用于评估评组织的估研发成果、产品创新和竞争力，并提供绩效评估。',
+    'desc'       => 'La cantidad de historias completadas por sistema refleja el número de historias de desarrollo de producto que la organización ya completó en un período determinado. Sirve para evaluar los resultados de desarrollo, la innovación de productos y la competitividad de la organización, y aporta evaluación del desempeño.',
     'definition' => "所有的研发需求个数求和\n关闭原因为已完成\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未关闭研发需求数',
-    'alias'      => '未关闭研发需求数',
+    'name'       => 'Historias sin cerrar por sistema',
+    'alias'      => 'Historias sin cerrar',
     'code'       => 'count_of_unclosed_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未关闭的产品研发需求数量反映了组织在特定时间段内尚未关闭的产品研发需求数量，用于评估组织评估研发进度、需求管理和资源规划，并提供对需求可行性和商业价值的评估。',
+    'desc'       => 'La cantidad de historias de producto sin cerrar por sistema refleja el número de historias de desarrollo de producto que la organización aún no ha cerrado en un período determinado. Sirve para evaluar el avance del desarrollo, la gestión de requerimientos y la planeación de recursos, y aporta una evaluación de la viabilidad y el valor comercial de los requerimientos.',
     'definition' => "复用：\n按系统统计的研发需求总数\n按系统统计的已关闭研发需求数\n公式：按系统统计的未关闭研发需求数=按系统统计的研发需求总数-按系统统计的已关闭研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的无效研发需求数',
-    'alias'      => '无效研发需求数',
+    'name'       => 'Historias inválidas por sistema',
+    'alias'      => 'Historias inválidas',
     'code'       => 'count_of_invalid_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的无效的产品研发需求数量反映了组织在特定时间段内无效或被废弃的产品研发需求数量，用于评估组织的帮助组织评估需求管理效果、资源利用效率和需求准确性，提供学习和改进的机会。',
+    'desc'       => 'La cantidad de historias de producto inválidas por sistema refleja el número de historias de desarrollo de producto inválidas o descartadas en la organización en un período determinado. Ayuda a evaluar la eficacia de la gestión de requerimientos, la eficiencia en el uso de recursos y la precisión de los requerimientos, y ofrece oportunidades de aprendizaje y mejora.',
     'definition' => "所有的研发需求个数求和\n关闭原因为重复、不做、设计如此和已取消\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的有效研发需求数',
-    'alias'      => '有效研发需求数',
+    'name'       => 'Historias válidas por sistema',
+    'alias'      => 'Historias válidas',
     'code'       => 'count_of_valid_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的有效的产品研发需求数量反映了组织在特定时间段内有效的产品研发需求数量，用于评估组织的评估需求质量、市场适应性、研发投资回报和竞争力。',
+    'desc'       => 'La cantidad de historias de producto válidas por sistema refleja el número de historias de desarrollo de producto válidas en la organización en un período determinado. Sirve para evaluar la calidad de los requerimientos, la adaptabilidad al mercado, el retorno de la inversión en desarrollo y la competitividad.',
     'definition' => "复用：\n按系统统计的无效研发需求数\n按系统统计的研发需求总数\n公式：\n按系统统计的有效研发需求数=按系统统计的研发需求总数-按系统统计的无效研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已交付研发需求数',
-    'alias'      => '已交付研发需求数',
+    'name'       => 'Historias entregadas por sistema',
+    'alias'      => 'Historias entregadas',
     'code'       => 'count_of_delivered_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已交付的产品研发需求数量反映了组织在特定时间段内已交付的产品研发需求数量，用于评估组织的交付能力、项目执行效率、产品质量和客户满意度。',
+    'desc'       => 'La cantidad de historias de producto entregadas por sistema refleja el número de historias de desarrollo de producto que la organización entregó en un período determinado. Sirve para evaluar la capacidad de entrega, la eficiencia de ejecución de proyectos, la calidad del producto y la satisfacción del cliente.',
     'definition' => "所有的研发需求个数求和\n阶段为已发布或关闭原因为已完成\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增研发需求数',
-    'alias'      => '新增研发需求数',
+    'name'       => 'Historias nuevas en el año por sistema',
+    'alias'      => 'Historias nuevas',
     'code'       => 'count_of_annual_created_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增的产品研发需求数量反映了组织在每年新增的产品研发需求数量，用于评估组织的创新能力、需求发现和优先级制定、投资决策以及绩效评估与持续改进。',
+    'desc'       => 'La cantidad de historias de producto nuevas en el año por sistema refleja el número de historias de desarrollo de producto que la organización agrega cada año. Sirve para evaluar la capacidad de innovación, el descubrimiento de requerimientos y la definición de prioridades, las decisiones de inversión, así como la evaluación del desempeño y la mejora continua.',
     'definition' => "所有的研发需求个数求和\n创建时间为某年\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成研发需求数',
-    'alias'      => '完成研发需求数',
+    'name'       => 'Historias completadas en el año por sistema',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_annual_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成的研发需求数量反映了组织在每年完成的研发需求数量，用于评估组织的研发活动的产出、项目管理能力、产品质量和市场竞争力具有重要意义。有助于优化资源规划、提高研发效率，并推动持续改进和创新。',
+    'desc'       => 'La cantidad de historias completadas en el año por sistema refleja el número de historias de desarrollo que la organización completa cada año. Es importante para evaluar la producción de las actividades de desarrollo, la capacidad de gestión de proyectos, la calidad del producto y la competitividad en el mercado. Ayuda a optimizar la planeación de recursos, mejorar la eficiencia del desarrollo e impulsar la mejora continua y la innovación.',
     'definition' => "所有的研发需求个数求和\n关闭时间为某年\n关闭原因为已完成\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度新增研发需求数',
-    'alias'      => '新增研发需求数',
+    'name'       => 'Historias nuevas en el mes por sistema',
+    'alias'      => 'Historias nuevas',
     'code'       => 'count_of_monthly_created_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度新增的研发需求数量反映了组织每个月内新增的研发需求数量，用于评估组织的研发活动的监测、需求管理、项目规划、绩效评估和决策支持具有重要意义。它提供了一个动态的指标，为组织提供了实时的数据支持，以便更好地管理和优化研发活动。',
+    'desc'       => 'La cantidad de historias nuevas en el mes por sistema refleja el número de historias de desarrollo que la organización agrega cada mes. Es importante para evaluar el monitoreo de las actividades de desarrollo, la gestión de requerimientos, la planeación de proyectos, la evaluación del desempeño y el apoyo a la toma de decisiones. Ofrece un indicador dinámico que brinda a la organización datos en tiempo real para gestionar y optimizar mejor las actividades de desarrollo.',
     'definition' => "所有的研发需求个数求和\n创建时间为某年某月\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度完成研发需求数',
-    'alias'      => '完成研发需求数',
+    'name'       => 'Historias completadas en el mes por sistema',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_monthly_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度完成研发需求数量反映了组织每个月内完成的研发需求数量，用于评估组织的绩效评估、进度跟踪、资源规划、经验积累和持续改进具有重要意义。',
+    'desc'       => 'La cantidad de historias completadas en el mes por sistema refleja el número de historias de desarrollo que la organización completa cada mes. Es importante para evaluar el desempeño, el seguimiento del avance, la planeación de recursos, la acumulación de experiencia y la mejora continua de la organización.',
     'definition' => "所有的研发需求个数求和\n关闭时间为某年某月\n关闭原因为已完成\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度交付研发需求数',
-    'alias'      => '交付研发需求数',
+    'name'       => 'Historias entregadas en el año por sistema',
+    'alias'      => 'Historias entregadas',
     'code'       => 'count_of_annual_delivered_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度交付的研发需求数量反映了组织在一年内交付的研发需求数量，可以用于评估组织的交付能力评估、项目管理、客户满意度、绩效评估和持续改进具有重要意义。',
+    'desc'       => 'La cantidad de historias entregadas en el año por sistema refleja el número de historias de desarrollo que la organización entrega en un año. Es importante para evaluar la capacidad de entrega, la gestión de proyectos, la satisfacción del cliente, la evaluación del desempeño y la mejora continua de la organización.',
     'definition' => "所有的研发需求个数求和\n阶段为已发布且发布时间为某年或关闭原因为已完成且关闭时间为某年的\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的研发需求规模总数',
-    'alias'      => '研发需求规模总数',
+    'name'       => 'Total del tamaño de historias por sistema',
+    'alias'      => 'Total del tamaño de historias',
     'code'       => 'scale_of_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的研发需求规模总数反映了组织在所有研发需求上的规模总数，用于评估组织对于研发资源规划、技术能力评估、需求管理、风险评估和绩效评估具有重要意义。',
+    'desc'       => 'El total del tamaño de historias por sistema refleja el tamaño total de todas las historias de desarrollo de la organización. Es importante para evaluar la planeación de recursos de desarrollo, la evaluación de la capacidad técnica, la gestión de requerimientos, la evaluación de riesgos y la evaluación del desempeño de la organización.',
     'definition' => "所有的研发需求规模数求和\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成研发需求规模数',
-    'alias'      => '已完成研发需求规模数',
+    'name'       => 'Tamaño de historias completadas por sistema',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成研发需求规模数反映了组织在已完成的研发需求上的规模总数，用于评估组织对于研发进展评估、质量控制、绩效评估和持续改进具有重要意义。',
+    'desc'       => 'El tamaño de historias completadas por sistema refleja el tamaño total de las historias de desarrollo ya completadas de la organización. Es importante para evaluar el avance del desarrollo, el control de calidad, la evaluación del desempeño y la mejora continua de la organización.',
     'definition' => "所有的研发需求规模数求和\n关闭原因为已完成\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的无效研发需求规模数',
-    'alias'      => '无效研发需求规模数',
+    'name'       => 'Tamaño de historias inválidas por sistema',
+    'alias'      => 'Tamaño de historias inválidas',
     'code'       => 'scale_of_invalid_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的无效的研发需求规模数反映了组织中无效的研发需求的规模总数，用于评估组织对于资源管理、需求管理、质量控制、风险评估和持续改进具有重要意义。',
+    'desc'       => 'El tamaño de historias inválidas por sistema refleja el tamaño total de las historias de desarrollo inválidas de la organización. Es importante para evaluar la gestión de recursos, la gestión de requerimientos, el control de calidad, la evaluación de riesgos y la mejora continua de la organización.',
     'definition' => "所有的研发需求规模数求和\n关闭原因为重复、不做、设计如此和已取消\n过滤父研发需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的有效研发需求规模数',
-    'alias'      => '有效研发需求规模数',
+    'name'       => 'Tamaño de historias válidas por sistema',
+    'alias'      => 'Tamaño de historias válidas',
     'code'       => 'scale_of_valid_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的有效的研发需求规模数反映了组织中有效的研发需求的规模总数，用于评估组织对于项目成果评估、资源规划、目标达成度评估、绩效评估和持续改进具有重要意义。',
+    'desc'       => 'El tamaño de historias válidas por sistema refleja el tamaño total de las historias de desarrollo válidas de la organización. Es importante para evaluar los resultados de los proyectos, la planeación de recursos, el grado de cumplimiento de objetivos, la evaluación del desempeño y la mejora continua de la organización.',
     'definition' => "复用：\n按系统统计的无效研发需求规模数\n按系统统计的研发需求规模数\n公式：\n按系统统计的有效研发需求数=按系统统计的研发需求规模数-按系统统计的无效研发需求规模数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成研发需求规模数',
-    'alias'      => '完成研发需求规模数',
+    'name'       => 'Tamaño de historias completadas en el año por sistema',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_annual_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成的研发需求规模数反映了组织在年度期间完成的研发需求的规模总数，用于评估组织对于绩效评估、规划和资源管理、风险评估、学习和持续改进以及组织透明度和沟通具有重要意义。',
+    'desc'       => 'El tamaño de historias completadas en el año por sistema refleja el tamaño total de las historias de desarrollo completadas por la organización durante el año. Es importante para evaluar el desempeño, la planeación y la gestión de recursos, la evaluación de riesgos, el aprendizaje y la mejora continua, así como la transparencia y la comunicación de la organización.',
     'definition' => "所有的研发需求规模数求和\n关闭时间为某年\n关闭原因为已完成\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度交付研发需求规模数',
-    'alias'      => '交付研发需求规模数',
+    'name'       => 'Tamaño de historias entregadas en el año por sistema',
+    'alias'      => 'Tamaño de historias entregadas',
     'code'       => 'scale_of_annual_delivered_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度交付的研发需求规模数反映了组织在年度期间交付的研发需求的规模总数，用于评估组织对于项目交付评估、绩效评估、资源规划、风险评估、学习和持续改进具有重要意义。',
+    'desc'       => 'El tamaño de historias entregadas en el año por sistema refleja el tamaño total de las historias de desarrollo entregadas por la organización durante el año. Es importante para evaluar la entrega de proyectos, el desempeño, la planeación de recursos, la evaluación de riesgos, el aprendizaje y la mejora continua de la organización.',
     'definition' => "所有研发需求规模数求和\n阶段为已发布且发布时间为某年或关闭原因为已完成且关闭时间为某年\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭研发需求规模数',
-    'alias'      => '关闭研发需求规模数',
+    'name'       => 'Tamaño de historias cerradas en el año por sistema',
+    'alias'      => 'Tamaño de historias cerradas',
     'code'       => 'scale_of_annual_closed_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭的研发需求规模数反映了组织在年度期间关闭的研发需求的规模总数，用于评估组织对于项目管理和控制、绩效评估、资源规划、风险评估、学习和持续改进具有重要意义。',
+    'desc'       => 'El tamaño de historias cerradas en el año por sistema refleja el tamaño total de las historias de desarrollo cerradas por la organización durante el año. Es importante para evaluar la gestión y el control de proyectos, el desempeño, la planeación de recursos, la evaluación de riesgos, el aprendizaje y la mejora continua de la organización.',
     'definition' => "所有的研发需求规模数求和\n关闭时间为某年\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度完成研发需求规模数',
-    'alias'      => '完成研发需求规模数',
+    'name'       => 'Tamaño de historias completadas en el mes por sistema',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_monthly_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度完成的研发需求规模数反映了组织在每个月完成的研发需求的规模总数，用于评估组织对于进度监控、绩效评估、资源规划、风险评估、持续改进和敏捷性具有重要意义。',
+    'desc'       => 'El tamaño de historias completadas en el mes por sistema refleja el tamaño total de las historias de desarrollo completadas por la organización cada mes. Es importante para evaluar el monitoreo del avance, el desempeño, la planeación de recursos, la evaluación de riesgos, la mejora continua y la agilidad de la organización.',
     'definition' => "所有的研发需求规模数求和\n关闭时间为某年某月\n关闭原因为已完成\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度交付研发需求规模数',
-    'alias'      => '交付研发需求规模数',
+    'name'       => 'Tamaño de historias entregadas en el mes por sistema',
+    'alias'      => 'Tamaño de historias entregadas',
     'code'       => 'scale_of_monthly_delivered_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度交付的研发需求规模数反映了组织在每个月交付的研发需求的规模总数，用于评估组织对于交付能力评估、绩效评估、项目管理和控制、客户满意度和信任建立、持续改进和效率提升具有重要意义。',
+    'desc'       => 'El tamaño de historias entregadas en el mes por sistema refleja el tamaño total de las historias de desarrollo entregadas por la organización cada mes. Es importante para evaluar la capacidad de entrega, el desempeño, la gestión y el control de proyectos, la satisfacción del cliente y la construcción de confianza, la mejora continua y el aumento de la eficiencia de la organización.',
     'definition' => "所有的研发需求规模数求和\n阶段为已发布且发布时间为某年某月或关闭原因为已完成且关闭时间为某年某月\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度关闭研发需求规模数',
-    'alias'      => '关闭研发需求规模数',
+    'name'       => 'Tamaño de historias cerradas en el mes por sistema',
+    'alias'      => 'Tamaño de historias cerradas',
     'code'       => 'scale_of_monthly_closed_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度关闭的研发需求规模数反映了组织在每个月关闭的研发需求的规模总数，用于评估组织对于项目管理和控制、绩效评估、资源规划和利用、风险评估、持续改进和效率提升具有重要意义。',
+    'desc'       => 'El tamaño de historias cerradas en el mes por sistema refleja el tamaño total de las historias de desarrollo cerradas por la organización cada mes. Es importante para evaluar la gestión y el control de proyectos, el desempeño, la planeación y el aprovechamiento de recursos, la evaluación de riesgos, la mejora continua y el aumento de la eficiencia de la organización.',
     'definition' => "所有的研发需求规模数求和\n关闭时间为某年某月\n过滤父研发需求\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每周完成研发需求规模数',
-    'alias'      => '完成研发需求规模数',
+    'name'       => 'Tamaño de historias completadas por semana por sistema',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_weekly_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'week',
-    'desc'       => '按系统统计的每周完成研发需求规模数表示每周完成的研发需求的数量。反映了组织每周完成的研发需求数量，用于评估项目进度、资源规划、需求管理、团队绩效和质量控制的有用信息。它对于项目管理和团队协作具有重要意义，并可以帮助团队监控进度、优化资源利用和提高研发效率。',
+    'desc'       => 'El tamaño de historias completadas por semana por sistema indica la cantidad de historias de desarrollo completadas cada semana. Refleja la cantidad de historias de desarrollo que la organización completa semanalmente y es información útil para evaluar el avance de proyectos, la planeación de recursos, la gestión de requerimientos, el desempeño del equipo y el control de calidad. Es importante para la gestión de proyectos y la colaboración del equipo, y ayuda al equipo a monitorear el avance, optimizar el uso de recursos y mejorar la eficiencia de desarrollo.',
     'definition' => "所有的研发需求个数求和\n关闭时间为某周\n关闭原因为已完成\n过滤父需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每周完成需求数',
-    'alias'      => '完成需求数',
+    'name'       => 'Historias completadas por semana por sistema',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_weekly_finished_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'week',
-    'desc'       => '按系统统计的每周完成需求数是指每周已关闭且关闭原因为已完成的研发需求数量。反映了团队在每周的开发效率和成果，用于评估需求管理、项目进度、资源规划、绩效评估和质量控制的有用信息。它对于项目管理和团队协作具有重要意义，并可以帮助团队监控进度、优化资源利用和提高工作效率。',
+    'desc'       => 'Las historias completadas por semana por sistema son la cantidad de historias de desarrollo cerradas cada semana cuyo motivo de cierre es Completada. Refleja la eficiencia de desarrollo y los resultados del equipo en cada semana y es información útil para evaluar la gestión de requerimientos, el avance de proyectos, la planeación de recursos, la evaluación del desempeño y el control de calidad. Es importante para la gestión de proyectos y la colaboración del equipo, y ayuda al equipo a monitorear el avance, optimizar el uso de recursos y mejorar la eficiencia de trabajo.',
     'definition' => "所有研发需求的个数求和。\n关闭时间在某周。\n关闭原因为已完成。\n过滤已删除的研发需求。\n过滤已删除的产品。"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每日新增研发需求数',
-    'alias'      => '新增研发需求数',
+    'name'       => 'Historias nuevas por día por sistema',
+    'alias'      => 'Historias nuevas',
     'code'       => 'count_of_daily_created_story',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的每日新增研发需求数表示每日新增加的研发需求的数量，可以用于评估组织的研发需求增长和规模扩展情况。',
+    'desc'       => 'Las historias nuevas por día por sistema indican la cantidad de historias de desarrollo que se agregan cada día y pueden usarse para evaluar el crecimiento de los requerimientos de desarrollo y la expansión de su escala en la organización.',
     'definition' => "所有的研发需求个数求和\n创建时间为某日\n过滤已删除的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的研发需求完成率',
-    'alias'      => '研发需求完成率',
+    'name'       => 'Tasa de finalización de historias por sistema',
+    'alias'      => 'Tasa de finalización de historias',
     'code'       => 'rate_of_finished_story',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的研发需求完成率反映了组织按系统统计的已完成研发需求数和按系统统计的有效研发需求数之间的比率，用于评估组织对于进度控制、绩效评估、风险评估、资源规划和利用，以及持续改进和效率提升具有重要意义。',
+    'desc'       => 'La tasa de finalización de historias por sistema refleja la razón entre las historias completadas por sistema y las historias válidas por sistema de la organización. Es importante para evaluar el control del avance, el desempeño, la evaluación de riesgos, la planeación y el aprovechamiento de recursos, así como la mejora continua y el aumento de la eficiencia de la organización.',
     'definition' => "复用：\n按系统统计的完成研发需求数\n按系统统计的有效研发需求数\n公式：\n按系统统计的研发需求完成率=按系统统计的已完成研发需求数/按系统统计的有效研发需求数*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的研发需求交付率',
-    'alias'      => '研发需求交付率',
+    'name'       => 'Tasa de entrega de historias por sistema',
+    'alias'      => 'Tasa de entrega de historias',
     'code'       => 'rate_of_delivered_story',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的研发需求交付率反映了组织在研发过程中按时交付需求的能力和表现。用于评估组织对于评估交付能力、客户满意度和信任建立、项目管理和资源优化、竞争力和市场表现，以及持续改进和效率提升具有重要意义。',
+    'desc'       => 'La tasa de entrega de historias por sistema refleja la capacidad y el desempeño de la organización para entregar requerimientos a tiempo durante el desarrollo. Es importante para evaluar la capacidad de entrega, la satisfacción del cliente y la construcción de confianza, la gestión de proyectos y la optimización de recursos, la competitividad y el desempeño en el mercado, así como la mejora continua y el aumento de la eficiencia.',
     'definition' => "复用：\n按系统统计的已交付研发需求数\n按系统统计的有效研发需求数\n公式：\n按系统统计的研发需求完成率=按系统统计的已交付研发需求数/按系统统计的有效研发需求数*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度研发需求完成率',
-    'alias'      => '研发需求完成率',
+    'name'       => 'Tasa de finalización de historias en el año por sistema',
+    'alias'      => 'Tasa de finalización de historias',
     'code'       => 'rate_of_annual_finished_story',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度研发需求完成率反映了组织在年度研发过程中完成需求的能力和表现，反映了组织对于评估项目目标达成、资源规划和优化、业务决策和战略执行、绩效评估和激励机制，以及持续改进和效率提升具有重要意义。',
+    'desc'       => 'La tasa de finalización de historias en el año por sistema refleja la capacidad y el desempeño de la organización para completar requerimientos durante el desarrollo del año. Es importante para evaluar el cumplimiento de objetivos de proyectos, la planeación y optimización de recursos, las decisiones de negocio y la ejecución de la estrategia, la evaluación del desempeño y los mecanismos de incentivos, así como la mejora continua y el aumento de la eficiencia.',
     'definition' => "复用：\n按系统统计的年度完成研发需求数\n按系统统计的年度有效研发需求数\n公式：\n按系统统计的年度研发需求完成率=按系统统计的年度完成研发需求数/按系统统计的年度有效研发需求数*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度研发需求交付率',
-    'alias'      => '研发需求交付率',
+    'name'       => 'Tasa de entrega de historias en el año por sistema',
+    'alias'      => 'Tasa de entrega de historias',
     'code'       => 'rate_of_annual_delivered_story',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度研发需求交付率反映了组织在年度研发过程中按时交付需求的能力和表现，用于评估组织对于评估项目交付能力、客户满意度和信任建立、项目进度管理和风险控制、绩效评估和激励机制，以及持续改进和效率提升具有重要意义。',
+    'desc'       => 'La tasa de entrega de historias en el año por sistema refleja la capacidad y el desempeño de la organización para entregar requerimientos a tiempo durante el desarrollo del año. Sirve para evaluar la capacidad de entrega de proyectos, la satisfacción del cliente y la construcción de confianza, la gestión del avance y el control de riesgos de proyectos, la evaluación del desempeño y los mecanismos de incentivos, así como la mejora continua y el aumento de la eficiencia.',
     'definition' => "复用：\n按系统统计的年度交付研发需求数\n按系统统计的年度有效研发需求数\n公式：\n按系统统计的年度研发需求完成率=按系统统计的年度交付研发需求数/按系统统计的年度有效研发需求数*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的任务总数',
-    'alias'      => '任务总数',
+    'name'       => 'Total de tareas por sistema',
+    'alias'      => 'Total de tareas',
     'code'       => 'count_of_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的任务总数是指整个团队或组织当前存在的任务总量。该度量项可以用来跟踪任务的规模和复杂性，为资源分配和工作计划提供基础。较大的任务总数可能需要更多的资源和时间来完成，而较小的任务总数可能意味着团队负荷较轻或项目进展较好。',
+    'desc'       => 'El total de tareas por sistema es la cantidad total de tareas que existen actualmente en todo el equipo o la organización. Esta métrica sirve para dar seguimiento al tamaño y la complejidad de las tareas y es la base para la asignación de recursos y la planeación del trabajo. Un total de tareas grande puede requerir más recursos y tiempo para completarse, mientras que un total pequeño puede significar que el equipo tiene una carga ligera o que los proyectos avanzan bien.',
     'definition' => "所有的任务个数求和\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已完成任务数',
-    'alias'      => '已完成任务数',
+    'name'       => 'Tareas completadas por sistema',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_finished_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已完成任务数是指团队或组织已经完成的任务总量。该度量项可以衡量任务完成的进度和效率，以及团队成员或组织的工作质量和产出。较高的已完成任务总数可能表明团队在交付工作方面表现出较好的能力。',
+    'desc'       => 'Las tareas completadas por sistema son la cantidad total de tareas que el equipo o la organización ya completó. Esta métrica permite medir el avance y la eficiencia en la finalización de tareas, así como la calidad del trabajo y la producción de los miembros del equipo o de la organización. Un total alto de tareas completadas puede indicar que el equipo tiene buena capacidad para entregar el trabajo.',
     'definition' => "所有的任务个数求和\n状态为已完成或者状态为已关闭且关闭原因为已完成\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未完成任务数',
-    'alias'      => '未完成任务数',
+    'name'       => 'Tareas sin completar por sistema',
+    'alias'      => 'Tareas sin completar',
     'code'       => 'count_of_unfinished_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未完成任务数是指团队或组织未完成的任务总量。该度量项可以用来评估项目进展和未来工作量，同时也可以帮助进行资源分配和优先级确定。较大的未完成任务总数可能需要更多的努力和调整来确保任务按时完成。',
+    'desc'       => 'Las tareas sin completar por sistema son la cantidad total de tareas que el equipo o la organización aún no ha completado. Esta métrica sirve para evaluar el avance de los proyectos y la carga de trabajo futura, y también ayuda a asignar recursos y definir prioridades. Un total grande de tareas sin completar puede requerir más esfuerzo y ajustes para asegurar que las tareas se completen a tiempo.',
     'definition' => "复用：\n按系统统计的任务总数\n按系统统计的已完成任务数\n公式：\n按系统统计的未完成任务数=按系统统计的任务总数-按系统统计的已完成任务数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭任务数',
-    'alias'      => '已关闭任务数',
+    'name'       => 'Tareas cerradas por sistema',
+    'alias'      => 'Tareas cerradas',
     'code'       => 'count_of_closed_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭任务数是指团队或组织已经关闭的任务总量。该度量项可以用来评估项目或团队的运营情况和任务管理效果。较高的已关闭任务总数可能表明团队在任务管理方面表现出较好的能力，同时也可以释放资源和优先处理其他任务。',
+    'desc'       => 'Las tareas cerradas por sistema son la cantidad total de tareas que el equipo o la organización ya cerró. Esta métrica sirve para evaluar la situación operativa de los proyectos o del equipo y la eficacia de la gestión de tareas. Un total alto de tareas cerradas puede indicar que el equipo tiene buena capacidad de gestión de tareas, y también permite liberar recursos y atender otras tareas con prioridad.',
     'definition' => "所有的任务个数求和\n状态为已关闭\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增任务数',
-    'alias'      => '新增任务数',
+    'name'       => 'Tareas nuevas en el año por sistema',
+    'alias'      => 'Tareas nuevas',
     'code'       => 'count_of_annual_created_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增任务数是指一年内新添加的任务总量。该度量项可以用来衡量团队或组织在某年内所承担的新增工作量。较高的年度新增任务数可能需要额外的资源和计划调整来满足需求。',
+    'desc'       => 'Las tareas nuevas en el año por sistema son la cantidad total de tareas agregadas en un año. Esta métrica sirve para medir la nueva carga de trabajo que asume el equipo o la organización en un año determinado. Una cantidad alta de tareas nuevas en el año puede requerir recursos adicionales y ajustes de planeación para satisfacer la demanda.',
     'definition' => "所有的任务个数求和\n创建时间为某年\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度完成任务数',
-    'alias'      => '完成任务数',
+    'name'       => 'Tareas completadas en el año por sistema',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_annual_finished_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度完成任务数是指某年内已经完成的任务总量。该度量项可以用来评估团队或组织在某年内的工作效率和完成能力。较高的年度完成任务数表示团队或组织在项目执行方面表现出较好的效率。',
+    'desc'       => 'Las tareas completadas en el año por sistema son la cantidad total de tareas ya completadas en un año determinado. Esta métrica sirve para evaluar la eficiencia de trabajo y la capacidad de finalización del equipo o la organización en ese año. Una cantidad alta de tareas completadas en el año indica que el equipo o la organización muestra una buena eficiencia en la ejecución de proyectos.',
     'definition' => "所有的任务个数求和\n完成时间为某年\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度新增任务数',
-    'alias'      => '新增任务数',
+    'name'       => 'Tareas nuevas en el mes por sistema',
+    'alias'      => 'Tareas nuevas',
     'code'       => 'count_of_monthly_created_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度新增任务数是指在某月新添加的任务总量。该度量项可以用来衡量团队或组织在某月内所承担的新增工作量，以及对项目规划和资源分配的影响。较高的月度新增任务数可能需要额外的资源和计划调整来满足需求。',
+    'desc'       => 'Las tareas nuevas en el mes por sistema son la cantidad total de tareas agregadas en un mes determinado. Esta métrica sirve para medir la nueva carga de trabajo que asume el equipo o la organización en ese mes y su efecto en la planeación de proyectos y la asignación de recursos. Una cantidad alta de tareas nuevas en el mes puede requerir recursos adicionales y ajustes de planeación para satisfacer la demanda.',
     'definition' => "所有的任务个数求和\n创建时间为某年某月\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度完成任务数',
-    'alias'      => '完成任务数',
+    'name'       => 'Tareas completadas en el mes por sistema',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_monthly_finished_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度完成任务数是指在某月已经完成的任务总量。该度量项可以用来评估团队或组织在某月内的工作效率和完成能力。较高的月度完成任务数表示团队或组织在项目执行方面表现出较好的效率。',
+    'desc'       => 'Las tareas completadas en el mes por sistema son la cantidad total de tareas ya completadas en un mes determinado. Esta métrica sirve para evaluar la eficiencia de trabajo y la capacidad de finalización del equipo o la organización en ese mes. Una cantidad alta de tareas completadas en el mes indica que el equipo o la organización muestra una buena eficiencia en la ejecución de proyectos.',
     'definition' => "所有的任务个数求和\n完成时间为某年某月\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的任务预计工时数',
-    'alias'      => '任务预计工时数',
+    'name'       => 'Horas estimadas de tareas por sistema',
+    'alias'      => 'Horas estimadas de tareas',
     'code'       => 'estimate_of_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的任务预计工时数是指所有任务预计完成所需的工时总和。该度量项可以用来规划资源和预估工期，为项目管理和团队协作提供依据。较准确的任务预计工时总数可以帮助团队更好地安排时间和资源，提高任务的完成效率。',
+    'desc'       => 'Las horas estimadas de tareas por sistema son la suma de las horas de trabajo que se estima necesarias para completar todas las tareas. Esta métrica sirve para planear recursos y estimar la duración, y es una referencia para la gestión de proyectos y la colaboración del equipo. Unas horas estimadas más precisas ayudan al equipo a organizar mejor el tiempo y los recursos y a mejorar la eficiencia de finalización de tareas.',
     'definition' => "所有的任务的预计工时数求和\n过滤父任务\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的任务消耗工时数',
-    'alias'      => '任务消耗工时数',
+    'name'       => 'Horas consumidas de tareas por sistema',
+    'alias'      => 'Horas consumidas de tareas',
     'code'       => 'consume_of_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的任务消耗工时数是指已经花费的工时总和，用于完成所有任务。该度量项可以用来评估团队或组织在任务执行过程中的工时投入情况，以及在完成任务方面的效率和资源利用情况。较高的任务消耗工时总数可能表明需要审查工作流程和资源分配，以提高工作效率。',
+    'desc'       => 'Las horas consumidas de tareas por sistema son la suma de las horas de trabajo ya invertidas para completar todas las tareas. Esta métrica sirve para evaluar la inversión de horas del equipo o la organización durante la ejecución de tareas, así como su eficiencia y el aprovechamiento de recursos al completarlas. Un total alto de horas consumidas puede indicar que se requiere revisar el flujo de trabajo y la asignación de recursos para mejorar la eficiencia.',
     'definition' => "所有的任务的消耗工时数求和\n过滤父任务\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的任务剩余工时数',
-    'alias'      => '任务剩余工时数',
+    'name'       => 'Horas restantes de tareas por sistema',
+    'alias'      => 'Horas restantes de tareas',
     'code'       => 'left_of_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的任务剩余工时数是指任务当前剩余工时的总和，用于完成所有任务。该度量项可以用来评估团队或组织在任务执行过程中剩余的工作量和时间，以及为完成任务所需的资源和计划。较小的任务剩余工时总数可能表示团队即将完成任务。',
+    'desc'       => 'Las horas restantes de tareas por sistema son la suma de las horas de trabajo que actualmente restan para completar todas las tareas. Esta métrica sirve para evaluar el trabajo y el tiempo que le quedan al equipo o la organización durante la ejecución de tareas, así como los recursos y la planeación necesarios para completarlas. Un total pequeño de horas restantes puede indicar que el equipo está por terminar las tareas.',
     'definition' => "所有的任务的剩余工时数求和\n过滤父任务\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每日完成任务数',
-    'alias'      => '完成任务数',
+    'name'       => 'Tareas completadas por día por sistema',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_daily_finished_task',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的每日完成任务数是指每日完成的任务总量。该度量项可以用来评估团队或组织每日的工作效率和任务完成能力。',
+    'desc'       => 'Las tareas completadas por día por sistema son la cantidad total de tareas completadas cada día. Esta métrica sirve para evaluar la eficiencia de trabajo diaria y la capacidad de finalización de tareas del equipo o la organización.',
     'definition' => "所有的任务个数求和\n完成时间为某日\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的Bug总数',
-    'alias'      => 'Bug总数',
+    'name'       => 'Total de Bugs por sistema',
+    'alias'      => 'Total de Bugs',
     'code'       => 'count_of_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的Bug总数是指在整个系统中发现的所有Bug的数量。这个度量项反映了系统或项目的整体Bug质量情况。Bug总数越多可能代表系统或项目的代码质量存在问题，需要进行进一步的解决和改进。',
+    'desc'       => 'El total de Bugs por sistema es la cantidad de todos los Bugs encontrados en todo el sistema. Esta métrica refleja la calidad general del sistema o proyecto en cuanto a Bugs. Un total alto de Bugs puede indicar problemas de calidad en el código del sistema o proyecto, que requieren mayor resolución y mejora.',
     'definition' => "所有Bug个数求和\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的激活Bug数',
-    'alias'      => '激活Bug数',
+    'name'       => 'Bugs activos por sistema',
+    'alias'      => 'Bugs activos',
     'code'       => 'count_of_activated_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的激活Bug数是指当前尚未解决的Bug数量。这个度量项反映了系统或项目当前存在的待解决问题数量。激活Bug总数越多可能代表系统或项目的稳定性较低，需要加强Bug解决的速度和质量。',
+    'desc'       => 'Los Bugs activos por sistema son la cantidad de Bugs que actualmente no se han resuelto. Esta métrica refleja la cantidad de problemas pendientes de resolver que existen actualmente en el sistema o proyecto. Un total alto de Bugs activos puede indicar que el sistema o proyecto tiene baja estabilidad y que es necesario mejorar la velocidad y la calidad de la resolución de Bugs.',
     'definition' => "所有Bug个数求和\n状态为激活\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已解决Bug数',
-    'alias'      => '已解决Bug数',
+    'name'       => 'Bugs resueltos por sistema',
+    'alias'      => 'Bugs resueltos',
     'code'       => 'count_of_resolved_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已解决Bug数是指已经被开发团队解决的Bug数量。反映了组织在特定时间段内已解决的Bug数量，用于评估系统质量、用户满意度、资源管理、过程改进和绩效评估等方面。通过跟踪和分析已解决的Bug数，可以及时发现问题、改进开发过程、提高用户满意度，并为团队绩效评估和优化提供依据。',
+    'desc'       => 'Los Bugs resueltos por sistema son la cantidad de Bugs que ya fueron resueltos por el equipo de desarrollo. Reflejan la cantidad de Bugs resueltos por la organización en un período determinado y sirven para evaluar la calidad del sistema, la satisfacción de los usuarios, la gestión de recursos, la mejora de procesos y el desempeño. Al dar seguimiento y analizar los Bugs resueltos, se pueden detectar problemas a tiempo, mejorar el proceso de desarrollo, aumentar la satisfacción de los usuarios y obtener una base para evaluar y optimizar el desempeño del equipo.',
     'definition' => "所有Bug个数求和\n状态为已解决\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭Bug总数',
-    'alias'      => '已关闭Bug数',
+    'name'       => 'Total de Bugs cerrados por sistema',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_closed_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭Bug总数是指已经被关闭的Bug数量。反映了组织特定时间段内已关闭的Bug数量，用于评估系统质量、进度管理、资源管理、过程改进和绩效评估等方面。通过跟踪和分析已关闭的Bug总数，可以及时发现问题、改进开发过程、提高项目进度，并为团队绩效评估和优化提供依据。',
+    'desc'       => 'El total de Bugs cerrados por sistema es la cantidad de Bugs que ya fueron cerrados. Refleja la cantidad de Bugs cerrados por la organización en un período determinado y sirve para evaluar la calidad del sistema, la gestión del avance, la gestión de recursos, la mejora de procesos y el desempeño. Al dar seguimiento y analizar el total de Bugs cerrados, se pueden detectar problemas a tiempo, mejorar el proceso de desarrollo, acelerar el avance del proyecto y obtener una base para evaluar y optimizar el desempeño del equipo.',
     'definition' => "所有Bug个数求和\n状态为已关闭\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的未关闭Bug数',
-    'alias'      => '未关闭Bug数',
+    'name'       => 'Bugs sin cerrar por sistema',
+    'alias'      => 'Bugs sin cerrar',
     'code'       => 'count_of_unclosed_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的未关闭Bug数是指当前仍然存在但未关闭的Bug数量。反映了组织在特定时间段内尚未解决的Bug数量，用于评估系统质量、问题管理、优先级和计划调整、资源管理以及过程改进等方面。通过跟踪和分析未关闭的Bug数，可以及时发现问题、优化问题处理流程、合理安排资源，并为团队的质量管理和持续改进提供依据。',
+    'desc'       => 'Los Bugs sin cerrar por sistema son la cantidad de Bugs que actualmente siguen existiendo sin haberse cerrado. Reflejan la cantidad de Bugs que la organización aún no ha resuelto en un período determinado y sirven para evaluar la calidad del sistema, la gestión de problemas, las prioridades y los ajustes de planeación, la gestión de recursos y la mejora de procesos. Al dar seguimiento y analizar los Bugs sin cerrar, se pueden detectar problemas a tiempo, optimizar el proceso de manejo de problemas, organizar los recursos de forma razonable y obtener una base para la gestión de calidad y la mejora continua del equipo.',
     'definition' => "复用：\n按系统统计的Bug总数\n按系统统计的已关闭Bug数\n公式：\n按系统统计的未关闭Bug数=按系统统计的Bug总数-按系统统计的已关闭Bug数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已修复Bug数',
-    'alias'      => '已修复Bug数',
+    'name'       => 'Bugs corregidos por sistema',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_fixed_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已修复Bug数是指解决并关闭的Bug数量。反映了组织在特定时间段内已经修复的Bug数量，用于评估系统质量、问题管理、进度管理、资源管理以及过程改进等方面。通过跟踪和分析已修复的Bug数，可以及时发现问题、优化问题处理流程、提高项目进度，并为团队的质量管理和持续改进提供依据。',
+    'desc'       => 'Los Bugs corregidos por sistema son la cantidad de Bugs resueltos y cerrados. Reflejan la cantidad de Bugs que la organización ya corrigió en un período determinado y sirven para evaluar la calidad del sistema, la gestión de problemas, la gestión del avance, la gestión de recursos y la mejora de procesos. Al dar seguimiento y analizar los Bugs corregidos, se pueden detectar problemas a tiempo, optimizar el proceso de manejo de problemas, acelerar el avance del proyecto y obtener una base para la gestión de calidad y la mejora continua del equipo.',
     'definition' => "所有Bug个数求和\n状态为已关闭\n解决方案为已解决\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的有效Bug数',
-    'alias'      => '有效Bug数',
+    'name'       => 'Bugs válidos por sistema',
+    'alias'      => 'Bugs válidos',
     'code'       => 'count_of_valid_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的有效Bug数是指系统或项目中真正具有影响和价值的Bug数量。反映了一个系统或软件中有效的Bug数量。有效Bug是指经过验证和确认的真实问题，需要进行修复和解决的Bug。用于评估系统质量、问题管理、资源管理、过程改进以及用户满意度等方面。通过跟踪和分析有效Bug数，可以及时发现问题、优化问题处理流程、合理安排资源，并为团队的质量管理和持续改进提供依据，同时提升用户满意度和系统质量。',
+    'desc'       => 'Los Bugs válidos por sistema son la cantidad de Bugs que realmente tienen impacto y valor en el sistema o proyecto. Reflejan la cantidad de Bugs válidos en un sistema o software. Un Bug válido es un problema real, verificado y confirmado, que debe corregirse y resolverse. Sirven para evaluar la calidad del sistema, la gestión de problemas, la gestión de recursos, la mejora de procesos y la satisfacción de los usuarios. Al dar seguimiento y analizar los Bugs válidos, se pueden detectar problemas a tiempo, optimizar el proceso de manejo de problemas, organizar los recursos de forma razonable y obtener una base para la gestión de calidad y la mejora continua del equipo, además de aumentar la satisfacción de los usuarios y la calidad del sistema.',
     'definition' => "所有Bug个数求和\n解决方案为已解决和延期处理\n或状态为激活的Bug数\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Bugs nuevos en el año por sistema',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_annual_created_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增Bug数是指在一年内新发现的Bug数量。反映了一个系统或软件每年新增的Bug数量，用于评估评估系统质量、变更管理、资源规划、过程改进和趋势分析等方面。',
+    'desc'       => 'Los Bugs nuevos en el año por sistema son la cantidad de Bugs descubiertos por primera vez en un año. Reflejan la cantidad de Bugs nuevos que un sistema o software acumula cada año y sirven para evaluar la calidad del sistema, la gestión de cambios, la planeación de recursos, la mejora de procesos y el análisis de tendencias.',
     'definition' => "所有Bug个数求和\n创建时间为某年\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度修复Bug数',
-    'alias'      => '修复Bug数',
+    'name'       => 'Bugs corregidos en el año por sistema',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_annual_fixed_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度修复Bug数是指在一年内解决并关闭的Bug数量。反映了一个系统或软件在一年内修复的Bug数量，用于评估系统质量改进、用户满意度、故障管理、变更管理和资源规划等方面。通过跟踪和分析年度修复Bug数，可以及时发现和解决问题，改善系统的质量和可靠性。同时，通过Bug修复数的评估，可以提高用户满意度、优化故障管理流程、控制变更质量，合理安排资源，从而提升整体的研发效果和项目交付质量。',
+    'desc'       => 'Los Bugs corregidos en el año por sistema son la cantidad de Bugs resueltos y cerrados en un año. Reflejan la cantidad de Bugs que un sistema o software corrigió en un año y sirven para evaluar la mejora de la calidad del sistema, la satisfacción de los usuarios, la gestión de fallas, la gestión de cambios y la planeación de recursos. Al dar seguimiento y analizar los Bugs corregidos en el año, se pueden detectar y resolver problemas a tiempo y mejorar la calidad y la confiabilidad del sistema. Además, con la evaluación de los Bugs corregidos se puede aumentar la satisfacción de los usuarios, optimizar el proceso de gestión de fallas, controlar la calidad de los cambios y organizar los recursos de forma razonable, mejorando así el resultado general del desarrollo y la calidad de la entrega del proyecto.',
     'definition' => "所有Bug个数求和\n状态为已关闭\n解决方案为已解决\n关闭时间为某年\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Bugs nuevos en el mes por sistema',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_monthly_created_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度新增Bug数是指在一个月内新发现的Bug数量。反映了一个系统或软件每个月新增的Bug数量，用于评估及时发现问题、变更管理与影响评估、趋势分析与问题预测以及资源规划与优化等方面。通过跟踪和分析月度新增Bug数，可以及时发现质量问题、优化变更管理、预测系统质量趋势，并合理安排资源，从而提升系统的质量和可靠性。',
+    'desc'       => 'Los Bugs nuevos en el mes por sistema son la cantidad de Bugs descubiertos por primera vez en un mes. Reflejan la cantidad de Bugs nuevos que un sistema o software acumula cada mes y sirven para evaluar la detección oportuna de problemas, la gestión de cambios y la evaluación de impacto, el análisis de tendencias y la predicción de problemas, y la planeación y optimización de recursos. Al dar seguimiento y analizar los Bugs nuevos en el mes, se pueden detectar problemas de calidad a tiempo, optimizar la gestión de cambios, predecir la tendencia de calidad del sistema y organizar los recursos de forma razonable, mejorando así la calidad y la confiabilidad del sistema.',
     'definition' => "所有Bug个数求和\n创建时间为某年某月\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的月度修复Bug数',
-    'alias'      => '修复Bug数',
+    'name'       => 'Bugs corregidos en el mes por sistema',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_monthly_fixed_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按系统统计的月度修复Bug数是指在一个月内解决并关闭的Bug数量。反映了一个系统或软件每个月修复的Bug数量，用于评估质量改进、故障管理、变更管理、资源规划以及趋势分析与问题预测等方面。通过跟踪和分析月度修复Bug数，可以及时发现和解决问题，改善系统的质量和可靠性。',
+    'desc'       => 'Los Bugs corregidos en el mes por sistema son la cantidad de Bugs resueltos y cerrados en un mes. Reflejan la cantidad de Bugs que un sistema o software corrigió cada mes y sirven para evaluar la mejora de la calidad, la gestión de fallas, la gestión de cambios, la planeación de recursos, y el análisis de tendencias y la predicción de problemas. Al dar seguimiento y analizar los Bugs corregidos en el mes, se pueden detectar y resolver problemas a tiempo y mejorar la calidad y la confiabilidad del sistema.',
     'definition' => "所有Bug个数求和\n状态为已关闭\n解决方案为已解决\n关闭时间为某年某月\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每日关闭Bug数',
-    'alias'      => '关闭Bug数',
+    'name'       => 'Bugs cerrados por día por sistema',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_daily_closed_bug',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的每日关闭Bug数是指组织每日被确认并关闭的Bug的数量。该度量项可以帮助我们了解组织对已解决的Bug进行确认与关闭的速度和效率。',
+    'desc'       => 'Los Bugs cerrados por día por sistema son la cantidad de Bugs que la organización confirma y cierra cada día. Esta métrica ayuda a conocer la velocidad y la eficiencia con que la organización confirma y cierra los Bugs ya resueltos.',
     'definition' => "所有每日关闭的Bug数求和\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的Bug修复率',
-    'alias'      => 'Bug修复率',
+    'name'       => 'Tasa de corrección de Bugs por sistema',
+    'alias'      => 'Tasa de corrección de Bugs',
     'code'       => 'rate_of_fixed_bug',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'bug',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的Bug修复率是指已修复的Bug占相对于有效Bug数量的比例。反映了一个系统或软件中Bug修复的效率和速度，用于评估质量改进、故障管理、用户满意度、变更管理以及团队绩效评估与改进等方面。通过跟踪和分析Bug修复率，可以评估团队在修复Bug方面的效率和能力，及时发现和解决问题，提高系统的质量和可靠性。',
+    'desc'       => 'La tasa de corrección de Bugs por sistema es la proporción de Bugs corregidos respecto a la cantidad de Bugs válidos. Refleja la eficiencia y la velocidad de corrección de Bugs de un sistema o software y sirve para evaluar la mejora de la calidad, la gestión de fallas, la satisfacción de los usuarios, la gestión de cambios y la evaluación y mejora del desempeño del equipo. Al dar seguimiento y analizar la tasa de corrección de Bugs, se puede evaluar la eficiencia y la capacidad del equipo para corregir Bugs, detectar y resolver problemas a tiempo y mejorar la calidad y la confiabilidad del sistema.',
     'definition' => "复用：\n按系统统计的已修复Bug数\n按系统统计的有效Bug数\n公式：\n按系统统计的Bug修复率=按系统统计的已修复Bug数/按系统统计的有效Bug数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的用例总数',
-    'alias'      => '用例总数',
+    'name'       => 'Total de casos de prueba por sistema',
+    'alias'      => 'Total de casos de prueba',
     'code'       => 'count_of_case',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的用例总数是指系统或项目中的测试用例总数量。反映了一个系统或软件的功能广度和复杂性，用于评估功能完整性、需求管理、项目规模评估、测试覆盖度评估以及变更管理等方面。通过统计和跟踪用例总数，可以评估系统的功能广度和复杂性，帮助团队进行需求管理、项目规模评估、测试覆盖和变更管理，从而提高系统的开发效率和质量。',
+    'desc'       => 'El total de casos de prueba por sistema es la cantidad total de casos de prueba del sistema o proyecto. Refleja la amplitud funcional y la complejidad de un sistema o software y sirve para evaluar la completitud funcional, la gestión de requerimientos, la evaluación del tamaño del proyecto, la evaluación de la cobertura de pruebas y la gestión de cambios. Al contabilizar y dar seguimiento al total de casos de prueba, se puede evaluar la amplitud funcional y la complejidad del sistema y ayudar al equipo con la gestión de requerimientos, la evaluación del tamaño del proyecto, la cobertura de pruebas y la gestión de cambios, mejorando así la eficiencia de desarrollo y la calidad del sistema.',
     'definition' => "所有用例个数求和\n过滤已删除的用例\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增用例数',
-    'alias'      => '新增用例数',
+    'name'       => 'Casos de prueba nuevos en el año por sistema',
+    'alias'      => 'Casos de prueba nuevos',
     'code'       => 'count_of_annual_created_case',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增用例数是指在一年内新增的测试用例数量。统计年度新增用例数可以帮助评估系统或项目在不同阶段的测试覆盖和测试深度。年度新增用例数的增加可能意味着对新功能和需求进行了更充分的测试。',
+    'desc'       => 'Los casos de prueba nuevos en el año por sistema son la cantidad de casos de prueba agregados en un año. Contabilizar los casos de prueba nuevos en el año ayuda a evaluar la cobertura y la profundidad de las pruebas del sistema o proyecto en distintas etapas. Un aumento de los casos de prueba nuevos en el año puede significar que las nuevas funcionalidades y requerimientos se probaron más a fondo.',
     'definition' => "所有用例个数求和\n创建时间在某年\n过滤已删除的用例\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每日执行用例次数',
-    'alias'      => '执行用例次数',
+    'name'       => 'Ejecuciones de casos de prueba por día por sistema',
+    'alias'      => 'Ejecuciones de casos de prueba',
     'code'       => 'count_of_daily_run_case',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的每日执行用例次数表示组织每日执行的用例次数，这个度量项可以反映测试团队每日的工作效率和进展情况。',
+    'desc'       => 'Las ejecuciones de casos de prueba por día por sistema indican la cantidad de veces que la organización ejecuta casos de prueba cada día. Esta métrica puede reflejar la eficiencia de trabajo y el avance diarios del equipo de pruebas.',
     'definition' => "所有用例的执行次数求和\n过滤已删除的用例\n过滤已删除的产品\n执行时间为某日"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的用户总数',
-    'alias'      => '用户总数',
+    'name'       => 'Total de usuarios por sistema',
+    'alias'      => 'Total de usuarios',
     'code'       => 'count_of_user',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'user',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的人员总数是指在项目或系统中参与开发和管理的人员总数。反映了系统的用户基础和用户规模，用于评估组织内部资源、增长趋势等方面的有用信息。这对于组织发展、内部管理和战略决策具有重要意义。',
+    'desc'       => 'El total de personas por sistema es la cantidad total de personas que participan en el desarrollo y la gestión del proyecto o sistema. Refleja la base de usuarios y la escala de usuarios del sistema, y es información útil para evaluar los recursos internos de la organización, las tendencias de crecimiento y otros aspectos. Es importante para el desarrollo de la organización, la gestión interna y las decisiones estratégicas.',
     'definition' => "系统所有用户个数求和\n过滤已删除的用户"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度添加用户数',
-    'alias'      => '添加用户数',
+    'name'       => 'Usuarios agregados en el año por sistema',
+    'alias'      => 'Usuarios agregados',
     'code'       => 'count_of_annual_created_user',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'user',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增人员数是指在一年内新增加到项目或系统中的人员数量。反映了系统或平台在一年内新增用户数量的指标，用于评估团队扩充和人员流动情况。年度新增人员数的增加可能意味着团队的增加或项目的扩大。',
+    'desc'       => 'Las personas nuevas en el año por sistema son la cantidad de personas agregadas al proyecto o sistema durante un año. Es un indicador de la cantidad de usuarios nuevos que el sistema o la plataforma suma en un año y sirve para evaluar la ampliación del equipo y la rotación de personal. Un aumento de las personas nuevas en el año puede significar un crecimiento del equipo o una ampliación del proyecto.',
     'definition' => "系统所有用户个数求和\n添加时间为某年"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度日志记录的工时总数',
-    'alias'      => '日志记录的工时总数',
+    'name'       => 'Total de horas de trabajo registradas por año por sistema',
+    'alias'      => 'Total de horas de trabajo registradas',
     'code'       => 'hour_of_annual_effort',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'effort',
     'unit'       => 'hour',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度日志记录的工时总数是指组织在某年度实际花费的总工时数。该度量项可以用来评估组织的工时投入情况和对资源的利用效率。较高的消耗工时数可能需要审查工作流程和资源分配，以提高工作效率和进度控制。',
+    'desc'       => 'El total de horas de trabajo registradas por año por sistema es el número total de horas que la organización dedicó realmente en un año. Esta métrica sirve para evaluar la inversión de horas y la eficiencia en el uso de recursos. Un número alto de horas consumidas puede requerir revisar los flujos de trabajo y la asignación de recursos para mejorar la eficiencia y el control del avance.',
     'definition' => "所有日志记录的工时之和\n记录时间在某年"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度投入总人天',
-    'alias'      => '投入总人天',
+    'name'       => 'Total de días-persona invertidos por año por sistema',
+    'alias'      => 'Total de días-persona invertidos',
     'code'       => 'day_of_annual_effort',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'effort',
     'unit'       => 'manday',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度投入总人天是指团队总共投入的工作天数。该度量项可以用来评估人力资源投入情况。投入总人天的增加可能意味着项目投入的工作时间和资源的增加。',
+    'desc'       => 'El total de días-persona invertidos por año por sistema es el total de días de trabajo que el equipo ha invertido. Esta métrica sirve para evaluar la inversión de recursos humanos. Un aumento en el total de días-persona puede indicar un incremento en el tiempo de trabajo y los recursos invertidos en los proyectos.',
     'definition' => "复用：\n按系统统计的年度日志记录的工时总数\n公式：\n按系统统计的年度投入总人天=按系统统计的年度日志记录的工时总数/后台配置的每日可用工时"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每日投入总人天',
-    'alias'      => '投入总人天',
+    'name'       => 'Total de días-persona invertidos por día por sistema',
+    'alias'      => 'Total de días-persona invertidos',
     'code'       => 'day_of_daily_effort',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'effort',
     'unit'       => 'manday',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的每日投入总人天是指团队每日投入的工作量。该度量项可以用来评估每日人力资源投入情况。',
+    'desc'       => 'El total de días-persona invertidos por día por sistema es la carga de trabajo que el equipo invierte cada día. Esta métrica sirve para evaluar la inversión diaria de recursos humanos.',
     'definition' => "复用：\n按系统统计的每日日志记录的工时总数\n公式：\n按系统统计的每日投入总人天=按系统统计的每日日志记录的工时总数/后台配置的每日可用工时"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的每日日志记录的工时总数',
-    'alias'      => '日志记录的工时总数',
+    'name'       => 'Total de horas de trabajo registradas por día por sistema',
+    'alias'      => 'Total de horas de trabajo registradas',
     'code'       => 'hour_of_daily_effort',
     'purpose'    => 'hour',
     'scope'      => 'system',
     'object'     => 'effort',
     'unit'       => 'hour',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的每日日志记录的工时总数是指组织每日实际花费的总工时数。该度量项可以用来评估组织的工时投入情况和对资源的利用效率。较高的消耗工时数可能需要审查工作流程和资源分配，以提高工作效率和进度控制。',
+    'desc'       => 'El total de horas de trabajo registradas por día por sistema es el número total de horas que la organización dedica realmente cada día. Esta métrica sirve para evaluar la inversión de horas y la eficiencia en el uso de recursos. Un número alto de horas consumidas puede requerir revisar los flujos de trabajo y la asignación de recursos para mejorar la eficiencia y el control del avance.',
     'definition' => "所有日志记录的工时之和\n记录时间在某日"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的文档总数',
-    'alias'      => '文档总数',
+    'name'       => 'Total de documentos por sistema',
+    'alias'      => 'Total de documentos',
     'code'       => 'count_of_doc',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'doc',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的文档总数是指系统或组织中存在的所有文档数量的统计值。反映了整体文档管理的规模和复杂度。文档总数越大，代表着组织的信息量越丰富，也可能意味着需要更多的资源来维护和管理这些文档。',
+    'desc'       => 'El total de documentos por sistema es el valor estadístico de la cantidad de todos los documentos que existen en el sistema o la organización. Refleja la escala y la complejidad de la gestión documental. Cuanto mayor es el total de documentos, más rica es la información de la organización, y también puede implicar que se necesitan más recursos para mantener y gestionar estos documentos.',
     'definition' => "所有文档个数求和\n过滤已删除的文档"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增文档个数',
-    'alias'      => '新增文档个数',
+    'name'       => 'Documentos nuevos por año por sistema',
+    'alias'      => 'Documentos nuevos',
     'code'       => 'count_of_annual_created_doc',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'doc',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增文档个数是指在某年度系统或组织中新建的文档数量。反映了组织中信息产生的速度和增长的趋势。年度新增文档个数越大，说明组织的信息需求和创造力较强，也可能需要投入更多的资源来管理和维护这些新增文档。该度量项还可以用于评估组织的创新能力和知识管理水平。',
+    'desc'       => 'Los documentos nuevos por año por sistema son la cantidad de documentos creados en el sistema o la organización durante un año. Refleja la velocidad de generación de información y la tendencia de crecimiento de la organización. Cuanto mayor es el número de documentos nuevos al año, más fuertes son la necesidad de información y la creatividad de la organización, y también puede ser necesario invertir más recursos para gestionar y mantener estos documentos. Esta métrica también puede usarse para evaluar la capacidad de innovación y el nivel de gestión del conocimiento de la organización.',
     'definition' => "所有文档个数求和\n创建时间为某年\n过滤已删除的文档"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的反馈总数',
-    'alias'      => '反馈总数',
+    'name'       => 'Total de retroalimentaciones por sistema',
+    'alias'      => 'Total de retroalimentaciones',
     'code'       => 'count_of_feedback',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的反馈总数是指收集到的所有用户反馈的数量。这个度量项可以帮助团队了解用户对产品的关注点和问题，并作为改进产品质量和用户满意度的依据。较高的反馈总数可能暗示着用户的活跃度和关注度较高，需要团队及时响应和处理，同时暗示产品问题可能有很多。',
+    'desc'       => 'El total de retroalimentaciones por sistema es la cantidad de toda la retroalimentación de usuarios recopilada. Esta métrica ayuda al equipo a conocer las preocupaciones y problemas de los usuarios con el producto, y sirve de base para mejorar la calidad del producto y la satisfacción de los usuarios. Un total alto de retroalimentaciones puede indicar una mayor actividad e interés de los usuarios, que requiere respuesta y atención oportunas del equipo, y también puede sugerir que el producto tiene muchos problemas.',
     'definition' => "所有的反馈个数求和\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的已关闭反馈数',
-    'alias'      => '已关闭反馈数',
+    'name'       => 'Retroalimentaciones cerradas por sistema',
+    'alias'      => 'Retroalimentaciones cerradas',
     'code'       => 'count_of_closed_feedback',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的已关闭反馈数是指已经处理完毕并关闭的用户反馈的数量。这个度量项可以反映团队对用户反馈的关注度和处理效率。较高的已关闭反馈总数可能意味着团队能够及时响应用户反馈，并持续改进产品以解决用户问题。',
+    'desc'       => 'Las retroalimentaciones cerradas por sistema son la cantidad de retroalimentaciones de usuarios que ya se atendieron y se cerraron. Esta métrica refleja la atención del equipo a la retroalimentación de los usuarios y su eficiencia de atención. Un total alto de retroalimentaciones cerradas puede indicar que el equipo responde oportunamente a la retroalimentación y mejora continuamente el producto para resolver los problemas de los usuarios.',
     'definition' => "所有的反馈个数求和\n状态为已关闭\n过滤已删除的反馈"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度新增反馈数',
-    'alias'      => '新增反馈数',
+    'name'       => 'Retroalimentaciones nuevas por año por sistema',
+    'alias'      => 'Retroalimentaciones nuevas',
     'code'       => 'count_of_annual_created_feedback',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度新增反馈数是指在某年度收集到的用户反馈的数量。这个度量项可以帮助团队了解用户对产品的发展趋势和需求变化，并进行产品策略的调整和优化。较高的年度新增反馈数可能暗示着产品的用户基础扩大或者功能迭代带来了更多用户参与。',
+    'desc'       => 'Las retroalimentaciones nuevas por año por sistema son la cantidad de retroalimentaciones de usuarios recopiladas durante un año. Esta métrica ayuda al equipo a conocer la tendencia de desarrollo del producto y los cambios en las necesidades de los usuarios, y a ajustar y optimizar la estrategia del producto. Un número alto de retroalimentaciones nuevas al año puede indicar que la base de usuarios del producto creció o que las iteraciones de funcionalidades atrajeron más participación de usuarios.',
     'definition' => "所有的反馈个数求和\n创建时间为某年\n过滤已删除的反馈"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的年度关闭反馈数',
-    'alias'      => '关闭反馈数',
+    'name'       => 'Retroalimentaciones cerradas por año por sistema',
+    'alias'      => 'Retroalimentaciones cerradas',
     'code'       => 'count_of_annual_closed_feedback',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按系统统计的年度关闭反馈数是指在某年度处理并关闭的用户反馈的数量。这个度量项可以帮助团队评估在某年度对用户反馈的响应能力和问题解决能力。较高的年度关闭反馈数可能暗示着团队能够高效地解决用户反馈并持续改进产品，提升用户满意度和产品质量。',
+    'desc'       => 'Las retroalimentaciones cerradas por año por sistema son la cantidad de retroalimentaciones de usuarios atendidas y cerradas durante un año. Esta métrica ayuda al equipo a evaluar su capacidad de respuesta y de resolución de problemas ante la retroalimentación de los usuarios en un año. Un número alto de retroalimentaciones cerradas al año puede indicar que el equipo resuelve la retroalimentación de manera eficiente y mejora continuamente el producto, elevando la satisfacción de los usuarios y la calidad del producto.',
     'definition' => "所有的反馈个数求和\n关闭时间为某年\n过滤已删除的反馈"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的代码库总数',
-    'alias'      => '代码库总数',
+    'name'       => 'Total de repositorios por sistema',
+    'alias'      => 'Total de repositorios',
     'code'       => 'count_of_codebase',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'code',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的代码库总数是指整个研发团队中维护的所有代码库的总数量。通过统计代码库总数可以了解团队的代码库规模和复杂性。',
-    'definition' => "所有代码库的个数求和，不统计已删除xxxxx"
+    'desc'       => 'El total de repositorios por sistema es la cantidad total de repositorios de código que mantiene todo el equipo de desarrollo. Al contar el total de repositorios se puede conocer la escala y la complejidad de los repositorios del equipo.',
+    'definition' => "Suma de la cantidad de todos los repositorios, sin contar los eliminados"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计流水线总数',
-    'alias'      => '流水线总数',
+    'name'       => 'Total de pipelines por sistema',
+    'alias'      => 'Total de pipelines',
     'code'       => 'count_of_pipeline',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'pipeline',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的流水线总数是指系统中所有流水线的数量统计，它反映了项目或组织在软件开发和交付过程中采用自动化流程的程度。',
+    'desc'       => 'El total de pipelines por sistema es el conteo de todos los pipelines del sistema; refleja el grado en que el proyecto o la organización adopta procesos automatizados en el desarrollo y la entrega de software.',
     'definition' => "所有流水线的个数求和\n不统计已删除"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的流水线执行数',
-    'alias'      => '系统流水线执行数',
+    'name'       => 'Ejecuciones de pipeline por sistema',
+    'alias'      => 'Ejecuciones de pipeline del sistema',
     'code'       => 'count_of_compile_pipeline',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'pipeline',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的流水线执行数是指在一定时间内的流水线执行的数量，反映了团队的开发效率和响应能力。较高的流水线执行数通常意味着团队能够快速地将代码变更集成到主分支，并及时交付新功能或修复。监控这一指标有助于团队优化开发流程，确保高效、稳定的交付。',
+    'desc'       => 'Las ejecuciones de pipeline por sistema son la cantidad de ejecuciones de pipeline en un período determinado; reflejan la eficiencia de desarrollo y la capacidad de respuesta del equipo. Un número alto de ejecuciones de pipeline suele indicar que el equipo puede integrar rápidamente los cambios de código en la rama principal y entregar oportunamente nuevas funcionalidades o correcciones. Monitorear esta métrica ayuda al equipo a optimizar el proceso de desarrollo y a asegurar entregas eficientes y estables.',
     'definition' => "系统的流水线执行数量\n不统计已删除代码库\n不统计已删除流水线"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的流水线执行平均耗时',
-    'alias'      => '系统流水线执行平均耗时',
+    'name'       => 'Duración promedio de ejecución de pipeline por sistema',
+    'alias'      => 'Duración promedio de ejecución de pipeline del sistema',
     'code'       => 'avg_of_compile_time_pipeline',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'pipeline',
     'unit'       => 'hour',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的流水线执行平均耗时是指在一定时间内的流水线执行时间/执行的数量，通过统计在一定时间范围内每次流水线执行的耗时，并计算出平均值，团队能够深入了解构建和部署过程的性能，及时识别潜在的瓶颈并优化工作流程。',
+    'desc'       => 'La duración promedio de ejecución de pipeline por sistema es el tiempo de ejecución de los pipelines en un período determinado / la cantidad de ejecuciones. Al contar la duración de cada ejecución de pipeline en un rango de tiempo y calcular el promedio, el equipo puede conocer a fondo el rendimiento de los procesos de construcción y despliegue, identificar oportunamente posibles cuellos de botella y optimizar el flujo de trabajo.',
     'definition' => "系统的流水线执行时间/执行数量\n不统计已删除流水线"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计的流水线执行成功率',
-    'alias'      => '系统流水线执行成功率',
+    'name'       => 'Tasa de éxito de ejecución de pipeline por sistema',
+    'alias'      => 'Tasa de éxito de ejecución de pipeline del sistema',
     'code'       => 'rate_of_success_pipeline',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'pipeline',
     'unit'       => 'percentage',
     'dateType'   => 'day',
-    'desc'       => '按系统统计的流水线执行成功率是指在一定时间内的流水线执行成功数量/流水线执行数量，反映了自动化构建和部署过程的稳定性与可靠性。',
+    'desc'       => 'La tasa de éxito de ejecución de pipeline por sistema es la cantidad de ejecuciones de pipeline exitosas en un período determinado / la cantidad de ejecuciones de pipeline; refleja la estabilidad y la confiabilidad de los procesos automatizados de construcción y despliegue.',
     'definition' => "系统的流水线执行成功数量/流水线执行数量\n不统计已删除代码库\n不统计已删除流水线"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计制品库总数',
-    'alias'      => '制品库总数',
+    'name'       => 'Total de repositorios de artefactos por sistema',
+    'alias'      => 'Total de repositorios de artefactos',
     'code'       => 'count_of_artifactrepo',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'artifact',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的制品库总数是指统计所有产品的制品库总数，它反映了研发团队所管理的制品数量。该度量项可以帮助团队可以评估制品管理的复杂性和效率，并根据需要进行合理的优化和调整。',
+    'desc'       => 'El total de repositorios de artefactos por sistema es el conteo del total de repositorios de artefactos de todos los productos; refleja la cantidad de artefactos que administra el equipo de desarrollo. Esta métrica ayuda al equipo a evaluar la complejidad y la eficiencia de la gestión de artefactos y a optimizar y ajustar según sea necesario.',
     'definition' => "所有制品库的个数求和\n不统计已删除"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计节点总数',
-    'alias'      => '节点总数',
+    'name'       => 'Total de nodos por sistema',
+    'alias'      => 'Total de nodos',
     'code'       => 'count_of_node',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'node',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的节点总数是指在禅道DevOps平台中使用的全部节点总数。',
-    'definition' => "所有节点的个数求和"
+    'desc'       => 'El total de nodos por sistema es la cantidad total de nodos utilizados en la plataforma ZenTao DevOps.',
+    'definition' => "Suma de la cantidad de todos los nodos"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计应用总数',
-    'alias'      => '应用总数',
+    'name'       => 'Total de aplicaciones por sistema',
+    'alias'      => 'Total de aplicaciones',
     'code'       => 'count_of_application',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'application',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的应用总数是指在禅道DevOps平台中使用的全部应用总数。',
-    'definition' => "所有安装的应用个数求和"
+    'desc'       => 'El total de aplicaciones por sistema es la cantidad total de aplicaciones utilizadas en la plataforma ZenTao DevOps.',
+    'definition' => "Suma de la cantidad de todas las aplicaciones instaladas"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计代码库待处理问题总数',
-    'alias'      => '代码库待处理问题数',
+    'name'       => 'Total de incidencias pendientes de repositorios por sistema',
+    'alias'      => 'Incidencias pendientes de repositorios',
     'code'       => 'count_of_pending_issue',
     'purpose'    => 'qc',
     'scope'      => 'system',
     'object'     => 'codebase',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '系统统计的代码库待处理问题总数是指所有代码库中尚未解决的问题数量的统计，它反映了代码库的健康状况和存在的潜在问题数量，通过对问题总数的监控和分析，可以及时发现并解决和解决问题，提高软件开发过程的效率和质量。',
+    'desc'       => 'El total de incidencias pendientes de repositorios por sistema es el conteo de problemas aún sin resolver en todos los repositorios; refleja el estado de salud de los repositorios y la cantidad de posibles problemas existentes. Al monitorear y analizar el total de incidencias se pueden detectar y resolver oportunamente los problemas, mejorando la eficiencia y la calidad del proceso de desarrollo de software.',
     'definition' => "所有代码库的未关闭代码问题个数求和\n不统计删除的问题\n不统计删除的代码库里的问题"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计代码库中待处理的合并请求总数',
-    'alias'      => '代码库中待处理的合并请求数',
+    'name'       => 'Total de solicitudes de fusión pendientes en repositorios por sistema',
+    'alias'      => 'Solicitudes de fusión pendientes en repositorios',
     'code'       => 'count_of_pending_mergeRequest',
     'purpose'    => 'qc',
     'scope'      => 'system',
     'object'     => 'codebase',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '系统统计的待处理的合并请求总数是指代码库中等待合并的合并请求总数量，它反映了团队在合并代码方面的效率和进展情况，高数量可能意味着合并困难、合并冲突多、代码质量低等问题存在，需及时关注和处理以提升研发效能。',
+    'desc'       => 'El total de solicitudes de fusión pendientes por sistema es la cantidad total de solicitudes de fusión que esperan ser fusionadas en los repositorios; refleja la eficiencia y el avance del equipo en la fusión de código. Una cantidad alta puede indicar dificultades de fusión, muchos conflictos de fusión, baja calidad del código, etc.; se debe prestar atención y atender oportunamente para mejorar la eficiencia del desarrollo.',
     'definition' => "所有代码库的未关闭的合并请求个数求和 \n不统计已删除的合并请求\n不统计已删除代码库里的合并请求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的计划总数',
-    'alias'      => '计划总数',
+    'name'       => 'Total de planes por producto',
+    'alias'      => 'Total de planes',
     'code'       => 'count_of_productplan_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的计划总数是指产品团队创建的所有计划数量。这个度量项可以反映产品团队的规划能力。适当的计划数量可以促进团队高效完成需求。',
+    'desc'       => 'El total de planes por producto es la cantidad de todos los planes creados por el equipo de producto. Esta métrica puede reflejar la capacidad de planificación del equipo de producto. Una cantidad adecuada de planes puede ayudar al equipo a completar los requerimientos de manera eficiente.',
     'definition' => "产品中计划的个数求和\n过滤已删除的计划\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增计划数',
-    'alias'      => '新增计划数',
+    'name'       => 'Planes nuevos por año por producto',
+    'alias'      => 'Planes nuevos',
     'code'       => 'count_of_annual_created_productplan_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增计划数是指某年度产品团队新创建的计划数量。这个度量项可以反映产品团队对于新需求的接收能力和规模的扩展。新增计划数越多，说明产品团队在该年度内面临着更多的新挑战和需求。',
+    'desc'       => 'Los planes nuevos por año por producto son la cantidad de planes recién creados por el equipo de producto en un año. Esta métrica puede reflejar la capacidad del equipo de producto para recibir nuevos requerimientos y la expansión de su escala. Cuantos más planes nuevos, más nuevos retos y requerimientos enfrentó el equipo de producto durante ese año.',
     'definition' => "产品中创建时间为某年的计划个数求和\n过滤已删除的计划\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度完成计划数',
-    'alias'      => '完成计划数',
+    'name'       => 'Planes completados por año por producto',
+    'alias'      => 'Planes completados',
     'code'       => 'count_of_annual_finished_productplan_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'productplan',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度完成计划数是指某年度产品团队实际完成的计划数量。这个度量项可以反映产品团队在规划和执行过程中的效率和执行能力。完成计划数越多，说明产品团队在该年度内可能取得了更多的成果和交付物。',
+    'desc'       => 'Los planes completados por año por producto son la cantidad de planes que el equipo de producto realmente completó en un año. Esta métrica puede reflejar la eficiencia y la capacidad de ejecución del equipo de producto en la planificación y la ejecución. Cuantos más planes completados, más resultados y entregables pudo haber logrado el equipo de producto durante ese año.',
     'definition' => "产品中计划个数求和\n完成时间为某年\n过滤已删除的计划\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的发布总数',
-    'alias'      => '发布总数',
+    'name'       => 'Total de lanzamientos por producto',
+    'alias'      => 'Total de lanzamientos',
     'code'       => 'count_of_release_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的发布总数是指产品中所有发布的数量。这个度量项可以反映产品团队对产品发布的频率和稳定性的掌控程度。发布总数越多，说明产品团队有更多的迭代和产品版本更新。',
+    'desc'       => 'El total de lanzamientos por producto es la cantidad de todos los lanzamientos del producto. Esta métrica puede reflejar la frecuencia de lanzamientos del producto y el grado de control de estabilidad del equipo. Cuantos más lanzamientos, más iteraciones y actualizaciones de versión tiene el producto.',
     'definition' => "产品中发布的个数求和\n过滤已删除的发布\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增发布数',
-    'alias'      => '新增发布数',
+    'name'       => 'Lanzamientos nuevos por año por producto',
+    'alias'      => 'Lanzamientos nuevos',
     'code'       => 'count_of_annual_created_release_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增发布数是指某年度产品中新增加的发布数量，该度量项可以反映产品团队在该年度内对产品新功能和改进的发布能力和速度。新增发布数越多，说明产品团队在该年度内推出了更多的新功能和改进。',
+    'desc'       => 'Los lanzamientos nuevos por año por producto son la cantidad de lanzamientos agregados al producto en un año; esta métrica puede reflejar la capacidad y la velocidad del equipo de producto para lanzar nuevas funcionalidades y mejoras durante ese año. Cuantos más lanzamientos nuevos, más nuevas funcionalidades y mejoras presentó el equipo de producto durante ese año.',
     'definition' => "产品中发布个数求和\n发布时间为某年\n过滤已删除的发布\n过滤已删除的产品\n过滤无效时间"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度新增发布数',
-    'alias'      => '新增发布数',
+    'name'       => 'Lanzamientos nuevos por mes por producto',
+    'alias'      => 'Lanzamientos nuevos',
     'code'       => 'count_of_monthly_created_release_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'release',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度新增发布数是指在某月产品中新增加的发布数量。这个度量项可以反映产品团队在该月内对新功能和改进的发布能力和速度。新增发布数越多，说明产品团队在该月内推出了更多的新功能和改进。',
+    'desc'       => 'Los lanzamientos nuevos por mes por producto son la cantidad de lanzamientos agregados al producto en un mes. Esta métrica puede reflejar la capacidad y la velocidad del equipo de producto para lanzar nuevas funcionalidades y mejoras durante ese mes. Cuantos más lanzamientos nuevos, más nuevas funcionalidades y mejoras presentó el equipo de producto durante ese mes.',
     'definition' => "产品中发布时间为某年某月的发布个数求和\n过滤已删除的发布\n过滤已删除的产品\n过滤无效时间"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发需求总数',
-    'alias'      => '研发需求总数',
+    'name'       => 'Total de Historias (SR) por producto',
+    'alias'      => 'Total de historias',
     'code'       => 'count_of_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发需求总数是指产品中创建的所有研发需求的数量。这个度量项可以反映团队需进行研发工作的规模。研发需求总数越多，可能意味着产品规模越大，面临的开发工作越多。',
+    'desc'       => 'El total de Historias (SR) por producto es la cantidad de todas las Historias creadas en el producto. Esta métrica puede reflejar la escala del trabajo de desarrollo que debe realizar el equipo. Cuanto mayor es el total de Historias, más grande puede ser el producto y más trabajo de desarrollo enfrenta.',
     'definition' => "产品中研发需求的个数求和\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已完成研发需求数',
-    'alias'      => '已完成研发需求数',
+    'name'       => 'Historias (SR) completadas por producto',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_finished_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已完成研发需求数是指状态为已关闭且关闭原因为已完成的研发需求的数量。这个度量项可以反映产品团队在开发过程中的进展和交付能力。已完成研发需求数越多，说明产品团队可能取得了更多的研发成果。',
+    'desc'       => 'Las Historias (SR) completadas por producto son la cantidad de Historias con estado cerrado y motivo de cierre completada. Esta métrica puede reflejar el avance y la capacidad de entrega del equipo de producto durante el desarrollo. Cuantas más Historias completadas, más resultados de desarrollo pudo haber logrado el equipo de producto.',
     'definition' => "产品中的研发需求个数求和\n阶段为已关闭\n关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已关闭研发需求数',
-    'alias'      => '已关闭研发需求数',
+    'name'       => 'Historias (SR) cerradas por producto',
+    'alias'      => 'Historias cerradas',
     'code'       => 'count_of_closed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已关闭研发需求数是指产品中已经关闭的研发需求的数量。该度量项反映了产品研发的进展，可以用于评估产品的研发需求管理绩效和成果。较高的已关闭研发需求数可能代表团队取得了越多的研发成果。',
+    'desc'       => 'Las Historias (SR) cerradas por producto son la cantidad de Historias que ya se cerraron en el producto. Esta métrica refleja el avance del desarrollo del producto y puede usarse para evaluar el desempeño y los resultados de la gestión de Historias del producto. Un número alto de Historias cerradas puede indicar que el equipo logró más resultados de desarrollo.',
     'definition' => "产品中研发需求的个数求和\n阶段为已关闭\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的未关闭研发需求数',
-    'alias'      => '未关闭研发需求数',
+    'name'       => 'Historias (SR) no cerradas por producto',
+    'alias'      => 'Historias sin cerrar',
     'code'       => 'count_of_unclosed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的未关闭研发需求数是指产品中未关闭的研发需求的数量。这个度量项可以反映产品团队研发需求的开发进度。未关闭研发需求数越多，说明产品团队的开发工作还有一定的进行中，并需要进一步跟进和完成。',
+    'desc'       => 'Las Historias (SR) no cerradas por producto son la cantidad de Historias que no se han cerrado en el producto. Esta métrica puede reflejar el avance del desarrollo de las Historias del equipo de producto. Cuantas más Historias no cerradas, más trabajo de desarrollo sigue en curso y requiere seguimiento adicional hasta completarse.',
     'definition' => "复用：\n按产品统计的研发需求总数\n按产品统计的已关闭研发需求数\n按产品统计的关闭研发需求总数=按产品统计的研发需求总数-按产品统计的已关闭研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已交付研发需求数',
-    'alias'      => '已交付研发需求数',
+    'name'       => 'Historias (SR) entregadas por producto',
+    'alias'      => 'Historias entregadas',
     'code'       => 'count_of_delivered_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已交付研发需求数表示已交付给用户的研发需求的数量。该度量项反映了产品中已发布或关闭原因为已完成的研发需求的数量，可以用于评估产品的研发需求交付能力。',
+    'desc'       => 'Las Historias (SR) entregadas por producto indican la cantidad de Historias que ya se entregaron a los usuarios. Esta métrica refleja la cantidad de Historias del producto que fueron lanzadas o cuyo motivo de cierre es completada, y puede usarse para evaluar la capacidad de entrega de Historias del producto.',
     'definition' => "产品中研发需求个数求和\n所处阶段为已发布或关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的无效研发需求数',
-    'alias'      => '无效研发需求数',
+    'name'       => 'Historias (SR) inválidas por producto',
+    'alias'      => 'Historias inválidas',
     'code'       => 'count_of_invalid_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的无效研发需求数是指产品中被判定为无效的研发需求的数量。这个度量项可以反映产品团队进行需求管理的有效性和能力。无效研发需求数越多，可能说明产品团队在需求管理中的团队协作能力较弱或对产品理解有偏差等。',
+    'desc'       => 'Las Historias (SR) inválidas por producto son la cantidad de Historias del producto que fueron juzgadas como inválidas. Esta métrica puede reflejar la efectividad y la capacidad del equipo de producto en la gestión de requerimientos. Cuantas más Historias inválidas, puede indicar que el equipo de producto tiene una colaboración débil en la gestión de requerimientos o que existen desviaciones en la comprensión del producto, entre otros.',
     'definition' => "产品中研发需求个数求和\n关闭原因为重复、不做、设计如此和已取消\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的有效研发需求数',
-    'alias'      => '有效研发需求数',
+    'name'       => 'Historias (SR) válidas por producto',
+    'alias'      => 'Historias válidas',
     'code'       => 'count_of_valid_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的有效研发需求数是指在在产品中被确认为有效的研发需求数量。有效需求指的是符合产品策略和目标，可以实施并且对用户有价值的需求。较高的有效研发需求数通常表示产品的功能和特性满足了用户和市场的期望，有利于实现产品的成功交付和用户满意度。',
+    'desc'       => 'Las Historias (SR) válidas por producto son la cantidad de Historias confirmadas como válidas en el producto. Un requerimiento válido es el que se ajusta a la estrategia y los objetivos del producto, puede implementarse y tiene valor para los usuarios. Un número alto de Historias válidas suele indicar que las funcionalidades y características del producto cumplen las expectativas de los usuarios y del mercado, lo que favorece una entrega exitosa y la satisfacción de los usuarios.',
     'definition' => "复用：\n按产品统计的研发需求总数\n按产品统计的无效研发需求数\n公式：\n按产品统计的有效研发需求数=按产品统计的研发需求总数-按产品统计的无效研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发完毕的研发需求数',
-    'alias'      => '研发完毕的研发需求数',
+    'name'       => 'Historias (SR) con desarrollo finalizado por producto',
+    'alias'      => 'Historias (SR) con desarrollo finalizado',
     'code'       => 'count_of_developed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发完毕的研发需求数是指产品中阶段为研发完毕及以后的研发需求的数量。这个度量项可以反映产品在研发过程中的进展和成就。研发完毕的研发需求数越多，说明产品取得了更多的研发成果。',
+    'desc'       => 'Las Historias (SR) con desarrollo finalizado por producto son la cantidad de Historias del producto cuya etapa es desarrollo finalizado o posterior. Esta métrica puede reflejar el avance y los logros del producto en el proceso de desarrollo. Cuantas más Historias con desarrollo finalizado, más resultados de desarrollo ha logrado el producto.',
     'definition' => "产品中研发需求个数求和\n阶段为（研发完毕、测试中、测试完毕、已验收、已发布）或关闭原因为已完成的\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发完毕的研发需求规模数',
-    'alias'      => '研发完毕的研发需求规模数',
+    'name'       => 'Tamaño de Historias (SR) con desarrollo finalizado por producto',
+    'alias'      => 'Tamaño de Historias (SR) con desarrollo finalizado',
     'code'       => 'scale_of_developed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发完毕的研发需求规模数是指产品中阶段为研发完毕及以后的研发需求的规模。这个度量项可以反映产品在研发过程中的进展和成就。研发完毕的研发需求规模数越多，说明产品取得了更多的研发成果。',
+    'desc'       => 'El tamaño de Historias (SR) con desarrollo finalizado por producto es el tamaño de las Historias del producto cuya etapa es desarrollo finalizado o posterior. Esta métrica puede reflejar el avance y los logros del producto en el proceso de desarrollo. Cuanto mayor es el tamaño de Historias con desarrollo finalizado, más resultados de desarrollo ha logrado el producto.',
     'definition' => "产品中研发需求规模数求和\n阶段为（研发完毕、测试中、测试完毕、已验收、已发布）或关闭原因为已完成的\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已立项研发需求的用例覆盖率',
-    'alias'      => '已立项研发需求的用例覆盖率',
+    'name'       => 'Cobertura de casos de prueba de las Historias (SR) aprobadas en proyecto por producto',
+    'alias'      => 'Cobertura de casos de prueba de las Historias (SR) aprobadas en proyecto',
     'code'       => 'case_coverage_of_projected_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已立项研发需求的用例覆盖率是指产品中已立项研发需求的用例覆盖程度。用例覆盖率可以衡量产品团队对于已立项需求的测试计划和测试用例编写的完整度。较高的用例覆盖率可能表示产品团队有较完整的测试计划。',
+    'desc'       => 'La cobertura de casos de prueba de las Historias (SR) aprobadas en proyecto por producto es el grado de cobertura de casos de prueba de las Historias del producto que ya fueron aprobadas en un proyecto. La cobertura de casos de prueba permite medir qué tan completos son el plan de pruebas y la redacción de casos de prueba del equipo de producto para las Historias aprobadas. Una cobertura alta puede indicar que el equipo de producto cuenta con un plan de pruebas más completo.',
     'definition' => "复用：\n按产品统计的已立项研发需求数\n按产品统计的有用例的已立项研发需求数\n公式：\n按产品统计的已立项研发需求用例覆盖率=按产品统计的有用例的已立项研发需求数/按产品统计的已立项研发需求数\n过滤已删除的研发需求\n过滤已删除的产品\n过滤已删除的用例"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增研发需求数',
-    'alias'      => '新增研发需求数',
+    'name'       => 'Historias (SR) nuevas por año por producto',
+    'alias'      => 'Historias nuevas',
     'code'       => 'count_of_annual_created_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增研发需求数是指产品在某年度新增的研发需求数量。这个度量项可以反映产品团队在该年度内需求的增长或变化情况。',
+    'desc'       => 'Las Historias (SR) nuevas por año por producto son la cantidad de Historias agregadas al producto en un año. Esta métrica puede reflejar el crecimiento o los cambios de requerimientos del equipo de producto durante ese año.',
     'definition' => "产品中研发需求的个数求和\n创建时间为某年\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度完成研发需求数',
-    'alias'      => '完成研发需求数',
+    'name'       => 'Historias (SR) completadas por año por producto',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_annual_finished_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度完成研发需求数是指产品在某年度已关闭且关闭原因为已完成的研发需求数量。这个度量项可以反映产品团队在一年时间内的开发效率和成果。完成研发需求数量的增加说明产品团队在该年度内取得了更多的开发成果和交付物。',
+    'desc'       => 'Las Historias (SR) completadas por año por producto son la cantidad de Historias del producto con estado cerrado y motivo de cierre completada en un año. Esta métrica puede reflejar la eficiencia de desarrollo y los resultados del equipo de producto durante el año. Un aumento en las Historias completadas indica que el equipo de producto logró más resultados de desarrollo y entregables durante ese año.',
     'definition' => "产品中关闭时间在某年且关闭原因为已完成的研发需求的个数求和\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度交付研发需求数',
-    'alias'      => '交付研发需求数',
+    'name'       => 'Historias (SR) entregadas por año por producto',
+    'alias'      => 'Historias entregadas',
     'code'       => 'count_of_annual_delivered_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度交付研发需求数是指产品在某年度内已经成功交付给用户的研发需求数量。这个度量项可以反映产品团队在开发过程中的交付能力和协作能力，可以用于评估产品的研发需求交付效能和效果。已交付的研发需求数量越多可能说明产品团队在该年度内的交付成果越多。',
+    'desc'       => 'Las Historias (SR) entregadas por año por producto son la cantidad de Historias del producto que se entregaron con éxito a los usuarios durante un año. Esta métrica puede reflejar la capacidad de entrega y de colaboración del equipo de producto durante el desarrollo, y puede usarse para evaluar la eficacia y el efecto de la entrega de Historias del producto. Cuantas más Historias entregadas, más resultados de entrega pudo haber logrado el equipo de producto durante ese año.',
     'definition' => "产品中研发需求个数求和\n所处阶段为已发布且发布时间为某年或关闭原因为已完成且关闭时间为某年\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度关闭研发需求数',
-    'alias'      => '关闭研发需求数',
+    'name'       => 'Historias (SR) cerradas por año por producto',
+    'alias'      => 'Historias (SR) cerradas',
     'code'       => 'count_of_annual_closed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度关闭研发需求规模数表示产品在某年度关闭的研发需求数。该度量项反映了产品团队每年因完成、不做或取消等原因关闭的研发需求数，可以用于评估产品团队的研发需求规模管理和调整情况。',
+    'desc'       => 'El tamaño de Historias (SR) cerradas por año por producto indica la cantidad de Historias que el producto cerró en un año. Esta métrica refleja la cantidad de Historias que el equipo de producto cierra cada año por motivos como completada, no se hará o cancelada, y puede usarse para evaluar la gestión y el ajuste del tamaño de las Historias del equipo de producto.',
     'definition' => "产品中关闭时间在某年的研发需求的个数求和\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度完成研发需求数',
-    'alias'      => '完成研发需求数',
+    'name'       => 'Historias (SR) completadas por mes por producto',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_monthly_finished_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度完成研发需求数表示每月完成的研发需求的数量。该度量项反映了产品的月度研发成果，可以用于评估产品团队的研发需求完成情况和效率。',
+    'desc'       => 'Las Historias (SR) completadas por mes por producto indican la cantidad de Historias completadas cada mes. Esta métrica refleja los resultados mensuales de desarrollo del producto y puede usarse para evaluar el cumplimiento y la eficiencia del equipo de producto en las Historias.',
     'definition' => "产品中关闭时间为某年某月且关闭原因为已完成的研发需求的个数求和\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已立项研发需求数',
-    'alias'      => '已立项研发需求数',
+    'name'       => 'Historias (SR) aprobadas en proyecto por producto',
+    'alias'      => 'Historias (SR) aprobadas en proyecto',
     'code'       => 'count_of_projected_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已立项研发需求数是指产品中已关联进项目的研发需求数。该度量项表示产品中获得批准需要投入资源进行开发的需求数量。产品中较高的已立项研发需求数可能表示产品相关项目的规模越大。',
+    'desc'       => 'Las Historias (SR) aprobadas en proyecto por producto son la cantidad de Historias del producto que ya se vincularon a un proyecto. Esta métrica indica la cantidad de requerimientos del producto aprobados para invertir recursos en su desarrollo. Una cantidad alta de Historias aprobadas en proyecto puede indicar que los proyectos relacionados con el producto son de mayor escala.',
     'definition' => "产品中研发需求个数求和\n过滤已删除的产品\n过滤已删除的研发需求\n研发需求被关联进项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度交付研发需求数',
-    'alias'      => '交付研发需求数',
+    'name'       => 'Historias (SR) entregadas por mes por producto',
+    'alias'      => 'Historias entregadas',
     'code'       => 'count_of_monthly_delivered_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度交付研发需求数表示每月完成或关联到发布的研发需求的数量。该度量项反映了产品团队每月交付给用户的研发需求数量，可以用于评估产品团队的研发需求交付效能。',
+    'desc'       => 'Las Historias (SR) entregadas por mes por producto indican la cantidad de Historias completadas o vinculadas a un lanzamiento cada mes. Esta métrica refleja la cantidad de Historias que el equipo de producto entrega a los usuarios cada mes y puede usarse para evaluar la eficacia de entrega de Historias del equipo de producto.',
     'definition' => "产品中研发需求个数求和\n所处阶段为已发布且发布时间为某年某月或关闭原因为已完成且关闭时间为某年某月\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的有用例的已立项研发需求数',
-    'alias'      => '有用例的已立项研发需求数',
+    'name'       => 'Historias (SR) aprobadas en proyecto con casos de prueba por producto',
+    'alias'      => 'Historias (SR) aprobadas en proyecto con casos de prueba',
     'code'       => 'count_of_projected_story_with_case_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的有用例的已立项研发需求数是指产品中关联进项目且有用例的研发需求数量。该度量项反映了产品中对于已立项需求的测试用例编写情况。产品中较高的有用例的已立项研发需求数量可能表示需求测试用例覆盖度越高。',
+    'desc'       => 'Las Historias (SR) aprobadas en proyecto con casos de prueba por producto son la cantidad de Historias del producto vinculadas a un proyecto que tienen casos de prueba. Esta métrica refleja la situación de redacción de casos de prueba para las Historias aprobadas del producto. Una cantidad alta de Historias aprobadas con casos de prueba puede indicar una mayor cobertura de casos de prueba de los requerimientos.',
     'definition' => "产品中研发需求个数求和\n研发需求关联进项目\n过滤已删除的产品\n过滤已删除的研发需求\n过滤没有用例的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度关闭研发需求数',
-    'alias'      => '关闭研发需求数',
+    'name'       => 'Historias (SR) cerradas por mes por producto',
+    'alias'      => 'Historias (SR) cerradas',
     'code'       => 'count_of_monthly_closed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度关闭研发需求规模数表示产品在某月度关闭的研发需求数。该度量项反映了产品团队每月因完成、不做或取消等原因关闭的研发需求数，可以用于评估产品团队的研发需求规模管理和调整情况。',
+    'desc'       => 'El tamaño de Historias (SR) cerradas por mes por producto indica la cantidad de Historias que el producto cerró en un mes. Esta métrica refleja la cantidad de Historias que el equipo de producto cierra cada mes por motivos como completada, no se hará o cancelada, y puede usarse para evaluar la gestión y el ajuste del tamaño de las Historias del equipo de producto.',
     'definition' => "产品中关闭时间为某年某月的研发需求的个数求和\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度新增研发需求数',
-    'alias'      => '新增研发需求数',
+    'name'       => 'Historias (SR) nuevas por mes por producto',
+    'alias'      => 'Historias nuevas',
     'code'       => 'count_of_monthly_created_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度新增研发需求数是指在某月度新增的研发需求数量。这个度量项可以反映产品团队在该月度内需求的增长情况。月度新增研发需求数越多可能表示团队正在不断地推出新功能。',
+    'desc'       => 'Las Historias (SR) nuevas por mes por producto son la cantidad de Historias agregadas en un mes. Esta métrica puede reflejar el crecimiento de requerimientos del equipo de producto durante ese mes. Un número alto de Historias nuevas por mes puede indicar que el equipo lanza continuamente nuevas funcionalidades.',
     'definition' => "产品中研发需求的个数求和\n创建时间在某年某月\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发需求规模总数',
-    'alias'      => '研发需求规模总数',
+    'name'       => 'Tamaño total de Historias (SR) por producto',
+    'alias'      => 'Total del tamaño de historias',
     'code'       => 'scale_of_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发需求规模总数表示产品中所有研发需求的总规模。这个度量项可以反映团队需进行研发工作的规模，可以用于评估产品团队的研发需求规模管理和成果。',
+    'desc'       => 'El tamaño total de Historias (SR) por producto indica el tamaño total de todas las Historias del producto. Esta métrica puede reflejar la escala del trabajo de desarrollo que debe realizar el equipo y puede usarse para evaluar la gestión del tamaño de las Historias y los resultados del equipo de producto.',
     'definition' => "产品中研发需求的规模数求和\n过滤父研发需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度完成研发需求规模数',
-    'alias'      => '完成研发需求规模数',
+    'name'       => 'Tamaño de Historias (SR) completadas por año por producto',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_annual_finished_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度完成研发需求规模数是指产品在某年度已关闭且关闭原因为已完成研发需求的总规模数。这个度量项可以反映产品团队在一年时间内的开发效率和成果。完成研发需求规模数的增加说明产品团队在该年度内取得了更多的开发成果和交付物。',
+    'desc'       => 'El tamaño de Historias (SR) completadas por año por producto es el tamaño total de las Historias del producto con estado cerrado y motivo de cierre completada en un año. Esta métrica puede reflejar la eficiencia de desarrollo y los resultados del equipo de producto durante el año. Un aumento en el tamaño de Historias completadas indica que el equipo de producto logró más resultados de desarrollo y entregables durante ese año.',
     'definition' => "产品中研发需求的规模数求和\n关闭时间在某年\n关闭原因为已完成\n过滤父研发需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度交付研发需求规模数',
-    'alias'      => '交付研发需求规模数',
+    'name'       => 'Tamaño de Historias (SR) entregadas por año por producto',
+    'alias'      => 'Tamaño de historias entregadas',
     'code'       => 'scale_of_annual_delivered_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度交付研发需求数是指产品在某年度内已经成功交付给用户的研发需求规模数。这个度量项可以反映产品团队在开发过程中的交付能力和协作能力，可以用于评估产品的研发需求交付效能和效果。已交付的研发需求规模数越多可能说明产品团队在该年度内的交付成果越多。',
+    'desc'       => 'El tamaño de Historias (SR) entregadas por año por producto es el tamaño de las Historias del producto que se entregaron con éxito a los usuarios durante un año. Esta métrica puede reflejar la capacidad de entrega y de colaboración del equipo de producto durante el desarrollo, y puede usarse para evaluar la eficacia y el efecto de la entrega de Historias del producto. Cuanto mayor es el tamaño de Historias entregadas, más resultados de entrega pudo haber logrado el equipo de producto durante ese año.',
     'definition' => "产品中研发需求规模数求和\n所处阶段为已发布且发布时间为某年某月或关闭原因为已完成且关闭时间为某年某月\n过滤父研发需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度关闭研发需求规模数',
-    'alias'      => '关闭研发需求规模数',
+    'name'       => 'Tamaño de Historias (SR) cerradas por año por producto',
+    'alias'      => 'Tamaño de historias cerradas',
     'code'       => 'scale_of_annual_closed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度关闭研发需求规模数表示产品在某年度关闭的研发需求的规模总数。该度量项反映了产品团队每年因完成、不做或取消等原因关闭研发需求数的规模总数，可以用于评估产品的团队研发需求规模管理和调整情况。',
+    'desc'       => 'El tamaño de Historias (SR) cerradas por año por producto indica el tamaño total de las Historias que el producto cerró en un año. Esta métrica refleja el tamaño total de las Historias que el equipo de producto cierra cada año por motivos como completada, no se hará o cancelada, y puede usarse para evaluar la gestión y el ajuste del tamaño de las Historias del equipo del producto.',
     'definition' => "产品中研发需求的规模数求和\n关闭时间在某年\n过滤父研发需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度完成研发需求规模数',
-    'alias'      => '完成研发需求规模数',
+    'name'       => 'Tamaño de Historias (SR) completadas por mes por producto',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_monthly_finished_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度完成研发需求规模数表示每月完成的研发需求的规模。该度量项反映了产品团队每月完成的研发需求规模，可以用于评估产品团队的研发需求完成情况和效率。',
+    'desc'       => 'El tamaño de Historias (SR) completadas por mes por producto indica el tamaño de las Historias completadas cada mes. Esta métrica refleja el tamaño de las Historias que el equipo de producto completa cada mes y puede usarse para evaluar el cumplimiento y la eficiencia del equipo de producto en las Historias.',
     'definition' => "产品中关闭时间为某年某月且关闭原因为已完成的研发需求的规模数求和\n过滤父需求\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发需求评审通过率',
-    'alias'      => '研发需求评审通过率',
+    'name'       => 'Tasa de aprobación de revisión de Historias (SR) por producto',
+    'alias'      => 'Tasa de aprobación de revisión de Historias (SR)',
     'code'       => 'rate_of_approved_story_in_product',
     'purpose'    => 'qc',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发需求评审通过率表示产品中通过评审的研发需求（不需要评审研发需求的与需要评审并通过的研发需求）相对于评审过的研发需求（不需要评审的研发需求与有评审结果的研发需求数）的比例。该度量项反映了需求评审过程中的成功率。',
+    'desc'       => 'La tasa de aprobación de revisión de Historias (SR) por producto indica la proporción de Historias del producto que pasaron la revisión (las que no requieren revisión más las que requieren revisión y la aprobaron) respecto a las Historias revisadas (las que no requieren revisión más las que tienen resultado de revisión). Esta métrica refleja la tasa de éxito en el proceso de revisión de requerimientos.',
     'definition' => "按产品统计的所有研发需求评审通过率=（按产品统计的不需要评审的研发需求数+评审结果确认通过的研发需求数）/（按产品统计的不需要评审的研发需求数+有评审结果的研发需求数）\n过滤已删除的研发需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发需求完成率',
-    'alias'      => '研发需求完成率',
+    'name'       => 'Tasa de finalización de Historias (SR) por producto',
+    'alias'      => 'Tasa de finalización de historias',
     'code'       => 'rate_of_finish_story_in_product',
     'purpose'    => 'rate',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发需求交付率表示按产品统计的已完成的研发需求规数相对于按产品统计的有效研发需求数。这个度量项衡量了研发团队完成需求的能力。完成率越高，代表研发团队有更多研发成果，保证产品的正常发布。',
+    'desc'       => 'La tasa de entrega de Historias (SR) por producto indica el tamaño de las Historias completadas por producto respecto a las Historias válidas por producto. Esta métrica mide la capacidad del equipo de desarrollo para completar requerimientos. Cuanto mayor es la tasa de finalización, más resultados de desarrollo tiene el equipo, lo que asegura el lanzamiento normal del producto.',
     'definition' => "复用：\n按产品统计的已完成研发需求数\n按产品统计的无效研发需求数\n按产品统计的研发需求总数\n公式：\n按产品统计的研发需求完成率=按产品统计的已完成研发需求数/（按产品统计的研发需求总数-按产品统计的无效研发需求数）*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发需求交付率',
-    'alias'      => '研发需求交付率',
+    'name'       => 'Tasa de entrega de Historias (SR) por producto',
+    'alias'      => 'Tasa de entrega de historias',
     'code'       => 'rate_of_delivery_story_in_product',
     'purpose'    => 'rate',
     'scope'      => 'product',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发需求交付率表示按产品统计的已交付的研发需求数相对于按产品统计的有效研发需求数。这个度量项衡量了产品团队按时交付需求的能力。交付率越高，代表产品团队能够将更多的需求交付给用户。',
+    'desc'       => 'La tasa de entrega de Historias (SR) por producto indica la cantidad de Historias entregadas por producto respecto a las Historias válidas por producto. Esta métrica mide la capacidad del equipo de producto para entregar requerimientos a tiempo. Cuanto mayor es la tasa de entrega, más requerimientos puede entregar el equipo de producto a los usuarios.',
     'definition' => "复用：\n按产品统计的已交付研发需求数\n按产品统计的无效研发需求数\n按产品统计的研发需求总数\n公式：\n按产品统计的研发需求完成率=按产品统计的已交付研发需求数/（按产品统计的研发需求总数-按产品统计的无效研发需求数）*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的用户需求总数',
-    'alias'      => '用户需求总数',
+    'name'       => 'Total de Requerimientos de usuario (UR) por producto',
+    'alias'      => 'Total de Requerimientos de usuario (UR)',
     'code'       => 'count_of_requirement_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的用户需求总数是指产品所有用户需求的总数。该度量项反映了对用户需求量的整体把握和了解程度。越高的用户需求数可能表示市场潜力较大，产品的受欢迎程度较高，有更多的用户对该产品提出了需求。',
+    'desc'       => 'El total de Requerimientos de usuario (UR) por producto es el total de todos los Requerimientos de usuario del producto. Esta métrica refleja el grado de dominio y comprensión general de la cantidad de requerimientos de los usuarios. Un número alto de Requerimientos de usuario puede indicar un mayor potencial de mercado y mayor popularidad del producto, con más usuarios que plantearon requerimientos sobre él.',
     'definition' => "产品中用户需求的个数求和\n过滤已删除的用户需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增用户需求数',
-    'alias'      => '新增用户需求数',
+    'name'       => 'Requerimientos de usuario (UR) nuevos por año por producto',
+    'alias'      => 'Requerimientos de usuario (UR) nuevos',
     'code'       => 'count_of_annual_created_requirement_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增用户需求数反映了产品在某年度内新产生的用户对产品的需求数量。越高的用户需求数可能表示产品在该年度获得了更多的用户关注和认可，有更多的用户愿意尝试和使用该产品。',
+    'desc'       => 'Los Requerimientos de usuario (UR) nuevos por año por producto reflejan la cantidad de requerimientos de usuarios generados sobre el producto durante un año. Un número alto de Requerimientos de usuario puede indicar que el producto obtuvo más atención y reconocimiento de los usuarios ese año, y que más usuarios están dispuestos a probarlo y usarlo.',
     'definition' => "产品中用户需求的个数求和\n创建时间为某年\n过滤已删除的用户需求\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的研发完毕研需规模的Bug密度',
-    'alias'      => '研发完毕研需规模的Bug密度',
+    'name'       => 'Densidad de Bugs por tamaño de Historias con desarrollo finalizado por producto',
+    'alias'      => 'Densidad de Bugs por tamaño de Historias con desarrollo finalizado',
     'code'       => 'bug_concentration_of_developed_story_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的研发完毕研需规模的Bug密度表示按产品统计的有效Bug数相对于按产品统计的研发完成的研发需求规模数。该度量项反映了研发完毕的研需的质量表现，密度越低代表研发完毕的研需质量越高。',
+    'desc'       => 'La densidad de Bugs por tamaño de Historias con desarrollo finalizado por producto indica la cantidad de Bugs válidos por producto respecto al tamaño de las Historias con desarrollo completado por producto. Esta métrica refleja el desempeño de calidad de las Historias con desarrollo finalizado; cuanto menor es la densidad, mayor es la calidad de las Historias con desarrollo finalizado.',
     'definition' => "复用：\n按产品统计的有效Bug数\n按产品统计的研发完成的研发需求规模数\n公式：\n按产品统计的研发完成需求的Bug密度=按产品统计的有效Bug数/按产品统计的研发完成的研发需求规模数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的Bug总数',
-    'alias'      => 'Bug总数',
+    'name'       => 'Total de Bugs por producto',
+    'alias'      => 'Total de Bugs',
     'code'       => 'count_of_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的Bug总数是指在产品中发现的所有Bug的数量。这个度量项反映了产品整体Bug质量情况。Bug总数越多可能代表产品的代码质量存在问题，需要进行进一步的解决和改进。',
+    'desc'       => 'El total de Bugs por producto es la cantidad de todos los Bugs encontrados en el producto. Esta métrica refleja la situación general de calidad de Bugs del producto. Un total alto de Bugs puede indicar problemas en la calidad del código del producto, que requieren mayor resolución y mejora.',
     'definition' => "产品中Bug的个数求和\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的激活Bug数',
-    'alias'      => '激活Bug数',
+    'name'       => 'Bugs activos por producto',
+    'alias'      => 'Bugs activos',
     'code'       => 'count_of_activated_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的激活Bug数是指产品中当前状态为激活的Bug数量。这个度量项反映了产品当前存在的待处理问题数量。激活Bug总数越多可能代表产品的稳定性较低，需要加强Bug解决的速度和质量。',
+    'desc'       => 'Los Bugs activos por producto son la cantidad de Bugs del producto cuyo estado actual es activo. Esta métrica refleja la cantidad de problemas pendientes que existen actualmente en el producto. Un total alto de Bugs activos puede indicar una menor estabilidad del producto, por lo que se debe reforzar la velocidad y la calidad de la resolución de Bugs.',
     'definition' => "产品中激活Bug的个数求和\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的有效Bug数',
-    'alias'      => '有效Bug数',
+    'name'       => 'Bugs válidos por producto',
+    'alias'      => 'Bugs válidos',
     'code'       => 'count_of_effective_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的有效Bug数是指产品中真正具有影响和价值的Bug数量。有效Bug通常是指导致产品不正常运行或影响用户体验的Bug。统计有效Bug数可以帮助评估产品的稳定性和质量，也可以评估测试人员之间的协作或对产品的了解程度。',
+    'desc'       => 'Los Bugs válidos por producto son la cantidad de Bugs del producto que realmente tienen impacto y valor. Un Bug válido suele ser el que provoca que el producto no funcione con normalidad o afecta la experiencia del usuario. Contar los Bugs válidos ayuda a evaluar la estabilidad y la calidad del producto, y también la colaboración entre los probadores o su conocimiento del producto.',
     'definition' => "产品中所有Bug个数求和\n解决方案为已解决、延期处理或状态为激活\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已修复Bug数',
-    'alias'      => '已修复Bug数',
+    'name'       => 'Bugs corregidos por producto',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_fixed_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已修复Bug数是指解决方案为已解决并且状态为已关闭的Bug数量。这个度量项反映了产品解决的问题数量。已修复Bug数的可以评估开发团队在Bug解决方面的工作效率。',
+    'desc'       => 'Los Bugs corregidos por producto son la cantidad de Bugs cuya solución es resuelto y cuyo estado es cerrado. Esta métrica refleja la cantidad de problemas que el producto ha resuelto. Los Bugs corregidos permiten evaluar la eficiencia de trabajo del equipo de desarrollo en la resolución de Bugs.',
     'definition' => "产品中Bug的个数求和\n解决方案为已解决\n状态为已关闭\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的严重程度为1级的Bug数',
-    'alias'      => '严重程度为1级的Bug数',
+    'name'       => 'Bugs con severidad de nivel 1 por producto',
+    'alias'      => 'Bugs con severidad de nivel 1',
     'code'       => 'count_of_severity_1_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的严重程度为1级的Bug数是指在产品开发过程中发现的、对产品功能或性能产生重大影响的Bug数量。这些Bug可能会导致系统崩溃、功能无法正常运行、数据丢失等严重问题。统计这些Bug的数量可以帮助评估产品的稳定性和可靠性。',
+    'desc'       => 'Los Bugs con severidad de nivel 1 por producto son la cantidad de Bugs encontrados durante el desarrollo del producto que tienen un impacto grave en la funcionalidad o el rendimiento del producto. Estos Bugs pueden causar problemas serios como caídas del sistema, funciones que no operan con normalidad o pérdida de datos. Contar estos Bugs ayuda a evaluar la estabilidad y la confiabilidad del producto.',
     'definition' => "产品中Bug的个数求和\n严重程度为1级\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的严重程度为2级的Bug数',
-    'alias'      => '严重程度为2级的Bug数',
+    'name'       => 'Bugs con severidad de nivel 2 por producto',
+    'alias'      => 'Bugs con severidad de nivel 2',
     'code'       => 'count_of_severity_2_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的严重程度为2级的Bug数是指在产品开发过程中发现的、对产品功能或性能产生较大影响的Bug数量。这些Bug可能会给用户带来不便或影响产品的某些功能。统计这些Bug的数量可以帮助评估产品的稳定性和可靠性。',
+    'desc'       => 'Los Bugs con severidad de nivel 2 por producto son la cantidad de Bugs encontrados durante el desarrollo del producto que tienen un impacto considerable en la funcionalidad o el rendimiento del producto. Estos Bugs pueden causar inconvenientes a los usuarios o afectar algunas funciones del producto. Contar estos Bugs ayuda a evaluar la estabilidad y la confiabilidad del producto.',
     'definition' => "产品的Bug个数求和\n严重程度为2级\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的严重程度为1、2级的Bug数',
-    'alias'      => '严重程度为1、2级的Bug数',
+    'name'       => 'Bugs con severidad de nivel 1 y 2 por producto',
+    'alias'      => 'Bugs con severidad de nivel 1 y 2',
     'code'       => 'count_of_severe_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的严重程度为1、2级的Bug数是指在产品开发过程中发现的严重程度为1级和2级的Bug数量的总和。统计这些Bug的数量可以评估产品的质量和稳定性，同时也关注影响用户体验和功能完整性的问题。',
+    'desc'       => 'Los Bugs con severidad de nivel 1 y 2 por producto son la suma de la cantidad de Bugs con severidad de nivel 1 y de nivel 2 encontrados durante el desarrollo del producto. Contar estos Bugs permite evaluar la calidad y la estabilidad del producto, y también prestar atención a los problemas que afectan la experiencia del usuario y la integridad de las funciones.',
     'definition' => "复用：\n按产品统计的严重程度为1级的Bug数\n按产品统计的严重程度为2级的Bug数\n公式：\n按产品统计的严重程度为1、2级的Bug数=按产品统计的严重程度为1级的Bug数+按产品统计的严重程度为2级的Bug数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Bugs nuevos por año por producto',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_annual_created_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增Bug数是指产品在某年度新发现的Bug数量。这个度量项反映了产品在某年度出现的新问题数量。年度新增Bug数越多可能意味着质量控制存在问题，需要及时进行处理和改进。',
+    'desc'       => 'Los Bugs nuevos por año por producto son la cantidad de Bugs recién encontrados en el producto durante un año. Esta métrica refleja la cantidad de problemas nuevos que aparecieron en el producto ese año. Un número alto de Bugs nuevos al año puede indicar problemas en el control de calidad, que deben atenderse y mejorarse oportunamente.',
     'definition' => "产品中Bug的个数求和\n创建时间为某年\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增有效Bug数',
-    'alias'      => '新增有效Bug数',
+    'name'       => 'Bugs válidos nuevos por año por producto',
+    'alias'      => 'Bugs válidos nuevos',
     'code'       => 'count_of_annual_created_effective_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增有效Bug数是指产品在某年度新发现的真正具有影响和价值的Bug数量。有效Bug通常是指导致产品不正常运行或影响用户体验的Bug。统计有效Bug数可以帮助评估产品的稳定性和质量也可以评估测试人员之前的协作或对产品的了解程度。',
+    'desc'       => 'Los Bugs válidos nuevos por año por producto son la cantidad de Bugs recién encontrados en el producto durante un año que realmente tienen impacto y valor. Un Bug válido suele ser el que provoca que el producto no funcione con normalidad o afecta la experiencia del usuario. Contar los Bugs válidos ayuda a evaluar la estabilidad y la calidad del producto, y también la colaboración entre los probadores o su conocimiento del producto.',
     'definition' => "产品中Bug个数求和\n创建时间为某年\n解决方案为已解决和延期处理或者状态为激活\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度修复Bug数',
-    'alias'      => '修复Bug数',
+    'name'       => 'Bugs corregidos por año por producto',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_annual_fixed_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度修复Bug数是指在某年度解决并关闭的Bug数量。这个度量项反映了产品在某年度解决的问题数量。年度修复Bug数越多可能说明开发团队在Bug解决方面的工作效率较高。',
+    'desc'       => 'Los Bugs corregidos por año por producto son la cantidad de Bugs resueltos y cerrados durante un año. Esta métrica refleja la cantidad de problemas que el producto resolvió ese año. Un número alto de Bugs corregidos al año puede indicar que el equipo de desarrollo es eficiente en la resolución de Bugs.',
     'definition' => "产品中Bug的个数求和\n关闭时间为某年\n解决方案为已解决\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的每日新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Bugs nuevos por día por producto',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_daily_created_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按产品统计的每日新增Bug数是指在每天的产品开发过程中新发现并记录的Bug数量。该度量项可以体现产品开发过程中Bug的发现速度和趋势，较高的新增Bug数可能意味着存在较多的问题需要解决，同时也可以帮助识别产品开发过程中的瓶颈和潜在的质量风险。',
+    'desc'       => 'Los Bugs nuevos por día por producto son la cantidad de Bugs recién encontrados y registrados cada día durante el desarrollo del producto. Esta métrica puede mostrar la velocidad y la tendencia de detección de Bugs en el desarrollo del producto; un número alto de Bugs nuevos puede indicar que hay muchos problemas por resolver, y también ayuda a identificar cuellos de botella y posibles riesgos de calidad en el desarrollo del producto.',
     'definition' => "产品中Bug数求和\n创建时间为某日\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的每日解决Bug数',
-    'alias'      => '解决Bug数',
+    'name'       => 'Bugs resueltos por día por producto',
+    'alias'      => 'Bugs resueltos',
     'code'       => 'count_of_daily_resolved_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按产品统计的每日解决Bug数是指产品每日解决的Bug的数量。该度量项可以帮助我们了解开发团队解决Bug的速度和效率。',
+    'desc'       => 'Los Bugs resueltos por día por producto son la cantidad de Bugs que el producto resuelve cada día. Esta métrica nos ayuda a conocer la velocidad y la eficiencia del equipo de desarrollo para resolver Bugs.',
     'definition' => "产品中Bug数求和\n解决日期为某日\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的每日关闭Bug数',
-    'alias'      => '关闭Bug数',
+    'name'       => 'Bugs cerrados por día por producto',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_daily_closed_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按产品统计的每日关闭Bug数是指每天在产品中每日关闭的Bug的数量。该度量项可以帮助我们了解开发团队对已解决的Bug进行确认与关闭的速度和效率，通过对比不同时间段的关闭Bug数，可以评估开发团队的协作和问题处理能力。',
+    'desc'       => 'Los Bugs cerrados por día por producto son la cantidad de Bugs que se cierran cada día en el producto. Esta métrica nos ayuda a conocer la velocidad y la eficiencia del equipo de desarrollo para confirmar y cerrar los Bugs ya resueltos; al comparar la cantidad de Bugs cerrados en distintos períodos se puede evaluar la colaboración y la capacidad de atención de problemas del equipo de desarrollo.',
     'definition' => "产品中Bug数求和\n关闭时间为某日\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度修复Bug数',
-    'alias'      => '解决Bug数',
+    'name'       => 'Bugs corregidos por mes por producto',
+    'alias'      => 'Bugs resueltos',
     'code'       => 'count_of_monthly_fixed_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度修复Bug数是指每天在产品开发过程中被解决并关闭的Bug的数量。该度量项可以帮助我们了解开发团队解决Bug的速度和效率。',
+    'desc'       => 'Los Bugs corregidos por mes por producto son la cantidad de Bugs resueltos y cerrados durante el desarrollo del producto. Esta métrica nos ayuda a conocer la velocidad y la eficiencia del equipo de desarrollo para resolver Bugs.',
     'definition' => "产品中Bug的个数求和\n关闭时间为某年某月\n解决方案为已解决\n过滤已删除的Bug\n过滤已删除的产品\n",
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度关闭Bug数',
-    'alias'      => '关闭Bug数',
+    'name'       => 'Bugs cerrados por mes por producto',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_monthly_closed_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度关闭Bug数是指在某月度关闭的Bug数量。这个度量项反映了产品开发过程中每月被确认并关闭的Bug的数量。该度量项可以帮助我们了解开发团队对Bug进行确认与关闭的速度和效率。',
+    'desc'       => 'Los Bugs cerrados por mes por producto son la cantidad de Bugs cerrados en un mes. Esta métrica refleja la cantidad de Bugs confirmados y cerrados cada mes durante el desarrollo del producto. Esta métrica nos ayuda a conocer la velocidad y la eficiencia del equipo de desarrollo para confirmar y cerrar los Bugs.',
     'definition' => "产品中关闭时间在某年某月的Bug个数求和\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的月度新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Bugs nuevos por mes por producto',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_monthly_created_bug_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按产品统计的月度新增Bug数是指在某年度新发现的Bug数量。这个度量项反映了系统或项目在某月度出现的新问题数量。月度新增Bug数的增加可能意味着质量控制存在问题，需要及时进行处理和改进。',
+    'desc'       => 'Los Bugs nuevos por mes por producto son la cantidad de Bugs recién encontrados en un mes. Esta métrica refleja la cantidad de problemas nuevos que aparecieron en el sistema o el proyecto durante ese mes. Un aumento en los Bugs nuevos por mes puede indicar problemas en el control de calidad, que deben atenderse y mejorarse oportunamente.',
     'definition' => "产品中创建时间在某年某月的Bug个数求和\n过滤已删除的Bug\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的Bug修复率',
-    'alias'      => 'Bug修复率',
+    'name'       => 'Tasa de corrección de Bugs por producto',
+    'alias'      => 'Tasa de corrección de Bugs',
     'code'       => 'rate_of_fixed_bug_in_product',
     'purpose'    => 'rate',
     'scope'      => 'product',
     'object'     => 'bug',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的Bug修复率是指按产品统计的修复Bug数相对于按产品统计的有效Bug数的比例。该度量项可以帮助我们了解开发团队对Bug修复的效率和质量，高的修复率可能说明Bug得到及时解决，产品质量得到有效保障。',
+    'desc'       => 'La tasa de corrección de Bugs por producto es la proporción de Bugs corregidos por producto respecto a los Bugs válidos por producto. Esta métrica nos ayuda a conocer la eficiencia y la calidad del equipo de desarrollo en la corrección de Bugs; una tasa de corrección alta puede indicar que los Bugs se resuelven oportunamente y que la calidad del producto está bien asegurada.',
     'definition' => "复用：\n按产品统计的修复Bug数\n按产品统计的有效Bug数\n公式：\n按产品统计的Bug修复率=按产品统计的修复Bug数/按产品统计的有效Bug数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的用例总数',
-    'alias'      => '用例总数',
+    'name'       => 'Total de casos de prueba por producto',
+    'alias'      => 'Total de casos de prueba',
     'code'       => 'count_of_case_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的用例总数是指系统或项目中的测试用例总数量。用例是用来验证系统功能和性能的测试场景。统计用例总数可以帮助评估测试覆盖的广度和深度。用例总数越高可能意味着项目进行了全面和充分的测试。',
+    'desc'       => 'El total de casos de prueba por producto es la cantidad total de casos de prueba del sistema o el proyecto. Los casos de prueba son escenarios de prueba usados para verificar las funciones y el rendimiento del sistema. Contar el total de casos de prueba ayuda a evaluar la amplitud y la profundidad de la cobertura de pruebas. Un total alto de casos de prueba puede indicar que el proyecto se probó de manera integral y suficiente.',
     'definition' => "产品中用例的个数求和\n过滤已删除的用例\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增用例数',
-    'alias'      => '新增用例数',
+    'name'       => 'Casos de prueba nuevos por año por producto',
+    'alias'      => 'Casos de prueba nuevos',
     'code'       => 'count_of_annual_created_case_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增用例数是指产品在某年度新增的测试用例数量。统计年度新增用例数可以帮助评估系统或项目在不同阶段的测试覆盖和测试深度。年度新增用例数的增加可能意味着对新功能和需求进行了充分的测试。',
+    'desc'       => 'Los casos de prueba nuevos por año por producto son la cantidad de casos de prueba agregados al producto en un año. Contar los casos de prueba nuevos por año ayuda a evaluar la cobertura y la profundidad de las pruebas del sistema o el proyecto en distintas etapas. Un aumento en los casos de prueba nuevos al año puede indicar que las nuevas funcionalidades y requerimientos se probaron suficientemente.',
     'definition' => "产品中用例的个数求和\n创建时间为某年\n过滤已删除的用例\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的反馈总数',
-    'alias'      => '反馈总数',
+    'name'       => 'Total de retroalimentaciones por producto',
+    'alias'      => 'Total de retroalimentaciones',
     'code'       => 'count_of_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '产品的反馈总数',
+    'desc'       => 'Total de retroalimentaciones del producto',
     'definition' => "产品中反馈的个数求和\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度新增反馈数',
-    'alias'      => '新增反馈数',
+    'name'       => 'Retroalimentaciones nuevas por año por producto',
+    'alias'      => 'Retroalimentaciones nuevas',
     'code'       => 'count_of_annual_created_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度新增反馈数是指在某年度收集到的用户反馈的数量。这个度量项可以帮助团队了解用户对产品的发展趋势和需求变化，并进行产品策略的调整和优化。较高的年度新增反馈数可能暗示着产品的用户基础扩大或者功能迭代带来了更多用户参与，同时暗示产品问题可能有很多。',
+    'desc'       => 'Las retroalimentaciones nuevas por año por producto son la cantidad de retroalimentaciones de usuarios recopiladas durante un año. Esta métrica ayuda al equipo a conocer la tendencia de desarrollo del producto y los cambios en las necesidades de los usuarios, y a ajustar y optimizar la estrategia del producto. Un número alto de retroalimentaciones nuevas al año puede indicar que la base de usuarios del producto creció o que las iteraciones de funcionalidades atrajeron más participación de usuarios, y también puede sugerir que el producto tiene muchos problemas.',
     'definition' => "产品中创建时间为某年的反馈的个数求和\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的年度关闭反馈数',
-    'alias'      => '关闭反馈数',
+    'name'       => 'Retroalimentaciones cerradas por año por producto',
+    'alias'      => 'Retroalimentaciones cerradas',
     'code'       => 'count_of_annual_closed_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按产品统计的年度关闭反馈数是指在某年度处理并关闭的用户反馈的数量。这个度量项可以帮助产品团队评估在某年度对用户反馈的响应能力和问题解决能力。较高的年度关闭反馈数可能暗示着团队能够高效地解决用户反馈并持续改进产品，提升用户满意度和产品质量。',
+    'desc'       => 'Las retroalimentaciones cerradas por año por producto son la cantidad de retroalimentaciones de usuarios atendidas y cerradas durante un año. Esta métrica ayuda al equipo de producto a evaluar su capacidad de respuesta y de resolución de problemas ante la retroalimentación de los usuarios en un año. Un número alto de retroalimentaciones cerradas al año puede indicar que el equipo resuelve la retroalimentación de manera eficiente y mejora continuamente el producto, elevando la satisfacción de los usuarios y la calidad del producto.',
     'definition' => "产品中关闭时间为某年的反馈的个数求和\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的等待的工单数',
-    'alias'      => '等待工单数',
+    'name'       => 'Tickets en espera por producto',
+    'alias'      => 'Tickets en espera',
     'code'       => 'count_of_wait_ticket_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'ticket',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的等待的工单数表示产品中状态为等待的工单数量之和。该数值越大，说明产品团队还有较多工单任务需要处理，可以一定程度反映客户问题的堆积。',
-    'definition' => "产品中所有工单个数求和，状态为等待的工单，过滤已删除的工单，过滤已删除的产品。"
+    'desc'       => 'Los tickets en espera por producto indican la suma de los tickets del producto cuyo estado es en espera. Cuanto mayor es el valor, más tickets tiene pendientes por atender el equipo de producto, lo que puede reflejar en cierta medida la acumulación de problemas de los clientes.',
+    'definition' => "Suma de la cantidad de todos los tickets del producto con estado en espera, excluyendo los tickets eliminados y los productos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的处理中的工单数',
-    'alias'      => '处理中工单数',
+    'name'       => 'Tickets en proceso por producto',
+    'alias'      => 'Tickets en proceso',
     'code'       => 'count_of_doing_ticket_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'ticket',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的处理中的工单数表示产品中状态为处理中的工单数量之和。该数值越大，说明产品团队正在处理的工单数量较多，可以一定程度上反映团队的工作负载。',
-    'definition' => "产品中所有工单个数求和，状态为处理中，过滤已删除的工单，过滤已删除的产品。"
+    'desc'       => 'Los tickets en proceso por producto indican la suma de los tickets del producto cuyo estado es en proceso. Cuanto mayor es el valor, más tickets está atendiendo el equipo de producto, lo que puede reflejar en cierta medida la carga de trabajo del equipo.',
+    'definition' => "Suma de la cantidad de todos los tickets del producto con estado en proceso, excluyendo los tickets eliminados y los productos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已处理的工单数',
-    'alias'      => '已处理工单数',
+    'name'       => 'Tickets procesados por producto',
+    'alias'      => 'Tickets procesados',
     'code'       => 'count_of_done_ticket_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'ticket',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已处理的工单数表示产品中状态为已处理的工单数量之和。该数值越大，说明产品团队完成的工单数量越多，可以一定程度反映团队处理客户问题的效率。',
-    'definition' => "产品中所有工单个数求和，状态为已处理，过滤已删除的工单，过滤已删除的产品。"
+    'desc'       => 'Los tickets procesados por producto indican la suma de los tickets del producto cuyo estado es procesado. Cuanto mayor es el valor, más tickets ha completado el equipo de producto, lo que puede reflejar en cierta medida la eficiencia del equipo para atender los problemas de los clientes.',
+    'definition' => "Suma de la cantidad de todos los tickets del producto con estado procesado, excluyendo los tickets eliminados y los productos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的未关闭的工单数',
-    'alias'      => '未关闭工单数',
+    'name'       => 'Tickets no cerrados por producto',
+    'alias'      => 'Tickets no cerrados',
     'code'       => 'count_of_unclosed_ticket_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'ticket',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的未关闭的工单数表示产品中状态为未关闭的工单数量之和。该数值越大，说明产品团队还有一定工单任务需要进一步完成。',
-    'definition' => "产品中所有工单个数求和，过滤已关闭的工单，过滤已删除的工单，过滤已删除的产品。"
+    'desc'       => 'Los tickets no cerrados por producto indican la suma de los tickets del producto cuyo estado es no cerrado. Cuanto mayor es el valor, más tareas de tickets debe completar aún el equipo de producto.',
+    'definition' => "Suma de la cantidad de todos los tickets del producto, excluyendo los tickets cerrados, los tickets eliminados y los productos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的每周新增工单数',
-    'alias'      => '新增工单数',
+    'name'       => 'Tickets nuevos por semana por producto',
+    'alias'      => 'Tickets nuevos',
     'code'       => 'count_of_weekly_created_ticket_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'ticket',
     'unit'       => 'count',
     'dateType'   => 'week',
-    'desc'       => '按产品统计的每周新增工单数表示产品中每周新创建的工单数量之和。较高的每周新增工单数可能暗示着产品近期发布的功能存在较多问题，需要及时处理。',
-    'definition' => "产品中所有工单个数求和，创建时间为某周，过滤已删除的工单，过滤已删除的产品。"
+    'desc'       => 'Los tickets nuevos por semana por producto indican la suma de los tickets recién creados en el producto cada semana. Un número alto de tickets nuevos por semana puede indicar que las funcionalidades lanzadas recientemente tienen muchos problemas, que deben atenderse oportunamente.',
+    'definition' => "Suma de la cantidad de todos los tickets del producto con fecha de creación en una semana determinada, excluyendo los tickets eliminados y los productos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的计划工期',
-    'alias'      => '计划工期',
+    'name'       => 'Duración planificada por proyecto',
+    'alias'      => 'Duración planificada',
     'code'       => 'planned_period_of_project',
     'purpose'    => 'time',
     'scope'      => 'project',
     'object'     => 'project',
     'unit'       => 'day',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的计划工期是基于项目计划和排期制定的预估工期。该度量项通过确定项目开始和结束日期之间的时间间隔来计算。计划工期用于制定项目的时间目标和进度安排，为项目管理提供了基准。与实际工期进行比较，可以评估项目的进展和时间规划的准确性，帮助团队及时调整工作计划。',
+    'desc'       => 'La duración planificada por proyecto es la duración estimada establecida con base en el plan y la programación del proyecto. Esta métrica se calcula determinando el intervalo de tiempo entre las fechas de inicio y fin del proyecto. La duración planificada se usa para establecer los objetivos de tiempo y el cronograma del proyecto, y ofrece una línea base para la gestión del proyecto. Al compararla con la duración real, se puede evaluar el avance del proyecto y la exactitud de la planificación del tiempo, ayudando al equipo a ajustar oportunamente el plan de trabajo.',
     'definition' => "计划完成日期-计划开始日期\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的剩余工期',
-    'alias'      => '剩余工期',
+    'name'       => 'Duración restante por proyecto',
+    'alias'      => 'Duración restante',
     'code'       => 'left_period_of_project',
     'purpose'    => 'time',
     'scope'      => 'project',
     'object'     => 'project',
     'unit'       => 'day',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的剩余工期表示项目在当前时间点上还剩下的工作时间。这个度量项可以帮助团队评估项目的剩余工作量和进度。通过比较剩余工期和剩余工时，可以预测项目是否能够按时完成，并采取适当的措施来调整进度，以确保项目的成功交付。',
+    'desc'       => 'La duración restante por proyecto indica el tiempo de trabajo que le queda al proyecto en el momento actual. Esta métrica ayuda al equipo a evaluar la carga de trabajo restante y el avance del proyecto. Al comparar la duración restante con las horas de trabajo restantes se puede predecir si el proyecto podrá completarse a tiempo y tomar las medidas adecuadas para ajustar el avance y asegurar una entrega exitosa.',
     'definition' => "剩余工期=计划截止日期-当前日期\r\n当剩余工期<0时默认为0\r\n当项目已关闭时剩余工期默认为0\r\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的实际工期',
-    'alias'      => '实际工期',
+    'name'       => 'Duración real por proyecto',
+    'alias'      => 'Duración real',
     'code'       => 'count_of_actual_time_in_project',
     'purpose'    => 'time',
     'scope'      => 'project',
     'object'     => 'project',
     'unit'       => 'day',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的实际工期反映了项目在执行过程中实际花费的时间。该度量项通过统计项目实际的开始和完成日期来计算。实际工期的准确记录能够帮助团队评估项目的执行效率和时间管理能力。较短的实际工期可能意味着项目按计划进行，团队高效执行，而较长的实际工期可能表明项目存在一些延迟和挑战。',
+    'desc'       => 'La duración real por proyecto refleja el tiempo que realmente se invirtió durante la ejecución del proyecto. Esta métrica se calcula a partir de las fechas reales de inicio y finalización del proyecto. El registro preciso de la duración real ayuda al equipo a evaluar la eficiencia de ejecución del proyecto y su capacidad de gestión del tiempo. Una duración real corta puede indicar que el proyecto avanza según lo planificado y que el equipo ejecuta con eficiencia, mientras que una duración real larga puede indicar que el proyecto tiene algunos retrasos y desafíos.',
     'definition' => "已关闭的项目：\n实际完成日期-实际开始日期\n未关闭的项目：\n当前日期-实际开始日期\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的工期偏差',
-    'alias'      => '工期偏差',
+    'name'       => 'Desviación de duración por proyecto',
+    'alias'      => 'Desviación de duración',
     'code'       => 'variance_of_time_in_project',
     'purpose'    => 'time',
     'scope'      => 'project',
     'object'     => 'project',
     'unit'       => 'day',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的工期偏差表示实际工期与计划工期之间的差异。工期偏差的正值表示项目进度延迟，负值表示项目进度提前。工期偏差可以帮助团队及时识别项目进度的偏差，并采取相应的调整措施来重新规划资源和工作计划，以确保项目能够按时完成。',
+    'desc'       => 'La desviación de duración por proyecto indica la diferencia entre la duración real y la duración planificada. Un valor positivo indica que el proyecto va retrasado y un valor negativo indica que va adelantado. La desviación de duración ayuda al equipo a identificar oportunamente las desviaciones del avance del proyecto y a tomar medidas de ajuste para replanificar los recursos y el plan de trabajo, a fin de asegurar que el proyecto se complete a tiempo.',
     'definition' => "复用：\n按项目统计的实际工期\n按项目统计的计划工期\n公式：\n按项目统计的工期偏差=按项目统计的实际工期-按项目统计的计划工期\n其中未开始项目工期偏差为0"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已关闭执行数',
-    'alias'      => '已关闭执行数',
+    'name'       => 'Ejecuciones cerradas por proyecto',
+    'alias'      => 'Ejecuciones cerradas',
     'code'       => 'count_of_closed_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已关闭执行数表示在项目中已关闭的执行项的数量，可以用来了解已关闭的执行数量。',
+    'desc'       => 'Las ejecuciones cerradas por proyecto indican la cantidad de ejecuciones que ya están cerradas en el proyecto y sirven para conocer la cantidad de ejecuciones cerradas.',
     'definition' => "项目的执行个数求和\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已挂起执行数',
-    'alias'      => '已挂起执行数',
+    'name'       => 'Ejecuciones suspendidas por proyecto',
+    'alias'      => 'Ejecuciones suspendidas',
     'code'       => 'count_of_suspended_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已挂起执行数表示在项目中已挂起的执行项的数量，可以用来了解暂停的任务数量，可能是由于需求不明确或其他原因导致。',
+    'desc'       => 'Las ejecuciones suspendidas por proyecto indican la cantidad de ejecuciones que están suspendidas en el proyecto y sirven para conocer la cantidad de tareas en pausa, que pueden deberse a requerimientos poco claros u otras razones.',
     'definition' => "项目的执行个数求和\n状态为已挂起\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的进行中执行数',
-    'alias'      => '进行中执行数',
+    'name'       => 'Ejecuciones en curso por proyecto',
+    'alias'      => 'Ejecuciones en curso',
     'code'       => 'count_of_doing_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的进行中执行数表示在项目中正在进行中的执行项的数量，可以用来了解当前正在进行的任务数量，反映项目团队的工作进展。',
+    'desc'       => 'Las ejecuciones en curso por proyecto indican la cantidad de ejecuciones que están en curso en el proyecto y sirven para conocer la cantidad de tareas que se están realizando actualmente, lo que refleja el avance del trabajo del equipo del proyecto.',
     'definition' => "所有的执行个数求和\n状态为进行中\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的未开始执行数',
-    'alias'      => '未开始执行数',
+    'name'       => 'Ejecuciones sin iniciar por proyecto',
+    'alias'      => 'Ejecuciones sin iniciar',
     'code'       => 'count_wait_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的未开始执行数表示在项目中未开始的执行数，可以用来了解未开始的执行数量。',
+    'desc'       => 'Las ejecuciones sin iniciar por proyecto indican la cantidad de ejecuciones que no han comenzado en el proyecto y sirven para conocer la cantidad de ejecuciones sin iniciar.',
     'definition' => "项目的执行个数求和\n状态为未开始\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度关闭执行数',
-    'alias'      => '关闭执行数',
+    'name'       => 'Ejecuciones cerradas por año por proyecto',
+    'alias'      => 'Ejecuciones cerradas',
     'code'       => 'count_annual_closed_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度关闭执行数是指在项目中某年度已经关闭的执行数。该度量项反映了项目团队在某年度的工作效率和完成能力。较高的年度关闭执行数表示项目在完成任务方面表现出较高的效率，反之则可能需要审查工作流程和资源分配情况，以提高执行效率。',
+    'desc'       => 'Las ejecuciones cerradas por año por proyecto son la cantidad de ejecuciones que ya se cerraron en el proyecto durante un año. Esta métrica refleja la eficiencia de trabajo y la capacidad de finalización del equipo del proyecto en ese año. Un número alto de ejecuciones cerradas al año indica que el proyecto muestra una alta eficiencia en la finalización de tareas; de lo contrario, puede ser necesario revisar los flujos de trabajo y la asignación de recursos para mejorar la eficiencia de ejecución.',
     'definition' => "项目的执行个数求和\n关闭时间为某年\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度完成执行数',
-    'alias'      => '完成执行数',
+    'name'       => 'Ejecuciones completadas por año por proyecto',
+    'alias'      => 'Ejecuciones completadas',
     'code'       => 'count_of_annual_finished_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度完成执行数是指项目在某年度已经完成的执行数。该度量项反映了项目团队在某年的工作效率和完成能力。较高的年度完成执行数表示团队在完成任务方面表现出较高的效率，反之则可能需要审查工作流程和资源分配情况，以提高执行效率。',
+    'desc'       => 'Las ejecuciones completadas por año por proyecto son la cantidad de ejecuciones que el proyecto completó durante un año. Esta métrica refleja la eficiencia de trabajo y la capacidad de finalización del equipo del proyecto en ese año. Un número alto de ejecuciones completadas al año indica que el equipo muestra una alta eficiencia en la finalización de tareas; de lo contrario, puede ser necesario revisar los flujos de trabajo y la asignación de recursos para mejorar la eficiencia de ejecución.',
     'definition' => "项目的执行个数求和\n实际完成日期为某年\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的执行总数',
-    'alias'      => '执行总数',
+    'name'       => 'Total de ejecuciones por proyecto',
+    'alias'      => 'Total de ejecuciones',
     'code'       => 'count_of_execution_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'execution',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的执行总数表示在项目中所有执行的数量，可以用来评估项目的规模、项目执行进度、工作负荷、绩效评估、风险控制和项目管理的有用信息。',
+    'desc'       => 'El total de ejecuciones por proyecto indica la cantidad de todas las ejecuciones del proyecto y ofrece información útil para evaluar la escala del proyecto, el avance de ejecución, la carga de trabajo, la evaluación del desempeño, el control de riesgos y la gestión del proyecto.',
     'definition' => "项目的执行个数求和\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的研发需求总数',
-    'alias'      => '研发需求总数',
+    'name'       => 'Total de Historias (SR) por proyecto',
+    'alias'      => 'Total de historias',
     'code'       => 'count_of_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的研发需求总数是指项目中创建或关联的所有研发需求的数量，反映了项目的规模和复杂度，提供了关于需求管理、进度控制、资源规划、风险评估和质量控制的有用信息。',
+    'desc'       => 'El total de Historias (SR) por proyecto es la cantidad de todas las Historias creadas o vinculadas en el proyecto; refleja la escala y la complejidad del proyecto y ofrece información útil sobre la gestión de requerimientos, el control del avance, la planificación de recursos, la evaluación de riesgos y el control de calidad.',
     'definition' => "项目中研发需求个数求和\n过滤已删除的研发需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已关闭研发需求数',
-    'alias'      => '已关闭研发需求数',
+    'name'       => 'Historias (SR) cerradas por proyecto',
+    'alias'      => 'Historias cerradas',
     'code'       => 'count_of_closed_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已关闭研发需求数是指项目中已经关闭的研发需求的数量反映了项目中已经关闭的研发需求的数量，提供了关于需求管理、项目进度、质量控制、用户满意度和绩效评估的有用信息。',
+    'desc'       => 'Las Historias (SR) cerradas por proyecto son la cantidad de Historias que ya se cerraron en el proyecto; reflejan la cantidad de Historias cerradas en el proyecto y ofrecen información útil sobre la gestión de requerimientos, el avance del proyecto, el control de calidad, la satisfacción de los usuarios y la evaluación del desempeño.',
     'definition' => "项目中研发需求个数求和\n过滤已删除的研发需求\n状态为已关闭\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的未关闭研发需求数',
-    'alias'      => '未关闭研发需求数',
+    'name'       => 'Historias (SR) no cerradas por proyecto',
+    'alias'      => 'Historias sin cerrar',
     'code'       => 'count_of_unclosed_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的未关闭研发需求数是指项目中未关闭的研发需求的数量反映了项目团队在开发过程中的进行中的任务和计划，未关闭研发需求数越多，说明项目团队未完成的开发工作越多，需要进一步跟进从而完成。',
+    'desc'       => 'Las Historias (SR) no cerradas por proyecto son la cantidad de Historias que no se han cerrado en el proyecto; reflejan las tareas y los planes en curso del equipo del proyecto durante el desarrollo. Cuantas más Historias no cerradas, más trabajo de desarrollo sin terminar tiene el equipo del proyecto y se requiere seguimiento adicional para completarlo.',
     'definition' => "复用：\n按项目统计的研发需求总数\n按项目统计的已关闭研发需求数\n公式：\n按项目统计的关闭研发需求数=按项目统计的研发需求总数-按项目统计的已关闭研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已完成研发需求数',
-    'alias'      => '已完成研发需求数',
+    'name'       => 'Historias (SR) completadas por proyecto',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_finished_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已完成研发需求数是指状态为已关闭且关闭原因为已完成的研发需求的数量。反映了项目团队在开发过程中的进展和交付能力，已完成研发需求数越多，说明项目团队在该时间段内取得了更多的开发成果。',
+    'desc'       => 'Las Historias (SR) completadas por proyecto son la cantidad de Historias con estado cerrado y motivo de cierre completada. Reflejan el avance y la capacidad de entrega del equipo del proyecto durante el desarrollo. Cuantas más Historias completadas, más resultados de desarrollo logró el equipo del proyecto en ese período.',
     'definition' => "项目中研发需求的个数求和\n状态为已关闭\n关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的无效研发需求数',
-    'alias'      => '无效研发需求数',
+    'name'       => 'Historias (SR) inválidas por proyecto',
+    'alias'      => 'Historias inválidas',
     'code'       => 'count_of_invalid_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的无效研发需求数是指被判定为无效的研发需求数量。无效需求可能包括重复需求、不可实现的需求、或者与项目策略和目标不符的需求。通过对无效需求的统计，可以帮助项目团队优化需求管理和筛选机制，以提高需求有效性和资源利用率。较高的无效需求数量可能需要对需求收集和评估流程进行改进。',
+    'desc'       => 'Las Historias (SR) inválidas por proyecto son la cantidad de Historias que fueron juzgadas como inválidas. Los requerimientos inválidos pueden incluir requerimientos duplicados, inviables o que no concuerdan con la estrategia y los objetivos del proyecto. Contar los requerimientos inválidos ayuda al equipo del proyecto a optimizar la gestión de requerimientos y los mecanismos de filtrado para mejorar la validez de los requerimientos y la utilización de recursos. Una cantidad alta de requerimientos inválidos puede requerir mejorar el proceso de recopilación y evaluación de requerimientos.',
     'definition' => "项目中研发需求的个数求和\n关闭原因为重复、不做、设计如此\n过滤已删除的研发需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的有效研发需求数',
-    'alias'      => '有效研发需求数',
+    'name'       => 'Historias (SR) válidas por proyecto',
+    'alias'      => 'Historias válidas',
     'code'       => 'count_of_valid_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的有效研发需求数是指被确认为有效的研发需求数量。有效需求指的是符合项目策略和目标，可以实施并且对用户有价值的需求。通过对有效需求的统计，可以帮助项目团队评估项目需求的质量和重要性，并进行优先级排序和资源分配。较高的有效需求数量通常表示项目的功能和特性满足了用户和市场的期望，有利于实现项目的成功交付和用户满意度。',
+    'desc'       => 'Las Historias (SR) válidas por proyecto son la cantidad de Historias confirmadas como válidas. Un requerimiento válido es el que se ajusta a la estrategia y los objetivos del proyecto, puede implementarse y tiene valor para los usuarios. Contar los requerimientos válidos ayuda al equipo del proyecto a evaluar la calidad y la importancia de los requerimientos del proyecto, y a priorizarlos y asignar recursos. Una cantidad alta de requerimientos válidos suele indicar que las funcionalidades y características del proyecto cumplen las expectativas de los usuarios y del mercado, lo que favorece una entrega exitosa del proyecto y la satisfacción de los usuarios.',
     'definition' => "复用：\n按项目统计的无效研发需求数\n按项目统计的研发需求总数\n公式：\n按执行统计的有效研发需求数=按执行统计的研发需求总数-按执行统计的无效研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的所有研发需求规模数',
-    'alias'      => '所有研发需求规模数',
+    'name'       => 'Tamaño de todas las Historias (SR) por proyecto',
+    'alias'      => 'Tamaño de todas las Historias (SR)',
     'code'       => 'scale_of_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的所有研发需求规模数表示研发需求的规模总数反映了项目研发需求的规模总数，可以用于评估项目团队的研发需求规模管理和成果。',
+    'desc'       => 'El tamaño de todas las Historias (SR) por proyecto indica el tamaño total de las Historias y refleja el tamaño total de las Historias del proyecto; puede usarse para evaluar la gestión del tamaño de las Historias y los resultados del equipo del proyecto.',
     'definition' => "项目中研发需求的规模数求和\n过滤已删除的研发需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度完成研发需求数',
-    'alias'      => '完成研发需求数',
+    'name'       => 'Historias (SR) completadas por año por proyecto',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_annual_finished_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度完成研发需求数是指在某年度已关闭且关闭原因为已完成的研发需求数量。这个度量项可以反映项目团队在某年度的开发效率和成果。完成研发需求数量的增加说明项目团队在该年度内取得了更多的开发成果和交付物。',
+    'desc'       => 'Las Historias (SR) completadas por año por proyecto son la cantidad de Historias con estado cerrado y motivo de cierre completada en un año. Esta métrica puede reflejar la eficiencia de desarrollo y los resultados del equipo del proyecto en ese año. Un aumento en las Historias completadas indica que el equipo del proyecto logró más resultados de desarrollo y entregables durante ese año.',
     'definition' => "项目中研发需求的个数求和\n关闭时间在某年\n关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度完成研发需求规模数',
-    'alias'      => '完成研发需求规模数',
+    'name'       => 'Tamaño de Historias (SR) completadas por año por proyecto',
+    'alias'      => 'Tamaño de historias completadas',
     'code'       => 'scale_of_annual_finished_story_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'measure',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度完成研发需求数是指在某年度已关闭且关闭原因为已完成的研发需求规模数。这个度量项可以反映项目团队在某年度的开发效率和成果。完成研发需求规模数的增加说明项目团队在该年度内取得了更多的开发成果和交付物。',
+    'desc'       => 'El tamaño de Historias (SR) completadas por año por proyecto es el tamaño de las Historias con estado cerrado y motivo de cierre completada en un año. Esta métrica puede reflejar la eficiencia de desarrollo y los resultados del equipo del proyecto en ese año. Un aumento en el tamaño de Historias completadas indica que el equipo del proyecto logró más resultados de desarrollo y entregables durante ese año.',
     'definition' => "项目中研发需求的规模数求和\n关闭时间在某年\n关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的研发需求完成率',
-    'alias'      => '研发需求完成率',
+    'name'       => 'Tasa de finalización de Historias (SR) por proyecto',
+    'alias'      => 'Tasa de finalización de historias',
     'code'       => 'rate_of_finished_story_in_project',
     'purpose'    => 'rate',
     'scope'      => 'project',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的研发需求完成率表示按项目统计的已完成的研发需求数相对于按项目统计的有效研发需求数。衡量了项目研发团队完成需求的能力，完成率越高代表项目研发团队能够将需求交付给用户，实现正常发布的几率越大。',
+    'desc'       => 'La tasa de finalización de Historias (SR) por proyecto indica la cantidad de Historias completadas por proyecto respecto a las Historias válidas por proyecto. Mide la capacidad del equipo de desarrollo del proyecto para completar requerimientos; cuanto mayor es la tasa de finalización, mayor es la probabilidad de que el equipo pueda entregar los requerimientos a los usuarios y lograr un lanzamiento normal.',
     'definition' => "复用：\n按项目统计的已完成研发需求数\n按项目统计的有效研发需求数\n公式：\n按项目统计的研发需求完成率=按项目统计的已完成研发需求数/按项目统计的有效研发需求数*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的任务总数',
-    'alias'      => '任务总数',
+    'name'       => 'Total de tareas por proyecto',
+    'alias'      => 'Total de tareas',
     'code'       => 'count_of_task_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的任务总数是指整个项目当前存在的任务总量。该度量项可以用来跟踪任务的规模和复杂性，为资源分配和工作计划提供基础。较大的任务总数可能需要更多的资源和时间来完成，而较小的任务总数可能意味着项目负荷较轻或项目进展较好。',
+    'desc'       => 'El total de tareas por proyecto es la cantidad total de tareas que existen actualmente en todo el proyecto. Esta métrica sirve para dar seguimiento a la escala y la complejidad de las tareas, y es la base para la asignación de recursos y el plan de trabajo. Un total grande de tareas puede requerir más recursos y tiempo para completarse, mientras que un total pequeño puede indicar que el proyecto tiene poca carga o que avanza bien.',
     'definition' => "项目中所有的任务个数求和\n过滤已删除的任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的未开始任务数',
-    'alias'      => '未开始任务数',
+    'name'       => 'Tareas sin iniciar por proyecto',
+    'alias'      => 'Tareas sin iniciar',
     'code'       => 'count_of_wait_task_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的未开始任务数指的是在项目执行过程中未开始进行的任务数量。这个度量项帮助团队了解项目进展的一部分，即有多少任务未启动。通过统计未开始任务数，团队可以评估项目的准备状况、资源分配以及可能存在的延迟因素。',
+    'desc'       => 'Las tareas sin iniciar por proyecto son la cantidad de tareas que no han comenzado durante la ejecución del proyecto. Esta métrica ayuda al equipo a conocer una parte del avance del proyecto, es decir, cuántas tareas no se han iniciado. Al contar las tareas sin iniciar, el equipo puede evaluar el estado de preparación del proyecto, la asignación de recursos y los posibles factores de retraso.',
     'definition' => "项目中任务个数求和\n状态为未开始\n过滤已删除的任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的进行中任务数',
-    'alias'      => '进行中任务数',
+    'name'       => 'Tareas en curso por proyecto',
+    'alias'      => 'Tareas en curso',
     'code'       => 'count_of_doing_task_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的进行中任务数表示项目执行过程中正在进行的任务数量。这个度量项帮助团队了解项目当前的工作负载和进展情况。统计进行中任务数可以帮助团队判断项目的工作量是否合理分配，并进行进一步的资源规划和调整。',
+    'desc'       => 'Las tareas en curso por proyecto son la cantidad de tareas que se están realizando durante la ejecución del proyecto. Esta métrica ayuda al equipo a conocer la carga de trabajo actual y el avance del proyecto. Contar las tareas en curso ayuda al equipo a juzgar si la carga de trabajo del proyecto está bien distribuida y a planificar y ajustar los recursos.',
     'definition' => "项目中任务个数求和\n状态为进行中\n过滤已删除的任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已完成任务数',
-    'alias'      => '已完成任务数',
+    'name'       => 'Tareas completadas por proyecto',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_finished_task_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已完成任务数是指项目已经完成的任务总量。该度量项可以衡量任务完成的进度和效率，以及项目的工作质量和产出。较高的已完成任务总数可能表明项目在交付工作方面表现出较好的能力。',
+    'desc'       => 'Las tareas completadas por proyecto son la cantidad total de tareas que el proyecto ya completó. Esta métrica permite medir el avance y la eficiencia en la finalización de tareas, así como la calidad del trabajo y la producción del proyecto. Un total alto de tareas completadas puede indicar que el proyecto muestra una buena capacidad de entrega.',
     'definition' => "项目中任务个数求和\n状态为已完成或者状态为已关闭且关闭原因为已完成\n过滤已删除的任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的任务预计工时数',
-    'alias'      => '任务预计工时数',
+    'name'       => 'Horas de trabajo estimadas de tareas por proyecto',
+    'alias'      => 'Horas estimadas de tareas',
     'code'       => 'estimate_of_task_in_project',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的任务预计工时数是指在项目管理中，对所有任务的预计工时进行统计和汇总的度量。这个度量项用于评估项目的工作量和资源需求，并帮助规划和安排项目团队。任务预计工时数是通过对每个任务的工作量估算进行累加而得，可以作为项目计划和进度控制的依据。',
+    'desc'       => 'Las horas de trabajo estimadas de tareas por proyecto son la métrica que cuenta y suma las horas estimadas de todas las tareas en la gestión de proyectos. Esta métrica se usa para evaluar la carga de trabajo y las necesidades de recursos del proyecto, y ayuda a planificar y organizar al equipo del proyecto. Las horas estimadas de tareas se obtienen acumulando la estimación de carga de trabajo de cada tarea y pueden servir de base para el plan del proyecto y el control del avance.',
     'definition' => "项目中任务的预计工时数求和\n过滤已删除的任务\n过滤父任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的任务消耗工时数',
-    'alias'      => '任务消耗工时数',
+    'name'       => 'Horas de trabajo consumidas de tareas por proyecto',
+    'alias'      => 'Horas consumidas de tareas',
     'code'       => 'consume_of_task_in_project',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的任务消耗工时数是指已经花费的工时总和，用于完成所有任务。该度量项可以用来评估项目在任务执行过程中的工时投入情况，以及在完成任务方面的效率和资源利用情况。较高的任务消耗工时总数可能表明需要审查工作流程和资源分配，以提高工作效率。',
+    'desc'       => 'Las horas de trabajo consumidas de tareas por proyecto son la suma de las horas ya invertidas para completar todas las tareas. Esta métrica sirve para evaluar la inversión de horas del proyecto durante la ejecución de las tareas, así como la eficiencia y el uso de recursos para completarlas. Un total alto de horas consumidas puede indicar que es necesario revisar los flujos de trabajo y la asignación de recursos para mejorar la eficiencia.',
     'definition' => "项目中任务的消耗工时数求和\n过滤已删除的任务\n过滤父任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的任务剩余工时数',
-    'alias'      => '任务剩余工时数',
+    'name'       => 'Horas de trabajo restantes de tareas por proyecto',
+    'alias'      => 'Horas restantes de tareas',
     'code'       => 'left_of_task_in_project',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的任务剩余工时数是指当前未消耗的工时总和，用于完成所有任务。该度量项可以用来评估项目在任务执行过程中剩余的工作量和时间，以及为完成任务所需的资源和计划。较小的任务剩余工时总数可能表示项目将及时完成任务，而较大的任务剩余工时总数可能需要重新评估进度和资源分配。',
+    'desc'       => 'Las horas de trabajo restantes de tareas por proyecto son la suma de las horas aún no consumidas para completar todas las tareas. Esta métrica sirve para evaluar la carga de trabajo y el tiempo restantes del proyecto durante la ejecución de las tareas, así como los recursos y el plan necesarios para completarlas. Un total pequeño de horas restantes puede indicar que el proyecto completará las tareas a tiempo, mientras que un total grande puede requerir reevaluar el avance y la asignación de recursos.',
     'definition' => "项目中任务的剩余工时数求和\n过滤已删除的任务\n过滤父任务\n过滤已删除执行的任务\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按瀑布项目统计的截止本周已完成任务工作的预计工时(EV)',
-    'alias'      => '截止本周已完成任务工作的预计工时',
+    'name'       => 'Horas estimadas del trabajo de tareas completadas hasta esta semana (EV) por proyecto en cascada',
+    'alias'      => 'Horas estimadas del trabajo de tareas completadas hasta esta semana',
     'code'       => 'ev_of_weekly_finished_task_in_waterfall',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'week',
-    'desc'       => '按瀑布项目统计的截止本周已完成任务工作的预计工时指的是在瀑布项目管理方法中，已经完成的任务的预计工时。这个度量项用来评估项目进展与实际完成情况的一致性。EV的值越高，代表项目团队在按计划完成任务的工作量方面表现得越好。',
-    'definition' => "复用： 按项目统计的任务进度、按项目统计的任务预计工时数，公式： 按项目统计的已完成任务工作的预计工时(EV)=按项目统计的任务预计工时数*按项目统计的任务进度；要求项目为瀑布项目，过滤父任务，过滤消耗工时为0的任务，过滤已删除的任务，过滤已取消的任务，过滤已删除执行下的任务，过滤已删除的项目。"
+    'desc'       => 'Las horas estimadas del trabajo de tareas completadas hasta esta semana por proyecto en cascada son, en el método de gestión de proyectos en cascada, las horas estimadas de las tareas que ya se completaron. Esta métrica se usa para evaluar la coherencia entre el avance del proyecto y lo realmente completado. Cuanto mayor es el valor de EV, mejor desempeño tiene el equipo del proyecto en la carga de trabajo completada según lo planificado.',
+    'definition' => "Reutiliza: Tarea progreso por proyecto, Horas de trabajo estimadas de tareas por proyecto; fórmula: Horas estimadas del trabajo de tareas completadas por proyecto (EV) = Horas de trabajo estimadas de tareas por proyecto * Progreso de tareas por proyecto; se requiere que el proyecto sea en cascada, excluyendo las tareas padre, las tareas con horas consumidas igual a 0, las tareas eliminadas, las tareas canceladas, las tareas de ejecuciones eliminadas y los proyectos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按瀑布项目统计的截止本周的任务的计划完成工时(PV)',
-    'alias'      => '截止本周的任务的计划完成工时(PV)',
+    'name'       => 'Horas de trabajo planificadas de tareas hasta esta semana (PV) por proyecto en cascada',
+    'alias'      => 'Horas de trabajo planificadas de tareas hasta esta semana (PV)',
     'code'       => 'pv_of_weekly_task_in_waterfall',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'week',
-    'desc'       => '按瀑布项目统计的每周的任务的计划完成工时指的是在瀑布项目管理方法中，按计划需要完成的任务的总预计工时。这个度量项用于评估每周的任务的预期工作量，可用作与实际花费工时和已完成任务的预计工时进行比较。',
+    'desc'       => 'Las horas de trabajo planificadas de tareas por semana por proyecto en cascada son, en el método de gestión de proyectos en cascada, el total de horas estimadas de las tareas que según el plan deben completarse. Esta métrica se usa para evaluar la carga de trabajo esperada de las tareas de cada semana y puede compararse con las horas realmente gastadas y las horas estimadas de las tareas completadas.',
     'definition' => "1.任务截至日期小于等于本周结束日期，累加预计工时。\n2.任务预计开始日期小于或等于本周结束日期，预计截至日期大于本周结束日期，累加预计工时=(任务的预计工时÷任务工期天数)x 任务预计开始到本周结束日期的天数。\n条件：过滤父任务，过滤已删除的任务，过滤已取消的任务，过滤已删除的执行的任务，过滤已删除的项目；任务未填写预计开始日期时默认取任务所属阶段的计划开始日期；任务未填写预计截至日期，预计截至日期默认取任务所属阶段的计划完成日期，时间只计算后台维护的工作日。"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的任务进度',
-    'alias'      => '任务进度',
+    'name'       => 'Progreso de tareas por proyecto',
+    'alias'      => 'Progreso de tareas',
     'code'       => 'progress_of_task_in_project',
     'purpose'    => 'rate',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的任务进度是指项目团队按已消耗的工时数与已消耗和剩余的工时数的比率。这个度量项能够反映项目进度的准确性和任务执行的效率。',
+    'desc'       => 'El progreso de tareas por proyecto es la razón entre las horas consumidas por el equipo del proyecto y la suma de las horas consumidas y restantes. Esta métrica refleja la exactitud del avance del proyecto y la eficiencia de ejecución de las tareas.',
     'definition' => "复用：\n按项目统计的任务消耗工时数\n按项目统计的任务剩余工时数\n公式：\n按项目统计的任务进度=按项目统计的任务消耗工时数/（按项目统计的任务消耗工时数+按项目统计的任务剩余工时数）"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按瀑布项目统计的截止本周的进度偏差率',
-    'alias'      => '进度偏差率',
+    'name'       => 'Tasa de desviación del avance hasta esta semana por proyecto en cascada',
+    'alias'      => 'Tasa de desviación del avance',
     'code'       => 'sv_weekly_in_waterfall',
     'purpose'    => 'rate',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'percentage',
     'dateType'   => 'week',
-    'desc'       => '按瀑布项目统计的截止本周的进度偏差率是用来衡量项目截止本周的进度与计划进度之间的差异。它通过计算已完成的工作量与计划工作量之间的差异来评估项目的进展情况。',
-    'definition' => "复用： 按瀑布项目统计的截止本周已完成任务工作的预计工时(EV) 、按瀑布项目统计的截止本周的任务的计划完成工时(PV)，公式： 按瀑布项目统计的截止本周的进度偏差率=(EV-PV)/PV*100%"
+    'desc'       => 'La tasa de desviación del avance hasta esta semana por proyecto en cascada se usa para medir la diferencia entre el avance del proyecto hasta esta semana y el avance planificado. Evalúa el progreso del proyecto calculando la diferencia entre la carga de trabajo completada y la carga de trabajo planificada.',
+    'definition' => "Reutiliza: Horas estimadas del trabajo de tareas completadas hasta esta semana (EV) por proyecto en cascada, Horas de trabajo planificadas de tareas hasta esta semana (PV) por proyecto en cascada; fórmula: Tasa de desviación del avance hasta esta semana por proyecto en cascada = (EV-PV)/PV*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按瀑布项目统计的截止本周的成本偏差率',
-    'alias'      => '成本偏差率',
+    'name'       => 'Tasa de desviación de costos hasta esta semana por proyecto en cascada',
+    'alias'      => 'Tasa de desviación de costos',
     'code'       => 'cv_weekly_in_waterfall',
     'purpose'    => 'rate',
     'scope'      => 'project',
     'object'     => 'task',
     'unit'       => 'percentage',
     'dateType'   => 'week',
-    'desc'       => '按瀑布项目统计的截止本周的成本偏差率用于衡量项目的实际成本与计划成本之间的差异。它通过计算已花费的成本与预计花费的成本之间的差异来评估项目的成本绩效。',
-    'definition' => "复用： 按瀑布项目统计的截止本周已完成任务工作的预计工时、按瀑布项目统计的截止本周的实际花费工时(AC) 公式： 按瀑布项目统计的截止本周的成本偏差率=(EV-AC)/AC*100%"
+    'desc'       => 'La tasa de desviación de costos hasta esta semana por proyecto en cascada se usa para medir la diferencia entre el costo real y el costo planificado del proyecto. Evalúa el desempeño de costos del proyecto calculando la diferencia entre el costo ya gastado y el costo estimado.',
+    'definition' => "Reutiliza: Horas estimadas del trabajo de tareas completadas hasta esta semana por proyecto en cascada, Horas de trabajo realmente gastadas hasta esta semana (AC) por proyecto en cascada; fórmula: Tasa de desviación de costos hasta esta semana por proyecto en cascada = (EV-AC)/AC*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的Bug总数',
-    'alias'      => 'Bug总数',
+    'name'       => 'Total de Bugs por proyecto',
+    'alias'      => 'Total de Bugs',
     'code'       => 'count_of_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的Bug总数是指在项目中发现的所有Bug的数量。这个度量项反映了项目的整体Bug质量情况。Bug总数越多可能代表项目的代码质量存在问题，需要进行进一步的解决和改进。',
+    'desc'       => 'El total de Bugs por proyecto es la cantidad de todos los Bugs encontrados en el proyecto. Esta métrica refleja la situación general de calidad de Bugs del proyecto. Un total alto de Bugs puede indicar problemas en la calidad del código del proyecto, que requieren mayor resolución y mejora.',
     'definition' => "项目中Bug个数求和\n过滤已删除的Bug\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的激活Bug数',
-    'alias'      => '激活Bug数',
+    'name'       => 'Bugs activos por proyecto',
+    'alias'      => 'Bugs activos',
     'code'       => 'count_of_activated_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的激活Bug数是指当前未解决的Bug数量。这个度量项反映了项目当前存在的待解决问题数量。激活Bug总数越多可能代表项目的稳定性较低，需要加强Bug解决的速度和质量。',
+    'desc'       => 'Los Bugs activos por proyecto son la cantidad de Bugs no resueltos actualmente. Esta métrica refleja la cantidad de problemas pendientes de resolver que existen actualmente en el proyecto. Un total alto de Bugs activos puede indicar una menor estabilidad del proyecto, por lo que se debe reforzar la velocidad y la calidad de la resolución de Bugs.',
     'definition' => "项目中Bug个数求和\n状态为激活\n过滤已删除的Bug\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已关闭Bug数',
-    'alias'      => '已关闭Bug数',
+    'name'       => 'Bugs cerrados por proyecto',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_closed_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已关闭Bug总数是指已经被关闭的Bug数量。这个度量项反映了项目中已经关闭的缺陷数量。已关闭Bug总数的增加说明项目进行了持续的改进和修复工作。',
+    'desc'       => 'El total de Bugs cerrados por proyecto es la cantidad de Bugs que ya fueron cerrados. Esta métrica refleja la cantidad de defectos ya cerrados en el proyecto. Un aumento en el total de Bugs cerrados indica que el proyecto realizó un trabajo continuo de mejora y corrección.',
     'definition' => "项目中Bug个数求和\n状态为已关闭\n过滤已删除的Bug\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的人员总数',
-    'alias'      => '人员总数',
+    'name'       => 'Total de personas por proyecto',
+    'alias'      => 'Total de personas',
     'code'       => 'count_of_user_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'user',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的人员总数是指参与项目的全部人员的数量。这个度量项用于了解项目团队的规模和组成，对项目资源的分配和管理起到重要作用。',
+    'desc'       => 'El total de personas por proyecto es la cantidad de todas las personas que participan en el proyecto. Esta métrica se usa para conocer la escala y la composición del equipo del proyecto, y cumple un papel importante en la asignación y gestión de los recursos del proyecto.',
     'definition' => "项目中团队成员个数求和\n过滤已移除的人员\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的项目内所有消耗工时数',
-    'alias'      => '所有消耗工时数',
+    'name'       => 'Todas las horas de trabajo consumidas en el proyecto por proyecto',
+    'alias'      => 'Todas las horas de trabajo consumidas',
     'code'       => 'consume_of_all_in_project',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'effort',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的项目内所有消耗工时数是指项目实际花费的总工时数。该度量项可以用来评估项目的工时投入情况和对资源的利用效率。较高的消耗工时数可能需要审查工作流程和资源分配，以提高工作效率和进度控制。',
+    'desc'       => 'Todas las horas de trabajo consumidas en el proyecto por proyecto son el total de horas que el proyecto realmente gastó. Esta métrica puede usarse para evaluar la inversión de horas del proyecto y la eficiencia en el uso de recursos. Un número alto de horas consumidas puede requerir revisar los flujos de trabajo y la asignación de recursos para mejorar la eficiencia y el control del avance.',
     'definition' => "项目中所有日志记录的工时之和\n记录时间在某年\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已投入人天',
-    'alias'      => '已投入人天',
+    'name'       => 'Días-persona invertidos por proyecto',
+    'alias'      => 'Días-persona invertidos',
     'code'       => 'day_of_invested_in_project',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'effort',
     'unit'       => 'manday',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已投入人天是指项目总共投入的工作天数。该度量项可以用来评估项目的人力资源投入情况。投入总人天的增加可能意味着项目投入的工作时间和资源的增加。',
+    'desc'       => 'Los días-persona invertidos por proyecto son el total de días de trabajo que el proyecto ha invertido. Esta métrica puede usarse para evaluar la inversión de recursos humanos del proyecto. Un aumento en el total de días-persona invertidos puede indicar un incremento en el tiempo de trabajo y los recursos invertidos en el proyecto.',
     'definition' => "复用：\n按项目统计的日志记录的工时总数\n公式：\n按项目统计的已投入人天=按项目统计的项目内所有消耗工时数/后台配置的每日可用工时"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按瀑布项目统计截止本周的实际花费工时(AC)',
-    'alias'      => '瀑布项目截止本周实际花费工时',
+    'name'       => 'Horas de trabajo realmente gastadas hasta esta semana (AC) por proyecto en cascada',
+    'alias'      => 'Horas de trabajo realmente gastadas hasta esta semana en proyectos en cascada',
     'code'       => 'ac_of_weekly_all_in_waterfall',
     'purpose'    => 'hour',
     'scope'      => 'project',
     'object'     => 'effort',
     'unit'       => 'hour',
     'dateType'   => 'week',
-    'desc'       => '按瀑布项目统计的截止本周实际花费工时指的是在瀑布项目管理方法中，截止本周实际花费的工时总数。这个度量项用于评估实际工作量和预计工作量之间的差异，有助于估计项目的真实进展情况。AC的值越接近EV，代表项目团队在任务执行方面表现得越好。',
-    'definition' => "瀑布项目中本周结束之前所有日志记录的工时之和 过滤已删除的项目。"
+    'desc'       => 'Las horas de trabajo realmente gastadas hasta esta semana por proyecto en cascada son, en el método de gestión de proyectos en cascada, el total de horas realmente gastadas hasta esta semana. Esta métrica se usa para evaluar la diferencia entre la carga de trabajo real y la estimada, y ayuda a estimar el avance real del proyecto. Cuanto más se acerca el valor de AC al de EV, mejor desempeño tiene el equipo del proyecto en la ejecución de las tareas.',
+    'definition' => "Suma de las horas de trabajo registradas en todos los registros antes del fin de esta semana en proyectos en cascada, excluyendo los proyectos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的开放的风险数',
-    'alias'      => '开放的风险数',
+    'name'       => 'Riesgos abiertos por proyecto',
+    'alias'      => 'Riesgos abiertos',
     'code'       => 'count_of_opened_risk_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'risk',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的开放的风险数是指在项目管理中，正在被跟踪和管理的项目风险的数量。风险是项目中潜在的不确定事件或情况，可能对项目目标的达成产生负面影响。通过跟踪和管理项目风险，项目团队可以及时采取措施降低风险的概率和影响程度。',
+    'desc'       => 'Los riesgos abiertos por proyecto son la cantidad de riesgos del proyecto a los que se les está dando seguimiento y gestión en la gestión de proyectos. Un riesgo es un evento o situación incierta potencial del proyecto que puede tener un efecto negativo en el logro de los objetivos del proyecto. Al dar seguimiento y gestionar los riesgos del proyecto, el equipo puede tomar medidas oportunas para reducir la probabilidad y el grado de impacto de los riesgos.',
     'definition' => "项目中风险的个数求和\n状态为开放\n过滤已删除的风险\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的开放的问题数',
-    'alias'      => '开放的问题数',
+    'name'       => 'Incidencias abiertas por proyecto',
+    'alias'      => 'Incidencias abiertas',
     'code'       => 'count_of_opened_issue_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'issue',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的开放的问题数指的是在项目管理中，正在被跟踪和解决的项目问题的数量。问题是指在项目执行过程中遇到的障碍、困难或需要解决的事项。通过跟踪和解决项目问题，可以避免问题的积累和对项目目标的影响。',
+    'desc'       => 'Las incidencias abiertas por proyecto son la cantidad de incidencias del proyecto a las que se les está dando seguimiento y resolución en la gestión de proyectos. Una incidencia es un obstáculo, una dificultad o un asunto por resolver que se encuentra durante la ejecución del proyecto. Al dar seguimiento y resolver las incidencias del proyecto se puede evitar su acumulación y su efecto sobre los objetivos del proyecto.',
     'definition' => "项目中问题的个数求和\n状态为开放\n过滤已删除的问题\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的研发需求总数',
-    'alias'      => '研发需求总数',
+    'name'       => 'Total de Historias (SR) por ejecución',
+    'alias'      => 'Total de historias',
     'code'       => 'count_of_story_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发需求总数是指执行中创建和关联的所有研发需求的数量。该度量项反映了执行的规模和复杂度，为执行计划和资源分配提供了参考。',
+    'desc'       => 'El total de Historias (SR) por ejecución es la cantidad de todas las Historias creadas y vinculadas en la ejecución. Esta métrica refleja la escala y la complejidad de la ejecución y sirve de referencia para el plan de ejecución y la asignación de recursos.',
     'definition' => "执行中研发需求个数求和\n过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的已完成研发需求数',
-    'alias'      => '已完成研发需求数',
+    'name'       => 'Historias (SR) completadas por ejecución',
+    'alias'      => 'Historias completadas',
     'code'       => 'count_of_finished_story_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的已完成研发需求数是指状态为已关闭且关闭原因为已完成的研发需求的数量。这个度量项可以反映执行团队在开发过程中的进展和交付能力。已完成研发需求数越多，说明执行团队在该时间段内取得了更多的开发成果。',
+    'desc'       => 'Las Historias (SR) completadas por ejecución son la cantidad de Historias con estado cerrado y motivo de cierre completada. Esta métrica puede reflejar el avance y la capacidad de entrega del equipo de la ejecución durante el desarrollo. Cuantas más Historias completadas, más resultados de desarrollo logró el equipo de la ejecución en ese período.',
     'definition' => "执行中研发需求的个数求和\n状态为已关闭\n关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的无效研发需求数',
-    'alias'      => '无效研发需求数',
+    'name'       => 'Historias (SR) inválidas por ejecución',
+    'alias'      => 'Historias inválidas',
     'code'       => 'count_of_invalid_story_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的无效研发需求数是指被判定为无效的研发需求数量。无效需求可能包括重复需求、不可实现的需求、或者与项目策略和目标不符的需求。通过对无效需求的统计，可以帮助执行团队优化需求管理和筛选机制，以提高需求有效性和资源利用率。较高的无效需求数量可能需要对需求收集和评估流程进行改进。',
+    'desc'       => 'Las Historias (SR) inválidas por ejecución son la cantidad de Historias que fueron juzgadas como inválidas. Los requerimientos inválidos pueden incluir requerimientos duplicados, inviables o que no concuerdan con la estrategia y los objetivos del proyecto. Contar los requerimientos inválidos ayuda al equipo de la ejecución a optimizar la gestión de requerimientos y los mecanismos de filtrado para mejorar la validez de los requerimientos y la utilización de recursos. Una cantidad alta de requerimientos inválidos puede requerir mejorar el proceso de recopilación y evaluación de requerimientos.',
     'definition' => "执行中研发需求的个数求和\n关闭原因为重复、不做、设计如此和已取消\n过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的有效研发需求数',
-    'alias'      => '有效研发需求数',
+    'name'       => 'Historias (SR) válidas por ejecución',
+    'alias'      => 'Historias válidas',
     'code'       => 'count_of_valid_story_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的有效研发需求数是指被确认为有效的研发需求数量。有效需求指的是符合项目策略和目标，可以实施并且对用户有价值的需求。通过对有效需求的统计，可以帮助执行团队评估项目需求的质量和重要性，并进行优先级排序和资源分配。较高的有效需求数量通常表示执行的功能和特性满足了用户和市场的期望，有利于实现项目的成功交付和用户满意度。',
+    'desc'       => 'Las Historias (SR) válidas por ejecución son la cantidad de Historias confirmadas como válidas. Un requerimiento válido es el que se ajusta a la estrategia y los objetivos del proyecto, puede implementarse y tiene valor para los usuarios. Contar los requerimientos válidos ayuda al equipo de la ejecución a evaluar la calidad y la importancia de los requerimientos del proyecto, y a priorizarlos y asignar recursos. Una cantidad alta de requerimientos válidos suele indicar que las funcionalidades y características de la ejecución cumplen las expectativas de los usuarios y del mercado, lo que favorece una entrega exitosa del proyecto y la satisfacción de los usuarios.',
     'definition' => "复用：\n按执行统计的无效研发需求数\n按执行统计的研发需求总数\n公式：\n按执行统计的有效研发需求数=按执行统计的研发需求总数-按执行统计的无效研发需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的研发完成的研发需求数',
-    'alias'      => '研发完成的研发需求数',
+    'name'       => 'Historias (SR) con desarrollo completado por ejecución',
+    'alias'      => 'Historias (SR) con desarrollo completado',
     'code'       => 'count_of_developed_story_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发完成的研发需求数是指执行中研发完成的研发需求的数量。这个度量项可以反映执行的进展。研发完成的研发需求数越多，说明执行团队在该时间段内取得了更多的研发成果。',
+    'desc'       => 'Las Historias (SR) con desarrollo completado por ejecución son la cantidad de Historias cuyo desarrollo se completó en la ejecución. Esta métrica puede reflejar el avance de la ejecución. Cuantas más Historias con desarrollo completado, más resultados de desarrollo logró el equipo de la ejecución en ese período.',
     'definition' => "执行中所处阶段为研发完毕、测试中、测试完毕、已验收、已发布和关闭原因为已完成的研发需求个数求和\n过滤已删除的研发需求\n过滤已删除产品的研发需求\n过滤已删除的执行"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的研发需求完成率',
-    'alias'      => '研发需求完成率',
+    'name'       => 'Tasa de finalización de Historias (SR) por ejecución',
+    'alias'      => 'Tasa de finalización de historias',
     'code'       => 'rate_of_finished_story_in_execution',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发需求完成率表示按执行统计的已完成的研发需求数相对于按执行统计的有效研发需求数。这个度量项衡量了执行研发团队完成需求的能力。',
+    'desc'       => 'La tasa de finalización de Historias (SR) por ejecución indica la cantidad de Historias completadas por ejecución respecto a las Historias válidas por ejecución. Esta métrica mide la capacidad del equipo de desarrollo de la ejecución para completar requerimientos.',
     'definition' => "复用：\n按执行统计的已完成研发需求数\n按执行统计的有效研发需求数\n公式：\n按执行统计的研发需求完成率=按执行统计的已完成研发需求数/按执行统计的有效研发需求数*100%"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的研发完成需求占比',
-    'alias'      => '研发完成需求占比',
+    'name'       => 'Proporción de Historias (SR) con desarrollo completado por ejecución',
+    'alias'      => 'Proporción de Historias (SR) con desarrollo completado',
     'code'       => 'rate_of_developed_story_in_execution',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发完成需求占比表示按执行统计的研发完成的研发需求规数相对于按产品统计的研发需求总数的比例。这个度量项衡量了执行中研发团队完成需求的数量，可以衡量团队的研发进展，帮助团队更好的安排研发资源。',
+    'desc'       => 'La proporción de Historias (SR) con desarrollo completado por ejecución indica la proporción del tamaño de las Historias con desarrollo completado por ejecución respecto al total de Historias por producto. Esta métrica mide la cantidad de requerimientos que el equipo de desarrollo completa en la ejecución, permite medir el avance del desarrollo del equipo y ayuda a organizar mejor los recursos de desarrollo.',
     'definition' => "复用：\n按执行统计的研发完成的研发需求数\n按执行统计的研发需求总数\n公式：\n按执行统计的研发完成需求占比=按执行统计的研发完成的研发需求数/按执行统计的研发需求总数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时验收通过的研发需求数',
-    'alias'      => '执行关闭时验收通过研发需求数',
+    'name'       => 'Historias (SR) con aceptación aprobada al cerrar la ejecución por ejecución',
+    'alias'      => 'Historias (SR) con aceptación aprobada al cerrar la ejecución',
     'code'       => 'count_of_verified_story_in_execution_when_closing',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行关闭时验收通过的研发需求数表示执行关闭时需求阶段为已验收、已发布或状态为已关闭且关闭原因为已完成的研发需求的数量。该度量项反映了执行关闭时能够验收通过的研发需求的数量，可以用于评估执行团队的研发效率和研发质量。',
-    'definition' => "执行关闭时，满足以下条件的执行中研发需求个数求和，条件是：所处阶段为已验收、已发布或关闭原因为已完成的研发需求，过滤已删除的研发需求，过滤已删除的执行，过滤已删除的项目，过滤已删除的产品。"
+    'desc'       => 'Las Historias (SR) con aceptación aprobada al cerrar la ejecución por ejecución indican la cantidad de Historias cuya etapa al cerrar la ejecución es aceptada, lanzada, o cuyo estado es cerrado con motivo de cierre completada. Esta métrica refleja la cantidad de Historias que pueden ser aprobadas en la aceptación al cerrar la ejecución y puede usarse para evaluar la eficiencia y la calidad de desarrollo del equipo de la ejecución.',
+    'definition' => "Al cerrar la ejecución, suma de la cantidad de Historias de la ejecución que cumplen las siguientes condiciones: la etapa es aceptada, lanzada, o el motivo de cierre es completada; se excluyen las Historias eliminadas, las ejecuciones eliminadas, los proyectos eliminados y los productos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的研发需求计划负载',
-    'alias'      => '执行计划负载',
+    'name'       => 'Carga planificada de Historias (SR) por ejecución',
+    'alias'      => 'Carga planificada de la ejecución',
     'code'       => 'workload_of_plan_in_execution',
     'purpose'    => 'qc',
     'scope'      => 'execution',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发需求计划负载是指执行开始时计划的需求规模数与执行开发人员可用工时数的比率。该度量项反映了团队的工作负载，可以帮助团队进行资源调配和需求规划。',
-    'definition' => "复用：按执行统计的截止执行开始当天研发需求规模数、按执行统计的开发人员可用工时；公式：按执行统计的截止执行开始当天研发需求规模数/按执行统计的开发人员可用工时"
+    'desc'       => 'La carga planificada de Historias (SR) por ejecución es la razón entre el tamaño de los requerimientos planificados al inicio de la ejecución y las horas disponibles de los desarrolladores de la ejecución. Esta métrica refleja la carga de trabajo del equipo y puede ayudarle a distribuir recursos y planificar requerimientos.',
+    'definition' => "Reutiliza: Tamaño de Historias (SR) al día de inicio de la ejecución por ejecución, Horas disponibles de los desarrolladores por ejecución; fórmula: Tamaño de Historias (SR) al día de inicio de la ejecución por ejecución / Horas disponibles de los desarrolladores por ejecución"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时测试缺陷密度',
-    'alias'      => '执行关闭时测试缺陷密度',
+    'name'       => 'Densidad de defectos de prueba al cerrar la ejecución por ejecución',
+    'alias'      => 'Densidad de defectos de prueba al cerrar la ejecución',
     'code'       => 'test_concentration_in_execution_when_closing',
     'purpose'    => 'qc',
     'scope'      => 'execution',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行测试缺陷密度是指执行产生的有效Bug数与执行交付的研发需求数的比率。该度量项反映了团队交付的研发需求的质量，可以帮助团队识别研发中存在的潜在问题。',
-    'definition' => "复用：按执行统计的执行关闭时已交付的研发需求规模数、按执行统计的新增有效Bug数；公式：按执行统计的新增有效Bug数/按执行统计的执行关闭时已交付的研发需求规模数"
+    'desc'       => 'La densidad de defectos de prueba de la ejecución por ejecución es la razón entre la cantidad de Bugs válidos generados por la ejecución y la cantidad de Historias entregadas por la ejecución. Esta métrica refleja la calidad de las Historias que entrega el equipo y puede ayudarle a identificar posibles problemas en el desarrollo.',
+    'definition' => "Reutiliza: Tamaño de Historias (SR) entregadas al cerrar la ejecución por ejecución, Bugs válidos nuevos por ejecución; fórmula: Bugs válidos nuevos por ejecución / Tamaño de Historias (SR) entregadas al cerrar la ejecución por ejecución"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时执行验收通过率',
-    'alias'      => '执行验收通过率',
+    'name'       => 'Tasa de aprobación de aceptación de la ejecución al cerrarla por ejecución',
+    'alias'      => 'Tasa de aprobación de aceptación de la ejecución',
     'code'       => 'rate_of_verified_story_in_execution_when_closing',
     'purpose'    => 'qc',
     'scope'      => 'execution',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行验收通过率是指执行关闭时通过验收需求数量与执行所有需求的比率。该度量项反映了已完成的需求是否符合需求验收标准，可以帮助团队识别研发质量存在的潜在问题。',
-    'definition' => "复用：按执行统计的执行关闭时验收通过的研发需求数、按执行统计的有效研发需求数；公式：按执行统计的执行关闭时验收通过的研发需求数/按执行统计的有效研发需求数"
+    'desc'       => 'La tasa de aprobación de aceptación de la ejecución por ejecución es la razón entre la cantidad de requerimientos aprobados en la aceptación al cerrar la ejecución y todos los requerimientos de la ejecución. Esta métrica refleja si los requerimientos completados cumplen los criterios de aceptación y puede ayudar al equipo a identificar posibles problemas de calidad del desarrollo.',
+    'definition' => "Reutiliza: Historias (SR) con aceptación aprobada al cerrar la ejecución por ejecución, Historias (SR) válidas por ejecución; fórmula: Historias (SR) con aceptación aprobada al cerrar la ejecución por ejecución / Historias (SR) válidas por ejecución"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的任务总数',
-    'alias'      => '任务总数',
+    'name'       => 'Total de tareas por ejecución',
+    'alias'      => 'Total de tareas',
     'code'       => 'count_of_task_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的任务总数是指整个执行当前存在的任务总量。该度量项可以用来跟踪任务的规模和复杂性，为资源分配和工作计划提供基础，可以帮助团队评估工作负荷和任务分配的合理性。',
+    'desc'       => 'El total de tareas por ejecución es la cantidad total de tareas que existen actualmente en toda la ejecución. Esta métrica sirve para dar seguimiento a la escala y la complejidad de las tareas, es la base para la asignación de recursos y el plan de trabajo, y puede ayudar al equipo a evaluar la carga de trabajo y lo razonable de la asignación de tareas.',
     'definition' => "执行中所有的任务个数求和\n过滤已删除的任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的已完成任务数',
-    'alias'      => '已完成任务数',
+    'name'       => 'Tareas completadas por ejecución',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_finished_task_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的已完成任务数是指执行已经完成的任务总量。该度量项可以衡量任务完成的进度和效率，以及项目的工作质量和产出。较高的已完成任务总数可能表明项目在交付工作方面表现出较好的能力。',
+    'desc'       => 'Las tareas completadas por ejecución son la cantidad total de tareas que la ejecución ya completó. Esta métrica permite medir el avance y la eficiencia en la finalización de tareas, así como la calidad del trabajo y la producción del proyecto. Un total alto de tareas completadas puede indicar que el proyecto muestra una buena capacidad de entrega.',
     'definition' => "执行中任务个数求和\n状态为已完成或者状态为已关闭且关闭原因为已完成\n过滤已删除的任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的未完成任务数',
-    'alias'      => '未完成任务数',
+    'name'       => 'Tareas sin completar por ejecución',
+    'alias'      => 'Tareas sin completar',
     'code'       => 'count_of_unfinished_task_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的未完成任务数是指执行未完成的任务总量。该度量项反映了团队的待办工作量和未来的工作压力。较低的未完成任务总数可能表明项目在交付工作方面表现出较好的能力。',
+    'desc'       => 'Las tareas sin completar por ejecución son la cantidad total de tareas que la ejecución no ha completado. Esta métrica refleja la carga de trabajo pendiente del equipo y la presión de trabajo futura. Un total bajo de tareas sin completar puede indicar que el proyecto muestra una buena capacidad de entrega.',
     'definition' => "复用：\n按执行统计的未完成任务数\n按执行统计的任务总数\n公式：\n按执行统计的未完成任务数=按执行统计的任务总数-按执行统计的已完成任务数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的日完成任务数',
-    'alias'      => '完成任务数',
+    'name'       => 'Tareas completadas por día por ejecución',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_daily_finished_task_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按执行统计的日完成任务数是指每天完成的任务数量。该度量项反映了团队的日常工作效率和任务完成速度。',
+    'desc'       => 'Las tareas completadas por día por ejecución son la cantidad de tareas completadas cada día. Esta métrica refleja la eficiencia de trabajo diaria del equipo y la velocidad de finalización de tareas.',
     'definition' => "执行中任务个数求和\n状态为已完成\n实际完成日期为某日\n过滤已删除的任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的测试任务数',
-    'alias'      => '测试任务数',
+    'name'       => 'Tareas de prueba por ejecución',
+    'alias'      => 'Tareas de prueba',
     'code'       => 'count_of_test_task_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的测试任务数是指执行中任务类型为测试的任务数求和。该度量项反映了执行中测试的工作量，可以帮助团队进行测试资源调配。',
-    'definition' => "执行中满足以下条件的任务个数求和，条件是：任务类型为测试，过滤已删除的任务，过滤已删除的执行，过滤已删除的项目。"
+    'desc'       => 'Las tareas de prueba por ejecución son la suma de las tareas de la ejecución cuyo tipo de tarea es prueba. Esta métrica refleja la carga de trabajo de pruebas en la ejecución y puede ayudar al equipo a distribuir los recursos de prueba.',
+    'definition' => "Suma de la cantidad de tareas de la ejecución que cumplen las siguientes condiciones: el tipo de tarea es prueba; se excluyen las tareas eliminadas, las ejecuciones eliminadas y los proyectos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的截止执行开始当天的测试任务数',
-    'alias'      => '截止执行开始当天的测试任务数',
+    'name'       => 'Tareas de prueba al día de inicio de la ejecución por ejecución',
+    'alias'      => 'Tareas de prueba al día de inicio de la ejecución',
     'code'       => 'count_of_test_task_in_execution_when_starting',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的截止执行开始当天的测试任务数表示执行开始时已创建的测试任务的数量。该度量项反映了本期执行计划完成的测试任务数量，可以用于评估执行团队测试人员的工作负载。',
-    'definition' => "截止执行开始当天23:59分的任务个数求和，任务类型为测试，过滤已删除的任务，过滤已取消的任务数，过滤已删除的执行，过滤已删除的项目。"
+    'desc'       => 'Las tareas de prueba al día de inicio de la ejecución por ejecución indican la cantidad de tareas de prueba ya creadas al inicio de la ejecución. Esta métrica refleja la cantidad de tareas de prueba que se planea completar en esta ejecución y puede usarse para evaluar la carga de trabajo de los probadores del equipo de la ejecución.',
+    'definition' => "Suma de la cantidad de tareas hasta las 23:59 del día de inicio de la ejecución, con tipo de tarea prueba; se excluyen las tareas eliminadas, las tareas canceladas, las ejecuciones eliminadas y los proyectos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时已完成的测试任务数',
-    'alias'      => '执行关闭时已完成测试任务数',
+    'name'       => 'Tareas de prueba completadas al cerrar la ejecución por ejecución',
+    'alias'      => 'Tareas de prueba completadas al cerrar la ejecución',
     'code'       => 'count_of_finished_test_task_in_execution_when_closing',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行关闭时已完成测试任务数表示执行关闭时任务状态为已完成的测试任务个数求和。该度量项反映了执行关闭时测试人员完成的测试任务个数，可以评估执行中测试人员的实际工作量和测试效率。',
-    'definition' => "执行关闭时执行中满足以下条件的测试任务个数求和，条件是：任务类型为测试，状态为已完成或已关闭且关闭原因为已完成，过滤已删除的任务，过滤已删除的执行，过滤已删除的项目。"
+    'desc'       => 'Las tareas de prueba completadas al cerrar la ejecución por ejecución indican la suma de las tareas de prueba cuyo estado es completada al cerrar la ejecución. Esta métrica refleja la cantidad de tareas de prueba que los probadores completaron al cerrar la ejecución y permite evaluar la carga de trabajo real y la eficiencia de pruebas de los probadores en la ejecución.',
+    'definition' => "Al cerrar la ejecución, suma de la cantidad de tareas de prueba de la ejecución que cumplen las siguientes condiciones: el tipo de tarea es prueba, el estado es completada, o cerrada con motivo de cierre completada; se excluyen las tareas eliminadas, las ejecuciones eliminadas y los proyectos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的任务剩余工时数',
-    'alias'      => '任务剩余工时数',
+    'name'       => 'Horas de trabajo restantes de tareas por ejecución',
+    'alias'      => 'Horas restantes de tareas',
     'code'       => 'left_of_task_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的任务剩余工时数是指当前未消耗的工时总和，用于完成所有任务。该度量项反映了任务完成的剩余工作量，可以帮助团队预测任务的完成时间和资源需求。',
+    'desc'       => 'Las horas de trabajo restantes de tareas por ejecución son la suma de las horas aún no consumidas para completar todas las tareas. Esta métrica refleja la carga de trabajo restante para completar las tareas y puede ayudar al equipo a predecir el tiempo de finalización y las necesidades de recursos.',
     'definition' => "执行中任务的剩余工时数求和\n过滤已删除的任务\n过滤父任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的任务预计工时数',
-    'alias'      => '任务预计工时数',
+    'name'       => 'Horas de trabajo estimadas de tareas por ejecución',
+    'alias'      => 'Horas estimadas de tareas',
     'code'       => 'estimate_of_task_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的任务预计工时数是指在执行管理中，对所有任务的预计工时进行统计和汇总的度量。该度量项反映了任务的预计复杂性和所需的资源投入，可以帮助团队管理者评估任务的难度并安排资源。',
+    'desc'       => 'Las horas de trabajo estimadas de tareas por ejecución son la métrica que cuenta y suma las horas estimadas de todas las tareas en la gestión de la ejecución. Esta métrica refleja la complejidad estimada de las tareas y los recursos necesarios, y puede ayudar a los gerentes del equipo a evaluar la dificultad de las tareas y organizar los recursos.',
     'definition' => "执行中任务的预计工时数求和\n过滤已删除的任务\n过滤父任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的任务消耗工时数',
-    'alias'      => '任务消耗工时数',
+    'name'       => 'Horas de trabajo consumidas de tareas por ejecución',
+    'alias'      => 'Horas consumidas de tareas',
     'code'       => 'consume_of_task_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的任务消耗工时数是指已经花费的工时总和，用于完成所有任务。该度量项反映了任务的实际完成情况和资源使用情况，可以帮助团队掌握任务的进展情况和资源利用效率。',
+    'desc'       => 'Las horas de trabajo consumidas de tareas por ejecución son la suma de las horas ya invertidas para completar todas las tareas. Esta métrica refleja la situación real de finalización de las tareas y el uso de recursos, y puede ayudar al equipo a conocer el avance de las tareas y la eficiencia en el uso de recursos.',
     'definition' => "执行中任务的消耗工时数求和\n过滤已删除的任务\n过滤父任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的任务进度',
-    'alias'      => '任务进度',
+    'name'       => 'Progreso de tareas por ejecución',
+    'alias'      => 'Progreso de tareas',
     'code'       => 'progress_of_task_in_execution',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的任务进度是指执行团队按已消耗的工时数与已消耗和剩余的工时数的比率。该度量项反映了任务的执行进展情况，可以帮助团队评估任务是否按计划进行并做出相应调整。',
+    'desc'       => 'El progreso de tareas por ejecución es la razón entre las horas consumidas por el equipo de la ejecución y la suma de las horas consumidas y restantes. Esta métrica refleja el avance de ejecución de las tareas y puede ayudar al equipo a evaluar si las tareas avanzan según lo planificado y a hacer los ajustes correspondientes.',
     'definition' => "复用：\n按执行统计的任务消耗工时数\n按执行统计的任务剩余工时数\n公式：\n按执行统计的任务进度=按执行统计的任务消耗工时数/（按执行统计的任务消耗工时数+按执行统计的任务剩余工时数）"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的待评审研发需求数',
-    'alias'      => '待评审研发需求数',
+    'name'       => 'Historias (SR) pendientes de revisión por persona',
+    'alias'      => 'Historias (SR) pendientes de revisión',
     'code'       => 'count_of_reviewing_story_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的待评审研发需求数表示每个人需要评审的研发需求数量之和。反映了每个人需要评审的研发需求的规模。该数值越大，说明需要投入越多的时间评审需求。',
+    'desc'       => 'Las Historias (SR) pendientes de revisión por persona indican la suma de las Historias que cada persona debe revisar. Reflejan la escala de las Historias que cada persona debe revisar. Cuanto mayor es el valor, más tiempo se necesita invertir en revisar requerimientos.',
     'definition' => "所有研发需求个数求和\n评审人为某人\n评审结果为空\n评审状态为评审中\n过滤已删除的需求\n过滤已删除产品的需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的每日评审研发需求数',
-    'alias'      => '评审研发需求数',
+    'name'       => 'Historias (SR) revisadas por día por persona',
+    'alias'      => 'Historias (SR) revisadas',
     'code'       => 'count_of_daily_review_story_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按人员统计的日评审研发需求数表示每个人每日评审的研发需求数量之和。反映了每个人每日评审研发需求的规模。该数值越大，说明工作量越大。',
+    'desc'       => 'Las Historias (SR) revisadas por día por persona indican la suma de las Historias que cada persona revisa cada día. Reflejan la escala de las Historias que cada persona revisa diariamente. Cuanto mayor es el valor, mayor es la carga de trabajo.',
     'definition' => "所有研发需求个数求和\n评审者为某人\n评审时间为某日\n过滤已删除的研发需求\n过滤已删除产品的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的研发需求数',
-    'alias'      => '被指派的研发需求数',
+    'name'       => 'Historias (SR) asignadas por persona',
+    'alias'      => 'Historias (SR) asignadas',
     'code'       => 'count_of_pending_story_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的研发需求数表示每个人被指派的研发需求数量之和，反映了每个人员需要处理的研发需求数量的规模，该数值越大，说明需要投入越多的时间处理研发需求',
+    'desc'       => 'Las Historias (SR) asignadas por persona indican la suma de las Historias que se asignaron a cada persona; reflejan la escala de las Historias que cada persona debe atender. Cuanto mayor es el valor, más tiempo se necesita invertir en atender las Historias.',
     'definition' => "所有研发需求个数求和\n指派给为某人\n过滤已删除的研发需求\n过滤状态为已关闭的研发需求\n过滤已删除产品下的研发需求\n过滤已删除的无产品项目下的研发需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的每日完成任务数',
-    'alias'      => '完成任务数',
+    'name'       => 'Tareas completadas por día por persona',
+    'alias'      => 'Tareas completadas',
     'code'       => 'count_of_daily_finished_task_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按人员统计的日完成任务数表示每个人每日完成的任务数量之和。反映了每个人每日完成的任务规模。该数值越大，可能说明工作效率越高，任务完成速度越快。',
-    'definition' => "某人某日完成的任务个数求和"
+    'desc'       => 'Las tareas completadas por día por persona indican la suma de las tareas que cada persona completa cada día. Reflejan la escala de las tareas que cada persona completa diariamente. Cuanto mayor es el valor, puede indicar mayor eficiencia de trabajo y mayor velocidad de finalización de tareas.',
+    'definition' => "Suma de la cantidad de tareas completadas por una persona en un día determinado"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的待处理任务数',
-    'alias'      => '待处理任务数',
+    'name'       => 'Tareas pendientes por persona',
+    'alias'      => 'Tareas pendientes',
     'code'       => 'count_of_assigned_task_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的待处理任务数表示每个人待处理的任务数量之和。反映了每个人在需要处理的任务数量上的规模。该数值越大，说明需要投入越多的时间处理任务。',
+    'desc'       => 'Las tareas pendientes por persona indican la suma de las tareas que cada persona tiene pendientes por atender. Reflejan la escala de las tareas que cada persona debe atender. Cuanto mayor es el valor, más tiempo se necesita invertir en atender las tareas.',
     'definition' => "所有任务个数求和\n指派给为某人\n过滤已关闭的任务\n过滤已取消的任务\n过滤已删除的任务\n过滤已删除项目的任务\n过滤已删除执行的任务\n过滤多人任务中某人任务状态为已完成的任务\n过滤任务关联的执行和项目都为挂起状态时的任务"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的日解决Bug数',
-    'alias'      => '解决Bug数',
+    'name'       => 'Bugs resueltos por día por persona',
+    'alias'      => 'Bugs resueltos',
     'code'       => 'count_of_daily_fixed_bug_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按人员统计的日解决Bug数表示每个人每日解决的Bug数量之和。反映了每个人每日解决Bug的规模。该数值越大，可能说明Bug的解决能力越强，工作效率越高。',
+    'desc'       => 'Los Bugs resueltos por día por persona indican la suma de los Bugs que cada persona resuelve cada día. Reflejan la escala de Bugs que cada persona resuelve diariamente. Cuanto mayor es el valor, puede indicar mayor capacidad de resolución de Bugs y mayor eficiencia de trabajo.',
     'definition' => "所有Bug个数求和\nbug状态为已解决和已关闭\n解决者为某人\n解决日期为某日\n过滤已删除的bug\n过滤已删除产品的bug"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的待处理Bug数',
-    'alias'      => '待处理Bug数',
+    'name'       => 'Bugs pendientes por persona',
+    'alias'      => 'Bugs pendientes',
     'code'       => 'count_of_assigned_bug_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的待处理Bug数表示每个人待处理的Bug数量之和。反映了每个人需要处理的Bug数量上的规模。该数值越大，说明需要投入越多的时间解决Bug。',
+    'desc'       => 'Los Bugs pendientes por persona indican la suma de los Bugs que cada persona tiene pendientes por atender. Reflejan la escala de Bugs que cada persona debe atender. Cuanto mayor es el valor, más tiempo se necesita invertir en resolver Bugs.',
     'definition' => "所有Bug个数求和\n指派给为某人\n过滤已删除的Bug\n过滤已删除产品的Bug"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的待处理用例数',
-    'alias'      => '待处理用例数',
+    'name'       => 'Casos de prueba pendientes por persona',
+    'alias'      => 'Casos de prueba pendientes',
     'code'       => 'count_of_assigned_case_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的待处理用例数表示每个人待处理的用例数量之和。反映了每个人需要处理的用例数量上的规模。该数值越大，说明需要投入越多的时间处理用例。',
+    'desc'       => 'Los casos de prueba pendientes por persona representan la suma de casos de prueba que cada persona tiene por atender. Refleja la magnitud de casos que debe procesar cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atender los casos de prueba.',
     'definition' => "所有测试单中的用例个数求和（不去重）\n指派给某人\n过滤已删除的用例\n过滤已删除的测试单中的用例\n过滤已关闭的测试单中的用例\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的待处理反馈数',
-    'alias'      => '待处理反馈数',
+    'name'       => 'Retroalimentaciones pendientes por persona',
+    'alias'      => 'Retroalimentaciones pendientes',
     'code'       => 'count_of_assigned_feedback_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的待处理反馈数表示每个人待处理的反馈数量之和。反映了每个人需要处理的反馈数量上的规模。该数值越大，说明需要投入越多的时间处理反馈。',
+    'desc'       => 'Las retroalimentaciones pendientes por persona representan la suma de retroalimentaciones que cada persona tiene por atender. Refleja la magnitud de retroalimentaciones que debe procesar cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atenderlas.',
     'definition' => "所有反馈个数求和\n指派给为某人\n过滤已删除的反馈\n过滤已删除产品的反馈"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的待评审反馈数',
-    'alias'      => '待评审反馈数',
+    'name'       => 'Retroalimentaciones pendientes de revisión por persona',
+    'alias'      => 'Retroalimentaciones pendientes de revisión',
     'code'       => 'count_of_reviewing_feedback_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的待评审反馈数表示每个人待评审的反馈数量之和。反映了每个人需要评审的反馈的规模。该数值越大，说明需要投入越多的时间评审反馈。',
+    'desc'       => 'Las retroalimentaciones pendientes de revisión por persona representan la suma de retroalimentaciones que cada persona tiene por revisar. Refleja la magnitud de retroalimentaciones que debe revisar cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en revisarlas.',
     'definition' => "所有反馈个数求和\n状态为待评审\n指派给为某人\n过滤已删除的反馈\n过滤已删除产品的反馈"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的每日评审反馈数',
-    'alias'      => '评审反馈数',
+    'name'       => 'Retroalimentaciones revisadas por día por persona',
+    'alias'      => 'Retroalimentaciones revisadas',
     'code'       => 'count_of_daily_review_feedback_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按人员统计的日评审反馈数表示每个人每日评审的反馈数量之和。反映了每个人每日评审的反馈的规模。该数值越大，说明工作量越大。',
+    'desc'       => 'Las retroalimentaciones revisadas por día por persona representan la suma de retroalimentaciones que cada persona revisa cada día. Refleja la magnitud de retroalimentaciones revisadas diariamente por cada persona. Cuanto mayor sea el valor, mayor es la carga de trabajo.',
     'definition' => "所有反馈个数求和\n由谁评审为某人\n评审时间为某日\n过滤已删除的反馈\n过滤已删除产品的反馈"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的每周新增反馈数',
-    'alias'      => '新增反馈数',
+    'name'       => 'Nuevas retroalimentaciones por semana por producto',
+    'alias'      => 'Retroalimentaciones nuevas',
     'code'       => 'count_of_weekly_created_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'week',
-    'desc'       => '按产品统计的每周新增反馈数是指在一个周内收集到的用户反馈的数量。这个度量项可以帮助团队了解用户对产品的发展趋势和需求变化，并进行产品策略的调整和优化',
+    'desc'       => 'Las nuevas retroalimentaciones por semana por producto son la cantidad de retroalimentaciones de usuarios recopiladas en una semana. Esta métrica ayuda al equipo a comprender la tendencia de desarrollo del producto y los cambios en las necesidades, y a ajustar y optimizar la estrategia del producto',
     'definition' => "产品中创建时间为某个周的反馈的个数求和\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的处理中的反馈数',
-    'alias'      => '处理中反馈数',
+    'name'       => 'Retroalimentaciones en proceso por producto',
+    'alias'      => 'Retroalimentaciones en proceso',
     'code'       => 'count_of_doing_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的处理中的反馈数表示产品中状态为处理中的反馈数量之和。该数值越大，说明团队并行处理的反馈越多，可以帮助团队了解当前的工作负载情况',
+    'desc'       => 'Las retroalimentaciones en proceso por producto representan la suma de retroalimentaciones del producto con estado En proceso. Cuanto mayor sea el valor, más retroalimentaciones atiende el equipo en paralelo, lo que ayuda a conocer la carga de trabajo actual',
     'definition' => "产品中所有反馈个数求和\n状态为处理中\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的已处理的反馈数',
-    'alias'      => '已处理反馈数',
+    'name'       => 'Retroalimentaciones procesadas por producto',
+    'alias'      => 'Retroalimentaciones procesadas',
     'code'       => 'count_of_done_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的已处理的反馈数表示产品中状态为已处理的反馈数量之和。该数值越大，说明团队成员处理的反馈越多，有利于提高用户满意度',
+    'desc'       => 'Las retroalimentaciones procesadas por producto representan la suma de retroalimentaciones del producto con estado Procesada. Cuanto mayor sea el valor, más retroalimentaciones han atendido los miembros del equipo, lo que contribuye a mejorar la satisfacción del usuario',
     'definition' => "产品中所有反馈个数求和\n状态为已处理\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的待完善的反馈数',
-    'alias'      => '待完善反馈数',
+    'name'       => 'Retroalimentaciones por completar por producto',
+    'alias'      => 'Retroalimentaciones por completar',
     'code'       => 'count_of_clarify_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的待完善的反馈数表示产品中状态为待完善的反馈数量之和。该数值越大，说明有较多的反馈信息不清晰或比较复杂。需要反馈者更多的澄清和解释',
+    'desc'       => 'Las retroalimentaciones por completar por producto representan la suma de retroalimentaciones del producto con estado Por completar. Cuanto mayor sea el valor, más retroalimentaciones tienen información poco clara o compleja. Se requiere que quien las envió aclare y explique más',
     'definition' => "产品中所有反馈个数求和\n状态为待完善\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的待处理的反馈数',
-    'alias'      => '待处理反馈数',
+    'name'       => 'Retroalimentaciones pendientes por producto',
+    'alias'      => 'Retroalimentaciones pendientes',
     'code'       => 'count_of_wait_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的待处理的反馈数表示产品中状态为待处理的反馈数量之和。该度量项可能暗示产品团队的反馈处理效率，待处理反馈数越多，可能会导致客户满意度降低',
+    'desc'       => 'Las retroalimentaciones pendientes por producto representan la suma de retroalimentaciones del producto con estado Pendiente. Esta métrica puede indicar la eficiencia del equipo del producto para atender retroalimentaciones; cuantas más retroalimentaciones pendientes, más puede disminuir la satisfacción del cliente',
     'definition' => "产品中所有反馈个数求和\n状态为待处理\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的追问中的反馈数',
-    'alias'      => '追问中反馈数',
+    'name'       => 'Retroalimentaciones en seguimiento por producto',
+    'alias'      => 'Retroalimentaciones en seguimiento',
     'code'       => 'count_of_asked_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的追问中的反馈数表示产品中状态为追问中的反馈数量之和。该度量项可能暗示着反馈的复杂性或对处理方案的疑惑，追问中的反馈数量越多，可能意味着团队需要更多时间和资源来回复并解决这些问题',
+    'desc'       => 'Las retroalimentaciones en seguimiento por producto representan la suma de retroalimentaciones del producto con estado En seguimiento. Esta métrica puede indicar la complejidad de las retroalimentaciones o dudas sobre la solución; cuantas más retroalimentaciones en seguimiento, más tiempo y recursos puede necesitar el equipo para responder y resolver estos asuntos',
     'definition' => "产品中所有反馈个数求和\n状态为追问中\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按产品统计的未关闭的反馈数',
-    'alias'      => '未关闭反馈数',
+    'name'       => 'Retroalimentaciones sin cerrar por producto',
+    'alias'      => 'Retroalimentaciones sin cerrar',
     'code'       => 'count_of_unclosed_feedback_in_product',
     'purpose'    => 'scale',
     'scope'      => 'product',
     'object'     => 'feedback',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按产品统计的未关闭的反馈数表示产品中状态为未关闭的反馈数量之和。这个度量项可以一定程度反映产品团队响应用户反馈的效率和及时处理用户问题的能力',
+    'desc'       => 'Las retroalimentaciones sin cerrar por producto representan la suma de retroalimentaciones del producto con estado Sin cerrar. Esta métrica puede reflejar, en cierta medida, la eficiencia del equipo del producto para responder a la retroalimentación de los usuarios y su capacidad para resolver oportunamente sus problemas',
     'definition' => "产品中所有反馈个数求和\n过滤状态为已关闭的反馈\n过滤已删除的反馈\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已关闭用户需求数',
-    'alias'      => '已关闭用户需求数',
+    'name'       => 'Requerimientos de usuario cerrados por proyecto',
+    'alias'      => 'Requerimientos de usuario cerrados',
     'code'       => 'count_of_closed_requirement_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已关闭用户需求数是指项目中状态为已关闭的用户需求的数量，反映了项目团队在满足用户期望和需求方面的已完成任务和计划。已关闭用户需求数量的增加表示项目团队已经成功完成了一定数量的用户需求工作，并取得了一定的成果。',
+    'desc'       => 'Los requerimientos de usuario cerrados por proyecto son la cantidad de requerimientos de usuario del proyecto con estado Cerrado. Refleja las tareas y planes ya completados por el equipo del proyecto para cumplir las expectativas y necesidades de los usuarios. Un aumento en los requerimientos de usuario cerrados indica que el equipo ha completado con éxito cierta cantidad de trabajo sobre requerimientos de usuario y ha obtenido ciertos resultados.',
     'definition' => "项目中用户需求个数求和\n过滤已删除的用户需求状态为已关闭\n 过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的用户需求总数',
-    'alias'      => '用户需求总数',
+    'name'       => 'Total de requerimientos de usuario por proyecto',
+    'alias'      => 'Total de Requerimientos de usuario (UR)',
     'code'       => 'count_of_requirement_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的用户需求总数是指项目中创建或关联的所有用户需求的数量，反映了项目的规模和复杂度，提供了关于用户需求管理、进度控制、资源规划、风险评估和质量控制的有用信息。',
+    'desc'       => 'El total de requerimientos de usuario por proyecto es la cantidad de todos los requerimientos de usuario creados o vinculados en el proyecto. Refleja el tamaño y la complejidad del proyecto y aporta información útil sobre la gestión de requerimientos de usuario, el control del avance, la planificación de recursos, la evaluación de riesgos y el control de calidad.',
     'definition' => "项目中用户需求个数求和\n过滤已删除的用户需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的工单数',
-    'alias'      => '被指派的工单数',
+    'name'       => 'Tickets asignados por persona',
+    'alias'      => 'Tickets asignados',
     'code'       => 'count_of_assigned_ticket_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'ticket',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的工单数表示每个人被指派的工单数量之和，反映了每个人员需要处理的工单数量的规模，该数值越大，说明需要处理的反馈任务越多',
+    'desc'       => 'Los tickets asignados por persona representan la suma de tickets asignados a cada persona. Refleja la magnitud de tickets que debe atender cada persona; cuanto mayor sea el valor, más tareas de retroalimentación hay por atender',
     'definition' => "所有工单个数求和\n指派给为某人\n过滤已删除的工单\n过滤已删除产品的工单"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的QA数',
-    'alias'      => '被指派的QA数',
+    'name'       => 'QA asignados por persona',
+    'alias'      => 'QA asignados',
     'code'       => 'count_of_assigned_qa_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'qa',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的QA数表示每个人被指派的质量保证问题之和，反映了每个人员需要处理的质量保证问题的规模。该数值越大，说明需要处理的质量保证问题越多',
+    'desc'       => 'Los QA asignados por persona representan la suma de problemas de aseguramiento de calidad asignados a cada persona. Refleja la magnitud de problemas de aseguramiento de calidad que debe atender cada persona. Cuanto mayor sea el valor, más problemas de aseguramiento de calidad hay por atender',
     'definition' => "所有待处理的QA个数求和（包含：待处理质量保证计划、待处理不符合项）\n指派给为某人\n质量保证计划状态为待检查、不符合项状态为待解决\n过滤已删除的质量保证计划和不符合项\n过滤已删除项目的质量保证计划和不符合项"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的风险数',
-    'alias'      => '被指派的风险数',
+    'name'       => 'Riesgos asignados por persona',
+    'alias'      => 'Riesgos asignados',
     'code'       => 'count_of_assigned_risk_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'risk',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的风险数表示每个人被指派的风险数量之和，反映了每个人员需要处理的风险数量的规模。该数值越大，说明需要投入越多的时间处理风险',
+    'desc'       => 'Los riesgos asignados por persona representan la suma de riesgos asignados a cada persona. Refleja la magnitud de riesgos que debe atender cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atender los riesgos',
     'definition' => "所有风险个数求和\n指派给为某人\n过滤已删除的风险\n过滤已关闭的风险\n过滤已删除项目的风险"
 );
 
 $reviewissueMetrics = array();
-$reviewissueMetrics['name']       = '按人员统计的被指派的评审意见数';
-$reviewissueMetrics['alias']      = '被指派的评审意见数';
+$reviewissueMetrics['name']       = 'Comentarios de revisión asignados por persona';
+$reviewissueMetrics['alias']      = 'Comentarios de revisión asignados';
 $reviewissueMetrics['code']       = 'count_of_assigned_reviewissue_in_user';
 $reviewissueMetrics['purpose']    = 'scale';
 $reviewissueMetrics['scope']      = 'user';
 $reviewissueMetrics['object']     = 'reviewissue';
 $reviewissueMetrics['unit']       = 'count';
 $reviewissueMetrics['dateType']   = 'nodate';
-$reviewissueMetrics['desc']       = '按人员统计的被指派的评审意见数表示每个人被指派的评审意见数量之和，反映了每个人员需要处理的评审意见数量的规模。该数值越大，说明需要投入越多的时间处理评审意见';
+$reviewissueMetrics['desc']       = 'Los comentarios de revisión asignados por persona representan la suma de comentarios de revisión asignados a cada persona. Refleja la magnitud de comentarios de revisión que debe atender cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atender los comentarios de revisión';
 $reviewissueMetrics['definition'] = "所有评审意见个数求和\n指派给为某人\n过滤已删除的评审意见\n过滤已关闭的评审意见\n过滤已删除项目的评审意见";
 $config->bi->builtin->metrics[]   = $reviewissueMetrics;
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的问题数',
-    'alias'      => '被指派的问题数',
+    'name'       => 'Incidencias asignadas por persona',
+    'alias'      => 'Incidencias asignadas',
     'code'       => 'count_of_assigned_issue_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'issue',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的问题数表示每个人待处理的问题数量之和。反映了每个人员需要处理的问题数量的规模。该数值越大，项目存在问题越多，需要投入越多的时间处理问题。',
+    'desc'       => 'Las incidencias asignadas por persona representan la suma de incidencias que cada persona tiene por atender. Refleja la magnitud de incidencias que debe atender cada persona. Cuanto mayor sea el valor, más incidencias tiene el proyecto y más tiempo se necesita invertir en atenderlas.',
     'definition' => "所有问题个数求和\n指派给为某人\n过滤已删除的问题\n过滤已删除项目的问题"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的需求池需求数',
-    'alias'      => '待处理需求池需求数',
+    'name'       => 'Requerimientos del pool de requerimientos asignados por persona',
+    'alias'      => 'Requerimientos del pool pendientes',
     'code'       => 'count_of_assigned_demand_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'demand',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的需求池需求数表示每个人待处理的需求池需求数量之和。反映了每个人员需要处理的需求池需求数量的规模。该数值越大，说明需要投入越多的时间处理需求池需求',
+    'desc'       => 'Los requerimientos del pool de requerimientos asignados por persona representan la suma de requerimientos del pool que cada persona tiene por atender. Refleja la magnitud de requerimientos del pool que debe atender cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atender los requerimientos del pool',
     'definition' => "所有需求池需求个数求和\n指派给为某人\n过滤已删除的需求池需求\n过滤状态为已关闭的需求池需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的未关闭用户需求数',
-    'alias'      => '未关闭用户需求数',
+    'name'       => 'Requerimientos de usuario sin cerrar por proyecto',
+    'alias'      => 'Requerimientos de usuario sin cerrar',
     'code'       => 'count_of_unclosed_requirement_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的未关闭用户需求数是指项目中尚未满足或处理的用户需求的数量，反映了项目团队在满足用户期望和需求方面的进行中任务和计划。未关闭用户需求数量的增加表示项目团队尚未完成的用户需求工作较多，需要进一步跟进和处理，以确保项目能够满足用户的期望',
+    'desc'       => 'Los requerimientos de usuario sin cerrar por proyecto son la cantidad de requerimientos de usuario del proyecto aún no satisfechos o atendidos. Refleja las tareas y planes en curso del equipo del proyecto para cumplir las expectativas y necesidades de los usuarios. Un aumento en los requerimientos de usuario sin cerrar indica que el equipo tiene aún mucho trabajo pendiente sobre requerimientos de usuario, que requiere seguimiento y atención adicionales para asegurar que el proyecto cumpla las expectativas de los usuarios',
     'definition' => "复用：\n按项目统计的用户需求总数\n按项目统计的已关闭用户需求数\n公式：\n按项目统计的未关闭用户需求数=按项目统计的用户需求总数-按项目统计的已关闭用户需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已完成用户需求数',
-    'alias'      => '已完成用户需求数',
+    'name'       => 'Requerimientos de usuario completados por proyecto',
+    'alias'      => 'Requerimientos de usuario completados',
     'code'       => 'count_of_finished_requirement_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已完成用户需求数是指状态为已关闭且关闭原因为已完成的用户需求的数量。反映了项目团队在满足用户期望和需求方面的已经实现的任务和计划。已完成用户需求数量的增加表示项目团队已经成功完成了一定数量的用户需求工作，并取得了一定的成果',
+    'desc'       => 'Los requerimientos de usuario completados por proyecto son la cantidad de requerimientos de usuario con estado Cerrado y motivo de cierre Completado. Refleja las tareas y planes ya realizados por el equipo del proyecto para cumplir las expectativas y necesidades de los usuarios. Un aumento en los requerimientos de usuario completados indica que el equipo ha completado con éxito cierta cantidad de trabajo sobre requerimientos de usuario y ha obtenido ciertos resultados',
     'definition' => "项目中用户需求的个数求和\n状态为已关闭\n关闭原因为已完成\n过滤已删除的用户需求\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的业务需求数',
-    'alias'      => '被指派的业务需求数',
+    'name'       => 'Épicas asignadas por persona',
+    'alias'      => 'Épicas asignadas',
     'code'       => 'count_of_assigned_epic_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'epic',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派业务需求数表示每个人待处理的业务需求数量之和。反映了每个人员需要处理的业务需求数量的规模。该数值越大，说明需要投入越多的时间处理业务需求。',
+    'desc'       => 'Las épicas asignadas por persona representan la suma de épicas que cada persona tiene por atender. Refleja la magnitud de épicas que debe atender cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atender las épicas.',
     'definition' => "所有业务需求个数求和\n指派给为某人\n过滤已删除的业务需求\n过滤已删除产品的业务需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的用户需求数',
-    'alias'      => '被指派的用户需求数',
+    'name'       => 'Requerimientos de usuario asignados por persona',
+    'alias'      => 'Requerimientos de usuario asignados',
     'code'       => 'count_of_assigned_requirement_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'requirement',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派用户需求数表示每个人待处理的用户需求数量之和。反映了每个人员需要处理的用户需求数量的规模。该数值越大，说明需要投入越多的时间处理用户需求。',
+    'desc'       => 'Los requerimientos de usuario asignados por persona representan la suma de requerimientos de usuario que cada persona tiene por atender. Refleja la magnitud de requerimientos de usuario que debe atender cada persona. Cuanto mayor sea el valor, más tiempo se necesita invertir en atender los requerimientos de usuario.',
     'definition' => "所有用户需求个数求和\n指派给为某人\n过滤已删除的用户需求\n过滤已删除产品的用户需求"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的业务需求总数',
-    'alias'      => '业务需求总数',
+    'name'       => 'Total de épicas por proyecto',
+    'alias'      => 'Total de épicas',
     'code'       => 'count_of_epic_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'epic',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的业务需求总数是指项目中创建或关联的所有业务需求的数量，反映了项目的规模和复杂度，提供了关于业务需求管理、进度控制、资源规划、风险评估和质量控制的有用信息',
+    'desc'       => 'El total de épicas por proyecto es la cantidad de todas las épicas creadas o vinculadas en el proyecto. Refleja el tamaño y la complejidad del proyecto y aporta información útil sobre la gestión de épicas, el control del avance, la planificación de recursos, la evaluación de riesgos y el control de calidad',
     'definition' => "项目中业务需求个数求和\r\n过滤已删除的业务需求\r\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已关闭业务需求数',
-    'alias'      => '已关闭业务需求数',
+    'name'       => 'Épicas cerradas por proyecto',
+    'alias'      => 'Épicas cerradas',
     'code'       => 'count_of_closed_epic_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'epic',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已关闭业务需求数是指项目中状态为已关闭的业务需求的数量，反映了项目团队在满足组织业务目标和需求方面的已经实现的任务和计划。已关闭业务需求数量的增加表示项目团队已经成功完成了一定数量的业务需求工作，并取得了一定的成果。',
+    'desc'       => 'Las épicas cerradas por proyecto son la cantidad de épicas del proyecto con estado Cerrado. Refleja las tareas y planes ya realizados por el equipo del proyecto para cumplir los objetivos y necesidades de negocio de la organización. Un aumento en las épicas cerradas indica que el equipo ha completado con éxito cierta cantidad de trabajo sobre épicas y ha obtenido ciertos resultados.',
     'definition' => "项目中业务需求个数求和\r\n过滤已删除的业务需求\r\n状态为已关闭\r\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的未关闭业务需求数',
-    'alias'      => '未关闭业务需求数',
+    'name'       => 'Épicas sin cerrar por proyecto',
+    'alias'      => 'Épicas sin cerrar',
     'code'       => 'count_of_unclosed_epic_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'epic',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的未关闭业务需求数是指项目中尚未满足或处理的业务需求的数量，反映了项目团队在满足组织业务目标和需求方面的进行中任务和计划。未关闭业务需求数量的增加表示项目团队尚未完成的业务需求工作较多，需要进一步跟进和处理，以确保项目能够满足组织的业务目标',
+    'desc'       => 'Las épicas sin cerrar por proyecto son la cantidad de épicas del proyecto aún no satisfechas o atendidas. Refleja las tareas y planes en curso del equipo del proyecto para cumplir los objetivos y necesidades de negocio de la organización. Un aumento en las épicas sin cerrar indica que el equipo tiene aún mucho trabajo pendiente sobre épicas, que requiere seguimiento y atención adicionales para asegurar que el proyecto cumpla los objetivos de negocio de la organización',
     'definition' => "复用：\r\n按项目统计的业务需求总数\r\n按项目统计的已关闭业务需求数\r\n公式：\r\n按项目统计的未关闭业务需求数=按项目统计的业务需求总数-按项目统计的已关闭业务需求数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已完成业务需求数',
-    'alias'      => '已完成业务需求数',
+    'name'       => 'Épicas completadas por proyecto',
+    'alias'      => 'Épicas completadas',
     'code'       => 'count_of_finished_epic_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'epic',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已完成业务需求数是指状态为已关闭且关闭原因为已完成的业务需求的数量。反映了项目团队在满足组织业务目标和需求方面的已经实现的任务和计划。已完成业务需求数量的增加表示项目团队已经成功完成了一定数量的业务需求工作，并取得了一定的成果',
+    'desc'       => 'Las épicas completadas por proyecto son la cantidad de épicas con estado Cerrado y motivo de cierre Completado. Refleja las tareas y planes ya realizados por el equipo del proyecto para cumplir los objetivos y necesidades de negocio de la organización. Un aumento en las épicas completadas indica que el equipo ha completado con éxito cierta cantidad de trabajo sobre épicas y ha obtenido ciertos resultados',
     'definition' => "项目中业务需求的个数求和\r\n状态为已关闭\r\n关闭原因为已完成\r\n过滤已删除的业务需求\r\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按人员统计的被指派的QA数',
-    'alias'      => '被指派的QA数',
+    'name'       => 'QA asignados por persona',
+    'alias'      => 'QA asignados',
     'code'       => 'count_of_assigned_qa_in_user',
     'purpose'    => 'scale',
     'scope'      => 'user',
     'object'     => 'qa',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按人员统计的被指派的QA数表示每个人被指派的质量保证问题之和。反映了每个人员需要处理的质量保证问题的规模。该数值越大，说明需要处理的质量保证问题越多',
+    'desc'       => 'Los QA asignados por persona representan la suma de problemas de aseguramiento de calidad asignados a cada persona. Refleja la magnitud de problemas de aseguramiento de calidad que debe atender cada persona. Cuanto mayor sea el valor, más problemas de aseguramiento de calidad hay por atender',
     'definition' => "所有待处理的QA个数求和（包含：待处理质量保证计划、待处理不符合项）\n指派给为某人\n质量保证计划状态为待检查、不符合项状态为待解决\n过滤已删除的质量保证计划和不符合项\n过滤已删除项目的质量保证计划和不符合项"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的研发需求规模数',
-    'alias'      => '研发需求规模数',
+    'name'       => 'Tamaño de historias por ejecución',
+    'alias'      => 'Tamaño de historias',
     'code'       => 'scale_of_story_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发需求规模数表示执行中所有研发需求的总规模，这个度量项可以反映执行周期内团队需要进行研发的工作规模，可以用于评估执行团队的工作负载和研发成果。',
+    'desc'       => 'El tamaño de historias por ejecución representa el tamaño total de todas las historias de la ejecución. Esta métrica refleja el volumen de trabajo de desarrollo que el equipo debe realizar durante el ciclo de la ejecución y sirve para evaluar la carga de trabajo del equipo y los resultados del desarrollo.',
     'definition' => "执行中所有研发需求的规模数求和\n过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的测试任务消耗工时数',
-    'alias'      => '测试任务消耗工时数',
+    'name'       => 'Horas consumidas en tareas de prueba por ejecución',
+    'alias'      => 'Horas consumidas en tareas de prueba',
     'code'       => 'consume_of_test_task_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的测试任务消耗工时数是指任务类型为测试时已消耗的工时总和，该度量项反映了测试任务的资源使用情况，可以帮助团队掌握执行的测试成本。',
+    'desc'       => 'Las horas consumidas en tareas de prueba por ejecución son la suma de horas ya consumidas cuando el tipo de tarea es Prueba. Esta métrica refleja el uso de recursos de las tareas de prueba y ayuda al equipo a conocer el costo de las pruebas de la ejecución.',
     'definition' => "执行中满足以下条件的任务消耗工时数求和\n任务类型为测试\n过滤已删除的任务\n过滤父任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的开发任务消耗工时数',
-    'alias'      => '开发任务消耗工时数',
+    'name'       => 'Horas consumidas en tareas de desarrollo por ejecución',
+    'alias'      => 'Horas consumidas en tareas de desarrollo',
     'code'       => 'consume_of_devel_task_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的开发任务消耗工时数是指任务类型为开发时已经消耗的工时总和，该度量项反映了开发任务的资源使用情况，可以帮助团队掌握执行的开发成本。',
+    'desc'       => 'Las horas consumidas en tareas de desarrollo por ejecución son la suma de horas ya consumidas cuando el tipo de tarea es Desarrollo. Esta métrica refleja el uso de recursos de las tareas de desarrollo y ayuda al equipo a conocer el costo de desarrollo de la ejecución.',
     'definition' => "执行中满足以下条件的任务消耗工时数求和\n任务类型为开发\n过滤已删除的任务\n过滤父任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的来源Bug的任务消耗工时数',
-    'alias'      => '来源Bug的任务消耗工时数',
+    'name'       => 'Horas consumidas en tareas originadas en Bug por ejecución',
+    'alias'      => 'Horas consumidas en tareas originadas en Bug',
     'code'       => 'consume_of_frombug_task_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的来源Bug的任务消耗工时数是指执行中Bug转任务消耗的工时总和。该度量项反映了任务来源为Bug的资源使用情况，可以帮助团队识别缺陷管理中存在的问题。',
+    'desc'       => 'Las horas consumidas en tareas originadas en Bug por ejecución son la suma de horas consumidas por los Bug convertidos en tareas en la ejecución. Esta métrica refleja el uso de recursos de las tareas cuyo origen es un Bug y ayuda al equipo a identificar problemas en la gestión de defectos.',
     'definition' => "执行中满足以下条件的任务消耗工时数求和\n任务来源为Bug\n过滤已删除的任务\n过滤父任务\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的开发人员可用工时',
-    'alias'      => '开发人员可用工时数',
+    'name'       => 'Horas disponibles de desarrolladores por ejecución',
+    'alias'      => 'Horas disponibles de desarrolladores',
     'code'       => 'hour_of_developer_available_in_execution',
     'purpose'    => 'hour',
     'scope'      => 'execution',
     'object'     => 'user',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的开发人员可用工时是指执行团队中角色为研发的可用工时之和。该度量项反映了团队中开发人员能够投入在本迭代的时间，有助于计算执行团队的工作负载。',
+    'desc'       => 'Las horas disponibles de desarrolladores por ejecución son la suma de horas disponibles de los miembros del equipo de la ejecución con rol de desarrollo. Esta métrica refleja el tiempo que los desarrolladores del equipo pueden dedicar a esta iteración y ayuda a calcular la carga de trabajo del equipo de la ejecución.',
     'definition' => "执行团队成员每日可用工时*可用工日\n人员职位为研发\n过滤已删除的用户\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的测试用例数',
-    'alias'      => '测试用例数',
+    'name'       => 'Casos de prueba por ejecución',
+    'alias'      => 'Casos de prueba',
     'code'       => 'count_of_case_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的测试用例数是指执行下的测试用例个数的求和，可以帮助团队评估需求测试用例的覆盖程度。',
+    'desc'       => 'Los casos de prueba por ejecución son la suma de casos de prueba de la ejecución y ayudan al equipo a evaluar el nivel de cobertura de pruebas de los requerimientos.',
     'definition' => "执行中满足以下条件的测试用例个数的求和\n执行用例列表中的用例\n过滤已删除的用例\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的新增有效Bug总数',
-    'alias'      => '新增有效Bug总数',
+    'name'       => 'Total de nuevos Bug válidos por ejecución',
+    'alias'      => 'Total de nuevos Bug válidos',
     'code'       => 'count_of_effective_bug_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的新增有效Bug总数是指在执行中发现的有效Bug的数量。这个度量项反映了执行的质量情况。新增有效Bug数越多可能代表执行的代码质量存在的问题越多，需要进行进一步的解决和改进。',
+    'desc'       => 'El total de nuevos Bug válidos por ejecución es la cantidad de Bug válidos encontrados en la ejecución. Esta métrica refleja la calidad de la ejecución. Cuantos más nuevos Bug válidos, más problemas puede haber en la calidad del código de la ejecución, que requieren mayor resolución y mejora.',
     'definition' => "执行中新增Bug个数求和\n解决方案为已解决，延期处理和不予解决或状态为激活\n过滤已删除的Bug\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时已交付的研发需求规模数',
-    'alias'      => '执行关闭时已交付研发需求规模数',
+    'name'       => 'Tamaño de historias entregadas al cierre de la ejecución, por ejecución',
+    'alias'      => 'Tamaño de historias entregadas al cierre de la ejecución',
     'code'       => 'scale_of_delivered_story_in_execution_when_closing',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行关闭时已交付研发需求规模数表示执行关闭时需求阶段为已发布或状态为已关闭且关闭原因为已完成的研发需求的规模。该度量项反映了执行关闭时能够交付给用户的研发需求的规模，可以用于评估执行团队的研发需求交付能力。',
+    'desc'       => 'El tamaño de historias entregadas al cierre de la ejecución, por ejecución, representa el tamaño de las historias cuya etapa es Lanzada, o cuyo estado es Cerrado con motivo de cierre Completado, al momento del cierre de la ejecución. Esta métrica refleja el tamaño de las historias que se pueden entregar a los usuarios al cierre de la ejecución y sirve para evaluar la capacidad de entrega del equipo.',
     'definition' => "执行关闭时，满足以下条件的执行中研发需求规模数求和，条件是：所处阶段为已发布或关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目\n过滤已删除的产品\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的截止执行开始当天的研发需求数',
-    'alias'      => '截止执行开始当天的研发需求数',
+    'name'       => 'Historias al día de inicio de la ejecución, por ejecución',
+    'alias'      => 'Historias al día de inicio de la ejecución',
     'code'       => 'count_of_story_in_execution_when_starting',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的截止执行开始当天的研发需求数表示执行开始当天已关联进执行的研发需求的数量。该度量项反映了本期执行计划完成的需求数量，可以用于评估执行团队的工作负载。',
+    'desc'       => 'Las historias al día de inicio de la ejecución, por ejecución, representan la cantidad de historias ya vinculadas a la ejecución el día en que esta inicia. Esta métrica refleja la cantidad de requerimientos que se planea completar en esta ejecución y sirve para evaluar la carga de trabajo del equipo.',
     'definition' => "截止到执行开始当天的23:59分的研发需求个数求和，过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目\n过滤已删除的产品\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的截止执行开始当天的研发需求规模数',
-    'alias'      => '截止执行开始当天的研发需求规模数',
+    'name'       => 'Tamaño de historias al día de inicio de la ejecución, por ejecución',
+    'alias'      => 'Tamaño de historias al día de inicio de la ejecución',
     'code'       => 'scale_of_story_in_execution_when_starting',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'hour',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的截止执行开始当天的研发需求规模数表示执行开始时已关联进执行的研发需求的规模数。该度量项反映了本期执行计划完成的需求规模，可以用于评估执行团队的工作负载。',
+    'desc'       => 'El tamaño de historias al día de inicio de la ejecución, por ejecución, representa el tamaño de las historias ya vinculadas a la ejecución al iniciar esta. Esta métrica refleja el tamaño de los requerimientos que se planea completar en esta ejecución y sirve para evaluar la carga de trabajo del equipo.',
     'definition' => "截止到执行开始当天的23:59分的研发需求规模数求和，过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目\n过滤已删除的产品\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的来源Bug的任务消耗工时占比',
-    'alias'      => '来源Bug的任务消耗工时占比',
+    'name'       => 'Proporción de horas consumidas en tareas originadas en Bug por ejecución',
+    'alias'      => 'Proporción de horas consumidas en tareas originadas en Bug',
     'code'       => 'consume_rate_of_frombug_task_in_execution',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的来源Bug的任务消耗工时占比是指执行中Bug转任务消耗的工时与执行中所有任务消耗工时的比值。该度量项反映了任务来源为Bug的资源使用情况，可以帮助团队识别缺陷管理中存在的问题，例如历史遗留缺陷过多导致执行一直在补旧账。',
+    'desc'       => 'La proporción de horas consumidas en tareas originadas en Bug por ejecución es la razón entre las horas consumidas por los Bug convertidos en tareas en la ejecución y las horas consumidas por todas las tareas de la ejecución. Esta métrica refleja el uso de recursos de las tareas cuyo origen es un Bug y ayuda al equipo a identificar problemas en la gestión de defectos, por ejemplo, demasiados defectos heredados que hacen que la ejecución se dedique constantemente a saldar deudas antiguas.',
     'definition' => "复用：按执行统计的来源Bug的任务消耗工时数、按执行统计的任务消耗工时数；\n公式：按执行统计的来源Bug的任务消耗工时数/按执行统计的任务消耗工时数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的测试用例预期条目数',
-    'alias'      => '测试用例预期条目数',
+    'name'       => 'Elementos esperados de casos de prueba por ejecución',
+    'alias'      => 'Elementos esperados de casos de prueba',
     'code'       => 'count_of_case_expect_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'case',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的测试用例预期条目数是指关联进执行的所有用例的预期条目数之和，可以用于评估测试用例的细致程度，可以帮助团队评估测试的深度和需求的复杂性。',
+    'desc'       => 'Los elementos esperados de casos de prueba por ejecución son la suma de los elementos esperados de todos los casos vinculados a la ejecución. Sirven para evaluar el nivel de detalle de los casos de prueba y ayudan al equipo a evaluar la profundidad de las pruebas y la complejidad de los requerimientos.',
     'definition' => "执行中满足以下条件的用例预期条目的求和\n执行下用例列表中的用例数\n过滤已删除的用例\n过滤已删除的执行\n过滤已删除的项目"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时已交付研发需求数',
-    'alias'      => '执行关闭时已交付研发需求数',
+    'name'       => 'Historias entregadas al cierre de la ejecución, por ejecución',
+    'alias'      => 'Historias entregadas al cierre de la ejecución',
     'code'       => 'count_of_delivered_story_in_execution_when_closing',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行关闭时已交付研发需求数表示执行关闭时需求阶段为已发布或状态为已关闭且关闭原因为已完成的研发需求的数量。该度量项反映了执行关闭时能够交付给用户的研发需求的数量，可以用于评估执行团队的研发需求交付能力。',
+    'desc'       => 'Las historias entregadas al cierre de la ejecución, por ejecución, representan la cantidad de historias cuya etapa es Lanzada, o cuyo estado es Cerrado con motivo de cierre Completado, al momento del cierre de la ejecución. Esta métrica refleja la cantidad de historias que se pueden entregar a los usuarios al cierre de la ejecución y sirve para evaluar la capacidad de entrega del equipo.',
     'definition' => "执行关闭时，满足以下条件的执行中研发需求个数求和\n所处阶段为已发布或关闭原因为已完成\n过滤已删除的研发需求\n过滤已删除的执行\n过滤已删除的项目\n过滤已删除的产品"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时研发需求按计划完成率',
-    'alias'      => '执行关闭时研发需求按计划完成率',
+    'name'       => 'Tasa de cumplimiento del plan de historias al cierre de la ejecución, por ejecución',
+    'alias'      => 'Tasa de cumplimiento del plan de historias al cierre de la ejecución',
     'code'       => 'rate_of_planned_developed_story_in_execution_when_closing',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的研发需求按计划完成率是指执行关闭时已交付的研发需求与执行开始时计划的研发需求数的比率。该度量项反映了团队能否按期完成规划的需求，可以帮助团队识别研发中存在的潜在问题。',
-    'definition' => "复用： 按执行统计的执行关闭时已交付的研发需求数、按执行统计的截止执行开始当天的研发需求数；公式：按执行统计的执行关闭时已交付的研发需求数/按执行统计的截止执行开始当天的研发需求数"
+    'desc'       => 'La tasa de cumplimiento del plan de historias por ejecución es la razón entre las historias entregadas al cierre de la ejecución y las historias planeadas al inicio de la ejecución. Esta métrica refleja si el equipo puede completar a tiempo los requerimientos planificados y ayuda a identificar posibles problemas en el desarrollo.',
+    'definition' => "Reutiliza: historias entregadas al cierre de la ejecución, por ejecución; historias al día de inicio de la ejecución, por ejecución. Fórmula: historias entregadas al cierre de la ejecución, por ejecución / historias al día de inicio de la ejecución, por ejecución"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时测试任务完成率',
-    'alias'      => '执行关闭时测试任务完成率',
+    'name'       => 'Tasa de finalización de tareas de prueba al cierre de la ejecución, por ejecución',
+    'alias'      => 'Tasa de finalización de tareas de prueba al cierre de la ejecución',
     'code'       => 'rate_of_finished_test_task_in_execution_when_closing',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的测试任务按计划完成率是指执行时已完成的测试任务数与执行开始时计划的测试任务数的比率。该度量项反映了团队能否按期完成规划的测试任务，可以帮助团队识别执行中存在的潜在问题，例如测试介入时间晚等。',
+    'desc'       => 'La tasa de cumplimiento del plan de tareas de prueba por ejecución es la razón entre las tareas de prueba completadas durante la ejecución y las tareas de prueba planeadas al inicio de la ejecución. Esta métrica refleja si el equipo puede completar a tiempo las tareas de prueba planificadas y ayuda a identificar posibles problemas en la ejecución, por ejemplo, que las pruebas intervengan tarde.',
     'definition' => "复用：按执行统计的执行关闭时已完成的测试任务数、按执行统计的测试任务数\n公式：按执行统计的执行关闭时已完成的测试任务数/按执行统计的测试任务数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时执行开发效率',
-    'alias'      => '执行开发效率',
+    'name'       => 'Eficiencia de desarrollo al cierre de la ejecución, por ejecución',
+    'alias'      => 'Eficiencia de desarrollo de la ejecución',
     'code'       => 'devel_efficiency_in_execution_when_closing',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'execution',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行开发效率是指执行交付研发需求规模数与执行所有任务消耗工时的比率。该度量项反映了执行的开发速度，可以帮助团队识别潜在问题并采取改进措施提高研发效率。',
+    'desc'       => 'La eficiencia de desarrollo por ejecución es la razón entre el tamaño de las historias entregadas por la ejecución y las horas consumidas por todas las tareas de la ejecución. Esta métrica refleja la velocidad de desarrollo de la ejecución y ayuda al equipo a identificar posibles problemas y a tomar medidas de mejora para aumentar la eficiencia del desarrollo.',
     'definition' => "复用：按执行统计的任务消耗工时数、按执行统计的执行关闭时已交付的研发需求规模数；\n公式：按执行统计的执行关闭时已交付的研发需求规模数/按执行统计的任务消耗工时数"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的有效Bug数',
-    'alias'      => '有效Bug数',
+    'name'       => 'Bug válidos por proyecto',
+    'alias'      => 'Bugs válidos',
     'code'       => 'count_of_effective_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的有效Bug数是指项目中真正具有影响和价值的Bug数量。有效Bug通常是指导致项目不正常运行或影响用户体验的Bug。统计有效Bug数可以帮助评估项目的稳定性和质量，也可以评估测试人员之间的协作或对项目的了解程度。',
+    'desc'       => 'Los Bug válidos por proyecto son la cantidad de Bug del proyecto que realmente tienen impacto y valor. Un Bug válido suele ser aquel que causa un funcionamiento anormal del proyecto o afecta la experiencia del usuario. Contar los Bug válidos ayuda a evaluar la estabilidad y la calidad del proyecto, así como la colaboración entre los testers o su conocimiento del proyecto.',
     'definition' => "项目中所有Bug个数求和,解决方案为已解决、延期处理或状态为激活;\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的已修复Bug数',
-    'alias'      => '已修复Bug数',
+    'name'       => 'Bug corregidos por proyecto',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_fixed_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的已修复Bug数是指解决方案为已解决并且状态为已关闭的Bug数量。这个度量项反映了项目解决的问题数量。已修复Bug数的可以评估开发团队在Bug解决方面的工作效率。',
+    'desc'       => 'Los Bug corregidos por proyecto son la cantidad de Bug cuya solución es Resuelto y cuyo estado es Cerrado. Esta métrica refleja la cantidad de problemas resueltos por el proyecto. Los Bug corregidos permiten evaluar la eficiencia del equipo de desarrollo en la resolución de Bug.',
     'definition' => "项目中Bug的个数求和\n 解决方案为已解决\n 状态为已关闭\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的每日新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Nuevos Bug por día por proyecto',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_daily_created_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按项目统计的每日新增Bug数是指在每天的项目开发过程中新发现并记录的Bug数量。该度量项可以体现项目开发过程中Bug的发现速度和趋势，较高的新增Bug数可能意味着存在较多的问题需要解决，同时也可以帮助识别项目开发过程中的瓶颈和潜在的质量风险。',
+    'desc'       => 'Los nuevos Bug por día por proyecto son la cantidad de Bug nuevos descubiertos y registrados cada día durante el desarrollo del proyecto. Esta métrica refleja la velocidad y la tendencia de descubrimiento de Bug durante el desarrollo; una cantidad alta de nuevos Bug puede indicar que hay muchos problemas por resolver y también ayuda a identificar cuellos de botella y posibles riesgos de calidad en el desarrollo del proyecto.',
     'definition' => "项目中Bug数求和\n 创建时间为某日\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的每日解决Bug数',
-    'alias'      => '解决Bug数',
+    'name'       => 'Bug resueltos por día por proyecto',
+    'alias'      => 'Bugs resueltos',
     'code'       => 'count_of_daily_resolved_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按项目统计的每日解决Bug数是指项目每日解决的Bug的数量。该度量项可以帮助我们了解开发团队解决Bug的速度和效率。',
+    'desc'       => 'Los Bug resueltos por día por proyecto son la cantidad de Bug que el proyecto resuelve cada día. Esta métrica nos ayuda a conocer la velocidad y la eficiencia del equipo de desarrollo para resolver Bug.',
     'definition' => "项目中Bug数求和\n 解决日期为某日\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的每日关闭Bug数',
-    'alias'      => '关闭Bug数',
+    'name'       => 'Bug cerrados por día por proyecto',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_daily_closed_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'day',
-    'desc'       => '按项目统计的每日关闭Bug数是指每天在项目中每日关闭的Bug的数量。该度量项可以帮助我们了解开发团队对已解决的Bug进行确认与关闭的速度和效率，通过对比不同时间段的关闭Bug数，可以评估开发团队的协作和问题处理能力。',
+    'desc'       => 'Los Bug cerrados por día por proyecto son la cantidad de Bug que se cierran cada día en el proyecto. Esta métrica nos ayuda a conocer la velocidad y la eficiencia con que el equipo de desarrollo confirma y cierra los Bug resueltos; al comparar la cantidad de Bug cerrados en distintos periodos se puede evaluar la colaboración y la capacidad de manejo de problemas del equipo.',
     'definition' => "项目中Bug数求和\n 关闭时间为某日\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的Bug修复率',
-    'alias'      => 'Bug修复率',
+    'name'       => 'Tasa de corrección de Bug por proyecto',
+    'alias'      => 'Tasa de corrección de Bugs',
     'code'       => 'rate_of_fixed_bug_in_project',
     'purpose'    => 'rate',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的Bug修复率是指按项目统计的修复Bug数相对于按项目统计的有效Bug数的比例。该度量项可以帮助我们了解开发团队对Bug修复的效率和质量，高的修复率可能说明Bug得到及时解决，项目质量得到有效保障。',
+    'desc'       => 'La tasa de corrección de Bug por proyecto es la proporción entre los Bug corregidos por proyecto y los Bug válidos por proyecto. Esta métrica nos ayuda a conocer la eficiencia y la calidad del equipo de desarrollo en la corrección de Bug; una tasa alta puede indicar que los Bug se resuelven oportunamente y que la calidad del proyecto está bien protegida.',
     'definition' => "复用：按项目统计的修复Bug数、按项目统计的有效Bug数\n 公式：按项目统计的Bug修复率=按项目统计的修复Bug数/按项目统计的有效Bug数\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的严重程度为1级的Bug数',
-    'alias'      => '严重程度为1级的Bug数',
+    'name'       => 'Bug de severidad nivel 1 por proyecto',
+    'alias'      => 'Bugs con severidad de nivel 1',
     'code'       => 'count_of_severity_1_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的严重程度为1级的Bug数是指在项目开发过程中发现的、对项目功能或性能产生重大影响的Bug数量。这些Bug可能会导致系统崩溃、功能无法正常运行、数据丢失等严重问题。统计这些Bug的数量可以帮助评估项目的稳定性和可靠性。',
+    'desc'       => 'Los Bug de severidad nivel 1 por proyecto son la cantidad de Bug descubiertos durante el desarrollo del proyecto que tienen un impacto grave en la funcionalidad o el rendimiento. Estos Bug pueden causar problemas graves como caídas del sistema, funciones que no operan con normalidad o pérdida de datos. Contarlos ayuda a evaluar la estabilidad y la confiabilidad del proyecto.',
     'definition' => "项目中Bug的个数求和\n 严重程度为1级\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的严重程度为2级的Bug数',
-    'alias'      => '严重程度为2级的Bug数',
+    'name'       => 'Bug de severidad nivel 2 por proyecto',
+    'alias'      => 'Bugs con severidad de nivel 2',
     'code'       => 'count_of_severity_2_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的严重程度为2级的Bug数是指在项目开发过程中发现的、对项目功能或性能产生重大影响的Bug数量。这些Bug可能会导致系统崩溃、功能无法正常运行、数据丢失等严重问题。统计这些Bug的数量可以帮助评估项目的稳定性和可靠性。',
+    'desc'       => 'Los Bug de severidad nivel 2 por proyecto son la cantidad de Bug descubiertos durante el desarrollo del proyecto que tienen un impacto grave en la funcionalidad o el rendimiento. Estos Bug pueden causar problemas graves como caídas del sistema, funciones que no operan con normalidad o pérdida de datos. Contarlos ayuda a evaluar la estabilidad y la confiabilidad del proyecto.',
     'definition' => "项目中Bug的个数求和\n 严重程度为2级\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的严重程度为1、2级的Bug数',
-    'alias'      => '严重程度为1、2级的Bug数',
+    'name'       => 'Bug de severidad nivel 1 y 2 por proyecto',
+    'alias'      => 'Bugs con severidad de nivel 1 y 2',
     'code'       => 'count_of_severe_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按项目统计的严重程度为1、2级的Bug数是指在项目开发过程中发现的严重程度为1级和2级的Bug数量的总和。统计这些Bug的数量可以评估项目开发过程的质量和稳定性，同时也关注影响用户体验和功能完整性的问题',
+    'desc'       => 'Los Bug de severidad nivel 1 y 2 por proyecto son la suma de los Bug de severidad nivel 1 y nivel 2 descubiertos durante el desarrollo del proyecto. Contarlos permite evaluar la calidad y la estabilidad del proceso de desarrollo, y también presta atención a los problemas que afectan la experiencia del usuario y la integridad de las funciones',
     'definition' => "复用： 按项目统计的严重程度为1级的Bug数、按项目统计的严重程度为2级的Bug数。公式： 按项目统计的严重程度为1、2级的Bug数=按项目统计的严重程度为1级的Bug数+按项目统计的严重程度为2级的Bug数\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Nuevos Bug por año por proyecto',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_annual_created_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度新增Bug数是指项目在某年度新发现的Bug数量。这个度量项反映了项目在某年度出现的新问题数量。年度新增Bug数越多可能意味着质量控制存在问题，需要及时进行处理和改进。',
+    'desc'       => 'Los nuevos Bug por año por proyecto son la cantidad de Bug nuevos descubiertos por el proyecto en un año determinado. Esta métrica refleja la cantidad de problemas nuevos que aparecen en el proyecto en un año. Una mayor cantidad de nuevos Bug por año puede indicar problemas en el control de calidad que deben atenderse y mejorarse oportunamente.',
     'definition' => "项目中Bug的个数求和\n 创建时间为某年\n 过滤已删除的Bug\n 过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的月度新增Bug数',
-    'alias'      => '新增Bug数',
+    'name'       => 'Nuevos Bug por mes por proyecto',
+    'alias'      => 'Bugs nuevos',
     'code'       => 'count_of_monthly_created_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按项目统计的月度新增Bug数是指在某年度新发现的Bug数量。这个度量项反映了系统或项目在某月度出现的新问题数量。月度新增Bug数的增加可能意味着质量控制存在问题，需要及时进行处理和改进。',
+    'desc'       => 'Los nuevos Bug por mes por proyecto son la cantidad de Bug nuevos descubiertos en un mes determinado. Esta métrica refleja la cantidad de problemas nuevos que aparecen en el sistema o proyecto en un mes. Un aumento en los nuevos Bug por mes puede indicar problemas en el control de calidad que deben atenderse y mejorarse oportunamente.',
     'definition' => "项目中创建时间在某年某月的Bug个数求和\n过滤已删除的Bug\n过滤已删除的项目\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的月度关闭Bug数',
-    'alias'      => '关闭Bug数',
+    'name'       => 'Bug cerrados por mes por proyecto',
+    'alias'      => 'Bugs cerrados',
     'code'       => 'count_of_monthly_closed_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按项目统计的月度关闭Bug数是指在某月度关闭的Bug数量。这个度量项反映了产品开发过程中每月被确认并关闭的Bug的数量。该度量项可以帮助我们了解开发团队对Bug进行确认与关闭的速度和效率。',
-    'definition' => "项目中关闭时间在某年某月的Bug个数求和，过滤已删除的Bug，过滤已删除的项目。",
+    'desc'       => 'Los Bug cerrados por mes por proyecto son la cantidad de Bug cerrados en un mes determinado. Esta métrica refleja la cantidad de Bug confirmados y cerrados cada mes durante el desarrollo del producto. Nos ayuda a conocer la velocidad y la eficiencia con que el equipo de desarrollo confirma y cierra los Bug.',
+    'definition' => "Suma de la cantidad de Bug del proyecto cuya fecha de cierre cae en un año y mes determinados, excluyendo los Bug eliminados y los proyectos eliminados.",
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的月度修复Bug数',
-    'alias'      => '修复Bug数',
+    'name'       => 'Bug corregidos por mes por proyecto',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_monthly_fixed_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '按项目统计的月度修复Bug数是指每月在项目开发过程中被解决并关闭的Bug的数量。该度量项可以帮助我们了解开发团队解决Bug的速度和效率。',
+    'desc'       => 'Los Bug corregidos por mes por proyecto son la cantidad de Bug resueltos y cerrados cada mes durante el desarrollo del proyecto. Esta métrica nos ayuda a conocer la velocidad y la eficiencia del equipo de desarrollo para resolver Bug.',
     'definition' => "项目中Bug的个数求和\n关闭时间为某年某月\n解决方案为已解决\n过滤已删除的Bug\n过滤已删除的项目\n",
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度修复Bug数',
-    'alias'      => '修复Bug数',
+    'name'       => 'Bug corregidos por año por proyecto',
+    'alias'      => 'Bugs corregidos',
     'code'       => 'count_of_annual_fixed_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度修复Bug数是指在某年度解决并关闭的Bug数量。这个度量项反映了项目在某年度解决的问题数量。年度修复Bug数越多可能说明开发团队在Bug解决方面的工作效率较高。',
+    'desc'       => 'Los Bug corregidos por año por proyecto son la cantidad de Bug resueltos y cerrados en un año determinado. Esta métrica refleja la cantidad de problemas resueltos por el proyecto en un año. Una mayor cantidad de Bug corregidos por año puede indicar que el equipo de desarrollo es muy eficiente en la resolución de Bug.',
     'definition' => "项目中Bug的个数求和\n关闭时间为某年\n解决方案为已解决\n过滤已删除的Bug\n过滤已删除的项目\n",
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按项目统计的年度新增有效Bug数',
-    'alias'      => '新增有效Bug数',
+    'name'       => 'Nuevos Bug válidos por año por proyecto',
+    'alias'      => 'Bugs válidos nuevos',
     'code'       => 'count_of_annual_created_effective_bug_in_project',
     'purpose'    => 'scale',
     'scope'      => 'project',
     'object'     => 'bug',
     'unit'       => 'count',
     'dateType'   => 'year',
-    'desc'       => '按项目统计的年度新增有效Bug数是指项目在某年度新发现的真正具有影响和价值的Bug数量。有效Bug通常是指导致项目不正常运行或影响用户体验的Bug。统计有效Bug数可以帮助评估项目的稳定性和质量也可以评估测试人员之前的协作或对项目的了解程度。',
+    'desc'       => 'Los nuevos Bug válidos por año por proyecto son la cantidad de Bug nuevos descubiertos por el proyecto en un año determinado que realmente tienen impacto y valor. Un Bug válido suele ser aquel que causa un funcionamiento anormal del proyecto o afecta la experiencia del usuario. Contar los Bug válidos ayuda a evaluar la estabilidad y la calidad del proyecto, así como la colaboración entre los testers o su conocimiento del proyecto.',
     'definition' => "项目中Bug个数求和\n创建时间为某年\n解决方案为已解决和延期处理或者状态为激活\n过滤已删除的Bug\n过滤已删除的项目\n",
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计合并请求通过率',
-    'alias'      => '系统合并请求通过率',
+    'name'       => 'Tasa de aprobación de solicitudes de fusión por sistema',
+    'alias'      => 'Tasa de aprobación de solicitudes de fusión del sistema',
     'code'       => 'rate_of_merged_mr',
     'purpose'    => 'qc',
     'scope'      => 'system',
     'object'     => 'codebase',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的合并请求通过率是指已合并合并请求/总的合并请求数。通过统计在一定时间范围内提交的合并请求中合并的比例，团队能够有效监控其代码审查过程的健康状况，并及时识别潜在的改进空间。',
+    'desc'       => 'La tasa de aprobación de solicitudes de fusión por sistema es: solicitudes de fusión fusionadas / total de solicitudes de fusión. Al contar la proporción de solicitudes de fusión que se fusionan entre las enviadas en un periodo determinado, el equipo puede monitorear eficazmente la salud de su proceso de revisión de código e identificar a tiempo posibles espacios de mejora.',
     'definition' => "系统已合并合并请求/总的合并请求数\n不统计已删除的合并请求\n不统计已删除代码库里的合并请求\n"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按系统统计主机总数',
-    'alias'      => '主机总数',
+    'name'       => 'Total de hosts por sistema',
+    'alias'      => 'Total de hosts',
     'code'       => 'count_of_host',
     'purpose'    => 'scale',
     'scope'      => 'system',
     'object'     => 'host',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按系统统计的主机总数是指在禅道中的全部主机总数。',
-    'definition' => "所有主机的个数求和"
+    'desc'       => 'El total de hosts por sistema es la cantidad total de hosts en AXIS FLOW.',
+    'definition' => "Suma de la cantidad de todos los hosts"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按月统计的人均研发效能',
-    'alias'      => '人均研发效能',
+    'name'       => 'Eficiencia de desarrollo per cápita por mes',
+    'alias'      => 'Eficiencia de desarrollo per cápita',
     'code'       => 'avg_of_dev_efficiency',
     'purpose'    => 'rate',
     'scope'      => 'system',
     'object'     => 'user',
     'unit'       => 'percentage',
     'dateType'   => 'month',
-    'desc'       => '指团队成员在单位时间内完成的平均需求规模。它用于评估团队的生产力、资源利用效率以及工作负荷的合理性。',
+    'desc'       => 'Se refiere al tamaño promedio de requerimientos que los miembros del equipo completan por unidad de tiempo. Se usa para evaluar la productividad del equipo, la eficiencia en el uso de recursos y lo razonable de la carga de trabajo.',
     'definition' => "按月统计的人均研发效能 = 当月发布的研发需求的规模总数 / 当月禅道系统中的总人数\n当月发布的研发需求，是统计当月阶段状态为已发布、已关闭关闭原因为已完成的研发需求，过滤已删除的研发需求，次月过滤已统计过的研发需求。"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按月统计的已发布研发需求平均交付周期',
-    'alias'      => '已发布研发需求平均交付周期',
+    'name'       => 'Ciclo de entrega promedio de historias lanzadas por mes',
+    'alias'      => 'Ciclo de entrega promedio de historias lanzadas',
     'code'       => 'avg_of_release_story_delivery_time',
     'purpose'    => 'time',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'day',
     'dateType'   => 'month',
-    'desc'       => '指从需求被提出（创建）到最终交付给客户或上线所需的平均时间，反映了团队或组织在需求实现过程中的效率。它可以用于评估需求的响应速度和交付速度。',
+    'desc'       => 'Se refiere al tiempo promedio desde que se propone (crea) un requerimiento hasta que se entrega finalmente al cliente o se pone en producción; refleja la eficiencia del equipo u organización en el proceso de implementación de requerimientos. Puede usarse para evaluar la velocidad de respuesta y de entrega de los requerimientos.',
     'definition' => "按月统计的已发布研发需求平均交付周期 = sum ( 当月发布的研发需求的发布时间 - 当月发布的研发需求的创建时间 ) / 当月发布的研发需求总数\n当月发布的研发需求，是统计当月阶段状态为已发布、已关闭关闭原因为已完成的研发需求，过滤已删除的研发需求，次月过滤已统计过的研发需求。"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按月统计的已发布研发需求平均缺陷密度',
-    'alias'      => '已发布研发需求平均缺陷密度',
+    'name'       => 'Densidad promedio de defectos de historias lanzadas por mes',
+    'alias'      => 'Densidad promedio de defectos de historias lanzadas',
     'code'       => 'avg_of_release_story_defect_density',
     'purpose'    => 'qc',
     'scope'      => 'system',
     'object'     => 'story',
     'unit'       => 'count',
     'dateType'   => 'month',
-    'desc'       => '指在测试阶段发现的缺陷数量与需求规模的比值。它反映了代码或系统的质量状况，用于评估开发过程的质量以及测试的有效性。',
+    'desc'       => 'Se refiere a la razón entre la cantidad de defectos encontrados en la etapa de pruebas y el tamaño del requerimiento. Refleja la calidad del código o del sistema y se usa para evaluar la calidad del proceso de desarrollo y la efectividad de las pruebas.',
     'definition' => "按月统计的已发布研发需求平均缺陷密度 = sum ( 当月发布的研发需求关联的Bug总数 ) / 当月发布的研发需求的规模总数\n当月发布的研发需求，是统计当月阶段状态为已发布、已关闭关闭原因为已完成的研发需求，过滤已删除的研发需求，次月过滤已统计过的研发需求。\n当月发布的研发需求关联的Bug总数，是统计当月发布的每个研发需求关联Bug，过滤已删除的bug。"
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时开发任务完成率',
-    'alias'      => '执行关闭时开发任务完成率',
+    'name'       => 'Tasa de finalización de tareas de desarrollo al cierre de la ejecución, por ejecución',
+    'alias'      => 'Tasa de finalización de tareas de desarrollo al cierre de la ejecución',
     'code'       => 'rate_of_finished_dev_task_in_execution_when_closing',
     'purpose'    => 'rate',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'percentage',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的开发任务按计划完成率是指执行时已完成的开发任务数与执行开始时计划的开发任务数的比率。该度量项反映了团队能否按期完成规划的开发任务，可以帮助团队识别执行中存在的潜在问题。',
-    'definition' => "复用：按执行统计的执行关闭时已完成的开发任务数、按执行统计的开发任务数，公式：按执行统计的执行关闭时已完成的开发任务数÷按执行统计的开发任务数。"
+    'desc'       => 'La tasa de cumplimiento del plan de tareas de desarrollo por ejecución es la razón entre las tareas de desarrollo completadas durante la ejecución y las tareas de desarrollo planeadas al inicio de la ejecución. Esta métrica refleja si el equipo puede completar a tiempo las tareas de desarrollo planificadas y ayuda a identificar posibles problemas en la ejecución.',
+    'definition' => "Reutiliza: tareas de desarrollo completadas al cierre de la ejecución, por ejecución; tareas de desarrollo por ejecución. Fórmula: tareas de desarrollo completadas al cierre de la ejecución, por ejecución ÷ tareas de desarrollo por ejecución."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的开发任务数',
-    'alias'      => '开发任务数',
+    'name'       => 'Tareas de desarrollo por ejecución',
+    'alias'      => 'Tareas de desarrollo',
     'code'       => 'count_of_dev_task_in_execution',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的开发任务数是指执行中任务类型为开发的任务数求和。该度量项反映了执行中开发的工作量，可以帮助团队进行开发资源调配。',
-    'definition' => "执行中满足以下条件的任务个数求和，条件是：任务类型为开发，过滤已删除的任务，过滤已删除的执行，过滤已删除的项目。"
+    'desc'       => 'Las tareas de desarrollo por ejecución son la suma de tareas de la ejecución cuyo tipo de tarea es Desarrollo. Esta métrica refleja la carga de trabajo de desarrollo en la ejecución y ayuda al equipo a asignar los recursos de desarrollo.',
+    'definition' => "Suma de la cantidad de tareas de la ejecución que cumplen las siguientes condiciones: tipo de tarea Desarrollo, excluyendo las tareas eliminadas, las ejecuciones eliminadas y los proyectos eliminados."
 );
 
 $config->bi->builtin->metrics[] = array
 (
-    'name'       => '按执行统计的执行关闭时已完成的开发任务数',
-    'alias'      => '执行关闭时已完成的开发任务数',
+    'name'       => 'Tareas de desarrollo completadas al cierre de la ejecución, por ejecución',
+    'alias'      => 'Tareas de desarrollo completadas al cierre de la ejecución',
     'code'       => 'count_of_finished_dev_task_in_execution_when_closing',
     'purpose'    => 'scale',
     'scope'      => 'execution',
     'object'     => 'task',
     'unit'       => 'count',
     'dateType'   => 'nodate',
-    'desc'       => '按执行统计的执行关闭时已完成开发任务数表示执行关闭时任务状态为已完成的开发任务个数求和。该度量项反映了执行关闭时开发人员完成的开发任务个数，可以评估执行中开发人员的实际工作量和开发效率。',
-    'definition' => "执行关闭时执行中满足以下条件的开发任务个数求和，条件是：任务类型为开发，状态为已完成或已关闭且关闭原因为已完成，过滤已删除的任务，过滤已删除的执行，过滤已删除的项目。"
+    'desc'       => 'Las tareas de desarrollo completadas al cierre de la ejecución, por ejecución, representan la suma de tareas de desarrollo con estado Completada al momento del cierre de la ejecución. Esta métrica refleja la cantidad de tareas de desarrollo completadas por los desarrolladores al cierre de la ejecución y permite evaluar la carga de trabajo real y la eficiencia de desarrollo de los desarrolladores en la ejecución.',
+    'definition' => "Suma de la cantidad de tareas de desarrollo de la ejecución que cumplen las siguientes condiciones al cierre de la ejecución: tipo de tarea Desarrollo, estado Completada, o Cerrada con motivo de cierre Completada, excluyendo las tareas eliminadas, las ejecuciones eliminadas y los proyectos eliminados."
 );

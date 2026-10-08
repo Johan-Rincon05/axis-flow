@@ -19,7 +19,7 @@ $lang->repo->setRules        = 'Establecer reglas';
 $lang->repo->download        = 'Descargar archivo';
 
 $lang->repo->mirror = new stdclass();
-$lang->repo->mirror->syncing             = 'Syncing...';
+$lang->repo->mirror->syncing             = 'Sincronizando...';
 $lang->repo->mirror->refreshSync         = 'Actualizar estado de sincronización';
 $lang->repo->mirror->nextSync            = 'Próxima sincronización: ';
 $lang->repo->mirror->lastUpdated         = 'Última actualización: ';
@@ -220,7 +220,7 @@ $lang->repo->viewDiffList['appose'] = 'Paralelo';
 $lang->repo->encryptList['plain']  = 'Sin cifrado';
 $lang->repo->encryptList['base64'] = 'BASE64';
 
-$lang->repo->logStyles['A'] = 'Add';
+$lang->repo->logStyles['A'] = 'Agregar';
 $lang->repo->logStyles['M'] = 'Modificación';
 $lang->repo->logStyles['D'] = 'Eliminar';
 
@@ -418,7 +418,7 @@ $lang->repo->codeSurvey = 'Cambios: <span class="add-cot">%d líneas</span> de c
 $lang->repo->featureBar['review']['all']          = 'Todos';
 $lang->repo->featureBar['review']['assigntome']   = 'Asignado a mí';
 $lang->repo->featureBar['review']['openedbyme']   = 'AbiertoPorMí';
-$lang->repo->featureBar['review']['resolvedbyme'] = 'ResolvedByMe';
+$lang->repo->featureBar['review']['resolvedbyme'] = 'Resuelto por mí';
 $lang->repo->featureBar['review']['assigntonull'] = 'Sin asignar';
 $lang->repo->featureBar['review']['unresolved']   = 'Activo';
 $lang->repo->featureBar['review']['unclosed']     = 'Sin cerrar';
@@ -443,7 +443,7 @@ $lang->repo->createBranch        = 'Crear rama';
 $lang->repo->deleteBranch        = 'Eliminar rama';
 $lang->repo->confirmBranchDelete = '¿Seguro que desea eliminar esta rama?';
 $lang->repo->deleteDefaultBranch = 'La rama predeterminada no permite eliminación';
-$lang->repo->divergence          = 'Behind|Ahead';
+$lang->repo->divergence          = 'Atrasado|Adelantado';
 $lang->repo->ahead               = 'Adelantado';
 $lang->repo->behind              = 'Atrasado';
 $lang->repo->noDivergence        = 'Sin divergencia';

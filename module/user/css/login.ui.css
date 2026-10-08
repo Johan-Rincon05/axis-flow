@@ -26,9 +26,10 @@ body {background: var(--color-primary-500) linear-gradient(-90deg, var(--color-p
 #langs-toggle {float: right; position: absolute; right: 0;}
 
 #loginForm {margin: 10px 0 30px 0;}
-#loginOptions {position: relative;}
+#loginOptions {position: relative; padding-right: 150px;}
+#loginOptions .check-list, #loginOptions .form-control {max-width: 100%;}
 #keepLogin {display: inline-block; vertical-align: middle;}
-.resetPassword {position: absolute; top: 50%; right: var(--form-grid-gap-x-half); transform: translateY(-50%); color: var(--color-fore);}
+.resetPassword {position: absolute; top: 50%; right: var(--form-grid-gap-x-half); transform: translateY(-50%); color: var(--color-fore); white-space: nowrap;}
 
 .form-actions {padding-bottom: 0 !important;}
 .form-actions > button {width: 100%;}

@@ -110,7 +110,7 @@ $lang->gitfox->apiError[3]  = "solo puede contener letras, dígitos, '_', '-' y 
 $lang->gitfox->apiError[4]  = 'La rama ya existe';
 $lang->gitfox->apiError[5]  = 'No se pudo guardar el grupo {:path=>["has already been taken"]}';
 $lang->gitfox->apiError[6]  = 'No se pudo guardar el grupo {:path=>["已经被使用"]}';
-$lang->gitfox->apiError[7]  = '403 Forbidden';
+$lang->gitfox->apiError[7]  = '403 Prohibido';
 $lang->gitfox->apiError[8]  = 'no es válido';
 $lang->gitfox->apiError[9]  = 'admin es un nombre reservado';
 $lang->gitfox->apiError[10] = 'ya está en uso';
@@ -139,7 +139,7 @@ $lang->gitfox->featureBar['binduser']['binded']  = $lang->gitfox->binded;
 $lang->gitfox->devopsIntroduction = 'Solución DevOps de AXIS FLOW: refactorización integral, liderando el futuro';
 $lang->gitfox->devopsDescription  = <<<EOD
 <p class="leading-relaxed mb-2">
-  The underlying capabilities of DevOps 4.0 are powered by the GitFox engine. GitFox is a fully self-developed Git source code management platform focused on enterprise R&D collaboration. It delivers one-stop capabilities spanning code hosting, pipeline building, quality scanning and artifact management, designed to enable efficient CI/CD for enterprises.
+  Las capacidades subyacentes de DevOps 4.0 están impulsadas por el motor GitFox. GitFox es una plataforma de gestión de código fuente Git de desarrollo propio, enfocada en la colaboración de I+D empresarial. Ofrece capacidades integrales que abarcan alojamiento de código, construcción de pipelines, análisis de calidad y gestión de artefactos, diseñadas para habilitar un CI/CD eficiente en las empresas.
 </p>
 EOD;
 

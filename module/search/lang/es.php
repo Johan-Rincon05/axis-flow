@@ -59,7 +59,7 @@ $lang->search->null = 'Nulo';
 $lang->userquery        = new stdclass();
 $lang->userquery->title = 'Título';
 
-$lang->searchObjects['todo']      = 'To-do';
+$lang->searchObjects['todo']      = 'Pendiente';
 $lang->searchObjects['effort']    = 'Esfuerzo';
 $lang->searchObjects['testsuite'] = 'Suite de pruebas';
 
@@ -86,7 +86,7 @@ $lang->search->modules['task']        = 'Tarea';
 $lang->search->modules['bug']         = 'Bug';
 $lang->search->modules['case']        = 'Caso';
 $lang->search->modules['doc']         = 'Documento';
-$lang->search->modules['todo']        = 'To-Do';
+$lang->search->modules['todo']        = 'Pendiente';
 $lang->search->modules['build']       = 'Builds';
 $lang->search->modules['effort']      = 'Esfuerzo';
 $lang->search->modules['caselib']     = 'Biblioteca de pruebas';

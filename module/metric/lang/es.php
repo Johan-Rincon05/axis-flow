@@ -214,10 +214,10 @@ $lang->metric->moreSelects = array();
 
 $lang->metric->unitList = array();
 $lang->metric->unitList['count']      = 'Conteo';
-$lang->metric->unitList['measure']    = 'Man-hour';
+$lang->metric->unitList['measure']    = 'Persona-hora';
 $lang->metric->unitList['hour']       = 'Hora';
 $lang->metric->unitList['day']        = 'Día';
-$lang->metric->unitList['manday']     = 'Man-day';
+$lang->metric->unitList['manday']     = 'Persona-día';
 $lang->metric->unitList['percentage'] = 'Porcentaje';
 $lang->metric->unitList['times']      = 'Veces';
 $lang->metric->unitList['people']     = 'Personas';
@@ -406,7 +406,7 @@ $lang->metric->tips->noticeCode              = "El código debe ser una combinac
 $lang->metric->tips->noticeRecalculate       = "Actualizando datos..., no manipule los datos de las métricas.";
 $lang->metric->tips->noticeRepublish         = "Si hay varios lanzamientos, recalcule desde antes de la hora del último lanzamiento.";
 $lang->metric->tips->banRecalculate          = "La métrica no ha sido publicada o no tiene tipo fecha";
-$lang->metric->tips->noticeDeduplication     = "Deduplication...";
+$lang->metric->tips->noticeDeduplication     = "Deduplicando...";
 $lang->metric->tips->noticeDoneDeduplication = "Deduplicación completada";
 
 $lang->metric->tips->noticeRecalculateConfig = array();

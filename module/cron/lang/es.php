@@ -1,15 +1,15 @@
 <?php
 $lang->cron->common       = 'Tarea programada';
 $lang->cron->id           = 'ID';
-$lang->cron->buildin      = 'Built-in';
+$lang->cron->buildin      = 'Integrado';
 $lang->cron->index        = 'Lista de tareas programadas';
 $lang->cron->list         = ' Lista de tareas';
 $lang->cron->create       = 'Crear';
 $lang->cron->createAction = 'Crear tarea';
 $lang->cron->edit         = 'Editar tarea';
 $lang->cron->delete       = 'Eliminar tarea';
-$lang->cron->toggle       = 'Activate/Deactivate';
-$lang->cron->turnon       = 'On/Off';
+$lang->cron->toggle       = 'Activar/Desactivar';
+$lang->cron->turnon       = 'Sí/No';
 $lang->cron->openProcess  = 'Reiniciar';
 $lang->cron->restart      = 'Reiniciar tarea programada';
 
@@ -41,10 +41,10 @@ $lang->cron->toggleList['stop']  = 'Deshabilitar';
 $lang->cron->confirmDelete = '¿Seguro que desea eliminar la tarea programada?';
 $lang->cron->confirmTurnon = '¿Seguro que desea desactivar la tarea programada?';
 $lang->cron->introduction  = <<<EOD
-<p>Scheduled Task is set to do scheduled actions such as update burndown chart, backup, etc.</p>
+<p>Las tareas programadas sirven para ejecutar acciones programadas, como actualizar el gráfico de burndown, realizar copias de seguridad, etc.</p>
 EOD;
 $lang->cron->confirmOpen = <<<EOD
-<p>Do you want to turn it on?<a href="%s"><strong>Turn On Scheduled Task<strong></a></p>
+<p>¿Desea activarla?<a href="%s"><strong>Activar tarea programada<strong></a></p>
 EOD;
 
 $lang->cron->notice = new stdclass();

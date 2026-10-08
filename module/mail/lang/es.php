@@ -95,29 +95,29 @@ $lang->mail->noOpenssl      = 'Para usar cifrado SSL o TLS, habilite la extensi�
 $lang->mail->disableSecure  = 'Falta la extensión OpenSSL. Cifrado SSL/TLS deshabilitado.';
 $lang->mail->sendCloudFail  = 'Fallido. Motivo:';
 $lang->mail->sendCloudHelp  = <<<EOD
-<p>. Notice SendCloud is a team notification service provided by SendCloud. For details, please visit <a href="http://notice.sendcloud.net/" target="_blank">notice.sendcloud.net</a></p>
-<p>2. You can view your accessKey and secretKey on the "Settings" page after logging in. The sender address and name are also configured in "Settings".</p>
-<p>3. To send emails successfully, the nickname in Notice SendCloud contacts must match the email address. Please visit the [<a href='%s'>Sync contacts</a>] page to sync ZenTao users to SendCloud.</p>
+<p>. Notice SendCloud es un servicio de notificaciones para equipos ofrecido por SendCloud. Para más detalles, visite <a href="http://notice.sendcloud.net/" target="_blank">notice.sendcloud.net</a></p>
+<p>2. Puede ver su accessKey y secretKey en la página "Configuración" después de iniciar sesión. La dirección y el nombre del remitente también se configuran en "Configuración".</p>
+<p>3. Para enviar correos correctamente, el alias de los contactos de Notice SendCloud debe coincidir con la dirección de correo. Visite la página [<a href='%s'>Sincronizar contactos</a>] para sincronizar los usuarios de ZenTao con SendCloud.</p>
 EOD;
 $lang->mail->sendCloudSuccess = '¡Listo!';
 $lang->mail->closeSendCloud   = 'Cerrar SendCloud';
 $lang->mail->addressWhiteList = 'Para evitar que los correos sean bloqueados, agregue la dirección del remitente a la lista blanca de su servidor de correo.';
 $lang->mail->ztCloudNotice    = <<<EOD
-<p>ZenTao Cloud Mail is a free email service launched jointly by the ZenTao team and <a href='http://sendcloud.sohu.com/' target='_blank'>SendCloud</a>.</p>
-<p>To access this free service, simply register an account on the official ZenTao website and verify your mobile number and email address.</p>
-<p style='color:red'>We will submit your verification details to the SendCloud team for approval, granting you a free daily quota of 200 emails.</p>
+<p>ZenTao Cloud Mail es un servicio de correo gratuito lanzado conjuntamente por el equipo de ZenTao y <a href='http://sendcloud.sohu.com/' target='_blank'>SendCloud</a>.</p>
+<p>Para acceder a este servicio gratuito, simplemente registre una cuenta en el sitio web oficial de ZenTao y verifique su número móvil y su correo electrónico.</p>
+<p style='color:red'>Enviaremos sus datos de verificación al equipo de SendCloud para su aprobación, otorgándole una cuota diaria gratuita de 200 correos.</p>
 <ul>
-<li>Upon submitting verification on the ZenTao website, you will receive a daily quota of  <strong style='color:red'>50</strong> emails for <strong style='color:red'>3</strong> days.</li>
-<li>nce your information is reviewed by ZenTao, you will receive a daily quota of <strong style='color:red'>200</strong> emails for <strong style='color:red'>7</strong>days.</li>
-<li>After final approval by SendCloud, you will receive a permanent daily quota of  <strong style='color:red'>200</strong>emails.</li>
+<li>Al enviar la verificación en el sitio web de ZenTao, recibirá una cuota diaria de <strong style='color:red'>50</strong> correos durante <strong style='color:red'>3</strong> días.</li>
+<li>Una vez que ZenTao revise su información, recibirá una cuota diaria de <strong style='color:red'>200</strong> correos durante <strong style='color:red'>7</strong> días.</li>
+<li>Tras la aprobación final de SendCloud, recibirá una cuota diaria permanente de <strong style='color:red'>200</strong> correos.</li>
 </ul>
-<p>You cannot use this service if you do not agree to the terms above.</p>
+<p>No podrá usar este servicio si no está de acuerdo con los términos anteriores.</p>
 EOD;
 
 $lang->mail->forgetPassword = <<<EOT
-<p>Hi there,</p>
-<p>You requested a password reset for ZenTao. This link is valid for 3 minutes. If it expires, please request a new one.</p>
-<p><a href="%s" target="_blank">Click here to reset</a></p>
+<p>Hola,</p>
+<p>Solicitó restablecer su contraseña de ZenTao. Este enlace es válido por 3 minutos. Si expira, solicite uno nuevo.</p>
+<p><a href="%s" target="_blank">Haga clic aquí para restablecer</a></p>
 EOT;
 
 $lang->mail->placeholder = new stdclass();

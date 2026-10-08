@@ -134,7 +134,7 @@ $lang->system->domain->dnsHelperLink         = 'Ver documentación de ayuda';
 $lang->system->domain->updateInstancesDomain = 'Actualizar dominio de los servicios instalados';
 $lang->system->domain->totalOldDomain        = 'Total: %s.';
 $lang->system->domain->updatingProgress      = 'Actualizando... faltan %s.';
-$lang->system->domain->updating              = 'Updating...';
+$lang->system->domain->updating              = 'Actualizando...';
 
 $lang->system->SLB = new stdclass;
 $lang->system->SLB->common        = 'Balanceo de carga';
@@ -272,7 +272,7 @@ $lang->system->backup->restoreTip      = 'Nota: la función de restauración sol
 $lang->system->backup->versionInfo     = 'Ver detalles de la nueva versión';
 $lang->system->backup->confirmUpgrade  = 'ZenTao no estará disponible durante la actualización. ¿Desea continuar?';
 $lang->system->backup->confirmBackup   = 'AXIS FLOW no estará disponible para los usuarios regulares durante la copia de seguridad. ¿Seguro que desea iniciar la copia de seguridad?';
-$lang->system->backup->upgrading       = 'Upgrading...';
+$lang->system->backup->upgrading       = 'Actualizando versión...';
 $lang->system->backup->backupTitle     = 'Respaldando la plataforma Qucheng...';
 $lang->system->backup->restoreTitle    = 'Revirtiendo la plataforma Qucheng...';
 $lang->system->backup->backingUp       = 'En progreso';

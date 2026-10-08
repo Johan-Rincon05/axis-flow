@@ -9,6 +9,6 @@ $lang->transfer->import         = 'Importar';
 $lang->transfer->id             = 'ID';
 
 $lang->transfer->new      = 'Nuevo';
-$lang->transfer->num      = 'Records:';
+$lang->transfer->num      = 'Registros:';
 $lang->transfer->numAB    = 'Registros';
 $lang->transfer->children = 'Subtareas';

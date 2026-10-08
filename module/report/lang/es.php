@@ -67,7 +67,7 @@ $lang->report->manhourTotal  = "Total de horas";
 $lang->report->validRate     = "Tasa de validez";
 $lang->report->validRateTips = "La resolución es Resuelto/Pospuesto o el estado es Resuelto/Cerrado.";
 $lang->report->unplanned     = 'Sin planificar';
-$lang->report->workday       = 'Hours/Day';
+$lang->report->workday       = 'Horas/día';
 $lang->report->diffDays      = 'days';
 
 $lang->report->typeList['default'] = 'Predeterminado';
@@ -216,8 +216,8 @@ $lang->report->bugProgress         = "Avance de Bugs";
 $lang->report->productProgress     = "{$lang->productCommon}进展";
 $lang->report->executionProgress   = "执行进展";
 $lang->report->projectProgress     = "{$lang->projectCommon}进展";
-$lang->report->yearProjectOverview = "年度{$lang->projectCommon}总览";
-$lang->report->projectOverview     = "截止目前{$lang->projectCommon}总览";
+$lang->report->yearProjectOverview = "Resumen anual de {$lang->projectCommon}";
+$lang->report->projectOverview     = "Resumen de {$lang->projectCommon} a la fecha";
 
 $lang->report->contributionCountObject = array();
 $lang->report->contributionCountObject['task']        = "Tareas: Crear, Completar, Cerrar, Cancelar, Asignar";

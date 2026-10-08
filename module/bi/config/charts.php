@@ -4,7 +4,7 @@ $config->bi->builtin->charts = array();
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1001,
-    'name'      => '年度总结-登录次数',
+    'name'      => 'Resumen anual - Inicios de sesión',
     'code'      => 'annualSummary_countLogin',
     'dimension' => '1',
     'type'      => 'card',
@@ -31,7 +31,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1002,
-    'name'      => '年度总结-操作次数',
+    'name'      => 'Resumen anual - Acciones realizadas',
     'code'      => 'annualSummary_countAction',
     'dimension' => '1',
     'type'      => 'card',
@@ -58,7 +58,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1003,
-    'name'      => '年度总结-消耗工时',
+    'name'      => 'Resumen anual - Horas de trabajo consumidas',
     'code'      => 'annualSummary_consumed',
     'dimension' => '1',
     'type'      => 'card',
@@ -85,7 +85,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1004,
-    'name'      => '年度总结-待办数',
+    'name'      => 'Resumen anual - Pendientes',
     'code'      => 'annualSummary_countTodo',
     'dimension' => '1',
     'type'      => 'card',
@@ -129,7 +129,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1005,
-    'name'      => '年度总结-贡献数',
+    'name'      => 'Resumen anual - Contribuciones',
     'code'      => 'annualSummary_countContributions',
     'dimension' => '1',
     'type'      => 'card',
@@ -172,7 +172,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1006,
-    'name'      => '年度总结-贡献数据',
+    'name'      => 'Resumen anual - Datos de contribución',
     'code'      => 'annualSummary_contributions',
     'dimension' => '1',
     'type'      => 'bar',
@@ -286,12 +286,12 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'objectType', 'name' => '对象类型')
+            array('field' => 'objectType', 'name' => 'Tipo de objeto')
         ),
         'yaxis' => array
         (
-            array('type' => 'agg', 'field' => 'create', 'agg' => 'sum', 'name' => '创建', 'valOrAgg' => 'sum'),
-            array('type' => 'value', 'field' => 'edit', 'agg' => 'sum', 'name' => '编辑', 'valOrAgg' => 'sum')
+            array('type' => 'agg', 'field' => 'create', 'agg' => 'sum', 'name' => 'Crear', 'valOrAgg' => 'sum'),
+            array('type' => 'value', 'field' => 'edit', 'agg' => 'sum', 'name' => 'Editar', 'valOrAgg' => 'sum')
         )
     ),
     'filters'   => array(),
@@ -302,7 +302,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1007,
-    'name'      => '年度总结-能力雷达图',
+    'name'      => 'Resumen anual - Radar de capacidades',
     'code'      => 'annualSummary_capabilityRadar',
     'dimension' => '1',
     'type'      => 'radar',
@@ -355,15 +355,15 @@ EOT
     (
         'group'  => array
         (
-            array('field' => 'dimension', 'name' => '维度')
+            array('field' => 'dimension', 'name' => 'Dimensión')
         ),
         'metric' => array
         (
-            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => '产品管理', 'key' => 'product', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => '项目管理', 'key' => 'project', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => '研发', 'key' => 'dev', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => '测试', 'key' => 'qa', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => '其他', 'key' => 'other', 'valOrAgg' => 'value')
+            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => 'Gestión de productos', 'key' => 'product', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => 'Gestión de proyectos', 'key' => 'project', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => 'Desarrollo', 'key' => 'dev', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => 'Pruebas', 'key' => 'qa', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'num', 'agg' => 'value', 'name' => 'Otros', 'key' => 'other', 'valOrAgg' => 'value')
         )
     ),
     'filters'   => array(),
@@ -374,7 +374,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1008,
-    'name'      => '年度总结-迭代数据',
+    'name'      => 'Resumen anual - Datos de sprints',
     'code'      => 'annualSummary_executions',
     'dimension' => '1',
     'type'      => 'table',
@@ -456,10 +456,10 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '迭代名称'),
-            array('field' => 'finishedStory', 'valOrAgg' => 'value', 'name' => '完成需求数'),
-            array('field' => 'finishedTask', 'valOrAgg' => 'value', 'name' => '完成任务数'),
-            array('field' => 'resolvedBug', 'valOrAgg' => 'value', 'name' => '解决Bug数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Nombre del sprint'),
+            array('field' => 'finishedStory', 'valOrAgg' => 'value', 'name' => 'Historias completadas'),
+            array('field' => 'finishedTask', 'valOrAgg' => 'value', 'name' => 'Tareas completadas'),
+            array('field' => 'resolvedBug', 'valOrAgg' => 'value', 'name' => 'Bugs resueltos')
         ),
         'filter' => array()
     ),
@@ -471,7 +471,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1009,
-    'name'      => '年度总结-产品数据',
+    'name'      => 'Resumen anual - Datos de productos',
     'code'      => 'annualSummary_products',
     'dimension' => '1',
     'type'      => 'table',
@@ -523,11 +523,11 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '产品名称'),
-            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => '计划数'),
-            array('field' => 'requirement', 'valOrAgg' => 'value', 'name' => '创建用户需求数'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '创建需求数'),
-            array('field' => 'closedStory', 'valOrAgg' => 'value', 'name' => '关闭需求数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Nombre del producto'),
+            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => 'Planes'),
+            array('field' => 'requirement', 'valOrAgg' => 'value', 'name' => 'Requerimientos de usuario creados'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias creadas'),
+            array('field' => 'closedStory', 'valOrAgg' => 'value', 'name' => 'Historias cerradas')
         ),
         'filter' => array()
     ),
@@ -539,7 +539,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1010,
-    'name'      => '年度总结-任务状态分布',
+    'name'      => 'Resumen anual - Distribución de estados de tareas',
     'code'      => 'annualSummary_taskStatus',
     'dimension' => '1',
     'type'      => 'pie',
@@ -566,11 +566,11 @@ EOT
     (
         'group'  => array
         (
-            array('field' => 'status', 'name' => '状态')
+            array('field' => 'status', 'name' => 'Estado')
         ),
         'metric' => array
         (
-            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => '任务数', 'valOrAgg' => 'count')
+            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => 'Tareas', 'valOrAgg' => 'count')
         )
     ),
     'filters'   => array(),
@@ -581,7 +581,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1011,
-    'name'      => '年度总结-每月任务操作情况',
+    'name'      => 'Resumen anual - Operaciones mensuales de tareas',
     'code'      => 'annualSummary_monthlyTaskAction',
     'dimension' => '1',
     'type'      => 'bar',
@@ -613,17 +613,17 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'actionDate', 'name' => '日期', 'group' => 'value')
+            array('field' => 'actionDate', 'name' => 'Fecha', 'group' => 'value')
         ),
         'yaxis' => array
         (
-            array('type' => 'agg', 'field' => 'opened', 'agg' => 'sum', 'name' => '创建', 'valOrAgg' => 'sum'),
-            array('type' => 'agg', 'field' => 'started', 'agg' => 'sum', 'name' => '开始', 'valOrAgg' => 'sum'),
-            array('type' => 'agg', 'field' => 'finished', 'agg' => 'sum', 'name' => '完成', 'valOrAgg' => 'sum'),
-            array('type' => 'agg', 'field' => 'paused', 'agg' => 'sum', 'name' => '暂停', 'valOrAgg' => 'sum'),
-            array('type' => 'agg', 'field' => 'activated', 'agg' => 'sum', 'name' => '激活', 'valOrAgg' => 'sum'),
-            array('type' => 'agg', 'field' => 'canceled', 'agg' => 'sum', 'name' => '取消', 'valOrAgg' => 'sum'),
-            array('type' => 'agg', 'field' => 'closed', 'agg' => 'sum', 'name' => '关闭', 'valOrAgg' => 'sum')
+            array('type' => 'agg', 'field' => 'opened', 'agg' => 'sum', 'name' => 'Crear', 'valOrAgg' => 'sum'),
+            array('type' => 'agg', 'field' => 'started', 'agg' => 'sum', 'name' => 'Iniciar', 'valOrAgg' => 'sum'),
+            array('type' => 'agg', 'field' => 'finished', 'agg' => 'sum', 'name' => 'Finalizar', 'valOrAgg' => 'sum'),
+            array('type' => 'agg', 'field' => 'paused', 'agg' => 'sum', 'name' => 'Pausar', 'valOrAgg' => 'sum'),
+            array('type' => 'agg', 'field' => 'activated', 'agg' => 'sum', 'name' => 'Activar', 'valOrAgg' => 'sum'),
+            array('type' => 'agg', 'field' => 'canceled', 'agg' => 'sum', 'name' => 'Cancelar', 'valOrAgg' => 'sum'),
+            array('type' => 'agg', 'field' => 'closed', 'agg' => 'sum', 'name' => 'Cerrar', 'valOrAgg' => 'sum')
         )
     ),
     'filters'   => array(),
@@ -634,7 +634,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1012,
-    'name'      => '年度总结-需求状态分布',
+    'name'      => 'Resumen anual - Distribución de estados de historias',
     'code'      => 'annualSummary_storyStatus',
     'dimension' => '1',
     'type'      => 'pie',
@@ -662,11 +662,11 @@ EOT
     (
         'group'  => array
         (
-            array('field' => 'status', 'name' => '状态')
+            array('field' => 'status', 'name' => 'Estado')
         ),
         'metric' => array
         (
-            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => '需求数', 'valOrAgg' => 'count')
+            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => 'Historias', 'valOrAgg' => 'count')
         )
     ),
     'filters'   => array(),
@@ -677,7 +677,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1013,
-    'name'      => '年度总结-每月需求操作情况',
+    'name'      => 'Resumen anual - Operaciones mensuales de historias',
     'code'      => 'annualSummary_monthlyStoryAction',
     'dimension' => '1',
     'type'      => 'bar',
@@ -706,14 +706,14 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'actionDate', 'name' => '日期', 'group' => 'value')
+            array('field' => 'actionDate', 'name' => 'Fecha', 'group' => 'value')
         ),
         'yaxis' => array
         (
-            array('type' => 'value', 'field' => 'opened', 'agg' => 'value', 'name' => '创建', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'activated', 'agg' => 'value', 'name' => '激活', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'changed', 'agg' => 'value', 'name' => '变更', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'closed', 'agg' => 'value', 'name' => '关闭', 'valOrAgg' => 'value')
+            array('type' => 'value', 'field' => 'opened', 'agg' => 'value', 'name' => 'Crear', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'activated', 'agg' => 'value', 'name' => 'Activar', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'changed', 'agg' => 'value', 'name' => 'Cambiar', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'closed', 'agg' => 'value', 'name' => 'Cerrar', 'valOrAgg' => 'value')
         )
     ),
     'filters'   => array(),
@@ -724,7 +724,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1014,
-    'name'      => '年度总结-Bug状态分布',
+    'name'      => 'Resumen anual - Distribución de estados de Bugs',
     'code'      => 'annualSummary_bugStatus',
     'dimension' => '1',
     'type'      => 'pie',
@@ -751,11 +751,11 @@ EOT
     (
         'group'  => array
         (
-            array('field' => 'status', 'name' => '状态')
+            array('field' => 'status', 'name' => 'Estado')
         ),
         'metric' => array
         (
-            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => 'Bug数', 'valOrAgg' => 'count')
+            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => 'Bugs', 'valOrAgg' => 'count')
         )
     ),
     'filters'   => array(),
@@ -766,7 +766,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1015,
-    'name'      => '年度总结-每月Bug操作情况',
+    'name'      => 'Resumen anual - Operaciones mensuales de Bugs',
     'code'      => 'annualSummary_monthlyBugAction',
     'dimension' => '1',
     'type'      => 'bar',
@@ -796,15 +796,15 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'actionDate', 'name' => '日期', 'group' => 'value')
+            array('field' => 'actionDate', 'name' => 'Fecha', 'group' => 'value')
         ),
         'yaxis' => array
         (
-            array('type' => 'value', 'field' => 'opened', 'agg' => 'value', 'name' => '创建', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'bugconfirmed', 'agg' => 'value', 'name' => '确认', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'activated', 'agg' => 'value', 'name' => '激活', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'resolved', 'agg' => 'value', 'name' => '解决', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'closed', 'agg' => 'value', 'name' => '关闭', 'valOrAgg' => 'value')
+            array('type' => 'value', 'field' => 'opened', 'agg' => 'value', 'name' => 'Crear', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'bugconfirmed', 'agg' => 'value', 'name' => 'Confirmar', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'activated', 'agg' => 'value', 'name' => 'Activar', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'resolved', 'agg' => 'value', 'name' => 'Resolver', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'closed', 'agg' => 'value', 'name' => 'Cerrar', 'valOrAgg' => 'value')
         )
     ),
     'filters'   => array(),
@@ -815,7 +815,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1016,
-    'name'      => '年度总结-用例结果分布',
+    'name'      => 'Resumen anual - Distribución de resultados de casos de prueba',
     'code'      => 'annualSummary_caseResult',
     'dimension' => '1',
     'type'      => 'pie',
@@ -838,11 +838,11 @@ EOT
     (
         'group'  => array
         (
-            array('field' => 'status', 'name' => '状态')
+            array('field' => 'status', 'name' => 'Estado')
         ),
         'metric' => array
         (
-            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => '个数', 'valOrAgg' => 'count')
+            array('type' => 'agg', 'field' => 'id', 'agg' => 'count', 'name' => 'Cantidad', 'valOrAgg' => 'count')
         )
     ),
     'filters'   => array(),
@@ -853,7 +853,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1017,
-    'name'      => '年度总结-每月用例操作情况',
+    'name'      => 'Resumen anual - Operaciones mensuales de casos de prueba',
     'code'      => 'annualSummary_monthlyCaseAction',
     'dimension' => '1',
     'type'      => 'bar',
@@ -885,13 +885,13 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'actionDate', 'name' => '日期', 'group' => 'value')
+            array('field' => 'actionDate', 'name' => 'Fecha', 'group' => 'value')
         ),
         'yaxis' => array
         (
-            array('type' => 'value', 'field' => 'createdCases', 'agg' => 'value', 'name' => '创建', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'toBugCases', 'agg' => 'value', 'name' => '转Bug', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'runCases', 'agg' => 'value', 'name' => '执行', 'valOrAgg' => 'value')
+            array('type' => 'value', 'field' => 'createdCases', 'agg' => 'value', 'name' => 'Crear', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'toBugCases', 'agg' => 'value', 'name' => 'Convertir en Bug', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'runCases', 'agg' => 'value', 'name' => 'Ejecutar', 'valOrAgg' => 'value')
         )
     ),
     'filters'   => array(),
@@ -902,7 +902,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1018,
-    'name'      => '宏观数据-一级项目集个数',
+    'name'      => 'Datos macro - Programas de primer nivel',
     'code'      => 'macro_countTopProgram',
     'dimension' => '1',
     'type'      => 'card',
@@ -926,7 +926,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1019,
-    'name'      => '宏观数据-项目个数',
+    'name'      => 'Datos macro - Proyectos',
     'code'      => 'macro_countProject',
     'dimension' => '1',
     'type'      => 'card',
@@ -949,7 +949,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1020,
-    'name'      => '宏观数据-产品个数',
+    'name'      => 'Datos macro - Productos',
     'code'      => 'macro_countProduct',
     'dimension' => '1',
     'type'      => 'card',
@@ -972,7 +972,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1021,
-    'name'      => '宏观数据-计划个数',
+    'name'      => 'Datos macro - Planes',
     'code'      => 'macro_countPlan',
     'dimension' => '1',
     'type'      => 'card',
@@ -995,7 +995,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1022,
-    'name'      => '宏观数据-执行个数',
+    'name'      => 'Datos macro - Ejecuciones',
     'code'      => 'macro_countExecution',
     'dimension' => '1',
     'type'      => 'card',
@@ -1018,7 +1018,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1023,
-    'name'      => '宏观数据-发布个数',
+    'name'      => 'Datos macro - Lanzamientos',
     'code'      => 'macro_countRelease',
     'dimension' => '1',
     'type'      => 'card',
@@ -1041,7 +1041,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1024,
-    'name'      => '宏观数据-需求个数',
+    'name'      => 'Datos macro - Historias',
     'code'      => 'macro_countStory',
     'dimension' => '1',
     'type'      => 'card',
@@ -1064,7 +1064,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1025,
-    'name'      => '宏观数据-任务个数',
+    'name'      => 'Datos macro - Tareas',
     'code'      => 'macro_countTask',
     'dimension' => '1',
     'type'      => 'card',
@@ -1087,7 +1087,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1026,
-    'name'      => '宏观数据-缺陷个数',
+    'name'      => 'Datos macro - Bugs',
     'code'      => 'macro_countBug',
     'dimension' => '1',
     'type'      => 'card',
@@ -1110,7 +1110,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1027,
-    'name'      => '宏观数据-文档个数',
+    'name'      => 'Datos macro - Documentos',
     'code'      => 'macro_countDoc',
     'dimension' => '1',
     'type'      => 'card',
@@ -1133,7 +1133,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1028,
-    'name'      => '宏观数据-现有人员个数',
+    'name'      => 'Datos macro - Personal actual',
     'code'      => 'macro_activeAccounts',
     'dimension' => '1',
     'type'      => 'card',
@@ -1156,7 +1156,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1029,
-    'name'      => '宏观数据-累计消耗工时',
+    'name'      => 'Datos macro - Horas de trabajo acumuladas',
     'code'      => 'macro_consumed',
     'dimension' => '1',
     'type'      => 'card',
@@ -1179,7 +1179,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1030,
-    'name'      => '宏观数据-禅道使用时长',
+    'name'      => 'Datos macro - Tiempo de uso de ZenTao',
     'code'      => 'macro_useZentao',
     'dimension' => '1',
     'type'      => 'card',
@@ -1221,7 +1221,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1031,
-    'name'      => '宏观数据-需求完成率',
+    'name'      => 'Datos macro - Tasa de finalización de historias',
     'code'      => 'macro_storyFinishedRate',
     'dimension' => '1',
     'type'      => 'waterpolo',
@@ -1246,13 +1246,13 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'id'        => array('name' => '编号', 'object' => 'story', 'field' => 'id', 'type' => 'number'),
+        'id'        => array('name' => 'Número', 'object' => 'story', 'field' => 'id', 'type' => 'number'),
         'bugstatus' => array('name' => 'bugstatus', 'object' => 'story', 'field' => 'bugstatus', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'        => array('zh-cn' => '编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'bugstatus' => array('zh-cn' => 'Bug状态', 'zh-tw' => '', 'en' => 'bugstatus', 'de' => '', 'fr' => '')
+        'id'        => array('zh-cn' => 'Número', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'bugstatus' => array('zh-cn' => 'Estado del Bug', 'zh-tw' => '', 'en' => 'bugstatus', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1261,7 +1261,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1032,
-    'name'      => '宏观数据-Bug修复率',
+    'name'      => 'Datos macro - Tasa de corrección de Bugs',
     'code'      => 'macro_bugFixedRate',
     'dimension' => '1',
     'type'      => 'waterpolo',
@@ -1286,13 +1286,13 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'id'        => array('name' => 'Bug编号', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
+        'id'        => array('name' => 'ID del Bug', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
         'bugstatus' => array('name' => 'bugstatus', 'object' => 'bug', 'field' => 'bugstatus', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'        => array('zh-cn' => 'Bug编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'bugstatus' => array('zh-cn' => 'Bug状态', 'zh-tw' => '', 'en' => 'bugstatus', 'de' => '', 'fr' => '')
+        'id'        => array('zh-cn' => 'ID del Bug', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'bugstatus' => array('zh-cn' => 'Estado del Bug', 'zh-tw' => '', 'en' => 'bugstatus', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1301,7 +1301,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1033,
-    'name'      => '宏观数据-未完成的一级项目集个数',
+    'name'      => 'Datos macro - Programas de primer nivel sin finalizar',
     'code'      => 'macro_countTopProgram_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1324,7 +1324,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1034,
-    'name'      => '宏观数据-未完成的需求',
+    'name'      => 'Datos macro - Historias sin finalizar',
     'code'      => 'macro_countStory_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1347,7 +1347,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1035,
-    'name'      => '宏观数据-未完成的产品',
+    'name'      => 'Datos macro - Productos sin finalizar',
     'code'      => 'macro_countProduct_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1370,7 +1370,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1036,
-    'name'      => '宏观数据-未完成的项目',
+    'name'      => 'Datos macro - Proyectos sin finalizar',
     'code'      => 'macro_countProject_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1393,7 +1393,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1037,
-    'name'      => '宏观数据-未完成的计划',
+    'name'      => 'Datos macro - Planes sin finalizar',
     'code'      => 'macro_countPlan_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1416,7 +1416,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1038,
-    'name'      => '宏观数据-未完成的执行',
+    'name'      => 'Datos macro - Ejecuciones sin finalizar',
     'code'      => 'macro_countExecution_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1439,7 +1439,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1039,
-    'name'      => '宏观数据-未完成的缺陷',
+    'name'      => 'Datos macro - Bugs sin finalizar',
     'code'      => 'macro_countBug_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1462,7 +1462,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1040,
-    'name'      => '宏观数据-未完成的任务',
+    'name'      => 'Datos macro - Tareas sin finalizar',
     'code'      => 'macro_countTask_undone',
     'dimension' => '1',
     'type'      => 'card',
@@ -1485,7 +1485,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1041,
-    'name'      => '宏观数据-项目集数据概览',
+    'name'      => 'Datos macro - Resumen de datos de programas',
     'code'      => 'macro_programOverview',
     'dimension' => '1',
     'type'      => 'table',
@@ -1577,15 +1577,15 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'topProgram', 'valOrAgg' => 'value', 'name' => '一级项目集'),
-            array('field' => 'subProgram', 'valOrAgg' => 'value', 'name' => '子项目集数'),
-            array('field' => 'product', 'valOrAgg' => 'value', 'name' => '产品数'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '研发需求数'),
-            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bug数'),
-            array('field' => 'release', 'valOrAgg' => 'value', 'name' => '发布数'),
-            array('field' => 'project', 'valOrAgg' => 'value', 'name' => '项目数'),
-            array('field' => 'execution', 'valOrAgg' => 'value', 'name' => '执行数'),
-            array('field' => 'task', 'valOrAgg' => 'value', 'name' => '任务数')
+            array('field' => 'topProgram', 'valOrAgg' => 'value', 'name' => 'Programa de primer nivel'),
+            array('field' => 'subProgram', 'valOrAgg' => 'value', 'name' => 'Subprogramas'),
+            array('field' => 'product', 'valOrAgg' => 'value', 'name' => 'Productos'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias'),
+            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bugs'),
+            array('field' => 'release', 'valOrAgg' => 'value', 'name' => 'Lanzamientos'),
+            array('field' => 'project', 'valOrAgg' => 'value', 'name' => 'Proyectos'),
+            array('field' => 'execution', 'valOrAgg' => 'value', 'name' => 'Ejecuciones'),
+            array('field' => 'task', 'valOrAgg' => 'value', 'name' => 'Tareas')
         ),
         'filter' => array()
     ),
@@ -1597,7 +1597,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1042,
-    'name'      => '宏观数据-项目集需求完成率与Bug修复率',
+    'name'      => 'Datos macro - Tasa de finalización de historias y de corrección de Bugs por programa',
     'code'      => 'macro_programStoryFinishedRateAndBugFixedRate',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -1678,13 +1678,13 @@ EOT
     ),
     'langs'     => array
     (
-        'topProgram'    => array('zh-cn' => '一级项目集', 'zh-tw' => '', 'en' => 'topProgram', 'de' => '', 'fr' => ''),
-        'doneStory'     => array('zh-cn' => '完成需求数', 'zh-tw' => '', 'en' => 'doneStory', 'de' => '', 'fr' => ''),
-        'allStory'      => array('zh-cn' => '需求数', 'zh-tw' => '', 'en' => 'allStory', 'de' => '', 'fr' => ''),
-        'storyDoneRate' => array('zh-cn' => '需求完成率', 'zh-tw' => '', 'en' => 'storyDoneRate', 'de' => '', 'fr' => ''),
-        'solvedBug'     => array('zh-cn' => '解决bug数', 'zh-tw' => '', 'en' => 'solvedBug', 'de' => '', 'fr' => ''),
-        'allBug'        => array('zh-cn' => 'bug数', 'zh-tw' => '', 'en' => 'allBug', 'de' => '', 'fr' => ''),
-        'bugSolvedRate' => array('zh-cn' => 'bug修复率', 'zh-tw' => '', 'en' => 'bugSolvedRate', 'de' => '', 'fr' => '')
+        'topProgram'    => array('zh-cn' => 'Programa de primer nivel', 'zh-tw' => '', 'en' => 'topProgram', 'de' => '', 'fr' => ''),
+        'doneStory'     => array('zh-cn' => 'Historias completadas', 'zh-tw' => '', 'en' => 'doneStory', 'de' => '', 'fr' => ''),
+        'allStory'      => array('zh-cn' => 'Historias', 'zh-tw' => '', 'en' => 'allStory', 'de' => '', 'fr' => ''),
+        'storyDoneRate' => array('zh-cn' => 'Tasa de finalización de historias', 'zh-tw' => '', 'en' => 'storyDoneRate', 'de' => '', 'fr' => ''),
+        'solvedBug'     => array('zh-cn' => 'Bugs resueltos', 'zh-tw' => '', 'en' => 'solvedBug', 'de' => '', 'fr' => ''),
+        'allBug'        => array('zh-cn' => 'Bugs', 'zh-tw' => '', 'en' => 'allBug', 'de' => '', 'fr' => ''),
+        'bugSolvedRate' => array('zh-cn' => 'Tasa de corrección de Bugs', 'zh-tw' => '', 'en' => 'bugSolvedRate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1693,7 +1693,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1043,
-    'name'      => '宏观数据-公司项目集状态分布',
+    'name'      => 'Datos macro - Distribución de estados de programas de la empresa',
     'code'      => 'macro_programStatus',
     'dimension' => '1',
     'type'      => 'pie',
@@ -1709,24 +1709,24 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'status', 'name' => '状态', 'group' => '')
+                array('field' => 'status', 'name' => 'Estado', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => '项目ID', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del proyecto', 'valOrAgg' => 'count')
             )
         )
     ),
     'filters'   => array(),
     'fields'    => array
     (
-        'id'     => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'status' => array('name' => '状态', 'object' => 'project', 'field' => 'status', 'type' => 'option')
+        'id'     => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'status' => array('name' => 'Estado', 'object' => 'project', 'field' => 'status', 'type' => 'option')
     ),
     'langs'     => array
     (
-        'id'     => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'status' => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => '')
+        'id'     => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'status' => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1735,7 +1735,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1044,
-    'name'      => '宏观数据-公司项目状态分布',
+    'name'      => 'Datos macro - Distribución de estados de proyectos de la empresa',
     'code'      => 'macro_projectStatus',
     'dimension' => '1',
     'type'      => 'pie',
@@ -1751,24 +1751,24 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'status', 'name' => '状态', 'group' => '')
+                array('field' => 'status', 'name' => 'Estado', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => '项目ID', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del proyecto', 'valOrAgg' => 'count')
             )
         )
     ),
     'filters'   => array(),
     'fields'    => array
     (
-        'id'     => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'status' => array('name' => '状态', 'object' => 'project', 'field' => 'status', 'type' => 'option')
+        'id'     => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'status' => array('name' => 'Estado', 'object' => 'project', 'field' => 'status', 'type' => 'option')
     ),
     'langs'     => array
     (
-        'id'     => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'status' => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => '')
+        'id'     => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'status' => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1777,7 +1777,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1045,
-    'name'      => '宏观数据-产品数据概览',
+    'name'      => 'Datos macro - Resumen de datos de productos',
     'code'      => 'macro_productOverview',
     'dimension' => '1',
     'type'      => 'table',
@@ -1808,13 +1808,13 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'program', 'valOrAgg' => 'value', 'name' => '一级项目集'),
-            array('field' => 'productLine', 'valOrAgg' => 'value', 'name' => '产品线'),
-            array('field' => 'product', 'valOrAgg' => 'value', 'name' => '产品'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '需求数'),
-            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bug数'),
-            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => '计划数'),
-            array('field' => 'release', 'valOrAgg' => 'value', 'name' => '发布数')
+            array('field' => 'program', 'valOrAgg' => 'value', 'name' => 'Programa de primer nivel'),
+            array('field' => 'productLine', 'valOrAgg' => 'value', 'name' => 'Línea de producto'),
+            array('field' => 'product', 'valOrAgg' => 'value', 'name' => 'Producto'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias'),
+            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bugs'),
+            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => 'Planes'),
+            array('field' => 'release', 'valOrAgg' => 'value', 'name' => 'Lanzamientos')
         ),
         'filter' => array()
     ),
@@ -1826,7 +1826,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1046,
-    'name'      => '宏观数据-产品需求完成率',
+    'name'      => 'Datos macro - Tasa de finalización de historias por producto',
     'code'      => 'macro_productStoryFinishedRate',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -1855,7 +1855,7 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'product', 'name' => '所属产品', 'group' => '')
+                array('field' => 'product', 'name' => 'Producto al que pertenece', 'group' => '')
             ),
             'yaxis' => array
             (
@@ -1866,21 +1866,21 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'product'     => array('name' => '所属产品', 'object' => 'story', 'field' => 'product', 'type' => 'string'),
+        'product'     => array('name' => 'Producto al que pertenece', 'object' => 'story', 'field' => 'product', 'type' => 'string'),
         'program'     => array('name' => 'program', 'object' => 'story', 'field' => 'program', 'type' => 'string'),
         'productLine' => array('name' => 'productLine', 'object' => 'story', 'field' => 'productLine', 'type' => 'string'),
-        'closedStory' => array('name' => '需求：%s 已关闭，将不会被关闭。', 'object' => 'story', 'field' => 'closedStory', 'type' => 'string'),
+        'closedStory' => array('name' => 'Historia: %s ya está cerrada, no se volverá a cerrar.', 'object' => 'story', 'field' => 'closedStory', 'type' => 'string'),
         'totalStory'  => array('name' => 'totalStory', 'object' => 'story', 'field' => 'totalStory', 'type' => 'string'),
         'closedRate'  => array('name' => 'closedRate', 'object' => 'story', 'field' => 'closedRate', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'product'     => array('zh-cn' => '所属产品', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
-        'program'     => array('zh-cn' => '项目集', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'productLine' => array('zh-cn' => '产品线', 'zh-tw' => '', 'en' => 'productLine', 'de' => '', 'fr' => ''),
-        'closedStory' => array('zh-cn' => '完成需求数', 'zh-tw' => '', 'en' => 'closedStory', 'de' => '', 'fr' => ''),
-        'totalStory'  => array('zh-cn' => '需求数', 'zh-tw' => '', 'en' => 'totalStory', 'de' => '', 'fr' => ''),
-        'closedRate'  => array('zh-cn' => '需求完成率', 'zh-tw' => '', 'en' => 'closedRate', 'de' => '', 'fr' => '')
+        'product'     => array('zh-cn' => 'Producto al que pertenece', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
+        'program'     => array('zh-cn' => 'Programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'productLine' => array('zh-cn' => 'Línea de producto', 'zh-tw' => '', 'en' => 'productLine', 'de' => '', 'fr' => ''),
+        'closedStory' => array('zh-cn' => 'Historias completadas', 'zh-tw' => '', 'en' => 'closedStory', 'de' => '', 'fr' => ''),
+        'totalStory'  => array('zh-cn' => 'Historias', 'zh-tw' => '', 'en' => 'totalStory', 'de' => '', 'fr' => ''),
+        'closedRate'  => array('zh-cn' => 'Tasa de finalización de historias', 'zh-tw' => '', 'en' => 'closedRate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1889,7 +1889,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1047,
-    'name'      => '宏观数据-产品Bug修复率',
+    'name'      => 'Datos macro - Tasa de corrección de Bugs por producto',
     'code'      => 'macro_productBugFixedRate',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -1918,32 +1918,32 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'product', 'name' => '所属产品', 'group' => '')
+                array('field' => 'product', 'name' => 'Producto al que pertenece', 'group' => '')
             ),
             'yaxis' => array
             (
-                array('field' => 'fixedRate', 'name' => '修复率', 'valOrAgg' => 'sum')
+                array('field' => 'fixedRate', 'name' => 'Tasa de corrección', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array(),
     'fields'    => array
     (
-        'product'     => array('name' => '所属产品', 'object' => 'bug', 'field' => 'product', 'type' => 'string'),
+        'product'     => array('name' => 'Producto al que pertenece', 'object' => 'bug', 'field' => 'product', 'type' => 'string'),
         'program'     => array('name' => 'program', 'object' => 'bug', 'field' => 'program', 'type' => 'string'),
         'productLine' => array('name' => 'productLine', 'object' => 'bug', 'field' => 'productLine', 'type' => 'string'),
         'fixedBug'    => array('name' => 'fixedBug', 'object' => 'bug', 'field' => 'fixedBug', 'type' => 'string'),
         'totalBug'    => array('name' => 'totalBug', 'object' => 'bug', 'field' => 'totalBug', 'type' => 'string'),
-        'fixedRate'   => array('name' => '修复率', 'object' => 'bug', 'field' => 'fixedRate', 'type' => 'number')
+        'fixedRate'   => array('name' => 'Tasa de corrección', 'object' => 'bug', 'field' => 'fixedRate', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'product'     => array('zh-cn' => '所属产品', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
-        'program'     => array('zh-cn' => '项目集', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'productLine' => array('zh-cn' => '产品线', 'zh-tw' => '', 'en' => 'productLine', 'de' => '', 'fr' => ''),
-        'fixedBug'    => array('zh-cn' => '修复bug数', 'zh-tw' => '', 'en' => 'fixedBug', 'de' => '', 'fr' => ''),
-        'totalBug'    => array('zh-cn' => 'bug数', 'zh-tw' => '', 'en' => 'totalBug', 'de' => '', 'fr' => ''),
-        'fixedRate'   => array('zh-cn' => 'bug修复率', 'zh-tw' => '', 'en' => 'fixedRate', 'de' => '', 'fr' => '')
+        'product'     => array('zh-cn' => 'Producto al que pertenece', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
+        'program'     => array('zh-cn' => 'Programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'productLine' => array('zh-cn' => 'Línea de producto', 'zh-tw' => '', 'en' => 'productLine', 'de' => '', 'fr' => ''),
+        'fixedBug'    => array('zh-cn' => 'Bugs corregidos', 'zh-tw' => '', 'en' => 'fixedBug', 'de' => '', 'fr' => ''),
+        'totalBug'    => array('zh-cn' => 'Bugs', 'zh-tw' => '', 'en' => 'totalBug', 'de' => '', 'fr' => ''),
+        'fixedRate'   => array('zh-cn' => 'Tasa de corrección de Bugs', 'zh-tw' => '', 'en' => 'fixedRate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -1952,7 +1952,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1049,
-    'name'      => '宏观数据-部门人员分布图',
+    'name'      => 'Datos macro - Distribución de personal por departamento',
     'code'      => 'macro_deptAccountStatus',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -1993,9 +1993,9 @@ EOT
     ),
     'langs'     => array
     (
-        'deptName'  => array('zh-cn' => '部门', 'zh-tw' => '', 'en' => 'deptName', 'de' => '', 'fr' => ''),
-        'count'     => array('zh-cn' => '人数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => ''),
-        'deptOrder' => array('zh-cn' => '顺序', 'zh-tw' => '', 'en' => 'deptOrder', 'de' => '', 'fr' => '')
+        'deptName'  => array('zh-cn' => 'Departamento', 'zh-tw' => '', 'en' => 'deptName', 'de' => '', 'fr' => ''),
+        'count'     => array('zh-cn' => 'Personas', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => ''),
+        'deptOrder' => array('zh-cn' => 'Orden', 'zh-tw' => '', 'en' => 'deptOrder', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -2004,7 +2004,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1050,
-    'name'      => '宏观数据-公司角色分布图',
+    'name'      => 'Datos macro - Distribución de roles de la empresa',
     'code'      => 'macro_roleStatus',
     'dimension' => '1',
     'type'      => 'pie',
@@ -2046,24 +2046,24 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'role', 'name' => '职位', 'group' => '')
+                array('field' => 'role', 'name' => 'Cargo', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'account', 'name' => '用户名', 'valOrAgg' => 'count')
+                array('field' => 'account', 'name' => 'Nombre de usuario', 'valOrAgg' => 'count')
             )
         )
     ),
     'filters'   => array(),
     'fields'    => array
     (
-        'account' => array('name' => '用户名', 'object' => 'user', 'field' => 'account', 'type' => 'string'),
-        'role'    => array('name' => '职位', 'object' => 'user', 'field' => 'role', 'type' => 'string')
+        'account' => array('name' => 'Nombre de usuario', 'object' => 'user', 'field' => 'account', 'type' => 'string'),
+        'role'    => array('name' => 'Cargo', 'object' => 'user', 'field' => 'role', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'account' => array('zh-cn' => '用户名', 'zh-tw' => '', 'en' => 'account', 'de' => '', 'fr' => ''),
-        'role'    => array('zh-cn' => '职位', 'zh-tw' => '', 'en' => 'role', 'de' => '', 'fr' => '')
+        'account' => array('zh-cn' => 'Nombre de usuario', 'zh-tw' => '', 'en' => 'account', 'de' => '', 'fr' => ''),
+        'role'    => array('zh-cn' => 'Cargo', 'zh-tw' => '', 'en' => 'role', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -2072,7 +2072,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1051,
-    'name'      => '宏观数据-人员工龄分布图',
+    'name'      => 'Datos macro - Distribución del personal por antigüedad',
     'code'      => 'macro_workingStatus',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -2114,8 +2114,8 @@ EOT
     ),
     'langs'     => array
     (
-        'count'    => array('zh-cn' => '人数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => ''),
-        'joinDate' => array('zh-cn' => '工龄', 'zh-tw' => '', 'en' => 'joinDate', 'de' => '', 'fr' => '')
+        'count'    => array('zh-cn' => 'Personas', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => ''),
+        'joinDate' => array('zh-cn' => 'Antigüedad', 'zh-tw' => '', 'en' => 'joinDate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -2124,7 +2124,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1055,
-    'name'      => '年度新增-一级项目集个数',
+    'name'      => 'Nuevos del año - Programas de primer nivel',
     'code'      => 'annualCreated_countTopProgram',
     'dimension' => '1',
     'type'      => 'card',
@@ -2163,7 +2163,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1056,
-    'name'      => '年度新增-产品个数',
+    'name'      => 'Nuevos del año - Productos',
     'code'      => 'annualCreated_countProduct',
     'dimension' => '1',
     'type'      => 'card',
@@ -2201,7 +2201,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1057,
-    'name'      => '年度新增-需求个数',
+    'name'      => 'Nuevos del año - Historias',
     'code'      => 'annualCreated_countStory',
     'dimension' => '1',
     'type'      => 'card',
@@ -2230,7 +2230,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1058,
-    'name'      => '年度新增-Bug个数',
+    'name'      => 'Nuevos del año - Bugs',
     'code'      => 'annualCreated_countBug',
     'dimension' => '1',
     'type'      => 'card',
@@ -2259,7 +2259,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1059,
-    'name'      => '年度新增-计划个数',
+    'name'      => 'Nuevos del año - Planes',
     'code'      => 'annualCreated_countPlan',
     'dimension' => '1',
     'type'      => 'card',
@@ -2288,7 +2288,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1060,
-    'name'      => '年度新增-项目个数',
+    'name'      => 'Nuevos del año - Proyectos',
     'code'      => 'annualCreated_countProject',
     'dimension' => '1',
     'type'      => 'card',
@@ -2327,7 +2327,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1061,
-    'name'      => '年度新增-执行个数',
+    'name'      => 'Nuevos del año - Ejecuciones',
     'code'      => 'annualCreated_countExecution',
     'dimension' => '1',
     'type'      => 'card',
@@ -2352,7 +2352,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1062,
-    'name'      => '年度新增-任务数',
+    'name'      => 'Nuevos del año - Tareas',
     'code'      => 'annualCreated_countTask',
     'dimension' => '1',
     'type'      => 'card',
@@ -2381,7 +2381,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1063,
-    'name'      => '年度新增-文档个数',
+    'name'      => 'Nuevos del año - Documentos',
     'code'      => 'annualCreated_countDoc',
     'dimension' => '1',
     'type'      => 'card',
@@ -2410,7 +2410,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1064,
-    'name'      => '年度新增-发布个数',
+    'name'      => 'Nuevos del año - Lanzamientos',
     'code'      => 'annualCreated_countRelease',
     'dimension' => '1',
     'type'      => 'card',
@@ -2439,7 +2439,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1065,
-    'name'      => '年度新增-人员个数',
+    'name'      => 'Nuevos del año - Personal',
     'code'      => 'annualCreated_countAccount',
     'dimension' => '1',
     'type'      => 'card',
@@ -2479,7 +2479,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1066,
-    'name'      => '年度新增-完成项目数',
+    'name'      => 'Nuevos del año - Proyectos completados',
     'code'      => 'annualCreated_countPorject_finished',
     'dimension' => '1',
     'type'      => 'card',
@@ -2518,7 +2518,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1067,
-    'name'      => '年度新增-完成执行数',
+    'name'      => 'Nuevos del año - Ejecuciones completadas',
     'code'      => 'annualCreated_countExecution_finished',
     'dimension' => '1',
     'type'      => 'card',
@@ -2543,7 +2543,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1068,
-    'name'      => '年度新增-完成发布数',
+    'name'      => 'Nuevos del año - Lanzamientos completados',
     'code'      => 'annualCreated_countRelease_finished',
     'dimension' => '1',
     'type'      => 'card',
@@ -2572,7 +2572,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1069,
-    'name'      => '年度新增-完成需求数',
+    'name'      => 'Nuevos del año - Historias completadas',
     'code'      => 'annualCreated_countStory_finished',
     'dimension' => '1',
     'type'      => 'card',
@@ -2611,7 +2611,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1070,
-    'name'      => '年度新增-解决Bug数',
+    'name'      => 'Nuevos del año - Bugs resueltos',
     'code'      => 'annualCreated_countBug_fixed',
     'dimension' => '1',
     'type'      => 'card',
@@ -2650,7 +2650,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1071,
-    'name'      => '年度新增-完成任务数',
+    'name'      => 'Nuevos del año - Tareas completadas',
     'code'      => 'annualCreated_countTask_finished',
     'dimension' => '1',
     'type'      => 'card',
@@ -2690,7 +2690,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1072,
-    'name'      => '年度新增-投入工时数',
+    'name'      => 'Nuevos del año - Horas de trabajo invertidas',
     'code'      => 'annualCreated_consumed',
     'dimension' => '1',
     'type'      => 'card',
@@ -2717,7 +2717,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1073,
-    'name'      => '年度新增-项目集年度新增数据汇总表',
+    'name'      => 'Nuevos del año - Tabla resumen de datos nuevos del año por programa',
     'code'      => 'annualCreated_programOverview_created',
     'dimension' => '1',
     'type'      => 'table',
@@ -2802,13 +2802,13 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'topProgram', 'valOrAgg' => 'value', 'name' => '一级项目集'),
-            array('field' => 'product', 'valOrAgg' => 'value', 'name' => '产品数'),
-            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => '计划数'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '需求数'),
-            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bug数'),
-            array('field' => 'release', 'valOrAgg' => 'value', 'name' => '发布数'),
-            array('field' => 'doc', 'valOrAgg' => 'value', 'name' => '文档数')
+            array('field' => 'topProgram', 'valOrAgg' => 'value', 'name' => 'Programa de primer nivel'),
+            array('field' => 'product', 'valOrAgg' => 'value', 'name' => 'Productos'),
+            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => 'Planes'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias'),
+            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bugs'),
+            array('field' => 'release', 'valOrAgg' => 'value', 'name' => 'Lanzamientos'),
+            array('field' => 'doc', 'valOrAgg' => 'value', 'name' => 'Documentos')
         ),
         'filter' => array()
     ),
@@ -2819,7 +2819,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1074,
-    'name'      => '年度新增-项目集年度完成数据概览',
+    'name'      => 'Nuevos del año - Resumen de datos completados del año por programa',
     'code'      => 'annualCreated_programOverview_finished',
     'dimension' => '1',
     'type'      => 'table',
@@ -2885,12 +2885,12 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'topProgram', 'valOrAgg' => 'value', 'name' => '一级项目集'),
-            array('field' => 'projectA', 'valOrAgg' => 'value', 'name' => '项目数'),
-            array('field' => 'executionA', 'valOrAgg' => 'value', 'name' => '执行数'),
-            array('field' => 'release', 'valOrAgg' => 'value', 'name' => '发布数'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '需求数'),
-            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bug数')
+            array('field' => 'topProgram', 'valOrAgg' => 'value', 'name' => 'Programa de primer nivel'),
+            array('field' => 'projectA', 'valOrAgg' => 'value', 'name' => 'Proyectos'),
+            array('field' => 'executionA', 'valOrAgg' => 'value', 'name' => 'Ejecuciones'),
+            array('field' => 'release', 'valOrAgg' => 'value', 'name' => 'Lanzamientos'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias'),
+            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bugs')
         ),
         'filter' => array()
     ),
@@ -2901,7 +2901,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1075,
-    'name'      => '年度新增-产品年度新增数据汇总表',
+    'name'      => 'Nuevos del año - Tabla resumen de datos nuevos del año por producto',
     'code'      => 'annualCreated_productOverview_created',
     'dimension' => '1',
     'type'      => 'table',
@@ -2928,11 +2928,11 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '产品'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '需求数'),
-            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bug数'),
-            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => '计划数'),
-            array('field' => 'release', 'valOrAgg' => 'value', 'name' => '发布数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Producto'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias'),
+            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bugs'),
+            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => 'Planes'),
+            array('field' => 'release', 'valOrAgg' => 'value', 'name' => 'Lanzamientos')
         ),
         'filter' => array()
     ),
@@ -2943,7 +2943,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1076,
-    'name'      => '年度新增-产品年度完成数据汇总表',
+    'name'      => 'Nuevos del año - Tabla resumen de datos completados del año por producto',
     'code'      => 'annualCreated_productOverview_finished',
     'dimension' => '1',
     'type'      => 'table',
@@ -2977,11 +2977,11 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '产品'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '需求数'),
-            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bug数'),
-            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => '计划数'),
-            array('field' => 'release', 'valOrAgg' => 'value', 'name' => '发布数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Producto'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias'),
+            array('field' => 'bug', 'valOrAgg' => 'value', 'name' => 'Bugs'),
+            array('field' => 'plan', 'valOrAgg' => 'value', 'name' => 'Planes'),
+            array('field' => 'release', 'valOrAgg' => 'value', 'name' => 'Lanzamientos')
         ),
         'filter' => array()
     ),
@@ -2992,7 +2992,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1077,
-    'name'      => '年度新增-需求年度新增和完成趋势图',
+    'name'      => 'Nuevos del año - Tendencia anual de historias nuevas y completadas',
     'code'      => 'annualCreated_storyTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -3016,31 +3016,31 @@ EOT
             ),
             'yaxis'   => array
             (
-                array('field' => 'newStory', 'name' => '继续添加研发需求', 'valOrAgg' => 'sum'),
-                array('field' => 'closedStory', 'name' => '需求：%s 已关闭，将不会被关闭。', 'valOrAgg' => 'sum')
+                array('field' => 'newStory', 'name' => 'Seguir agregando historias', 'valOrAgg' => 'sum'),
+                array('field' => 'closedStory', 'name' => 'Historia: %s ya está cerrada, no se volverá a cerrar.', 'valOrAgg' => 'sum')
             ),
             'rotateX' => 'notuse'
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年度')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'YEARMONTH'   => array('name' => 'YEARMONTH', 'object' => 'story', 'field' => 'YEARMONTH', 'type' => 'string'),
         'year'        => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'month'       => array('name' => 'month', 'object' => 'story', 'field' => 'month', 'type' => 'number'),
-        'newStory'    => array('name' => '继续添加研发需求', 'object' => 'story', 'field' => 'newStory', 'type' => 'string'),
-        'closedStory' => array('name' => '需求：%s 已关闭，将不会被关闭。', 'object' => 'story', 'field' => 'closedStory', 'type' => 'string')
+        'newStory'    => array('name' => 'Seguir agregando historias', 'object' => 'story', 'field' => 'newStory', 'type' => 'string'),
+        'closedStory' => array('name' => 'Historia: %s ya está cerrada, no se volverá a cerrar.', 'object' => 'story', 'field' => 'closedStory', 'type' => 'string')
     ),
     'langs'     => array
     (
         'YEARMONTH'   => array('zh-cn' => 'YEARMONTH', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'        => array('zh-cn' => '年度', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'       => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'newStory'    => array('zh-cn' => '新增需求数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'closedStory' => array('zh-cn' => '完成需求数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'        => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'       => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'newStory'    => array('zh-cn' => 'Historias nuevas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'closedStory' => array('zh-cn' => 'Historias completadas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3049,7 +3049,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1078,
-    'name'      => '年度新增-Bug年度新增和解决趋势图',
+    'name'      => 'Nuevos del año - Tendencia anual de Bugs nuevos y resueltos',
     'code'      => 'annualCreated_bugTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -3080,7 +3080,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年度')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -3093,10 +3093,10 @@ EOT
     'langs'     => array
     (
         'YEARMONTH' => array('zh-cn' => '', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'      => array('zh-cn' => '年度', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'     => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'newBug'    => array('zh-cn' => '新增Bug数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'fixedBug'  => array('zh-cn' => '解决Bug数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'      => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'     => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'newBug'    => array('zh-cn' => 'Bugs nuevos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'fixedBug'  => array('zh-cn' => 'Bugs resueltos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3105,7 +3105,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1079,
-    'name'      => '年度新增-任务年度新增和完成趋势图',
+    'name'      => 'Nuevos del año - Tendencia anual de tareas nuevas y completadas',
     'code'      => 'annualCreated_taskTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -3136,7 +3136,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年度')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -3149,10 +3149,10 @@ EOT
     'langs'     => array
     (
         'YEARMONTH'  => array('zh-cn' => 'YEARMONTH', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'       => array('zh-cn' => '年度', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'      => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'newTask'    => array('zh-cn' => '新增任务数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'closedTask' => array('zh-cn' => '完成任务数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'       => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'      => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'newTask'    => array('zh-cn' => 'Tareas nuevas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'closedTask' => array('zh-cn' => 'Tareas completadas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3161,7 +3161,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1080,
-    'name'      => '年度新增-项目年度新增和完成趋势图',
+    'name'      => 'Nuevos del año - Tendencia anual de proyectos nuevos y completados',
     'code'      => 'annualCreated_projectTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -3186,13 +3186,13 @@ EOT
             'yaxis' => array
             (
                 array('field' => 'newProject', 'name' => 'newProject', 'valOrAgg' => 'sum'),
-                array('field' => 'closedProject', 'name' => '已关闭的项目', 'valOrAgg' => 'sum')
+                array('field' => 'closedProject', 'name' => 'Proyectos cerrados', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年度')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -3200,15 +3200,15 @@ EOT
         'year'          => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'number'),
         'month'         => array('name' => 'month', 'object' => 'project', 'field' => 'month', 'type' => 'string'),
         'newProject'    => array('name' => 'newProject', 'object' => 'project', 'field' => 'newProject', 'type' => 'string'),
-        'closedProject' => array('name' => '已关闭的项目', 'object' => 'project', 'field' => 'closedProject', 'type' => 'string')
+        'closedProject' => array('name' => 'Proyectos cerrados', 'object' => 'project', 'field' => 'closedProject', 'type' => 'string')
     ),
     'langs'     => array
     (
         'YEARMONTH'     => array('zh-cn' => 'YEARMONTH', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'          => array('zh-cn' => '年度', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'         => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'newProject'    => array('zh-cn' => '新增项目数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'closedProject' => array('zh-cn' => '完成项目数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'          => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'         => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'newProject'    => array('zh-cn' => 'Proyectos nuevos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'closedProject' => array('zh-cn' => 'Proyectos completados', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3217,7 +3217,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1081,
-    'name'      => '年度新增-执行年度新增和完成趋势图',
+    'name'      => 'Nuevos del año - Tendencia anual de ejecuciones nuevas y completadas',
     'code'      => 'annualCreated_executionTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -3248,7 +3248,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年度')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -3261,10 +3261,10 @@ EOT
     'langs'     => array
     (
         'YEARMONTH'       => array('zh-cn' => 'YEARMONTH', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'            => array('zh-cn' => '年度', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'           => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'newExecution'    => array('zh-cn' => '新增执行数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'closedExecution' => array('zh-cn' => '完成执行数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'            => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'           => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'newExecution'    => array('zh-cn' => 'Ejecuciones nuevas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'closedExecution' => array('zh-cn' => 'Ejecuciones completadas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3273,7 +3273,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1082,
-    'name'      => '年度新增-产品发布次数年度趋势图',
+    'name'      => 'Nuevos del año - Tendencia anual de lanzamientos por producto',
     'code'      => 'annualCreated_releaseTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -3302,7 +3302,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年度')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -3314,9 +3314,9 @@ EOT
     'langs'     => array
     (
         'YEARMONTH' => array('zh-cn' => 'YEARMONTH', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'      => array('zh-cn' => '年度', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'     => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'release'   => array('zh-cn' => '发布次数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'      => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'     => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'release'   => array('zh-cn' => 'Número de lanzamientos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3325,7 +3325,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1083,
-    'name'      => '年度新增-年度投入产出比',
+    'name'      => 'Nuevos del año - Relación anual de inversión y resultados',
     'code'      => 'annualCreated_IORatio',
     'dimension' => '1',
     'type'      => 'line',
@@ -3375,13 +3375,13 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'month', 'name' => '月份', 'group' => 'value')
+            array('field' => 'month', 'name' => 'Mes', 'group' => 'value')
         ),
         'yaxis' => array
         (
-            array('type' => 'value', 'field' => 'ratio', 'agg' => 'value', 'name' => '投入产出比', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'story', 'agg' => 'value', 'name' => '需求交付', 'valOrAgg' => 'value'),
-            array('type' => 'value', 'field' => 'consumed', 'agg' => 'value', 'name' => '工时消耗', 'valOrAgg' => 'value')
+            array('type' => 'value', 'field' => 'ratio', 'agg' => 'value', 'name' => 'Relación inversión-resultados', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'story', 'agg' => 'value', 'name' => 'Entrega de historias', 'valOrAgg' => 'value'),
+            array('type' => 'value', 'field' => 'consumed', 'agg' => 'value', 'name' => 'Consumo de horas', 'valOrAgg' => 'value')
         )
     ),
     'stage'     => 'published',
@@ -3391,7 +3391,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1085,
-    'name'      => '年度排行-项目集-预算投入榜',
+    'name'      => 'Ranking anual - Programas - Mayor presupuesto',
     'code'      => 'annualRank_programBudget',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3437,27 +3437,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'budget', 'name' => '预算', 'valOrAgg' => 'sum')
+                array('field' => 'budget', 'name' => 'Presupuesto', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'budget'  => array('name' => '预算', 'object' => 'project', 'field' => 'budget', 'type' => 'number')
+        'budget'  => array('name' => 'Presupuesto', 'object' => 'project', 'field' => 'budget', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目集编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'budget'  => array('zh-cn' => '项目集预算', 'zh-tw' => '', 'en' => 'budget', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del programa', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'budget'  => array('zh-cn' => 'Presupuesto del programa', 'zh-tw' => '', 'en' => 'budget', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3466,7 +3466,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1086,
-    'name'      => '年度排行-项目集-人员投入榜',
+    'name'      => 'Ranking anual - Programas - Mayor cantidad de personal',
     'code'      => 'annualRank_programPersonnel',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3504,7 +3504,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -3514,9 +3514,9 @@ EOT
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'number'  => array('zh-cn' => '人员数量', 'zh-tw' => '', 'en' => 'number', 'de' => '', 'fr' => ''),
-        'setName' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'setName', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'number'  => array('zh-cn' => 'Cantidad de personas', 'zh-tw' => '', 'en' => 'number', 'de' => '', 'fr' => ''),
+        'setName' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'setName', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3525,7 +3525,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1087,
-    'name'      => '年度排行-项目集-工时消耗榜',
+    'name'      => 'Ranking anual - Programas - Mayor consumo de horas',
     'code'      => 'annualRank_programConsumed',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3567,27 +3567,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'consumed', 'name' => '总计消耗', 'valOrAgg' => 'sum')
+                array('field' => 'consumed', 'name' => 'Consumo total', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'     => array('name' => 'year', 'object' => 'effort', 'field' => 'year', 'type' => 'number'),
         'id'       => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program'  => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'consumed' => array('name' => '总计消耗', 'object' => 'task', 'field' => 'consumed', 'type' => 'string')
+        'consumed' => array('name' => 'Consumo total', 'object' => 'task', 'field' => 'consumed', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'       => array('zh-cn' => '项目集编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program'  => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'consumed' => array('zh-cn' => '项目集总计消耗', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'       => array('zh-cn' => 'Código del programa', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program'  => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'consumed' => array('zh-cn' => 'Consumo total del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3596,7 +3596,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1088,
-    'name'      => '年度排行-项目集-新增需求条目榜',
+    'name'      => 'Ranking anual - Programas - Más historias nuevas',
     'code'      => 'annualRank_programStoryCount_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3640,27 +3640,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'story'   => array('name' => '研发需求', 'object' => 'story', 'field' => 'story', 'type' => 'string')
+        'story'   => array('name' => 'Historias', 'object' => 'story', 'field' => 'story', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目集编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '新增研发需求计数', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del programa', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Cantidad de historias nuevas', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3669,7 +3669,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1089,
-    'name'      => '年度排行-项目集-新增需求规模榜',
+    'name'      => 'Ranking anual - Programas - Mayor tamaño de historias nuevas',
     'code'      => 'annualRank_programStoryEstimate_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3716,27 +3716,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'story'   => array('name' => '研发需求', 'object' => 'story', 'field' => 'story', 'type' => 'number')
+        'story'   => array('name' => 'Historias', 'object' => 'story', 'field' => 'story', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目集编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '新增研发需求规模', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del programa', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Tamaño de historias nuevas', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3745,7 +3745,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1090,
-    'name'      => '年度排行-项目集-新增Bug条目榜',
+    'name'      => 'Ranking anual - Programas - Más Bugs nuevos',
     'code'      => 'annualRank_programBug_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3788,27 +3788,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'bug', 'name' => 'Bug列表', 'valOrAgg' => 'sum')
+                array('field' => 'bug', 'name' => 'Lista de Bugs', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'bug', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'bug'     => array('name' => 'Bug列表', 'object' => 'project', 'field' => 'bug', 'type' => 'string')
+        'bug'     => array('name' => 'Lista de Bugs', 'object' => 'project', 'field' => 'bug', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目集编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'bug'     => array('zh-cn' => '新增Bug计数', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del programa', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'bug'     => array('zh-cn' => 'Cantidad de Bugs nuevos', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3817,7 +3817,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1091,
-    'name'      => '年度排行-项目集-完成需求条目榜',
+    'name'      => 'Ranking anual - Programas - Más historias completadas',
     'code'      => 'annualRank_programStoryCount_finished',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3862,27 +3862,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'story'   => array('name' => '研发需求', 'object' => 'story', 'field' => 'story', 'type' => 'string')
+        'story'   => array('name' => 'Historias', 'object' => 'story', 'field' => 'story', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目集编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '完成研发需求求和', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del programa', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Suma de historias completadas', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3891,7 +3891,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1092,
-    'name'      => '年度排行-项目集-完成需求规模榜',
+    'name'      => 'Ranking anual - Programas - Mayor tamaño de historias completadas',
     'code'      => 'annualRank_programStoryEstimate_finished',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -3939,27 +3939,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'story'   => array('name' => '研发需求', 'object' => 'story', 'field' => 'story', 'type' => 'number')
+        'story'   => array('name' => 'Historias', 'object' => 'story', 'field' => 'story', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '研发需求预计工时求和', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Número', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Suma de horas estimadas de las historias', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -3968,7 +3968,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1093,
-    'name'      => '年度排行-项目集-修复Bug条目榜',
+    'name'      => 'Ranking anual - Programas - Más Bugs corregidos',
     'code'      => 'annualRank_programBug_fixed',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4013,27 +4013,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'bug', 'name' => 'Bug列表', 'valOrAgg' => 'sum')
+                array('field' => 'bug', 'name' => 'Lista de Bugs', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'bug', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'program' => array('name' => 'program', 'object' => 'zt_project', 'field' => 'program', 'type' => 'string'),
-        'bug'     => array('name' => 'Bug列表', 'object' => 'project', 'field' => 'bug', 'type' => 'string')
+        'bug'     => array('name' => 'Lista de Bugs', 'object' => 'project', 'field' => 'bug', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'program' => array('zh-cn' => '项目集名称', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
-        'bug'     => array('zh-cn' => 'Bug计数', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Número', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'program' => array('zh-cn' => 'Nombre del programa', 'zh-tw' => '', 'en' => 'program', 'de' => '', 'fr' => ''),
+        'bug'     => array('zh-cn' => 'Cantidad de Bugs', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4042,7 +4042,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1094,
-    'name'      => '年度排行-项目-工期榜',
+    'name'      => 'Ranking anual - Proyectos - Mayor duración',
     'code'      => 'annualRank_projectDuration',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4060,7 +4060,7 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'name', 'name' => '项目名称', 'group' => '')
+                array('field' => 'name', 'name' => 'Nombre del proyecto', 'group' => '')
             ),
             'yaxis' => array
             (
@@ -4070,27 +4070,27 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'      => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'number'),
-        'id'        => array('name' => '编号', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'name'      => array('name' => '项目名称', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
-        'status'    => array('name' => '状态', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
-        'realBegan' => array('name' => '实际开始日期', 'object' => 'project', 'field' => 'realBegan', 'type' => 'date'),
-        'realEnd'   => array('name' => '实际完成日期', 'object' => 'project', 'field' => 'realEnd', 'type' => 'date'),
+        'id'        => array('name' => 'Número', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'name'      => array('name' => 'Nombre del proyecto', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
+        'status'    => array('name' => 'Estado', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
+        'realBegan' => array('name' => 'Fecha de inicio real', 'object' => 'project', 'field' => 'realBegan', 'type' => 'date'),
+        'realEnd'   => array('name' => 'Fecha de finalización real', 'object' => 'project', 'field' => 'realEnd', 'type' => 'date'),
         'duration'  => array('name' => 'duration', 'object' => 'project', 'field' => 'duration', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'      => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'        => array('zh-cn' => '项目编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'name'      => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
-        'status'    => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
-        'realBegan' => array('zh-cn' => '实际开始日期', 'zh-tw' => '', 'en' => 'realBegan', 'de' => '', 'fr' => ''),
-        'realEnd'   => array('zh-cn' => '实际完成日期', 'zh-tw' => '', 'en' => 'realEnd', 'de' => '', 'fr' => ''),
-        'duration'  => array('zh-cn' => '工期', 'zh-tw' => '', 'en' => 'duration', 'de' => '', 'fr' => '')
+        'year'      => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'        => array('zh-cn' => 'Código del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'name'      => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
+        'status'    => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
+        'realBegan' => array('zh-cn' => 'Fecha de inicio real', 'zh-tw' => '', 'en' => 'realBegan', 'de' => '', 'fr' => ''),
+        'realEnd'   => array('zh-cn' => 'Fecha de finalización real', 'zh-tw' => '', 'en' => 'realEnd', 'de' => '', 'fr' => ''),
+        'duration'  => array('zh-cn' => 'Duración', 'zh-tw' => '', 'en' => 'duration', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4099,7 +4099,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1096,
-    'name'      => '年度排行-项目-工期偏差榜',
+    'name'      => 'Ranking anual - Proyectos - Mayor desviación de duración',
     'code'      => 'annualRank_projectDurationDeviation',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4122,7 +4122,7 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'name', 'name' => '项目名称', 'group' => '')
+                array('field' => 'name', 'name' => 'Nombre del proyecto', 'group' => '')
             ),
             'yaxis' => array
             (
@@ -4132,31 +4132,31 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'      => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'number'),
-        'id'        => array('name' => '编号', 'object' => 'action', 'field' => 'id', 'type' => 'number'),
-        'name'      => array('name' => '项目名称', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
-        'status'    => array('name' => '状态', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
-        'begin'     => array('name' => '计划开始', 'object' => 'project', 'field' => 'begin', 'type' => 'date'),
-        'end'       => array('name' => '计划完成', 'object' => 'project', 'field' => 'end', 'type' => 'date'),
-        'realBegan' => array('name' => '实际开始日期', 'object' => 'project', 'field' => 'realBegan', 'type' => 'date'),
-        'realEnd'   => array('name' => '实际完成日期', 'object' => 'project', 'field' => 'realEnd', 'type' => 'date'),
+        'id'        => array('name' => 'Número', 'object' => 'action', 'field' => 'id', 'type' => 'number'),
+        'name'      => array('name' => 'Nombre del proyecto', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
+        'status'    => array('name' => 'Estado', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
+        'begin'     => array('name' => 'Inicio planificado', 'object' => 'project', 'field' => 'begin', 'type' => 'date'),
+        'end'       => array('name' => 'Finalización planificada', 'object' => 'project', 'field' => 'end', 'type' => 'date'),
+        'realBegan' => array('name' => 'Fecha de inicio real', 'object' => 'project', 'field' => 'realBegan', 'type' => 'date'),
+        'realEnd'   => array('name' => 'Fecha de finalización real', 'object' => 'project', 'field' => 'realEnd', 'type' => 'date'),
         'duration'  => array('name' => 'duration', 'object' => 'project', 'field' => 'duration', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'      => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'        => array('zh-cn' => '项目编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'name'      => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
-        'status'    => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
-        'begin'     => array('zh-cn' => '计划开始', 'zh-tw' => '', 'en' => 'begin', 'de' => '', 'fr' => ''),
-        'end'       => array('zh-cn' => '计划完成', 'zh-tw' => '', 'en' => 'end', 'de' => '', 'fr' => ''),
-        'realBegan' => array('zh-cn' => '实际开始日期', 'zh-tw' => '', 'en' => 'realBegan', 'de' => '', 'fr' => ''),
-        'realEnd'   => array('zh-cn' => '实际完成日期', 'zh-tw' => '', 'en' => 'realEnd', 'de' => '', 'fr' => ''),
-        'duration'  => array('zh-cn' => '工期偏差', 'zh-tw' => '', 'en' => 'duration', 'de' => '', 'fr' => '')
+        'year'      => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'        => array('zh-cn' => 'Código del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'name'      => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
+        'status'    => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
+        'begin'     => array('zh-cn' => 'Inicio planificado', 'zh-tw' => '', 'en' => 'begin', 'de' => '', 'fr' => ''),
+        'end'       => array('zh-cn' => 'Finalización planificada', 'zh-tw' => '', 'en' => 'end', 'de' => '', 'fr' => ''),
+        'realBegan' => array('zh-cn' => 'Fecha de inicio real', 'zh-tw' => '', 'en' => 'realBegan', 'de' => '', 'fr' => ''),
+        'realEnd'   => array('zh-cn' => 'Fecha de finalización real', 'zh-tw' => '', 'en' => 'realEnd', 'de' => '', 'fr' => ''),
+        'duration'  => array('zh-cn' => 'Desviación de duración', 'zh-tw' => '', 'en' => 'duration', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4165,7 +4165,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1097,
-    'name'      => '年度排行-项目-人员投入榜',
+    'name'      => 'Ranking anual - Proyectos - Mayor cantidad de personal',
     'code'      => 'annualRank_projectPersonnel',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4191,7 +4191,7 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'name', 'name' => '项目名称', 'group' => '')
+                array('field' => 'name', 'name' => 'Nombre del proyecto', 'group' => '')
             ),
             'yaxis' => array
             (
@@ -4201,19 +4201,19 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'   => array('name' => 'year', 'object' => 'user', 'field' => 'year', 'type' => 'number'),
         'number' => array('name' => 'number', 'object' => 'user', 'field' => 'number', 'type' => 'string'),
-        'name'   => array('name' => '项目名称', 'object' => 'project', 'field' => 'name', 'type' => 'string')
+        'name'   => array('name' => 'Nombre del proyecto', 'object' => 'project', 'field' => 'name', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'   => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'number' => array('zh-cn' => '人员个数', 'zh-tw' => '', 'en' => 'number', 'de' => '', 'fr' => ''),
-        'name'   => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => '')
+        'year'   => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'number' => array('zh-cn' => 'Cantidad de personas', 'zh-tw' => '', 'en' => 'number', 'de' => '', 'fr' => ''),
+        'name'   => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4222,7 +4222,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1098,
-    'name'      => '年度排行-项目-工时消耗榜',
+    'name'      => 'Ranking anual - Proyectos - Mayor consumo de horas',
     'code'      => 'annualRank_projectConsumed',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4262,27 +4262,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'consumed', 'name' => '总计消耗', 'valOrAgg' => 'sum')
+                array('field' => 'consumed', 'name' => 'Consumo total', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'     => array('name' => 'year', 'object' => 'effort', 'field' => 'year', 'type' => 'number'),
         'id'       => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'project'  => array('name' => 'project', 'object' => 'zt_project', 'field' => 'project', 'type' => 'string'),
-        'consumed' => array('name' => '总计消耗', 'object' => 'task', 'field' => 'consumed', 'type' => 'string')
+        'consumed' => array('name' => 'Consumo total', 'object' => 'task', 'field' => 'consumed', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'       => array('zh-cn' => '项目编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'project'  => array('zh-cn' => '项目', 'zh-tw' => '', 'en' => 'project', 'de' => '', 'fr' => ''),
-        'consumed' => array('zh-cn' => '任务总计消耗', 'zh-tw' => '', 'en' => 'consumed', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'       => array('zh-cn' => 'Código del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'project'  => array('zh-cn' => 'Proyecto', 'zh-tw' => '', 'en' => 'project', 'de' => '', 'fr' => ''),
+        'consumed' => array('zh-cn' => 'Consumo total de tareas', 'zh-tw' => '', 'en' => 'consumed', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4291,7 +4291,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1099,
-    'name'      => '年度排行-项目-完成需求条目榜',
+    'name'      => 'Ranking anual - Proyectos - Más historias completadas',
     'code'      => 'annualRank_projectStoryCount_finished',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4342,31 +4342,31 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'project', 'name' => '所属项目', 'group' => '')
+                array('field' => 'project', 'name' => 'Proyecto al que pertenece', 'group' => '')
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求列表', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Lista de historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
-        'id'      => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'project' => array('name' => '所属项目', 'object' => 'project', 'field' => 'project', 'type' => 'string'),
-        'story'   => array('name' => '研发需求列表', 'object' => 'projectstory', 'field' => 'story', 'type' => 'string')
+        'id'      => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'project' => array('name' => 'Proyecto al que pertenece', 'object' => 'project', 'field' => 'project', 'type' => 'string'),
+        'story'   => array('name' => 'Lista de historias', 'object' => 'projectstory', 'field' => 'story', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'project' => array('zh-cn' => '所属项目', 'zh-tw' => '', 'en' => 'project', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '研发需求计数', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'project' => array('zh-cn' => 'Proyecto al que pertenece', 'zh-tw' => '', 'en' => 'project', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Cantidad de historias', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4375,7 +4375,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1100,
-    'name'      => '年度排行-项目-完成需求规模榜',
+    'name'      => 'Ranking anual - Proyectos - Mayor tamaño de historias completadas',
     'code'      => 'annualRank_projectStoryEstimate_finished',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4430,31 +4430,31 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'project', 'name' => '所属项目', 'group' => '')
+                array('field' => 'project', 'name' => 'Proyecto al que pertenece', 'group' => '')
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求列表', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Lista de historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
-        'id'      => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'project' => array('name' => '所属项目', 'object' => 'project', 'field' => 'project', 'type' => 'string'),
-        'story'   => array('name' => '研发需求列表', 'object' => 'projectstory', 'field' => 'story', 'type' => 'number')
+        'id'      => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'project' => array('name' => 'Proyecto al que pertenece', 'object' => 'project', 'field' => 'project', 'type' => 'string'),
+        'story'   => array('name' => 'Lista de historias', 'object' => 'projectstory', 'field' => 'story', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '项目编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'project' => array('zh-cn' => '所属项目', 'zh-tw' => '', 'en' => 'project', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '需求预计工时', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'project' => array('zh-cn' => 'Proyecto al que pertenece', 'zh-tw' => '', 'en' => 'project', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Horas estimadas de la historia', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4463,7 +4463,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1101,
-    'name'      => '年度排行-产品-新增需求条目榜',
+    'name'      => 'Ranking anual - Productos - Más historias nuevas',
     'code'      => 'annualRank_productStoryCount_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4488,27 +4488,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_product', 'field' => 'id', 'type' => 'number'),
         'product' => array('name' => 'product', 'object' => 'zt_product', 'field' => 'product', 'type' => 'string'),
-        'story'   => array('name' => '研发需求', 'object' => 'story', 'field' => 'story', 'type' => 'string')
+        'story'   => array('name' => 'Historias', 'object' => 'story', 'field' => 'story', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '产品编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'product' => array('zh-cn' => '产品', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '研发需求计数', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del producto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'product' => array('zh-cn' => 'Producto', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Cantidad de historias', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4517,7 +4517,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1102,
-    'name'      => '年度排行-产品-完成需求规模榜',
+    'name'      => 'Ranking anual - Productos - Mayor tamaño de historias completadas',
     'code'      => 'annualRank_productStoryEstimate_finished',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4542,27 +4542,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'story', 'name' => '研发需求', 'valOrAgg' => 'sum')
+                array('field' => 'story', 'name' => 'Historias', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'    => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'number'),
         'id'      => array('name' => 'id', 'object' => 'zt_product', 'field' => 'id', 'type' => 'number'),
         'product' => array('name' => 'product', 'object' => 'zt_product', 'field' => 'product', 'type' => 'string'),
-        'story'   => array('name' => '研发需求', 'object' => 'story', 'field' => 'story', 'type' => 'number')
+        'story'   => array('name' => 'Historias', 'object' => 'story', 'field' => 'story', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '产品编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'product' => array('zh-cn' => '产品', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
-        'story'   => array('zh-cn' => '研发需求预计工时求和', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del producto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'product' => array('zh-cn' => 'Producto', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
+        'story'   => array('zh-cn' => 'Suma de horas estimadas de las historias', 'zh-tw' => '', 'en' => 'story', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4571,7 +4571,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1103,
-    'name'      => '年度排行-产品-新增Bug条目榜',
+    'name'      => 'Ranking anual - Productos - Más Bugs nuevos',
     'code'      => 'annualRank_productBug_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4602,7 +4602,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4613,10 +4613,10 @@ EOT
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '产品编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'product' => array('zh-cn' => '产品', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
-        'bug'     => array('zh-cn' => 'Bug计数', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del producto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'product' => array('zh-cn' => 'Producto', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
+        'bug'     => array('zh-cn' => 'Cantidad de Bugs', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4625,7 +4625,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1104,
-    'name'      => '年度排行-产品-修复Bug条目榜',
+    'name'      => 'Ranking anual - Productos - Más Bugs corregidos',
     'code'      => 'annualRank_productBug_fixed',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4656,7 +4656,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4667,10 +4667,10 @@ EOT
     ),
     'langs'     => array
     (
-        'year'    => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'id'      => array('zh-cn' => '产品编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'product' => array('zh-cn' => '产品', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
-        'bug'     => array('zh-cn' => 'Bug计数', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
+        'year'    => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'id'      => array('zh-cn' => 'Código del producto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'product' => array('zh-cn' => 'Producto', 'zh-tw' => '', 'en' => 'product', 'de' => '', 'fr' => ''),
+        'bug'     => array('zh-cn' => 'Cantidad de Bugs', 'zh-tw' => '', 'en' => 'bug', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4679,7 +4679,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1105,
-    'name'      => '年度排行-个人-创建需求条目榜',
+    'name'      => 'Ranking anual - Personas - Más historias creadas',
     'code'      => 'annualRank_personalStoryCount_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4709,7 +4709,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4719,9 +4719,9 @@ EOT
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'realname' => array('zh-cn' => '姓名', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
-        'count'    => array('zh-cn' => '计数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'realname' => array('zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
+        'count'    => array('zh-cn' => 'Cantidad', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4730,7 +4730,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1106,
-    'name'      => '年度排行-个人-创建用例条目榜',
+    'name'      => 'Ranking anual - Personas - Más casos de prueba creados',
     'code'      => 'annualRank_personalCaseCount_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4760,7 +4760,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4770,9 +4770,9 @@ EOT
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'realname' => array('zh-cn' => '姓名', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
-        'count'    => array('zh-cn' => '计数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'realname' => array('zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
+        'count'    => array('zh-cn' => 'Cantidad', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4781,7 +4781,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1107,
-    'name'      => '年度排行-个人-创建Bug条目榜',
+    'name'      => 'Ranking anual - Personas - Más Bugs creados',
     'code'      => 'annualRank_personalBug_created',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4811,7 +4811,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4821,9 +4821,9 @@ EOT
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'realname' => array('zh-cn' => '姓名', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
-        'count'    => array('zh-cn' => '计数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'realname' => array('zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
+        'count'    => array('zh-cn' => 'Cantidad', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4832,7 +4832,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1108,
-    'name'      => '年度排行-个人-修复Bug条目榜',
+    'name'      => 'Ranking anual - Personas - Más Bugs corregidos',
     'code'      => 'annualRank_personalBug_Fixed',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4862,7 +4862,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4872,9 +4872,9 @@ EOT
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'realname' => array('zh-cn' => '姓名', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
-        'count'    => array('zh-cn' => '计数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'realname' => array('zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
+        'count'    => array('zh-cn' => 'Cantidad', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4883,7 +4883,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1109,
-    'name'      => '年度排行-个人-工时消耗榜',
+    'name'      => 'Ranking anual - Personas - Mayor consumo de horas',
     'code'      => 'annualRank_personalConsumed',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4907,25 +4907,25 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'consumed', 'name' => '耗时', 'valOrAgg' => 'sum')
+                array('field' => 'consumed', 'name' => 'Tiempo consumido', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'     => array('name' => 'year', 'object' => 'user', 'field' => 'year', 'type' => 'number'),
         'realname' => array('name' => 'realname', 'object' => 'zt_user', 'field' => 'realname', 'type' => 'string'),
-        'consumed' => array('name' => '耗时', 'object' => 'effort', 'field' => 'consumed', 'type' => 'number')
+        'consumed' => array('name' => 'Tiempo consumido', 'object' => 'effort', 'field' => 'consumed', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'realname' => array('zh-cn' => '姓名', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
-        'consumed' => array('zh-cn' => '耗时', 'zh-tw' => '', 'en' => 'consumed', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'realname' => array('zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
+        'consumed' => array('zh-cn' => 'Tiempo consumido', 'zh-tw' => '', 'en' => 'consumed', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4934,7 +4934,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 1110,
-    'name'      => '年度排行-个人-禅道操作次数榜',
+    'name'      => 'Ranking anual - Personas - Más acciones en ZenTao',
     'code'      => 'annualRank_personalAction',
     'dimension' => '1',
     'type'      => 'cluBarY',
@@ -4960,7 +4960,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -4970,9 +4970,9 @@ EOT
     ),
     'langs'     => array
     (
-        'year'     => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
-        'realname' => array('zh-cn' => '姓名', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
-        'count'    => array('zh-cn' => '计数', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
+        'year'     => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => ''),
+        'realname' => array('zh-cn' => 'Nombre', 'zh-tw' => '', 'en' => 'realname', 'de' => '', 'fr' => ''),
+        'count'    => array('zh-cn' => 'Cantidad', 'zh-tw' => '', 'en' => 'count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -4981,7 +4981,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10000,
-    'name'      => '年度完成项目-完成项目数',
+    'name'      => 'Proyectos completados del año - Proyectos completados',
     'code'      => 'annualFinishedProject_countProject',
     'dimension' => '2',
     'type'      => 'card',
@@ -5004,7 +5004,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10001,
-    'name'      => '年度完成项目-按时完成项目数',
+    'name'      => 'Proyectos completados del año - Proyectos completados a tiempo',
     'code'      => 'annualFinishedProject_countProject_finished_ontime',
     'dimension' => '2',
     'type'      => 'card',
@@ -5027,7 +5027,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10002,
-    'name'      => '年度完成项目-延期完成项目数',
+    'name'      => 'Proyectos completados del año - Proyectos completados con retraso',
     'code'      => 'annualFinishedProject_countProject_finished_delay',
     'dimension' => '2',
     'type'      => 'card',
@@ -5050,7 +5050,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10003,
-    'name'      => '年度完成项目-完成需求条目数',
+    'name'      => 'Proyectos completados del año - Historias completadas',
     'code'      => 'annualFinishedProject_storyCount_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5073,7 +5073,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10004,
-    'name'      => '年度完成项目-完成需求规模数',
+    'name'      => 'Proyectos completados del año - Tamaño de historias completadas',
     'code'      => 'annualFinishedProject_storyEstimate_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5096,7 +5096,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10005,
-    'name'      => '年度完成项目-完成发布数',
+    'name'      => 'Proyectos completados del año - Lanzamientos completados',
     'code'      => 'annualFinishedProject_release_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5119,7 +5119,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10006,
-    'name'      => '年度完成项目-解决bug数',
+    'name'      => 'Proyectos completados del año - Bugs resueltos',
     'code'      => 'annualFinishedProject_bug_fixed',
     'dimension' => '2',
     'type'      => 'card',
@@ -5142,7 +5142,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10007,
-    'name'      => '年度完成项目-完成执行数',
+    'name'      => 'Proyectos completados del año - Ejecuciones completadas',
     'code'      => 'annualFinishedProject_execution_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5165,7 +5165,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10008,
-    'name'      => '年度完成项目-按时完成执行数',
+    'name'      => 'Proyectos completados del año - Ejecuciones completadas a tiempo',
     'code'      => 'annualFinishedProject_execution_finished_ontime',
     'dimension' => '2',
     'type'      => 'card',
@@ -5188,7 +5188,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10009,
-    'name'      => '年度完成项目-延期完成执行数',
+    'name'      => 'Proyectos completados del año - Ejecuciones completadas con retraso',
     'code'      => 'annualFinishedProject_execution_finished_delay',
     'dimension' => '2',
     'type'      => 'card',
@@ -5211,7 +5211,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10010,
-    'name'      => '年度完成项目-完成任务条目数',
+    'name'      => 'Proyectos completados del año - Tareas completadas',
     'code'      => 'annualFinishedProject_taskCount_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5234,7 +5234,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10011,
-    'name'      => '年度完成项目-完成任务预计工时数',
+    'name'      => 'Proyectos completados del año - Horas estimadas de tareas completadas',
     'code'      => 'annualFinishedProject_taskEstimate_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5257,7 +5257,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10012,
-    'name'      => '年度完成项目-完成任务消耗工时数',
+    'name'      => 'Proyectos completados del año - Horas consumidas de tareas completadas',
     'code'      => 'annualFinishedProject_taskConsumed_finished',
     'dimension' => '2',
     'type'      => 'card',
@@ -5280,7 +5280,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10013,
-    'name'      => '年度完成项目-投入的总人天',
+    'name'      => 'Proyectos completados del año - Total de días-persona invertidos',
     'code'      => 'annualFinishedProject_workingDayConsumed',
     'dimension' => '2',
     'type'      => 'card',
@@ -5303,7 +5303,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10014,
-    'name'      => '年度完成项目-项目按期完成率',
+    'name'      => 'Proyectos completados del año - Tasa de proyectos completados a tiempo',
     'code'      => 'annualFinishedProject_projectFinishedRatio',
     'dimension' => '2',
     'type'      => 'waterpolo',
@@ -5328,15 +5328,15 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'id'            => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'id'            => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
         'projectstatus' => array('name' => 'projectstatus', 'object' => 'project', 'field' => 'projectstatus', 'type' => 'string'),
         'year'          => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'            => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'projectstatus' => array('zh-cn' => '项目状态', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
-        'year'          => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
+        'id'            => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'projectstatus' => array('zh-cn' => 'Estado del proyecto', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
+        'year'          => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5345,7 +5345,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10015,
-    'name'      => '年度完成项目-执行按期完成率',
+    'name'      => 'Proyectos completados del año - Tasa de ejecuciones completadas a tiempo',
     'code'      => 'annualFinishedProject_executionFinishedRatio',
     'dimension' => '2',
     'type'      => 'waterpolo',
@@ -5370,15 +5370,15 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'id'            => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'id'            => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
         'projectstatus' => array('name' => 'projectstatus', 'object' => 'project', 'field' => 'projectstatus', 'type' => 'string'),
         'year'          => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'            => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'projectstatus' => array('zh-cn' => '执行状态', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
-        'year'          => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
+        'id'            => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'projectstatus' => array('zh-cn' => 'Estado de la ejecución', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
+        'year'          => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5387,7 +5387,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10016,
-    'name'      => '年度完成项目-项目延期率',
+    'name'      => 'Proyectos completados del año - Tasa de retraso de proyectos',
     'code'      => 'annualFinishedProject_projectDelayRatio',
     'dimension' => '2',
     'type'      => 'waterpolo',
@@ -5412,15 +5412,15 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'id'            => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'id'            => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
         'projectstatus' => array('name' => 'projectstatus', 'object' => 'project', 'field' => 'projectstatus', 'type' => 'string'),
         'year'          => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'            => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'projectstatus' => array('zh-cn' => '项目状态', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
-        'year'          => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
+        'id'            => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'projectstatus' => array('zh-cn' => 'Estado del proyecto', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
+        'year'          => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5429,7 +5429,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10017,
-    'name'      => '年度完成项目-执行延期率',
+    'name'      => 'Proyectos completados del año - Tasa de retraso de ejecuciones',
     'code'      => 'annualFinishedProject_executionDelayRatio',
     'dimension' => '2',
     'type'      => 'waterpolo',
@@ -5454,15 +5454,15 @@ EOT
     'filters'   => array(),
     'fields'    => array
     (
-        'id'            => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'id'            => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
         'projectstatus' => array('name' => 'projectstatus', 'object' => 'project', 'field' => 'projectstatus', 'type' => 'string'),
         'year'          => array('name' => 'year', 'object' => 'project', 'field' => 'year', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'            => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'projectstatus' => array('zh-cn' => '执行状态', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
-        'year'          => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
+        'id'            => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'projectstatus' => array('zh-cn' => 'Estado de la ejecución', 'zh-tw' => '', 'en' => 'projectstatus', 'de' => '', 'fr' => ''),
+        'year'          => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'year', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5471,7 +5471,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10018,
-    'name'      => '年度完成项目-完成项目工期偏差条形图',
+    'name'      => 'Proyectos completados del año - Gráfico de barras de desviación de duración de proyectos completados',
     'code'      => 'annualFinishedProject_projectFinishedDurationDeviation',
     'dimension' => '2',
     'type'      => 'cluBarY',
@@ -5507,7 +5507,7 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'name', 'name' => '项目名称', 'group' => '')
+                array('field' => 'name', 'name' => 'Nombre del proyecto', 'group' => '')
             ),
             'yaxis' => array
             (
@@ -5521,21 +5521,21 @@ EOT
         (
             'field'   => 'closedDate',
             'type'    => 'date',
-            'name'    => '关闭日期',
+            'name'    => 'Fecha de cierre',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'name'       => array('name' => '项目名称', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
-        'closedDate' => array('name' => '关闭日期', 'object' => 'project', 'field' => 'closedDate', 'type' => 'date'),
+        'name'       => array('name' => 'Nombre del proyecto', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
+        'closedDate' => array('name' => 'Fecha de cierre', 'object' => 'project', 'field' => 'closedDate', 'type' => 'date'),
         'daterate'   => array('name' => 'daterate', 'object' => 'project', 'field' => 'daterate', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'name'       => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
-        'closedDate' => array('zh-cn' => '关闭日期', 'zh-tw' => '', 'en' => 'closedDate', 'de' => '', 'fr' => ''),
-        'daterate'   => array('zh-cn' => '工期偏差率', 'zh-tw' => '', 'en' => 'daterate', 'de' => '', 'fr' => '')
+        'name'       => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
+        'closedDate' => array('zh-cn' => 'Fecha de cierre', 'zh-tw' => '', 'en' => 'closedDate', 'de' => '', 'fr' => ''),
+        'daterate'   => array('zh-cn' => 'Tasa de desviación de duración', 'zh-tw' => '', 'en' => 'daterate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5544,7 +5544,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10019,
-    'name'      => '年度完成项目-单位工时交付需求规模数对比图',
+    'name'      => 'Proyectos completados del año - Comparación del tamaño de historias entregadas por unidad de horas',
     'code'      => 'annualFinishedProject_storyEstimatePerHour',
     'dimension' => '2',
     'type'      => 'pie',
@@ -5579,24 +5579,24 @@ EOT
             'type'  => 'cluBarX',
             'xaxis' => array
             (
-                array('field' => 'project', 'name' => '所属项目', 'group' => '')
+                array('field' => 'project', 'name' => 'Proyecto al que pertenece', 'group' => '')
             ),
             'yaxis' => array
             (
-                array('field' => '单位时间交付需求规模数', 'name' => '单位时间交付需求规模数', 'valOrAgg' => 'sum')
+                array('field' => 'Tamaño de historias entregadas por unidad de tiempo', 'name' => 'Tamaño de historias entregadas por unidad de tiempo', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'project', 'type' => 'input', 'name' => '所属项目', 'default' => '')
+        array('field' => 'project', 'type' => 'input', 'name' => 'Proyecto al que pertenece', 'default' => '')
     ),
     'fields'    => array
     (
-        'project'                           => array('name' => '所属项目', 'object' => 'project', 'field' => 'project', 'type' => 'string'),
-        '故事点'                         => array('name' => '故事点', 'object' => 'project', 'field' => '故事点', 'type' => 'number'),
-        '工时'                            => array('name' => '工时', 'object' => 'project', 'field' => '工时', 'type' => 'number'),
-        '单位时间交付需求规模数' => array('name' => '单位时间交付需求规模数', 'object' => 'project', 'field' => '单位时间交付需求规模数', 'type' => 'number')
+        'project'                           => array('name' => 'Proyecto al que pertenece', 'object' => 'project', 'field' => 'project', 'type' => 'string'),
+        '故事点'                         => array('name' => 'Puntos de historia', 'object' => 'project', 'field' => 'Puntos de historia', 'type' => 'number'),
+        '工时'                            => array('name' => 'Horas de trabajo', 'object' => 'project', 'field' => 'Horas de trabajo', 'type' => 'number'),
+        '单位时间交付需求规模数' => array('name' => 'Tamaño de historias entregadas por unidad de tiempo', 'object' => 'project', 'field' => 'Tamaño de historias entregadas por unidad de tiempo', 'type' => 'number')
     ),
     'stage'     => 'published',
     'builtin'   => '1'
@@ -5605,7 +5605,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10020,
-    'name'      => '年度完成项目-项目完成分布图',
+    'name'      => 'Proyectos completados del año - Distribución de finalización de proyectos',
     'code'      => 'annualFinishedProject_projectStatus_finished',
     'dimension' => '2',
     'type'      => 'pie',
@@ -5639,7 +5639,7 @@ EOT
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => '项目ID', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del proyecto', 'valOrAgg' => 'count')
             )
         )
     ),
@@ -5649,21 +5649,21 @@ EOT
         (
             'field'   => 'closedDate',
             'type'    => 'date',
-            'name'    => '关闭日期',
+            'name'    => 'Fecha de cierre',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'id'             => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'id'             => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
         'completeStatus' => array('name' => 'completeStatus', 'object' => 'project', 'field' => 'completeStatus', 'type' => 'string'),
-        'closedDate'     => array('name' => '关闭日期', 'object' => 'project', 'field' => 'closedDate', 'type' => 'date')
+        'closedDate'     => array('name' => 'Fecha de cierre', 'object' => 'project', 'field' => 'closedDate', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'             => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'completeStatus' => array('zh-cn' => '项目完成情况', 'zh-tw' => '', 'en' => 'completeStatus', 'de' => '', 'fr' => ''),
-        'closedDate'     => array('zh-cn' => '关闭日期', 'zh-tw' => '', 'en' => 'closedDate', 'de' => '', 'fr' => '')
+        'id'             => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'completeStatus' => array('zh-cn' => 'Estado de finalización del proyecto', 'zh-tw' => '', 'en' => 'completeStatus', 'de' => '', 'fr' => ''),
+        'closedDate'     => array('zh-cn' => 'Fecha de cierre', 'zh-tw' => '', 'en' => 'closedDate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5672,7 +5672,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10021,
-    'name'      => '年度完成项目-执行完成分布图',
+    'name'      => 'Proyectos completados del año - Distribución de finalización de ejecuciones',
     'code'      => 'annualFinishedProject_executionStatus_finished',
     'dimension' => '2',
     'type'      => 'pie',
@@ -5706,7 +5706,7 @@ EOT
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => '项目ID', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del proyecto', 'valOrAgg' => 'count')
             )
         )
     ),
@@ -5716,21 +5716,21 @@ EOT
         (
             'field'   => 'closedDate',
             'type'    => 'date',
-            'name'    => '关闭日期',
+            'name'    => 'Fecha de cierre',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'id'             => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'id'             => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
         'completeStatus' => array('name' => 'completeStatus', 'object' => 'project', 'field' => 'completeStatus', 'type' => 'string'),
-        'closedDate'     => array('name' => '关闭日期', 'object' => 'project', 'field' => 'closedDate', 'type' => 'date')
+        'closedDate'     => array('name' => 'Fecha de cierre', 'object' => 'project', 'field' => 'closedDate', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'             => array('zh-cn' => '执行ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'completeStatus' => array('zh-cn' => '完成情况', 'zh-tw' => '', 'en' => 'completeStatus', 'de' => '', 'fr' => ''),
-        'closedDate'     => array('zh-cn' => '关闭日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'id'             => array('zh-cn' => 'ID de la ejecución', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'completeStatus' => array('zh-cn' => 'Estado de finalización', 'zh-tw' => '', 'en' => 'completeStatus', 'de' => '', 'fr' => ''),
+        'closedDate'     => array('zh-cn' => 'Fecha de cierre', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5739,7 +5739,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10022,
-    'name'      => '年度完成项目-完成项目工时偏差条形图',
+    'name'      => 'Proyectos completados del año - Gráfico de barras de desviación de horas de proyectos completados',
     'code'      => 'annualFinishedProject_projectHourDeviation_finished',
     'dimension' => '2',
     'type'      => 'cluBarY',
@@ -5781,7 +5781,7 @@ EOT
             'type'  => 'cluBarY',
             'xaxis' => array
             (
-                array('field' => 'name', 'name' => '任务名称', 'group' => '')
+                array('field' => 'name', 'name' => 'Nombre de la tarea', 'group' => '')
             ),
             'yaxis' => array
             (
@@ -5795,31 +5795,31 @@ EOT
         (
             'field'   => 'closedDate',
             'type'    => 'date',
-            'name'    => '关闭时间',
+            'name'    => 'Hora de cierre',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'name'       => array('name' => '任务名称', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
-        'id'         => array('name' => '编号', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'closedDate' => array('name' => '关闭时间', 'object' => 'task', 'field' => 'closedDate', 'type' => 'date'),
-        'estimate'   => array('name' => '最初预计', 'object' => 'task', 'field' => 'estimate', 'type' => 'string'),
-        'consumed'   => array('name' => '总计消耗', 'object' => 'task', 'field' => 'consumed', 'type' => 'string'),
-        'left'       => array('name' => '预计剩余', 'object' => 'task', 'field' => 'left', 'type' => 'string'),
+        'name'       => array('name' => 'Nombre de la tarea', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
+        'id'         => array('name' => 'Número', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'closedDate' => array('name' => 'Hora de cierre', 'object' => 'task', 'field' => 'closedDate', 'type' => 'date'),
+        'estimate'   => array('name' => 'Estimación inicial', 'object' => 'task', 'field' => 'estimate', 'type' => 'string'),
+        'consumed'   => array('name' => 'Consumo total', 'object' => 'task', 'field' => 'consumed', 'type' => 'string'),
+        'left'       => array('name' => 'Estimado restante', 'object' => 'task', 'field' => 'left', 'type' => 'string'),
         'deviation'  => array('name' => 'deviation', 'object' => 'task', 'field' => 'deviation', 'type' => 'number'),
         'rate'       => array('name' => 'rate', 'object' => 'task', 'field' => 'rate', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'name'       => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
-        'id'         => array('zh-cn' => '项目编号', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'closedDate' => array('zh-cn' => '关闭时间', 'zh-tw' => '', 'en' => 'closedDate', 'de' => '', 'fr' => ''),
-        'estimate'   => array('zh-cn' => '最初预计', 'zh-tw' => '', 'en' => 'estimate', 'de' => '', 'fr' => ''),
-        'consumed'   => array('zh-cn' => '总计消耗', 'zh-tw' => '', 'en' => 'consumed', 'de' => '', 'fr' => ''),
-        'left'       => array('zh-cn' => '预计剩余', 'zh-tw' => '', 'en' => 'left', 'de' => '', 'fr' => ''),
-        'deviation'  => array('zh-cn' => '偏差', 'zh-tw' => '', 'en' => 'deviation', 'de' => '', 'fr' => ''),
-        'rate'       => array('zh-cn' => '偏差比率', 'zh-tw' => '', 'en' => 'rate', 'de' => '', 'fr' => '')
+        'name'       => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
+        'id'         => array('zh-cn' => 'Código del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'closedDate' => array('zh-cn' => 'Hora de cierre', 'zh-tw' => '', 'en' => 'closedDate', 'de' => '', 'fr' => ''),
+        'estimate'   => array('zh-cn' => 'Estimación inicial', 'zh-tw' => '', 'en' => 'estimate', 'de' => '', 'fr' => ''),
+        'consumed'   => array('zh-cn' => 'Consumo total', 'zh-tw' => '', 'en' => 'consumed', 'de' => '', 'fr' => ''),
+        'left'       => array('zh-cn' => 'Estimado restante', 'zh-tw' => '', 'en' => 'left', 'de' => '', 'fr' => ''),
+        'deviation'  => array('zh-cn' => 'Desviación', 'zh-tw' => '', 'en' => 'deviation', 'de' => '', 'fr' => ''),
+        'rate'       => array('zh-cn' => 'Tasa de desviación', 'zh-tw' => '', 'en' => 'rate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -5828,7 +5828,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10101,
-    'name'      => '年度进行中项目-进行中的项目数',
+    'name'      => 'Proyectos en curso del año - Proyectos en curso',
     'code'      => 'annualDoingProject_countProject',
     'dimension' => '2',
     'type'      => 'card',
@@ -5851,7 +5851,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10102,
-    'name'      => '年度进行中项目-进行中的迭代数',
+    'name'      => 'Proyectos en curso del año - Sprints en curso',
     'code'      => 'annualDoingProject_countExecution',
     'dimension' => '2',
     'type'      => 'card',
@@ -5874,7 +5874,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10103,
-    'name'      => '年度进行中项目-进展顺利项目数',
+    'name'      => 'Proyectos en curso del año - Proyectos con buen avance',
     'code'      => 'annualDoingProject_countProject_good',
     'dimension' => '2',
     'type'      => 'card',
@@ -5924,7 +5924,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10104,
-    'name'      => '年度进行中项目-进展顺利迭代数',
+    'name'      => 'Proyectos en curso del año - Sprints con buen avance',
     'code'      => 'annualDoingProject_countExecution_good',
     'dimension' => '2',
     'type'      => 'card',
@@ -5957,7 +5957,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10105,
-    'name'      => '年度进行中项目-进度滞后项目数',
+    'name'      => 'Proyectos en curso del año - Proyectos con avance retrasado',
     'code'      => 'annualDoingProject_countProject_bad',
     'dimension' => '2',
     'type'      => 'card',
@@ -6009,7 +6009,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10106,
-    'name'      => '年度进行中项目-进度滞后迭代数',
+    'name'      => 'Proyectos en curso del año - Sprints con avance retrasado',
     'code'      => 'annualDoingProject_countExecution_bad',
     'dimension' => '2',
     'type'      => 'card',
@@ -6042,7 +6042,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10107,
-    'name'      => '年度进行中项目-已延期项目数',
+    'name'      => 'Proyectos en curso del año - Proyectos con retraso',
     'code'      => 'annualDoingProject_countPorject_delay',
     'dimension' => '2',
     'type'      => 'card',
@@ -6065,7 +6065,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10108,
-    'name'      => '年度进行中项目-已延期迭代数',
+    'name'      => 'Proyectos en curso del año - Sprints con retraso',
     'code'      => 'annualDoingProject_countExecution_delay',
     'dimension' => '2',
     'type'      => 'card',
@@ -6088,7 +6088,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10109,
-    'name'      => '年度进行中项目-未完成需求条目数',
+    'name'      => 'Proyectos en curso del año - Historias sin finalizar',
     'code'      => 'annualDoingProject_storyCount_undone',
     'dimension' => '2',
     'type'      => 'card',
@@ -6116,7 +6116,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10110,
-    'name'      => '年度进行中项目-未完成任务数',
+    'name'      => 'Proyectos en curso del año - Tareas sin finalizar',
     'code'      => 'annualDoingProject_countTask_undone',
     'dimension' => '2',
     'type'      => 'card',
@@ -6143,7 +6143,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10111,
-    'name'      => '年度进行中项目-未完成需求规模数',
+    'name'      => 'Proyectos en curso del año - Tamaño de historias sin finalizar',
     'code'      => 'annualDoingProject_storyEstimate_undone',
     'dimension' => '2',
     'type'      => 'card',
@@ -6171,7 +6171,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10112,
-    'name'      => '年度进行中项目-剩余工时数',
+    'name'      => 'Proyectos en curso del año - Horas restantes',
     'code'      => 'annualDoingProject_leftEffort',
     'dimension' => '2',
     'type'      => 'card',
@@ -6207,7 +6207,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10113,
-    'name'      => '年度进行中项目-投入总人次',
+    'name'      => 'Proyectos en curso del año - Total de personas-vez invertidas',
     'code'      => 'annualDoingProject_investedPeople',
     'dimension' => '2',
     'type'      => 'card',
@@ -6233,7 +6233,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10114,
-    'name'      => '年度进行中项目-项目进度分布图',
+    'name'      => 'Proyectos en curso del año - Distribución del avance de proyectos',
     'code'      => 'annualDoingProject_projectProgressChart',
     'dimension' => '2',
     'type'      => 'pie',
@@ -6285,7 +6285,7 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'status', 'name' => '状态', 'group' => '')
+                array('field' => 'status', 'name' => 'Estado', 'group' => '')
             ),
             'metric' => array
             (
@@ -6298,19 +6298,19 @@ EOT
     (
         'id'           => array('name' => 'id', 'object' => 'zt_project', 'field' => 'id', 'type' => 'number'),
         'name'         => array('name' => 'name', 'object' => 'zt_project', 'field' => 'name', 'type' => 'string'),
-        'status'       => array('name' => '状态', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
+        'status'       => array('name' => 'Estado', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
         'prograss'     => array('name' => 'prograss', 'object' => 'task', 'field' => 'prograss', 'type' => 'number'),
         'planPrograss' => array('name' => 'planPrograss', 'object' => 'task', 'field' => 'planPrograss', 'type' => 'number'),
         'endYear'      => array('name' => 'endYear', 'object' => 'task', 'field' => 'endYear', 'type' => 'string')
     ),
     'langs'     => array
     (
-        'id'           => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'name'         => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
-        'status'       => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
-        'prograss'     => array('zh-cn' => '项目进度', 'zh-tw' => '', 'en' => 'prograss', 'de' => '', 'fr' => ''),
-        'planPrograss' => array('zh-cn' => '计划进度', 'zh-tw' => '', 'en' => 'planPrograss', 'de' => '', 'fr' => ''),
-        'endYear'      => array('zh-cn' => '结束年份', 'zh-tw' => '', 'en' => 'endYear', 'de' => '', 'fr' => '')
+        'id'           => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'name'         => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
+        'status'       => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
+        'prograss'     => array('zh-cn' => 'Avance del proyecto', 'zh-tw' => '', 'en' => 'prograss', 'de' => '', 'fr' => ''),
+        'planPrograss' => array('zh-cn' => 'Avance planificado', 'zh-tw' => '', 'en' => 'planPrograss', 'de' => '', 'fr' => ''),
+        'endYear'      => array('zh-cn' => 'Año de finalización', 'zh-tw' => '', 'en' => 'endYear', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -6319,7 +6319,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10115,
-    'name'      => '年度进行中项目-迭代进度分布图',
+    'name'      => 'Proyectos en curso del año - Distribución del avance de sprints',
     'code'      => 'annualDoingProject_executionProgressChart',
     'dimension' => '2',
     'type'      => 'pie',
@@ -6353,32 +6353,32 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'status', 'name' => '状态', 'group' => '')
+                array('field' => 'status', 'name' => 'Estado', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => '项目ID', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del proyecto', 'valOrAgg' => 'count')
             )
         )
     ),
     'filters'   => array(),
     'fields'    => array
     (
-        'id'           => array('name' => '项目ID', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
-        'name'         => array('name' => '项目名称', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
-        'status'       => array('name' => '状态', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
+        'id'           => array('name' => 'ID del proyecto', 'object' => 'project', 'field' => 'id', 'type' => 'number'),
+        'name'         => array('name' => 'Nombre del proyecto', 'object' => 'project', 'field' => 'name', 'type' => 'string'),
+        'status'       => array('name' => 'Estado', 'object' => 'project', 'field' => 'status', 'type' => 'option'),
         'prograss'     => array('name' => 'prograss', 'object' => 'task', 'field' => 'prograss', 'type' => 'number'),
         'planPrograss' => array('name' => 'planPrograss', 'object' => 'task', 'field' => 'planPrograss', 'type' => 'number'),
-        'end'          => array('name' => '计划完成', 'object' => 'project', 'field' => 'end', 'type' => 'date')
+        'end'          => array('name' => 'Finalización planificada', 'object' => 'project', 'field' => 'end', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'           => array('zh-cn' => '项目ID', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
-        'name'         => array('zh-cn' => '项目名称', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
-        'status'       => array('zh-cn' => '状态', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
-        'prograss'     => array('zh-cn' => '项目进度', 'zh-tw' => '', 'en' => 'prograss', 'de' => '', 'fr' => ''),
-        'planPrograss' => array('zh-cn' => '计划进度', 'zh-tw' => '', 'en' => 'planPrograss', 'de' => '', 'fr' => ''),
-        'end'          => array('zh-cn' => '计划完成', 'zh-tw' => '', 'en' => 'end', 'de' => '', 'fr' => '')
+        'id'           => array('zh-cn' => 'ID del proyecto', 'zh-tw' => '', 'en' => 'id', 'de' => '', 'fr' => ''),
+        'name'         => array('zh-cn' => 'Nombre del proyecto', 'zh-tw' => '', 'en' => 'name', 'de' => '', 'fr' => ''),
+        'status'       => array('zh-cn' => 'Estado', 'zh-tw' => '', 'en' => 'status', 'de' => '', 'fr' => ''),
+        'prograss'     => array('zh-cn' => 'Avance del proyecto', 'zh-tw' => '', 'en' => 'prograss', 'de' => '', 'fr' => ''),
+        'planPrograss' => array('zh-cn' => 'Avance planificado', 'zh-tw' => '', 'en' => 'planPrograss', 'de' => '', 'fr' => ''),
+        'end'          => array('zh-cn' => 'Finalización planificada', 'zh-tw' => '', 'en' => 'end', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -6387,7 +6387,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10116,
-    'name'      => '年度进行中项目-项目进度透视表',
+    'name'      => 'Proyectos en curso del año - Tabla dinámica del avance de proyectos',
     'code'      => 'annualDoingProject_projectProgressPivot',
     'dimension' => '2',
     'type'      => 'table',
@@ -6437,15 +6437,15 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'program', 'valOrAgg' => 'value', 'name' => '一级项目集'),
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'begin', 'valOrAgg' => 'value', 'name' => '计划开始日期'),
-            array('field' => 'end', 'valOrAgg' => 'value', 'name' => '计划完成日期'),
-            array('field' => 'planDuration', 'valOrAgg' => 'value', 'name' => '计划工期'),
-            array('field' => 'realBegan', 'valOrAgg' => 'value', 'name' => '实际开始日期'),
-            array('field' => 'realDuration', 'valOrAgg' => 'value', 'name' => '剩余工期天数'),
-            array('field' => 'prograss', 'valOrAgg' => 'value', 'name' => '工期进度'),
-            array('field' => 'status', 'valOrAgg' => 'value', 'name' => '进度状态')
+            array('field' => 'program', 'valOrAgg' => 'value', 'name' => 'Programa de primer nivel'),
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'begin', 'valOrAgg' => 'value', 'name' => 'Fecha de inicio planificada'),
+            array('field' => 'end', 'valOrAgg' => 'value', 'name' => 'Fecha de finalización planificada'),
+            array('field' => 'planDuration', 'valOrAgg' => 'value', 'name' => 'Duración planificada'),
+            array('field' => 'realBegan', 'valOrAgg' => 'value', 'name' => 'Fecha de inicio real'),
+            array('field' => 'realDuration', 'valOrAgg' => 'value', 'name' => 'Días de duración restantes'),
+            array('field' => 'prograss', 'valOrAgg' => 'value', 'name' => 'Avance de la duración'),
+            array('field' => 'status', 'valOrAgg' => 'value', 'name' => 'Estado del avance')
         ),
         'filter' => array()
     ),
@@ -6457,7 +6457,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10117,
-    'name'      => '年度进行中项目-迭代进度透视表',
+    'name'      => 'Proyectos en curso del año - Tabla dinámica del avance de sprints',
     'code'      => 'annualDoingProject_executionProgressPivot',
     'dimension' => '2',
     'type'      => 'table',
@@ -6493,15 +6493,15 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'project', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '迭代'),
-            array('field' => 'begin', 'valOrAgg' => 'value', 'name' => '计划开始日期'),
-            array('field' => 'end', 'valOrAgg' => 'value', 'name' => '计划完成日期'),
-            array('field' => 'planDuration', 'valOrAgg' => 'value', 'name' => '计划工期'),
-            array('field' => 'realBegan', 'valOrAgg' => 'value', 'name' => '实际开始日期'),
-            array('field' => 'realDuration', 'valOrAgg' => 'value', 'name' => '剩余工期天数'),
-            array('field' => 'prograss', 'valOrAgg' => 'value', 'name' => '工期进度'),
-            array('field' => 'status', 'valOrAgg' => 'value', 'name' => '进度状态')
+            array('field' => 'project', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Sprint'),
+            array('field' => 'begin', 'valOrAgg' => 'value', 'name' => 'Fecha de inicio planificada'),
+            array('field' => 'end', 'valOrAgg' => 'value', 'name' => 'Fecha de finalización planificada'),
+            array('field' => 'planDuration', 'valOrAgg' => 'value', 'name' => 'Duración planificada'),
+            array('field' => 'realBegan', 'valOrAgg' => 'value', 'name' => 'Fecha de inicio real'),
+            array('field' => 'realDuration', 'valOrAgg' => 'value', 'name' => 'Días de duración restantes'),
+            array('field' => 'prograss', 'valOrAgg' => 'value', 'name' => 'Avance de la duración'),
+            array('field' => 'status', 'valOrAgg' => 'value', 'name' => 'Estado del avance')
         ),
         'filter' => array()
     ),
@@ -6513,7 +6513,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10118,
-    'name'      => '年度进行中项目-项目剩余工作量透视表',
+    'name'      => 'Proyectos en curso del año - Tabla dinámica de la carga de trabajo restante por proyecto',
     'code'      => 'annualDoingProject_porjectLeftPivot',
     'dimension' => '2',
     'type'      => 'table',
@@ -6527,12 +6527,12 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'program', 'valOrAgg' => 'value', 'name' => '一级项目集'),
-            array('field' => 'project', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '剩余需求数'),
-            array('field' => 'estimate', 'valOrAgg' => 'value', 'name' => '剩余需求规模数'),
-            array('field' => 'execution', 'valOrAgg' => 'value', 'name' => '剩余执行数'),
-            array('field' => 'workhour', 'valOrAgg' => 'value', 'name' => '剩余工时')
+            array('field' => 'program', 'valOrAgg' => 'value', 'name' => 'Programa de primer nivel'),
+            array('field' => 'project', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias restantes'),
+            array('field' => 'estimate', 'valOrAgg' => 'value', 'name' => 'Tamaño de historias restantes'),
+            array('field' => 'execution', 'valOrAgg' => 'value', 'name' => 'Ejecuciones restantes'),
+            array('field' => 'workhour', 'valOrAgg' => 'value', 'name' => 'Horas restantes')
         ),
         'filter' => array()
     ),
@@ -6544,7 +6544,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10119,
-    'name'      => '年度进行中项目-迭代剩余工作量透视表',
+    'name'      => 'Proyectos en curso del año - Tabla dinámica de la carga de trabajo restante por sprint',
     'code'      => 'annualDoingProject_executionLeftPivot',
     'dimension' => '2',
     'type'      => 'table',
@@ -6584,12 +6584,12 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'project', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'execution', 'valOrAgg' => 'value', 'name' => '迭代'),
-            array('field' => 'story', 'valOrAgg' => 'value', 'name' => '剩余需求数'),
-            array('field' => 'estimate', 'valOrAgg' => 'value', 'name' => '剩余需求规模数'),
-            array('field' => 'task', 'valOrAgg' => 'value', 'name' => '剩余任务数'),
-            array('field' => 'workhour', 'valOrAgg' => 'value', 'name' => '剩余工时')
+            array('field' => 'project', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'execution', 'valOrAgg' => 'value', 'name' => 'Sprint'),
+            array('field' => 'story', 'valOrAgg' => 'value', 'name' => 'Historias restantes'),
+            array('field' => 'estimate', 'valOrAgg' => 'value', 'name' => 'Tamaño de historias restantes'),
+            array('field' => 'task', 'valOrAgg' => 'value', 'name' => 'Tareas restantes'),
+            array('field' => 'workhour', 'valOrAgg' => 'value', 'name' => 'Horas restantes')
         ),
         'filter' => array()
     ),
@@ -6601,7 +6601,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10201,
-    'name'      => '质量数据-研发完成需求数',
+    'name'      => 'Datos de calidad - Historias completadas por desarrollo',
     'code'      => 'quality_storyCount_finished',
     'dimension' => '3',
     'type'      => 'card',
@@ -6624,7 +6624,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10202,
-    'name'      => '质量数据-研发完成需求规模数',
+    'name'      => 'Datos de calidad - Tamaño de historias completadas por desarrollo',
     'code'      => 'quality_storyEstimate_finished',
     'dimension' => '3',
     'type'      => 'card',
@@ -6647,7 +6647,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10203,
-    'name'      => '质量数据-研发完成需求用例数',
+    'name'      => 'Datos de calidad - Casos de prueba de historias completadas por desarrollo',
     'code'      => 'quality_storyCaseCount_finished',
     'dimension' => '3',
     'type'      => 'card',
@@ -6670,7 +6670,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10204,
-    'name'      => '质量数据-Bug总数',
+    'name'      => 'Datos de calidad - Total de Bugs',
     'code'      => 'quality_bugCount',
     'dimension' => '3',
     'type'      => 'card',
@@ -6693,7 +6693,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10205,
-    'name'      => '质量数据-有效Bug数',
+    'name'      => 'Datos de calidad - Bugs válidos',
     'code'      => 'quality_bugCount_valid',
     'dimension' => '3',
     'type'      => 'card',
@@ -6716,7 +6716,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10206,
-    'name'      => '质量数据-修复Bug数',
+    'name'      => 'Datos de calidad - Bugs corregidos',
     'code'      => 'quality_bugCount_fixed',
     'dimension' => '3',
     'type'      => 'card',
@@ -6739,7 +6739,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10207,
-    'name'      => '质量数据-研发完成需求用例覆盖率',
+    'name'      => 'Datos de calidad - Cobertura de casos de prueba de historias completadas por desarrollo',
     'code'      => 'quality_storyCaseCoverage_finished',
     'dimension' => '3',
     'type'      => 'waterpolo',
@@ -6771,8 +6771,8 @@ EOT
     ),
     'langs'     => array
     (
-        'fixpercent' => array('zh-cn' => '用例覆盖率', 'zh-tw' => '', 'en' => 'fixpercent', 'de' => '', 'fr' => ''),
-        'havecase'   => array('zh-cn' => '是否有用例', 'zh-tw' => '', 'en' => 'havecase', 'de' => '', 'fr' => '')
+        'fixpercent' => array('zh-cn' => 'Cobertura de casos de prueba', 'zh-tw' => '', 'en' => 'fixpercent', 'de' => '', 'fr' => ''),
+        'havecase'   => array('zh-cn' => 'Tiene casos de prueba', 'zh-tw' => '', 'en' => 'havecase', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -6781,7 +6781,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10208,
-    'name'      => '质量数据-研发完成需求用例密度',
+    'name'      => 'Datos de calidad - Densidad de casos de prueba de historias completadas por desarrollo',
     'code'      => 'quality_storyCaseDensity_finished',
     'dimension' => '3',
     'type'      => 'waterpolo',
@@ -6813,8 +6813,8 @@ EOT
     ),
     'langs'     => array
     (
-        'casedensity' => array('zh-cn' => '用例密度', 'zh-tw' => '', 'en' => 'casedensity', 'de' => '', 'fr' => ''),
-        'havecase'    => array('zh-cn' => '是否有用例', 'zh-tw' => '', 'en' => 'havecase', 'de' => '', 'fr' => '')
+        'casedensity' => array('zh-cn' => 'Densidad de casos de prueba', 'zh-tw' => '', 'en' => 'casedensity', 'de' => '', 'fr' => ''),
+        'havecase'    => array('zh-cn' => 'Tiene casos de prueba', 'zh-tw' => '', 'en' => 'havecase', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -6823,7 +6823,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10209,
-    'name'      => '质量数据-Bug密度',
+    'name'      => 'Datos de calidad - Densidad de Bugs',
     'code'      => 'quality_bugDensity',
     'dimension' => '3',
     'type'      => 'waterpolo',
@@ -6855,8 +6855,8 @@ EOT
     ),
     'langs'     => array
     (
-        'bugdensity' => array('zh-cn' => 'Bug密度', 'zh-tw' => '', 'en' => 'bugdensity', 'de' => '', 'fr' => ''),
-        'havebug'    => array('zh-cn' => '是否有Bug', 'zh-tw' => '', 'en' => 'havebug', 'de' => '', 'fr' => '')
+        'bugdensity' => array('zh-cn' => 'Densidad de Bugs', 'zh-tw' => '', 'en' => 'bugdensity', 'de' => '', 'fr' => ''),
+        'havebug'    => array('zh-cn' => 'Tiene Bugs', 'zh-tw' => '', 'en' => 'havebug', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -6865,7 +6865,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10210,
-    'name'      => '质量数据-Bug修复率',
+    'name'      => 'Datos de calidad - Tasa de corrección de Bugs',
     'code'      => 'quality_bugFixedRatio',
     'dimension' => '3',
     'type'      => 'waterpolo',
@@ -6897,8 +6897,8 @@ EOT
     ),
     'langs'     => array
     (
-        'fixpercent' => array('zh-cn' => 'Bug修复率', 'zh-tw' => '', 'en' => 'fixpercent', 'de' => '', 'fr' => ''),
-        'havebug'    => array('zh-cn' => '是否有Bug', 'zh-tw' => '', 'en' => 'havebug', 'de' => '', 'fr' => '')
+        'fixpercent' => array('zh-cn' => 'Tasa de corrección de Bugs', 'zh-tw' => '', 'en' => 'fixpercent', 'de' => '', 'fr' => ''),
+        'havebug'    => array('zh-cn' => 'Tiene Bugs', 'zh-tw' => '', 'en' => 'havebug', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -6907,7 +6907,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10211,
-    'name'      => '质量数据-Bug总数、有效Bug与解决Bug数近30天统计柱形图',
+    'name'      => 'Datos de calidad - Gráfico de columnas de los últimos 30 días: total de Bugs, Bugs válidos y Bugs resueltos',
     'code'      => 'quality_bugDailyChart',
     'dimension' => '3',
     'type'      => 'cluBarX',
@@ -6931,23 +6931,23 @@ EOT
             'type'  => 'cluBarX',
             'xaxis' => array
             (
-                array('field' => '日期', 'name' => '日期', 'group' => 'day')
+                array('field' => 'Fecha', 'name' => 'Fecha', 'group' => 'day')
             ),
             'yaxis' => array
             (
-                array('field' => 'Bug总数', 'name' => 'Bug总数', 'valOrAgg' => 'count'),
-                array('field' => '有效Bug', 'name' => '有效Bug', 'valOrAgg' => 'sum'),
-                array('field' => '已解决Bug', 'name' => '已解决Bug', 'valOrAgg' => 'sum')
+                array('field' => 'Total de Bugs', 'name' => 'Total de Bugs', 'valOrAgg' => 'count'),
+                array('field' => 'Bugs válidos', 'name' => 'Bugs válidos', 'valOrAgg' => 'sum'),
+                array('field' => 'Bugs resueltos', 'name' => 'Bugs resueltos', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array(),
     'fields'    => array
     (
-        'Bug总数'    => array('name' => 'Bug总数', 'object' => 'bug', 'field' => 'Bug总数', 'type' => 'number'),
-        '有效Bug'    => array('name' => '有效Bug', 'object' => 'bug', 'field' => '有效Bug', 'type' => 'string'),
-        '已解决Bug' => array('name' => '已解决Bug', 'object' => 'bug', 'field' => '已解决Bug', 'type' => 'string'),
-        '日期'       => array('name' => '日期', 'object' => 'bug', 'field' => '日期', 'type' => 'date')
+        'Bug总数'    => array('name' => 'Total de Bugs', 'object' => 'bug', 'field' => 'Total de Bugs', 'type' => 'number'),
+        '有效Bug'    => array('name' => 'Bugs válidos', 'object' => 'bug', 'field' => 'Bugs válidos', 'type' => 'string'),
+        '已解决Bug' => array('name' => 'Bugs resueltos', 'object' => 'bug', 'field' => 'Bugs resueltos', 'type' => 'string'),
+        '日期'       => array('name' => 'Fecha', 'object' => 'bug', 'field' => 'Fecha', 'type' => 'date')
     ),
     'stage'     => 'published',
     'builtin'   => '1'
@@ -6956,7 +6956,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10212,
-    'name'      => '质量数据-有效Bug率年度趋势图',
+    'name'      => 'Datos de calidad - Tendencia anual de la tasa de Bugs válidos',
     'code'      => 'quality_validBugTendency',
     'dimension' => '3',
     'type'      => 'line',
@@ -6997,7 +6997,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
@@ -7008,10 +7008,10 @@ EOT
     ),
     'langs'     => array
     (
-        'year'              => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'Year', 'de' => '', 'fr' => ''),
-        'totalBugCount'     => array('zh-cn' => 'Bug总数', 'zh-tw' => '', 'en' => 'Total Bug Count', 'de' => '', 'fr' => ''),
-        'effectiveBugCount' => array('zh-cn' => '有效Bug数', 'zh-tw' => '', 'en' => 'Effective Bug Count', 'de' => '', 'fr' => ''),
-        'effectiveBugRate'  => array('zh-cn' => '有效Bug率', 'zh-tw' => '', 'en' => 'Effective Bug Rate', 'de' => '', 'fr' => '')
+        'year'              => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'Year', 'de' => '', 'fr' => ''),
+        'totalBugCount'     => array('zh-cn' => 'Total de Bugs', 'zh-tw' => '', 'en' => 'Total Bug Count', 'de' => '', 'fr' => ''),
+        'effectiveBugCount' => array('zh-cn' => 'Bugs válidos', 'zh-tw' => '', 'en' => 'Effective Bug Count', 'de' => '', 'fr' => ''),
+        'effectiveBugRate'  => array('zh-cn' => 'Tasa de Bugs válidos', 'zh-tw' => '', 'en' => 'Effective Bug Rate', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7020,7 +7020,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10213,
-    'name'      => '质量数据-Bug密度年度趋势图',
+    'name'      => 'Datos de calidad - Tendencia anual de la densidad de Bugs',
     'code'      => 'quality_bugDensityTendency',
     'dimension' => '3',
     'type'      => 'line',
@@ -7063,27 +7063,27 @@ EOT
             ),
             'yaxis' => array
             (
-                array('field' => 'bugCount', 'name' => 'Bug数', 'valOrAgg' => 'sum')
+                array('field' => 'bugCount', 'name' => 'Bugs', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => 'year', 'type' => 'select', 'name' => '年份')
+        array('field' => 'year', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
         'year'                 => array('name' => 'year', 'object' => 'story', 'field' => 'year', 'type' => 'string'),
         'createdBugs'          => array('name' => 'createdBugs', 'object' => 'story', 'field' => 'createdBugs', 'type' => 'string'),
         'exfixedstoryestimate' => array('name' => 'exfixedstoryestimate', 'object' => 'story', 'field' => 'exfixedstoryestimate', 'type' => 'number'),
-        'bugCount'             => array('name' => 'Bug数', 'object' => 'story', 'field' => 'bugCount', 'type' => 'number')
+        'bugCount'             => array('name' => 'Bugs', 'object' => 'story', 'field' => 'bugCount', 'type' => 'number')
     ),
     'langs'     => array
     (
-        'year'                 => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => 'Year', 'de' => '', 'fr' => ''),
-        'createdBugs'          => array('zh-cn' => '产生Bug', 'zh-tw' => '', 'en' => 'Created Bug', 'de' => '', 'fr' => ''),
-        'exfixedstoryestimate' => array('zh-cn' => '完成需求数', 'zh-tw' => '', 'en' => 'Finished Story', 'de' => '', 'fr' => ''),
-        'bugCount'             => array('zh-cn' => '单位完成需求规模产生的Bug数', 'zh-tw' => '', 'en' => 'Bug Density', 'de' => '', 'fr' => '')
+        'year'                 => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => 'Year', 'de' => '', 'fr' => ''),
+        'createdBugs'          => array('zh-cn' => 'Bugs generados', 'zh-tw' => '', 'en' => 'Created Bug', 'de' => '', 'fr' => ''),
+        'exfixedstoryestimate' => array('zh-cn' => 'Historias completadas', 'zh-tw' => '', 'en' => 'Finished Story', 'de' => '', 'fr' => ''),
+        'bugCount'             => array('zh-cn' => 'Bugs generados por unidad de tamaño de historias completadas', 'zh-tw' => '', 'en' => 'Bug Density', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7092,7 +7092,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10214,
-    'name'      => '质量数据-Bug严重程度年度堆积柱状图',
+    'name'      => 'Datos de calidad - Gráfico de columnas apiladas anual de severidad de Bugs',
     'code'      => 'quality_bugAnnualSeverityChart',
     'dimension' => '3',
     'type'      => 'stackedBar',
@@ -7118,27 +7118,27 @@ EOT
             'type'  => 'stackedBar',
             'xaxis' => array
             (
-                array('field' => '年份', 'name' => '年份', 'group' => '')
+                array('field' => 'Año', 'name' => 'Año', 'group' => '')
             ),
             'yaxis' => array
             (
-                array('field' => '严重程度为1级的Bug', 'name' => '严重程度为1级的Bug', 'valOrAgg' => 'sum'),
-                array('field' => '严重程度为2级的Bug', 'name' => '严重程度为2级的Bug', 'valOrAgg' => 'sum'),
-                array('field' => '严重程度低于2级的Bug', 'name' => '严重程度低于2级的Bug', 'valOrAgg' => 'sum')
+                array('field' => 'Bugs de severidad nivel 1', 'name' => 'Bugs de severidad nivel 1', 'valOrAgg' => 'sum'),
+                array('field' => 'Bugs de severidad nivel 2', 'name' => 'Bugs de severidad nivel 2', 'valOrAgg' => 'sum'),
+                array('field' => 'Bugs de severidad inferior al nivel 2', 'name' => 'Bugs de severidad inferior al nivel 2', 'valOrAgg' => 'sum')
             )
         )
     ),
     'filters'   => array
     (
-        array('field' => '年份', 'type' => 'select', 'name' => '年份')
+        array('field' => 'Año', 'type' => 'select', 'name' => 'Año')
     ),
     'fields'    => array
     (
-        '所有Bug数'                 => array('name' => '所有Bug数', 'object' => 'bug', 'field' => '所有Bug数', 'type' => 'string'),
-        '严重程度为1级的Bug'    => array('name' => '严重程度为1级的Bug', 'object' => 'bug', 'field' => '严重程度为1级的Bug', 'type' => 'number'),
-        '严重程度为2级的Bug'    => array('name' => '严重程度为2级的Bug', 'object' => 'bug', 'field' => '严重程度为2级的Bug', 'type' => 'number'),
-        '严重程度低于2级的Bug' => array('name' => '严重程度低于2级的Bug', 'object' => 'bug', 'field' => '严重程度低于2级的Bug', 'type' => 'number'),
-        '年份'                       => array('name' => '年份', 'object' => 'bug', 'field' => '年份', 'type' => 'string')
+        '所有Bug数'                 => array('name' => 'Total de Bugs', 'object' => 'bug', 'field' => 'Total de Bugs', 'type' => 'string'),
+        '严重程度为1级的Bug'    => array('name' => 'Bugs de severidad nivel 1', 'object' => 'bug', 'field' => 'Bugs de severidad nivel 1', 'type' => 'number'),
+        '严重程度为2级的Bug'    => array('name' => 'Bugs de severidad nivel 2', 'object' => 'bug', 'field' => 'Bugs de severidad nivel 2', 'type' => 'number'),
+        '严重程度低于2级的Bug' => array('name' => 'Bugs de severidad inferior al nivel 2', 'object' => 'bug', 'field' => 'Bugs de severidad inferior al nivel 2', 'type' => 'number'),
+        '年份'                       => array('name' => 'Año', 'object' => 'bug', 'field' => 'Año', 'type' => 'string')
     ),
     'stage'     => 'published',
     'builtin'   => '1'
@@ -7147,7 +7147,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10215,
-    'name'      => '质量数据-产品用例数量统计条形图',
+    'name'      => 'Datos de calidad - Gráfico de barras de casos de prueba por producto',
     'code'      => 'quality_productCaseCountChart',
     'dimension' => '3',
     'type'      => 'cluBarY',
@@ -7187,7 +7187,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'name', 'type' => 'select', 'name' => '产品')
+        array('field' => 'name', 'type' => 'select', 'name' => 'Producto')
     ),
     'fields'    => array
     (
@@ -7196,8 +7196,8 @@ EOT
     ),
     'langs'     => array
     (
-        'name'  => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => 'Product', 'de' => '', 'fr' => ''),
-        'count' => array('zh-cn' => '用例计数', 'zh-tw' => '', 'en' => 'Case Count', 'de' => '', 'fr' => '')
+        'name'  => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => 'Product', 'de' => '', 'fr' => ''),
+        'count' => array('zh-cn' => 'Cantidad de casos de prueba', 'zh-tw' => '', 'en' => 'Case Count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7206,7 +7206,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10216,
-    'name'      => '质量数据-产品Bug数量统计条形图',
+    'name'      => 'Datos de calidad - Gráfico de barras de Bugs por producto',
     'code'      => 'quality_productBugCountChart',
     'dimension' => '3',
     'type'      => 'cluBarY',
@@ -7247,7 +7247,7 @@ EOT
     ),
     'filters'   => array
     (
-        array('field' => 'name', 'type' => 'select', 'name' => '产品')
+        array('field' => 'name', 'type' => 'select', 'name' => 'Producto')
     ),
     'fields'    => array
     (
@@ -7256,8 +7256,8 @@ EOT
     ),
     'langs'     => array
     (
-        'name' => array('zh-cn' => '产品名称', 'zh-tw' => '', 'en' => 'Product', 'de' => '', 'fr' => ''),
-        'bug'  => array('zh-cn' => 'Bug计数', 'zh-tw' => '', 'en' => 'Bug Count', 'de' => '', 'fr' => '')
+        'name' => array('zh-cn' => 'Nombre del producto', 'zh-tw' => '', 'en' => 'Product', 'de' => '', 'fr' => ''),
+        'bug'  => array('zh-cn' => 'Cantidad de Bugs', 'zh-tw' => '', 'en' => 'Bug Count', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7266,7 +7266,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10217,
-    'name'      => '质量数据-Bug状态分布图',
+    'name'      => 'Datos de calidad - Distribución de estados de Bugs',
     'code'      => 'quality_bugStatus',
     'dimension' => '3',
     'type'      => 'pie',
@@ -7285,11 +7285,11 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'status', 'name' => 'Bug状态', 'group' => '')
+                array('field' => 'status', 'name' => 'Estado del Bug', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => 'Bug编号', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del Bug', 'valOrAgg' => 'count')
             )
         )
     ),
@@ -7299,21 +7299,21 @@ EOT
         (
             'field'   => 'openedDate',
             'type'    => 'date',
-            'name'    => '创建日期',
+            'name'    => 'Fecha de creación',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'id'         => array('name' => 'Bug编号', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
-        'status'     => array('name' => 'Bug状态', 'object' => 'bug', 'field' => 'status', 'type' => 'option'),
-        'openedDate' => array('name' => '创建日期', 'object' => 'bug', 'field' => 'openedDate', 'type' => 'date')
+        'id'         => array('name' => 'ID del Bug', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
+        'status'     => array('name' => 'Estado del Bug', 'object' => 'bug', 'field' => 'status', 'type' => 'option'),
+        'openedDate' => array('name' => 'Fecha de creación', 'object' => 'bug', 'field' => 'openedDate', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'         => array('zh-cn' => 'Bug编号', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
-        'status'     => array('zh-cn' => 'Bug状态', 'zh-tw' => '', 'en' => 'Status', 'de' => '', 'fr' => ''),
-        'openedDate' => array('zh-cn' => '创建日期', 'zh-tw' => '', 'en' => 'Opened Date', 'de' => '', 'fr' => '')
+        'id'         => array('zh-cn' => 'ID del Bug', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
+        'status'     => array('zh-cn' => 'Estado del Bug', 'zh-tw' => '', 'en' => 'Status', 'de' => '', 'fr' => ''),
+        'openedDate' => array('zh-cn' => 'Fecha de creación', 'zh-tw' => '', 'en' => 'Opened Date', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7322,7 +7322,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10218,
-    'name'      => '质量数据-Bug类型分布',
+    'name'      => 'Datos de calidad - Distribución de tipos de Bugs',
     'code'      => 'quality_bugType',
     'dimension' => '3',
     'type'      => 'pie',
@@ -7342,11 +7342,11 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'type', 'name' => 'Bug类型', 'group' => '')
+                array('field' => 'type', 'name' => 'Tipo de Bug', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => 'Bug编号', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del Bug', 'valOrAgg' => 'count')
             )
         )
     ),
@@ -7356,21 +7356,21 @@ EOT
         (
             'field'   => 'openedDate',
             'type'    => 'date',
-            'name'    => '创建日期',
+            'name'    => 'Fecha de creación',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'id'         => array('name' => 'Bug编号', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
-        'type'       => array('name' => 'Bug类型', 'object' => 'bug', 'field' => 'type', 'type' => 'option'),
-        'openedDate' => array('name' => '创建日期', 'object' => 'bug', 'field' => 'openedDate', 'type' => 'date')
+        'id'         => array('name' => 'ID del Bug', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
+        'type'       => array('name' => 'Tipo de Bug', 'object' => 'bug', 'field' => 'type', 'type' => 'option'),
+        'openedDate' => array('name' => 'Fecha de creación', 'object' => 'bug', 'field' => 'openedDate', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'         => array('zh-cn' => 'Bug编号', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
-        'type'       => array('zh-cn' => 'Bug类型', 'zh-tw' => '', 'en' => 'Type', 'de' => '', 'fr' => ''),
-        'openedDate' => array('zh-cn' => '创建日期', 'zh-tw' => '', 'en' => 'Opened Date', 'de' => '', 'fr' => '')
+        'id'         => array('zh-cn' => 'ID del Bug', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
+        'type'       => array('zh-cn' => 'Tipo de Bug', 'zh-tw' => '', 'en' => 'Type', 'de' => '', 'fr' => ''),
+        'openedDate' => array('zh-cn' => 'Fecha de creación', 'zh-tw' => '', 'en' => 'Opened Date', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7379,7 +7379,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10219,
-    'name'      => '质量数据-Bug严重程度分布',
+    'name'      => 'Datos de calidad - Distribución de severidad de Bugs',
     'code'      => 'quality_bugSeverity',
     'dimension' => '3',
     'type'      => 'pie',
@@ -7399,11 +7399,11 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'severity', 'name' => '严重程度', 'group' => '')
+                array('field' => 'severity', 'name' => 'Severidad', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => 'Bug编号', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del Bug', 'valOrAgg' => 'count')
             )
         )
     ),
@@ -7413,21 +7413,21 @@ EOT
         (
             'field'   => 'openedDate',
             'type'    => 'date',
-            'name'    => '创建日期',
+            'name'    => 'Fecha de creación',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'id'         => array('name' => 'Bug编号', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
-        'severity'   => array('name' => '严重程度', 'object' => 'bug', 'field' => 'severity', 'type' => 'option'),
-        'openedDate' => array('name' => '创建日期', 'object' => 'bug', 'field' => 'openedDate', 'type' => 'date')
+        'id'         => array('name' => 'ID del Bug', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
+        'severity'   => array('name' => 'Severidad', 'object' => 'bug', 'field' => 'severity', 'type' => 'option'),
+        'openedDate' => array('name' => 'Fecha de creación', 'object' => 'bug', 'field' => 'openedDate', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'         => array('zh-cn' => 'Bug编号', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
-        'severity'   => array('zh-cn' => '严重程度', 'zh-tw' => '', 'en' => 'Severity', 'de' => '', 'fr' => ''),
-        'openedDate' => array('zh-cn' => '创建日期', 'zh-tw' => '', 'en' => 'Opened Date', 'de' => '', 'fr' => '')
+        'id'         => array('zh-cn' => 'ID del Bug', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
+        'severity'   => array('zh-cn' => 'Severidad', 'zh-tw' => '', 'en' => 'Severity', 'de' => '', 'fr' => ''),
+        'openedDate' => array('zh-cn' => 'Fecha de creación', 'zh-tw' => '', 'en' => 'Opened Date', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7436,7 +7436,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 10220,
-    'name'      => '质量数据-Bug解决方案分布',
+    'name'      => 'Datos de calidad - Distribución de soluciones de Bugs',
     'code'      => 'quality_bugResolution',
     'dimension' => '3',
     'type'      => 'pie',
@@ -7453,11 +7453,11 @@ EOT
             'type'   => 'pie',
             'group'  => array
             (
-                array('field' => 'resolution', 'name' => '解决方案', 'group' => '')
+                array('field' => 'resolution', 'name' => 'Solución', 'group' => '')
             ),
             'metric' => array
             (
-                array('field' => 'id', 'name' => 'Bug编号', 'valOrAgg' => 'count')
+                array('field' => 'id', 'name' => 'ID del Bug', 'valOrAgg' => 'count')
             )
         )
     ),
@@ -7467,21 +7467,21 @@ EOT
         (
             'field'   => 'resolvedDate',
             'type'    => 'date',
-            'name'    => '解决日期',
+            'name'    => 'Fecha de resolución',
             'default' => array('begin' => '', 'end' => '')
         )
     ),
     'fields'    => array
     (
-        'id'           => array('name' => 'Bug编号', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
-        'resolution'   => array('name' => '解决方案', 'object' => 'bug', 'field' => 'resolution', 'type' => 'option'),
-        'resolvedDate' => array('name' => '解决日期', 'object' => 'bug', 'field' => 'resolvedDate', 'type' => 'date')
+        'id'           => array('name' => 'ID del Bug', 'object' => 'bug', 'field' => 'id', 'type' => 'number'),
+        'resolution'   => array('name' => 'Solución', 'object' => 'bug', 'field' => 'resolution', 'type' => 'option'),
+        'resolvedDate' => array('name' => 'Fecha de resolución', 'object' => 'bug', 'field' => 'resolvedDate', 'type' => 'date')
     ),
     'langs'     => array
     (
-        'id'           => array('zh-cn' => 'Bug编号', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
-        'resolution'   => array('zh-cn' => '解决方案', 'zh-tw' => '', 'en' => 'Resolution', 'de' => '', 'fr' => ''),
-        'resolvedDate' => array('zh-cn' => '解决日期', 'zh-tw' => '', 'en' => 'Resolved Date', 'de' => '', 'fr' => '')
+        'id'           => array('zh-cn' => 'ID del Bug', 'zh-tw' => '', 'en' => 'Bug ID', 'de' => '', 'fr' => ''),
+        'resolution'   => array('zh-cn' => 'Solución', 'zh-tw' => '', 'en' => 'Resolution', 'de' => '', 'fr' => ''),
+        'resolvedDate' => array('zh-cn' => 'Fecha de resolución', 'zh-tw' => '', 'en' => 'Resolved Date', 'de' => '', 'fr' => '')
     ),
     'stage'     => 'published',
     'builtin'   => '0'
@@ -7490,7 +7490,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20002,
-    'name'      => '活跃账号情况-活跃账号数项目间对比',
+    'name'      => 'Cuentas activas - Comparación de cuentas activas entre proyectos',
     'code'      => 'activeAccount_projectCompare',
     'dimension' => '1',
     'type'      => 'table',
@@ -7532,10 +7532,10 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'activeAccount', 'valOrAgg' => 'value', 'name' => '活跃账号数'),
-            array('field' => 'totalAccount', 'valOrAgg' => 'value', 'name' => '团队账号数'),
-            array('field' => 'ratio', 'valOrAgg' => 'value', 'name' => '活跃账号比')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'activeAccount', 'valOrAgg' => 'value', 'name' => 'Cuentas activas'),
+            array('field' => 'totalAccount', 'valOrAgg' => 'value', 'name' => 'Cuentas del equipo'),
+            array('field' => 'ratio', 'valOrAgg' => 'value', 'name' => 'Proporción de cuentas activas')
         ),
         'filter' => array()
     ),
@@ -7547,7 +7547,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20003,
-    'name'      => '活跃账号情况-公司账号日活跃度趋势',
+    'name'      => 'Cuentas activas - Tendencia de actividad diaria de las cuentas de la empresa',
     'code'      => 'activeAccount_activeTendency',
     'dimension' => '1',
     'type'      => 'line',
@@ -7563,11 +7563,11 @@ EOT
     (
         'xaxis' => array
         (
-            array('field' => 'day', 'name' => '日期', 'group' => 'value')
+            array('field' => 'day', 'name' => 'Fecha', 'group' => 'value')
         ),
         'yaxis' => array
         (
-            array('type' => 'value', 'field' => 'count', 'agg' => 'value', 'name' => '数量', 'valOrAgg' => 'value')
+            array('type' => 'value', 'field' => 'count', 'agg' => 'value', 'name' => 'Cantidad', 'valOrAgg' => 'value')
         )
     ),
     'filters'   => array(),
@@ -7578,7 +7578,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20004,
-    'name'      => '应用数据-活跃产品数',
+    'name'      => 'Datos de aplicación - Productos activos',
     'code'      => 'appData_activeProduct',
     'dimension' => '1',
     'type'      => 'card',
@@ -7607,7 +7607,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20005,
-    'name'      => '应用数据-本月新增产品数',
+    'name'      => 'Datos de aplicación - Productos nuevos del mes',
     'code'      => 'appData_createdProductCount',
     'dimension' => '1',
     'type'      => 'card',
@@ -7632,7 +7632,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20006,
-    'name'      => '应用数据-本月新增产品名',
+    'name'      => 'Datos de aplicación - Nombres de productos nuevos del mes',
     'code'      => 'appData_createdProductName',
     'dimension' => '1',
     'type'      => 'card',
@@ -7658,7 +7658,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20007,
-    'name'      => '应用数据-活跃项目数',
+    'name'      => 'Datos de aplicación - Proyectos activos',
     'code'      => 'appData_activeProject',
     'dimension' => '1',
     'type'      => 'card',
@@ -7684,7 +7684,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20008,
-    'name'      => '应用数据-本月新增项目数',
+    'name'      => 'Datos de aplicación - Proyectos nuevos del mes',
     'code'      => 'appData_createdProjectCount',
     'dimension' => '1',
     'type'      => 'card',
@@ -7709,7 +7709,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20009,
-    'name'      => '应用数据-本月新增项目名 ',
+    'name'      => 'Datos de aplicación - Nombres de proyectos nuevos del mes ',
     'code'      => 'appData_createdProjectName',
     'dimension' => '1',
     'type'      => 'card',
@@ -7735,7 +7735,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20010,
-    'name'      => '应用数据-项目任务概况表',
+    'name'      => 'Datos de aplicación - Tabla de resumen de tareas por proyecto',
     'code'      => 'appData_projectTaskOverview',
     'dimension' => '1',
     'type'      => 'table',
@@ -7821,10 +7821,10 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'createdTasks', 'valOrAgg' => 'value', 'name' => '新增任务数'),
-            array('field' => 'contributors', 'valOrAgg' => 'value', 'name' => '新增任务人数'),
-            array('field' => 'finishedTasks', 'valOrAgg' => 'value', 'name' => '完成任务数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'createdTasks', 'valOrAgg' => 'value', 'name' => 'Tareas nuevas'),
+            array('field' => 'contributors', 'valOrAgg' => 'value', 'name' => 'Personas con tareas nuevas'),
+            array('field' => 'finishedTasks', 'valOrAgg' => 'value', 'name' => 'Tareas completadas')
         ),
         'filter' => array()
     ),
@@ -7836,7 +7836,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20011,
-    'name'      => '应用数据-产品测试表',
+    'name'      => 'Datos de aplicación - Tabla de pruebas por producto',
     'code'      => 'appData_productTest',
     'dimension' => '1',
     'type'      => 'table',
@@ -7972,12 +7972,12 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '产品'),
-            array('field' => 'createdCases', 'valOrAgg' => 'value', 'name' => '新增用例数'),
-            array('field' => 'avgBugsOfCase', 'valOrAgg' => 'value', 'name' => '用例平均Bug数'),
-            array('field' => 'createdBugs', 'valOrAgg' => 'value', 'name' => '新增Bug数'),
-            array('field' => 'fixedBugs', 'valOrAgg' => 'value', 'name' => '修复Bug数'),
-            array('field' => 'avgFixedCycle', 'valOrAgg' => 'value', 'name' => 'Bug平均修复周期')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Producto'),
+            array('field' => 'createdCases', 'valOrAgg' => 'value', 'name' => 'Casos de prueba nuevos'),
+            array('field' => 'avgBugsOfCase', 'valOrAgg' => 'value', 'name' => 'Promedio de Bugs por caso de prueba'),
+            array('field' => 'createdBugs', 'valOrAgg' => 'value', 'name' => 'Bugs nuevos'),
+            array('field' => 'fixedBugs', 'valOrAgg' => 'value', 'name' => 'Bugs corregidos'),
+            array('field' => 'avgFixedCycle', 'valOrAgg' => 'value', 'name' => 'Ciclo promedio de corrección de Bugs')
         ),
         'filter' => array()
     ),
@@ -7989,7 +7989,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20012,
-    'name'      => '应用数据-产品需求概况表',
+    'name'      => 'Datos de aplicación - Tabla de resumen de historias por producto',
     'code'      => 'appData_productStoryOverview',
     'dimension' => '1',
     'type'      => 'table',
@@ -8085,9 +8085,9 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '产品'),
-            array('field' => 'createdStories', 'valOrAgg' => 'value', 'name' => '新增研发需求数'),
-            array('field' => 'deliveredStories', 'valOrAgg' => 'value', 'name' => '交付需求数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Producto'),
+            array('field' => 'createdStories', 'valOrAgg' => 'value', 'name' => 'Historias nuevas'),
+            array('field' => 'deliveredStories', 'valOrAgg' => 'value', 'name' => 'Historias entregadas')
         ),
         'filter' => array()
     ),
@@ -8099,7 +8099,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20013,
-    'name'      => '应用数据-项目需求概况表',
+    'name'      => 'Datos de aplicación - Tabla de resumen de historias por proyecto',
     'code'      => 'appData_projectStoryOverview',
     'dimension' => '1',
     'type'      => 'table',
@@ -8197,9 +8197,9 @@ EOT
         'group'  => array(),
         'column' => array
         (
-            array('field' => 'name', 'valOrAgg' => 'value', 'name' => '项目'),
-            array('field' => 'createdStories', 'valOrAgg' => 'value', 'name' => '新增研发需求数'),
-            array('field' => 'deliveredStories', 'valOrAgg' => 'value', 'name' => '交付需求数')
+            array('field' => 'name', 'valOrAgg' => 'value', 'name' => 'Proyecto'),
+            array('field' => 'createdStories', 'valOrAgg' => 'value', 'name' => 'Historias nuevas'),
+            array('field' => 'deliveredStories', 'valOrAgg' => 'value', 'name' => 'Historias entregadas')
         ),
         'filter' => array()
     ),
@@ -8211,7 +8211,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20014,
-    'name'      => '使用数据分析-当前版本',
+    'name'      => 'Análisis de uso - Versión actual',
     'code'      => 'appData_currentVersion',
     'dimension' => '1',
     'type'      => 'card',
@@ -8233,7 +8233,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 20015,
-    'name'      => '使用数据分析-上线时间',
+    'name'      => 'Análisis de uso - Fecha de puesta en producción',
     'code'      => 'appData_onlineDate',
     'dimension' => '1',
     'type'      => 'card',
@@ -8256,7 +8256,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 30000,
-    'name'      => '流水线执行趋势图',
+    'name'      => 'Tendencia de ejecuciones del pipeline',
     'code'      => 'pipelineExecTrend',
     'dimension' => '1',
     'type'      => 'line',
@@ -8320,12 +8320,12 @@ EOT
         'successNum' => array('name' => 'successNum', 'object' => 'compile', 'field' => 'successNum', 'type' => 'number')
     ),
     'langs' => array(
-        'YEARMONTH'  => array('zh-cn' => '日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'       => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'      => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'day'        => array('zh-cn' => '天', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'execNum'    => array('zh-cn' => '执行总数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'successNum' => array('zh-cn' => '成功数量', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'YEARMONTH'  => array('zh-cn' => 'Fecha', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'year'       => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'      => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'day'        => array('zh-cn' => 'Día', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'execNum'    => array('zh-cn' => 'Total de ejecuciones', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'successNum' => array('zh-cn' => 'Cantidad exitosa', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'   => 'published',
     'builtin' => '0'
@@ -8334,7 +8334,7 @@ EOT
 $config->bi->builtin->charts[] = array
 (
     'id'        => 30001,
-    'name'      => '代码问题趋势图',
+    'name'      => 'Tendencia de problemas de código',
     'code'      => 'repoIssueTrend',
     'dimension' => '1',
     'type'      => 'line',
@@ -8396,12 +8396,12 @@ EOT
         'resolvedIssue' => array ('name' => 'resolvedIssue', 'object' => 'bug', 'field' => 'resolvedIssue', 'type' => 'string')
     ),
     'langs' => array(
-        'YEARMONTH'     => array('zh-cn' => '日期', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'year'          => array('zh-cn' => '年份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'month'         => array('zh-cn' => '月份', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'day'           => array('zh-cn' => '天', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'newIssue'      => array('zh-cn' => '新增问题数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
-        'resolvedIssue' => array('zh-cn' => '解决问题数', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
+        'YEARMONTH'     => array('zh-cn' => 'Fecha', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'year'          => array('zh-cn' => 'Año', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'month'         => array('zh-cn' => 'Mes', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'day'           => array('zh-cn' => 'Día', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'newIssue'      => array('zh-cn' => 'Problemas nuevos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => ''),
+        'resolvedIssue' => array('zh-cn' => 'Problemas resueltos', 'zh-tw' => '', 'en' => '', 'de' => '', 'fr' => '')
     ),
     'stage'   => 'published',
     'builtin' => '0'

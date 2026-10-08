@@ -103,7 +103,7 @@ $lang->execution->undone              = 'Sin finalizar ';
 $lang->execution->unclosed            = 'Sin cerrar';
 $lang->execution->closedExecution     = 'Ejecución cerrada';
 $lang->execution->typeDesc            = "{$lang->executionCommon} de OPS no tiene funciones de {$lang->SRCommon}, Bug, Build ni pruebas.";
-$lang->execution->mine                = 'Mine: ';
+$lang->execution->mine                = 'Mío: ';
 $lang->execution->involved            = 'Mío';
 $lang->execution->other               = 'Otros';
 $lang->execution->deleted             = 'Eliminado';
@@ -120,9 +120,9 @@ $lang->execution->average             = 'Promedio';
 $lang->execution->relatedMember       = 'Equipo';
 $lang->execution->member              = 'Miembro';
 $lang->execution->watermark           = 'Exportado por AXIS FLOW';
-$lang->execution->burnXUnit           = '(Date)';
-$lang->execution->burnYUnit           = '(Hours)';
-$lang->execution->count               = '(Count)';
+$lang->execution->burnXUnit           = '(Fecha)';
+$lang->execution->burnYUnit           = '(Horas)';
+$lang->execution->count               = '(Cantidad)';
 $lang->execution->waitTasks           = 'Tareas en espera';
 $lang->execution->viewByUser          = 'Por usuario';
 $lang->execution->oneProduct          = "Solo una etapa puede vincularse a {$lang->productCommon}";
@@ -186,8 +186,8 @@ $lang->execution->endList[93]  = '3 meses';
 $lang->execution->endList[186] = '6 meses';
 $lang->execution->endList[365] = '1 año';
 
-$lang->execution->lifeTimeList['short'] = "Short-Term";
-$lang->execution->lifeTimeList['long']  = "Long-Term";
+$lang->execution->lifeTimeList['short'] = "Corto plazo";
+$lang->execution->lifeTimeList['long']  = "Largo plazo";
 $lang->execution->lifeTimeList['ops']   = "CI&CD";
 
 $lang->execution->cfdTypeList['story'] = "Ver por {$lang->SRCommon}";
@@ -199,7 +199,7 @@ $lang->team->realname   = 'Nombre';
 $lang->team->role       = 'Rol';
 $lang->team->roleAB     = 'Mi rol';
 $lang->team->join       = 'Unido';
-$lang->team->hours      = 'Hours/day';
+$lang->team->hours      = 'Horas/día';
 $lang->team->days       = 'Día';
 $lang->team->totalHours = 'Total de horas';
 
@@ -369,7 +369,7 @@ $lang->execution->timeSummary          = '<div class="table-col"><div class="cle
 $lang->execution->groupSummaryAB       = "<div>Tareas <strong>%s ：</strong><span class='text-muted'>En espera</span> %s &nbsp; <span class='text-muted'>En curso</span> %s</div><div>Estimado <strong>%s ：</strong><span class='text-muted'>Consumido</span> %s &nbsp; <span class='text-muted'>Restante</span> %s</div>";
 $lang->execution->wbs                  = "Crear tarea";
 $lang->execution->batchWBS             = "Crear tareas por lote";
-$lang->execution->howToUpdateBurn      = "<a href='https://api.zentao.pm/goto.php?item=burndown' target='_blank' title='How to update the Burndown Chart?'>Help <i class='icon icon-help text-gray'></i></a>";
+$lang->execution->howToUpdateBurn      = "<a href='https://api.zentao.pm/goto.php?item=burndown' target='_blank' title='¿Cómo actualizar el gráfico de burndown?'>Ayuda <i class='icon icon-help text-gray'></i></a>";
 $lang->execution->whyNoStories         = "No hay historias para vincular. Verifique si en {$lang->executionCommon} hay alguna historia vinculada a {$lang->productCommon} y asegúrese de que haya sido revisada.";
 $lang->execution->projectNoStories     = "No hay historias para vincular. Verifique si en {$lang->projectCommon} hay alguna historia y asegúrese de que haya sido revisada.";
 $lang->execution->productStories       = "Las historias vinculadas a {$lang->executionCommon} son un subconjunto de las historias vinculadas a {$lang->productCommon}. Las historias solo se pueden vincular después de aprobar la revisión. <a href='%s'> Vincular historias</a> ahora.";
@@ -431,7 +431,7 @@ $lang->execution->noweekend                    = 'Excluir fines de semana';
 $lang->execution->nodelay                      = 'Excluir fecha de retraso';
 $lang->execution->withweekend                  = 'Incluir fines de semana';
 $lang->execution->withdelay                    = 'Incluir fecha de retraso';
-$lang->execution->unitTemplate                 = ' (Unit：%s)';
+$lang->execution->unitTemplate                 = ' (Unidad: %s)';
 $lang->execution->interval                     = 'Intervalos ';
 $lang->execution->fixFirstWithLeft             = 'Actualizar también las horas restantes';
 $lang->execution->unfinishedExecution          = "{$lang->executionCommon} tiene ";
@@ -490,7 +490,7 @@ $lang->execution->placeholder->code      = "Abreviatura del nombre de {$lang->ex
 $lang->execution->placeholder->totalLeft = "Horas estimadas el primer día de {$lang->executionCommon}.";
 
 $lang->execution->selectGroup = new stdclass();
-$lang->execution->selectGroup->done = '(Done)';
+$lang->execution->selectGroup->done = '(Hecho)';
 
 $lang->execution->orderList['order_asc']  = "Rango de la historia ascendente";
 $lang->execution->orderList['order_desc'] = "Rango de la historia descendente";
@@ -695,7 +695,7 @@ $lang->execution->gantt->bar_height = '24';
 
 $lang->execution->gantt->exportImg  = 'Exportar como imagen';
 $lang->execution->gantt->exportPDF  = 'Exportar como PDF';
-$lang->execution->gantt->exporting  = 'Exporting...';
+$lang->execution->gantt->exporting  = 'Exportando...';
 $lang->execution->gantt->exportFail = 'No se pudo exportar.';
 
 $lang->execution->boardColorList = array('#32C5FF', '#006AF1', '#9D28B2', '#FF8F26', '#7FBB00', '#424BAC', '#66c5f8', '#EC2761');

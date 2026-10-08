@@ -40,7 +40,7 @@ $lang->my->scoreRule       = 'Reglas de puntos';
 $lang->my->noTodo          = 'Aún no hay pendientes.';
 $lang->my->noData          = 'Aún no hay %s.';
 $lang->my->storyChanged    = "Historia cambiada";
-$lang->my->hours           = "Hours/day";
+$lang->my->hours           = "Horas/día";
 $lang->my->uploadAvatar    = 'Actualizar avatar';
 $lang->my->epic            = "Mis: {$lang->ERCommon}";
 $lang->my->requirement     = "Mis: {$lang->URCommon}";
@@ -159,10 +159,10 @@ $lang->my->devopsLinkList['repo-browse']   = 'La biblioteca de código visitada 
 
 $lang->my->confirmReview['pass'] = '¿Seguro que desea aprobarlo?';
 $lang->my->guideChangeTheme = <<<EOT
-<p class='theme-title'><span style='color: #0c60e1'>Young Blue</span>theme is available now!</p>
+<p class='theme-title'>¡El tema <span style='color: #0c60e1'>Azul Joven</span> ya está disponible!</p>
 <div>
-<p>With just one step, you can experience the brand new theme! Go ahead and set it up now!</p>
-<p>Simply hover over<span style='color: #0c60e1'>【Avatar - Theme - Young Blue】</span>, click on Young Blue, and you're all set!</p>
+<p>¡Con un solo paso puede experimentar el nuevo tema! ¡Configúrelo ahora!</p>
+<p>Simplemente pase el cursor sobre<span style='color: #0c60e1'>【Avatar - Tema - Azul Joven】</span>, haga clic en Azul Joven y listo.</p>
 </div>
 EOT;
 

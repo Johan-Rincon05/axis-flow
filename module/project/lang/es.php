@@ -100,7 +100,7 @@ $lang->project->deletedTip          = "Lo sentimos, {$lang->projectCommon} al qu
 $lang->project->coverExecutionPriv  = "Control de privilegios de ejecución";
 $lang->project->executionView       = "Vista de {$lang->execution->common}";
 
-$lang->project->manDay          = 'Man-Days';
+$lang->project->manDay          = 'Personas-día';
 $lang->project->day             = 'Día';
 $lang->project->newProduct      = 'Nuevo producto';
 $lang->project->associatePlan   = 'Vincular plan';
@@ -216,7 +216,7 @@ $lang->project->acTitle            = 'Costo real';
 $lang->project->cvTitle            = 'Variación de costos';
 $lang->project->teamCount          = 'Personal';
 $lang->project->teamSumCount       = '%s miembro(s) en total';
-$lang->project->longTime           = 'Long-Term';
+$lang->project->longTime           = 'Largo plazo';
 $lang->project->future             = 'TBD';
 $lang->project->moreProject        = "Más: {$lang->projectCommon}";
 $lang->project->days               = 'Días de trabajo';
@@ -224,7 +224,7 @@ $lang->project->daysUnit           = ' (Unidad: días)';
 $lang->project->mailto             = 'Enviar a';
 $lang->project->etc                = " , etc.";
 $lang->project->product            = $lang->productCommon;
-$lang->project->branch             = 'Platform/Branch';
+$lang->project->branch             = 'Plataforma/Rama';
 $lang->project->plan               = 'Plan';
 $lang->project->createKanban       = 'Crear Kanban';
 $lang->project->kanban             = 'Kanban';
@@ -242,7 +242,7 @@ $lang->project->maxColWidth        = 'Ancho máximo de columna';
 
 /* Project Category. */
 $lang->project->projectTypeList = array();
-$lang->project->projectTypeList[1] = "{$lang->productCommon}-based";
+$lang->project->projectTypeList[1] = "Basado en {$lang->productCommon}";
 $lang->project->projectTypeList[0] = "Sin base en {$lang->productCommon}";
 
 /* Project Kanban. */
@@ -431,7 +431,7 @@ $lang->project->endList[31]  = 'Un mes';
 $lang->project->endList[93]  = '3 meses';
 $lang->project->endList[186] = 'Semestre';
 $lang->project->endList[365] = 'Un año';
-$lang->project->endList[999] = 'Long-term';
+$lang->project->endList[999] = 'Largo plazo';
 
 $lang->project->ipdTitle           = "Desarrollo integrado de productos";
 $lang->project->scrumTitle         = 'Gestión de desarrollo ágil';

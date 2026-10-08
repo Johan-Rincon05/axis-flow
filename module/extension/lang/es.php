@@ -65,7 +65,7 @@ $lang->extension->publicList[1] = 'Descarga automática';
 $lang->extension->compatibleList[0] = 'Desconocido';
 $lang->extension->compatibleList[1] = 'Compatible con';
 
-$lang->extension->obtainOfficial[0] = 'Third-party';
+$lang->extension->obtainOfficial[0] = 'Terceros';
 $lang->extension->obtainOfficial[1] = 'Oficial';
 $lang->extension->obtainOfficial[2] = 'Certificación oficial';
 

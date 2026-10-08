@@ -42,7 +42,7 @@ function scan(string $code): array
             if(strpbrk($inner, '\\$') !== false || strpos($inner, '{') !== false && strpos($inner, '{$') !== false) continue;
             $text = $inner;
         }
-        if(!isTranslatable($text)) continue;
+        if(!isTranslatable($text) && !isset($GLOBALS['force'][$text])) continue;
         $cand[$i] = [$text, $q];
     }
     /* Cadenas con comillas dobles e interpolacion: '"' ... '"' */
@@ -69,8 +69,24 @@ function scan(string $code): array
         if($hasVar && !$skip && strpos(str_replace('\\"', '', $raw), '\\') === false)
         {
             $letters = preg_replace('/\{\$[^}]*\}|\$[A-Za-z_][A-Za-z0-9_]*(->[A-Za-z_][A-Za-z0-9_]*)*/', '', $raw);
-            if(isTranslatable($letters) && preg_match_all('/[A-Za-z]{3,}/', strip_tags($letters)) >= 1)
+            if(isset($GLOBALS['force'][$raw]) || (isTranslatable($letters) && preg_match_all('/[A-Za-z]{3,}/', strip_tags($letters)) >= 1))
                 $cand[$i] = [$raw, '"i', $j];     // 'i' = interpolada, span hasta $j
+        }
+        $i = $j;
+    }
+    /* Heredoc / nowdoc */
+    for($i = 0; $i < $n; $i++)
+    {
+        if(!is_array($tokens[$i]) || $tokens[$i][0] !== T_START_HEREDOC) continue;
+        $j = $i + 1; $raw = '';
+        while($j < $n && !(is_array($tokens[$j]) && $tokens[$j][0] === T_END_HEREDOC)) { $raw .= is_array($tokens[$j]) ? $tokens[$j][1] : $tokens[$j]; $j++; }
+        if($j >= $n) break;
+        $trim = trim($raw);
+        $letters = preg_replace('/\{\$[^}]*\}|\$[A-Za-z_][A-Za-z0-9_]*(->[A-Za-z_][A-Za-z0-9_]*)*/', '', $trim);
+        if($trim !== '' && preg_match_all('/[A-Za-z]{3,}/', strip_tags($letters)) >= 2 && !preg_match('/^\s*(SELECT|INSERT|UPDATE|CREATE|<\?php)/i', $trim))
+        {
+            preg_match('/^\s*/', $raw, $lm); preg_match('/\s*$/', $raw, $tm);
+            $cand[$i] = [$trim, 'H', $j, $lm[0], $tm[0]];
         }
         $i = $j;
     }
@@ -82,8 +98,10 @@ function isTranslatable(string $s): bool
     $s2 = trim(strip_tags($s));
     if(preg_match_all('/[A-Za-z]/', $s2) < 2) return false;
     if(preg_match('#^(https?://|/|\.|\#|[a-z]+\.[a-z]{2,4}$)#i', $s2)) return false;
-    if(!preg_match('/\s/', $s2) && !preg_match('/^[A-Z]/', $s2)) return false;       // palabra suelta en minuscula => identificador
-    if(!preg_match('/\s/', $s2) && preg_match('/[_\-\.\/:|=]/', $s2) && !preg_match('/^[A-Z][a-z]+$/', $s2)) return false;
+    $core = ltrim($s2, " \t\n([{<-–—:：.,'\"“¿¡*#@");
+    if($core === '') return false;
+    if(!preg_match('/\s/', $core) && !preg_match('/^[A-Z]/', $core)) return false;                      // palabra suelta en minuscula => identificador
+    if(!preg_match('/\s/', $core) && preg_match('/[_\/:|=.]/', $core) && !preg_match('/^[A-Z][a-z]+$/', $core)) return false;
     return true;
 }
 
@@ -91,6 +109,11 @@ function placeholders(string $s): array
 {
     preg_match_all('/%(?:\d+\$)?[sdfu]|<[^>]+>|&[a-z]+;|\{[^}]*\}|\$[A-Za-z_>\-]+/i', $s, $m);
     $a = $m[0]; sort($a); return $a;
+}
+
+function fixPlural(string $s): string
+{
+    return preg_replace('/(\{\$lang->(?:executionCommon|execution->common)\})s\b/', '$1(s)', $s);
 }
 
 function quote(string $text, string $q): string
@@ -105,7 +128,7 @@ if($mode === 'extract')
     foreach(langFiles($repo) as $f)
     {
         [, $cand] = scan(file_get_contents($f));
-        foreach($cand as $c) { if(($argv[4] ?? '') === 'interp' && $c[1] !== '"i') continue; $unique[$c[0]] = ($unique[$c[0]] ?? 0) + 1; }
+        foreach($cand as $c) { if(($argv[4] ?? '') === 'interp' && $c[1] !== '"i') continue; if(($argv[4] ?? '') === 'heredoc' && $c[1] !== 'H') continue; $unique[$c[0]] = ($unique[$c[0]] ?? 0) + 1; }
         $perFile[str_replace("$repo/", '', $f)] = count($cand);
     }
     ksort($unique);
@@ -118,6 +141,8 @@ if($mode === 'extract')
 if($mode === 'inject')
 {
     $tr = json_decode(file_get_contents($argv[3]), true);       // en => es
+    $GLOBALS['force'] = $tr;
+    $trusted = isset($argv[5]) ? json_decode(file_get_contents($argv[5]), true) : [];   // traducciones revisadas a mano (omiten la comparacion de marcadores)
     $report = ['translated' => 0, 'kept' => 0, 'placeholder_mismatch' => []];
     foreach(langFiles($repo) as $f)
     {
@@ -128,14 +153,24 @@ if($mode === 'inject')
         {
             if($i <= $skipUntil) continue;
             $str = is_array($t) ? $t[1] : $t;
-            if(isset($cand[$i]) && $cand[$i][1] === '"i')
+            if(isset($cand[$i]) && $cand[$i][1] === 'H')
+            {
+                [$text, , $end, $lead, $trail] = $cand[$i];
+                $es = $tr[$text] ?? null;
+                if($es !== null && $es !== '' && $es !== $text && (placeholders($text) === placeholders($es) || isset($trusted[$text])))
+                {
+                    $str = $str . $lead . $es . $trail; $skipUntil = $end - 1; $report['translated']++;
+                }
+                else { $report['kept']++; if($es !== null && $es !== $text) $report['placeholder_mismatch'][$text] = $es; }
+            }
+            elseif(isset($cand[$i]) && $cand[$i][1] === '"i')
             {
                 [$text, , $end] = $cand[$i];
                 $es = $tr[$text] ?? null;
-                $okEs = $es !== null && $es !== '' && $es !== $text && placeholders($text) === placeholders($es);
+                $okEs = $es !== null && $es !== '' && $es !== $text && (placeholders($text) === placeholders($es) || isset($trusted[$text]));
                 if($okEs && preg_match('/(?<!\\\\)"/', $es) === 0)
                 {
-                    $str = '"' . $es . '"'; $skipUntil = $end; $report['translated']++;
+                    $str = '"' . fixPlural($es) . '"'; $skipUntil = $end; $report['translated']++;
                 }
                 else
                 {
@@ -149,7 +184,7 @@ if($mode === 'inject')
                 $es = $tr[$text] ?? null;
                 if($es !== null && $es !== '' && $es !== $text)
                 {
-                    if(placeholders($text) === placeholders($es)) { $str = quote($es, $q); $report['translated']++; }
+                    if(placeholders($text) === placeholders($es) || isset($trusted[$text])) { $str = quote(fixPlural($es), $q); $report['translated']++; }
                     else { $report['placeholder_mismatch'][$text] = $es; $report['kept']++; }
                 }
                 else $report['kept']++;

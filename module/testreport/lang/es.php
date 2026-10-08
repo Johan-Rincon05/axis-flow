@@ -93,9 +93,9 @@ $lang->testreport->runDateTips     = "Algunos registros de ejecución de casos e
 $lang->testreport->ignore          = "Ignorar";
 
 $lang->testreport->bugSummary = <<<EOD
-Total <strong>%s</strong> Bugs reported <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->foundBugTip}" data-type='black' data-toggle='tooltip'></i>，
-<strong>%s</strong> Bugs remained unresolved <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->legacyBugTip}" data-type='black' data-toggle='tooltip'></i>.
-<strong>%s</strong> Bugs reactivated  <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->activatedBugTip}" data-type='black' data-toggle='tooltip'></i>.
-<strong>%s</strong> Bugs found from the running of cases <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->fromCaseBugTip}" data-type='black' data-toggle='tooltip'></i>.
-Bug Effective Rate: <strong>%s</strong>，Bugs reported from cases: <strong>%s</strong>.
+Total de <strong>%s</strong> Bugs reportados <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->foundBugTip}" data-type='black' data-toggle='tooltip'></i>，
+<strong>%s</strong> Bugs sin resolver <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->legacyBugTip}" data-type='black' data-toggle='tooltip'></i>.
+<strong>%s</strong> Bugs reactivados  <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->activatedBugTip}" data-type='black' data-toggle='tooltip'></i>.
+<strong>%s</strong> Bugs encontrados al ejecutar casos <i class='icon icon-help text-light' data-placement='top' data-title="{$lang->testreport->fromCaseBugTip}" data-type='black' data-toggle='tooltip'></i>.
+Tasa de efectividad de Bugs: <strong>%s</strong>，Bugs reportados desde casos: <strong>%s</strong>.
 EOD;

@@ -21,7 +21,7 @@ $lang->testcase->howRun           = 'Método de prueba';
 $lang->testcase->frequency        = 'Frecuencia';
 $lang->testcase->path             = 'Ruta';
 $lang->testcase->lib              = "Biblioteca de casos";
-$lang->testcase->branch           = "Branch/Platform";
+$lang->testcase->branch           = "Rama/Plataforma";
 $lang->testcase->moduleAB         = 'Módulo';
 $lang->testcase->story            = 'Historia';
 $lang->testcase->storyVersion     = 'Versión de la historia';
@@ -182,7 +182,7 @@ $lang->testcase->insertBefore = 'Insertado antes';
 $lang->testcase->insertAfter  = 'Insertado después';
 
 $lang->testcase->assignToMe   = 'Asignado a mí';
-$lang->testcase->openedByMe   = 'CreatedByMe';
+$lang->testcase->openedByMe   = 'Creado por mí';
 $lang->testcase->allCases     = 'Todos';
 $lang->testcase->allTestcases = 'Todos los casos';
 $lang->testcase->needConfirm  = 'Historia cambiada';
@@ -198,7 +198,7 @@ $lang->testcase->lblStatusValue = 'Valor del estado';
 $lang->testcase->legendBasicInfo   = 'Información básica';
 $lang->testcase->legendAttach      = 'Archivos';
 $lang->testcase->legendLinkBugs    = 'Bugs';
-$lang->testcase->legendOpenAndEdit = 'Create/Edit';
+$lang->testcase->legendOpenAndEdit = 'Crear/Editar';
 $lang->testcase->legendComment     = 'Comentario';
 $lang->testcase->legendOther       = 'Otros relacionados';
 

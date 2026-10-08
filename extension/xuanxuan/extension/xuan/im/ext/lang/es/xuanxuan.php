@@ -101,28 +101,28 @@ $lang->im->bot->zentaoBot->start->tipLinkTitle       = 'Iniciar tarea';
 $lang->im->bot->zentaoBot->start->finishWithZeroLeft = 'Las horas restantes son 0, por lo que la tarea está finalizada.';
 
 $lang->im->bot->zentaoBot->help = <<<EOT
-### 1. Task command
+### 1. Comando de tareas
 
-Command：`view task condition...`
-Example：`view task dev1 P1 doing` Displays tasks assigned to dev1, with priority P1 and status in progress
+Comando：`view task condition...`
+Ejemplo：`view task dev1 P1 doing` Muestra las tareas asignadas a dev1, con prioridad P1 y estado en curso
 
-| Command | Description |
+| Comando | Descripción |
 | ---- | ---- |
-| view task | Show all open tasks under the current username |
-| view task Name Keyword | Show tasks that match the name keyword |
-| view task Assignor | Show tasks whose assignor is the entered value |
-| view task Priority | Show tasks with priority as entered |
-| view task Status | Show tasks with status as input |
-| view task ID | Show tasks with ID as input |
+| view task | Muestra todas las tareas abiertas del usuario actual |
+| view task Name Keyword | Muestra las tareas que coinciden con la palabra clave del nombre |
+| view task Assignor | Muestra las tareas cuyo asignador es el valor ingresado |
+| view task Priority | Muestra las tareas con la prioridad ingresada |
+| view task Status | Muestra las tareas con el estado ingresado |
+| view task ID | Muestra las tareas con el ID ingresado |
 
-### 2. Task Edit command
-The Task Edit command supports making status changes to tasks.
+### 2. Comando de edición de tareas
+El comando de edición de tareas permite cambiar el estado de las tareas.
 
-| Command | Description |
+| Comando | Descripción |
 | ---- | ---- |
-| start task #ID | Start the task and record its consumption/remaining hours |
-| complete task #ID | Complete the task and record its consumption/remaining hours |
-| close task #ID | Close the task and record its consumption/remaining work hours |
+| start task #ID | Inicia la tarea y registra las horas consumidas/restantes |
+| complete task #ID | Finaliza la tarea y registra las horas consumidas/restantes |
+| close task #ID | Cierra la tarea y registra las horas consumidas/restantes |
 EOT;
 
 $lang->im->bot->upgradeWelcome->link = 'https://www.zentao.net/downloads.html';

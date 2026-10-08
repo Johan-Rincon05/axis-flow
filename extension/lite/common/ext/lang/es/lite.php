@@ -156,7 +156,7 @@ $lang->admin->menu = new stdclass();
 
 /* adjust items of search. */
 $lang->searchObjects['all']       = 'Todos';
-$lang->searchObjects['todo']      = 'To-do';
+$lang->searchObjects['todo']      = 'Pendiente';
 $lang->searchObjects['story']     = 'Historia';
 $lang->searchObjects['task']      = 'Tarea';
 $lang->searchObjects['doc']       = 'Documento';

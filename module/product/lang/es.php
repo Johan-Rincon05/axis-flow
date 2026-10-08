@@ -212,8 +212,8 @@ $lang->product->allProductsOfProject = 'Todo lo vinculado ' . $lang->productComm
 
 $lang->product->typeList['']         = '';
 $lang->product->typeList['normal']   = 'Estándar';
-$lang->product->typeList['branch']   = 'Multi-Branch';
-$lang->product->typeList['platform'] = 'Multi-Platform';
+$lang->product->typeList['branch']   = 'Multirrama';
+$lang->product->typeList['platform'] = 'Multiplataforma';
 
 $lang->product->typeTips = array();
 $lang->product->typeTips['branch']   = '(Adecuado para escenarios de personalización por cliente, p. ej. equipos de outsourcing.)';
