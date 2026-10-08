@@ -9,6 +9,8 @@ body {background: var(--color-primary-500) linear-gradient(-90deg, var(--color-p
 
 #logo-box {background-size: cover; background-position: center; position: relative;}
 #login-logo, #login-ai {position: absolute; left: 50%; transform: translateX(-50%);}
+#login-logo {width: 380px; max-width: 86%;}
+#login-ai {width: 300px; max-width: 86%;}
 
 #loginBox {padding: 24px 40px 0 40px;}
 

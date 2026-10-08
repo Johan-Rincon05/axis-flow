@@ -25,9 +25,9 @@ $config->user->batchCreate          = 10;
 $config->user->resetPasswordTimeout = 3;
 
 $config->user->loginImg = array();
-$config->user->loginImg['logo'] = 'zt-login-logo.svg';
+$config->user->loginImg['logo'] = 'axisflow-login-logo.png';
 $config->user->loginImg['bg']   = 'zt-login-bg.svg';
-$config->user->loginImg['ai']   = 'zt-login-ai.svg';
+$config->user->loginImg['ai']   = 'axisflow-login-ai.svg';
 
 $config->user->defaultFields['todo']      = array('id', 'name', 'pri', 'date', 'begin', 'end', 'status', 'type');
 $config->user->defaultFields['task']      = array('id', 'name', 'pri', 'status', 'executionName', 'deadline', 'estimate', 'consumed', 'left');
