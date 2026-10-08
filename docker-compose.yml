@@ -1,0 +1,37 @@
+# Despliegue en Dokploy: Compose -> Provider Git (repo del fork) -> Compose Path: ./docker-compose.yml
+services:
+  zentao:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - zentao_data:/var/www/zentao/www/data
+      - zentao_config:/var/www/zentao/config
+      - zentao_custom:/var/www/zentao/extension/custom
+    expose:
+      - "80"
+
+  db:
+    image: mariadb:10.11
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?define DB_ROOT_PASSWORD}
+      MARIADB_DATABASE: zentao
+      MARIADB_USER: zentao
+      MARIADB_PASSWORD: ${DB_PASSWORD:?define DB_PASSWORD}
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - zentao_db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  zentao_data:
+  zentao_config:
+  zentao_custom:
+  zentao_db:
