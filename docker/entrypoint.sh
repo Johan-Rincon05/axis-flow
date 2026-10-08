@@ -14,4 +14,12 @@ mkdir -p "${ROOT}/www/data/upload" "${ROOT}/extension/custom" \
          "${ROOT}/tmp/cache" "${ROOT}/tmp/log" "${ROOT}/tmp/model" "${ROOT}/tmp/extension"
 chown -R www-data:www-data "${ROOT}/www/data" "${ROOT}/config" "${ROOT}/extension/custom" "${ROOT}/tmp"
 
+# Una vez instalado (existe config/my.php) ZenTao exige borrar los asistentes de
+# instalacion/actualizacion. Para actualizar ZenTao de version, definir
+# ZENTAO_ALLOW_UPGRADE=1 en el entorno durante ese despliegue.
+if [ -f "${ROOT}/config/my.php" ]; then
+    rm -f "${ROOT}/www/install.php"
+    [ "${ZENTAO_ALLOW_UPGRADE:-0}" = "1" ] || rm -f "${ROOT}/www/upgrade.php"
+fi
+
 exec docker-php-entrypoint "$@"
