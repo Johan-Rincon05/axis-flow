@@ -1378,6 +1378,7 @@ class baseRouter
         /* Fix clientLang for ie >= 10. https://www.drupal.org/node/365615. */
         if(stripos((string) $lang, 'hans')) $lang = 'zh-cn';
         if(stripos((string) $lang, 'hant')) $lang = 'zh-tw';
+        if(stripos((string) $lang, 'es') === 0) $lang = 'es';
         return $lang;
     }
 

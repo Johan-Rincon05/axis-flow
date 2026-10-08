@@ -50,6 +50,7 @@ $config->langs['zh-tw']    = '繁體';
 $config->langs['en']       = 'English';
 $config->langs['de']       = 'Deutsch';
 $config->langs['fr']       = 'Français';
+$config->langs['es']       = 'Español';
 //$config->langs['vi']       = 'Tiếng Việt';
 //$config->langs['ja']       = '日本語';
 
@@ -146,6 +147,7 @@ $config->framework->detectDevice['zh-tw'] = true; // 在zh-tw语言情况下，�
 $config->framework->detectDevice['en']    = true; // 在en语言情况下，是否启用设备检测功能。    Whether enable device detect or not.
 $config->framework->detectDevice['de']    = true; // 在de语言情况下，是否启用设备检测功能。    Whether enable device detect or not.
 $config->framework->detectDevice['fr']    = true; // 在fr语言情况下，是否启用设备检测功能。    Whether enable device detect or not.
+$config->framework->detectDevice['es']    = true; // Whether enable device detect or not.
 $config->framework->detectDevice['vi']    = true; // 在vi语言情况下，是否启用设备检测功能。    Whether enable device detect or not.
 
 /* IP white list settings.*/

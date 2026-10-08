@@ -14,6 +14,11 @@ mkdir -p "${ROOT}/www/data/upload" "${ROOT}/extension/custom" \
          "${ROOT}/tmp/cache" "${ROOT}/tmp/log" "${ROOT}/tmp/model" "${ROOT}/tmp/extension"
 chown -R www-data:www-data "${ROOT}/www/data" "${ROOT}/config" "${ROOT}/extension/custom" "${ROOT}/tmp"
 
+# Idioma por defecto de la instalacion (AXIS_DEFAULT_LANG, por defecto "es").
+if [ -f "${ROOT}/config/my.php" ]; then
+    sed -i "s/\(\$config->default->lang *= *\)'[^']*'/\1'${AXIS_DEFAULT_LANG:-es}'/" "${ROOT}/config/my.php"
+fi
+
 # Una vez instalado (existe config/my.php) ZenTao exige borrar los asistentes de
 # instalacion/actualizacion. Para actualizar ZenTao de version, definir
 # ZENTAO_ALLOW_UPGRADE=1 en el entorno durante ese despliegue.
