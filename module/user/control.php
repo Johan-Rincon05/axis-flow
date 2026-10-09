@@ -740,6 +740,10 @@ class user extends control
         /* If user has logon, return related info. */
         if($this->user->isLogon()) return $this->send($this->userZen->responseForLogon($this->referer, $viewType, $loginLink, $denyLink, $locateReferer, $locateWebRoot));
 
+        /* AXIS FLOW: con el SSO activo, quien llega sin sesión es enviado a AXIS (el acceso local de emergencia usa ?local=1). */
+        $axisSso = $this->loadModel('axissso');
+        if($viewType == 'html' && $axisSso->enforced() && $axisSso->axisUrl() && empty($_POST) && strpos('&' . ($_SERVER['QUERY_STRING'] ?? '') . '&', '&local=1&') === false) return $this->locate($axisSso->axisUrl());
+
         /* 处理登录逻辑。*/
         /* Process login. */
         $result = $this->userZen->login($this->referer, $viewType, $loginLink, $denyLink, $locateReferer, $locateWebRoot);

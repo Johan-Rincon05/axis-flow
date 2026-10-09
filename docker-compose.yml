@@ -11,6 +11,13 @@ services:
       - zentao_config:/var/www/zentao/config
       - zentao_custom:/var/www/zentao/extension/custom
       - zentao_sessions:/var/www/zentao/tmp/session
+    environment:
+      # Integración con AXIS (SSO). Ver docs/INTEGRACION-AXIS.md
+      AXIS_SSO_SECRET: ${AXIS_SSO_SECRET:-}
+      AXIS_SSO_ENFORCE: ${AXIS_SSO_ENFORCE:-0}
+      AXIS_SSO_LOGIN_URL: ${AXIS_SSO_LOGIN_URL:-}
+      AXIS_SSO_LOCAL_ACCOUNTS: ${AXIS_SSO_LOCAL_ACCOUNTS:-admin}
+      AXIS_SSO_ROLE_MAP: ${AXIS_SSO_ROLE_MAP:-}
     expose:
       - "80"
 

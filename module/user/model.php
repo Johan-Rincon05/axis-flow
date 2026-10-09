@@ -907,6 +907,9 @@ class userModel extends model
         if(!$account || !$password) return false;
         if(!validater::checkAccount($account)) return false;
 
+        /* AXIS FLOW: con el SSO de AXIS activo, solo las cuentas de emergencia pueden entrar con contraseña. */
+        if(!$this->loadModel('axissso')->isLocalLoginAllowed($account)) return false;
+
         $user = $this->identifyUser($account, $password);
         if(!$user) return false;
 
