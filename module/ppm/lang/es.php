@@ -140,11 +140,11 @@ $lang->ppm->statusList = array();
 $lang->ppm->statusList['all']    = 'all';
 $lang->ppm->statusList['opened'] = 'opened';
 $lang->ppm->statusList['merged'] = 'merged';
-$lang->ppm->statusList['closed'] = 'closed';
+$lang->ppm->statusList['closed'] = 'cerrado';
 
 $lang->ppm->mergeStatusList = array();
 $lang->ppm->mergeStatusList['unchecked']            = 'unchecked';
-$lang->ppm->mergeStatusList['checking']             = 'checking';
+$lang->ppm->mergeStatusList['checking']             = 'en verificación';
 $lang->ppm->mergeStatusList['can_be_merged']        = 'se puede fusionar';
 $lang->ppm->mergeStatusList['cannot_be_merged']     = 'no se puede fusionar';
 $lang->ppm->mergeStatusList['cannot_merge_by_fail'] = 'No se puede fusionar, falló la verificación';

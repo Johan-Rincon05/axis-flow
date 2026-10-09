@@ -443,7 +443,7 @@ $lang->execution->ge                           = "『%s』debe ser >= al inicio 
 $lang->execution->storyDragError               = "{$lang->SRCommon} no está activo. Actívelo y arrastre de nuevo.";
 $lang->execution->countTip                     = ' (%s miembro)';
 $lang->execution->pleaseInput                  = "Entrar";
-$lang->execution->week                         = 'week';
+$lang->execution->week                         = 'semana';
 $lang->execution->checkedExecutions            = "Seleccionados: %s de {$lang->executionCommon}.";
 $lang->execution->hasStartedTaskOrSubStage     = "Las tareas o subfases de %s %s ya han iniciado, no se pueden modificar y han sido filtradas.";
 $lang->execution->hasSuspendedOrClosedChildren = "Las subetapas de la etapa %s no están todas suspendidas o cerradas, no se pueden modificar y han sido filtradas.";
@@ -638,11 +638,11 @@ $lang->execution->action->closebychild         = '$date, el estado de la etapa e
 
 $lang->execution->startbychildactivate = 'activated';
 $lang->execution->waitbychilddelete    = 'stop';
-$lang->execution->closebychilddelete   = 'closed';
-$lang->execution->closebychildclose    = 'closed';
+$lang->execution->closebychilddelete   = 'cerrado';
+$lang->execution->closebychildclose    = 'cerrado';
 $lang->execution->waitbychild          = 'activated';
 $lang->execution->suspendedbychild     = 'suspended';
-$lang->execution->closedbychild        = 'closed';
+$lang->execution->closedbychild        = 'cerrado';
 $lang->execution->startbychildstart    = 'started';
 $lang->execution->startbychildactivate = 'activated';
 $lang->execution->startbychildsuspend  = 'activated';
@@ -652,7 +652,7 @@ $lang->execution->startbychildedit     = 'activated';
 $lang->execution->startbychild         = 'activated';
 $lang->execution->waitbychild          = 'stop';
 $lang->execution->suspendbychild       = 'suspended';
-$lang->execution->closebychild         = 'closed';
+$lang->execution->closebychild         = 'cerrado';
 
 $lang->execution->statusColorList = array();
 $lang->execution->statusColorList['wait']      = '#0991FF';

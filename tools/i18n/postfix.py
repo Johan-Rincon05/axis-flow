@@ -31,3 +31,13 @@ f=f'{repo}/module/block/lang/es.php'
 lines=open(f,encoding='utf-8').read().split('\n')
 keep=[l for l in lines if not re.search(r"^\$lang->block->default\[.*'code'\s*=>\s*'zentaodynamic'", l)]
 open(f,'w',encoding='utf-8').write('\n'.join(keep)); print('bloques zentaodynamic quitados:',len(lines)-len(keep))
+
+# Etiquetas sueltas en minuscula que se muestran tal cual en la interfaz (asignaciones $lang->...->x = 'palabra';)
+import glob
+LABELS={'left':'restante','tasks':'tareas','bugs':'bugs','stories':'historias','unit':'ud.','closed':'cerrado','checking':'en verificación','week':'semana','month':'mes','hours':'horas','hour':'hora'}
+tot=0
+for f in glob.glob(f'{repo}/module/*/lang/es.php'):
+    s=open(f,encoding='utf-8').read()
+    n=re.subn(r"^(\$lang->[^=\n]+=\s*)'(%s)';" % '|'.join(LABELS), lambda m: f"{m.group(1)}'{LABELS[m.group(2)]}';", s, flags=re.M)
+    if n[1]: open(f,'w',encoding='utf-8').write(n[0]); tot+=n[1]
+print('etiquetas sueltas traducidas:',tot)
