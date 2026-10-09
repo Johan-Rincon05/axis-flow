@@ -66,7 +66,7 @@ function scan(string $code): array
         $nextS = $q < $n ? (is_array($tokens[$q]) ? $tokens[$q][1] : $tokens[$q]) : '';
         $skip = ($nextS === '=>') || ($prevS === '[');
         $inner = preg_replace('/\\\\"/', '', $raw);
-        if($hasVar && !$skip && strpos(str_replace('\\"', '', $raw), '\\') === false)
+        if($hasVar && !$skip && !preg_match('/\\\\[^nt"\\\\$]/', $raw))
         {
             $letters = preg_replace('/\{\$[^}]*\}|\$[A-Za-z_][A-Za-z0-9_]*(->[A-Za-z_][A-Za-z0-9_]*)*/', '', $raw);
             if(isset($GLOBALS['force'][$raw]) || (isTranslatable($letters) && preg_match_all('/[A-Za-z]{3,}/', strip_tags($letters)) >= 1))

@@ -37,6 +37,6 @@ $lang->index->switchVision    = 'Cambiar visión de trabajo';
 $lang->index->switchWorkspace = 'Cambiar espacio de trabajo';
 
 $lang->index->workspaceList = [];
-$lang->index->workspaceList['product']   = "{$lang->productCommon} space";
-$lang->index->workspaceList['project']   = "{$lang->projectCommon} space";
-$lang->index->workspaceList['execution'] = "{$lang->executionCommon} space";
+$lang->index->workspaceList['product']   = "Espacio de {$lang->productCommon}";
+$lang->index->workspaceList['project']   = "Espacio de {$lang->projectCommon}";
+$lang->index->workspaceList['execution'] = "Espacio de {$lang->executionCommon}";

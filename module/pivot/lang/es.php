@@ -150,7 +150,7 @@ $lang->pivotList->test    = new stdclass();
 $lang->pivotList->staff   = new stdclass();
 
 $lang->pivotList->product->lists[10] = $lang->productCommon . ' Resumen|pivot|productsummary';
-$lang->pivotList->project->lists[10] = "{$lang->execution->common} Deviation|pivot|projectdeviation";
+$lang->pivotList->project->lists[10] = "Desviación de {$lang->execution->common}|pivot|projectdeviation";
 $lang->pivotList->test->lists[10]    = 'Resumen de Bugs reportados|pivot|bugcreate';
 $lang->pivotList->test->lists[13]    = 'Resumen de Bugs asignados|pivot|bugassign';
 $lang->pivotList->staff->lists[10]   = 'Resumen de carga de trabajo del equipo|pivot|workload';

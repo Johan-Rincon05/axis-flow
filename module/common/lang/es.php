@@ -78,7 +78,7 @@ $lang->goback             = 'Volver';
 $lang->goPC               = 'Escritorio';
 $lang->more               = 'Más';
 $lang->moreLink           = 'MÁS';
-$lang->day                = 'days';
+$lang->day                = 'días';
 $lang->today              = 'Hoy';
 $lang->yesterday          = 'Ayer';
 $lang->number             = 'Elementos';
@@ -693,9 +693,9 @@ $lang->exitWorkspace   = 'Salir del espacio';
 
 /* Workspace list. */
 $lang->workspaceList = [];
-$lang->workspaceList['product']   = "{$lang->product->common} space";
-$lang->workspaceList['project']   = "{$lang->project->common} space";
-$lang->workspaceList['execution'] = "{$lang->execution->common} space";
+$lang->workspaceList['product']   = "Espacio de {$lang->product->common}";
+$lang->workspaceList['project']   = "Espacio de {$lang->project->common}";
+$lang->workspaceList['execution'] = "Espacio de {$lang->execution->common}";
 
 /* Time formats settings. */
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');

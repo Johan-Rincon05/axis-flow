@@ -61,5 +61,20 @@ try
         $pdo->exec("UPDATE `$c` SET `value`='COP,USD,EUR,MXN' WHERE `owner`='system' AND `module`='project' AND `section`='' AND `key`='unitList' AND `value`='CNY,USD'");
         echo "axis-seed-es: moneda por defecto COP\n";
     }
+
+    /* Paneles (bloques) creados en ingles al instalar: se regeneran una sola vez con los titulos en espanol. */
+    $marker = "$root/config/.axis-blocks-es";
+    if(!is_file($marker))
+    {
+        $b = $prefix . 'block';
+        $english = $pdo->query("SELECT COUNT(*) FROM `$b` WHERE `title` IN ('Guides','My Work','Recents','Zentao Dynamic','Statistics','Team Achievements') OR `title` LIKE '%statistics%' OR `title` LIKE 'Unclosed%' OR `title` LIKE 'Recent %'")->fetchColumn();
+        if($english > 0)
+        {
+            $pdo->exec("DELETE FROM `$b` WHERE `dashboard` IN ('my','doc','product','project','qa','execution','singleproduct')");
+            $pdo->exec("DELETE FROM `$c` WHERE `section`='common' AND `key`='blockInited' AND `module` IN ('my','doc','product','project','qa','execution','singleproduct')");
+            echo "axis-seed-es: paneles regenerados en espanol\n";
+        }
+        @file_put_contents($marker, date('c'));
+    }
 }
 catch(Exception $e) { fwrite(STDERR, 'axis-seed-es: ' . $e->getMessage() . "\n"); }

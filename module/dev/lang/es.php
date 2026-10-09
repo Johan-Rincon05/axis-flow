@@ -222,4 +222,4 @@ $lang->dev->projectMenu['waterfall']     = "Cascada / Cascada + {$lang->projectC
 $lang->dev->projectMenu['kanbanProject'] = "Kanban de {$lang->projectCommon}";
 if($config->vision == 'lite') $lang->dev->projectMenu['kanbanProject'] = $lang->projectCommon;
 
-if($config->vision == 'rnd') $this->lang->dev->replaceLable['project-execution'] = "{$lang->executionCommon} / Stage";
+if($config->vision == 'rnd') $this->lang->dev->replaceLable['project-execution'] = "{$lang->executionCommon} / Etapa";

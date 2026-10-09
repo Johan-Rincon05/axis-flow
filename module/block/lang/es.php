@@ -83,7 +83,7 @@ $lang->block->consumedHours       = 'Costo';
 $lang->block->time                = 'No.';
 $lang->block->week                = 'Semana';
 $lang->block->month               = 'Mes';
-$lang->block->selectProduct       = "{$lang->productCommon} selection";
+$lang->block->selectProduct       = "Selección de {$lang->productCommon}";
 $lang->block->blockTitle          = '%1$s %2$s';
 $lang->block->remain              = 'Izquierda';
 $lang->block->allStories          = 'Total de historias';
@@ -123,7 +123,7 @@ $lang->block->left            = 'left';
 
 $lang->block->summary = new stdclass();
 $lang->block->summary->welcome    = '¡%s con AXIS FLOW! %s  y tus tareas y bugs te esperan para tu gran trabajo de hoy!';
-$lang->block->summary->yesterday  = '<strong>yesterday</strong>,';
+$lang->block->summary->yesterday  = '<strong>ayer</strong>,';
 $lang->block->summary->noWork     = 'Un día tranquilo ';
 $lang->block->summary->finishTask = 'Completaste <a href="' .  helper::createLink('my', 'contribute', 'mode=task&browseType=finishedBy') . '" class="text-success">%s</a> tarea(s)';
 $lang->block->summary->fixBug     = 'Resolviste <a href="' . helper::createLink('my', 'contribute', 'mode=bug&browseType=resolvedBy') . '" class="text-success">%s</a> bug(s)';

@@ -195,7 +195,7 @@ global $config;
 $lang->bug->legendBasicInfo             = 'Información básica';
 $lang->bug->legendAttach                = 'Archivo';
 $lang->bug->legendPRJExecStoryTask      = "{$lang->SRCommon}/{$lang->executionCommon}/Historia/Tarea";
-$lang->bug->legendExecStoryTask         = "{$lang->SRCommon}/Story/Task";
+$lang->bug->legendExecStoryTask         = "{$lang->SRCommon}/Historia/Tarea";
 $lang->bug->lblTypeAndSeverity          = 'Tipo/Severidad';
 $lang->bug->lblSystemBrowserAndHardware = 'Sistema/Navegador';
 $lang->bug->legendSteps                 = 'Pasos para reproducir';

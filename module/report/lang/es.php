@@ -113,7 +113,7 @@ $lang->report->annualData->stories          = "Datos de la historia";
 $lang->report->annualData->tasks            = "Datos de la tarea";
 $lang->report->annualData->bugs             = "Datos de Bugs";
 $lang->report->annualData->cases            = "Datos del caso";
-$lang->report->annualData->statusStat       = "{$lang->SRCommon}/task/bug status distribution (as of today)";
+$lang->report->annualData->statusStat       = "Distribución de estados de {$lang->SRCommon}/tarea/bug (al día de hoy)";
 
 $lang->report->annualData->companyUsers     = "Número de empresas";
 $lang->report->annualData->deptUsers        = "Número de departamentos";
@@ -138,12 +138,12 @@ $lang->report->annualData->taskMonthActions  = "Operación mensual de tareas";
 $lang->report->annualData->bugMonthActions   = "Operación mensual de Bugs";
 $lang->report->annualData->caseMonthActions  = "Operación mensual de casos";
 
-$lang->report->annualData->executionFields['name']  = "{$lang->executionCommon} name";
+$lang->report->annualData->executionFields['name']  = "Nombre de {$lang->executionCommon}";
 $lang->report->annualData->executionFields['story'] = "Historias aceptadas";
 $lang->report->annualData->executionFields['task']  = "Tareas finalizadas";
 $lang->report->annualData->executionFields['bug']   = "Bugs reparados";
 
-$lang->report->annualData->productFields['name'] = "{$lang->productCommon} name";
+$lang->report->annualData->productFields['name'] = "Nombre de {$lang->productCommon}";
 $lang->report->annualData->productFields['plan'] = "Planes";
 $lang->report->annualData->productFields['epic'] = "{$lang->ERCommon} creado";
 global $config;

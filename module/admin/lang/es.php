@@ -57,8 +57,8 @@ $lang->admin->dbViewFail       = 'No se pudo actualizar la vista de base de dato
 $lang->admin->dbViewResult     = 'Vistas de base de datos actualizadas: %s correctas, %s en total.';
 $lang->admin->dbViewFailed     = 'Falló la actualización de algunas vistas de la base de datos. Inténtelo de nuevo más tarde.';
 
-$lang->admin->mon              = 'month';
-$lang->admin->day              = 'day';
+$lang->admin->mon              = 'mes';
+$lang->admin->day              = 'día';
 $lang->admin->updateDynamics   = 'Actualizar dinámicas';
 $lang->admin->updatePatch      = 'Actualización de parche';
 $lang->admin->upgradeRecommend = 'Actualización recomendada';
