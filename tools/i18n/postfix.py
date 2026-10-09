@@ -25,3 +25,9 @@ UNITS=[('module/common/lang/es.php',r"^(\$lang->day\s*=\s*)'days';",r"\1'días';
        ('module/admin/lang/es.php',r"^(\$lang->admin->day\s*=\s*)'day';",r"\1'día';"),
        ('module/block/lang/es.php',r"^(\$lang->block->summary->yesterday\s*=\s*)'<strong>yesterday</strong>,';",r"\1'<strong>ayer</strong>,';")]
 for f,p,r in UNITS: sub(f'{repo}/{f}',p,lambda m,r=r: re.sub(p,r,m.group(0)))
+
+# El bloque "Actividad de ZenTao" trae noticias remotas de ZenTao: se quita del panel por defecto.
+f=f'{repo}/module/block/lang/es.php'
+lines=open(f,encoding='utf-8').read().split('\n')
+keep=[l for l in lines if not re.search(r"^\$lang->block->default\[.*'code'\s*=>\s*'zentaodynamic'", l)]
+open(f,'w',encoding='utf-8').write('\n'.join(keep)); print('bloques zentaodynamic quitados:',len(lines)-len(keep))

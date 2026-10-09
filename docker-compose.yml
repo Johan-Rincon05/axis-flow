@@ -10,6 +10,7 @@ services:
       - zentao_data:/var/www/zentao/www/data
       - zentao_config:/var/www/zentao/config
       - zentao_custom:/var/www/zentao/extension/custom
+      - zentao_sessions:/var/www/zentao/tmp/session
     expose:
       - "80"
 
@@ -34,4 +35,5 @@ volumes:
   zentao_data:
   zentao_config:
   zentao_custom:
+  zentao_sessions:
   zentao_db:
