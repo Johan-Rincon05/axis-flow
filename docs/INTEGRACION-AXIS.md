@@ -25,7 +25,7 @@ puesta en marcha, métricas y Jira) en el repo de AXIS: `docs/INTEGRACION-AXIS-F
 
 Se definen en Dokploy (servicio `axis-flow` → Environment); `docker-compose.yml` ya las pasa al contenedor.
 
-Roles por defecto: SuperUser → admin, top, pm, qa · Director/Gerente → top, pm, qa · Coordinador → pm, qa · Asistencia → dev · Empleado → others
+Roles por defecto: SuperUser → admin, top, pm, qa · Director → top, po, qa · Gerente → po, qa, top (Product Owner y QA, sin administración) · Coordinador → pm, td, qa (Scrum Master y DevOps) · Asistencia → dev · Empleado → others
 (códigos de grupo de ZenTao).
 
 ## Operación

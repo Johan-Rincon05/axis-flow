@@ -22,10 +22,10 @@ class axisssoModel extends model
     /* Rol de AXIS => códigos de grupo de AXIS FLOW (campo `role` de zt_group). */
     protected $defaultRoleMap = array(
         'SuperUser'   => array('admin', 'top', 'pm', 'qa'),
-        'Director'    => array('top', 'pm', 'qa'),
-        'Gerente'     => array('top', 'pm', 'qa'),
-        'Coordinador' => array('pm', 'qa'),
-        'Asistencia'  => array('dev'),
+        'Director'    => array('top', 'po', 'qa'),
+        'Gerente'     => array('po', 'qa', 'top'),   /* Product Owner y QA; sin rol de administración */
+        'Coordinador' => array('pm', 'td', 'qa'),    /* Scrum Master, arquitectura/DevOps y pruebas no funcionales */
+        'Asistencia'  => array('dev'),               /* Solo desarrollo (UX/UI y front-end); sin pruebas */
         'Empleado'    => array('others'),
     );
 
