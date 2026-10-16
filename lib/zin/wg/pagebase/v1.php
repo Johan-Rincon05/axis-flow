@@ -74,6 +74,7 @@ class pageBase extends wg
         {
             $headImports[] = h::importCss($zuiPath . 'zui.zentao.css', setID('zuiCSS'));
             $headImports[] = h::importCss($zuiPath . 'themes/' . $themeName . '.css', setID('zuiTheme'));
+            $headImports[] = h::importCss($zuiPath . 'axisflow-modern.css?v=' . @filemtime($app->getBasePath() . 'www/js/zui3/axisflow-modern.css'), setID('axisModernCSS'));
             $headImports[] = h::importJs($zuiPath . 'zui.zentao.js', setID('zuiJS'));
             if($app->getClientLang() == 'es') $headImports[] = h::importJs($webRoot . 'js/axisflow-es.js?v=1', setID('axisEsJS'));
             $headImports[] = h::jsCall('$.setLibRoot', $zuiPath);

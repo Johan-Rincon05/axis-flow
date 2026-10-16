@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/**
+ * AXIS FLOW - tema visual (linea de diseno de Dapta): carbon, lima y morado. Sin degradados.
+ * Solo redefine variables y pule componentes; no cambia la estructura HTML.
+ * Se carga despues del tema (ver lib/zin/wg/pagebase/v1.php). Para revertir, quitar esa linea.
+ */
+
+:root
+{
+    /* Marca */
+    --axis-ink:     #1a1a1c;   /* carbon */
+    --axis-ink-2:   #111113;   /* carbon profundo (menu) */
+    --axis-ink-3:   #2a2a2d;   /* superficie elevada sobre carbon */
+    --axis-lime:    #cbe850;   /* acento principal */
+    --axis-lime-d:  #b6d23a;
+    --axis-purple:  #7b2ff7;   /* acento secundario */
+    --axis-lav:     #b18cff;   /* lavanda (titulos sobre oscuro) */
+    --axis-border:  rgba(26,26,28,.10);
+
+    /* Escala morada para enlaces, estados y seleccion */
+    --color-primary-50:  #f6f1ff;
+    --color-primary-100: #ece2ff;
+    --color-primary-200: #dac8ff;
+    --color-primary-300: #c2a3ff;
+    --color-primary-400: #a374fb;
+    --color-primary-500: #7b2ff7;
+    --color-primary-600: #6a22e0;
+    --color-primary-700: #561bb8;
+    --color-primary-800: #431590;
+    --color-primary-900: #310f69;
+    --color-primary-50-rgb:  246,241,255;
+    --color-primary-100-rgb: 236,226,255;
+    --color-primary-200-rgb: 218,200,255;
+    --color-primary-300-rgb: 194,163,255;
+    --color-primary-400-rgb: 163,116,251;
+    --color-primary-500-rgb: 123,47,247;
+    --color-primary-600-rgb: 106,34,224;
+    --color-primary-700-rgb: 86,27,184;
+    --color-primary-800-rgb: 67,21,144;
+    --color-primary-900-rgb: 49,15,105;
+
+    /* Escala secundaria (antes celeste): lavanda para que no aparezcan azules */
+    --color-secondary-50:  #f6f1ff;
+    --color-secondary-100: #ece2ff;
+    --color-secondary-200: #dac8ff;
+    --color-secondary-300: #c2a3ff;
+    --color-secondary-400: #a374fb;
+    --color-secondary-500: #8a4df9;
+    --color-secondary-600: #6a22e0;
+    --color-secondary-700: #561bb8;
+    --color-secondary-800: #431590;
+    --color-secondary-900: #310f69;
+    --color-secondary-50-rgb:  246,241,255;
+    --color-secondary-100-rgb: 236,226,255;
+    --color-secondary-200-rgb: 218,200,255;
+    --color-secondary-300-rgb: 194,163,255;
+    --color-secondary-400-rgb: 163,116,251;
+    --color-secondary-500-rgb: 138,77,249;
+    --color-secondary-600-rgb: 106,34,224;
+    --color-secondary-700-rgb: 86,27,184;
+    --color-secondary-800-rgb: 67,21,144;
+    --color-secondary-900-rgb: 49,15,105;
+
+    /* Gris neutros (sin tinte azul) */
+    --color-gray-50:  #f7f7f8;
+    --color-gray-100: #f0f0f2;
+    --color-gray-200: #e6e6e9;
+    --color-gray-300: #d4d4d9;
+    --color-gray-400: #a9a9b1;
+    --color-gray-500: #77777f;
+    --color-gray-600: #55555c;
+    --color-gray-700: #3d3d42;
+    --color-gray-800: #2a2a2d;
+    --color-gray-900: #1a1a1c;
+    --color-gray-950: #0f0f10;
+
+    --radius:     8px;
+    --radius-sm:  6px;
+    --radius-md:  8px;
+    --radius-lg:  10px;
+    --radius-xl:  12px;
+    --radius-2xl: 16px;
+    --shadow-sm: 0 1px 2px rgba(26,26,28,.06);
+    --shadow:    0 1px 2px rgba(26,26,28,.05);
+    --shadow-md: 0 4px 14px -4px rgba(26,26,28,.14);
+    --shadow-lg: 0 16px 40px -12px rgba(26,26,28,.35);
+
+    --zt-page-bg:         #f4f4f6;
+    --zt-menu-bg:         var(--axis-ink-2) !important;
+    --zt-menu-hover-bg:   var(--axis-ink-3) !important;
+    --zt-menu-active-bg:  var(--axis-lime) !important;
+    --zt-menu-text-color: rgba(255,255,255,.72);
+    --zt-menu-text-active:var(--axis-ink);
+    --zt-header-bg:       var(--axis-ink) !important;
+    --zt-header-color:    #fff !important;
+    --zt-apps-bar-bg:     var(--axis-ink);
+    --zt-apps-bar-height: 40px;
+
+    --btn-radius: 10px;
+    --color-link: #6a22e0;
+    --color-link-hover: #561bb8;
+    --color-link-rgb: 106,34,224;
+    --color-link-hover-rgb: 86,27,184;
+    --color-link-active: #431590;
+    --color-link-active-rgb: 67,21,144;
+    --color-link-visited: #6a22e0;
+    --color-link-visited-rgb: 106,34,224;
+
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: var(--zt-page-bg); color: var(--axis-ink);}
+h1, h2, h3, h4, .panel-title, .dashboard-block-header .panel-title, #heading .title {font-family: Poppins, "DM Sans", system-ui, sans-serif;}
+
+/* =====================================================================
+   MARCO: menu lateral
+   ===================================================================== */
+#menu {background: var(--axis-ink-2) !important; border-right: 1px solid rgba(255,255,255,.06); padding: 10px 8px 8px;}
+#axisBrand {padding: 6px 6px 14px; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 10px;}
+#spaceHeading {color: rgba(255,255,255,.5); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;}
+#menuMainNav, #menuMoreNav, #menuToggleNav {gap: 2px;}
+#menu .nav > li > a
+{
+    border-radius: 10px; height: 38px; padding: 0 8px; gap: 6px;
+    color: rgba(255,255,255,.72); font-weight: 500; font-size: 12.5px; white-space: nowrap; overflow: hidden;
+    transition: background-color .15s ease, color .15s ease;
+}
+#menu .nav > li > a .icon {width: 18px; min-width: 18px; text-align: center; margin: 0; opacity: .9;}
+#menu .nav > li > a .text {flex: 1; min-width: 0; font-size: 12.5px !important; text-overflow: clip;}
+#menu .nav > li > a:hover {background: var(--axis-ink-3) !important; color: #fff;}
+#menu .nav > li > a.active, #menu .nav > li > a.active:hover {background: var(--axis-lime) !important; color: var(--axis-ink) !important; font-weight: 600;}
+#menu .nav > li > a.active .icon {opacity: 1;}
+#menu .divider {background: rgba(255,255,255,.08) !important; margin: 8px 6px;}
+#menuMoreList {border-radius: 12px; background: var(--axis-ink-3); border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow-lg);}
+
+/* =====================================================================
+   MARCO: barra inferior
+   ===================================================================== */
+#appsBar {background: var(--axis-ink) !important; color: rgba(255,255,255,.8); border-top: 1px solid rgba(255,255,255,.08);}
+#appsBar .btn.ghost, #appsBar a {color: rgba(255,255,255,.8);}
+#appTabs > li > a {border-radius: 8px; font-weight: 500; color: rgba(255,255,255,.7);}
+#appTabs > li.active > a {background: var(--axis-ink-3); color: var(--axis-lime);}
+#versionSwitchBtn {border-radius: 8px;}
+#globalSearch .pick {border-radius: 9999px; background: var(--axis-ink-3); border: 0; box-shadow: none; color: #fff;}
+#globalSearch .pick:focus-within {box-shadow: 0 0 0 2px var(--axis-lime);}
+.vision-tips.primary {background: var(--axis-purple); border-radius: 12px; box-shadow: var(--shadow-lg);}
+
+/* =====================================================================
+   CABECERA DE CADA PAGINA
+   ===================================================================== */
+#header, .in-workspace #header {background: var(--axis-ink) !important; color: #fff !important; border-bottom: 0; box-shadow: none;}
+.in-workspace #header::before, .in-workspace #header::after {display: none !important;}
+#heading, #heading a, #heading .title, #heading .text {color: #fff !important; font-weight: 600;}
+#navbar > .nav > .nav-item > a
+{
+    color: rgba(255,255,255,.72) !important; border-radius: 8px; margin: 0 2px; font-weight: 500;
+    transition: background-color .15s ease, color .15s ease;
+}
+#navbar > .nav > .nav-item > a:hover {background: var(--axis-ink-3); color: #fff !important;}
+#navbar > .nav > .nav-item > a.active {background: var(--axis-lime); color: var(--axis-ink) !important; font-weight: 600;}
+#navbar > .nav > .nav-item > a.active > .text, .in-workspace #navbar>.nav>.nav-item>a.active>.text {box-shadow: none !important; color: var(--axis-ink) !important;}
+#navbar > .nav > .nav-item > a:before {display: none !important;}
+#navbar .nav li.nav-divider.divider {background: rgba(255,255,255,.18) !important;}
+#toolbar .btn, #pageToolbar .btn, #toolbar > #pageToolbar + .toolbar > .btn, .in-workspace #toolbar > #pageToolbar + .toolbar > .btn
+{background: var(--axis-ink-3); color: #fff !important; border-radius: 10px; box-shadow: none;}
+#toolbar .btn:hover {background: #38383c;}
+
+/* =====================================================================
+   BOTONES
+   ===================================================================== */
+.btn {font-weight: 500; transition: background-color .15s ease, box-shadow .15s ease, border-color .15s ease;}
+.btn.primary, .btn.warning
+{
+    background: var(--axis-lime); border-color: var(--axis-lime-d); color: var(--axis-ink); box-shadow: none; font-weight: 600;
+    --tw-ring-color: var(--axis-lime-d);
+}
+.btn.primary:hover, .btn.warning:hover {background: #d6f066; color: var(--axis-ink); box-shadow: 0 0 0 3px rgba(203,232,80,.35);}
+.btn.primary .icon, .btn.warning .icon {color: var(--axis-ink);}
+.btn.primary-outline, .btn.primary-pale {color: var(--color-primary-600);}
+.btn.secondary, .btn.light, .btn.default {border-radius: 10px;}
+#toolbar .btn.primary, #pageToolbar .btn.primary {background: var(--axis-lime); color: var(--axis-ink) !important;}
+
+/* =====================================================================
+   FORMULARIOS
+   ===================================================================== */
+.form-control, .picker-box, .pick, .input-control > input, textarea.form-control {border-radius: 10px; transition: box-shadow .15s ease, border-color .15s ease;}
+.form-control:hover, .pick:hover {border-color: var(--color-gray-400);}
+.form-control:focus, .form-control:focus-within, .pick:focus-within, .pick.focus
+{border-color: var(--axis-purple); box-shadow: 0 0 0 3px rgba(123,47,247,.16);}
+.form-label, .form-group > label {font-weight: 600; color: var(--axis-ink);}
+a {--link-color: var(--color-primary-600);}
+
+/* =====================================================================
+   TABLERO Y TARJETAS
+   ===================================================================== */
+.dashboard-block, .panel, .card
+{
+    background: #fff; border: 1px solid var(--axis-border) !important; border-radius: var(--radius-xl) !important;
+    box-shadow: var(--shadow); overflow: hidden;
+}
+.dashboard-block-header, .panel-heading {background: transparent; border-bottom: 1px solid var(--axis-border); padding-top: 12px; padding-bottom: 12px;}
+.dashboard-block-header .panel-title, .panel-title {font-weight: 600; letter-spacing: -.01em;}
+.dashboard-block-header .panel-title::before {content: ''; display: inline-block; width: 4px; height: 14px; border-radius: 2px; background: var(--axis-purple); margin-right: 8px; vertical-align: -2px;}
+.text-primary {color: var(--color-primary-600) !important;}
+.block-welcome {background: #fbfbfc;}
+
+/* Guias: pildoras planas */
+.guide-block .flowchart .flow-item
+{
+    background: var(--color-gray-100) !important; border: 1px solid var(--axis-border);
+    border-radius: 9999px !important; color: var(--axis-ink); transition: background-color .15s ease, border-color .15s ease;
+}
+.guide-block .flowchart .flow-item::before, .guide-block .flowchart .flow-item::after {display: none !important;}
+.guide-block .flowchart .flow-item:hover {background: var(--color-primary-50) !important; border-color: var(--color-primary-300);}
+.guide-block .flowchart .flow-item-0 {background: var(--axis-ink) !important; border-color: var(--axis-ink); color: var(--axis-lime) !important;}
+.guide-block .flowchart .flow-item-0 * {color: var(--axis-lime) !important;}
+
+/* Menus, ventanas, desplegables */
+.modal-content {border-radius: var(--radius-2xl); box-shadow: var(--shadow-lg); border: 1px solid var(--axis-border);}
+.dropdown-menu, .menu-popup, .picker-menu, .contextmenu, .popover
+{border-radius: 12px !important; border: 1px solid var(--axis-border) !important; box-shadow: var(--shadow-lg) !important; padding: 6px;}
+.menu-item > a, .menu .item > a {border-radius: 8px;}
+
+/* =====================================================================
+   TABLAS
+   ===================================================================== */
+.dtable {background: #fff; border-radius: var(--radius-lg); overflow: hidden;}
+.dtable-header {background: var(--color-gray-100);}
+.dtable-header .dtable-cell {font-weight: 600; color: var(--axis-ink); font-size: 12px;}
+.dtable-body .dtable-row:hover, .table-hover tbody tr:hover {background-color: var(--color-primary-50);}
+.dtable-footer {background: var(--color-gray-50);}
+.table th {font-weight: 600; color: var(--axis-ink);}
+
+/* =====================================================================
+   ETIQUETAS, PESTANAS, BARRA DE FUNCIONES
+   ===================================================================== */
+.label, .badge {border-radius: 9999px; font-weight: 500;}
+.nav-tabs .nav-item > a.active, .nav-tabs > li > a.active {font-weight: 600; color: var(--color-primary-600);}
+#featureBar .nav-item > a, #mainMenu .nav-item > a, .nav-pills .nav-item > a {border-radius: 9999px; transition: background-color .15s ease, color .15s ease;}
+#featureBar .nav-item > a:hover {background: var(--color-gray-100);}
+#featureBar .nav-item > a.active, #mainMenu .nav-item > a.active {background: var(--axis-ink); color: var(--axis-lime); font-weight: 600;}
+#featureBar .nav-item > a.active .label, #featureBar .nav-item > a.active .count {color: var(--axis-lime); background: rgba(255,255,255,.14);}
+
+/* Barras laterales de modulos */
+.sidebar, #sidebar, .side-col > .panel {background: transparent; box-shadow: none; border: 0; border-radius: 0;}
+.sidebar .module-menu, .sidebar .tree-panel, #moduleMenu {background: #fff; border-radius: var(--radius-xl); box-shadow: var(--shadow); border: 1px solid var(--axis-border);}
+
+/* Desplazamiento y seleccion */
+* {scrollbar-width: thin; scrollbar-color: rgba(26,26,28,.3) transparent;}
+::-webkit-scrollbar {width: 8px; height: 8px;}
+::-webkit-scrollbar-thumb {background: rgba(26,26,28,.25); border-radius: 9999px;}
+::-webkit-scrollbar-thumb:hover {background: rgba(26,26,28,.45);}
+::-webkit-scrollbar-track {background: transparent;}
+::selection {background: rgba(203,232,80,.55); color: var(--axis-ink);}
+
+/* Correcciones: sin degradados heredados, divisores y altura de pestanas */
+.block-welcome .panel-body {background-image: none !important; background-color: #fbfbfc !important;}
+.welcome-avatar {background-color: var(--axis-purple) !important;}
+#navbar > .nav > .nav-item > a {height: 34px; align-self: center; padding: 0 12px;}
+#navbar .nav li.nav-divider, #navbar .nav li.divider {width: 1px !important; height: 14px !important; min-width: 1px; background: rgba(255,255,255,.2) !important; margin: 0 6px; align-self: center; opacity: 1;}
+[style*="linear-gradient"] {background-image: none !important;}
+#navbar .nav li.nav-divider {flex: 0 0 1px !important; padding: 0 !important; width: 1px !important; margin: 0 8px !important;}
+
+/* Barra inferior: sin flechas heredadas */
+#visionSwitcher::before, #visionSwitcher::after {display: none !important;}
+#appsBar #globalSearch .pick, #appsBar #globalSearch .pick-value {background: var(--axis-ink-3); color: #fff;}
+#appsBar #globalSearch input {color: #fff;}
+
+/* Kanban: franjas de carril en carbon (el color por carril viene de la BD) */
+.kanban-lane-name:before {background-color: var(--axis-ink) !important;}
+.kanban-lane-name, .kanban-lane-name * {color: #fff;}
+.kanban-item, .kanban-card {border-radius: 10px; box-shadow: var(--shadow); border: 1px solid var(--axis-border);}
+.kanban-header, .kanban-col-header {font-family: Poppins, "DM Sans", system-ui, sans-serif;}
+.kanban-lane-name {background-color: var(--axis-ink) !important;}
+.kanban-lane-name .kanban-lane-title, .kanban-lane-name .kanban-lane-title * {color: var(--axis-lime) !important;}
+
+.num, .stat-num, .text-4xl, .text-3xl {font-family: Poppins, "DM Sans", system-ui, sans-serif;}
+
+/* Auditoria: restos de tonos azules y sombras con degradado */
+.dtable-scroll-shadow {background-image: none !important; box-shadow: inset 6px 0 6px -6px rgba(26,26,28,.18);}
+.progress-bar {background-color: var(--axis-purple) !important;}
+.progress {background-color: var(--color-gray-200);}
+.font-brand {font-family: inherit !important;}
