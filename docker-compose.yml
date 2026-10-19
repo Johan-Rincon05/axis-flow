@@ -21,6 +21,22 @@ services:
     expose:
       - "80"
 
+  # Servidor MCP de AXIS FLOW (opcional): se activa con COMPOSE_PROFILES=mcp. Ver docs/MCP-AXIS-FLOW.md
+  mcp:
+    build: ./mcp
+    profiles: ["mcp"]
+    restart: unless-stopped
+    depends_on:
+      - zentao
+    environment:
+      AXISFLOW_URL: http://zentao
+      AXISFLOW_ACCOUNT: ${MCP_AXISFLOW_ACCOUNT:-axismcp}
+      AXISFLOW_PASSWORD: ${MCP_AXISFLOW_PASSWORD:-}
+      MCP_AUTH_TOKEN: ${MCP_AUTH_TOKEN:-}
+      MCP_READ_ONLY: ${MCP_READ_ONLY:-0}
+    expose:
+      - "3100"
+
   db:
     image: mariadb:10.11
     restart: unless-stopped
